@@ -3,7 +3,7 @@
 Contributors: XpeedStudio, Ataurr, emranio
 Tags: ai, ai content writer, keyword research, gpt4o, seo plugin
 Tested up to: 6.6
-Stable tag: 3.9.7
+Stable tag: 3.9.8
 Requires PHP: 7.4
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html

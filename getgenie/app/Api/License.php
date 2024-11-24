@@ -9,8 +9,9 @@ class License
     public $param = '';
     public $request = null;
 
-    public function __construct() {
-        add_action('rest_api_init', function() {
+    public function __construct()
+    {
+        add_action('rest_api_init', function () {
             register_rest_route('getgenie/v1/license', '(?P<action>[\w-]+)', array(
                 'methods'  => \WP_REST_Server::ALLMETHODS,
                 'callback' => [$this, 'action'],
@@ -20,28 +21,28 @@ class License
     }
 
 
-    public function action($request) 
+    public function action($request)
     {
-        if($request['action'] == 'get_license_version'){
+        if ($request['action'] == 'get_license_version') {
             return 'RPR_OK-2.0.0';
         }
 
-        if ( !wp_verify_nonce( $request->get_header( 'X-WP-Nonce' ), 'wp_rest' ) ) {
+        if (!wp_verify_nonce($request->get_header('X-WP-Nonce'), 'wp_rest')) {
             return [
                 'status'    => 'fail',
                 'message'   => ['Nonce mismatch.']
             ];
         }
 
-        if ( !is_user_logged_in() || !current_user_can('publish_posts')) {
+        if (!is_user_logged_in() || !current_user_can('publish_posts')) {
             return [
                 'status'    => 'fail',
                 'message'   => ['Access denied.']
             ];
         }
 
-        switch($request['action']){
-             case 'get-token':
+        switch ($request['action']) {
+            case 'get-token':
 
                 $response = getgenie_remote_request(
                     'wp-json/v1/manage-sites/license_active',
@@ -51,16 +52,14 @@ class License
                     ]
                 );
 
-                
-                if($response !== null && isset($response->data)) {
-                    $token      = isset($response->data->siteToken) ? $response->data->siteToken : '';
-                    $authTokenSecretKey  = isset($response->data->authTokenSecretKey ) ? $response->data->authTokenSecretKey : '';
-                    $subscriptionSiteData  = isset($response->data->subscriptionSiteData) ? $response->data->subscriptionSiteData : '';
 
-                    if($token != '') {
+                if ($response !== null && isset($response->data)) {
+                    $token      = isset($response->data->siteToken) ? $response->data->siteToken : '';
+                    $authTokenSecretKey  = isset($response->data->authTokenSecretKey) ? $response->data->authTokenSecretKey : '';
+
+                    if ($token != '') {
                         update_option('getgenie_site_token', $token);
                         update_option('getgenie_auth_token_secret_key', $authTokenSecretKey);
-                        update_option('getgenie_subscription_site_data', $subscriptionSiteData);
                         return [
                             "status" => "success",
                             "message" => [
@@ -88,7 +87,6 @@ class License
                     ]
                 ];
                 break;
-
         }
 
         return [

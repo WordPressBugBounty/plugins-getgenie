@@ -43,20 +43,30 @@ class ProLabelInit
         /**
          * Show Genie banner (codename: jhanda)
          */
-        GenieBanner::instance( 'getgenie' )
-        // ->is_test(true)
-        ->set_filter( $this->filterString )
-        ->set_api_url( 'https://api.wpmet.com/public/jhanda' )
-        ->set_plugin_screens( 'toplevel_page_getgenie' )
-        ->call();
+        $slug = 'getgenie';
+        $subscriptionStatistics = get_option('getgenie_subscription_statistics', []);
+        if (
+            isset($subscriptionStatistics['subscription_type'])
+            && $subscriptionStatistics['subscription_type'] == 'pro'
+        ) {
+            $slug = 'getgenie-pro';
+        }
 
-       // show notice if getgenie license is not activated.
-       if (!get_option('getgenie_site_token')) {
+        GenieBanner::instance($slug)
+            // ->is_test(true)
+            ->set_filter($this->filterString)
+            ->set_api_url('https://api.wpmet.com/public/jhanda')
+            ->set_plugin_screens('toplevel_page_getgenie')
+            ->call();
 
-        GenieNotice::instance( 'getgenie', 'go-pro-noti2ce' )                                       # @plugin_slug @notice_name
-            ->set_dismiss( 'global', ( 3600 * 24 * 300 ) )                                          # @global/user @time_period
-            ->set_type( 'warning' )                                                                 # @notice_type
-            ->set_html("
+        // show notice if getgenie license is not activated.
+        if (!get_option('getgenie_site_token')) {
+
+            GenieNotice::instance('getgenie', 'go-pro-noti2ce')                                       # @plugin_slug @notice_name
+                ->set_dismiss('global', (3600 * 24 * 300))                                          # @global/user @time_period
+                ->set_type('warning')                                                                 # @notice_type
+                ->set_html(
+                    "
                         <div class='getgenie-notice'>
                             <p class='notice-message'>
                                 <img src='" . GETGENIE_URL . "/assets/dist/admin/images/genie-head.svg" . "' class='notice-icon' />
@@ -68,9 +78,9 @@ class ProLabelInit
                             </div>
                         </div>
                         "
-            )                                                                                     # @notice_massage_html
-            ->call();
-       }
+                )                                                                                     # @notice_massage_html
+                ->call();
+        }
     }
 
     private function initRating()

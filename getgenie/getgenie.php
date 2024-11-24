@@ -5,7 +5,7 @@
  * Description:  GetGenie AI is the most intuitive A.I Content Wordpress Plugin that can help you save time and write smarter.
  * Plugin URI: https://getgenie.ai/
  * Author: getgenieai
- * Version: 3.9.7
+ * Version: 3.9.8
  * Author URI: https://getgenie.ai/
  *
  * Text Domain: getgenie
@@ -20,7 +20,7 @@
 
 defined('ABSPATH') || exit;
 
-define('GETGENIE_VERSION', '3.9.7');
+define('GETGENIE_VERSION', '3.9.8');
 define('GETGENIE_TEXTDOMAIN', 'getgenie');
 define('GETGENIE_BASENAME', plugin_basename(__FILE__));
 define('GETGENIE_URL', trailingslashit(plugin_dir_url(__FILE__)));
@@ -211,8 +211,7 @@ function genie_header_script_data()
     foreach ($blogwizard_objects as $object) {
         $blog_wizard_data[$object] = json_decode(
             get_post_meta(
-                get_the_ID()
-                ,
+                get_the_ID(),
                 GETGENIE_BLOGWIZARD_PREFIX . $object,
                 true
             )
@@ -252,15 +251,14 @@ function genie_header_script_data()
         'subscriptionUpgradeUrlApi' => get_rest_url(null, 'getgenie/v1/subscription_upgrade_urls/'),
     ];
 
-    ?>
+?>
     <script>
         window.getGenie = window.getGenie ?? {};
         window.getGenie.config = <?php echo json_encode($config); ?>;
         window.getGenie.blogWizardData = <?php echo json_encode($blog_wizard_data); ?>;
         window.getGenie.Components = window.getGenie.Components ?? {};
-
     </script>
-    <?php
+<?php
 }
 
 
@@ -341,4 +339,3 @@ new \GenieAi\App\Api\History();
 new \GenieAi\App\Api\GetGenieChat();
 new \GenieAi\App\Api\UploadImage();
 new \GenieAi\App\Api\SubscriptionUpgradeUrl();
-
