@@ -2,8 +2,8 @@
 
 Contributors: XpeedStudio, Ataurr, emranio
 Tags: ai, ai content writer, keyword research, gpt4o, seo plugin
-Tested up to: 6.6
-Stable tag: 3.9.8
+Tested up to: 6.7
+Stable tag: 3.9.9
 Requires PHP: 7.4
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -218,6 +218,12 @@ The best part is you can [claim 2500 words free credits](https://getgenie.ai/doc
 ✨ [GutenKit](https://wordpress.org/plugins/gutenkit-blocks-addon//)
 
 == Changelog ==
+
+Version 3.9.9 – 18/12/2024
+Improved: score analysis result in blog wizard.
+
+Version 3.9.8 – 24/11/2024
+Added: support for latest wp version.
 
 Version 3.9.7 – 18/08/2024
 Fixed: Blog wizard toolbar issue.
