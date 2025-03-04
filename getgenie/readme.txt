@@ -3,7 +3,7 @@
 Contributors: XpeedStudio, Ataurr, emranio
 Tags: ai, ai content writer, keyword research, gpt4o, seo plugin
 Tested up to: 6.7
-Stable tag: 3.10.0
+Stable tag: 3.10.1
 Requires PHP: 7.4
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -216,6 +216,9 @@ The best part is you can [claim 2500 words free credits](https://getgenie.ai/doc
 ✨ [GutenKit](https://wordpress.org/plugins/gutenkit-blocks-addon//)
 
 == Changelog ==
+
+Version 3.10.1 – 03/03/2025
+Fixed: Auto redirection issue for plugin bulk activations.
 
 Version 3.10.0 – 21/01/2025
 Added: Support for score analysis with Yoast SEO meta.
