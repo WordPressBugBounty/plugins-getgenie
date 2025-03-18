@@ -17,10 +17,28 @@ class ProLabelInit
             $this->filterString = self::active_plugins();
             \GenieAi\App\ProLabel\GenieNotice::init();
 
-            $this->initBanner();
             // $this->initStories();
-            $this->initRating();
+            if($this->is_user_consent_yes()){
+                $this->initBanner();
+                $this->initRating();
+            }
         });
+    }
+
+    /**
+     * Check if user consent is yes
+     * 
+     * @return boolean
+     */
+    public function is_user_consent_yes(){
+
+        $admin_config = get_option('getgenie_admin_dashboard_config', []);
+
+        if( !get_option('getgenie_site_token', false) || !isset($admin_config['user_consent']) ){
+            return true;
+        }
+
+        return isset($admin_config['user_consent']) && $admin_config['user_consent'] == '1';
     }
 
 

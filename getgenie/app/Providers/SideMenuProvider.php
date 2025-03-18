@@ -66,6 +66,14 @@ class SideMenuProvider
                 $this->menu_slug.'#getting-started'
             );
 
+            add_submenu_page(
+                GETGENIE_TEXTDOMAIN,
+                esc_html__("Keyword Research | Get Genie", 'getgenie'),
+                esc_html__("Keyword Research", 'getgenie'),
+                'publish_posts',
+                $this->menu_slug.'#keyword-research'
+            );
+
             // add_submenu_page(
             //     GETGENIE_TEXTDOMAIN,
             //     esc_html__("History | Get Genie", 'getgenie'),

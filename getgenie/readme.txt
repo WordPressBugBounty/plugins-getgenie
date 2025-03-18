@@ -1,9 +1,9 @@
-===GetGenie – Ai Content Writer with Keyword Research and Competitor Analysis===
+===GetGenie – AI Content Writer with Keyword Research and Competitor Analysis===
 
 Contributors: XpeedStudio, Ataurr, emranio
 Tags: ai, ai content writer, keyword research, gpt4o, seo plugin
 Tested up to: 6.7
-Stable tag: 3.10.1
+Stable tag: 4.0.0
 Requires PHP: 7.4
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -12,7 +12,7 @@ GPT-4o powered AI content writer with 37+ templates, chatbot, AI image, NLP keyw
 
 == Description ==
 
-Looking for an all-in-one AI SEO content assistant, AI image generator, and live chatbot like ChatGPT in a WordPress plugin? Meet **[GetGenie Ai](https://getgenie.ai/)**  - your ultimate solution for Ai content writing, keyword research, AI image generation, and SEO analysis.
+Looking for an all-in-one AI SEO content assistant, AI image generator, and live AI chatbot like ChatGPT in a WordPress plugin? Meet **[GetGenie Ai](https://getgenie.ai/)**  - your ultimate solution for Ai content writing, keyword research, AI image generation, and SEO analysis.
 
 GetGenie AI content writer is developed by GPT-3.5, GPT-4, DaVinci, NLP, and advanced Ai algorithms. Now, GetGenie AI has become more powerful and faster with the integration of **GPT-4o**. This enables GetGenie AI to understand and generate text based on visual information, providing a more comprehensive and versatile tool for content creation.
 
@@ -20,7 +20,7 @@ With GetGenie AI plugin, you can perform NLP keyword research, H2H competitor an
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/j4lElegQNQg?si=xREFtuDvDv-8_ac8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-Overall, GetGenie Ai is the ultimate Ai content writing assistant, Ai image and WordPress SEO plugin for seamless content creation, SEO, and marketing activities.
+Overall, GetGenie AI is the ultimate AI content writing assistant, AI image and WordPress SEO plugin for seamless content creation, SEO, and marketing activities.
 
 | [GetGenie Home Page](https://getgenie.ai/) | [Template Page](https://getgenie.ai/template/) | [Blog](https://getgenie.ai/blog/) | [Documentation](https://getgenie.ai/docs/) | [Need Support?](https://getgenie.ai/support-ticket/) | [How to get License Key](https://getgenie.ai/docs/getting-started/license-settings/) | [Claim Free Credits](https://getgenie.ai/docs/getting-started/how-to-claim-getgenie-free-credits/) |
 
@@ -56,7 +56,7 @@ Overall, GetGenie Ai is the ultimate Ai content writing assistant, Ai image and 
 
 ✅  Webview editor (Playground) for exploration
 
-✅  GPT-4o powered advanced technology
+✅  GPT-4o powered advanced AI technology
 
 ## Exclusive SEO Features of GetGenie AI Writer
 
@@ -65,6 +65,17 @@ Overall, GetGenie Ai is the ultimate Ai content writing assistant, Ai image and 
 GetGenie AI SEO content assistant simplifies content generation and optimization with its comprehensive SEO features such as “**SEO Mode**” in the Blog Wizard template.
 
 It offers on-demand SEO capabilities including keyword analysis, search volume insights, Google Trends data, and more!
+
+**[Keyword Research & Analysis](https://getgenie.ai/keyword-research/)**
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/bPYnWtDShrE" title="New! Master SEO with Advanced Keyword Research &amp; Topical Mapping" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+GetGenie's AI-powered keyword research feature will strengthen your WordPress keyword discovery efforts! It will enable you to find Related, NLP, and Semantic keywords so you can optimize your content & enhance your SERP ranking chances. 
+Find out the search volume, competition level, CPC, Google Trends, and more of your target & secondary keywords with GetGenie's intuitive interface. Also, the keyword research feature allows for creating a thorough Topical Map for your target keywords outlining subtopics, second-level topics, and related keywords for them. This will make your content planning & creation tasks easy & effective.
+
+To view all the topical map data in table format and copy them to your work area, you can export the Topical Map as a PNG or CSV file.
+ 
+Not just that, once the keyword research part is done, you can head straight to GetGenie's "Blog Wizard" to write engaging & keyword-optimized blog posts in both one click and step-by-step process. 
 
 **[Competitor Analysis:](https://getgenie.ai/competitor-analysis/)**
 With the competitor H2H analysis feature of this SEO plugin, you can easily access competitor analysis data and discover ranked competitor blogs on specific keywords! Such a time-saving feature for content writers, keyword researchers, and SEO users
@@ -78,7 +89,7 @@ You can also analyze content and get a score based on various factors like keywo
 **[SERP Analysis:](https://getgenie.ai/use-case/serp-analysis/)**
 GetGenie’s SERP analysis simplifies understanding search engine competition through graphs, aiding in staying ahead of competitors by providing detailed, SEO-friendly insights.
 
-**[Head to Head Analysis:](https://getgenie.ai/head-to-head-analysis/)**
+**[Competitor H2H Analysis:](https://getgenie.ai/head-to-head-analysis/)**
 With the AI SEO assistant, you can conduct head-to-head competitor analysis using Natural Language Processing technology, identifying LSIs and weaknesses to optimize your blog post and surpass specific competitors on the SERP.
 
 ### [WordPress Blog Wizard:](https://getgenie.ai/docs/blog-wizard/getgenie-ai-blog-wizard/)
@@ -216,6 +227,13 @@ The best part is you can [claim 2500 words free credits](https://getgenie.ai/doc
 ✨ [GutenKit](https://wordpress.org/plugins/gutenkit-blocks-addon//)
 
 == Changelog ==
+
+Version 4.0.0 – 18/03/2025
+Added: Keyword analysis with related, NLP, and semantic keywords.
+Added: Introduced topical map mechanism for analyzed keyword.
+Added: Genie SEO license card.
+Added: Opt out field for promotional banner hide/show.
+Fixed: Writing toolbar flickering and sidebar closing issue.
 
 Version 3.10.1 – 03/03/2025
 Fixed: Auto redirection issue for plugin bulk activations.
