@@ -104,6 +104,27 @@ class EnqueueProvider
 
 			if ($current_screen->id == 'toplevel_page_getgenie') {
 				wp_enqueue_script('getgenie-admin-pages-scripts', GETGENIE_URL . 'assets/dist/admin/js/wp-admin-pages.js', ['wp-plugins', 'wp-i18n', 'wp-element', 'wp-dom', 'wp-data'], GETGENIE_VERSION, true);
+				
+				wp_enqueue_script('getgenie-ska-admin-scripts-app', GETGENIE_URL . 'assets/dist/admin/seo-overview/admin/js/app-handler.js', ['wp-plugins', 'wp-edit-post', 'wp-i18n', 'wp-element', 'wp-dom', 'wp-data'], GETGENIE_VERSION, true);
+				wp_enqueue_script('getgenie-ska-admin-scripts-handle', GETGENIE_URL . 'assets/dist/admin/seo-overview/admin/js/wp-admin-pages.js', ['getgenie-antd-scripts', 'getgenie-handler-scripts', 'getgenie-common-scripts', 'getgenie-admin-pages-scripts'], GETGENIE_VERSION, true);
+				wp_enqueue_script('getgenie-ska-admin-scripts-integrations', GETGENIE_URL . 'assets/dist/admin/seo-overview/admin/js/wp-integrations.js', ['wp-plugins', 'wp-edit-post', 'wp-i18n', 'wp-element', 'wp-dom', 'wp-data'], GETGENIE_VERSION, true);
+
+				$token = new \GenieAi\App\Auth\TokenManager();
+				$_nonce = wp_create_nonce('wp_rest');
+
+				$config = [
+					'config' => [
+						'version' => GETGENIE_VERSION,
+						'restNonce' => $_nonce,
+						'siteUrl' => get_site_url(),
+						'assetsUrl' => GETGENIE_URL . 'assets/',
+						'parserApi' => 'https://bridge.getgenie.ai/',
+						'siteToken' => get_option('getgenie_site_token', ''),
+						'authToken' => $token->generate(), // access_denied or 4gb3rv3dyvy3h59gvwscdt3rerf23
+					]
+				];
+
+				wp_localize_script('getgenie-ska-admin-scripts-app', 'genieSKA', $config);
 			}
 			if (
 				($current_screen->is_block_editor() || ($current_screen->id == 'post'
@@ -129,8 +150,33 @@ class EnqueueProvider
 
 	public function globalScripts()
 	{
+		$_nonce = wp_create_nonce('wp_rest');
+
+		$config = [
+			'version' => GETGENIE_VERSION,
+			'assetsUrl' => GETGENIE_URL . 'assets/',
+			'nonce' => $_nonce,
+		];
+
+		wp_enqueue_script(
+			'getgenie-ska-config',
+			'',
+			[],
+			GETGENIE_VERSION,
+			true
+		);
+
+		wp_localize_script(
+			'getgenie-ska-config',
+			'genieSKA',
+			[
+				'config' => $config
+			]
+		);
+
 		wp_enqueue_style('getgenie-icon-style', GETGENIE_URL . 'assets/dist/admin/styles/icon-pack.css', [], GETGENIE_VERSION);
 		wp_enqueue_style('getgenie-admin-global-style', GETGENIE_URL . 'assets/dist/admin/styles/global.css', [], GETGENIE_VERSION);
+		wp_enqueue_style('getgenie-ska-seo-fonts-style', GETGENIE_URL . 'assets/dist/admin/seo-overview/admin/styles/wp-font-family.css', [], GETGENIE_VERSION);
 	}
 
 	public function elementorEditorStyle()

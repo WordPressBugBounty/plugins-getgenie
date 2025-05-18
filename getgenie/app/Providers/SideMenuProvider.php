@@ -49,6 +49,14 @@ class SideMenuProvider
                  GETGENIE_URL.'/assets/dist/admin/images/genie-head.svg',
                 5
             );
+
+            add_submenu_page(
+                GETGENIE_TEXTDOMAIN,
+                __('SEO Insights', 'getgenie'),
+                __('SEO Insights', 'getgenie'),
+                'publish_posts',
+                $this->menu_slug.'#genie-ska'
+            );
             
             add_submenu_page(
                 GETGENIE_TEXTDOMAIN,

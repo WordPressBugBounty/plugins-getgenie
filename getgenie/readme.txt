@@ -3,7 +3,7 @@
 Contributors: XpeedStudio, Ataurr, emranio
 Tags: ai, ai content writer, keyword research, gpt4o, seo plugin
 Tested up to: 6.7
-Stable tag: 4.0.2
+Stable tag: 4.1.0
 Requires PHP: 7.4
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -71,31 +71,48 @@ It offers on-demand SEO capabilities including keyword analysis, search volume i
 <iframe width="560" height="315" src="https://www.youtube.com/embed/bPYnWtDShrE" title="New! Master SEO with Advanced Keyword Research &amp; Topical Mapping" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 GetGenie's AI-powered keyword research feature will strengthen your WordPress keyword discovery efforts! It will enable you to find Related, NLP, and Semantic keywords so you can optimize your content & enhance your SERP ranking chances. 
+
 Find out the search volume, competition level, CPC, Google Trends, and more of your target & secondary keywords with GetGenie's intuitive interface. Also, the keyword research feature allows for creating a thorough Topical Map for your target keywords outlining subtopics, second-level topics, and related keywords for them. This will make your content planning & creation tasks easy & effective.
 
 To view all the topical map data in table format and copy them to your work area, you can export the Topical Map as a PNG or CSV file.
  
 Not just that, once the keyword research part is done, you can head straight to GetGenie's "Blog Wizard" to write engaging & keyword-optimized blog posts in both one click and step-by-step process. 
 
+**[SEO Insights:](https://getgenie.ai/seo-features/)**
+
+GetGenie provides historical organic data from Google so you can track and optimize your website’s SEO performance. With its SEO Insights feature, you can analyze existing content's SEO metrics, including impressions, clicks, CTR, and positions over time to optimize your site. 
+
+Also, find out the lost and new keywords in Google for a specified period. Explore opportunities to optimize with “low-hanging fruit keywords". 
+
+In addition, you can use the feature to identify high-performing pages, along with low-performing pages that need SEO improvements. Also, it shows you the competing pages that you can analyze and avoid keyword cannibalization. 
+
+The SEO Insights feature lets you track the regions and devices your content generates the most traffic for. Plus, find out which keywords and pages rank highest in those regions. 
+
+
 **[Competitor Analysis:](https://getgenie.ai/competitor-analysis/)**
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3U9xk4gwP7A" title="How to Research your SERP Competitors with AI || Blog Competitor SERP Analysis with GetGenie AI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 With the competitor H2H analysis feature of this SEO plugin, you can easily access competitor analysis data and discover ranked competitor blogs on specific keywords! Such a time-saving feature for content writers, keyword researchers, and SEO users
 
 **[NLP Keyword Suggestions](https://getgenie.ai/docs/seo-assistant/nlp-keyword-suggestions/)**
 GetGenie AI SEO plugin utilizes NLP algorithms to analyze your text and recommend relevant keywords. It enables optimization for search engines and ensures clarity and conciseness in your content.
 
-**[Content Score:](https://getgenie.ai/docs/seo-assistant/content-score-2/)**
-You can also analyze content and get a score based on various factors like keywords, word count, and more using GetGenie AI . Also, this SEO plugin also offers suggestions to improve on-page SEO and NLP for better search engine ranking
+**[Head to Head Analysis:](https://getgenie.ai/head-to-head-analysis/)**
 
-**[SERP Analysis:](https://getgenie.ai/use-case/serp-analysis/)**
-GetGenie’s SERP analysis simplifies understanding search engine competition through graphs, aiding in staying ahead of competitors by providing detailed, SEO-friendly insights.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pUdfHm81Yy4" title="How to Rank Higher on SERPs with GetGenie AI’s Head-to-Head (H2H) Comparison Tool" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-**[Competitor H2H Analysis:](https://getgenie.ai/head-to-head-analysis/)**
 With the AI SEO assistant, you can conduct head-to-head competitor analysis using Natural Language Processing technology, identifying LSIs and weaknesses to optimize your blog post and surpass specific competitors on the SERP.
+
+**[Content Score:](https://getgenie.ai/docs/seo-assistant/content-score-2/)**
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rLrRSa3CXdM" title="AI SEO Content Score | Measure &amp; Optimize Your Blog Posts using GetGenie AI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+You can also analyze content and get a score based on various factors like keywords, word count, and more using GetGenie AI . Also, this SEO plugin also offers suggestions to improve on-page SEO and NLP for better search engine ranking.
 
 ### [WordPress Blog Wizard:](https://getgenie.ai/docs/blog-wizard/getgenie-ai-blog-wizard/)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5lIwXUS8QHE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 
 Its Blog Wizard template simplifies SEO-optimized blog post creation on WordPress with features like personalized language selection, creativity levels, and output quantity.
 
@@ -105,12 +122,11 @@ You can generate six outputs at once, customize outlines, rewrite content, and a
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/_nbEmYHAbGA?si=wEOXaBwv4UE_gA3r" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-
 GetGenie’s Blog Wizard template introduces a one-click blog generation feature! This feature helps to generate an entire SEO-optimized blog post in just one click.
 
 This 1-click blog generator of GetGenie AI SEO content writer is compatible with WordPress Gutenberg as well as the classic editor. You can find this AI feature in GetGenie’s web editor too.
 
-### **[GenieChat - AI Copilot and Live Chatbot:](https://getgenie.ai/geniechat/)**
+### **[GenieChat - Real-time AI Chatbot:](https://getgenie.ai/geniechat/)**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/WZ5s_Kj78iA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -130,7 +146,7 @@ The Genie Mode, a special feature in the plugin, helps in content creation, gene
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/I_zYdUXlfR0" title="Keyword and SEO Analysis" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## 📝 GetGenie Ai Copywriting Templates:
+## 📝 GetGenie AI Copywriting Templates:
 
 - [AIDA Framework:](https://getgenie.ai/template/aida-framework/) Craft attention-grabbing copy using the AIDA framework.
 - [BAB Framework:](https://getgenie.ai/template/before-after-bridge-framework/) Generate persuasive AI copy with the Before-After-Bridge model.
@@ -227,6 +243,8 @@ The best part is you can [claim 2500 words free credits](https://getgenie.ai/doc
 ✨ [GutenKit](https://wordpress.org/plugins/gutenkit-blocks-addon//)
 
 == Changelog ==
+Version 4.1.0 – 18/05/2025
+Added: SEO Insights feature with Google Search Console (GSC) integration.
 
 Version 4.0.2 – 08/04/2025
 Improved: Updated license page key name with plugin prefix for better organization.

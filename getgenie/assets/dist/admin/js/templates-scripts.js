@@ -1,12 +1,7397 @@
-(()=>{var Qs=Object.create;var gn=Object.defineProperty;var Xs=Object.getOwnPropertyDescriptor;var el=Object.getOwnPropertyNames;var tl=Object.getPrototypeOf,nl=Object.prototype.hasOwnProperty;var Ta=(d=>typeof require<"u"?require:typeof Proxy<"u"?new Proxy(d,{get:(r,l)=>(typeof require<"u"?require:r)[l]}):d)(function(d){if(typeof require<"u")return require.apply(this,arguments);throw new Error('Dynamic require of "'+d+'" is not supported')});var al=(d,r)=>()=>(r||d((r={exports:{}}).exports,r),r.exports),il=(d,r)=>{for(var l in r)gn(d,l,{get:r[l],enumerable:!0})},rl=(d,r,l,f)=>{if(r&&typeof r=="object"||typeof r=="function")for(let h of el(r))!nl.call(d,h)&&h!==l&&gn(d,h,{get:()=>r[h],enumerable:!(f=Xs(r,h))||f.enumerable});return d};var ol=(d,r,l)=>(l=d!=null?Qs(tl(d)):{},rl(r||!d||!d.__esModule?gn(l,"default",{value:d,enumerable:!0}):l,d));var Na=al((fn,tt)=>{(function(d,r){typeof fn=="object"&&typeof tt<"u"?tt.exports=r():typeof define=="function"&&define.amd?define(r):d.moment=r()})(fn,function(){"use strict";var d;function r(){return d.apply(null,arguments)}function l(e){d=e}function f(e){return e instanceof Array||Object.prototype.toString.call(e)==="[object Array]"}function h(e){return e!=null&&Object.prototype.toString.call(e)==="[object Object]"}function p(e,t){return Object.prototype.hasOwnProperty.call(e,t)}function C(e){if(Object.getOwnPropertyNames)return Object.getOwnPropertyNames(e).length===0;var t;for(t in e)if(p(e,t))return!1;return!0}function g(e){return e===void 0}function m(e){return typeof e=="number"||Object.prototype.toString.call(e)==="[object Number]"}function v(e){return e instanceof Date||Object.prototype.toString.call(e)==="[object Date]"}function S(e,t){var n=[],a,i=e.length;for(a=0;a<i;++a)n.push(t(e[a],a));return n}function k(e,t){for(var n in t)p(t,n)&&(e[n]=t[n]);return p(t,"toString")&&(e.toString=t.toString),p(t,"valueOf")&&(e.valueOf=t.valueOf),e}function w(e,t,n,a){return ia(e,t,n,a,!0).utc()}function x(){return{empty:!1,unusedTokens:[],unusedInput:[],overflow:-2,charsLeftOver:0,nullInput:!1,invalidEra:null,invalidMonth:null,invalidFormat:!1,userInvalidated:!1,iso:!1,parsedDateParts:[],era:null,meridiem:null,rfc2822:!1,weekdayMismatch:!1}}function c(e){return e._pf==null&&(e._pf=x()),e._pf}var N;Array.prototype.some?N=Array.prototype.some:N=function(e){var t=Object(this),n=t.length>>>0,a;for(a=0;a<n;a++)if(a in t&&e.call(this,t[a],a,t))return!0;return!1};function D(e){if(e._isValid==null){var t=c(e),n=N.call(t.parsedDateParts,function(i){return i!=null}),a=!isNaN(e._d.getTime())&&t.overflow<0&&!t.empty&&!t.invalidEra&&!t.invalidMonth&&!t.invalidWeekday&&!t.weekdayMismatch&&!t.nullInput&&!t.invalidFormat&&!t.userInvalidated&&(!t.meridiem||t.meridiem&&n);if(e._strict&&(a=a&&t.charsLeftOver===0&&t.unusedTokens.length===0&&t.bigHour===void 0),Object.isFrozen==null||!Object.isFrozen(e))e._isValid=a;else return a}return e._isValid}function T(e){var t=w(NaN);return e!=null?k(c(t),e):c(t).userInvalidated=!0,t}var E=r.momentProperties=[],I=!1;function Y(e,t){var n,a,i,o=E.length;if(g(t._isAMomentObject)||(e._isAMomentObject=t._isAMomentObject),g(t._i)||(e._i=t._i),g(t._f)||(e._f=t._f),g(t._l)||(e._l=t._l),g(t._strict)||(e._strict=t._strict),g(t._tzm)||(e._tzm=t._tzm),g(t._isUTC)||(e._isUTC=t._isUTC),g(t._offset)||(e._offset=t._offset),g(t._pf)||(e._pf=c(t)),g(t._locale)||(e._locale=t._locale),o>0)for(n=0;n<o;n++)a=E[n],i=t[a],g(i)||(e[a]=i);return e}function Z(e){Y(this,e),this._d=new Date(e._d!=null?e._d.getTime():NaN),this.isValid()||(this._d=new Date(NaN)),I===!1&&(I=!0,r.updateOffset(this),I=!1)}function J(e){return e instanceof Z||e!=null&&e._isAMomentObject!=null}function Re(e){r.suppressDeprecationWarnings===!1&&typeof console<"u"&&console.warn&&console.warn("Deprecation warning: "+e)}function j(e,t){var n=!0;return k(function(){if(r.deprecationHandler!=null&&r.deprecationHandler(null,e),n){var a=[],i,o,u,O=arguments.length;for(o=0;o<O;o++){if(i="",typeof arguments[o]=="object"){i+=`
-[`+o+"] ";for(u in arguments[0])p(arguments[0],u)&&(i+=u+": "+arguments[0][u]+", ");i=i.slice(0,-2)}else i=arguments[o];a.push(i)}Re(e+`
-Arguments: `+Array.prototype.slice.call(a).join("")+`
-`+new Error().stack),n=!1}return t.apply(this,arguments)},t)}var Ve={};function me(e,t){r.deprecationHandler!=null&&r.deprecationHandler(e,t),Ve[e]||(Re(t),Ve[e]=!0)}r.suppressDeprecationWarnings=!1,r.deprecationHandler=null;function ne(e){return typeof Function<"u"&&e instanceof Function||Object.prototype.toString.call(e)==="[object Function]"}function we(e){var t,n;for(n in e)p(e,n)&&(t=e[n],ne(t)?this[n]=t:this["_"+n]=t);this._config=e,this._dayOfMonthOrdinalParseLenient=new RegExp((this._dayOfMonthOrdinalParse.source||this._ordinalParse.source)+"|"+/\d{1,2}/.source)}function Me(e,t){var n=k({},e),a;for(a in t)p(t,a)&&(h(e[a])&&h(t[a])?(n[a]={},k(n[a],e[a]),k(n[a],t[a])):t[a]!=null?n[a]=t[a]:delete n[a]);for(a in e)p(e,a)&&!p(t,a)&&h(e[a])&&(n[a]=k({},n[a]));return n}function Ee(e){e!=null&&this.set(e)}var Ie;Object.keys?Ie=Object.keys:Ie=function(e){var t,n=[];for(t in e)p(e,t)&&n.push(t);return n};var dt={sameDay:"[Today at] LT",nextDay:"[Tomorrow at] LT",nextWeek:"dddd [at] LT",lastDay:"[Yesterday at] LT",lastWeek:"[Last] dddd [at] LT",sameElse:"L"};function je(e,t,n){var a=this._calendar[e]||this._calendar.sameElse;return ne(a)?a.call(t,n):a}function ie(e,t,n){var a=""+Math.abs(e),i=t-a.length,o=e>=0;return(o?n?"+":"":"-")+Math.pow(10,Math.max(0,i)).toString().substr(1)+a}var ce=/(\[[^\[]*\])|(\\)?([Hh]mm(ss)?|Mo|MM?M?M?|Do|DDDo|DD?D?D?|ddd?d?|do?|w[o|w]?|W[o|W]?|Qo?|N{1,5}|YYYYYY|YYYYY|YYYY|YY|y{2,4}|yo?|gg(ggg?)?|GG(GGG?)?|e|E|a|A|hh?|HH?|kk?|mm?|ss?|S{1,9}|x|X|zz?|ZZ?|.)/g,De=/(\[[^\[]*\])|(\\)?(LTS|LT|LL?L?L?|l{1,4})/g,Ne={},ue={};function _(e,t,n,a){var i=a;typeof a=="string"&&(i=function(){return this[a]()}),e&&(ue[e]=i),t&&(ue[t[0]]=function(){return ie(i.apply(this,arguments),t[1],t[2])}),n&&(ue[n]=function(){return this.localeData().ordinal(i.apply(this,arguments),e)})}function b(e){return e.match(/\[[\s\S]/)?e.replace(/^\[|\]$/g,""):e.replace(/\\/g,"")}function P(e){var t=e.match(ce),n,a;for(n=0,a=t.length;n<a;n++)ue[t[n]]?t[n]=ue[t[n]]:t[n]=b(t[n]);return function(i){var o="",u;for(u=0;u<a;u++)o+=ne(t[u])?t[u].call(i,e):t[u];return o}}function H(e,t){return e.isValid()?(t=re(t,e.localeData()),Ne[t]=Ne[t]||P(t),Ne[t](e)):e.localeData().invalidDate()}function re(e,t){var n=5;function a(i){return t.longDateFormat(i)||i}for(De.lastIndex=0;n>=0&&De.test(e);)e=e.replace(De,a),De.lastIndex=0,n-=1;return e}var ct={LTS:"h:mm:ss A",LT:"h:mm A",L:"MM/DD/YYYY",LL:"MMMM D, YYYY",LLL:"MMMM D, YYYY h:mm A",LLLL:"dddd, MMMM D, YYYY h:mm A"};function Ge(e){var t=this._longDateFormat[e],n=this._longDateFormat[e.toUpperCase()];return t||!n?t:(this._longDateFormat[e]=n.match(ce).map(function(a){return a==="MMMM"||a==="MM"||a==="DD"||a==="dddd"?a.slice(1):a}).join(""),this._longDateFormat[e])}var Oe="Invalid date";function si(){return this._invalidDate}var li="%d",di=/\d{1,2}/;function ci(e){return this._ordinal.replace("%d",e)}var ui={future:"in %s",past:"%s ago",s:"a few seconds",ss:"%d seconds",m:"a minute",mm:"%d minutes",h:"an hour",hh:"%d hours",d:"a day",dd:"%d days",w:"a week",ww:"%d weeks",M:"a month",MM:"%d months",y:"a year",yy:"%d years"};function pi(e,t,n,a){var i=this._relativeTime[n];return ne(i)?i(e,t,n,a):i.replace(/%d/i,e)}function hi(e,t){var n=this._relativeTime[e>0?"future":"past"];return ne(n)?n(t):n.replace(/%s/i,t)}var ut={};function X(e,t){var n=e.toLowerCase();ut[n]=ut[n+"s"]=ut[t]=e}function le(e){return typeof e=="string"?ut[e]||ut[e.toLowerCase()]:void 0}function jt(e){var t={},n,a;for(a in e)p(e,a)&&(n=le(a),n&&(t[n]=e[a]));return t}var En={};function ee(e,t){En[e]=t}function gi(e){var t=[],n;for(n in e)p(e,n)&&t.push({unit:n,priority:En[n]});return t.sort(function(a,i){return a.priority-i.priority}),t}function St(e){return e%4===0&&e%100!==0||e%400===0}function de(e){return e<0?Math.ceil(e)||0:Math.floor(e)}function W(e){var t=+e,n=0;return t!==0&&isFinite(t)&&(n=de(t)),n}function qe(e,t){return function(n){return n!=null?(In(this,e,n),r.updateOffset(this,t),this):xt(this,e)}}function xt(e,t){return e.isValid()?e._d["get"+(e._isUTC?"UTC":"")+t]():NaN}function In(e,t,n){e.isValid()&&!isNaN(n)&&(t==="FullYear"&&St(e.year())&&e.month()===1&&e.date()===29?(n=W(n),e._d["set"+(e._isUTC?"UTC":"")+t](n,e.month(),Yt(n,e.month()))):e._d["set"+(e._isUTC?"UTC":"")+t](n))}function fi(e){return e=le(e),ne(this[e])?this[e]():this}function mi(e,t){if(typeof e=="object"){e=jt(e);var n=gi(e),a,i=n.length;for(a=0;a<i;a++)this[n[a].unit](e[n[a].unit])}else if(e=le(e),ne(this[e]))return this[e](t);return this}var Gn=/\d/,oe=/\d\d/,An=/\d{3}/,qt=/\d{4}/,Tt=/[+-]?\d{6}/,U=/\d\d?/,Hn=/\d\d\d\d?/,Un=/\d\d\d\d\d\d?/,Mt=/\d{1,3}/,$t=/\d{1,4}/,Dt=/[+-]?\d{1,6}/,$e=/\d+/,Nt=/[+-]?\d+/,wi=/Z|[+-]\d\d:?\d\d/gi,Ot=/Z|[+-]\d\d(?::?\d\d)?/gi,_i=/[+-]?\d+(\.\d{1,3})?/,pt=/[0-9]{0,256}['a-z\u00A0-\u05FF\u0700-\uD7FF\uF900-\uFDCF\uFDF0-\uFF07\uFF10-\uFFEF]{1,256}|[\u0600-\u06FF\/]{1,256}(\s*?[\u0600-\u06FF]{1,256}){1,2}/i,Pt;Pt={};function M(e,t,n){Pt[e]=ne(t)?t:function(a,i){return a&&n?n:t}}function yi(e,t){return p(Pt,e)?Pt[e](t._strict,t._locale):new RegExp(vi(e))}function vi(e){return se(e.replace("\\","").replace(/\\(\[)|\\(\])|\[([^\]\[]*)\]|\\(.)/g,function(t,n,a,i,o){return n||a||i||o}))}function se(e){return e.replace(/[-\/\\^$*+?.()|[\]{}]/g,"\\$&")}var Kt={};function G(e,t){var n,a=t,i;for(typeof e=="string"&&(e=[e]),m(t)&&(a=function(o,u){u[t]=W(o)}),i=e.length,n=0;n<i;n++)Kt[e[n]]=a}function ht(e,t){G(e,function(n,a,i,o){i._w=i._w||{},t(n,i._w,i,o)})}function bi(e,t,n){t!=null&&p(Kt,e)&&Kt[e](t,n._a,n,e)}var te=0,_e=1,ge=2,q=3,pe=4,ye=5,Ae=6,ki=7,Ci=8;function Si(e,t){return(e%t+t)%t}var V;Array.prototype.indexOf?V=Array.prototype.indexOf:V=function(e){var t;for(t=0;t<this.length;++t)if(this[t]===e)return t;return-1};function Yt(e,t){if(isNaN(e)||isNaN(t))return NaN;var n=Si(t,12);return e+=(t-n)/12,n===1?St(e)?29:28:31-n%7%2}_("M",["MM",2],"Mo",function(){return this.month()+1}),_("MMM",0,0,function(e){return this.localeData().monthsShort(this,e)}),_("MMMM",0,0,function(e){return this.localeData().months(this,e)}),X("month","M"),ee("month",8),M("M",U),M("MM",U,oe),M("MMM",function(e,t){return t.monthsShortRegex(e)}),M("MMMM",function(e,t){return t.monthsRegex(e)}),G(["M","MM"],function(e,t){t[_e]=W(e)-1}),G(["MMM","MMMM"],function(e,t,n,a){var i=n._locale.monthsParse(e,a,n._strict);i!=null?t[_e]=i:c(n).invalidMonth=e});var xi="January_February_March_April_May_June_July_August_September_October_November_December".split("_"),zn="Jan_Feb_Mar_Apr_May_Jun_Jul_Aug_Sep_Oct_Nov_Dec".split("_"),Bn=/D[oD]?(\[[^\[\]]*\]|\s)+MMMM?/,Ti=pt,Mi=pt;function Di(e,t){return e?f(this._months)?this._months[e.month()]:this._months[(this._months.isFormat||Bn).test(t)?"format":"standalone"][e.month()]:f(this._months)?this._months:this._months.standalone}function Ni(e,t){return e?f(this._monthsShort)?this._monthsShort[e.month()]:this._monthsShort[Bn.test(t)?"format":"standalone"][e.month()]:f(this._monthsShort)?this._monthsShort:this._monthsShort.standalone}function Oi(e,t,n){var a,i,o,u=e.toLocaleLowerCase();if(!this._monthsParse)for(this._monthsParse=[],this._longMonthsParse=[],this._shortMonthsParse=[],a=0;a<12;++a)o=w([2e3,a]),this._shortMonthsParse[a]=this.monthsShort(o,"").toLocaleLowerCase(),this._longMonthsParse[a]=this.months(o,"").toLocaleLowerCase();return n?t==="MMM"?(i=V.call(this._shortMonthsParse,u),i!==-1?i:null):(i=V.call(this._longMonthsParse,u),i!==-1?i:null):t==="MMM"?(i=V.call(this._shortMonthsParse,u),i!==-1?i:(i=V.call(this._longMonthsParse,u),i!==-1?i:null)):(i=V.call(this._longMonthsParse,u),i!==-1?i:(i=V.call(this._shortMonthsParse,u),i!==-1?i:null))}function Pi(e,t,n){var a,i,o;if(this._monthsParseExact)return Oi.call(this,e,t,n);for(this._monthsParse||(this._monthsParse=[],this._longMonthsParse=[],this._shortMonthsParse=[]),a=0;a<12;a++){if(i=w([2e3,a]),n&&!this._longMonthsParse[a]&&(this._longMonthsParse[a]=new RegExp("^"+this.months(i,"").replace(".","")+"$","i"),this._shortMonthsParse[a]=new RegExp("^"+this.monthsShort(i,"").replace(".","")+"$","i")),!n&&!this._monthsParse[a]&&(o="^"+this.months(i,"")+"|^"+this.monthsShort(i,""),this._monthsParse[a]=new RegExp(o.replace(".",""),"i")),n&&t==="MMMM"&&this._longMonthsParse[a].test(e))return a;if(n&&t==="MMM"&&this._shortMonthsParse[a].test(e))return a;if(!n&&this._monthsParse[a].test(e))return a}}function Vn(e,t){var n;if(!e.isValid())return e;if(typeof t=="string"){if(/^\d+$/.test(t))t=W(t);else if(t=e.localeData().monthsParse(t),!m(t))return e}return n=Math.min(e.date(),Yt(e.year(),t)),e._d["set"+(e._isUTC?"UTC":"")+"Month"](t,n),e}function jn(e){return e!=null?(Vn(this,e),r.updateOffset(this,!0),this):xt(this,"Month")}function Yi(){return Yt(this.year(),this.month())}function Li(e){return this._monthsParseExact?(p(this,"_monthsRegex")||qn.call(this),e?this._monthsShortStrictRegex:this._monthsShortRegex):(p(this,"_monthsShortRegex")||(this._monthsShortRegex=Ti),this._monthsShortStrictRegex&&e?this._monthsShortStrictRegex:this._monthsShortRegex)}function Wi(e){return this._monthsParseExact?(p(this,"_monthsRegex")||qn.call(this),e?this._monthsStrictRegex:this._monthsRegex):(p(this,"_monthsRegex")||(this._monthsRegex=Mi),this._monthsStrictRegex&&e?this._monthsStrictRegex:this._monthsRegex)}function qn(){function e(u,O){return O.length-u.length}var t=[],n=[],a=[],i,o;for(i=0;i<12;i++)o=w([2e3,i]),t.push(this.monthsShort(o,"")),n.push(this.months(o,"")),a.push(this.months(o,"")),a.push(this.monthsShort(o,""));for(t.sort(e),n.sort(e),a.sort(e),i=0;i<12;i++)t[i]=se(t[i]),n[i]=se(n[i]);for(i=0;i<24;i++)a[i]=se(a[i]);this._monthsRegex=new RegExp("^("+a.join("|")+")","i"),this._monthsShortRegex=this._monthsRegex,this._monthsStrictRegex=new RegExp("^("+n.join("|")+")","i"),this._monthsShortStrictRegex=new RegExp("^("+t.join("|")+")","i")}_("Y",0,0,function(){var e=this.year();return e<=9999?ie(e,4):"+"+e}),_(0,["YY",2],0,function(){return this.year()%100}),_(0,["YYYY",4],0,"year"),_(0,["YYYYY",5],0,"year"),_(0,["YYYYYY",6,!0],0,"year"),X("year","y"),ee("year",1),M("Y",Nt),M("YY",U,oe),M("YYYY",$t,qt),M("YYYYY",Dt,Tt),M("YYYYYY",Dt,Tt),G(["YYYYY","YYYYYY"],te),G("YYYY",function(e,t){t[te]=e.length===2?r.parseTwoDigitYear(e):W(e)}),G("YY",function(e,t){t[te]=r.parseTwoDigitYear(e)}),G("Y",function(e,t){t[te]=parseInt(e,10)});function gt(e){return St(e)?366:365}r.parseTwoDigitYear=function(e){return W(e)+(W(e)>68?1900:2e3)};var $n=qe("FullYear",!0);function Fi(){return St(this.year())}function Ri(e,t,n,a,i,o,u){var O;return e<100&&e>=0?(O=new Date(e+400,t,n,a,i,o,u),isFinite(O.getFullYear())&&O.setFullYear(e)):O=new Date(e,t,n,a,i,o,u),O}function ft(e){var t,n;return e<100&&e>=0?(n=Array.prototype.slice.call(arguments),n[0]=e+400,t=new Date(Date.UTC.apply(null,n)),isFinite(t.getUTCFullYear())&&t.setUTCFullYear(e)):t=new Date(Date.UTC.apply(null,arguments)),t}function Lt(e,t,n){var a=7+t-n,i=(7+ft(e,0,a).getUTCDay()-t)%7;return-i+a-1}function Kn(e,t,n,a,i){var o=(7+n-a)%7,u=Lt(e,a,i),O=1+7*(t-1)+o+u,L,A;return O<=0?(L=e-1,A=gt(L)+O):O>gt(e)?(L=e+1,A=O-gt(e)):(L=e,A=O),{year:L,dayOfYear:A}}function mt(e,t,n){var a=Lt(e.year(),t,n),i=Math.floor((e.dayOfYear()-a-1)/7)+1,o,u;return i<1?(u=e.year()-1,o=i+ve(u,t,n)):i>ve(e.year(),t,n)?(o=i-ve(e.year(),t,n),u=e.year()+1):(u=e.year(),o=i),{week:o,year:u}}function ve(e,t,n){var a=Lt(e,t,n),i=Lt(e+1,t,n);return(gt(e)-a+i)/7}_("w",["ww",2],"wo","week"),_("W",["WW",2],"Wo","isoWeek"),X("week","w"),X("isoWeek","W"),ee("week",5),ee("isoWeek",5),M("w",U),M("ww",U,oe),M("W",U),M("WW",U,oe),ht(["w","ww","W","WW"],function(e,t,n,a){t[a.substr(0,1)]=W(e)});function Ei(e){return mt(e,this._week.dow,this._week.doy).week}var Ii={dow:0,doy:6};function Gi(){return this._week.dow}function Ai(){return this._week.doy}function Hi(e){var t=this.localeData().week(this);return e==null?t:this.add((e-t)*7,"d")}function Ui(e){var t=mt(this,1,4).week;return e==null?t:this.add((e-t)*7,"d")}_("d",0,"do","day"),_("dd",0,0,function(e){return this.localeData().weekdaysMin(this,e)}),_("ddd",0,0,function(e){return this.localeData().weekdaysShort(this,e)}),_("dddd",0,0,function(e){return this.localeData().weekdays(this,e)}),_("e",0,0,"weekday"),_("E",0,0,"isoWeekday"),X("day","d"),X("weekday","e"),X("isoWeekday","E"),ee("day",11),ee("weekday",11),ee("isoWeekday",11),M("d",U),M("e",U),M("E",U),M("dd",function(e,t){return t.weekdaysMinRegex(e)}),M("ddd",function(e,t){return t.weekdaysShortRegex(e)}),M("dddd",function(e,t){return t.weekdaysRegex(e)}),ht(["dd","ddd","dddd"],function(e,t,n,a){var i=n._locale.weekdaysParse(e,a,n._strict);i!=null?t.d=i:c(n).invalidWeekday=e}),ht(["d","e","E"],function(e,t,n,a){t[a]=W(e)});function zi(e,t){return typeof e!="string"?e:isNaN(e)?(e=t.weekdaysParse(e),typeof e=="number"?e:null):parseInt(e,10)}function Bi(e,t){return typeof e=="string"?t.weekdaysParse(e)%7||7:isNaN(e)?null:e}function Zt(e,t){return e.slice(t,7).concat(e.slice(0,t))}var Vi="Sunday_Monday_Tuesday_Wednesday_Thursday_Friday_Saturday".split("_"),Zn="Sun_Mon_Tue_Wed_Thu_Fri_Sat".split("_"),ji="Su_Mo_Tu_We_Th_Fr_Sa".split("_"),qi=pt,$i=pt,Ki=pt;function Zi(e,t){var n=f(this._weekdays)?this._weekdays:this._weekdays[e&&e!==!0&&this._weekdays.isFormat.test(t)?"format":"standalone"];return e===!0?Zt(n,this._week.dow):e?n[e.day()]:n}function Ji(e){return e===!0?Zt(this._weekdaysShort,this._week.dow):e?this._weekdaysShort[e.day()]:this._weekdaysShort}function Qi(e){return e===!0?Zt(this._weekdaysMin,this._week.dow):e?this._weekdaysMin[e.day()]:this._weekdaysMin}function Xi(e,t,n){var a,i,o,u=e.toLocaleLowerCase();if(!this._weekdaysParse)for(this._weekdaysParse=[],this._shortWeekdaysParse=[],this._minWeekdaysParse=[],a=0;a<7;++a)o=w([2e3,1]).day(a),this._minWeekdaysParse[a]=this.weekdaysMin(o,"").toLocaleLowerCase(),this._shortWeekdaysParse[a]=this.weekdaysShort(o,"").toLocaleLowerCase(),this._weekdaysParse[a]=this.weekdays(o,"").toLocaleLowerCase();return n?t==="dddd"?(i=V.call(this._weekdaysParse,u),i!==-1?i:null):t==="ddd"?(i=V.call(this._shortWeekdaysParse,u),i!==-1?i:null):(i=V.call(this._minWeekdaysParse,u),i!==-1?i:null):t==="dddd"?(i=V.call(this._weekdaysParse,u),i!==-1||(i=V.call(this._shortWeekdaysParse,u),i!==-1)?i:(i=V.call(this._minWeekdaysParse,u),i!==-1?i:null)):t==="ddd"?(i=V.call(this._shortWeekdaysParse,u),i!==-1||(i=V.call(this._weekdaysParse,u),i!==-1)?i:(i=V.call(this._minWeekdaysParse,u),i!==-1?i:null)):(i=V.call(this._minWeekdaysParse,u),i!==-1||(i=V.call(this._weekdaysParse,u),i!==-1)?i:(i=V.call(this._shortWeekdaysParse,u),i!==-1?i:null))}function er(e,t,n){var a,i,o;if(this._weekdaysParseExact)return Xi.call(this,e,t,n);for(this._weekdaysParse||(this._weekdaysParse=[],this._minWeekdaysParse=[],this._shortWeekdaysParse=[],this._fullWeekdaysParse=[]),a=0;a<7;a++){if(i=w([2e3,1]).day(a),n&&!this._fullWeekdaysParse[a]&&(this._fullWeekdaysParse[a]=new RegExp("^"+this.weekdays(i,"").replace(".","\\.?")+"$","i"),this._shortWeekdaysParse[a]=new RegExp("^"+this.weekdaysShort(i,"").replace(".","\\.?")+"$","i"),this._minWeekdaysParse[a]=new RegExp("^"+this.weekdaysMin(i,"").replace(".","\\.?")+"$","i")),this._weekdaysParse[a]||(o="^"+this.weekdays(i,"")+"|^"+this.weekdaysShort(i,"")+"|^"+this.weekdaysMin(i,""),this._weekdaysParse[a]=new RegExp(o.replace(".",""),"i")),n&&t==="dddd"&&this._fullWeekdaysParse[a].test(e))return a;if(n&&t==="ddd"&&this._shortWeekdaysParse[a].test(e))return a;if(n&&t==="dd"&&this._minWeekdaysParse[a].test(e))return a;if(!n&&this._weekdaysParse[a].test(e))return a}}function tr(e){if(!this.isValid())return e!=null?this:NaN;var t=this._isUTC?this._d.getUTCDay():this._d.getDay();return e!=null?(e=zi(e,this.localeData()),this.add(e-t,"d")):t}function nr(e){if(!this.isValid())return e!=null?this:NaN;var t=(this.day()+7-this.localeData()._week.dow)%7;return e==null?t:this.add(e-t,"d")}function ar(e){if(!this.isValid())return e!=null?this:NaN;if(e!=null){var t=Bi(e,this.localeData());return this.day(this.day()%7?t:t-7)}else return this.day()||7}function ir(e){return this._weekdaysParseExact?(p(this,"_weekdaysRegex")||Jt.call(this),e?this._weekdaysStrictRegex:this._weekdaysRegex):(p(this,"_weekdaysRegex")||(this._weekdaysRegex=qi),this._weekdaysStrictRegex&&e?this._weekdaysStrictRegex:this._weekdaysRegex)}function rr(e){return this._weekdaysParseExact?(p(this,"_weekdaysRegex")||Jt.call(this),e?this._weekdaysShortStrictRegex:this._weekdaysShortRegex):(p(this,"_weekdaysShortRegex")||(this._weekdaysShortRegex=$i),this._weekdaysShortStrictRegex&&e?this._weekdaysShortStrictRegex:this._weekdaysShortRegex)}function or(e){return this._weekdaysParseExact?(p(this,"_weekdaysRegex")||Jt.call(this),e?this._weekdaysMinStrictRegex:this._weekdaysMinRegex):(p(this,"_weekdaysMinRegex")||(this._weekdaysMinRegex=Ki),this._weekdaysMinStrictRegex&&e?this._weekdaysMinStrictRegex:this._weekdaysMinRegex)}function Jt(){function e(ae,xe){return xe.length-ae.length}var t=[],n=[],a=[],i=[],o,u,O,L,A;for(o=0;o<7;o++)u=w([2e3,1]).day(o),O=se(this.weekdaysMin(u,"")),L=se(this.weekdaysShort(u,"")),A=se(this.weekdays(u,"")),t.push(O),n.push(L),a.push(A),i.push(O),i.push(L),i.push(A);t.sort(e),n.sort(e),a.sort(e),i.sort(e),this._weekdaysRegex=new RegExp("^("+i.join("|")+")","i"),this._weekdaysShortRegex=this._weekdaysRegex,this._weekdaysMinRegex=this._weekdaysRegex,this._weekdaysStrictRegex=new RegExp("^("+a.join("|")+")","i"),this._weekdaysShortStrictRegex=new RegExp("^("+n.join("|")+")","i"),this._weekdaysMinStrictRegex=new RegExp("^("+t.join("|")+")","i")}function Qt(){return this.hours()%12||12}function sr(){return this.hours()||24}_("H",["HH",2],0,"hour"),_("h",["hh",2],0,Qt),_("k",["kk",2],0,sr),_("hmm",0,0,function(){return""+Qt.apply(this)+ie(this.minutes(),2)}),_("hmmss",0,0,function(){return""+Qt.apply(this)+ie(this.minutes(),2)+ie(this.seconds(),2)}),_("Hmm",0,0,function(){return""+this.hours()+ie(this.minutes(),2)}),_("Hmmss",0,0,function(){return""+this.hours()+ie(this.minutes(),2)+ie(this.seconds(),2)});function Jn(e,t){_(e,0,0,function(){return this.localeData().meridiem(this.hours(),this.minutes(),t)})}Jn("a",!0),Jn("A",!1),X("hour","h"),ee("hour",13);function Qn(e,t){return t._meridiemParse}M("a",Qn),M("A",Qn),M("H",U),M("h",U),M("k",U),M("HH",U,oe),M("hh",U,oe),M("kk",U,oe),M("hmm",Hn),M("hmmss",Un),M("Hmm",Hn),M("Hmmss",Un),G(["H","HH"],q),G(["k","kk"],function(e,t,n){var a=W(e);t[q]=a===24?0:a}),G(["a","A"],function(e,t,n){n._isPm=n._locale.isPM(e),n._meridiem=e}),G(["h","hh"],function(e,t,n){t[q]=W(e),c(n).bigHour=!0}),G("hmm",function(e,t,n){var a=e.length-2;t[q]=W(e.substr(0,a)),t[pe]=W(e.substr(a)),c(n).bigHour=!0}),G("hmmss",function(e,t,n){var a=e.length-4,i=e.length-2;t[q]=W(e.substr(0,a)),t[pe]=W(e.substr(a,2)),t[ye]=W(e.substr(i)),c(n).bigHour=!0}),G("Hmm",function(e,t,n){var a=e.length-2;t[q]=W(e.substr(0,a)),t[pe]=W(e.substr(a))}),G("Hmmss",function(e,t,n){var a=e.length-4,i=e.length-2;t[q]=W(e.substr(0,a)),t[pe]=W(e.substr(a,2)),t[ye]=W(e.substr(i))});function lr(e){return(e+"").toLowerCase().charAt(0)==="p"}var dr=/[ap]\.?m?\.?/i,cr=qe("Hours",!0);function ur(e,t,n){return e>11?n?"pm":"PM":n?"am":"AM"}var Xn={calendar:dt,longDateFormat:ct,invalidDate:Oe,ordinal:li,dayOfMonthOrdinalParse:di,relativeTime:ui,months:xi,monthsShort:zn,week:Ii,weekdays:Vi,weekdaysMin:ji,weekdaysShort:Zn,meridiemParse:dr},B={},wt={},_t;function pr(e,t){var n,a=Math.min(e.length,t.length);for(n=0;n<a;n+=1)if(e[n]!==t[n])return n;return a}function ea(e){return e&&e.toLowerCase().replace("_","-")}function hr(e){for(var t=0,n,a,i,o;t<e.length;){for(o=ea(e[t]).split("-"),n=o.length,a=ea(e[t+1]),a=a?a.split("-"):null;n>0;){if(i=Wt(o.slice(0,n).join("-")),i)return i;if(a&&a.length>=n&&pr(o,a)>=n-1)break;n--}t++}return _t}function gr(e){return e.match("^[^/\\\\]*$")!=null}function Wt(e){var t=null,n;if(B[e]===void 0&&typeof tt<"u"&&tt&&tt.exports&&gr(e))try{t=_t._abbr,n=Ta,n("./locale/"+e),Pe(t)}catch{B[e]=null}return B[e]}function Pe(e,t){var n;return e&&(g(t)?n=be(e):n=Xt(e,t),n?_t=n:typeof console<"u"&&console.warn&&console.warn("Locale "+e+" not found. Did you forget to load it?")),_t._abbr}function Xt(e,t){if(t!==null){var n,a=Xn;if(t.abbr=e,B[e]!=null)me("defineLocaleOverride","use moment.updateLocale(localeName, config) to change an existing locale. moment.defineLocale(localeName, config) should only be used for creating a new locale See http://momentjs.com/guides/#/warnings/define-locale/ for more info."),a=B[e]._config;else if(t.parentLocale!=null)if(B[t.parentLocale]!=null)a=B[t.parentLocale]._config;else if(n=Wt(t.parentLocale),n!=null)a=n._config;else return wt[t.parentLocale]||(wt[t.parentLocale]=[]),wt[t.parentLocale].push({name:e,config:t}),null;return B[e]=new Ee(Me(a,t)),wt[e]&&wt[e].forEach(function(i){Xt(i.name,i.config)}),Pe(e),B[e]}else return delete B[e],null}function fr(e,t){if(t!=null){var n,a,i=Xn;B[e]!=null&&B[e].parentLocale!=null?B[e].set(Me(B[e]._config,t)):(a=Wt(e),a!=null&&(i=a._config),t=Me(i,t),a==null&&(t.abbr=e),n=new Ee(t),n.parentLocale=B[e],B[e]=n),Pe(e)}else B[e]!=null&&(B[e].parentLocale!=null?(B[e]=B[e].parentLocale,e===Pe()&&Pe(e)):B[e]!=null&&delete B[e]);return B[e]}function be(e){var t;if(e&&e._locale&&e._locale._abbr&&(e=e._locale._abbr),!e)return _t;if(!f(e)){if(t=Wt(e),t)return t;e=[e]}return hr(e)}function mr(){return Ie(B)}function en(e){var t,n=e._a;return n&&c(e).overflow===-2&&(t=n[_e]<0||n[_e]>11?_e:n[ge]<1||n[ge]>Yt(n[te],n[_e])?ge:n[q]<0||n[q]>24||n[q]===24&&(n[pe]!==0||n[ye]!==0||n[Ae]!==0)?q:n[pe]<0||n[pe]>59?pe:n[ye]<0||n[ye]>59?ye:n[Ae]<0||n[Ae]>999?Ae:-1,c(e)._overflowDayOfYear&&(t<te||t>ge)&&(t=ge),c(e)._overflowWeeks&&t===-1&&(t=ki),c(e)._overflowWeekday&&t===-1&&(t=Ci),c(e).overflow=t),e}var wr=/^\s*((?:[+-]\d{6}|\d{4})-(?:\d\d-\d\d|W\d\d-\d|W\d\d|\d\d\d|\d\d))(?:(T| )(\d\d(?::\d\d(?::\d\d(?:[.,]\d+)?)?)?)([+-]\d\d(?::?\d\d)?|\s*Z)?)?$/,_r=/^\s*((?:[+-]\d{6}|\d{4})(?:\d\d\d\d|W\d\d\d|W\d\d|\d\d\d|\d\d|))(?:(T| )(\d\d(?:\d\d(?:\d\d(?:[.,]\d+)?)?)?)([+-]\d\d(?::?\d\d)?|\s*Z)?)?$/,yr=/Z|[+-]\d\d(?::?\d\d)?/,Ft=[["YYYYYY-MM-DD",/[+-]\d{6}-\d\d-\d\d/],["YYYY-MM-DD",/\d{4}-\d\d-\d\d/],["GGGG-[W]WW-E",/\d{4}-W\d\d-\d/],["GGGG-[W]WW",/\d{4}-W\d\d/,!1],["YYYY-DDD",/\d{4}-\d{3}/],["YYYY-MM",/\d{4}-\d\d/,!1],["YYYYYYMMDD",/[+-]\d{10}/],["YYYYMMDD",/\d{8}/],["GGGG[W]WWE",/\d{4}W\d{3}/],["GGGG[W]WW",/\d{4}W\d{2}/,!1],["YYYYDDD",/\d{7}/],["YYYYMM",/\d{6}/,!1],["YYYY",/\d{4}/,!1]],tn=[["HH:mm:ss.SSSS",/\d\d:\d\d:\d\d\.\d+/],["HH:mm:ss,SSSS",/\d\d:\d\d:\d\d,\d+/],["HH:mm:ss",/\d\d:\d\d:\d\d/],["HH:mm",/\d\d:\d\d/],["HHmmss.SSSS",/\d\d\d\d\d\d\.\d+/],["HHmmss,SSSS",/\d\d\d\d\d\d,\d+/],["HHmmss",/\d\d\d\d\d\d/],["HHmm",/\d\d\d\d/],["HH",/\d\d/]],vr=/^\/?Date\((-?\d+)/i,br=/^(?:(Mon|Tue|Wed|Thu|Fri|Sat|Sun),?\s)?(\d{1,2})\s(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s(\d{2,4})\s(\d\d):(\d\d)(?::(\d\d))?\s(?:(UT|GMT|[ECMP][SD]T)|([Zz])|([+-]\d{4}))$/,kr={UT:0,GMT:0,EDT:-4*60,EST:-5*60,CDT:-5*60,CST:-6*60,MDT:-6*60,MST:-7*60,PDT:-7*60,PST:-8*60};function ta(e){var t,n,a=e._i,i=wr.exec(a)||_r.exec(a),o,u,O,L,A=Ft.length,ae=tn.length;if(i){for(c(e).iso=!0,t=0,n=A;t<n;t++)if(Ft[t][1].exec(i[1])){u=Ft[t][0],o=Ft[t][2]!==!1;break}if(u==null){e._isValid=!1;return}if(i[3]){for(t=0,n=ae;t<n;t++)if(tn[t][1].exec(i[3])){O=(i[2]||" ")+tn[t][0];break}if(O==null){e._isValid=!1;return}}if(!o&&O!=null){e._isValid=!1;return}if(i[4])if(yr.exec(i[4]))L="Z";else{e._isValid=!1;return}e._f=u+(O||"")+(L||""),an(e)}else e._isValid=!1}function Cr(e,t,n,a,i,o){var u=[Sr(e),zn.indexOf(t),parseInt(n,10),parseInt(a,10),parseInt(i,10)];return o&&u.push(parseInt(o,10)),u}function Sr(e){var t=parseInt(e,10);return t<=49?2e3+t:t<=999?1900+t:t}function xr(e){return e.replace(/\([^()]*\)|[\n\t]/g," ").replace(/(\s\s+)/g," ").replace(/^\s\s*/,"").replace(/\s\s*$/,"")}function Tr(e,t,n){if(e){var a=Zn.indexOf(e),i=new Date(t[0],t[1],t[2]).getDay();if(a!==i)return c(n).weekdayMismatch=!0,n._isValid=!1,!1}return!0}function Mr(e,t,n){if(e)return kr[e];if(t)return 0;var a=parseInt(n,10),i=a%100,o=(a-i)/100;return o*60+i}function na(e){var t=br.exec(xr(e._i)),n;if(t){if(n=Cr(t[4],t[3],t[2],t[5],t[6],t[7]),!Tr(t[1],n,e))return;e._a=n,e._tzm=Mr(t[8],t[9],t[10]),e._d=ft.apply(null,e._a),e._d.setUTCMinutes(e._d.getUTCMinutes()-e._tzm),c(e).rfc2822=!0}else e._isValid=!1}function Dr(e){var t=vr.exec(e._i);if(t!==null){e._d=new Date(+t[1]);return}if(ta(e),e._isValid===!1)delete e._isValid;else return;if(na(e),e._isValid===!1)delete e._isValid;else return;e._strict?e._isValid=!1:r.createFromInputFallback(e)}r.createFromInputFallback=j("value provided is not in a recognized RFC2822 or ISO format. moment construction falls back to js Date(), which is not reliable across all browsers and versions. Non RFC2822/ISO date formats are discouraged. Please refer to http://momentjs.com/guides/#/warnings/js-date/ for more info.",function(e){e._d=new Date(e._i+(e._useUTC?" UTC":""))});function Ke(e,t,n){return e??t??n}function Nr(e){var t=new Date(r.now());return e._useUTC?[t.getUTCFullYear(),t.getUTCMonth(),t.getUTCDate()]:[t.getFullYear(),t.getMonth(),t.getDate()]}function nn(e){var t,n,a=[],i,o,u;if(!e._d){for(i=Nr(e),e._w&&e._a[ge]==null&&e._a[_e]==null&&Or(e),e._dayOfYear!=null&&(u=Ke(e._a[te],i[te]),(e._dayOfYear>gt(u)||e._dayOfYear===0)&&(c(e)._overflowDayOfYear=!0),n=ft(u,0,e._dayOfYear),e._a[_e]=n.getUTCMonth(),e._a[ge]=n.getUTCDate()),t=0;t<3&&e._a[t]==null;++t)e._a[t]=a[t]=i[t];for(;t<7;t++)e._a[t]=a[t]=e._a[t]==null?t===2?1:0:e._a[t];e._a[q]===24&&e._a[pe]===0&&e._a[ye]===0&&e._a[Ae]===0&&(e._nextDay=!0,e._a[q]=0),e._d=(e._useUTC?ft:Ri).apply(null,a),o=e._useUTC?e._d.getUTCDay():e._d.getDay(),e._tzm!=null&&e._d.setUTCMinutes(e._d.getUTCMinutes()-e._tzm),e._nextDay&&(e._a[q]=24),e._w&&typeof e._w.d<"u"&&e._w.d!==o&&(c(e).weekdayMismatch=!0)}}function Or(e){var t,n,a,i,o,u,O,L,A;t=e._w,t.GG!=null||t.W!=null||t.E!=null?(o=1,u=4,n=Ke(t.GG,e._a[te],mt(z(),1,4).year),a=Ke(t.W,1),i=Ke(t.E,1),(i<1||i>7)&&(L=!0)):(o=e._locale._week.dow,u=e._locale._week.doy,A=mt(z(),o,u),n=Ke(t.gg,e._a[te],A.year),a=Ke(t.w,A.week),t.d!=null?(i=t.d,(i<0||i>6)&&(L=!0)):t.e!=null?(i=t.e+o,(t.e<0||t.e>6)&&(L=!0)):i=o),a<1||a>ve(n,o,u)?c(e)._overflowWeeks=!0:L!=null?c(e)._overflowWeekday=!0:(O=Kn(n,a,i,o,u),e._a[te]=O.year,e._dayOfYear=O.dayOfYear)}r.ISO_8601=function(){},r.RFC_2822=function(){};function an(e){if(e._f===r.ISO_8601){ta(e);return}if(e._f===r.RFC_2822){na(e);return}e._a=[],c(e).empty=!0;var t=""+e._i,n,a,i,o,u,O=t.length,L=0,A,ae;for(i=re(e._f,e._locale).match(ce)||[],ae=i.length,n=0;n<ae;n++)o=i[n],a=(t.match(yi(o,e))||[])[0],a&&(u=t.substr(0,t.indexOf(a)),u.length>0&&c(e).unusedInput.push(u),t=t.slice(t.indexOf(a)+a.length),L+=a.length),ue[o]?(a?c(e).empty=!1:c(e).unusedTokens.push(o),bi(o,a,e)):e._strict&&!a&&c(e).unusedTokens.push(o);c(e).charsLeftOver=O-L,t.length>0&&c(e).unusedInput.push(t),e._a[q]<=12&&c(e).bigHour===!0&&e._a[q]>0&&(c(e).bigHour=void 0),c(e).parsedDateParts=e._a.slice(0),c(e).meridiem=e._meridiem,e._a[q]=Pr(e._locale,e._a[q],e._meridiem),A=c(e).era,A!==null&&(e._a[te]=e._locale.erasConvertYear(A,e._a[te])),nn(e),en(e)}function Pr(e,t,n){var a;return n==null?t:e.meridiemHour!=null?e.meridiemHour(t,n):(e.isPM!=null&&(a=e.isPM(n),a&&t<12&&(t+=12),!a&&t===12&&(t=0)),t)}function Yr(e){var t,n,a,i,o,u,O=!1,L=e._f.length;if(L===0){c(e).invalidFormat=!0,e._d=new Date(NaN);return}for(i=0;i<L;i++)o=0,u=!1,t=Y({},e),e._useUTC!=null&&(t._useUTC=e._useUTC),t._f=e._f[i],an(t),D(t)&&(u=!0),o+=c(t).charsLeftOver,o+=c(t).unusedTokens.length*10,c(t).score=o,O?o<a&&(a=o,n=t):(a==null||o<a||u)&&(a=o,n=t,u&&(O=!0));k(e,n||t)}function Lr(e){if(!e._d){var t=jt(e._i),n=t.day===void 0?t.date:t.day;e._a=S([t.year,t.month,n,t.hour,t.minute,t.second,t.millisecond],function(a){return a&&parseInt(a,10)}),nn(e)}}function Wr(e){var t=new Z(en(aa(e)));return t._nextDay&&(t.add(1,"d"),t._nextDay=void 0),t}function aa(e){var t=e._i,n=e._f;return e._locale=e._locale||be(e._l),t===null||n===void 0&&t===""?T({nullInput:!0}):(typeof t=="string"&&(e._i=t=e._locale.preparse(t)),J(t)?new Z(en(t)):(v(t)?e._d=t:f(n)?Yr(e):n?an(e):Fr(e),D(e)||(e._d=null),e))}function Fr(e){var t=e._i;g(t)?e._d=new Date(r.now()):v(t)?e._d=new Date(t.valueOf()):typeof t=="string"?Dr(e):f(t)?(e._a=S(t.slice(0),function(n){return parseInt(n,10)}),nn(e)):h(t)?Lr(e):m(t)?e._d=new Date(t):r.createFromInputFallback(e)}function ia(e,t,n,a,i){var o={};return(t===!0||t===!1)&&(a=t,t=void 0),(n===!0||n===!1)&&(a=n,n=void 0),(h(e)&&C(e)||f(e)&&e.length===0)&&(e=void 0),o._isAMomentObject=!0,o._useUTC=o._isUTC=i,o._l=n,o._i=e,o._f=t,o._strict=a,Wr(o)}function z(e,t,n,a){return ia(e,t,n,a,!1)}var Rr=j("moment().min is deprecated, use moment.max instead. http://momentjs.com/guides/#/warnings/min-max/",function(){var e=z.apply(null,arguments);return this.isValid()&&e.isValid()?e<this?this:e:T()}),Er=j("moment().max is deprecated, use moment.min instead. http://momentjs.com/guides/#/warnings/min-max/",function(){var e=z.apply(null,arguments);return this.isValid()&&e.isValid()?e>this?this:e:T()});function ra(e,t){var n,a;if(t.length===1&&f(t[0])&&(t=t[0]),!t.length)return z();for(n=t[0],a=1;a<t.length;++a)(!t[a].isValid()||t[a][e](n))&&(n=t[a]);return n}function Ir(){var e=[].slice.call(arguments,0);return ra("isBefore",e)}function Gr(){var e=[].slice.call(arguments,0);return ra("isAfter",e)}var Ar=function(){return Date.now?Date.now():+new Date},yt=["year","quarter","month","week","day","hour","minute","second","millisecond"];function Hr(e){var t,n=!1,a,i=yt.length;for(t in e)if(p(e,t)&&!(V.call(yt,t)!==-1&&(e[t]==null||!isNaN(e[t]))))return!1;for(a=0;a<i;++a)if(e[yt[a]]){if(n)return!1;parseFloat(e[yt[a]])!==W(e[yt[a]])&&(n=!0)}return!0}function Ur(){return this._isValid}function zr(){return he(NaN)}function Rt(e){var t=jt(e),n=t.year||0,a=t.quarter||0,i=t.month||0,o=t.week||t.isoWeek||0,u=t.day||0,O=t.hour||0,L=t.minute||0,A=t.second||0,ae=t.millisecond||0;this._isValid=Hr(t),this._milliseconds=+ae+A*1e3+L*6e4+O*1e3*60*60,this._days=+u+o*7,this._months=+i+a*3+n*12,this._data={},this._locale=be(),this._bubble()}function Et(e){return e instanceof Rt}function rn(e){return e<0?Math.round(-1*e)*-1:Math.round(e)}function Br(e,t,n){var a=Math.min(e.length,t.length),i=Math.abs(e.length-t.length),o=0,u;for(u=0;u<a;u++)(n&&e[u]!==t[u]||!n&&W(e[u])!==W(t[u]))&&o++;return o+i}function oa(e,t){_(e,0,0,function(){var n=this.utcOffset(),a="+";return n<0&&(n=-n,a="-"),a+ie(~~(n/60),2)+t+ie(~~n%60,2)})}oa("Z",":"),oa("ZZ",""),M("Z",Ot),M("ZZ",Ot),G(["Z","ZZ"],function(e,t,n){n._useUTC=!0,n._tzm=on(Ot,e)});var Vr=/([\+\-]|\d\d)/gi;function on(e,t){var n=(t||"").match(e),a,i,o;return n===null?null:(a=n[n.length-1]||[],i=(a+"").match(Vr)||["-",0,0],o=+(i[1]*60)+W(i[2]),o===0?0:i[0]==="+"?o:-o)}function sn(e,t){var n,a;return t._isUTC?(n=t.clone(),a=(J(e)||v(e)?e.valueOf():z(e).valueOf())-n.valueOf(),n._d.setTime(n._d.valueOf()+a),r.updateOffset(n,!1),n):z(e).local()}function ln(e){return-Math.round(e._d.getTimezoneOffset())}r.updateOffset=function(){};function jr(e,t,n){var a=this._offset||0,i;if(!this.isValid())return e!=null?this:NaN;if(e!=null){if(typeof e=="string"){if(e=on(Ot,e),e===null)return this}else Math.abs(e)<16&&!n&&(e=e*60);return!this._isUTC&&t&&(i=ln(this)),this._offset=e,this._isUTC=!0,i!=null&&this.add(i,"m"),a!==e&&(!t||this._changeInProgress?ca(this,he(e-a,"m"),1,!1):this._changeInProgress||(this._changeInProgress=!0,r.updateOffset(this,!0),this._changeInProgress=null)),this}else return this._isUTC?a:ln(this)}function qr(e,t){return e!=null?(typeof e!="string"&&(e=-e),this.utcOffset(e,t),this):-this.utcOffset()}function $r(e){return this.utcOffset(0,e)}function Kr(e){return this._isUTC&&(this.utcOffset(0,e),this._isUTC=!1,e&&this.subtract(ln(this),"m")),this}function Zr(){if(this._tzm!=null)this.utcOffset(this._tzm,!1,!0);else if(typeof this._i=="string"){var e=on(wi,this._i);e!=null?this.utcOffset(e):this.utcOffset(0,!0)}return this}function Jr(e){return this.isValid()?(e=e?z(e).utcOffset():0,(this.utcOffset()-e)%60===0):!1}function Qr(){return this.utcOffset()>this.clone().month(0).utcOffset()||this.utcOffset()>this.clone().month(5).utcOffset()}function Xr(){if(!g(this._isDSTShifted))return this._isDSTShifted;var e={},t;return Y(e,this),e=aa(e),e._a?(t=e._isUTC?w(e._a):z(e._a),this._isDSTShifted=this.isValid()&&Br(e._a,t.toArray())>0):this._isDSTShifted=!1,this._isDSTShifted}function eo(){return this.isValid()?!this._isUTC:!1}function to(){return this.isValid()?this._isUTC:!1}function sa(){return this.isValid()?this._isUTC&&this._offset===0:!1}var no=/^(-|\+)?(?:(\d*)[. ])?(\d+):(\d+)(?::(\d+)(\.\d*)?)?$/,ao=/^(-|\+)?P(?:([-+]?[0-9,.]*)Y)?(?:([-+]?[0-9,.]*)M)?(?:([-+]?[0-9,.]*)W)?(?:([-+]?[0-9,.]*)D)?(?:T(?:([-+]?[0-9,.]*)H)?(?:([-+]?[0-9,.]*)M)?(?:([-+]?[0-9,.]*)S)?)?$/;function he(e,t){var n=e,a=null,i,o,u;return Et(e)?n={ms:e._milliseconds,d:e._days,M:e._months}:m(e)||!isNaN(+e)?(n={},t?n[t]=+e:n.milliseconds=+e):(a=no.exec(e))?(i=a[1]==="-"?-1:1,n={y:0,d:W(a[ge])*i,h:W(a[q])*i,m:W(a[pe])*i,s:W(a[ye])*i,ms:W(rn(a[Ae]*1e3))*i}):(a=ao.exec(e))?(i=a[1]==="-"?-1:1,n={y:He(a[2],i),M:He(a[3],i),w:He(a[4],i),d:He(a[5],i),h:He(a[6],i),m:He(a[7],i),s:He(a[8],i)}):n==null?n={}:typeof n=="object"&&("from"in n||"to"in n)&&(u=io(z(n.from),z(n.to)),n={},n.ms=u.milliseconds,n.M=u.months),o=new Rt(n),Et(e)&&p(e,"_locale")&&(o._locale=e._locale),Et(e)&&p(e,"_isValid")&&(o._isValid=e._isValid),o}he.fn=Rt.prototype,he.invalid=zr;function He(e,t){var n=e&&parseFloat(e.replace(",","."));return(isNaN(n)?0:n)*t}function la(e,t){var n={};return n.months=t.month()-e.month()+(t.year()-e.year())*12,e.clone().add(n.months,"M").isAfter(t)&&--n.months,n.milliseconds=+t-+e.clone().add(n.months,"M"),n}function io(e,t){var n;return e.isValid()&&t.isValid()?(t=sn(t,e),e.isBefore(t)?n=la(e,t):(n=la(t,e),n.milliseconds=-n.milliseconds,n.months=-n.months),n):{milliseconds:0,months:0}}function da(e,t){return function(n,a){var i,o;return a!==null&&!isNaN(+a)&&(me(t,"moment()."+t+"(period, number) is deprecated. Please use moment()."+t+"(number, period). See http://momentjs.com/guides/#/warnings/add-inverted-param/ for more info."),o=n,n=a,a=o),i=he(n,a),ca(this,i,e),this}}function ca(e,t,n,a){var i=t._milliseconds,o=rn(t._days),u=rn(t._months);!e.isValid()||(a=a??!0,u&&Vn(e,xt(e,"Month")+u*n),o&&In(e,"Date",xt(e,"Date")+o*n),i&&e._d.setTime(e._d.valueOf()+i*n),a&&r.updateOffset(e,o||u))}var ro=da(1,"add"),oo=da(-1,"subtract");function ua(e){return typeof e=="string"||e instanceof String}function so(e){return J(e)||v(e)||ua(e)||m(e)||co(e)||lo(e)||e===null||e===void 0}function lo(e){var t=h(e)&&!C(e),n=!1,a=["years","year","y","months","month","M","days","day","d","dates","date","D","hours","hour","h","minutes","minute","m","seconds","second","s","milliseconds","millisecond","ms"],i,o,u=a.length;for(i=0;i<u;i+=1)o=a[i],n=n||p(e,o);return t&&n}function co(e){var t=f(e),n=!1;return t&&(n=e.filter(function(a){return!m(a)&&ua(e)}).length===0),t&&n}function uo(e){var t=h(e)&&!C(e),n=!1,a=["sameDay","nextDay","lastDay","nextWeek","lastWeek","sameElse"],i,o;for(i=0;i<a.length;i+=1)o=a[i],n=n||p(e,o);return t&&n}function po(e,t){var n=e.diff(t,"days",!0);return n<-6?"sameElse":n<-1?"lastWeek":n<0?"lastDay":n<1?"sameDay":n<2?"nextDay":n<7?"nextWeek":"sameElse"}function ho(e,t){arguments.length===1&&(arguments[0]?so(arguments[0])?(e=arguments[0],t=void 0):uo(arguments[0])&&(t=arguments[0],e=void 0):(e=void 0,t=void 0));var n=e||z(),a=sn(n,this).startOf("day"),i=r.calendarFormat(this,a)||"sameElse",o=t&&(ne(t[i])?t[i].call(this,n):t[i]);return this.format(o||this.localeData().calendar(i,this,z(n)))}function go(){return new Z(this)}function fo(e,t){var n=J(e)?e:z(e);return this.isValid()&&n.isValid()?(t=le(t)||"millisecond",t==="millisecond"?this.valueOf()>n.valueOf():n.valueOf()<this.clone().startOf(t).valueOf()):!1}function mo(e,t){var n=J(e)?e:z(e);return this.isValid()&&n.isValid()?(t=le(t)||"millisecond",t==="millisecond"?this.valueOf()<n.valueOf():this.clone().endOf(t).valueOf()<n.valueOf()):!1}function wo(e,t,n,a){var i=J(e)?e:z(e),o=J(t)?t:z(t);return this.isValid()&&i.isValid()&&o.isValid()?(a=a||"()",(a[0]==="("?this.isAfter(i,n):!this.isBefore(i,n))&&(a[1]===")"?this.isBefore(o,n):!this.isAfter(o,n))):!1}function _o(e,t){var n=J(e)?e:z(e),a;return this.isValid()&&n.isValid()?(t=le(t)||"millisecond",t==="millisecond"?this.valueOf()===n.valueOf():(a=n.valueOf(),this.clone().startOf(t).valueOf()<=a&&a<=this.clone().endOf(t).valueOf())):!1}function yo(e,t){return this.isSame(e,t)||this.isAfter(e,t)}function vo(e,t){return this.isSame(e,t)||this.isBefore(e,t)}function bo(e,t,n){var a,i,o;if(!this.isValid())return NaN;if(a=sn(e,this),!a.isValid())return NaN;switch(i=(a.utcOffset()-this.utcOffset())*6e4,t=le(t),t){case"year":o=It(this,a)/12;break;case"month":o=It(this,a);break;case"quarter":o=It(this,a)/3;break;case"second":o=(this-a)/1e3;break;case"minute":o=(this-a)/6e4;break;case"hour":o=(this-a)/36e5;break;case"day":o=(this-a-i)/864e5;break;case"week":o=(this-a-i)/6048e5;break;default:o=this-a}return n?o:de(o)}function It(e,t){if(e.date()<t.date())return-It(t,e);var n=(t.year()-e.year())*12+(t.month()-e.month()),a=e.clone().add(n,"months"),i,o;return t-a<0?(i=e.clone().add(n-1,"months"),o=(t-a)/(a-i)):(i=e.clone().add(n+1,"months"),o=(t-a)/(i-a)),-(n+o)||0}r.defaultFormat="YYYY-MM-DDTHH:mm:ssZ",r.defaultFormatUtc="YYYY-MM-DDTHH:mm:ss[Z]";function ko(){return this.clone().locale("en").format("ddd MMM DD YYYY HH:mm:ss [GMT]ZZ")}function Co(e){if(!this.isValid())return null;var t=e!==!0,n=t?this.clone().utc():this;return n.year()<0||n.year()>9999?H(n,t?"YYYYYY-MM-DD[T]HH:mm:ss.SSS[Z]":"YYYYYY-MM-DD[T]HH:mm:ss.SSSZ"):ne(Date.prototype.toISOString)?t?this.toDate().toISOString():new Date(this.valueOf()+this.utcOffset()*60*1e3).toISOString().replace("Z",H(n,"Z")):H(n,t?"YYYY-MM-DD[T]HH:mm:ss.SSS[Z]":"YYYY-MM-DD[T]HH:mm:ss.SSSZ")}function So(){if(!this.isValid())return"moment.invalid(/* "+this._i+" */)";var e="moment",t="",n,a,i,o;return this.isLocal()||(e=this.utcOffset()===0?"moment.utc":"moment.parseZone",t="Z"),n="["+e+'("]',a=0<=this.year()&&this.year()<=9999?"YYYY":"YYYYYY",i="-MM-DD[T]HH:mm:ss.SSS",o=t+'[")]',this.format(n+a+i+o)}function xo(e){e||(e=this.isUtc()?r.defaultFormatUtc:r.defaultFormat);var t=H(this,e);return this.localeData().postformat(t)}function To(e,t){return this.isValid()&&(J(e)&&e.isValid()||z(e).isValid())?he({to:this,from:e}).locale(this.locale()).humanize(!t):this.localeData().invalidDate()}function Mo(e){return this.from(z(),e)}function Do(e,t){return this.isValid()&&(J(e)&&e.isValid()||z(e).isValid())?he({from:this,to:e}).locale(this.locale()).humanize(!t):this.localeData().invalidDate()}function No(e){return this.to(z(),e)}function pa(e){var t;return e===void 0?this._locale._abbr:(t=be(e),t!=null&&(this._locale=t),this)}var ha=j("moment().lang() is deprecated. Instead, use moment().localeData() to get the language configuration. Use moment().locale() to change languages.",function(e){return e===void 0?this.localeData():this.locale(e)});function ga(){return this._locale}var Gt=1e3,Ze=60*Gt,At=60*Ze,fa=(365*400+97)*24*At;function Je(e,t){return(e%t+t)%t}function ma(e,t,n){return e<100&&e>=0?new Date(e+400,t,n)-fa:new Date(e,t,n).valueOf()}function wa(e,t,n){return e<100&&e>=0?Date.UTC(e+400,t,n)-fa:Date.UTC(e,t,n)}function Oo(e){var t,n;if(e=le(e),e===void 0||e==="millisecond"||!this.isValid())return this;switch(n=this._isUTC?wa:ma,e){case"year":t=n(this.year(),0,1);break;case"quarter":t=n(this.year(),this.month()-this.month()%3,1);break;case"month":t=n(this.year(),this.month(),1);break;case"week":t=n(this.year(),this.month(),this.date()-this.weekday());break;case"isoWeek":t=n(this.year(),this.month(),this.date()-(this.isoWeekday()-1));break;case"day":case"date":t=n(this.year(),this.month(),this.date());break;case"hour":t=this._d.valueOf(),t-=Je(t+(this._isUTC?0:this.utcOffset()*Ze),At);break;case"minute":t=this._d.valueOf(),t-=Je(t,Ze);break;case"second":t=this._d.valueOf(),t-=Je(t,Gt);break}return this._d.setTime(t),r.updateOffset(this,!0),this}function Po(e){var t,n;if(e=le(e),e===void 0||e==="millisecond"||!this.isValid())return this;switch(n=this._isUTC?wa:ma,e){case"year":t=n(this.year()+1,0,1)-1;break;case"quarter":t=n(this.year(),this.month()-this.month()%3+3,1)-1;break;case"month":t=n(this.year(),this.month()+1,1)-1;break;case"week":t=n(this.year(),this.month(),this.date()-this.weekday()+7)-1;break;case"isoWeek":t=n(this.year(),this.month(),this.date()-(this.isoWeekday()-1)+7)-1;break;case"day":case"date":t=n(this.year(),this.month(),this.date()+1)-1;break;case"hour":t=this._d.valueOf(),t+=At-Je(t+(this._isUTC?0:this.utcOffset()*Ze),At)-1;break;case"minute":t=this._d.valueOf(),t+=Ze-Je(t,Ze)-1;break;case"second":t=this._d.valueOf(),t+=Gt-Je(t,Gt)-1;break}return this._d.setTime(t),r.updateOffset(this,!0),this}function Yo(){return this._d.valueOf()-(this._offset||0)*6e4}function Lo(){return Math.floor(this.valueOf()/1e3)}function Wo(){return new Date(this.valueOf())}function Fo(){var e=this;return[e.year(),e.month(),e.date(),e.hour(),e.minute(),e.second(),e.millisecond()]}function Ro(){var e=this;return{years:e.year(),months:e.month(),date:e.date(),hours:e.hours(),minutes:e.minutes(),seconds:e.seconds(),milliseconds:e.milliseconds()}}function Eo(){return this.isValid()?this.toISOString():null}function Io(){return D(this)}function Go(){return k({},c(this))}function Ao(){return c(this).overflow}function Ho(){return{input:this._i,format:this._f,locale:this._locale,isUTC:this._isUTC,strict:this._strict}}_("N",0,0,"eraAbbr"),_("NN",0,0,"eraAbbr"),_("NNN",0,0,"eraAbbr"),_("NNNN",0,0,"eraName"),_("NNNNN",0,0,"eraNarrow"),_("y",["y",1],"yo","eraYear"),_("y",["yy",2],0,"eraYear"),_("y",["yyy",3],0,"eraYear"),_("y",["yyyy",4],0,"eraYear"),M("N",dn),M("NN",dn),M("NNN",dn),M("NNNN",Qo),M("NNNNN",Xo),G(["N","NN","NNN","NNNN","NNNNN"],function(e,t,n,a){var i=n._locale.erasParse(e,a,n._strict);i?c(n).era=i:c(n).invalidEra=e}),M("y",$e),M("yy",$e),M("yyy",$e),M("yyyy",$e),M("yo",es),G(["y","yy","yyy","yyyy"],te),G(["yo"],function(e,t,n,a){var i;n._locale._eraYearOrdinalRegex&&(i=e.match(n._locale._eraYearOrdinalRegex)),n._locale.eraYearOrdinalParse?t[te]=n._locale.eraYearOrdinalParse(e,i):t[te]=parseInt(e,10)});function Uo(e,t){var n,a,i,o=this._eras||be("en")._eras;for(n=0,a=o.length;n<a;++n){switch(typeof o[n].since){case"string":i=r(o[n].since).startOf("day"),o[n].since=i.valueOf();break}switch(typeof o[n].until){case"undefined":o[n].until=1/0;break;case"string":i=r(o[n].until).startOf("day").valueOf(),o[n].until=i.valueOf();break}}return o}function zo(e,t,n){var a,i,o=this.eras(),u,O,L;for(e=e.toUpperCase(),a=0,i=o.length;a<i;++a)if(u=o[a].name.toUpperCase(),O=o[a].abbr.toUpperCase(),L=o[a].narrow.toUpperCase(),n)switch(t){case"N":case"NN":case"NNN":if(O===e)return o[a];break;case"NNNN":if(u===e)return o[a];break;case"NNNNN":if(L===e)return o[a];break}else if([u,O,L].indexOf(e)>=0)return o[a]}function Bo(e,t){var n=e.since<=e.until?1:-1;return t===void 0?r(e.since).year():r(e.since).year()+(t-e.offset)*n}function Vo(){var e,t,n,a=this.localeData().eras();for(e=0,t=a.length;e<t;++e)if(n=this.clone().startOf("day").valueOf(),a[e].since<=n&&n<=a[e].until||a[e].until<=n&&n<=a[e].since)return a[e].name;return""}function jo(){var e,t,n,a=this.localeData().eras();for(e=0,t=a.length;e<t;++e)if(n=this.clone().startOf("day").valueOf(),a[e].since<=n&&n<=a[e].until||a[e].until<=n&&n<=a[e].since)return a[e].narrow;return""}function qo(){var e,t,n,a=this.localeData().eras();for(e=0,t=a.length;e<t;++e)if(n=this.clone().startOf("day").valueOf(),a[e].since<=n&&n<=a[e].until||a[e].until<=n&&n<=a[e].since)return a[e].abbr;return""}function $o(){var e,t,n,a,i=this.localeData().eras();for(e=0,t=i.length;e<t;++e)if(n=i[e].since<=i[e].until?1:-1,a=this.clone().startOf("day").valueOf(),i[e].since<=a&&a<=i[e].until||i[e].until<=a&&a<=i[e].since)return(this.year()-r(i[e].since).year())*n+i[e].offset;return this.year()}function Ko(e){return p(this,"_erasNameRegex")||cn.call(this),e?this._erasNameRegex:this._erasRegex}function Zo(e){return p(this,"_erasAbbrRegex")||cn.call(this),e?this._erasAbbrRegex:this._erasRegex}function Jo(e){return p(this,"_erasNarrowRegex")||cn.call(this),e?this._erasNarrowRegex:this._erasRegex}function dn(e,t){return t.erasAbbrRegex(e)}function Qo(e,t){return t.erasNameRegex(e)}function Xo(e,t){return t.erasNarrowRegex(e)}function es(e,t){return t._eraYearOrdinalRegex||$e}function cn(){var e=[],t=[],n=[],a=[],i,o,u=this.eras();for(i=0,o=u.length;i<o;++i)t.push(se(u[i].name)),e.push(se(u[i].abbr)),n.push(se(u[i].narrow)),a.push(se(u[i].name)),a.push(se(u[i].abbr)),a.push(se(u[i].narrow));this._erasRegex=new RegExp("^("+a.join("|")+")","i"),this._erasNameRegex=new RegExp("^("+t.join("|")+")","i"),this._erasAbbrRegex=new RegExp("^("+e.join("|")+")","i"),this._erasNarrowRegex=new RegExp("^("+n.join("|")+")","i")}_(0,["gg",2],0,function(){return this.weekYear()%100}),_(0,["GG",2],0,function(){return this.isoWeekYear()%100});function Ht(e,t){_(0,[e,e.length],0,t)}Ht("gggg","weekYear"),Ht("ggggg","weekYear"),Ht("GGGG","isoWeekYear"),Ht("GGGGG","isoWeekYear"),X("weekYear","gg"),X("isoWeekYear","GG"),ee("weekYear",1),ee("isoWeekYear",1),M("G",Nt),M("g",Nt),M("GG",U,oe),M("gg",U,oe),M("GGGG",$t,qt),M("gggg",$t,qt),M("GGGGG",Dt,Tt),M("ggggg",Dt,Tt),ht(["gggg","ggggg","GGGG","GGGGG"],function(e,t,n,a){t[a.substr(0,2)]=W(e)}),ht(["gg","GG"],function(e,t,n,a){t[a]=r.parseTwoDigitYear(e)});function ts(e){return _a.call(this,e,this.week(),this.weekday(),this.localeData()._week.dow,this.localeData()._week.doy)}function ns(e){return _a.call(this,e,this.isoWeek(),this.isoWeekday(),1,4)}function as(){return ve(this.year(),1,4)}function is(){return ve(this.isoWeekYear(),1,4)}function rs(){var e=this.localeData()._week;return ve(this.year(),e.dow,e.doy)}function os(){var e=this.localeData()._week;return ve(this.weekYear(),e.dow,e.doy)}function _a(e,t,n,a,i){var o;return e==null?mt(this,a,i).year:(o=ve(e,a,i),t>o&&(t=o),ss.call(this,e,t,n,a,i))}function ss(e,t,n,a,i){var o=Kn(e,t,n,a,i),u=ft(o.year,0,o.dayOfYear);return this.year(u.getUTCFullYear()),this.month(u.getUTCMonth()),this.date(u.getUTCDate()),this}_("Q",0,"Qo","quarter"),X("quarter","Q"),ee("quarter",7),M("Q",Gn),G("Q",function(e,t){t[_e]=(W(e)-1)*3});function ls(e){return e==null?Math.ceil((this.month()+1)/3):this.month((e-1)*3+this.month()%3)}_("D",["DD",2],"Do","date"),X("date","D"),ee("date",9),M("D",U),M("DD",U,oe),M("Do",function(e,t){return e?t._dayOfMonthOrdinalParse||t._ordinalParse:t._dayOfMonthOrdinalParseLenient}),G(["D","DD"],ge),G("Do",function(e,t){t[ge]=W(e.match(U)[0])});var ya=qe("Date",!0);_("DDD",["DDDD",3],"DDDo","dayOfYear"),X("dayOfYear","DDD"),ee("dayOfYear",4),M("DDD",Mt),M("DDDD",An),G(["DDD","DDDD"],function(e,t,n){n._dayOfYear=W(e)});function ds(e){var t=Math.round((this.clone().startOf("day")-this.clone().startOf("year"))/864e5)+1;return e==null?t:this.add(e-t,"d")}_("m",["mm",2],0,"minute"),X("minute","m"),ee("minute",14),M("m",U),M("mm",U,oe),G(["m","mm"],pe);var cs=qe("Minutes",!1);_("s",["ss",2],0,"second"),X("second","s"),ee("second",15),M("s",U),M("ss",U,oe),G(["s","ss"],ye);var us=qe("Seconds",!1);_("S",0,0,function(){return~~(this.millisecond()/100)}),_(0,["SS",2],0,function(){return~~(this.millisecond()/10)}),_(0,["SSS",3],0,"millisecond"),_(0,["SSSS",4],0,function(){return this.millisecond()*10}),_(0,["SSSSS",5],0,function(){return this.millisecond()*100}),_(0,["SSSSSS",6],0,function(){return this.millisecond()*1e3}),_(0,["SSSSSSS",7],0,function(){return this.millisecond()*1e4}),_(0,["SSSSSSSS",8],0,function(){return this.millisecond()*1e5}),_(0,["SSSSSSSSS",9],0,function(){return this.millisecond()*1e6}),X("millisecond","ms"),ee("millisecond",16),M("S",Mt,Gn),M("SS",Mt,oe),M("SSS",Mt,An);var Ye,va;for(Ye="SSSS";Ye.length<=9;Ye+="S")M(Ye,$e);function ps(e,t){t[Ae]=W(("0."+e)*1e3)}for(Ye="S";Ye.length<=9;Ye+="S")G(Ye,ps);va=qe("Milliseconds",!1),_("z",0,0,"zoneAbbr"),_("zz",0,0,"zoneName");function hs(){return this._isUTC?"UTC":""}function gs(){return this._isUTC?"Coordinated Universal Time":""}var y=Z.prototype;y.add=ro,y.calendar=ho,y.clone=go,y.diff=bo,y.endOf=Po,y.format=xo,y.from=To,y.fromNow=Mo,y.to=Do,y.toNow=No,y.get=fi,y.invalidAt=Ao,y.isAfter=fo,y.isBefore=mo,y.isBetween=wo,y.isSame=_o,y.isSameOrAfter=yo,y.isSameOrBefore=vo,y.isValid=Io,y.lang=ha,y.locale=pa,y.localeData=ga,y.max=Er,y.min=Rr,y.parsingFlags=Go,y.set=mi,y.startOf=Oo,y.subtract=oo,y.toArray=Fo,y.toObject=Ro,y.toDate=Wo,y.toISOString=Co,y.inspect=So,typeof Symbol<"u"&&Symbol.for!=null&&(y[Symbol.for("nodejs.util.inspect.custom")]=function(){return"Moment<"+this.format()+">"}),y.toJSON=Eo,y.toString=ko,y.unix=Lo,y.valueOf=Yo,y.creationData=Ho,y.eraName=Vo,y.eraNarrow=jo,y.eraAbbr=qo,y.eraYear=$o,y.year=$n,y.isLeapYear=Fi,y.weekYear=ts,y.isoWeekYear=ns,y.quarter=y.quarters=ls,y.month=jn,y.daysInMonth=Yi,y.week=y.weeks=Hi,y.isoWeek=y.isoWeeks=Ui,y.weeksInYear=rs,y.weeksInWeekYear=os,y.isoWeeksInYear=as,y.isoWeeksInISOWeekYear=is,y.date=ya,y.day=y.days=tr,y.weekday=nr,y.isoWeekday=ar,y.dayOfYear=ds,y.hour=y.hours=cr,y.minute=y.minutes=cs,y.second=y.seconds=us,y.millisecond=y.milliseconds=va,y.utcOffset=jr,y.utc=$r,y.local=Kr,y.parseZone=Zr,y.hasAlignedHourOffset=Jr,y.isDST=Qr,y.isLocal=eo,y.isUtcOffset=to,y.isUtc=sa,y.isUTC=sa,y.zoneAbbr=hs,y.zoneName=gs,y.dates=j("dates accessor is deprecated. Use date instead.",ya),y.months=j("months accessor is deprecated. Use month instead",jn),y.years=j("years accessor is deprecated. Use year instead",$n),y.zone=j("moment().zone is deprecated, use moment().utcOffset instead. http://momentjs.com/guides/#/warnings/zone/",qr),y.isDSTShifted=j("isDSTShifted is deprecated. See http://momentjs.com/guides/#/warnings/dst-shifted/ for more information",Xr);function fs(e){return z(e*1e3)}function ms(){return z.apply(null,arguments).parseZone()}function ba(e){return e}var R=Ee.prototype;R.calendar=je,R.longDateFormat=Ge,R.invalidDate=si,R.ordinal=ci,R.preparse=ba,R.postformat=ba,R.relativeTime=pi,R.pastFuture=hi,R.set=we,R.eras=Uo,R.erasParse=zo,R.erasConvertYear=Bo,R.erasAbbrRegex=Zo,R.erasNameRegex=Ko,R.erasNarrowRegex=Jo,R.months=Di,R.monthsShort=Ni,R.monthsParse=Pi,R.monthsRegex=Wi,R.monthsShortRegex=Li,R.week=Ei,R.firstDayOfYear=Ai,R.firstDayOfWeek=Gi,R.weekdays=Zi,R.weekdaysMin=Qi,R.weekdaysShort=Ji,R.weekdaysParse=er,R.weekdaysRegex=ir,R.weekdaysShortRegex=rr,R.weekdaysMinRegex=or,R.isPM=lr,R.meridiem=ur;function Ut(e,t,n,a){var i=be(),o=w().set(a,t);return i[n](o,e)}function ka(e,t,n){if(m(e)&&(t=e,e=void 0),e=e||"",t!=null)return Ut(e,t,n,"month");var a,i=[];for(a=0;a<12;a++)i[a]=Ut(e,a,n,"month");return i}function un(e,t,n,a){typeof e=="boolean"?(m(t)&&(n=t,t=void 0),t=t||""):(t=e,n=t,e=!1,m(t)&&(n=t,t=void 0),t=t||"");var i=be(),o=e?i._week.dow:0,u,O=[];if(n!=null)return Ut(t,(n+o)%7,a,"day");for(u=0;u<7;u++)O[u]=Ut(t,(u+o)%7,a,"day");return O}function ws(e,t){return ka(e,t,"months")}function _s(e,t){return ka(e,t,"monthsShort")}function ys(e,t,n){return un(e,t,n,"weekdays")}function vs(e,t,n){return un(e,t,n,"weekdaysShort")}function bs(e,t,n){return un(e,t,n,"weekdaysMin")}Pe("en",{eras:[{since:"0001-01-01",until:1/0,offset:1,name:"Anno Domini",narrow:"AD",abbr:"AD"},{since:"0000-12-31",until:-1/0,offset:1,name:"Before Christ",narrow:"BC",abbr:"BC"}],dayOfMonthOrdinalParse:/\d{1,2}(th|st|nd|rd)/,ordinal:function(e){var t=e%10,n=W(e%100/10)===1?"th":t===1?"st":t===2?"nd":t===3?"rd":"th";return e+n}}),r.lang=j("moment.lang is deprecated. Use moment.locale instead.",Pe),r.langData=j("moment.langData is deprecated. Use moment.localeData instead.",be);var ke=Math.abs;function ks(){var e=this._data;return this._milliseconds=ke(this._milliseconds),this._days=ke(this._days),this._months=ke(this._months),e.milliseconds=ke(e.milliseconds),e.seconds=ke(e.seconds),e.minutes=ke(e.minutes),e.hours=ke(e.hours),e.months=ke(e.months),e.years=ke(e.years),this}function Ca(e,t,n,a){var i=he(t,n);return e._milliseconds+=a*i._milliseconds,e._days+=a*i._days,e._months+=a*i._months,e._bubble()}function Cs(e,t){return Ca(this,e,t,1)}function Ss(e,t){return Ca(this,e,t,-1)}function Sa(e){return e<0?Math.floor(e):Math.ceil(e)}function xs(){var e=this._milliseconds,t=this._days,n=this._months,a=this._data,i,o,u,O,L;return e>=0&&t>=0&&n>=0||e<=0&&t<=0&&n<=0||(e+=Sa(pn(n)+t)*864e5,t=0,n=0),a.milliseconds=e%1e3,i=de(e/1e3),a.seconds=i%60,o=de(i/60),a.minutes=o%60,u=de(o/60),a.hours=u%24,t+=de(u/24),L=de(xa(t)),n+=L,t-=Sa(pn(L)),O=de(n/12),n%=12,a.days=t,a.months=n,a.years=O,this}function xa(e){return e*4800/146097}function pn(e){return e*146097/4800}function Ts(e){if(!this.isValid())return NaN;var t,n,a=this._milliseconds;if(e=le(e),e==="month"||e==="quarter"||e==="year")switch(t=this._days+a/864e5,n=this._months+xa(t),e){case"month":return n;case"quarter":return n/3;case"year":return n/12}else switch(t=this._days+Math.round(pn(this._months)),e){case"week":return t/7+a/6048e5;case"day":return t+a/864e5;case"hour":return t*24+a/36e5;case"minute":return t*1440+a/6e4;case"second":return t*86400+a/1e3;case"millisecond":return Math.floor(t*864e5)+a;default:throw new Error("Unknown unit "+e)}}function Ms(){return this.isValid()?this._milliseconds+this._days*864e5+this._months%12*2592e6+W(this._months/12)*31536e6:NaN}function Ce(e){return function(){return this.as(e)}}var Ds=Ce("ms"),Ns=Ce("s"),Os=Ce("m"),Ps=Ce("h"),Ys=Ce("d"),Ls=Ce("w"),Ws=Ce("M"),Fs=Ce("Q"),Rs=Ce("y");function Es(){return he(this)}function Is(e){return e=le(e),this.isValid()?this[e+"s"]():NaN}function Ue(e){return function(){return this.isValid()?this._data[e]:NaN}}var Gs=Ue("milliseconds"),As=Ue("seconds"),Hs=Ue("minutes"),Us=Ue("hours"),zs=Ue("days"),Bs=Ue("months"),Vs=Ue("years");function js(){return de(this.days()/7)}var Se=Math.round,Qe={ss:44,s:45,m:45,h:22,d:26,w:null,M:11};function qs(e,t,n,a,i){return i.relativeTime(t||1,!!n,e,a)}function $s(e,t,n,a){var i=he(e).abs(),o=Se(i.as("s")),u=Se(i.as("m")),O=Se(i.as("h")),L=Se(i.as("d")),A=Se(i.as("M")),ae=Se(i.as("w")),xe=Se(i.as("y")),Le=o<=n.ss&&["s",o]||o<n.s&&["ss",o]||u<=1&&["m"]||u<n.m&&["mm",u]||O<=1&&["h"]||O<n.h&&["hh",O]||L<=1&&["d"]||L<n.d&&["dd",L];return n.w!=null&&(Le=Le||ae<=1&&["w"]||ae<n.w&&["ww",ae]),Le=Le||A<=1&&["M"]||A<n.M&&["MM",A]||xe<=1&&["y"]||["yy",xe],Le[2]=t,Le[3]=+e>0,Le[4]=a,qs.apply(null,Le)}function Ks(e){return e===void 0?Se:typeof e=="function"?(Se=e,!0):!1}function Zs(e,t){return Qe[e]===void 0?!1:t===void 0?Qe[e]:(Qe[e]=t,e==="s"&&(Qe.ss=t-1),!0)}function Js(e,t){if(!this.isValid())return this.localeData().invalidDate();var n=!1,a=Qe,i,o;return typeof e=="object"&&(t=e,e=!1),typeof e=="boolean"&&(n=e),typeof t=="object"&&(a=Object.assign({},Qe,t),t.s!=null&&t.ss==null&&(a.ss=t.s-1)),i=this.localeData(),o=$s(this,!n,a,i),n&&(o=i.pastFuture(+this,o)),i.postformat(o)}var hn=Math.abs;function Xe(e){return(e>0)-(e<0)||+e}function zt(){if(!this.isValid())return this.localeData().invalidDate();var e=hn(this._milliseconds)/1e3,t=hn(this._days),n=hn(this._months),a,i,o,u,O=this.asSeconds(),L,A,ae,xe;return O?(a=de(e/60),i=de(a/60),e%=60,a%=60,o=de(n/12),n%=12,u=e?e.toFixed(3).replace(/\.?0+$/,""):"",L=O<0?"-":"",A=Xe(this._months)!==Xe(O)?"-":"",ae=Xe(this._days)!==Xe(O)?"-":"",xe=Xe(this._milliseconds)!==Xe(O)?"-":"",L+"P"+(o?A+o+"Y":"")+(n?A+n+"M":"")+(t?ae+t+"D":"")+(i||a||e?"T":"")+(i?xe+i+"H":"")+(a?xe+a+"M":"")+(e?xe+u+"S":"")):"P0D"}var F=Rt.prototype;F.isValid=Ur,F.abs=ks,F.add=Cs,F.subtract=Ss,F.as=Ts,F.asMilliseconds=Ds,F.asSeconds=Ns,F.asMinutes=Os,F.asHours=Ps,F.asDays=Ys,F.asWeeks=Ls,F.asMonths=Ws,F.asQuarters=Fs,F.asYears=Rs,F.valueOf=Ms,F._bubble=xs,F.clone=Es,F.get=Is,F.milliseconds=Gs,F.seconds=As,F.minutes=Hs,F.hours=Us,F.days=zs,F.weeks=js,F.months=Bs,F.years=Vs,F.humanize=Js,F.toISOString=zt,F.toString=zt,F.toJSON=zt,F.locale=pa,F.localeData=ga,F.toIsoString=j("toIsoString() is deprecated. Please use toISOString() instead (notice the capitals)",zt),F.lang=ha,_("X",0,0,"unix"),_("x",0,0,"valueOf"),M("x",Nt),M("X",_i),G("X",function(e,t,n){n._d=new Date(parseFloat(e)*1e3)}),G("x",function(e,t,n){n._d=new Date(W(e))});return r.version="2.29.4",l(z),r.fn=y,r.min=Ir,r.max=Gr,r.now=Ar,r.utc=w,r.unix=fs,r.months=ws,r.isDate=v,r.locale=Pe,r.invalid=T,r.duration=he,r.isMoment=J,r.weekdays=ys,r.parseZone=ms,r.localeData=be,r.isDuration=Et,r.monthsShort=_s,r.weekdaysMin=bs,r.defineLocale=Xt,r.updateLocale=fr,r.locales=mr,r.weekdaysShort=vs,r.normalizeUnits=le,r.relativeTimeRounding=Ks,r.relativeTimeThreshold=Zs,r.calendarFormat=po,r.prototype=y,r.HTML5_FMT={DATETIME_LOCAL:"YYYY-MM-DDTHH:mm",DATETIME_LOCAL_SECONDS:"YYYY-MM-DDTHH:mm:ss",DATETIME_LOCAL_MS:"YYYY-MM-DDTHH:mm:ss.SSS",DATE:"YYYY-MM-DD",TIME:"HH:mm",TIME_SECONDS:"HH:mm:ss",TIME_MS:"HH:mm:ss.SSS",WEEK:"GGGG-[W]WW",MONTH:"YYYY-MM"},r})});var et={};il(et,{clearHistoryUrl:()=>ll,competitorData:()=>wl,contentFeedback:()=>Cl,continueWriting:()=>yl,createHistoryUrl:()=>Da,expandOutline:()=>vl,filterNlpKeywordsUrl:()=>fl,genieChat:()=>Pl,genieChatClear:()=>Wl,genieChatList:()=>Ll,genieChatSave:()=>Yl,genieImage:()=>Nl,genieImageSave:()=>Ol,genieMode:()=>bl,getLicenseToken:()=>xl,historyData:()=>sl,keywordsData:()=>ml,limitUsage:()=>Ml,nlpKeywords:()=>Al,nlpKeywordsUrl:()=>gl,oneClickBlog:()=>kl,outlines:()=>hl,plagiarismData:()=>_l,relatedKeywords:()=>Gl,removeLicenseToken:()=>Tl,semanticKeywords:()=>Hl,storeApiUrl:()=>Sl,subscriptionUpdateUrl:()=>Dl,topicalMap:()=>Ul,updateUsageUrl:()=>dl,webviewDataCreate:()=>Fl,webviewDataList:()=>El,webviewDeletePost:()=>Rl,webviewGetBlogWizardData:()=>Il,writeIntro:()=>ul,writeTemplates:()=>cl,writeTitle:()=>pl});var Q=window.getGenie.config,$=Q.parserApi,Ma=Q.licenseApi,sl=Q.historyApi+"list",Da=Q.historyApi+"create",ll=Q.historyApi+"clear",dl=Q.baseApi+"user_usage_log",cl=$+"writer-default/generate-templates-content",ul=$+"writer-wizard/generate-intro",pl=$+"writer-wizard/generate-title",hl=$+"writer-wizard/generate-outline",gl=$+"writer-wizard/keyword-cluster",fl=$+"writer-wizard/filter-nlp-keyword",ml=$+"writer-wizard/keyword-doctor",wl=$+"writer-wizard/serp-data",_l=$+"writer-wizard/plagiarism-checker",yl=$+"advanced-writing/continue-writing",vl=$+"advanced-writing/outline-expand",bl=$+"advanced-writing/genie-mode",kl=$+"writer-wizard/generate-one-click-blog",Cl=Q.feedbackApi,Sl=Q.storeApi+window.getGenie.blogWizardData?.post_id,xl=Ma+"get-token",Tl=Ma+"remove-token",Ml=Q.usageLimitStatsApi,Dl=Q.subscriptionUpgradeUrlApi,Nl=$+"genie-image/generate-image",Ol=Q.baseApi+"genie-image/upload",Pl=$+"chat/default",Yl=Q.genieChatApi+"create",Ll=Q.genieChatApi+"list",Wl=Q.genieChatApi+"clear",Fl=Q.webviewBaseApi+"save",Rl=Q.webviewBaseApi+"delete",El=Q.webviewBaseApi+"list",Il=Q.webviewBaseApi+"doc_meta",Gl=$+"writer-wizard/related-keywords",Al=$+"writer-wizard/nlp-keywords",Hl=$+"writer-wizard/semantic-keywords",Ul=$+"writer-wizard/topical-map";var{notification:$c}=window.antd;var{Modal:Zc}=window.antd;var Oa=ol(Na()),mn=class{storeTimeout={};callStoreApi(r,l){if(!!window.getGenie.blogWizardData?.post_id)if(window.getGenie.config.saveData)window.getGenie.config.saveData(r,l);else{let f=et.storeApiUrl+"/"+r+"/";fetch(f,{method:"POST",body:JSON.stringify(l),headers:{"Content-type":"application/json; charset=UTF-8","X-WP-Nonce":window.getGenie.config?.restNonce||""}})}}storeData=r=>{this.storeTimeout[r]&&clearTimeout(this.storeTimeout[r]),this.storeTimeout[r]=setTimeout(()=>{let l=wp.data.select("getgenie").getInputs();this.callStoreApi(r,l[r]||"")},3e3)};copyToClipboard(r){if(navigator?.clipboard&&window?.isSecureContext)return navigator.clipboard.writeText(r);{let l=document.createElement("textarea");return l.value=r,l.style.position="fixed",l.style.left="-999999px",l.style.top="-999999px",document.body.appendChild(l),l.focus(),l.select(),new Promise((f,h)=>{document.execCommand("copy")?f():h(),l.remove()})}}formatLargeNumber(r){if(r<1e3)return r;if(r>=1e3&&r<1e6)return+(r/1e3).toFixed(1)+"K";if(r>=1e6&&r<1e9)return+(r/1e6).toFixed(1)+"M";if(r>=1e9&&r<1e12)return+(r/1e9).toFixed(1)+"B";if(r>=1e12)return+(r/1e12).toFixed(1)+"T"}getDomainName(r){try{return new URL(r).hostname.split(".").slice(-2).join(".")}catch{return""}}saveSidebarControllerOption(r,l){!r||!l||(localStorage.setItem(r,JSON.stringify(l)),r=="getgenie-language"&&wp.data.dispatch("getgenie").setSidebar({currentLanguage:l}))}snakeToTitleCase=r=>r.replace(/^[_]*(.)/,(h,p)=>p.toUpperCase()).replace(/[_]+(.)/g,(h,p)=>" "+p.toUpperCase());camelCaseToTitleCase(r){let l=r.replace(/([A-Z])/g," $1").trim();return l.charAt(0).toUpperCase()+l.slice(1).toLowerCase()}hyphenatedToCamelCase(r){return r.replace(/-([a-z])/g,l=>l[1].toUpperCase())}joinArray(r,l="-"){return r&&r.length>1?r.join(l):""}sortObjArray(r,l){return r.last_nom<l.last_nom?-1:r.last_nom>l.last_nom?1:0}convertToSlug(r){return r?.toLowerCase().replace(/[^\w ]+/g,"").replace(/ +/g,"-")}getCurrentDateTime=r=>window.getGenie?.isPlayground?(0,Oa.default)(r,"YYYY-MM-DD HH:mm:ssZ").format("YYYY-MM-DD, h:mm:ss A"):r;isExistDomain=r=>["shopify","wikipedia","youtube","amazon","aliexpress","walmart","alibaba","bookshop","etsy","flipkart","netflix","reddit","quora"].some(f=>r?.includes(f))},ze=new mn;var{Form:iu,Button:ru}=window.antd;var{Modal:su}=window.antd;var{Tooltip:Vl}=window.antd,jl=({title:d,placement:r,className:l="",color:f,...h})=>React.createElement(Vl,{className:"getgenie-tooltip-icon getgenie-icon-alert-circle",color:f,overlayStyle:{paddingLeft:"8px"},placement:r,...h,title:d,overlayClassName:l,zIndex:9999}),wn=jl;var ql=({size:d=25})=>React.createElement("div",{style:{width:`${d}px`,height:`${d}px`},className:"loading-icon"}),_n=ql;var{ComposeComponents:$l}=window.getGenie.Components.Common.ReduxManager,{Select:Pa,Form:Kl}=window.antd,{Option:Zl}=Pa,{useEffect:Jl}=window.React,pu=$l(({options:d,setInput:r,sidebar:l,getInputs:f,except:h=[],disableList:p=[],name:C="",defaultValue:g="",label:m="",placeholder:v="",className:S="",handleOnChange:k=()=>"",onSearch:w=()=>{},...x})=>{let c=d,N=T=>{k(T),r(C,T)},D=f[C]||g||null;return Jl(()=>{r(C,D)},[l.currentTemplate]),h&&h.length>0&&(c=d.filter(T=>!h.includes(T.value)),h.includes(D)&&(D=c?.[0]?.value)),React.createElement(Kl.Item,{label:m,className:S},React.createElement(Pa,{showSearch:!0,value:D,placeholder:v,name:C,notFoundContent:x?.loading?React.createElement(_n,{width:25}):null,suffixIcon:React.createElement("span",{className:"getgenie-icon-arrow_down"}),onChange:N,onSearch:w,onKeyDown:T=>T.stopPropagation(),filterOption:(T,E)=>E.children.toLowerCase().indexOf(T.toLowerCase())>=0,getPopupContainer:T=>T.parentNode,...x},c.map((T,E)=>React.createElement(Zl,{key:E,disabled:p.includes(T.value),value:T.value},T.label))))},["setInput","getInputs","sidebar"]);var{ComposeComponents:Ql}=window.getGenie.Components.Common.ReduxManager,{Input:Xl,Form:ed}=window.antd,{useEffect:td}=window.React,gu=Ql(({name:d="",setInput:r,sidebar:l,getInputs:f,className:h="",label:p="",defaultValue:C="",errorMessage:g="",...m})=>{let v=w=>{r(d,w.target.value)};td(()=>{r(d,f[d]||C)},[]);let S=f[d]||C,k=l.languages.find(w=>w.value===l.currentLanguage)?.writingDirection;return React.createElement(ed.Item,{label:p,key:d,className:`genie-input ${h}`},React.createElement(Xl.TextArea,{className:k,value:S,onChange:v,onKeyDown:w=>w.stopPropagation(),...m}))},["setInput","getInputs","sidebar"]);var{Row:nd,Col:ad,Card:id}=window.antd,{ComposeComponents:rd}=window.getGenie.Components.Common.ReduxManager,{useState:od,useEffect:Ya}=window.React,mu=rd(({list:d,children:r,column:l=1,handleClick:f,sidebar:h,setSidebar:p,skeleton:C=null,showActiveItem:g=!1,loading:m=!1,value:v="",...S})=>{let[k,w]=od(null),x=24/l;l>2?x=24/(l-2):l>1&&(x=24/(l-1)),Ya(()=>{if(g&&v){let D=d.findIndex(T=>T.title===v);D!==-1&&w(D+"-selected")}},[v]);let c=(D,T,E)=>{w(E+"-selected"),f&&f(D,T)};Ya(()=>{d.length===0&&w(null)},[d]);let N=h.languages.find(D=>D.value===h.currentLanguage)?.writingDirection;return C?React.createElement(C,null):React.createElement("div",{className:"getgenie-card"},React.createElement(nd,{gutter:16},d.map((D,T)=>React.createElement(ad,{xs:24,sm:x,xl:24/l,key:T,className:N},React.createElement(id,{className:k&&k===T+"-selected"?"active":"",key:T,onClick:E=>c(E,D,T),...S},r(D,T))))))},["sidebar","setSidebar"]);var{Button:La,Tooltip:_u}=window.antd,{ComposeComponents:sd}=window.getGenie.Components.Common.ReduxManager,yu=sd(({prevScreen:d=!0,nextScreen:r=!0,enableNextBtn:l=!1,handleNext:f=()=>"",handlePrev:h=()=>"",insertBtn:p="",sidebar:C})=>React.createElement("div",{className:`getgenie-sidebar-footer ${d&&"getgenie-sidebar-footer-grid"}`},d&&React.createElement(La,{type:"primary",onClick:h,className:"prevBtn"},React.createElement("span",{className:"getgenie-icon-arrow"})),React.createElement("div",{className:"btnGrp"},p,r&&React.createElement(La,{type:"primary",onClick:f,disabled:!l,className:"nextBtn"},C.__("Next","getgenie")))),["sidebar"]);var{Popover:bu}=window.antd,{useState:ku}=window.React;var{ComposeComponents:ld}=window.getGenie.Components.Common.ReduxManager,{Input:dd,Form:cd}=window.antd,{useEffect:ud,useState:pd}=window.React,Su=ld(({name:d,sidebar:r,setInput:l,getInputs:f,autoComplete:h="off",className:p="",defaultValue:C="",label:g="",required:m=!1,errorMessage:v="",...S})=>{let[k,w]=pd(!1),x=D=>{let T=D.target.value;l(d,T),T.length?w(!1):w(!0)};ud(()=>{l(d,f[d]||C)},[]);let c=f[d]||C,N=r.languages.find(D=>D.value===r.currentLanguage)?.writingDirection;return React.createElement(cd.Item,{className:`genie-input ${p} ${m&&k&&!c&&"ant-form-item-has-error"}`,label:g},React.createElement(dd,{className:N,value:c,name:d,...S,onChange:x,onKeyDown:D=>D.stopPropagation()}),m&&k&&!c?React.createElement("p",{className:"ant-form-item-explain-error"},v):"")},["setInput","getInputs","sidebar"]);var{Typography:Tu,Tooltip:Mu}=window.antd,Du=wp.data.select("getgenie").sidebar();var{Collapse:Wa,Form:hd}=window.antd,{Panel:gd}=Wa,fd=({children:d,...r})=>React.createElement(hd.Item,null,React.createElement(Wa,{...r,expandIconPosition:"right",expandIcon:l=>React.createElement("span",{className:"getgenie-icon-arrow_down"})},d));fd.Panel=({children:d,...r})=>React.createElement(gd,{...r},d);var{Button:md,Col:Fa,Row:wd}=window.antd,{ComposeComponents:_d}=window.getGenie.Components.Common.ReduxManager,Pu=window.getGenie.config?.sidebar,Yu=_d(({sidebar:d,setSidebar:r,getInputs:l,setInput:f,screenName:h=""})=>{let{imageUrl:p}=d,C=l.searchVolume,g=l.seoEnabled,m=()=>{f("seoEnabled",!g)},v=()=>{r({open:!1})};return React.createElement("div",{className:"getgenie-sidebar-header"},React.createElement(wd,null,React.createElement(Fa,{span:20},React.createElement("img",{className:"main-logo",src:`${p}/logo_black.svg`,alt:"logo"}),["introScreen","outlineScreen","paragraphScreen"].includes(h)&&C?React.createElement(md,{onClick:m,shape:"round",className:"getgenie-sidebar-header-seoBtn"},React.createElement("img",{src:`${p}/badge.png`,alt:"logo"}),"SEO ",g?d.__("Enabled","getgenie"):d.__("Disabled","getgenie")):React.createElement("div",{className:"empty-btn-space"})),React.createElement(Fa,{span:4,className:"getgenie-close-btn"},React.createElement("span",{onClick:v},React.createElement("svg",{width:"10",height:"10",viewBox:"0 0 10 10",fill:"none",xmlns:"http://www.w3.org/2000/svg"},React.createElement("path",{d:"M10 1.00714L8.99286 0L5 3.99286L1.00714 0L0 1.00714L3.99286 5L0 8.99286L1.00714 10L5 6.00714L8.99286 10L10 8.99286L6.00714 5L10 1.00714Z",fill:"#323232"}))))))},["setSidebar","sidebar","getInputs","setInput"]);var{Col:Ra,Row:yd,Switch:vd}=window.antd,{ComposeComponents:bd}=window.getGenie.Components.Common.ReduxManager,{useEffect:kd}=window.React,Wu=bd(({getInputs:d,setInput:r,defaultChecked:l=!1,className:f="",name:h="",label:p="",...C})=>{let g=v=>{r(h,v)},m=d[h]||l;return kd(()=>{r(h,m)},[]),React.createElement(yd,{justify:"space-between",className:`getgenie-switch ${f}`},React.createElement(Ra,{span:18,className:"label"},p),React.createElement(Ra,{span:6,className:"switch"},React.createElement(vd,{name:h,checked:m,...C,onChange:g})))},["setInput","getInputs"]);var{Skeleton:Ru}=window.antd;var{Card:Cd,Skeleton:Sd}=window.antd,xd=({count:d=3})=>React.createElement("div",{className:"getgenie-card-skeleton"},[...Array(d)].map((r,l)=>React.createElement(Cd,{key:l,className:"getgenie-generated-outlines-card"},React.createElement(Sd,{active:!0})))),yn=xd;var{Modal:Gu}=window.antd;var{Modal:Hu}=window.antd;var{useState:Td,useEffect:vn,useCallback:Ea}=window.React,{Drawer:Md}=window.antd,{ComposeComponents:Dd}=window.getGenie.Components.Common.ReduxManager,bn=null,kn=window.getGenie.config?.sidebar||{},Ia=kn?.width||380,K={main:Ia,generatedOutlines:280,analyzeKeywordScreen:350,keywordHeatMap:860,paragraphEditorScreen:350};delete kn?.width;var zu=Dd(({children:d,sidebar:r,setSidebar:l,getInputs:f})=>{let[h,p]=Td(K.main),{open:C,generatedOutlines:g,analyzeKeyword:m}=r,v=f.headTohead||!1,S=!0;window.getGenie.config.wizardScreen==="post"&&r.component==="ScoreAnalysis"&&(S=!1),r.component==="GenieChat"?K.main=430:K.main=Ia;let k=Ea(N,[]),w=Ea(x,[]);vn(()=>{l({width:h})},[h]);function x(D){!bn||(bn=!1,document.removeEventListener("mousemove",k),document.removeEventListener("mouseup",w))}function c(D){D.stopPropagation(),D.preventDefault(),document.addEventListener("mousemove",k),document.addEventListener("mouseup",w),bn=!0}function N(D){let T=document.body.offsetWidth-(D.clientX-document.body.offsetLeft),E=380,I=window.innerWidth*.8;T>E&&T<I&&p(T)}return vn(()=>{m.open&&!g.open&&p(K.main+K.analyzeKeywordScreen),g.open&&!m.open&&p(K.main+K.generatedOutlines),g.open&&m.open&&p(K.main+K.generatedOutlines+K.analyzeKeywordScreen),!g.open&&!m.open&&p(K.main),r.paragraphEditorScreen.open&&m.open&&p(K.main+K.analyzeKeywordScreen+K.paragraphEditorScreen),r.paragraphEditorScreen.open&&!m.open&&p(K.main+K.paragraphEditorScreen),v&&(l({analyzeKeyword:{...l.analyzeKeyword,open:!1},generatedOutlines:{...r.generatedOutlines,open:!1}}),p(K.main+K.keywordHeatMap))},[r.analyzeKeyword.open,r.generatedOutlines.open,r.paragraphEditorScreen.open,v]),vn(()=>{let D=document.querySelector("body"),T=r.rootContainer,{userAgent:E}=window.navigator,I=E.indexOf("Firefox")!=-1||E.indexOf("Safari")!=-1,Y=Z=>D.classList.contains(Z);I&&(Y("is-fullscreen-mode")||Y("elementor-device-desktop")?T.classList.add("getgenie-browser-support"):Y("wc-sass-manager")?T.classList.add("getgenie-browser-support-playground"):T.classList.remove("getgenie-browser-support"))},[r.open]),React.createElement(Md,{rootClassName:"getgenie-drawer",width:"auto",onClose:()=>l({open:!1}),open:C,closable:!1,mask:S,...kn,zIndex:1200,autoFocus:!1},d(h,K),React.createElement("div",{className:"getgenie-sidebar-draggable",onMouseDown:c}))},["sidebar","setSidebar","getInputs"]);var{Table:Vu}=window.antd;var{ComposeComponents:Nd}=window.getGenie.Components.Common.ReduxManager,{Input:Od,Form:Pd}=window.antd,{useEffect:Yd}=window.React,qu=Nd(({name:d,setInput:r,getInputs:l,sidebar:f,handleOnChange:h=()=>"",defaultValue:p=1,max:C=null,label:g="",placeholder:m="",type:v="text",required:S=!1,errorMessage:k="",className:w="",...x})=>{let c=l[d]||p,N=T=>{isNaN(T)||C&&T>C||(h(T),r(d,T))};Yd(()=>{N(l[d]||c)},[f.currentTemplate]);let D=T=>{if(x?.disabled||c===1&&T===-1)return;let E=parseInt(c)+parseInt(T);C&&E>C||(h(E),r(d,E))};return React.createElement(Pd.Item,{initialValue:c,className:`NumberInput ${w}`,label:g,name:d,rules:[{required:S,message:k}]},React.createElement("span",{className:"getgenie-icon-minus icon",onClick:()=>D(-1)}),React.createElement(Od,{...x,type:v,placeholder:m,value:c,defaultValue:c,onChange:T=>N(T.target.value)}),React.createElement("span",{className:"getgenie-icon-plus icon",onClick:()=>D(1)}))},["setInput","getInputs","sidebar"]);var{Slider:Ld,Form:Wd}=window.antd,{ComposeComponents:Fd}=window.getGenie.Components.Common.ReduxManager,{useEffect:Rd}=window.React,Ku=Fd(({label:d,name:r,setInput:l,getInputs:f,sidebar:h,defaultValue:p,message:C,handleOnChange:g=()=>"",className:m="",...v})=>{let S=v.max||5,k=v.min||1,w=N=>{g(N),l(r,N)};Rd(()=>{l(r,f[r]||p)},[h.currentTemplate]);let x=f[r]||p,c=N=>`${N}/${S}`;return React.createElement(Wd.Item,{label:d,className:"getgenie-slider "+m,name:r},React.createElement(Ld,{style:{margin:0},min:k,max:S,...v,defaultValue:x,onChange:w,tooltip:{formatter:c}}))},["getInputs","setInput","sidebar"]);var{Tabs:Ed}=window.antd,{TabPane:Ju}=Ed;var{ComposeComponents:Id}=window.getGenie.Components.Common.ReduxManager,{Button:Gd,Typography:Ad}=window.antd,{useRef:Hd,useState:Ga}=window.React,Xu=Id(({children:d,show:r=!1,top:l=0,left:f=0,text:h="",btnText:p="",href:C="#",textMargin:g=13})=>{let[m,v]=Ga(!1),[S,k]=Ga({top:0}),w=Hd(null);return r?React.createElement("div",{className:"blur-element"},d,React.createElement("div",{className:"blur-element-content",ref:w,onMouseMove:D=>{if(w.current&&D.target.classList.contains("blur-element-content")){let T=w.current.getBoundingClientRect();k({top:D.clientY-T.top-50})}},onMouseOver:()=>{v(!0)},onMouseOut:()=>{v(!1)},style:{top:l,left:f,width:`calc(100% - ${f}px)`,height:`calc(100% - ${l}px)`}},m&&React.createElement("div",{className:"blur-element-text",style:{margin:g,...S}},React.createElement(Ad.Title,{level:4},h),React.createElement(Gd,{type:"primary",href:C,target:"_blank"},p)))):d});var zd={countries:[{label:"Global",value:"global"},{label:"Australia",value:2036},{label:"Canada",value:2124},{label:"India",value:2356},{label:"New Zealand",value:2554},{label:"South Africa",value:2710},{label:"United States (USA)",value:2840},{label:"United Kingdom",value:2826},{label:"Germany",value:2276},{label:"Portugal",value:2620},{label:"Spain",value:2724},{label:"Vietnam",value:2704},{label:"Indonesia",value:2360},{label:"Malaysia",value:2458},{label:"South Korea",value:2410},{label:"Japan",value:2392},{label:"China",value:2156},{label:"Turkey",value:2792},{label:"Ukraine",value:2804},{label:"Italy",value:2380},{label:"France",value:2250},{label:"Poland",value:2616},{label:"Netherland",value:2528},{label:"Lithuania",value:2440},{label:"Hungary",value:2348},{label:"Denmark",value:2208},{label:"Czechia",value:2203},{label:"Thailand",value:2764},{label:"Latvia",value:2428},{label:"Slovakia",value:2703},{label:"Greece",value:2300},{label:"Sweden",value:2752},{label:"Saudi Arabia",value:2682},{label:"Russia",value:2643},{label:"Bulgaria",value:2100},{label:"Mexico",value:2484},{label:"Norway",value:2578},{label:"Pakistan",value:2586},{label:"Israel",value:2376}],languages:[{value:"en",label:"English"},{value:"es",label:"Spanish"},{value:"de",label:"German"}],outputSizes:[{label:"Small",value:"sm"},{label:"Medium",value:"md"},{label:"Large",value:"lg"}],maxToken:[{label:"Small",value:200},{label:"Medium",value:400},{label:"Large",value:1200}],chatCharacters:[{label:"Professional Writer",value:"professional-writer"},{label:"General Purpose",value:"general-purpose"},{label:"Standup Comedian",value:"standup-comedian"},{label:"Life Coach",value:"life-coach"},{label:"Career Counselor",value:"career-counselor"},{label:"Nutritionist",value:"nutritionist"},{label:"Product Manager",value:"product-manager"},{label:"Personal Trainer",value:"personal-trainer"},{label:"Life Hacker",value:"life-hacker"},{label:"Travel Advisor",value:"travel-advisor"},{label:"Mindfulness Coach",value:"mindfulness-coach"},{label:"Financial Advisor",value:"financial-advisor"},{label:"Language Tutor",value:"language-tutor"},{label:"Travel Guide",value:"travel-guide"},{label:"Marketing Expert",value:"marketing-expert"},{label:"Software Developer",value:"software-developer"},{label:"Dating Coach",value:"dating-coach"},{label:"DIY Expert",value:"diy-expert"},{label:"Journalist",value:"journalist"},{label:"Tech Writer",value:"tech-writer"},{label:"Pro Chef",value:"professional-chef"},{label:"Pro Salesperson",value:"professional-salesperson"},{label:"Startup Tech Lawyer",value:"startup-tech-lawyer"},{label:"Email Copywriter",value:"email-copywriter"}]},nt=zd;var{HandleFetch:Bd}=window.getGenie.Components.Common.RequestManager,{ComposeComponents:Vd}=window.getGenie.Components.Common.ReduxManager,{Tooltip:jd}=window.antd,Kp=Vd(({content:d,listName:r,getInputs:l,setInput:f,creativityLevel:h,input:p,sidebar:C,contentType:g=""})=>{let m=(v,S)=>{let k,w=l[r];if(v==="like"){if(w.find(c=>c.title===S&&c.like))return;k=w.map(c=>c.title===S?{...c,like:!0,dislike:!1}:c)}else{if(w.find(c=>c.title===S&&c.dislike))return;k=w.map(c=>c.title===S?{...c,dislike:!0,like:!1}:c)}f(r,k);let x={input:p,output:S,creativity_level:h,feedback_type:v,template_name:g||C.currentTemplate||"unknown",request_hash:C.requestId};Bd(c=>{},"contentFeedback",x)};return React.createElement(jd,{placement:"bottomRight",title:"Is the output good?"},React.createElement("div",{className:"getgenie-giving-feedback",onClick:v=>v.stopPropagation()},React.createElement("span",{onClick:()=>m("like",d.title)},React.createElement("svg",{width:"10",height:"10",viewBox:"0 0 10 10",fill:"none",xmlns:"http://www.w3.org/2000/svg"},React.createElement("path",{fill:`${d.like?"#0FA958":"none"}`,d:"M7.81833 4.16667H5.83333V2.08333C5.83333 1.86232 5.74554 1.65036 5.58926 1.49408C5.43298 1.3378 5.22101 1.25 5 1.25H4.96042C4.75208 1.25 4.58333 1.41875 4.58333 1.62708C4.58333 1.92458 4.49542 2.21542 4.33 2.46292L2.91667 4.58333V8.33333L4.48375 8.725C4.55 8.74167 4.61792 8.75 4.68583 8.75H6.35958C6.51444 8.75007 6.66626 8.70699 6.798 8.62559C6.92974 8.54419 7.03619 8.42769 7.10542 8.28917L8.56375 5.3725C8.62724 5.24545 8.6572 5.10428 8.65079 4.9624C8.64438 4.82052 8.60182 4.68263 8.52714 4.56182C8.45246 4.44101 8.34814 4.34129 8.22408 4.27213C8.10003 4.20298 7.96036 4.16667 7.81833 4.16667Z"}),React.createElement("path",{d:"M5.83333 4.16667H7.81833C7.96036 4.16667 8.10003 4.20298 8.22408 4.27213C8.34814 4.34129 8.45246 4.44101 8.52714 4.56182C8.60182 4.68263 8.64438 4.82052 8.65079 4.9624C8.6572 5.10428 8.62724 5.24545 8.56375 5.3725L7.10542 8.28917C7.03619 8.42769 6.92974 8.54419 6.798 8.62559C6.66626 8.70699 6.51444 8.75007 6.35958 8.75H4.68583C4.61792 8.75 4.55 8.74167 4.48375 8.725L2.91667 8.33333M5.83333 4.16667V2.08333C5.83333 1.86232 5.74554 1.65036 5.58926 1.49408C5.43298 1.3378 5.22101 1.25 5 1.25H4.96042C4.75208 1.25 4.58333 1.41875 4.58333 1.62708C4.58333 1.92458 4.49542 2.21542 4.33 2.46292L2.91667 4.58333V8.33333M5.83333 4.16667H5M2.91667 8.33333H2.08333C1.86232 8.33333 1.65036 8.24554 1.49408 8.08926C1.3378 7.93298 1.25 7.72101 1.25 7.5V5C1.25 4.77899 1.3378 4.56702 1.49408 4.41074C1.65036 4.25446 1.86232 4.16667 2.08333 4.16667H3.125",stroke:"#0FA958",strokeLinecap:"round",strokeLinejoin:"round"}))),React.createElement("span",{onClick:()=>m("dislike",d.title)},React.createElement("svg",{width:"10",height:"10",viewBox:"0 0 10 10",fill:"none",xmlns:"http://www.w3.org/2000/svg"},React.createElement("path",{fill:`${d.dislike?"#EA4646":"none"}`,d:"M2.18166 5.83333H4.16625V7.91667C4.16625 8.13768 4.25404 8.34964 4.41032 8.50592C4.5666 8.6622 4.77857 8.75 4.99958 8.75H5.03958C5.24791 8.75 5.41666 8.58125 5.41666 8.37333C5.41666 8.07542 5.50458 7.78458 5.67 7.53667L7.08333 5.41667L7.08291 1.66667L5.51625 1.275C5.45016 1.25844 5.38229 1.25004 5.31416 1.25H3.64C3.48521 1.25001 3.33348 1.29312 3.20182 1.37452C3.07016 1.45591 2.96377 1.57237 2.89458 1.71083L1.43625 4.6275C1.37276 4.75455 1.3428 4.89572 1.34921 5.0376C1.35562 5.17948 1.39818 5.31737 1.47286 5.43818C1.54754 5.55899 1.65186 5.65871 1.77591 5.72787C1.89997 5.79702 2.03964 5.83333 2.18166 5.83333Z"}),React.createElement("path",{d:"M7.08291 1.66667L5.51625 1.275C5.45016 1.25844 5.38229 1.25004 5.31416 1.25H3.64C3.48521 1.25001 3.33348 1.29312 3.20182 1.37452C3.07016 1.45591 2.96377 1.57237 2.89458 1.71083L1.43625 4.6275C1.37276 4.75455 1.3428 4.89572 1.34921 5.0376C1.35562 5.17948 1.39818 5.31737 1.47286 5.43818C1.54754 5.55899 1.65186 5.65871 1.77591 5.72787C1.89997 5.79702 2.03964 5.83333 2.18166 5.83333H4.16666H5M7.08291 1.66667L7.08333 5.41667L5.67 7.53667C5.50458 7.78458 5.41666 8.07542 5.41666 8.37333C5.41666 8.58125 5.24791 8.75 5.03958 8.75H4.99958C4.77857 8.75 4.5666 8.6622 4.41032 8.50592C4.25404 8.34964 4.16625 8.13768 4.16625 7.91667V5.83333M7.08291 1.66667H7.91666C8.13768 1.66667 8.34964 1.75446 8.50592 1.91074C8.6622 2.06702 8.75 2.27899 8.75 2.5V5C8.75 5.22101 8.6622 5.43298 8.50592 5.58926C8.34964 5.74554 8.13768 5.83333 7.91666 5.83333H6.875",stroke:"#EA4646",strokeLinecap:"round",strokeLinejoin:"round"})))))},["setInput","getInputs","sidebar"]);var at=class{content="";constructor(r=""){this.content=r}escapeRegExp(r){return r.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")}findAllMatch(r=this.content,l=[]){let f=[];for(let h=0;h<l.length;h++){let p=l[h],C=this.findSingleMatch(r,p);f.push({keyword:p,count:C})}return f}findSingleMatch(r=this.content,l=""){let p=this.escapeRegExp(l).split(" ").join(String.raw`(\s+\w+\s+|\s+)`),C=r?.match(new RegExp(p,"gmi"));return C&&C.length>0?C.length:0}};var vt=class{constructor(r,l,f){this.ContentAnalysis=r,this.KeywordFinder=l,this.GenieHelpers=f}getDomainName(r){try{return new URL(r).hostname.split(".").slice(-2).join(".")}catch{return""}}saveCompetitor=r=>{this.GenieHelpers.callStoreApi("serpData",{competitorData:r})};getNlpKeywords=async(r,l,f,h)=>new Promise((p,C)=>{let g=window.getGenie.config,m={method:"POST",headers:{"Content-type":"application/json; charset=UTF-8","Site-Token":g?.siteToken||"","Auth-Token":g?.authToken||"","X-WP-Nonce":g?.restNonce||"","Plugin-Version":g?.version}};(async()=>{let v=f||[],S=[];for(let x of l){m.body=JSON.stringify({textContent:x?.textContent,requestId:x?.requestId});let N=await(await fetch(h,m)).json();for(let D of N?.data||[])S.push(D[0].toLowerCase())}S=[...new Set(S)],m.body=JSON.stringify({mainKeywords:f.length===0?[r]:f.map(x=>x?.keyword||"").slice(0,10),nlpKeywords:S});let k=await fetch(et.filterNlpKeywordsUrl,m).catch(x=>p(v));if(!k.ok){p(v);return}let w=await k.json();try{let x=(w?.data||S)?.map(c=>({keyword:Array.isArray(c)?c[0]:c,type:"nlp"}));v=[...v,...x||[]],v=v.filter((c,N,D)=>N===D.findIndex(T=>T?.keyword===c?.keyword)),p(v)}catch(x){p(v),console.log(x)}})()});analyze=async(r,l)=>new Promise((f,h)=>{let p=[],C={},g={},m=new this.KeywordFinder,v=0,S=0,k=0,w=0;for(let c of r){let N=this.getDomainName(c?.url),T=new this.ContentAnalysis({content:c?.source,url:N,title:c?.title,description:c?.description},l).getStat(),E=m.findAllMatch(c?.source,Object.keys(l.keywords));g[c.keySlug]={url:c.url,title:c.title,rank:w,favicon:c.favicon};for(let Y of E)!l.keywords?.[Y.keyword]?.total||(C[Y.keyword]?C[Y.keyword].heatMap[c.keySlug]={matchedKeyPhrase:Y.count}:C[Y.keyword]={keyPhrase:Y.keyword,recommendation:l.keywords?.[Y.keyword]?.total,heatMap:{[c.keySlug]:{matchedKeyPhrase:Y.count}}});if(w++,c.title==="myContent")continue;let I=parseFloat(T.contentStats.totalScore);p.push({url:c.url,statistics:T.statistics,score:parseInt(Math.ceil(I))||0}),S<I&&(S=parseInt(Math.ceil(I))||0),k+=I}v=Math.ceil(k/p.length-1),v=parseInt(v)||0;let x={headToHeadData:{serpDomains:g,statistics:C},analyzedCompetitors:p,avgScore:v,maxScore:S,firstCompetitorScore:p?.[1]?.score||0};f(x)})};var{Libs:qd,Utilities:ah}=window.getGenie.Components.Common,{ComposeComponents:$d}=window.getGenie.Components.Common.ReduxManager,{Sidebar:Va,BlogWizardUtils:Cn}=window.getGenie.Components,{OutlineScreen:Aa,ParagraphGenerator:Ha,AnalyzeKeywordScreen:Ua,KeywordHeatMap:za}=Va||{},{Col:Ba}=window.antd,{useEffect:it}=window.React,ih=$d(({sidebar:d,setSidebar:r,setInput:l,getInputs:f})=>{let h=window.getGenie.blogWizardData,p=window.getGenie.config.isBlockEditor||window.getGenie.config.wizardScreen==="post",{open:C,generatedOutlines:g,analyzeKeyword:m,paragraphEditorScreen:v}=d;it(()=>{d.open?document.body.classList.add("genie-sidebar-open"):document.body.classList.contains("genie-sidebar-open")&&document.body.classList.remove("genie-sidebar-open"),navigator?.platform==="Win32"&&document.body.classList.add("genie-scrollbar-windows")},[d.open]),it(()=>{if(!p)return;f.seoEnabled?f.searchVolume&&d.component=="BlogScreen"&&r({analyzeKeyword:{...d.analyzeKeyword,open:!0}}):r({analyzeKeyword:{...d.analyzeKeyword,open:!1,loading:!1}})},[f.searchVolume,f.seoEnabled,d.component]),it(()=>{if(!p)return;let x=wp.data.select("core/editor")?.getEditedPostContent();if(x){let c=wp.data.select("core/editor")?.getEditedPostAttribute("title");c&&!x.includes(c)&&(x=`<h1>${c}</h1>`+x),r({currentPostContent:x})}if(!(!h||Object.values(h).filter(Boolean).length<2)){r({component:"BlogScreen",currentTemplate:"blogWizard"});for(let[c,N]of Object.entries(h))if(!(!N||c=="post_id"))if(c==="keywordData"){if(N&&Object.values(N).length>0)for(let[D,T]of Object.entries(N))l(D,T)}else if(c==="serpData"){if(N&&Object.values(N).length>0)for(let[D,T]of Object.entries(N))D==="statisticsData"?r({statisticsData:T}):l(D,T)}else JSON.parse(localStorage.getItem("getgenie-"+c))||l(c,N)}},[]),it(()=>{if(!p)return;let x=d.statisticsData,c=d.currentPostContent;if(!Array.isArray(x?.keywords)&&Cn&&x){let N="",D="";document.getElementsByClassName("block-editor__container")?.length>0?(N=wp.data.select("core/editor")?.getEditedPostAttribute("title"),D=wp.data.select("core/editor")?.getEditedPostAttribute("excerpt")):document.getElementById("wp-content-editor-container")&&(N=document.getElementById("title")?.value,D=document.getElementById("excerpt")?.value),d.currentPostTitle&&(N=d.currentPostTitle),d.currentPostDescription&&(D=d.currentPostDescription);let T={content:c,url:location.origin,title:N,description:D},E=new Cn.ContentAnalysis(T,x),I=d.competitorStats;if(I?.headToHeadData?.statistics){let Y=new at;for(let Z of Object.keys(I?.headToHeadData?.statistics)){let J=Y.findSingleMatch(c,Z);I.headToHeadData.statistics[Z]?.heatMap?.myContent_0||(I.headToHeadData.statistics[Z].heatMap.myContent_0={matchedKeyPhrase:0}),I.headToHeadData.statistics[Z].heatMap.myContent_0.matchedKeyPhrase=J}}r({analyzedContent:E.getStat(),competitorStats:I})}},[d.statisticsData,d.currentPostContent]),it(()=>{let x=d.component==="BlogScreen"&&d.currentScreen==="paragraphScreen";r({paragraphEditorScreen:{...d.paragraphEditorScreen,open:x}})},[d.component,d.currentScreen]),it(()=>{(async()=>{let x=f.competitorData;if(!x||!d.statisticsData||Object.values(d.statisticsData).length===0)return;let c={source:d.currentPostContent,url:location.hostname||"myContent.com",title:"myContent",keySlug:"myContent_0",rank:0,favicon:"default"},N=new vt(Cn.ContentAnalysis,at),D=(x||[]).filter(E=>!ze.isExistDomain(E?.url)).slice(0,10),T=await N.analyze([c,...D],d.statisticsData);r({competitorStats:T})})()},[d.statisticsData,f.competitorData]);let S=Va[d.component]||(()=>""),k=f.headTohead||!1,w=(x,c)=>{let N=x-(m.open?c.analyzeKeywordScreen:0)-(g.open?c.generatedOutlines:0)-(k?c.keywordHeatMap:0)-(v.open?c.paragraphEditorScreen:0);return N>=c.main?N:c.main};return React.createElement(qd.DrawerWrapper,null,(x,c)=>React.createElement("div",{className:"getgenie-sidebar-content"},React.createElement(Ba,{className:"extended-panel"},Ua&&React.createElement(Ua,{visible:d.open&&m.open,width:c.analyzeKeywordScreen}),Aa&&React.createElement(Aa.GeneratedOutlines,{visible:d.open&&g.open,width:c.generatedOutlines}),Ha&&React.createElement(Ha,{visible:d.open&&v.open,width:c.paragraphEditorScreen}),za&&React.createElement(za,{visible:d.open&&k,width:c.keywordHeatMap})),React.createElement(Ba,{className:"wizard-screen",style:{width:`${w(x,c)}px`}},React.createElement(S,null))))},["sidebar","setSidebar","setInput","getInputs"]);var{Alert:oh}=window.antd,sh=wp.data.select("getgenie").sidebar();var{Libs:bt,Utilities:Sn}=window.getGenie.Components.Common,{HandleFetch:ja}=window.getGenie.Components.Common.RequestManager,{ComposeComponents:Kd}=window.getGenie.Components.Common.ReduxManager,{useEffect:Zd,useState:qa}=window.React,{Button:Jd,Typography:Qd}=window.antd,Xd=Kd(({setSidebar:d,setUserHistoryData:r,userHistoryData:l})=>{let[f,h]=qa(1),[p,C]=qa(!1),g=(k=1)=>{C(!0),ja(w=>{C(!1);let x=(w.data?.history||[]).filter(N=>N?.templateTitle),c=k===1?x:[...l.allHistory,...x];r({allHistory:c,isCallable:!1,hasMoreData:w?.data?.total_pages!=k})},"historyData",{page:k})};Zd(()=>{l.isCallable&&g()},[]);let m=k=>{h(f+1),g(k)},v=(k,w)=>{d({component:"UserHistoryDetails"}),r({currentHistoryData:w})},S=()=>{bt.ConfirmModal("You're clearing/removing all historical data of your GetGenie usage.","Are you sure you want to remove them?",()=>{ja(k=>{r({allHistory:[]})},"clearHistoryUrl")})};return React.createElement("div",{className:"getgenie-history getgenie-history-sidebar-content"},React.createElement(bt.DrawerHeader,null),React.createElement("div",{className:"getgenie-history-card-container"},l.allHistory?.length>0?React.createElement(React.Fragment,null,React.createElement(Jd,{onClick:S,type:"primary",className:"history-action-btn clear"},"Clear History"),React.createElement(bt.Card,{list:l?.allHistory,handleClick:v},k=>React.createElement(React.Fragment,null,React.createElement("div",{className:"card-container"},React.createElement("div",{className:"card-heading"},React.createElement("div",{className:"date"},React.createElement("svg",{width:"14",height:"16",viewBox:"0 0 14 16",fill:"none",xmlns:"http://www.w3.org/2000/svg"},React.createElement("path",{d:"M11.6667 2.33334H2.33333C1.59695 2.33334 1 2.9303 1 3.66668V13C1 13.7364 1.59695 14.3333 2.33333 14.3333H11.6667C12.403 14.3333 13 13.7364 13 13V3.66668C13 2.9303 12.403 2.33334 11.6667 2.33334Z",stroke:"#57595F",strokeWidth:"1.5",strokeLinecap:"round",strokeLinejoin:"round"}),React.createElement("path",{d:"M9.66675 1V3.66667",stroke:"#57595F",strokeWidth:"1.5",strokeLinecap:"round",strokeLinejoin:"round"}),React.createElement("path",{d:"M4.33325 1V3.66667",stroke:"#57595F",strokeWidth:"1.5",strokeLinecap:"round",strokeLinejoin:"round"}),React.createElement("path",{d:"M1 6.33334H13",stroke:"#57595F",strokeWidth:"1.5",strokeLinecap:"round",strokeLinejoin:"round"})),React.createElement("span",{className:"date-info"},Sn.GenieHelpers.getCurrentDateTime(k?.date))),React.createElement("h3",{"data-slug":k?.templateSlug},Sn.GenieHelpers.camelCaseToTitleCase(k?.templateTitle))),React.createElement("div",{className:"card-body"},Object.keys(k.input).map((w,x)=>k.input[w]&&React.createElement("p",{key:x}," ",React.createElement("strong",null,Sn.GenieHelpers.camelCaseToTitleCase(w),": "),k.input[w]))))))):p?"":React.createElement(Qd.Title,{level:5,className:"getgenie-not-found-title"},"No record found!"),p?React.createElement(bt.SkeletonCard,{count:5}):"",l.hasMoreData&&l.allHistory?.length?React.createElement(bt.Button,{onClick:()=>m(f+1)},"Load More"):""))},["setSidebar","setUserHistoryData","userHistoryData"]),xn=Xd;var{Libs:ec,Utilities:rt}=window.getGenie.Components.Common,{Card:tc,Tooltip:$a,Button:nc}=window.antd,{ComposeComponents:ac}=window.getGenie.Components.Common.ReduxManager,{useState:Ka}=window.React,ic=ac(({setSidebar:d,userHistoryData:r})=>{let[l,f]=Ka(r.currentHistoryData),[h,p]=Ka(null),C=(g,m)=>{let v="";typeof g=="string"?v=g.replace(/<br\s*[\/]?>/g,`
-`):Array.isArray(g)&&(v=g.join(",").replace(/<br\s*[\/]?>/g,`
-`)),rt.GenieHelpers.copyToClipboard(v).then(()=>{p(m),setTimeout(()=>{p(null)},3e3)}).catch(()=>console.log("error"))};return React.createElement(React.Fragment,null,React.createElement(ec.DrawerHeader,null),React.createElement("div",{className:"getgenie-history getgenie-history-sidebar-content details"},React.createElement("div",{className:"getgenie-history-card-container"},React.createElement("div",{className:"getgenie-card"},React.createElement(nc,{onClick:()=>d({component:"UserHistory"}),type:"primary",className:"history-action-btn back"},React.createElement("span",{className:"getgenie-icon-arrow-left"})),React.createElement(tc,{className:"getgenie-history-card-detail"},React.createElement("div",{className:"date"},React.createElement("svg",{width:"14",height:"16",viewBox:"0 0 14 16",fill:"none",xmlns:"http://www.w3.org/2000/svg"},React.createElement("path",{d:"M11.6667 2.33334H2.33333C1.59695 2.33334 1 2.9303 1 3.66668V13C1 13.7364 1.59695 14.3333 2.33333 14.3333H11.6667C12.403 14.3333 13 13.7364 13 13V3.66668C13 2.9303 12.403 2.33334 11.6667 2.33334Z",stroke:"#57595F",strokeWidth:"1.5",strokeLinecap:"round",strokeLinejoin:"round"}),React.createElement("path",{d:"M9.66675 1V3.66667",stroke:"#57595F",strokeWidth:"1.5",strokeLinecap:"round",strokeLinejoin:"round"}),React.createElement("path",{d:"M4.33325 1V3.66667",stroke:"#57595F",strokeWidth:"1.5",strokeLinecap:"round",strokeLinejoin:"round"}),React.createElement("path",{d:"M1 6.33334H13",stroke:"#57595F",strokeWidth:"1.5",strokeLinecap:"round",strokeLinejoin:"round"})),React.createElement("span",{className:"date-info"},rt.GenieHelpers.getCurrentDateTime(l?.date))),React.createElement("h3",{className:"getgenie-history-title"},rt.GenieHelpers.camelCaseToTitleCase(l?.templateTitle)),React.createElement("div",{className:"getgenie-history-inputs"},Object.keys(l?.input||{}).map((g,m)=>l.input[g]?Array.isArray(l.input[g])?React.createElement("div",{key:m},React.createElement("h4",null,rt.GenieHelpers.camelCaseToTitleCase(g),":"),React.createElement("div",{className:"getgenie-history-inputs-keywords"},l.input[g].map((v,S)=>React.createElement("p",{key:S}," ",v)))):React.createElement("div",{key:m,className:"getgenie-history-inputs-details"},React.createElement("h4",null,rt.GenieHelpers.camelCaseToTitleCase(g),":"),React.createElement("p",null,l.input[g])):"")),React.createElement("div",{className:"output-heading"},React.createElement("h4",null,"Outputs:"),Object.entries(l?.usage||{}).map((g,m)=>React.createElement("h5",{key:m},rt.GenieHelpers.snakeToTitleCase(g?.[0]),": ",g?.[1]))),React.createElement("div",{className:"getgenie-history-card-container-details"},(Array.isArray(l.output)?l.output:[]).map((g,m)=>React.createElement("div",{key:m},l.templateSlug==="keyword-analysis"?React.createElement($a,{key:m,title:h===m?"Copied":"Click to copy",trigger:"hover",placement:"left"},React.createElement("div",{className:"getgenie-history-keyword-output",onClick:v=>C(v.target.closest("div.getgenie-history-keyword-output")?.innerText,m)},React.createElement("span",{style:{display:"block"}},React.createElement("strong",null,"keyword: "),g.keyword),React.createElement("div",{className:"getgenie-history-search-volume"},React.createElement("strong",null,"Search volume: "),React.createElement("div",null,React.createElement("span",null,"Average in 12 month:"),React.createElement("span",null,g?.searchVolume?.avg12Month)),React.createElement("div",null,React.createElement("span",null,"Competition:"," "),React.createElement("span",null,g?.searchVolume?.competition)),React.createElement("div",null,React.createElement("span",null,"CPC:"," "),React.createElement("span",null,g?.searchVolume?.cpc?.currency+g?.searchVolume?.cpc?.value)),React.createElement("div",null,React.createElement("span",null,"Highest:"," "),React.createElement("span",null,g?.searchVolume?.highest)),React.createElement("div",null,React.createElement("span",null,"Last month:"," "),React.createElement("span",null,g?.searchVolume?.lastMonth)),React.createElement("div",null,React.createElement("span",null,"Lowest:"," "),React.createElement("span",null,g?.searchVolume?.lowest)),React.createElement("div",null,React.createElement("span",null,"Total:"," "),React.createElement("span",null,g?.searchVolume?.total," "))))):g?React.createElement($a,{key:m,title:h===m?"Copied":"Click to copy",trigger:"hover",placement:"left"},React.createElement("div",{className:"getgenie-history-keyword-output",onClick:()=>C(g,m)},React.createElement("div",{dangerouslySetInnerHTML:{__html:g}}))):"No output found!"))))))))},["setSidebar","userHistoryData"]),Tn=ic;var{Alert:rc}=window.antd,{HandleFetch:oc}=window.getGenie.Components.Common.RequestManager,{ComposeComponents:sc}=window.getGenie.Components.Common.ReduxManager,{useEffect:lc,useState:dc}=window.React,gh=sc(({getInputs:d,type:r="",names:l=[],showIcon:f=!0,color:h="#263e87",backgroundColor:p="#bffdff",sidebar:C})=>{let[g,m]=dc(null);lc(()=>{if(r=="promotionalNotice"){let S=C.subscriptionStatistics.usagePercentage?.word_generate,k=document.cookie.split(";").filter(w=>w.includes(`getgenie_${r}`));S&&S>=80&&k.length===0&&oc(w=>{w?.status=="success"&&m(React.createElement("div",{dangerouslySetInnerHTML:{__html:w?.data.message}}))},"subscriptionUpdateUrl")}},[C.subscriptionStatistics.usagePercentage]);let v=()=>{let S=new Date;S.setTime(S.getTime()+30*24*60*60*1e3);let k="expires="+S.toUTCString();document.cookie=`getgenie_${r}=1;${k};path=/`};return g?React.createElement("div",{style:{marginBottom:"20px"}},React.createElement(rc,{closable:!0,closeIcon:React.createElement(wn,{title:"Close notice for 30 days"},React.createElement("span",{className:"getgenie-icon-close1"})),afterClose:v,style:{backgroundColor:p,color:h},className:"getgenie_promotional_message",message:g,type:"info",showIcon:!1})):""},["sidebar","getInputs"]);var{Libs:Mn}=window.getGenie.Components.Common,Dn=wp.data.select("getgenie").sidebar(),cc=({newChatHandler:d=void 0,setShowChatList:r=void 0,resetChatHistory:l=void 0})=>React.createElement(React.Fragment,null,d&&React.createElement(Mn.Button,{type:"primary",onClick:d},React.createElement("span",{className:"getgenie-icon-plus"}),Dn.__("New Chat","getgenie")),r&&React.createElement(Mn.Button,{type:"primary",onClick:()=>{r(!0)}},Dn.__("Chat History","getgenie")),l&&React.createElement(Mn.Button,{type:"primary",onClick:l},React.createElement("span",{className:"getgenie-icon-reload"}),Dn.__("Clear All","getgenie"))),kt=cc;var{Libs:Nn,Utilities:uc}=window.getGenie.Components.Common,{Alert:pc}=window.antd,{HandleFetch:hc}=window.getGenie.Components.Common.RequestManager,gc=({oldChatList:d,loading:r,setAllChatData:l,setShowChatList:f,newChatHandler:h,resetChatHistory:p,setOldChatList:C})=>{let g=(v,S)=>{window.getGenie.genieChat={id:S.id},l(S?.messages),f(!1)},m=(v,S)=>{v.stopPropagation();let k=d.filter(w=>w.id!==S);Nn.ConfirmModal("You're removing the selected conversation.","Are you sure you want to remove it?",()=>{C(k),hc(w=>{},"genieChatClear",{id:S})})};return React.createElement("div",{className:"chat-list"},React.createElement("div",{className:"chat-list-buttons"},React.createElement(kt,{newChatHandler:h,resetChatHistory:d.length>0?p:null})),r?React.createElement(Nn.SkeletonCard,{count:5}):React.createElement(React.Fragment,null,React.createElement(Nn.Card,{list:d,handleClick:g},v=>React.createElement(React.Fragment,null,React.createElement("div",{className:"card-container"},React.createElement("div",{className:"card-heading"},React.createElement("h5",null,v?.messages?.[0]?.content),React.createElement("p",null,uc.GenieHelpers.getCurrentDateTime(v?.date))),React.createElement("div",{className:"trash-icon"},React.createElement("span",{className:"getgenie-icon-trash trash",onClick:S=>m(S,v?.id)}))))),d?.length===0&&React.createElement(pc,{className:"no-chat-found",message:"Woops! No chat found.",description:"Create a new chat to start a conversation.",type:"warning"})))},Za=gc;var{useEffect:ot,useState:Te,useRef:Ja}=window.React,{HandleFetch:st,HandleResponse:fc}=window.getGenie.Components.Common.RequestManager,{ComposeComponents:mc}=window.getGenie.Components.Common.ReduxManager,{Libs:We}=window.getGenie.Components.Common,{Row:wc,Col:Qa,Button:On,Tooltip:Bt}=window.antd,Xa=`${window.getGenie.config.assetsUrl}dist/admin/images/genie-head.svg`,_c=`${window.getGenie.config.assetsUrl}dist/admin/images/genie-chat.svg`,yc=`${window.getGenie.config.assetsUrl}dist/admin/audio/click.mp3`,Pn,vc=mc(({sidebar:d,getInputs:r,setInput:l})=>{let f=Ja(null),h=Ja(null),p=r.inputMessage||"",[C,g]=Te(""),[m,v]=Te([]),[S,k]=Te(!1),[w,x]=Te(!0),[c,N]=Te(null),[D,T]=Te(null),[E,I]=Te(!1),[Y,Z]=Te([]),J={"Write a poem about...":"Write a poem about...","Write a blog post for...":"Write a blog post for...","Help me to create a short story about...":"Help me to create a short story about..."},Re={"Email Subject Line":"Write an engaging email subject line about [your product/service].","Email Preheader":"Write an email preheader about [your product/service], that increases open rate.","Email Body Content":"Write the email copy for the email body about [your product/service] that convinces the potential customers."},j=m.length===0,[Ve,me]=Te(!1),ne=window.getGenie.config.wizardScreen==="fluentcrm"?Re:J,we=()=>{me(!0),st(b=>{me(!1);let P=b.data?.getgenie_chats||[];Z(P)},"genieChatList")};ot(()=>{we()},[]);let Me=()=>{if(l("inputMessage",null),p!==""){let b=p.replace(/\n$/,""),P=[...m,{id:m.length,role:"user",content:b}];v(P),ce(P)}},Ee=b=>{if(S&&b.key==="Enter"){b.stopPropagation();return}b.key==="Enter"&&b.shiftKey||(b.key=="Enter"||b?.which==13)&&Me()},Ie=b=>{h.current&&(h.current.innerText=C,l("inputMessage",C)),T(b)},dt=b=>{m.splice(b);let P=[...m,{id:m.length,role:"user",content:Pn}];v(P),je(),ce(P)},je=()=>{h.current.contentEditable=!1,h.current.innerText=C,T(null)},ie=b=>{let P=m.slice(0,b);v(P),ce(P)},ce=b=>{let P=b.map(({id:re,likeStatus:ct,...Ge})=>Ge),H={chatPersonality:r.chatPersonality||d.chatPersonality,maxToken:r.maxToken||d.maxToken,messages:P};k(!0),st(re=>{k(!1),fc(re,()=>{if(!re.data?.content)return;re.data.id=b.length,re.data.likeStatus=null,v([...b,re.data]),new Audio(yc).play(),st(Ge=>{window.getGenie.genieChat={id:Ge.data?.conversation_id},we()},"genieChatSave",{id:window.getGenie.genieChat?.id||null,messages:[...b,re.data],templateSlug:"getgenieChat"})})},"genieChat",H)};ot(()=>{if(h.current){g(h.current.innerText),h.current.contentEditable=!0,h.current.focus(),Pn=h.current.innerText;let b=document.createRange(),P=window.getSelection();b.setStart(h.current.childNodes[0],h.current.innerText.length),b.collapse(!0),P.removeAllRanges(),P.addRange(b),h.current.addEventListener("input",H=>{Pn=H.target.innerText})}},[D]),ot(()=>{let b=f.current;b&&b.scrollHeight>b.clientHeight&&(b.scrollTop=b.scrollHeight-b.clientHeight)},[m]);let De=(b,P)=>{b.stopPropagation();let H=P.replace(/<br\s*\/?>\s*/gi,`
-`);ze.copyToClipboard(H).then(()=>{N(P),setTimeout(()=>{N(null)},2e3)})},Ne=()=>{v([]),x(!0),I(!1),window.getGenie.genieChat={}},ue=()=>{We.ConfirmModal("You're clearing/removing your whole conversation.","Are you sure you want to remove it?",()=>{v([]),x(!0),Z([]),I(!1),st(b=>{},"genieChatClear")})},_=(b,P,H,re)=>{let ct={input:P,output:H,creativity_level:r.creativity,feedback_type:b,template_name:"getgenie-chat"},Ge=m.map(Oe=>(Oe.id===re&&(Oe.likeStatus=b),Oe));v(Ge),st(Oe=>{},"contentFeedback",ct),st(Oe=>{window.getGenie.genieChat={id:Oe.data?.conversation_id},we()},"genieChatSave",{id:window.getGenie.genieChat?.id||null,messages:[...m],templateSlug:"getgenieChat"})};return ot(()=>{ze.saveSidebarControllerOption("getgenie-maxToken",r.maxToken)},[r.maxToken]),ot(()=>{ze.saveSidebarControllerOption("getgenie-chatPersonality",r.chatPersonality)},[r.chatPersonality]),ot(()=>{ze.saveSidebarControllerOption("getgenie-creativity",r.creativity)},[r.creativity]),React.createElement("div",{className:"getgenie-chat"},E?React.createElement(Za,{loading:Ve,oldChatList:Y,setAllChatData:v,setShowChatList:I,newChatHandler:Ne,resetChatHistory:ue,setOldChatList:Z}):React.createElement(React.Fragment,null,j&&React.createElement("div",{className:"genie-chat-welcome"},React.createElement("img",{src:_c,alt:"genie-chat"}),React.createElement("h5",null,d.__("Welcome to ","getgenie")," Genie ",d.__("Chat","getgenie")),React.createElement("p",null,d.__("All you have to do is ask or instruct your Genie to kick off the ","getgenie")," AI ",d.__("magic!","getgenie")," ")),React.createElement("div",{className:"message-container",ref:f},!S&&!j&&React.createElement(On,{onClick:()=>I(!0),type:"primary",className:"genie-chat-history-back"},React.createElement("span",{className:"getgenie-icon-arrow-left"})),m.map((b,P)=>React.createElement("div",{key:P},React.createElement("div",{className:`message ${b.role==="user"?"user-message":"assistant-message"}`},b.role==="user"?React.createElement(React.Fragment,null,React.createElement("div",{className:"message-content-user"},React.createElement("div",{className:"message-content",ref:D===b.id?h:void 0},b.content),!S&&React.createElement("span",{className:"getgenie-icon-edit1 edit-content",onClick:()=>Ie(b.id)})),React.createElement("div",{className:"user-avatar"},React.createElement("img",{src:window.getGenie.config?.avatarUrl}))):React.createElement(React.Fragment,null,React.createElement("div",{className:"assistant-avatar"},React.createElement("img",{src:Xa})),React.createElement("div",{className:"message-content-assistant"},React.createElement("div",{className:"message-content",dangerouslySetInnerHTML:{__html:b.content}}),React.createElement("div",{className:"feedback-area"},React.createElement(Bt,{placement:"bottom",zIndex:9999,title:b?.likeStatus==="like"?"Liked.":"Click to like this result"},React.createElement("span",{onClick:()=>_("like",m[P-1]?.content,b.content,b.id),className:`getgenie-icon-like ${b?.likeStatus==="like"?"liked":""}`})),React.createElement(Bt,{placement:"bottom",zIndex:9999,title:b?.likeStatus==="dislike"?"Disliked.":"Click to dislike this result"},React.createElement("span",{onClick:()=>_("dislike",m[P-1]?.content,b.content,b.id),className:`getgenie-icon-dislike ${b?.likeStatus==="dislike"?"disliked":""}`})),React.createElement(Bt,{placement:"bottom",zIndex:9999,title:"Click to regenerate this response"},React.createElement("span",{onClick:()=>ie(b.id),className:"getgenie-icon-refresh"})),React.createElement(Bt,{placement:"bottom",zIndex:9999,title:c===b.content?"Copied":"Copy this content"},React.createElement("span",{onClick:H=>De(H,b.content),className:"copy-icon getgenie-icon-copy"})))))),D===b.id&&React.createElement("div",{className:"edit-button-container"},React.createElement(We.Button,{className:"save-button",onClick:()=>dt(b.id)},"Save & Submit"),React.createElement(We.Button,{className:"cancel-button",onClick:je},"Cancel")))),S?React.createElement("div",{className:"message assistant-message"},React.createElement("div",{className:"assistant-avatar"},React.createElement("img",{src:Xa})),React.createElement("div",{className:"message-content-blinking"})):""),m.length>0&&React.createElement("div",{className:"genie-chat-buttons"},React.createElement(kt,{newChatHandler:Ne,setShowChatList:I})),j?React.createElement("div",{className:"prompt-chat-container"},React.createElement("div",{className:"prompt-chat-header"},React.createElement("h5",{onClick:()=>x(!w),className:"prompt-auto-command"},w?"Hide":"Show"," prompts",React.createElement("span",{className:`getgenie-icon-arrow_up1 ${w?"":"hide-prompt"}`})),React.createElement(kt,{setShowChatList:I})),w&&React.createElement("div",{className:"prompt-contents"},Object.entries(ne).map(([b,P],H)=>React.createElement(On,{onClick:()=>l("inputMessage",P),key:H,className:"prompt-chat",style:{maxWidth:"100%"}},React.createElement("span",{style:{maxWidth:"100%",overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}},b))))):"",React.createElement("div",{style:{backgroundColor:"#f1f3f8"},className:"chat-controller-container"},React.createElement(wc,{style:{marginTop:"10px"},gutter:16},React.createElement(Qa,{span:12},React.createElement(We.Select,{name:"chatPersonality",className:"maxToken-field",label:React.createElement(React.Fragment,null,d.__("Chat Personality","getgenie"),React.createElement(We.Tooltip,{title:d.__("Choose who you want to chat with","getgenie"),placement:"top"})),options:nt.chatCharacters,defaultValue:d.chatPersonality})),React.createElement(Qa,{span:12},React.createElement(We.Select,{name:"maxToken",className:"maxToken-field",label:React.createElement(React.Fragment,null,d.__("Size","getgenie"),React.createElement(We.Tooltip,{title:d.__("Define the size of the content","getgenie"),placement:"top"})),options:nt.maxToken,defaultValue:d.maxToken}))),React.createElement("div",{className:"input-box-container"},React.createElement(We.Textarea,{type:"text",className:"chat-input",placeholder:"Enter your question/command here...",onKeyUp:Ee,name:"inputMessage"}),React.createElement(On,{disabled:S||!r.inputMessage,className:"genie-chat-btn",onClick:Me},React.createElement("span",{className:"getgenie-icon-send chat-btn-icon"}))))))},["sidebar","setSidebar","setInput","getInputs"]),Yn=vc;var bc=()=>React.createElement(yn,{count:4}),Ln=bc;var{Row:ei,Col:Vt}=window.antd,{Libs:Fe,Utilities:ti,PromotionalNotice:kc}=window.getGenie.Components.Common,{ComposeComponents:Cc}=window.getGenie.Components.Common.ReduxManager,{useEffect:ni}=window.React,Sc=Cc(({unsupportedLanguages:d,setSidebar:r,sidebar:l,getInputs:f,className:h="",language:p=!0,tone:C=!0,creativity:g=!0,result:m=!0,outputSize:v=!1})=>{if(!ti)return;let{GenieHelpers:S}=ti;ni(()=>{S.storeData("creativity")},[f.creativity]),ni(()=>{S.storeData("numberOfResult")},[f.numberOfResult]);let k=Object.values(window.getGenie.config?.templateAssets?.toneOfVoice||{});return k=k.map(w=>({label:w,value:w})),k=k.sort(),k=k.reverse(),React.createElement(React.Fragment,null,React.createElement(ei,{gutter:16,className:h},p&&React.createElement(Vt,{span:24},React.createElement(Fe.Select,{handleOnChange:w=>S.saveSidebarControllerOption("getgenie-language",w),name:"selectedLanguage",except:d,label:React.createElement(React.Fragment,null,l.__("Language","getgenie"),React.createElement(Fe.Tooltip,{title:l.__("Choose the desired language of your input and the outputs","getgenie"),placement:"top"})),options:l.languages,defaultValue:l.currentLanguage})),v&&React.createElement(Vt,{span:12},React.createElement(Fe.Select,{handleOnChange:w=>S.saveSidebarControllerOption("getgenie-outputSize",w),name:"outputSize",label:React.createElement(React.Fragment,null,l.__("Output Size","getgenie"),React.createElement(Fe.Tooltip,{title:l.__("Define what type of size you want the outputs to have","getgenie"),placement:"top"})),options:nt.outputSizes,defaultValue:l.outputSize}))),React.createElement(ei,{style:{marginTop:"10px"},gutter:16,className:h},g&&React.createElement(Vt,{span:12},React.createElement(Fe.Slider,{name:"creativity",handleOnChange:w=>S.saveSidebarControllerOption("getgenie-creativity",w),label:React.createElement(React.Fragment,null,l.__("Creativity","getgenie")," ",React.createElement(Fe.Tooltip,{title:l.__("How much creative you want genie to be","getgenie"),placement:"top"})),message:!1,defaultValue:l?.creativityLevel})),m&&React.createElement(Vt,{span:12},React.createElement(Fe.NumberInput,{name:"numberOfResult",handleOnChange:w=>S.saveSidebarControllerOption("getgenie-numberOfResult",w),className:"ResultLimitNumberInput",max:6,type:"text",defaultValue:l?.numberOfResult,label:React.createElement(React.Fragment,null,l.__("Max Results","getgenie")," ",React.createElement(Fe.Tooltip,{title:l.__("Maximum content you want to generate","getgenie"),placement:"top"})),required:!0,errorMessage:l.__("Please choose valid limit","getgenie")}))),React.createElement(kc,{type:"promotionalNotice",names:["word_generate"]}))},["sidebar","getInputs","setSidebar"]),ai=Sc;var{Libs:fe,ContentFeedback:xc,Utilities:Tc}=window.getGenie.Components.Common,{Alert:Mc,Form:Dc,Tooltip:ii,Divider:Nc}=window.antd,{HandleFetch:Oc,HandleResponse:Pc}=window.getGenie.Components.Common.RequestManager,{ComposeComponents:Yc}=window.getGenie.Components.Common.ReduxManager,{GenieHelpers:Lc}=Tc,{useState:Be,useEffect:Ct}=window.React,ri=[{name:"textContent",label:"Your content",type:"textarea",placeholder:"Enter your text here",required:!0}],Wc=Yc(({setSidebar:d,templates:r,sidebar:l,getInputs:f,setInput:h,contextMenu:p})=>{let C=f.generatedTemplateContents||[];C=[...new Set(C)];let[g,m]=Be([]),[v,S]=Be(""),[k,w]=Be(!1),[x,c]=Be(ri),[N,D]=Be(!1),[T,E]=Be([]),I=l.currentWritingMode,{currentTemplate:Y,existingInputValue:Z}=l,{isBlockEditor:J,wizardScreen:Re}=window.getGenie.config,j=["continueWriting","expandOutline","genieMode","content-rewriter"].includes(Y),Ve=j&&I==="advance"||Y=="default",{selectedText:me,beforeCaret:ne}=p.inputContent,[we,Me]=Be("");Ct(()=>{let _=r.list.map(b=>({value:b.templateSlug,label:b.title,inputFields:b?.inputFields||[]}));_.push({value:"genieMode",label:"Genie Mode"}),m(_),d({analyzeKeyword:{...l.analyzeKeyword,open:!1},generatedOutlines:{...l.generatedOutlines,open:!1}})},[]),Ct(()=>{Re==="post"&&J&&!j&&!l.isWpModalOpen&&d({toolbarWriting:!1,insertTextCallback:Fn.insertTemplateInPostEditor})},[Y]),Ct(()=>{h("generatedTemplateContents","")},[me,ne,l.existingInputValue,l.currentTemplate]),Ct(()=>{if(!l.open)return;let _=r.list.find(H=>H.templateSlug===Y),b=_?.inputFields;(!b||b.length===0)&&(b=ri);let P=b[0]?.name;c(b),E(_?.unsupportedLanguages),l.existingInputValue&&h(P,Z),Y==="expandOutline"||Y==="genieMode"?h(P,me?.replace(/<br\s*[\/]?>/g,"")):Y==="continueWriting"&&h(P,ne.replace(/<br\s*[\/]?>/g,""))},[Y,l.open,me]);let Ee=()=>{let _={},b="writeTemplates";if(["continueWriting","expandOutline","genieMode"].includes(Y)){let P=wp.data.select("getgenie").getTemplateInputs();_={outputSize:f.outputSize,input:{title:wp.data.select("core/editor")?.getCurrentPost()?.title||P?.blogWizard?.selectedTitle||"",keyword:P?.blogWizard?.keyword||"",context:P?.[Y]?.inputContext||"",textContent:f.textContent}},b=Y}else{let P={};for(let H of x)P[H.name]=f[H.name]||"";_={input:P}}_.templateSlug=Y,h("generatedTemplateContents",""),D(!0),Oc(P=>{D(!1),Pc(P,()=>{let H=P.data.map(re=>({title:re,like:!1,dislike:!1}));h("generatedTemplateContents",H),w(!0),setTimeout(()=>w(!1),4e3)})},b,_)};Ct(()=>{l.open||l.rootContainer.querySelectorAll(".ant-tooltip.generated-content-copied-text").forEach(_=>_.style.visibility="hidden")},[l.open]);let Ie=(_,b)=>{l.rootContainer.querySelectorAll(".ant-tooltip.generated-content-copied-text").forEach(H=>H.style.visibility="visible");let P=b.title.replace(/<br\s*\/?>/gi,`
-`);Lc.copyToClipboard(P).then(()=>{S(b.title),setTimeout(()=>{S(null)},2e3)})},dt=(_,b)=>{if(we!==b){_.stopPropagation();try{j?["content-rewriter","genieMode"].includes(Y)?p.contextMenuCallback.rewrite(b,p.insertionField,p.inputContent):p.contextMenuCallback[Y](b,p.insertionField,p.inputContent):l.insertTextCallback(b,l.insertTextField),Me(b)}catch{fe.ErrorModal({title:l.__("Oops! I'm not sure where to insert the content.","getgenie"),content:l.__("Please click on the field to select where you want the content to be inserted.","getgenie")})}}},je=_=>{d({currentTemplate:_})},ie=()=>{d({component:"TemplateListScreen"})},ce=["continueWriting","expandOutline"].includes(Y),De=l.__(`You can give context or specific instruction on how GetGenie should ${Y=="expandOutline"?"write the content under this heading":"continue writing after the selected content"}.`,"getgenie"),Ne=l.__(`e.g. ${Y=="expandOutline"?"make it a list, explain how to reach out and start communicating":"describe how to close an email, continue the idea in detail"}, etc.`,"getgenie"),ue=l.languages.find(_=>_.value===l.currentLanguage)?.sml;return React.createElement(React.Fragment,null,React.createElement(fe.DrawerHeader,null),React.createElement(Dc,{layout:"vertical",className:"getgenie-sidebar-writing-form",onFinish:Ee},React.createElement("div",{className:"getgenie-sidebar-writing"},Ve?"":React.createElement(fe.Select,{handleOnChange:je,name:"selectedTemplate",defaultValue:Y,size:"large",label:l.__("Select Template","getgenie"),options:g}),x.map((_,b)=>React.createElement(fe.Textarea,{disabled:Y==="expandOutline",key:b,label:React.createElement("span",null,_?.label||""," ",_?.required?React.createElement("span",{style:{display:"inline-block",color:"red"}},"*"):`(${l.__("Optional","getgenie")})`),name:_?.name,rows:4,placeholder:_?.placeholder,required:_?.required})),ce?React.createElement(fe.Textarea,{label:React.createElement(React.Fragment,null,l.__("Additional Instructions (Optional)","getgenie"),React.createElement(fe.Tooltip,{title:De,placement:"top"})),name:"inputContext",rows:4,placeholder:Ne}):"",React.createElement(Nc,null),React.createElement(ai,{className:"getgenie-sidebar-controller-options",language:Y!=="genieMode",outputSize:ce&&ue,unsupportedLanguages:T,tone:Y!=="genieMode"&&!(ce&&ue)}),React.createElement(fe.Button,{htmlType:"submit",type:"primary",loading:N},l.__("Write","getgenie"))),React.createElement(React.Fragment,null,React.createElement("div",{className:"getgenie-card-container editor",style:{backgroundColor:C.length===0&&"transparent"}},React.createElement(fe.Card,{list:C,handleClick:Ie,column:1,skeleton:N?()=>React.createElement(fe.SkeletonSingle,{count:5}):""},_=>React.createElement(React.Fragment,null,React.createElement(ii,{overlayClassName:"generated-content-copied-text",placement:"right",title:v===_.title&&"Copied",visible:v===_.title&&l.open,zIndex:999999},React.createElement("h5",{className:"generated-content"},React.createElement("div",{dangerouslySetInnerHTML:{__html:_.title}}))),React.createElement(xc,{content:_,input:f[x[0]?.name]||"",creativityLevel:f.creativity,listName:"generatedTemplateContents"}),(J||["post","elementor","bricks","ct_builder","fluentcrm"].includes(Re))&&!p?.isDisable?.[Y]?React.createElement(ii,{zIndex:999999,title:we!==_?.title?"Insert this content":"Inserted",placement:"topLeft"},React.createElement("span",{className:`getgenie-insert-content ${we===_?.title?"getgenie-icon-check":"getgenie-icon-plus"}`,onClick:b=>dt(b,_.title)})):"")),k&&React.createElement(Mc,{className:"template-screen-alert",message:l.__("Click on the text to copy","getgenie"),closeText:l.__("Okay","getgenie"),closable:!0})))),l.toolbarWriting||window.location.hash==="#write-for-me"?"":React.createElement(fe.DrawerFooter,{prevScreen:!0,nextScreen:!1,handlePrev:ie}))},["setSidebar","templates","sidebar","getInputs","setInput","contextMenu"]),Wn=Wc;var s={__:window?.wp?.i18n?.__||((d,r)=>d)},Fc={"meta-description":{title:s.__("Meta-Description","getgenie"),templateSlug:"meta-description",description:s.__("Leverage SERP rankings with outstanding meta description of your blog post/page","getgenie"),inputFields:[{label:s.__("Blog Post Title","getgenie"),name:"blogPostTitle",sample:"What Is Off-Page SEO? A Comprehensive Guide",placeholder:s.__("Enter the blog post title here","getgenie"),required:!0},{label:s.__("Focus Keyword","getgenie"),name:"focusKeyword",sample:"Off-Page SEO guide",placeholder:s.__("Enter the focus keyword/keyphrase for this meta description","getgenie"),required:!0}],categories:{}},"listicle-ideas":{title:s.__("Listicle Ideas","getgenie"),templateSlug:"listicle-ideas",description:s.__("Generate title ideas for listicles for your given topic and get ahead of your competition","getgenie"),inputFields:[{label:s.__("Topic","getgenie"),name:"topic",sample:"Enter the topic for listicle ideas",placeholder:s.__("Enter the topic and additional instructions (if any) for the listicle ideas","getgenie"),required:!0}],categories:{}},definition:{title:s.__("Definition","getgenie"),templateSlug:"definition",description:s.__("Need a brief explanation? Want to utilize featured snippets? Try our definition template","getgenie"),inputFields:[{label:s.__("Topic","getgenie"),name:"topic",sample:"venture capital",placeholder:s.__("Enter the topic for the definition","getgenie"),required:!0}],categories:{}},"sentence-rewriter":{title:s.__("Sentence Rewriter","getgenie"),templateSlug:"sentence-rewriter",description:s.__("Get different variations of your given sentence with rewritten versions from Genie","getgenie"),inputFields:[{label:s.__("Sentence to Rewrite","getgenie"),name:"sentenceToRewrite",sample:"When we talk about a particular topic, clarity is very important.",placeholder:s.__("Enter your sentence to get a rewritten version","getgenie"),required:!0}],categories:{}},"featured-snippet-numbered-list":{title:s.__("Featured Snippet (Numbered List)","getgenie"),templateSlug:"featured-snippet-numbered-list",description:s.__("Get a detailed numbered list of how to do something with a simple one-liner input","getgenie"),inputFields:[{label:s.__("Topic","getgenie"),name:"topic",sample:"how to take care of a cat",placeholder:s.__("Enter the topic for the list of steps","getgenie"),required:!0}],categories:{}},"title-ideas":{title:s.__("Title Ideas","getgenie"),templateSlug:"title-ideas",description:s.__("Get multiple title ideas off an initial title to get a variation or deploying in headers","getgenie"),inputFields:[{label:s.__("Topic","getgenie"),name:"topic",sample:"Fast fashion trend",placeholder:s.__("Enter your desired topic for title generation","getgenie"),required:!0}],categories:{}},"short-answer":{title:s.__("Short Answer","getgenie"),templateSlug:"short-answer",description:s.__("Generate brief, one-sentence answer to any given question to utilize in your content","getgenie"),inputFields:[{label:s.__("Question","getgenie"),name:"question",sample:"What is depreciation in accounting?",placeholder:s.__("Enter your question","getgenie"),required:!0}],categories:{}},"related-topics":{title:s.__("Related Topics","getgenie"),templateSlug:"related-topics",description:s.__("Stuck with your content? Input a paragraph and get a list of related topics to cover","getgenie"),inputFields:[{label:s.__("Content","getgenie"),name:"content",sample:"Bollywood, an Indian Hollywood, refers to the Hindi-language movie industry in India. The term Bollywood combines Bombay (where most Hindi movies are made) and Hollywood (where most American movies are made). Bollywood makes many movies each year. Many Bollywood movies are called Masala movies.",placeholder:s.__("Enter a paragraph/snippet of content","getgenie"),required:!0}],categories:{}},"paragraph-compression":{title:s.__("Paragraph Compression","getgenie"),templateSlug:"paragraph-compression",description:s.__("Generate a short summary of a paragraph keeping the gist, tone, and context intact","getgenie"),inputFields:[{label:s.__("Paragraph","getgenie"),name:"paragraph",sample:"With the introduction of a \u2018professional portfolio\u2019 by LinkedIn, you can now easily share visual content on your LinkedIn profile to demonstrate your capabilities more than what CVs ever could. From portfolio pieces to presentations to videos, you can now display your work on your profile by importing the content from a webpage or uploading your favorite work pieces straight from your computer. Instead of telling potential employers what you can do, display your work and let it speak for itself.",placeholder:s.__("Enter the paragraph to be summarized","getgenie"),required:!0}],categories:{}},"next-sentence":{title:s.__("Next Sentence","getgenie"),templateSlug:"next-sentence",description:s.__("Provide a sentence/line of content and get a follow-up sentence in return maintaining coherence","getgenie"),inputFields:[{label:s.__("Sentence","getgenie"),name:"sentence",sample:"It was a cold winter night, perfect for Vlad the vampire to go out hunting for his next prey.",placeholder:s.__("Enter the sentence to be followed-up","getgenie"),required:!0}],categories:{}},"paragraph-rewriter":{title:s.__("Paragraph Rewriter","getgenie"),templateSlug:"paragraph-rewriter",description:s.__("Put a new and unique spin to your given content with rewritten versions of it","getgenie"),inputFields:[{label:s.__("Paragraph","getgenie"),name:"paragraph",sample:"Most of the people of our country are farmers, workers, and day laborers who live below the poverty line. But the price of essential commodities is soaring higher and higher. It has now become impossible for them to make both ends meet. It has severely hit the day laborers, the lower and middle-class families, and the salaried class too. The prices of rice, vegetables, clothes, mustard oil, medicine, and other essential commodities are also increasing by leaps and bounds.",placeholder:s.__("Enter the paragraph to be rewritten","getgenie"),required:!0}],categories:{}},"next-paragraph":{title:s.__("Next Paragraph","getgenie"),templateSlug:"next-paragraph",description:s.__("Input your paragraph/lines of content and get a contextual follow-up content in return","getgenie"),inputFields:[{label:s.__("Paragraph","getgenie"),name:"paragraph",sample:"In less than a generation, social media has evolved from direct electronic information exchange, to virtual gathering place, to retail platform, to vital 21st-century marketing tool.",placeholder:s.__("Enter the paragraph to be followed-up","getgenie"),required:!0}],categories:{}},"list-of-questions":{title:s.__("List of Questions","getgenie"),templateSlug:"list-of-questions",description:s.__("Generate lists of questions for your given topic and utilize them in your title/content","getgenie"),inputFields:[{label:s.__("Topic","getgenie"),name:"topic",sample:"Breakfast at home",placeholder:s.__("Enter the topic for the list of related questions","getgenie"),required:!0}],categories:{}},"paragraph-answer":{title:s.__("Paragraph Answer","getgenie"),templateSlug:"paragraph-answer",description:s.__("Get paragraph-long answers of informative content for every question you ask","getgenie"),inputFields:[{label:s.__("Question","getgenie"),name:"question",sample:"Which country is going to be the next super power of the world?",placeholder:s.__("Enter the question for a detailed answer","getgenie"),required:!0}],categories:{}},"summary-bullets":{title:s.__("Summary Bullets","getgenie"),templateSlug:"summary-bullets",description:s.__("Get a bulleted list of summary for a given topic with the same tone and context","getgenie"),inputFields:[{label:s.__("Paragraph","getgenie"),name:"paragraph",sample:"The Greek gods were all born from the union between a god and a mortal woman. Zeus was born from the union between his father, Kronos, and his mother, Rhea. Athena was born from the union of Zeus with Metis, or wisdom. Apollo was born from the union with Leto or Artemis. Poseidon was born from the union his father, Uranus, and Gaia, or Earth. Demeter was born from the union her husband, Persephone, and Kore, or Spring.",placeholder:s.__("Enter the paragraph for summarized list","getgenie"),required:!0}],categories:{}},"paragraph-for-heading":{title:s.__("Paragraph for Heading","getgenie"),templateSlug:"paragraph-for-heading",description:s.__("Input the heading/title of your long-form content and receive an introductory paragraph","getgenie"),inputFields:[{label:s.__("Title/Heading","getgenie"),name:"title/heading",sample:"French new wave as a film movement",placeholder:s.__("Enter the title/heading","getgenie"),required:!0}],categories:{}},outline:{title:s.__("Outline","getgenie"),templateSlug:"outline",description:s.__("Create an outline of your long-form content based on a title and a brief description","getgenie"),inputFields:[{label:s.__("Blog context","getgenie"),name:"blogContext",sample:"Nulled or cracked software might contain malware and viruses that infect your computer. These viruses steal your data and sometimes make your device invalid. So, it is highly recommended not to use a cracked version of the software. Besides security reasons, it's completely unethical and like theft. ",placeholder:s.__("Enter a few lines of the intro to get an outline","getgenie"),required:!0}],categories:{}},"product-description":{title:s.__("Product Description","getgenie"),templateSlug:"product-description",description:s.__("Name any product (or service) and get Genie to write a convincing description for it","getgenie"),inputFields:[{label:s.__("Product Name","getgenie"),name:"productName",sample:"Jhakanaka",placeholder:s.__("Enter the product name","getgenie"),required:!0},{label:s.__("Product Brief","getgenie"),name:"productBrief",sample:"Jhakanaka is a music player. A product of XpeedStudio. Plays all types of music and podcast. Speech-to-text technology for lyrics for music and subtitles for podcasts. Target audience: teens and young adults. Audiobook feature upcoming.",placeholder:s.__("Explain briefly about the product, or which features to focus on","getgenie"),required:!1}],categories:{}},"woocommerce-product-long-description":{title:s.__("WooCommerce Product Long Description","getgenie"),templateSlug:"woocommerce-product-long-description",description:s.__("Generate keyword-optimized & conversion-friendly long descriptions for your WooCommerce products","getgenie"),inputFields:[{label:s.__("Product Name","getgenie"),name:"productName",sample:"JBL C100SI",placeholder:s.__("Enter the product name","getgenie"),required:!0},{label:s.__("Keywords","getgenie"),name:"keywords",sample:"in-ear headphones, JBL pure bass, one-button remote, angled buds, black, comfort fit, suitable for punchy bass and rock music, 30-day replacement warranty, worldwide free shipping",placeholder:s.__("Specify the keywords/key phrases for the product long description","getgenie"),required:!0}],categories:{}},taglines:{title:s.__("Taglines","getgenie"),templateSlug:"taglines",description:s.__("Get genie to write taglines for your brands, products, services, or any content","getgenie"),inputFields:[{label:s.__("Product Name","getgenie"),name:"productName",sample:"Dunkin' Donuts",placeholder:s.__("Enter the product name","getgenie"),required:!0},{label:s.__("Product Brief","getgenie"),name:"productBrief",sample:"Dunkin\u2019 Donuts is the world\u2019s leading baked goods and coffee chain, serving more than 3 million customers per day. Dunkin\u2019 Donuts sells 52 varieties of donuts and more than a dozen coffee beverages as well as an array of bagels, sandwiches & more!",placeholder:s.__("Explain briefly about the product, or which features to focus on","getgenie"),required:!1}],categories:{}},"social-media-postcopy":{title:s.__("Social Media Post/Copy","getgenie"),templateSlug:"social-media-postcopy",description:s.__("Write copies for all your social media handles using a brief description of your product","getgenie"),inputFields:[{label:s.__("Product/Brand Name","getgenie"),name:"product/brandName",sample:"Semrush",placeholder:s.__("Enter the name of the product/brand","getgenie"),required:!0},{label:s.__("Product Brief","getgenie"),name:"productBrief",sample:"Semrush is like a keyword research tool, Google Trends, Moz, Hootsuite, and SimilarWeb in one. Get measurable results from online marketing with Semrush \u2014 do SEO, content marketing, competitor research, PPC, and social media marketing from just one platform.",placeholder:s.__("Explain briefly about the product, or which features to focus on","getgenie"),required:!1}],categories:{}},"content-rewriter":{title:s.__("Content Rewriter","getgenie"),templateSlug:"content-rewriter",description:s.__("Get AI-paraphrased variations of your given sentence/paragraph/content from Genie","getgenie"),inputFields:[{label:s.__("Your Content","getgenie"),name:"yourContent",sample:"Dengue fever, also known as breakbone fever, is a mosquito-borne infection that can lead to a severe flu-like illness. It is caused by four different viruses and spread by Aedes mosquitoes.",placeholder:s.__("Provide the sentence/paragraph/content you want to be rewritten/paraphrased","getgenie"),required:!0}],categories:{}},"call-to-action":{title:s.__("Call to Action","getgenie"),templateSlug:"call-to-action",description:s.__("Increase your CTA button/anchor's CTR using the magical persuasive words of Genie","getgenie"),inputFields:[{label:s.__("Context/Description","getgenie"),name:"context/description",sample:"a lead magnet downloader button that gives users a content calendar for free",placeholder:s.__("Provide the context or the details of the call-to-action (CTA) button/link","getgenie"),required:!0},{label:s.__("Product/Brand Name ","getgenie"),name:"product/brandName",sample:"Ollyo",placeholder:s.__("You can provide the name of the product/brand to be included in the CTA content","getgenie"),required:!1}],categories:{}},conclusion:{title:s.__("Conclusion","getgenie"),templateSlug:"conclusion",description:s.__("Draw a relevant conclusion for your blog post or any content using Genie's AI magic","getgenie"),inputFields:[{label:s.__("Title","getgenie"),name:"title",sample:"How to Write a Blog Post: A Step-by-Step Guide",placeholder:s.__("Enter the title of the blog post/content that needs a conclusion from GetGenie","getgenie"),required:!0},{label:s.__("Intro","getgenie"),name:"intro",sample:"Writing a blog can be an extremely rewarding and fun activity. But the task of creating a successful blog post can seem daunting, especially if you\u2019re just starting out. From coming up with ideas to crafting compelling content, there\u2019s a lot to consider when writing a blog post. The good news is that with the proper guidance and strategy in place, anyone can craft a blog post that will capture their readers\u2019 attention. In this guide, we\u2019ll provide step-by-step instructions to help you write a blog post that will attract readers and keep them engaged.",placeholder:s.__("Provide the introduction of the blog post/content for a better context","getgenie"),required:!0}],categories:{}},"linkedin-post":{title:s.__("LinkedIn Post","getgenie"),templateSlug:"linkedin-post",description:s.__("For yourself or your company/brand, professional posts made easy with AI for LinkedIn","getgenie"),inputFields:[{label:s.__("Topic","getgenie"),name:"topic",sample:"WordPress plugins",placeholder:s.__("Enter the topic","getgenie"),required:!0},{label:s.__("Context","getgenie"),name:"context",sample:"make the post about the future of WordPress plugins with the advent of AI and how AI can be incorporated into plugins",placeholder:s.__("Explain what the post is about and which topics should be touched upon","getgenie"),required:!0},{label:s.__("Brand name","getgenie"),name:"brandName",sample:"Wpmet",placeholder:s.__("Enter the brand name","getgenie"),required:!1}],categories:{}},"instagram-bio":{title:s.__("Instagram Bio","getgenie"),templateSlug:"instagram-bio",description:s.__("Make lasting impressions with the perfect instagram bio for your handle from AI","getgenie"),inputFields:[{label:s.__("Brand name","getgenie"),name:"brandName",sample:"Asadullah Galib",placeholder:s.__("Enter the brand name","getgenie"),required:!0},{label:s.__("Keywords","getgenie"),name:"keywords",sample:"angel investor, digital marketer of Arraytics, YouTuber",placeholder:s.__("Specify the keywords/key phrases for the instagram bio","getgenie"),required:!0}],categories:{}},"instagram-caption":{title:s.__("Instagram Caption","getgenie"),templateSlug:"instagram-caption",description:s.__("Generate AI-powered captions for your instagram images in the blink of an eye","getgenie"),inputFields:[{label:s.__("Brand name","getgenie"),name:"brandName",sample:"Pizzak",placeholder:s.__("Enter the brand name","getgenie"),required:!0},{label:s.__("Context","getgenie"),name:"context",sample:"pizzak is a cloud kitchen that serves pizza, wings, fries, etc. The post will feature it's 18-hour delivery system even at midnight, from 12 pm to 6 am.",placeholder:s.__("Provide the topic, context or any additional instruction for the instagram caption","getgenie"),required:!0}],categories:{}},"pros-and-cons":{title:s.__("Pros and Cons","getgenie"),templateSlug:"pros-and-cons",description:s.__("Generate a list of pros and cons about any given topic to utilize in your content","getgenie"),inputFields:[{label:s.__("Topic","getgenie"),name:"topic",sample:"Divulgaci\xF3n por correo electr\xF3nico en fr\xEDo",placeholder:s.__("Enter a topic to get the pros and cons of it","getgenie"),required:!0},{label:s.__("Context/Additional Instruction","getgenie"),name:"context/additionalInstruction",sample:"Dame las ventajas y desventajas de la divulgaci\xF3n en fr\xEDo a trav\xE9s de correos electr\xF3nicos",placeholder:s.__("You can give additional instruction/context for a more accurate output (optional)","getgenie"),required:!1}],categories:{}},"woocommerce-product-short-description":{title:s.__("WooCommerce Product Short Description","getgenie"),templateSlug:"woocommerce-product-short-description",description:s.__("Get short descriptions/excerpts for your WooCommerce products optimized for your desired keywords","getgenie"),inputFields:[{label:s.__("Product Name","getgenie"),name:"productName",sample:"F\u0103in\u0103 de porumb Kellogg's cu piure de c\u0103p\u0219uni adev\u0103rat",placeholder:s.__("Enter the brand name","getgenie"),required:!0},{label:s.__("Keywords","getgenie"),name:"keywords",sample:"cereale pentru micul dejun, vitamina C, cu con\u021Binut sc\u0103zut de gr\u0103simi, f\u0103r\u0103 colesterol, 300 grame",placeholder:s.__("Specify the keywords/key phrases for the product long description","getgenie"),required:!0}],categories:{}},"tweet-twitter-post":{title:s.__("Tweet (Twitter Post)","getgenie"),templateSlug:"tweet-twitter-post",description:s.__("Short but impactful \u2014 that's what your tweets will be when you generate them with GetGenie","getgenie"),inputFields:[{label:s.__("Context/Instruction","getgenie"),name:"context/instruction",sample:"steps of how to optimize old youtube videos",placeholder:s.__("Enter context/Instruction ","getgenie"),required:!0}],categories:{}},"twitter-thread":{title:s.__("Twitter Thread","getgenie"),templateSlug:"twitter-thread",description:s.__("Create engaging Twitter threads on any topic and up your Twitter game using AI magic","getgenie"),inputFields:[{label:s.__("Context/Instruction","getgenie"),name:"context/instruction",sample:"establishing yourself as a personal brand",placeholder:s.__("Enter the context/instruction","getgenie"),required:!0}],categories:{}},"explain-why":{title:s.__("Explain Why","getgenie"),templateSlug:"explain-why",description:s.__("Questions need answering and concepts need explaining \u2014 let\u2019s explain why","getgenie"),inputFields:[{label:s.__("Question","getgenie"),name:"question",sample:"Why can't we live on mars?",placeholder:s.__("Enter a WH-question question that you need explained","getgenie"),required:!0},{label:s.__("Context","getgenie"),name:"context",sample:"tell me the scientific as well as anthropological reasons",placeholder:s.__("You can give additional instruction/context for a more accurate output","getgenie"),required:!1}],categories:{}},"feature-benefit":{title:s.__("Feature - Benefit","getgenie"),templateSlug:"feature-benefit",description:s.__("Describe what your product/service does and get the detailed benefits in return","getgenie"),inputFields:[{label:s.__("Product Name","getgenie"),name:"productName",sample:"Dove Original Beauty Bar",placeholder:s.__("Enter the product name","getgenie"),required:!0},{label:s.__("Product Description","getgenie"),name:"productDescription",sample:"Dove Original Beauty Bar and gentle skin cleanser combine a gentle cleansing formula with our signature 1/4 moisturizing cream to hydrate and nourish skin, instead of leaving skin feeling dry and tight like an ordinary bar soap might. Dove mild cleansers help skin retain its natural moisture, which helps replenish skin-natural nutrients that can be lost during the cleansing process.",placeholder:s.__("Enter the product's features here to generate the benefits","getgenie"),required:!0}],categories:{}},"before-after-bridge-bab":{title:s.__("Before After Bridge (BAB)","getgenie"),templateSlug:"before-after-bridge-bab",description:s.__("BAB formula shows the before and after of your product/solution in your content","getgenie"),inputFields:[{label:s.__("Product Name","getgenie"),name:"productName",sample:"Realme Narzo 50A",placeholder:s.__("Enter the product name","getgenie"),required:!0},{label:s.__("Product Description","getgenie"),name:"productDescription",sample:"Equipped with a Helio G85 Gaming Processor, the Realme Narzo 50A is a high-speed smartphone that lets you play intense games and binge-watch favorite shows. This smartphone features a 6000 mAh Battery and 18W Quick Charge for uninterrupted performance, and a 50 MP AI Triple Camera to click beautiful photos.",placeholder:s.__("Enter the product description","getgenie"),required:!0}],categories:{}},"bullet-point-to-answers":{title:s.__("Bullet Point to Answers","getgenie"),templateSlug:"bullet-point-to-answers",description:s.__("Get bulleted lists of answers to related questions while writing long-form content","getgenie"),inputFields:[{label:s.__("Question","getgenie"),name:"question",sample:"How to make a cup of tea?",placeholder:s.__("Enter the question to get an answer in bullet points","getgenie"),required:!0},{label:s.__("Additional Instruction","getgenie"),name:"additionalInstruction",sample:"describe how to prepare a cup of tea step by step",placeholder:s.__("You can give instruction/context for a more accurate output (optional)","getgenie"),required:!1}],categories:{}},"woocommerce-product-title":{title:s.__("WooCommerce Product Title","getgenie"),templateSlug:"woocommerce-product-title",description:s.__("Generate keyword-optimized product titles to rank & convert with your WooCommerce website","getgenie"),inputFields:[{label:s.__("Product Name","getgenie"),name:"productName",sample:"JBL C100SI",placeholder:s.__("Enter the product name","getgenie"),required:!0},{label:s.__("Keywords","getgenie"),name:"keywords",sample:"in-ear headphone, JBL pure bass, one button remote, angled buds, black",placeholder:s.__("Specify which keywords should the product title be based on","getgenie"),required:!0}],categories:{}},"product-ad-copy":{title:s.__("Product Ad Copy","getgenie"),templateSlug:"product-ad-copy",description:s.__("Generate a basic ad copy for your product inputting only a brief introduction/description","getgenie"),inputFields:[{label:s.__("Product Name","getgenie"),name:"productName",sample:"YOSUDA Exercise Bike L-007A",placeholder:s.__("Enter the product name","getgenie"),required:!0},{label:s.__("Product Description","getgenie"),name:"productDescription",sample:"Well-built exercise bike from the inside out. With its rock-solid foundation and athletic + aesthetic design, it's at the top of the game. With thickened frame tubes, precision manufacturing overcomes the wobbly defect of most of the cycle bikes on the market. Give you safer riding. Excellent bearing capacity for riders up to 330LBS. This is an energetic exercising bike, bringing you a cycling experience which is compared with riding classes!",placeholder:s.__("Enter the product description","getgenie"),required:!0}],categories:{}},"problem-agitate-solution-pas":{title:s.__("Problem, Agitate, Solution (PAS)","getgenie"),templateSlug:"problem-agitate-solution-pas",description:s.__("Make use of the proven copywriting formula \u2014 Problem, Agitate, Solution (PAS)","getgenie"),inputFields:[{label:s.__("Product Name","getgenie"),name:"productName",sample:"Canva",placeholder:s.__("Enter the product name","getgenie"),required:!0},{label:s.__("Product Description","getgenie"),name:"productDescription",sample:"Canva is a graphic design platform, used to create social media graphics, presentations, posters, documents and other visual content. The app includes templates for users to use. The platform is free to use and offers paid subscriptions such as Canva Pro and Canva for Enterprise for additional functionality.",placeholder:s.__("Enter the product description","getgenie"),required:!0}],categories:{}},"attention-interest-desire-action-aida":{title:s.__("Attention Interest Desire Action (AIDA)","getgenie"),templateSlug:"attention-interest-desire-action-aida",description:s.__("Generate sales/marketing copies by applying the renowned AIDA formula","getgenie"),inputFields:[{label:s.__("Product Name","getgenie"),name:"productName",sample:"Typeform",placeholder:s.__("Enter the product name","getgenie"),required:!0},{label:s.__("Product Description","getgenie"),name:"productDescription",sample:"Typeform is a popular online form builder and survey tool. It specializes in a conversational one question at a time experience that feels more like a conversation when compared to the regular form flow.",placeholder:s.__("Enter the product description","getgenie"),required:!0}],categories:{}}},Vh=Object.values(Fc||{}).filter(d=>!["sentence-rewriter","paragraph-rewriter"].includes(d?.templateSlug));var Rc=[{title:s.__("Blog Wizard","getgenie"),templateSlug:"blogWizard",description:s.__("Get your blog article SERP-ready \u2014 from analyzing the keywords to generating content that ranks","getgenie"),categories:{general:{title:"General",slug:"general"}}},{title:s.__("WooCommerce Wizard","getgenie"),templateSlug:"wooWizard",description:s.__("Get conversion-friendly & SEO-optimized content for WooCommerce Product pages","getgenie"),categories:{general:{title:"General",slug:"general"}}},{title:s.__("Genie Mode","getgenie"),templateSlug:"genieMode",description:s.__("Write anything you want with the help of Genie Mode","getgenie")}],oi=Rc;var{Libs:lt,LicenseNotice:Ec}=window.getGenie.Components.Common,{Divider:Ic,Typography:Gc,Input:Ac}=window.antd,{ComposeComponents:Hc}=window.getGenie.Components.Common.ReduxManager,{useEffect:Uc,useState:zc}=window.React,Bc=Hc(({templates:d,setSidebar:r,sidebar:l,setInput:f,getTemplateInputs:h,resetTemplateInputs:p})=>{let C=[...oi,...d.list];window.getGenie?.isPlayground&&(C=C.filter(k=>k.templateSlug!=="wooWizard")),window.getGenie.config.wizardScreen=="elementor"&&(C=C.filter(k=>!["blogWizard","wooWizard"].includes(k.templateSlug)));let[g,m]=zc(C);Uc(()=>{r({analyzeKeyword:{...l.analyzeKeyword,open:!1},generatedOutlines:{...l.generatedOutlines,open:!1},toolbarWriting:!1,currentWritingMode:"template"}),f("updateContent","")},[]);let v=k=>{let w=k.target.value.toLowerCase(),x=C.filter(c=>c.title.toLowerCase().includes(w));m(x)},S=(k,w)=>{let x=window.getGenie.config,c="WriteTemplatesScreen";if(w.templateSlug=="blogWizard"){if(c="BlogScreen",x?.wizardScreen!=="post"){x?.wizardScreen=="elementor"?lt.ErrorModal({title:l.__("Blog Wizard is not available in Elemetor!","getgenie"),content:l.__("To use our blog writing workflow, use the Gutenberg post editor or classic editor.","getgenie")}):window.open(x?.wizardScreenUrl?.post,"_blank");return}}else if(w.templateSlug=="wooWizard"){if(!x?.wcActivated){lt.ErrorModal({title:l.__("Plugin not found!","getgenie"),content:l.__("WooCommerce is not installed or activated yet.","getgenie")});return}if(c="WooCommerceScreen",x?.wizardScreen!=="woo_product"){x?.wizardScreen=="elementor"?lt.ErrorModal({title:l.__("WooCommerce product wizard is not available in Elemetor!","getgenie"),content:l.__("To use our WooCommerce product description writing workflow, use WooCommerce and its product page editor.","getgenie")}):window.open(x?.wizardScreenUrl?.woo_product,"_blank");return}}let N=()=>{r({component:c,currentTemplate:w.templateSlug,currentWritingMode:"template"})};h[w.templateSlug]?.keyword?lt.ConfirmModal(l.__("This wizard has generated data","getgenie"),l.__("Do you want to erase that data?","getgenie"),()=>{p(w.templateSlug),N()},N):N()};return React.createElement(React.Fragment,null,React.createElement(lt.DrawerHeader,null),React.createElement("div",{className:"getgenie-sidebar-template"},React.createElement(Ec,null),React.createElement(Gc.Title,{level:3},l.__("What are we writing","getgenie")),React.createElement(Ic,null),React.createElement("div",{className:"getgenie-template-list"},React.createElement(Ac,{onChange:v,bordered:!1,className:"search-container",placeholder:`${l.__("Search","getgenie")}...`,suffix:React.createElement("span",{className:"getgenie-icon-search"})}),React.createElement(lt.Card,{list:g,handleClick:S},k=>React.createElement(React.Fragment,null,React.createElement("div",{className:"card-container"},React.createElement("div",{className:"card-icon"},React.createElement("span",{className:"getgenie-icon-edit"})),React.createElement("div",{className:"card-heading"},React.createElement("h5",{"data-slug":k?.templateSlug},k?.title),React.createElement("p",null,k?.description))))))))},["setSidebar","sidebar","templates","setInput","resetTemplateInputs","getTemplateInputs"]),Rn=Bc;var{Libs:Vc}=window.getGenie.Components.Common,Jh=wp.data.select("getgenie").sidebar(),jc={insertTemplateInPostEditor:d=>{let r=wp.data.select("getgenie").sidebar(),l=wp.data.select("core/block-editor").getSelectedBlock(),f=l?.clientId,h=l?.attributes?.content,C=wp.data.select("core/block-editor").getBlocks().findIndex(m=>m.clientId===f),g=d.replace(/<br\s*[\/]?>/g,`
-`);if(["content-rewriter","paragraph-answer"].includes(r.currentTemplate)){let m=wp.data.select("getgenie").getInputs()?.updateContent;m&&m(g)}else if(r.currentTemplate==="next-paragraph")wp.data.dispatch("core/block-editor").insertBlocks(wp.blocks.createBlock("core/paragraph",{content:g}),C+1);else{if(!f){wp.data.dispatch("getgenie").setSidebar({open:!1}),Vc.ErrorModal({title:r.__("Insertion Failed!","getgenie"),content:r.__("No insertion field found!","getgenie")});return}g=d,h&&(g=" "+g),wp.data.dispatch("core/block-editor").updateBlock(f,{attributes:{content:h+g}}),wp.data.dispatch("getgenie").setSidebar({open:!1})}}},Fn=jc;window.getGenie.Components={...window.getGenie.Components,Sidebar:{...window.getGenie.Components.Sidebar||{},TemplateListScreen:Rn,WriteTemplatesScreen:Wn,UserHistory:xn,UserHistoryDetails:Tn,GenieChat:Yn,Loading:Ln}};})();
+(() => {
+  var __create = Object.create;
+  var __defProp = Object.defineProperty;
+  var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
+  var __getOwnPropNames = Object.getOwnPropertyNames;
+  var __getProtoOf = Object.getPrototypeOf;
+  var __hasOwnProp = Object.prototype.hasOwnProperty;
+  var __require = /* @__PURE__ */ ((x) => typeof require !== "undefined" ? require : typeof Proxy !== "undefined" ? new Proxy(x, {
+    get: (a, b) => (typeof require !== "undefined" ? require : a)[b]
+  }) : x)(function(x) {
+    if (typeof require !== "undefined")
+      return require.apply(this, arguments);
+    throw new Error('Dynamic require of "' + x + '" is not supported');
+  });
+  var __commonJS = (cb, mod) => function __require2() {
+    return mod || (0, cb[__getOwnPropNames(cb)[0]])((mod = { exports: {} }).exports, mod), mod.exports;
+  };
+  var __export = (target, all) => {
+    for (var name in all)
+      __defProp(target, name, { get: all[name], enumerable: true });
+  };
+  var __copyProps = (to, from, except, desc) => {
+    if (from && typeof from === "object" || typeof from === "function") {
+      for (let key of __getOwnPropNames(from))
+        if (!__hasOwnProp.call(to, key) && key !== except)
+          __defProp(to, key, { get: () => from[key], enumerable: !(desc = __getOwnPropDesc(from, key)) || desc.enumerable });
+    }
+    return to;
+  };
+  var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__getProtoOf(mod)) : {}, __copyProps(
+    isNodeMode || !mod || !mod.__esModule ? __defProp(target, "default", { value: mod, enumerable: true }) : target,
+    mod
+  ));
+
+  // node_modules/moment/moment.js
+  var require_moment = __commonJS({
+    "node_modules/moment/moment.js"(exports, module) {
+      (function(global, factory) {
+        typeof exports === "object" && typeof module !== "undefined" ? module.exports = factory() : typeof define === "function" && define.amd ? define(factory) : global.moment = factory();
+      })(exports, function() {
+        "use strict";
+        var hookCallback;
+        function hooks() {
+          return hookCallback.apply(null, arguments);
+        }
+        function setHookCallback(callback) {
+          hookCallback = callback;
+        }
+        function isArray(input) {
+          return input instanceof Array || Object.prototype.toString.call(input) === "[object Array]";
+        }
+        function isObject(input) {
+          return input != null && Object.prototype.toString.call(input) === "[object Object]";
+        }
+        function hasOwnProp(a, b) {
+          return Object.prototype.hasOwnProperty.call(a, b);
+        }
+        function isObjectEmpty(obj) {
+          if (Object.getOwnPropertyNames) {
+            return Object.getOwnPropertyNames(obj).length === 0;
+          } else {
+            var k;
+            for (k in obj) {
+              if (hasOwnProp(obj, k)) {
+                return false;
+              }
+            }
+            return true;
+          }
+        }
+        function isUndefined(input) {
+          return input === void 0;
+        }
+        function isNumber(input) {
+          return typeof input === "number" || Object.prototype.toString.call(input) === "[object Number]";
+        }
+        function isDate(input) {
+          return input instanceof Date || Object.prototype.toString.call(input) === "[object Date]";
+        }
+        function map(arr, fn) {
+          var res = [], i, arrLen = arr.length;
+          for (i = 0; i < arrLen; ++i) {
+            res.push(fn(arr[i], i));
+          }
+          return res;
+        }
+        function extend(a, b) {
+          for (var i in b) {
+            if (hasOwnProp(b, i)) {
+              a[i] = b[i];
+            }
+          }
+          if (hasOwnProp(b, "toString")) {
+            a.toString = b.toString;
+          }
+          if (hasOwnProp(b, "valueOf")) {
+            a.valueOf = b.valueOf;
+          }
+          return a;
+        }
+        function createUTC(input, format2, locale2, strict) {
+          return createLocalOrUTC(input, format2, locale2, strict, true).utc();
+        }
+        function defaultParsingFlags() {
+          return {
+            empty: false,
+            unusedTokens: [],
+            unusedInput: [],
+            overflow: -2,
+            charsLeftOver: 0,
+            nullInput: false,
+            invalidEra: null,
+            invalidMonth: null,
+            invalidFormat: false,
+            userInvalidated: false,
+            iso: false,
+            parsedDateParts: [],
+            era: null,
+            meridiem: null,
+            rfc2822: false,
+            weekdayMismatch: false
+          };
+        }
+        function getParsingFlags(m) {
+          if (m._pf == null) {
+            m._pf = defaultParsingFlags();
+          }
+          return m._pf;
+        }
+        var some;
+        if (Array.prototype.some) {
+          some = Array.prototype.some;
+        } else {
+          some = function(fun) {
+            var t = Object(this), len = t.length >>> 0, i;
+            for (i = 0; i < len; i++) {
+              if (i in t && fun.call(this, t[i], i, t)) {
+                return true;
+              }
+            }
+            return false;
+          };
+        }
+        function isValid(m) {
+          if (m._isValid == null) {
+            var flags = getParsingFlags(m), parsedParts = some.call(flags.parsedDateParts, function(i) {
+              return i != null;
+            }), isNowValid = !isNaN(m._d.getTime()) && flags.overflow < 0 && !flags.empty && !flags.invalidEra && !flags.invalidMonth && !flags.invalidWeekday && !flags.weekdayMismatch && !flags.nullInput && !flags.invalidFormat && !flags.userInvalidated && (!flags.meridiem || flags.meridiem && parsedParts);
+            if (m._strict) {
+              isNowValid = isNowValid && flags.charsLeftOver === 0 && flags.unusedTokens.length === 0 && flags.bigHour === void 0;
+            }
+            if (Object.isFrozen == null || !Object.isFrozen(m)) {
+              m._isValid = isNowValid;
+            } else {
+              return isNowValid;
+            }
+          }
+          return m._isValid;
+        }
+        function createInvalid(flags) {
+          var m = createUTC(NaN);
+          if (flags != null) {
+            extend(getParsingFlags(m), flags);
+          } else {
+            getParsingFlags(m).userInvalidated = true;
+          }
+          return m;
+        }
+        var momentProperties = hooks.momentProperties = [], updateInProgress = false;
+        function copyConfig(to2, from2) {
+          var i, prop, val, momentPropertiesLen = momentProperties.length;
+          if (!isUndefined(from2._isAMomentObject)) {
+            to2._isAMomentObject = from2._isAMomentObject;
+          }
+          if (!isUndefined(from2._i)) {
+            to2._i = from2._i;
+          }
+          if (!isUndefined(from2._f)) {
+            to2._f = from2._f;
+          }
+          if (!isUndefined(from2._l)) {
+            to2._l = from2._l;
+          }
+          if (!isUndefined(from2._strict)) {
+            to2._strict = from2._strict;
+          }
+          if (!isUndefined(from2._tzm)) {
+            to2._tzm = from2._tzm;
+          }
+          if (!isUndefined(from2._isUTC)) {
+            to2._isUTC = from2._isUTC;
+          }
+          if (!isUndefined(from2._offset)) {
+            to2._offset = from2._offset;
+          }
+          if (!isUndefined(from2._pf)) {
+            to2._pf = getParsingFlags(from2);
+          }
+          if (!isUndefined(from2._locale)) {
+            to2._locale = from2._locale;
+          }
+          if (momentPropertiesLen > 0) {
+            for (i = 0; i < momentPropertiesLen; i++) {
+              prop = momentProperties[i];
+              val = from2[prop];
+              if (!isUndefined(val)) {
+                to2[prop] = val;
+              }
+            }
+          }
+          return to2;
+        }
+        function Moment(config) {
+          copyConfig(this, config);
+          this._d = new Date(config._d != null ? config._d.getTime() : NaN);
+          if (!this.isValid()) {
+            this._d = new Date(NaN);
+          }
+          if (updateInProgress === false) {
+            updateInProgress = true;
+            hooks.updateOffset(this);
+            updateInProgress = false;
+          }
+        }
+        function isMoment(obj) {
+          return obj instanceof Moment || obj != null && obj._isAMomentObject != null;
+        }
+        function warn(msg) {
+          if (hooks.suppressDeprecationWarnings === false && typeof console !== "undefined" && console.warn) {
+            console.warn("Deprecation warning: " + msg);
+          }
+        }
+        function deprecate(msg, fn) {
+          var firstTime = true;
+          return extend(function() {
+            if (hooks.deprecationHandler != null) {
+              hooks.deprecationHandler(null, msg);
+            }
+            if (firstTime) {
+              var args = [], arg, i, key, argLen = arguments.length;
+              for (i = 0; i < argLen; i++) {
+                arg = "";
+                if (typeof arguments[i] === "object") {
+                  arg += "\n[" + i + "] ";
+                  for (key in arguments[0]) {
+                    if (hasOwnProp(arguments[0], key)) {
+                      arg += key + ": " + arguments[0][key] + ", ";
+                    }
+                  }
+                  arg = arg.slice(0, -2);
+                } else {
+                  arg = arguments[i];
+                }
+                args.push(arg);
+              }
+              warn(
+                msg + "\nArguments: " + Array.prototype.slice.call(args).join("") + "\n" + new Error().stack
+              );
+              firstTime = false;
+            }
+            return fn.apply(this, arguments);
+          }, fn);
+        }
+        var deprecations = {};
+        function deprecateSimple(name, msg) {
+          if (hooks.deprecationHandler != null) {
+            hooks.deprecationHandler(name, msg);
+          }
+          if (!deprecations[name]) {
+            warn(msg);
+            deprecations[name] = true;
+          }
+        }
+        hooks.suppressDeprecationWarnings = false;
+        hooks.deprecationHandler = null;
+        function isFunction(input) {
+          return typeof Function !== "undefined" && input instanceof Function || Object.prototype.toString.call(input) === "[object Function]";
+        }
+        function set(config) {
+          var prop, i;
+          for (i in config) {
+            if (hasOwnProp(config, i)) {
+              prop = config[i];
+              if (isFunction(prop)) {
+                this[i] = prop;
+              } else {
+                this["_" + i] = prop;
+              }
+            }
+          }
+          this._config = config;
+          this._dayOfMonthOrdinalParseLenient = new RegExp(
+            (this._dayOfMonthOrdinalParse.source || this._ordinalParse.source) + "|" + /\d{1,2}/.source
+          );
+        }
+        function mergeConfigs(parentConfig, childConfig) {
+          var res = extend({}, parentConfig), prop;
+          for (prop in childConfig) {
+            if (hasOwnProp(childConfig, prop)) {
+              if (isObject(parentConfig[prop]) && isObject(childConfig[prop])) {
+                res[prop] = {};
+                extend(res[prop], parentConfig[prop]);
+                extend(res[prop], childConfig[prop]);
+              } else if (childConfig[prop] != null) {
+                res[prop] = childConfig[prop];
+              } else {
+                delete res[prop];
+              }
+            }
+          }
+          for (prop in parentConfig) {
+            if (hasOwnProp(parentConfig, prop) && !hasOwnProp(childConfig, prop) && isObject(parentConfig[prop])) {
+              res[prop] = extend({}, res[prop]);
+            }
+          }
+          return res;
+        }
+        function Locale(config) {
+          if (config != null) {
+            this.set(config);
+          }
+        }
+        var keys;
+        if (Object.keys) {
+          keys = Object.keys;
+        } else {
+          keys = function(obj) {
+            var i, res = [];
+            for (i in obj) {
+              if (hasOwnProp(obj, i)) {
+                res.push(i);
+              }
+            }
+            return res;
+          };
+        }
+        var defaultCalendar = {
+          sameDay: "[Today at] LT",
+          nextDay: "[Tomorrow at] LT",
+          nextWeek: "dddd [at] LT",
+          lastDay: "[Yesterday at] LT",
+          lastWeek: "[Last] dddd [at] LT",
+          sameElse: "L"
+        };
+        function calendar(key, mom, now2) {
+          var output = this._calendar[key] || this._calendar["sameElse"];
+          return isFunction(output) ? output.call(mom, now2) : output;
+        }
+        function zeroFill(number, targetLength, forceSign) {
+          var absNumber = "" + Math.abs(number), zerosToFill = targetLength - absNumber.length, sign2 = number >= 0;
+          return (sign2 ? forceSign ? "+" : "" : "-") + Math.pow(10, Math.max(0, zerosToFill)).toString().substr(1) + absNumber;
+        }
+        var formattingTokens = /(\[[^\[]*\])|(\\)?([Hh]mm(ss)?|Mo|MM?M?M?|Do|DDDo|DD?D?D?|ddd?d?|do?|w[o|w]?|W[o|W]?|Qo?|N{1,5}|YYYYYY|YYYYY|YYYY|YY|y{2,4}|yo?|gg(ggg?)?|GG(GGG?)?|e|E|a|A|hh?|HH?|kk?|mm?|ss?|S{1,9}|x|X|zz?|ZZ?|.)/g, localFormattingTokens = /(\[[^\[]*\])|(\\)?(LTS|LT|LL?L?L?|l{1,4})/g, formatFunctions = {}, formatTokenFunctions = {};
+        function addFormatToken(token2, padded, ordinal2, callback) {
+          var func = callback;
+          if (typeof callback === "string") {
+            func = function() {
+              return this[callback]();
+            };
+          }
+          if (token2) {
+            formatTokenFunctions[token2] = func;
+          }
+          if (padded) {
+            formatTokenFunctions[padded[0]] = function() {
+              return zeroFill(func.apply(this, arguments), padded[1], padded[2]);
+            };
+          }
+          if (ordinal2) {
+            formatTokenFunctions[ordinal2] = function() {
+              return this.localeData().ordinal(
+                func.apply(this, arguments),
+                token2
+              );
+            };
+          }
+        }
+        function removeFormattingTokens(input) {
+          if (input.match(/\[[\s\S]/)) {
+            return input.replace(/^\[|\]$/g, "");
+          }
+          return input.replace(/\\/g, "");
+        }
+        function makeFormatFunction(format2) {
+          var array = format2.match(formattingTokens), i, length;
+          for (i = 0, length = array.length; i < length; i++) {
+            if (formatTokenFunctions[array[i]]) {
+              array[i] = formatTokenFunctions[array[i]];
+            } else {
+              array[i] = removeFormattingTokens(array[i]);
+            }
+          }
+          return function(mom) {
+            var output = "", i2;
+            for (i2 = 0; i2 < length; i2++) {
+              output += isFunction(array[i2]) ? array[i2].call(mom, format2) : array[i2];
+            }
+            return output;
+          };
+        }
+        function formatMoment(m, format2) {
+          if (!m.isValid()) {
+            return m.localeData().invalidDate();
+          }
+          format2 = expandFormat(format2, m.localeData());
+          formatFunctions[format2] = formatFunctions[format2] || makeFormatFunction(format2);
+          return formatFunctions[format2](m);
+        }
+        function expandFormat(format2, locale2) {
+          var i = 5;
+          function replaceLongDateFormatTokens(input) {
+            return locale2.longDateFormat(input) || input;
+          }
+          localFormattingTokens.lastIndex = 0;
+          while (i >= 0 && localFormattingTokens.test(format2)) {
+            format2 = format2.replace(
+              localFormattingTokens,
+              replaceLongDateFormatTokens
+            );
+            localFormattingTokens.lastIndex = 0;
+            i -= 1;
+          }
+          return format2;
+        }
+        var defaultLongDateFormat = {
+          LTS: "h:mm:ss A",
+          LT: "h:mm A",
+          L: "MM/DD/YYYY",
+          LL: "MMMM D, YYYY",
+          LLL: "MMMM D, YYYY h:mm A",
+          LLLL: "dddd, MMMM D, YYYY h:mm A"
+        };
+        function longDateFormat(key) {
+          var format2 = this._longDateFormat[key], formatUpper = this._longDateFormat[key.toUpperCase()];
+          if (format2 || !formatUpper) {
+            return format2;
+          }
+          this._longDateFormat[key] = formatUpper.match(formattingTokens).map(function(tok) {
+            if (tok === "MMMM" || tok === "MM" || tok === "DD" || tok === "dddd") {
+              return tok.slice(1);
+            }
+            return tok;
+          }).join("");
+          return this._longDateFormat[key];
+        }
+        var defaultInvalidDate = "Invalid date";
+        function invalidDate() {
+          return this._invalidDate;
+        }
+        var defaultOrdinal = "%d", defaultDayOfMonthOrdinalParse = /\d{1,2}/;
+        function ordinal(number) {
+          return this._ordinal.replace("%d", number);
+        }
+        var defaultRelativeTime = {
+          future: "in %s",
+          past: "%s ago",
+          s: "a few seconds",
+          ss: "%d seconds",
+          m: "a minute",
+          mm: "%d minutes",
+          h: "an hour",
+          hh: "%d hours",
+          d: "a day",
+          dd: "%d days",
+          w: "a week",
+          ww: "%d weeks",
+          M: "a month",
+          MM: "%d months",
+          y: "a year",
+          yy: "%d years"
+        };
+        function relativeTime(number, withoutSuffix, string, isFuture) {
+          var output = this._relativeTime[string];
+          return isFunction(output) ? output(number, withoutSuffix, string, isFuture) : output.replace(/%d/i, number);
+        }
+        function pastFuture(diff2, output) {
+          var format2 = this._relativeTime[diff2 > 0 ? "future" : "past"];
+          return isFunction(format2) ? format2(output) : format2.replace(/%s/i, output);
+        }
+        var aliases = {};
+        function addUnitAlias(unit, shorthand) {
+          var lowerCase = unit.toLowerCase();
+          aliases[lowerCase] = aliases[lowerCase + "s"] = aliases[shorthand] = unit;
+        }
+        function normalizeUnits(units) {
+          return typeof units === "string" ? aliases[units] || aliases[units.toLowerCase()] : void 0;
+        }
+        function normalizeObjectUnits(inputObject) {
+          var normalizedInput = {}, normalizedProp, prop;
+          for (prop in inputObject) {
+            if (hasOwnProp(inputObject, prop)) {
+              normalizedProp = normalizeUnits(prop);
+              if (normalizedProp) {
+                normalizedInput[normalizedProp] = inputObject[prop];
+              }
+            }
+          }
+          return normalizedInput;
+        }
+        var priorities = {};
+        function addUnitPriority(unit, priority) {
+          priorities[unit] = priority;
+        }
+        function getPrioritizedUnits(unitsObj) {
+          var units = [], u;
+          for (u in unitsObj) {
+            if (hasOwnProp(unitsObj, u)) {
+              units.push({ unit: u, priority: priorities[u] });
+            }
+          }
+          units.sort(function(a, b) {
+            return a.priority - b.priority;
+          });
+          return units;
+        }
+        function isLeapYear(year) {
+          return year % 4 === 0 && year % 100 !== 0 || year % 400 === 0;
+        }
+        function absFloor(number) {
+          if (number < 0) {
+            return Math.ceil(number) || 0;
+          } else {
+            return Math.floor(number);
+          }
+        }
+        function toInt(argumentForCoercion) {
+          var coercedNumber = +argumentForCoercion, value = 0;
+          if (coercedNumber !== 0 && isFinite(coercedNumber)) {
+            value = absFloor(coercedNumber);
+          }
+          return value;
+        }
+        function makeGetSet(unit, keepTime) {
+          return function(value) {
+            if (value != null) {
+              set$1(this, unit, value);
+              hooks.updateOffset(this, keepTime);
+              return this;
+            } else {
+              return get(this, unit);
+            }
+          };
+        }
+        function get(mom, unit) {
+          return mom.isValid() ? mom._d["get" + (mom._isUTC ? "UTC" : "") + unit]() : NaN;
+        }
+        function set$1(mom, unit, value) {
+          if (mom.isValid() && !isNaN(value)) {
+            if (unit === "FullYear" && isLeapYear(mom.year()) && mom.month() === 1 && mom.date() === 29) {
+              value = toInt(value);
+              mom._d["set" + (mom._isUTC ? "UTC" : "") + unit](
+                value,
+                mom.month(),
+                daysInMonth(value, mom.month())
+              );
+            } else {
+              mom._d["set" + (mom._isUTC ? "UTC" : "") + unit](value);
+            }
+          }
+        }
+        function stringGet(units) {
+          units = normalizeUnits(units);
+          if (isFunction(this[units])) {
+            return this[units]();
+          }
+          return this;
+        }
+        function stringSet(units, value) {
+          if (typeof units === "object") {
+            units = normalizeObjectUnits(units);
+            var prioritized = getPrioritizedUnits(units), i, prioritizedLen = prioritized.length;
+            for (i = 0; i < prioritizedLen; i++) {
+              this[prioritized[i].unit](units[prioritized[i].unit]);
+            }
+          } else {
+            units = normalizeUnits(units);
+            if (isFunction(this[units])) {
+              return this[units](value);
+            }
+          }
+          return this;
+        }
+        var match1 = /\d/, match2 = /\d\d/, match3 = /\d{3}/, match4 = /\d{4}/, match6 = /[+-]?\d{6}/, match1to2 = /\d\d?/, match3to4 = /\d\d\d\d?/, match5to6 = /\d\d\d\d\d\d?/, match1to3 = /\d{1,3}/, match1to4 = /\d{1,4}/, match1to6 = /[+-]?\d{1,6}/, matchUnsigned = /\d+/, matchSigned = /[+-]?\d+/, matchOffset = /Z|[+-]\d\d:?\d\d/gi, matchShortOffset = /Z|[+-]\d\d(?::?\d\d)?/gi, matchTimestamp = /[+-]?\d+(\.\d{1,3})?/, matchWord = /[0-9]{0,256}['a-z\u00A0-\u05FF\u0700-\uD7FF\uF900-\uFDCF\uFDF0-\uFF07\uFF10-\uFFEF]{1,256}|[\u0600-\u06FF\/]{1,256}(\s*?[\u0600-\u06FF]{1,256}){1,2}/i, regexes;
+        regexes = {};
+        function addRegexToken(token2, regex, strictRegex) {
+          regexes[token2] = isFunction(regex) ? regex : function(isStrict, localeData2) {
+            return isStrict && strictRegex ? strictRegex : regex;
+          };
+        }
+        function getParseRegexForToken(token2, config) {
+          if (!hasOwnProp(regexes, token2)) {
+            return new RegExp(unescapeFormat(token2));
+          }
+          return regexes[token2](config._strict, config._locale);
+        }
+        function unescapeFormat(s) {
+          return regexEscape(
+            s.replace("\\", "").replace(
+              /\\(\[)|\\(\])|\[([^\]\[]*)\]|\\(.)/g,
+              function(matched, p1, p2, p3, p4) {
+                return p1 || p2 || p3 || p4;
+              }
+            )
+          );
+        }
+        function regexEscape(s) {
+          return s.replace(/[-\/\\^$*+?.()|[\]{}]/g, "\\$&");
+        }
+        var tokens = {};
+        function addParseToken(token2, callback) {
+          var i, func = callback, tokenLen;
+          if (typeof token2 === "string") {
+            token2 = [token2];
+          }
+          if (isNumber(callback)) {
+            func = function(input, array) {
+              array[callback] = toInt(input);
+            };
+          }
+          tokenLen = token2.length;
+          for (i = 0; i < tokenLen; i++) {
+            tokens[token2[i]] = func;
+          }
+        }
+        function addWeekParseToken(token2, callback) {
+          addParseToken(token2, function(input, array, config, token3) {
+            config._w = config._w || {};
+            callback(input, config._w, config, token3);
+          });
+        }
+        function addTimeToArrayFromToken(token2, input, config) {
+          if (input != null && hasOwnProp(tokens, token2)) {
+            tokens[token2](input, config._a, config, token2);
+          }
+        }
+        var YEAR = 0, MONTH = 1, DATE = 2, HOUR = 3, MINUTE = 4, SECOND = 5, MILLISECOND = 6, WEEK = 7, WEEKDAY = 8;
+        function mod(n, x) {
+          return (n % x + x) % x;
+        }
+        var indexOf;
+        if (Array.prototype.indexOf) {
+          indexOf = Array.prototype.indexOf;
+        } else {
+          indexOf = function(o) {
+            var i;
+            for (i = 0; i < this.length; ++i) {
+              if (this[i] === o) {
+                return i;
+              }
+            }
+            return -1;
+          };
+        }
+        function daysInMonth(year, month) {
+          if (isNaN(year) || isNaN(month)) {
+            return NaN;
+          }
+          var modMonth = mod(month, 12);
+          year += (month - modMonth) / 12;
+          return modMonth === 1 ? isLeapYear(year) ? 29 : 28 : 31 - modMonth % 7 % 2;
+        }
+        addFormatToken("M", ["MM", 2], "Mo", function() {
+          return this.month() + 1;
+        });
+        addFormatToken("MMM", 0, 0, function(format2) {
+          return this.localeData().monthsShort(this, format2);
+        });
+        addFormatToken("MMMM", 0, 0, function(format2) {
+          return this.localeData().months(this, format2);
+        });
+        addUnitAlias("month", "M");
+        addUnitPriority("month", 8);
+        addRegexToken("M", match1to2);
+        addRegexToken("MM", match1to2, match2);
+        addRegexToken("MMM", function(isStrict, locale2) {
+          return locale2.monthsShortRegex(isStrict);
+        });
+        addRegexToken("MMMM", function(isStrict, locale2) {
+          return locale2.monthsRegex(isStrict);
+        });
+        addParseToken(["M", "MM"], function(input, array) {
+          array[MONTH] = toInt(input) - 1;
+        });
+        addParseToken(["MMM", "MMMM"], function(input, array, config, token2) {
+          var month = config._locale.monthsParse(input, token2, config._strict);
+          if (month != null) {
+            array[MONTH] = month;
+          } else {
+            getParsingFlags(config).invalidMonth = input;
+          }
+        });
+        var defaultLocaleMonths = "January_February_March_April_May_June_July_August_September_October_November_December".split(
+          "_"
+        ), defaultLocaleMonthsShort = "Jan_Feb_Mar_Apr_May_Jun_Jul_Aug_Sep_Oct_Nov_Dec".split("_"), MONTHS_IN_FORMAT = /D[oD]?(\[[^\[\]]*\]|\s)+MMMM?/, defaultMonthsShortRegex = matchWord, defaultMonthsRegex = matchWord;
+        function localeMonths(m, format2) {
+          if (!m) {
+            return isArray(this._months) ? this._months : this._months["standalone"];
+          }
+          return isArray(this._months) ? this._months[m.month()] : this._months[(this._months.isFormat || MONTHS_IN_FORMAT).test(format2) ? "format" : "standalone"][m.month()];
+        }
+        function localeMonthsShort(m, format2) {
+          if (!m) {
+            return isArray(this._monthsShort) ? this._monthsShort : this._monthsShort["standalone"];
+          }
+          return isArray(this._monthsShort) ? this._monthsShort[m.month()] : this._monthsShort[MONTHS_IN_FORMAT.test(format2) ? "format" : "standalone"][m.month()];
+        }
+        function handleStrictParse(monthName, format2, strict) {
+          var i, ii, mom, llc = monthName.toLocaleLowerCase();
+          if (!this._monthsParse) {
+            this._monthsParse = [];
+            this._longMonthsParse = [];
+            this._shortMonthsParse = [];
+            for (i = 0; i < 12; ++i) {
+              mom = createUTC([2e3, i]);
+              this._shortMonthsParse[i] = this.monthsShort(
+                mom,
+                ""
+              ).toLocaleLowerCase();
+              this._longMonthsParse[i] = this.months(mom, "").toLocaleLowerCase();
+            }
+          }
+          if (strict) {
+            if (format2 === "MMM") {
+              ii = indexOf.call(this._shortMonthsParse, llc);
+              return ii !== -1 ? ii : null;
+            } else {
+              ii = indexOf.call(this._longMonthsParse, llc);
+              return ii !== -1 ? ii : null;
+            }
+          } else {
+            if (format2 === "MMM") {
+              ii = indexOf.call(this._shortMonthsParse, llc);
+              if (ii !== -1) {
+                return ii;
+              }
+              ii = indexOf.call(this._longMonthsParse, llc);
+              return ii !== -1 ? ii : null;
+            } else {
+              ii = indexOf.call(this._longMonthsParse, llc);
+              if (ii !== -1) {
+                return ii;
+              }
+              ii = indexOf.call(this._shortMonthsParse, llc);
+              return ii !== -1 ? ii : null;
+            }
+          }
+        }
+        function localeMonthsParse(monthName, format2, strict) {
+          var i, mom, regex;
+          if (this._monthsParseExact) {
+            return handleStrictParse.call(this, monthName, format2, strict);
+          }
+          if (!this._monthsParse) {
+            this._monthsParse = [];
+            this._longMonthsParse = [];
+            this._shortMonthsParse = [];
+          }
+          for (i = 0; i < 12; i++) {
+            mom = createUTC([2e3, i]);
+            if (strict && !this._longMonthsParse[i]) {
+              this._longMonthsParse[i] = new RegExp(
+                "^" + this.months(mom, "").replace(".", "") + "$",
+                "i"
+              );
+              this._shortMonthsParse[i] = new RegExp(
+                "^" + this.monthsShort(mom, "").replace(".", "") + "$",
+                "i"
+              );
+            }
+            if (!strict && !this._monthsParse[i]) {
+              regex = "^" + this.months(mom, "") + "|^" + this.monthsShort(mom, "");
+              this._monthsParse[i] = new RegExp(regex.replace(".", ""), "i");
+            }
+            if (strict && format2 === "MMMM" && this._longMonthsParse[i].test(monthName)) {
+              return i;
+            } else if (strict && format2 === "MMM" && this._shortMonthsParse[i].test(monthName)) {
+              return i;
+            } else if (!strict && this._monthsParse[i].test(monthName)) {
+              return i;
+            }
+          }
+        }
+        function setMonth(mom, value) {
+          var dayOfMonth;
+          if (!mom.isValid()) {
+            return mom;
+          }
+          if (typeof value === "string") {
+            if (/^\d+$/.test(value)) {
+              value = toInt(value);
+            } else {
+              value = mom.localeData().monthsParse(value);
+              if (!isNumber(value)) {
+                return mom;
+              }
+            }
+          }
+          dayOfMonth = Math.min(mom.date(), daysInMonth(mom.year(), value));
+          mom._d["set" + (mom._isUTC ? "UTC" : "") + "Month"](value, dayOfMonth);
+          return mom;
+        }
+        function getSetMonth(value) {
+          if (value != null) {
+            setMonth(this, value);
+            hooks.updateOffset(this, true);
+            return this;
+          } else {
+            return get(this, "Month");
+          }
+        }
+        function getDaysInMonth() {
+          return daysInMonth(this.year(), this.month());
+        }
+        function monthsShortRegex(isStrict) {
+          if (this._monthsParseExact) {
+            if (!hasOwnProp(this, "_monthsRegex")) {
+              computeMonthsParse.call(this);
+            }
+            if (isStrict) {
+              return this._monthsShortStrictRegex;
+            } else {
+              return this._monthsShortRegex;
+            }
+          } else {
+            if (!hasOwnProp(this, "_monthsShortRegex")) {
+              this._monthsShortRegex = defaultMonthsShortRegex;
+            }
+            return this._monthsShortStrictRegex && isStrict ? this._monthsShortStrictRegex : this._monthsShortRegex;
+          }
+        }
+        function monthsRegex(isStrict) {
+          if (this._monthsParseExact) {
+            if (!hasOwnProp(this, "_monthsRegex")) {
+              computeMonthsParse.call(this);
+            }
+            if (isStrict) {
+              return this._monthsStrictRegex;
+            } else {
+              return this._monthsRegex;
+            }
+          } else {
+            if (!hasOwnProp(this, "_monthsRegex")) {
+              this._monthsRegex = defaultMonthsRegex;
+            }
+            return this._monthsStrictRegex && isStrict ? this._monthsStrictRegex : this._monthsRegex;
+          }
+        }
+        function computeMonthsParse() {
+          function cmpLenRev(a, b) {
+            return b.length - a.length;
+          }
+          var shortPieces = [], longPieces = [], mixedPieces = [], i, mom;
+          for (i = 0; i < 12; i++) {
+            mom = createUTC([2e3, i]);
+            shortPieces.push(this.monthsShort(mom, ""));
+            longPieces.push(this.months(mom, ""));
+            mixedPieces.push(this.months(mom, ""));
+            mixedPieces.push(this.monthsShort(mom, ""));
+          }
+          shortPieces.sort(cmpLenRev);
+          longPieces.sort(cmpLenRev);
+          mixedPieces.sort(cmpLenRev);
+          for (i = 0; i < 12; i++) {
+            shortPieces[i] = regexEscape(shortPieces[i]);
+            longPieces[i] = regexEscape(longPieces[i]);
+          }
+          for (i = 0; i < 24; i++) {
+            mixedPieces[i] = regexEscape(mixedPieces[i]);
+          }
+          this._monthsRegex = new RegExp("^(" + mixedPieces.join("|") + ")", "i");
+          this._monthsShortRegex = this._monthsRegex;
+          this._monthsStrictRegex = new RegExp(
+            "^(" + longPieces.join("|") + ")",
+            "i"
+          );
+          this._monthsShortStrictRegex = new RegExp(
+            "^(" + shortPieces.join("|") + ")",
+            "i"
+          );
+        }
+        addFormatToken("Y", 0, 0, function() {
+          var y = this.year();
+          return y <= 9999 ? zeroFill(y, 4) : "+" + y;
+        });
+        addFormatToken(0, ["YY", 2], 0, function() {
+          return this.year() % 100;
+        });
+        addFormatToken(0, ["YYYY", 4], 0, "year");
+        addFormatToken(0, ["YYYYY", 5], 0, "year");
+        addFormatToken(0, ["YYYYYY", 6, true], 0, "year");
+        addUnitAlias("year", "y");
+        addUnitPriority("year", 1);
+        addRegexToken("Y", matchSigned);
+        addRegexToken("YY", match1to2, match2);
+        addRegexToken("YYYY", match1to4, match4);
+        addRegexToken("YYYYY", match1to6, match6);
+        addRegexToken("YYYYYY", match1to6, match6);
+        addParseToken(["YYYYY", "YYYYYY"], YEAR);
+        addParseToken("YYYY", function(input, array) {
+          array[YEAR] = input.length === 2 ? hooks.parseTwoDigitYear(input) : toInt(input);
+        });
+        addParseToken("YY", function(input, array) {
+          array[YEAR] = hooks.parseTwoDigitYear(input);
+        });
+        addParseToken("Y", function(input, array) {
+          array[YEAR] = parseInt(input, 10);
+        });
+        function daysInYear(year) {
+          return isLeapYear(year) ? 366 : 365;
+        }
+        hooks.parseTwoDigitYear = function(input) {
+          return toInt(input) + (toInt(input) > 68 ? 1900 : 2e3);
+        };
+        var getSetYear = makeGetSet("FullYear", true);
+        function getIsLeapYear() {
+          return isLeapYear(this.year());
+        }
+        function createDate(y, m, d, h, M, s, ms) {
+          var date;
+          if (y < 100 && y >= 0) {
+            date = new Date(y + 400, m, d, h, M, s, ms);
+            if (isFinite(date.getFullYear())) {
+              date.setFullYear(y);
+            }
+          } else {
+            date = new Date(y, m, d, h, M, s, ms);
+          }
+          return date;
+        }
+        function createUTCDate(y) {
+          var date, args;
+          if (y < 100 && y >= 0) {
+            args = Array.prototype.slice.call(arguments);
+            args[0] = y + 400;
+            date = new Date(Date.UTC.apply(null, args));
+            if (isFinite(date.getUTCFullYear())) {
+              date.setUTCFullYear(y);
+            }
+          } else {
+            date = new Date(Date.UTC.apply(null, arguments));
+          }
+          return date;
+        }
+        function firstWeekOffset(year, dow, doy) {
+          var fwd = 7 + dow - doy, fwdlw = (7 + createUTCDate(year, 0, fwd).getUTCDay() - dow) % 7;
+          return -fwdlw + fwd - 1;
+        }
+        function dayOfYearFromWeeks(year, week, weekday, dow, doy) {
+          var localWeekday = (7 + weekday - dow) % 7, weekOffset = firstWeekOffset(year, dow, doy), dayOfYear = 1 + 7 * (week - 1) + localWeekday + weekOffset, resYear, resDayOfYear;
+          if (dayOfYear <= 0) {
+            resYear = year - 1;
+            resDayOfYear = daysInYear(resYear) + dayOfYear;
+          } else if (dayOfYear > daysInYear(year)) {
+            resYear = year + 1;
+            resDayOfYear = dayOfYear - daysInYear(year);
+          } else {
+            resYear = year;
+            resDayOfYear = dayOfYear;
+          }
+          return {
+            year: resYear,
+            dayOfYear: resDayOfYear
+          };
+        }
+        function weekOfYear(mom, dow, doy) {
+          var weekOffset = firstWeekOffset(mom.year(), dow, doy), week = Math.floor((mom.dayOfYear() - weekOffset - 1) / 7) + 1, resWeek, resYear;
+          if (week < 1) {
+            resYear = mom.year() - 1;
+            resWeek = week + weeksInYear(resYear, dow, doy);
+          } else if (week > weeksInYear(mom.year(), dow, doy)) {
+            resWeek = week - weeksInYear(mom.year(), dow, doy);
+            resYear = mom.year() + 1;
+          } else {
+            resYear = mom.year();
+            resWeek = week;
+          }
+          return {
+            week: resWeek,
+            year: resYear
+          };
+        }
+        function weeksInYear(year, dow, doy) {
+          var weekOffset = firstWeekOffset(year, dow, doy), weekOffsetNext = firstWeekOffset(year + 1, dow, doy);
+          return (daysInYear(year) - weekOffset + weekOffsetNext) / 7;
+        }
+        addFormatToken("w", ["ww", 2], "wo", "week");
+        addFormatToken("W", ["WW", 2], "Wo", "isoWeek");
+        addUnitAlias("week", "w");
+        addUnitAlias("isoWeek", "W");
+        addUnitPriority("week", 5);
+        addUnitPriority("isoWeek", 5);
+        addRegexToken("w", match1to2);
+        addRegexToken("ww", match1to2, match2);
+        addRegexToken("W", match1to2);
+        addRegexToken("WW", match1to2, match2);
+        addWeekParseToken(
+          ["w", "ww", "W", "WW"],
+          function(input, week, config, token2) {
+            week[token2.substr(0, 1)] = toInt(input);
+          }
+        );
+        function localeWeek(mom) {
+          return weekOfYear(mom, this._week.dow, this._week.doy).week;
+        }
+        var defaultLocaleWeek = {
+          dow: 0,
+          doy: 6
+        };
+        function localeFirstDayOfWeek() {
+          return this._week.dow;
+        }
+        function localeFirstDayOfYear() {
+          return this._week.doy;
+        }
+        function getSetWeek(input) {
+          var week = this.localeData().week(this);
+          return input == null ? week : this.add((input - week) * 7, "d");
+        }
+        function getSetISOWeek(input) {
+          var week = weekOfYear(this, 1, 4).week;
+          return input == null ? week : this.add((input - week) * 7, "d");
+        }
+        addFormatToken("d", 0, "do", "day");
+        addFormatToken("dd", 0, 0, function(format2) {
+          return this.localeData().weekdaysMin(this, format2);
+        });
+        addFormatToken("ddd", 0, 0, function(format2) {
+          return this.localeData().weekdaysShort(this, format2);
+        });
+        addFormatToken("dddd", 0, 0, function(format2) {
+          return this.localeData().weekdays(this, format2);
+        });
+        addFormatToken("e", 0, 0, "weekday");
+        addFormatToken("E", 0, 0, "isoWeekday");
+        addUnitAlias("day", "d");
+        addUnitAlias("weekday", "e");
+        addUnitAlias("isoWeekday", "E");
+        addUnitPriority("day", 11);
+        addUnitPriority("weekday", 11);
+        addUnitPriority("isoWeekday", 11);
+        addRegexToken("d", match1to2);
+        addRegexToken("e", match1to2);
+        addRegexToken("E", match1to2);
+        addRegexToken("dd", function(isStrict, locale2) {
+          return locale2.weekdaysMinRegex(isStrict);
+        });
+        addRegexToken("ddd", function(isStrict, locale2) {
+          return locale2.weekdaysShortRegex(isStrict);
+        });
+        addRegexToken("dddd", function(isStrict, locale2) {
+          return locale2.weekdaysRegex(isStrict);
+        });
+        addWeekParseToken(["dd", "ddd", "dddd"], function(input, week, config, token2) {
+          var weekday = config._locale.weekdaysParse(input, token2, config._strict);
+          if (weekday != null) {
+            week.d = weekday;
+          } else {
+            getParsingFlags(config).invalidWeekday = input;
+          }
+        });
+        addWeekParseToken(["d", "e", "E"], function(input, week, config, token2) {
+          week[token2] = toInt(input);
+        });
+        function parseWeekday(input, locale2) {
+          if (typeof input !== "string") {
+            return input;
+          }
+          if (!isNaN(input)) {
+            return parseInt(input, 10);
+          }
+          input = locale2.weekdaysParse(input);
+          if (typeof input === "number") {
+            return input;
+          }
+          return null;
+        }
+        function parseIsoWeekday(input, locale2) {
+          if (typeof input === "string") {
+            return locale2.weekdaysParse(input) % 7 || 7;
+          }
+          return isNaN(input) ? null : input;
+        }
+        function shiftWeekdays(ws, n) {
+          return ws.slice(n, 7).concat(ws.slice(0, n));
+        }
+        var defaultLocaleWeekdays = "Sunday_Monday_Tuesday_Wednesday_Thursday_Friday_Saturday".split("_"), defaultLocaleWeekdaysShort = "Sun_Mon_Tue_Wed_Thu_Fri_Sat".split("_"), defaultLocaleWeekdaysMin = "Su_Mo_Tu_We_Th_Fr_Sa".split("_"), defaultWeekdaysRegex = matchWord, defaultWeekdaysShortRegex = matchWord, defaultWeekdaysMinRegex = matchWord;
+        function localeWeekdays(m, format2) {
+          var weekdays = isArray(this._weekdays) ? this._weekdays : this._weekdays[m && m !== true && this._weekdays.isFormat.test(format2) ? "format" : "standalone"];
+          return m === true ? shiftWeekdays(weekdays, this._week.dow) : m ? weekdays[m.day()] : weekdays;
+        }
+        function localeWeekdaysShort(m) {
+          return m === true ? shiftWeekdays(this._weekdaysShort, this._week.dow) : m ? this._weekdaysShort[m.day()] : this._weekdaysShort;
+        }
+        function localeWeekdaysMin(m) {
+          return m === true ? shiftWeekdays(this._weekdaysMin, this._week.dow) : m ? this._weekdaysMin[m.day()] : this._weekdaysMin;
+        }
+        function handleStrictParse$1(weekdayName, format2, strict) {
+          var i, ii, mom, llc = weekdayName.toLocaleLowerCase();
+          if (!this._weekdaysParse) {
+            this._weekdaysParse = [];
+            this._shortWeekdaysParse = [];
+            this._minWeekdaysParse = [];
+            for (i = 0; i < 7; ++i) {
+              mom = createUTC([2e3, 1]).day(i);
+              this._minWeekdaysParse[i] = this.weekdaysMin(
+                mom,
+                ""
+              ).toLocaleLowerCase();
+              this._shortWeekdaysParse[i] = this.weekdaysShort(
+                mom,
+                ""
+              ).toLocaleLowerCase();
+              this._weekdaysParse[i] = this.weekdays(mom, "").toLocaleLowerCase();
+            }
+          }
+          if (strict) {
+            if (format2 === "dddd") {
+              ii = indexOf.call(this._weekdaysParse, llc);
+              return ii !== -1 ? ii : null;
+            } else if (format2 === "ddd") {
+              ii = indexOf.call(this._shortWeekdaysParse, llc);
+              return ii !== -1 ? ii : null;
+            } else {
+              ii = indexOf.call(this._minWeekdaysParse, llc);
+              return ii !== -1 ? ii : null;
+            }
+          } else {
+            if (format2 === "dddd") {
+              ii = indexOf.call(this._weekdaysParse, llc);
+              if (ii !== -1) {
+                return ii;
+              }
+              ii = indexOf.call(this._shortWeekdaysParse, llc);
+              if (ii !== -1) {
+                return ii;
+              }
+              ii = indexOf.call(this._minWeekdaysParse, llc);
+              return ii !== -1 ? ii : null;
+            } else if (format2 === "ddd") {
+              ii = indexOf.call(this._shortWeekdaysParse, llc);
+              if (ii !== -1) {
+                return ii;
+              }
+              ii = indexOf.call(this._weekdaysParse, llc);
+              if (ii !== -1) {
+                return ii;
+              }
+              ii = indexOf.call(this._minWeekdaysParse, llc);
+              return ii !== -1 ? ii : null;
+            } else {
+              ii = indexOf.call(this._minWeekdaysParse, llc);
+              if (ii !== -1) {
+                return ii;
+              }
+              ii = indexOf.call(this._weekdaysParse, llc);
+              if (ii !== -1) {
+                return ii;
+              }
+              ii = indexOf.call(this._shortWeekdaysParse, llc);
+              return ii !== -1 ? ii : null;
+            }
+          }
+        }
+        function localeWeekdaysParse(weekdayName, format2, strict) {
+          var i, mom, regex;
+          if (this._weekdaysParseExact) {
+            return handleStrictParse$1.call(this, weekdayName, format2, strict);
+          }
+          if (!this._weekdaysParse) {
+            this._weekdaysParse = [];
+            this._minWeekdaysParse = [];
+            this._shortWeekdaysParse = [];
+            this._fullWeekdaysParse = [];
+          }
+          for (i = 0; i < 7; i++) {
+            mom = createUTC([2e3, 1]).day(i);
+            if (strict && !this._fullWeekdaysParse[i]) {
+              this._fullWeekdaysParse[i] = new RegExp(
+                "^" + this.weekdays(mom, "").replace(".", "\\.?") + "$",
+                "i"
+              );
+              this._shortWeekdaysParse[i] = new RegExp(
+                "^" + this.weekdaysShort(mom, "").replace(".", "\\.?") + "$",
+                "i"
+              );
+              this._minWeekdaysParse[i] = new RegExp(
+                "^" + this.weekdaysMin(mom, "").replace(".", "\\.?") + "$",
+                "i"
+              );
+            }
+            if (!this._weekdaysParse[i]) {
+              regex = "^" + this.weekdays(mom, "") + "|^" + this.weekdaysShort(mom, "") + "|^" + this.weekdaysMin(mom, "");
+              this._weekdaysParse[i] = new RegExp(regex.replace(".", ""), "i");
+            }
+            if (strict && format2 === "dddd" && this._fullWeekdaysParse[i].test(weekdayName)) {
+              return i;
+            } else if (strict && format2 === "ddd" && this._shortWeekdaysParse[i].test(weekdayName)) {
+              return i;
+            } else if (strict && format2 === "dd" && this._minWeekdaysParse[i].test(weekdayName)) {
+              return i;
+            } else if (!strict && this._weekdaysParse[i].test(weekdayName)) {
+              return i;
+            }
+          }
+        }
+        function getSetDayOfWeek(input) {
+          if (!this.isValid()) {
+            return input != null ? this : NaN;
+          }
+          var day = this._isUTC ? this._d.getUTCDay() : this._d.getDay();
+          if (input != null) {
+            input = parseWeekday(input, this.localeData());
+            return this.add(input - day, "d");
+          } else {
+            return day;
+          }
+        }
+        function getSetLocaleDayOfWeek(input) {
+          if (!this.isValid()) {
+            return input != null ? this : NaN;
+          }
+          var weekday = (this.day() + 7 - this.localeData()._week.dow) % 7;
+          return input == null ? weekday : this.add(input - weekday, "d");
+        }
+        function getSetISODayOfWeek(input) {
+          if (!this.isValid()) {
+            return input != null ? this : NaN;
+          }
+          if (input != null) {
+            var weekday = parseIsoWeekday(input, this.localeData());
+            return this.day(this.day() % 7 ? weekday : weekday - 7);
+          } else {
+            return this.day() || 7;
+          }
+        }
+        function weekdaysRegex(isStrict) {
+          if (this._weekdaysParseExact) {
+            if (!hasOwnProp(this, "_weekdaysRegex")) {
+              computeWeekdaysParse.call(this);
+            }
+            if (isStrict) {
+              return this._weekdaysStrictRegex;
+            } else {
+              return this._weekdaysRegex;
+            }
+          } else {
+            if (!hasOwnProp(this, "_weekdaysRegex")) {
+              this._weekdaysRegex = defaultWeekdaysRegex;
+            }
+            return this._weekdaysStrictRegex && isStrict ? this._weekdaysStrictRegex : this._weekdaysRegex;
+          }
+        }
+        function weekdaysShortRegex(isStrict) {
+          if (this._weekdaysParseExact) {
+            if (!hasOwnProp(this, "_weekdaysRegex")) {
+              computeWeekdaysParse.call(this);
+            }
+            if (isStrict) {
+              return this._weekdaysShortStrictRegex;
+            } else {
+              return this._weekdaysShortRegex;
+            }
+          } else {
+            if (!hasOwnProp(this, "_weekdaysShortRegex")) {
+              this._weekdaysShortRegex = defaultWeekdaysShortRegex;
+            }
+            return this._weekdaysShortStrictRegex && isStrict ? this._weekdaysShortStrictRegex : this._weekdaysShortRegex;
+          }
+        }
+        function weekdaysMinRegex(isStrict) {
+          if (this._weekdaysParseExact) {
+            if (!hasOwnProp(this, "_weekdaysRegex")) {
+              computeWeekdaysParse.call(this);
+            }
+            if (isStrict) {
+              return this._weekdaysMinStrictRegex;
+            } else {
+              return this._weekdaysMinRegex;
+            }
+          } else {
+            if (!hasOwnProp(this, "_weekdaysMinRegex")) {
+              this._weekdaysMinRegex = defaultWeekdaysMinRegex;
+            }
+            return this._weekdaysMinStrictRegex && isStrict ? this._weekdaysMinStrictRegex : this._weekdaysMinRegex;
+          }
+        }
+        function computeWeekdaysParse() {
+          function cmpLenRev(a, b) {
+            return b.length - a.length;
+          }
+          var minPieces = [], shortPieces = [], longPieces = [], mixedPieces = [], i, mom, minp, shortp, longp;
+          for (i = 0; i < 7; i++) {
+            mom = createUTC([2e3, 1]).day(i);
+            minp = regexEscape(this.weekdaysMin(mom, ""));
+            shortp = regexEscape(this.weekdaysShort(mom, ""));
+            longp = regexEscape(this.weekdays(mom, ""));
+            minPieces.push(minp);
+            shortPieces.push(shortp);
+            longPieces.push(longp);
+            mixedPieces.push(minp);
+            mixedPieces.push(shortp);
+            mixedPieces.push(longp);
+          }
+          minPieces.sort(cmpLenRev);
+          shortPieces.sort(cmpLenRev);
+          longPieces.sort(cmpLenRev);
+          mixedPieces.sort(cmpLenRev);
+          this._weekdaysRegex = new RegExp("^(" + mixedPieces.join("|") + ")", "i");
+          this._weekdaysShortRegex = this._weekdaysRegex;
+          this._weekdaysMinRegex = this._weekdaysRegex;
+          this._weekdaysStrictRegex = new RegExp(
+            "^(" + longPieces.join("|") + ")",
+            "i"
+          );
+          this._weekdaysShortStrictRegex = new RegExp(
+            "^(" + shortPieces.join("|") + ")",
+            "i"
+          );
+          this._weekdaysMinStrictRegex = new RegExp(
+            "^(" + minPieces.join("|") + ")",
+            "i"
+          );
+        }
+        function hFormat() {
+          return this.hours() % 12 || 12;
+        }
+        function kFormat() {
+          return this.hours() || 24;
+        }
+        addFormatToken("H", ["HH", 2], 0, "hour");
+        addFormatToken("h", ["hh", 2], 0, hFormat);
+        addFormatToken("k", ["kk", 2], 0, kFormat);
+        addFormatToken("hmm", 0, 0, function() {
+          return "" + hFormat.apply(this) + zeroFill(this.minutes(), 2);
+        });
+        addFormatToken("hmmss", 0, 0, function() {
+          return "" + hFormat.apply(this) + zeroFill(this.minutes(), 2) + zeroFill(this.seconds(), 2);
+        });
+        addFormatToken("Hmm", 0, 0, function() {
+          return "" + this.hours() + zeroFill(this.minutes(), 2);
+        });
+        addFormatToken("Hmmss", 0, 0, function() {
+          return "" + this.hours() + zeroFill(this.minutes(), 2) + zeroFill(this.seconds(), 2);
+        });
+        function meridiem(token2, lowercase) {
+          addFormatToken(token2, 0, 0, function() {
+            return this.localeData().meridiem(
+              this.hours(),
+              this.minutes(),
+              lowercase
+            );
+          });
+        }
+        meridiem("a", true);
+        meridiem("A", false);
+        addUnitAlias("hour", "h");
+        addUnitPriority("hour", 13);
+        function matchMeridiem(isStrict, locale2) {
+          return locale2._meridiemParse;
+        }
+        addRegexToken("a", matchMeridiem);
+        addRegexToken("A", matchMeridiem);
+        addRegexToken("H", match1to2);
+        addRegexToken("h", match1to2);
+        addRegexToken("k", match1to2);
+        addRegexToken("HH", match1to2, match2);
+        addRegexToken("hh", match1to2, match2);
+        addRegexToken("kk", match1to2, match2);
+        addRegexToken("hmm", match3to4);
+        addRegexToken("hmmss", match5to6);
+        addRegexToken("Hmm", match3to4);
+        addRegexToken("Hmmss", match5to6);
+        addParseToken(["H", "HH"], HOUR);
+        addParseToken(["k", "kk"], function(input, array, config) {
+          var kInput = toInt(input);
+          array[HOUR] = kInput === 24 ? 0 : kInput;
+        });
+        addParseToken(["a", "A"], function(input, array, config) {
+          config._isPm = config._locale.isPM(input);
+          config._meridiem = input;
+        });
+        addParseToken(["h", "hh"], function(input, array, config) {
+          array[HOUR] = toInt(input);
+          getParsingFlags(config).bigHour = true;
+        });
+        addParseToken("hmm", function(input, array, config) {
+          var pos = input.length - 2;
+          array[HOUR] = toInt(input.substr(0, pos));
+          array[MINUTE] = toInt(input.substr(pos));
+          getParsingFlags(config).bigHour = true;
+        });
+        addParseToken("hmmss", function(input, array, config) {
+          var pos1 = input.length - 4, pos2 = input.length - 2;
+          array[HOUR] = toInt(input.substr(0, pos1));
+          array[MINUTE] = toInt(input.substr(pos1, 2));
+          array[SECOND] = toInt(input.substr(pos2));
+          getParsingFlags(config).bigHour = true;
+        });
+        addParseToken("Hmm", function(input, array, config) {
+          var pos = input.length - 2;
+          array[HOUR] = toInt(input.substr(0, pos));
+          array[MINUTE] = toInt(input.substr(pos));
+        });
+        addParseToken("Hmmss", function(input, array, config) {
+          var pos1 = input.length - 4, pos2 = input.length - 2;
+          array[HOUR] = toInt(input.substr(0, pos1));
+          array[MINUTE] = toInt(input.substr(pos1, 2));
+          array[SECOND] = toInt(input.substr(pos2));
+        });
+        function localeIsPM(input) {
+          return (input + "").toLowerCase().charAt(0) === "p";
+        }
+        var defaultLocaleMeridiemParse = /[ap]\.?m?\.?/i, getSetHour = makeGetSet("Hours", true);
+        function localeMeridiem(hours2, minutes2, isLower) {
+          if (hours2 > 11) {
+            return isLower ? "pm" : "PM";
+          } else {
+            return isLower ? "am" : "AM";
+          }
+        }
+        var baseConfig = {
+          calendar: defaultCalendar,
+          longDateFormat: defaultLongDateFormat,
+          invalidDate: defaultInvalidDate,
+          ordinal: defaultOrdinal,
+          dayOfMonthOrdinalParse: defaultDayOfMonthOrdinalParse,
+          relativeTime: defaultRelativeTime,
+          months: defaultLocaleMonths,
+          monthsShort: defaultLocaleMonthsShort,
+          week: defaultLocaleWeek,
+          weekdays: defaultLocaleWeekdays,
+          weekdaysMin: defaultLocaleWeekdaysMin,
+          weekdaysShort: defaultLocaleWeekdaysShort,
+          meridiemParse: defaultLocaleMeridiemParse
+        };
+        var locales = {}, localeFamilies = {}, globalLocale;
+        function commonPrefix(arr1, arr2) {
+          var i, minl = Math.min(arr1.length, arr2.length);
+          for (i = 0; i < minl; i += 1) {
+            if (arr1[i] !== arr2[i]) {
+              return i;
+            }
+          }
+          return minl;
+        }
+        function normalizeLocale(key) {
+          return key ? key.toLowerCase().replace("_", "-") : key;
+        }
+        function chooseLocale(names) {
+          var i = 0, j, next, locale2, split;
+          while (i < names.length) {
+            split = normalizeLocale(names[i]).split("-");
+            j = split.length;
+            next = normalizeLocale(names[i + 1]);
+            next = next ? next.split("-") : null;
+            while (j > 0) {
+              locale2 = loadLocale(split.slice(0, j).join("-"));
+              if (locale2) {
+                return locale2;
+              }
+              if (next && next.length >= j && commonPrefix(split, next) >= j - 1) {
+                break;
+              }
+              j--;
+            }
+            i++;
+          }
+          return globalLocale;
+        }
+        function isLocaleNameSane(name) {
+          return name.match("^[^/\\\\]*$") != null;
+        }
+        function loadLocale(name) {
+          var oldLocale = null, aliasedRequire;
+          if (locales[name] === void 0 && typeof module !== "undefined" && module && module.exports && isLocaleNameSane(name)) {
+            try {
+              oldLocale = globalLocale._abbr;
+              aliasedRequire = __require;
+              aliasedRequire("./locale/" + name);
+              getSetGlobalLocale(oldLocale);
+            } catch (e) {
+              locales[name] = null;
+            }
+          }
+          return locales[name];
+        }
+        function getSetGlobalLocale(key, values) {
+          var data;
+          if (key) {
+            if (isUndefined(values)) {
+              data = getLocale(key);
+            } else {
+              data = defineLocale(key, values);
+            }
+            if (data) {
+              globalLocale = data;
+            } else {
+              if (typeof console !== "undefined" && console.warn) {
+                console.warn(
+                  "Locale " + key + " not found. Did you forget to load it?"
+                );
+              }
+            }
+          }
+          return globalLocale._abbr;
+        }
+        function defineLocale(name, config) {
+          if (config !== null) {
+            var locale2, parentConfig = baseConfig;
+            config.abbr = name;
+            if (locales[name] != null) {
+              deprecateSimple(
+                "defineLocaleOverride",
+                "use moment.updateLocale(localeName, config) to change an existing locale. moment.defineLocale(localeName, config) should only be used for creating a new locale See http://momentjs.com/guides/#/warnings/define-locale/ for more info."
+              );
+              parentConfig = locales[name]._config;
+            } else if (config.parentLocale != null) {
+              if (locales[config.parentLocale] != null) {
+                parentConfig = locales[config.parentLocale]._config;
+              } else {
+                locale2 = loadLocale(config.parentLocale);
+                if (locale2 != null) {
+                  parentConfig = locale2._config;
+                } else {
+                  if (!localeFamilies[config.parentLocale]) {
+                    localeFamilies[config.parentLocale] = [];
+                  }
+                  localeFamilies[config.parentLocale].push({
+                    name,
+                    config
+                  });
+                  return null;
+                }
+              }
+            }
+            locales[name] = new Locale(mergeConfigs(parentConfig, config));
+            if (localeFamilies[name]) {
+              localeFamilies[name].forEach(function(x) {
+                defineLocale(x.name, x.config);
+              });
+            }
+            getSetGlobalLocale(name);
+            return locales[name];
+          } else {
+            delete locales[name];
+            return null;
+          }
+        }
+        function updateLocale(name, config) {
+          if (config != null) {
+            var locale2, tmpLocale, parentConfig = baseConfig;
+            if (locales[name] != null && locales[name].parentLocale != null) {
+              locales[name].set(mergeConfigs(locales[name]._config, config));
+            } else {
+              tmpLocale = loadLocale(name);
+              if (tmpLocale != null) {
+                parentConfig = tmpLocale._config;
+              }
+              config = mergeConfigs(parentConfig, config);
+              if (tmpLocale == null) {
+                config.abbr = name;
+              }
+              locale2 = new Locale(config);
+              locale2.parentLocale = locales[name];
+              locales[name] = locale2;
+            }
+            getSetGlobalLocale(name);
+          } else {
+            if (locales[name] != null) {
+              if (locales[name].parentLocale != null) {
+                locales[name] = locales[name].parentLocale;
+                if (name === getSetGlobalLocale()) {
+                  getSetGlobalLocale(name);
+                }
+              } else if (locales[name] != null) {
+                delete locales[name];
+              }
+            }
+          }
+          return locales[name];
+        }
+        function getLocale(key) {
+          var locale2;
+          if (key && key._locale && key._locale._abbr) {
+            key = key._locale._abbr;
+          }
+          if (!key) {
+            return globalLocale;
+          }
+          if (!isArray(key)) {
+            locale2 = loadLocale(key);
+            if (locale2) {
+              return locale2;
+            }
+            key = [key];
+          }
+          return chooseLocale(key);
+        }
+        function listLocales() {
+          return keys(locales);
+        }
+        function checkOverflow(m) {
+          var overflow, a = m._a;
+          if (a && getParsingFlags(m).overflow === -2) {
+            overflow = a[MONTH] < 0 || a[MONTH] > 11 ? MONTH : a[DATE] < 1 || a[DATE] > daysInMonth(a[YEAR], a[MONTH]) ? DATE : a[HOUR] < 0 || a[HOUR] > 24 || a[HOUR] === 24 && (a[MINUTE] !== 0 || a[SECOND] !== 0 || a[MILLISECOND] !== 0) ? HOUR : a[MINUTE] < 0 || a[MINUTE] > 59 ? MINUTE : a[SECOND] < 0 || a[SECOND] > 59 ? SECOND : a[MILLISECOND] < 0 || a[MILLISECOND] > 999 ? MILLISECOND : -1;
+            if (getParsingFlags(m)._overflowDayOfYear && (overflow < YEAR || overflow > DATE)) {
+              overflow = DATE;
+            }
+            if (getParsingFlags(m)._overflowWeeks && overflow === -1) {
+              overflow = WEEK;
+            }
+            if (getParsingFlags(m)._overflowWeekday && overflow === -1) {
+              overflow = WEEKDAY;
+            }
+            getParsingFlags(m).overflow = overflow;
+          }
+          return m;
+        }
+        var extendedIsoRegex = /^\s*((?:[+-]\d{6}|\d{4})-(?:\d\d-\d\d|W\d\d-\d|W\d\d|\d\d\d|\d\d))(?:(T| )(\d\d(?::\d\d(?::\d\d(?:[.,]\d+)?)?)?)([+-]\d\d(?::?\d\d)?|\s*Z)?)?$/, basicIsoRegex = /^\s*((?:[+-]\d{6}|\d{4})(?:\d\d\d\d|W\d\d\d|W\d\d|\d\d\d|\d\d|))(?:(T| )(\d\d(?:\d\d(?:\d\d(?:[.,]\d+)?)?)?)([+-]\d\d(?::?\d\d)?|\s*Z)?)?$/, tzRegex = /Z|[+-]\d\d(?::?\d\d)?/, isoDates = [
+          ["YYYYYY-MM-DD", /[+-]\d{6}-\d\d-\d\d/],
+          ["YYYY-MM-DD", /\d{4}-\d\d-\d\d/],
+          ["GGGG-[W]WW-E", /\d{4}-W\d\d-\d/],
+          ["GGGG-[W]WW", /\d{4}-W\d\d/, false],
+          ["YYYY-DDD", /\d{4}-\d{3}/],
+          ["YYYY-MM", /\d{4}-\d\d/, false],
+          ["YYYYYYMMDD", /[+-]\d{10}/],
+          ["YYYYMMDD", /\d{8}/],
+          ["GGGG[W]WWE", /\d{4}W\d{3}/],
+          ["GGGG[W]WW", /\d{4}W\d{2}/, false],
+          ["YYYYDDD", /\d{7}/],
+          ["YYYYMM", /\d{6}/, false],
+          ["YYYY", /\d{4}/, false]
+        ], isoTimes = [
+          ["HH:mm:ss.SSSS", /\d\d:\d\d:\d\d\.\d+/],
+          ["HH:mm:ss,SSSS", /\d\d:\d\d:\d\d,\d+/],
+          ["HH:mm:ss", /\d\d:\d\d:\d\d/],
+          ["HH:mm", /\d\d:\d\d/],
+          ["HHmmss.SSSS", /\d\d\d\d\d\d\.\d+/],
+          ["HHmmss,SSSS", /\d\d\d\d\d\d,\d+/],
+          ["HHmmss", /\d\d\d\d\d\d/],
+          ["HHmm", /\d\d\d\d/],
+          ["HH", /\d\d/]
+        ], aspNetJsonRegex = /^\/?Date\((-?\d+)/i, rfc2822 = /^(?:(Mon|Tue|Wed|Thu|Fri|Sat|Sun),?\s)?(\d{1,2})\s(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s(\d{2,4})\s(\d\d):(\d\d)(?::(\d\d))?\s(?:(UT|GMT|[ECMP][SD]T)|([Zz])|([+-]\d{4}))$/, obsOffsets = {
+          UT: 0,
+          GMT: 0,
+          EDT: -4 * 60,
+          EST: -5 * 60,
+          CDT: -5 * 60,
+          CST: -6 * 60,
+          MDT: -6 * 60,
+          MST: -7 * 60,
+          PDT: -7 * 60,
+          PST: -8 * 60
+        };
+        function configFromISO(config) {
+          var i, l, string = config._i, match = extendedIsoRegex.exec(string) || basicIsoRegex.exec(string), allowTime, dateFormat, timeFormat, tzFormat, isoDatesLen = isoDates.length, isoTimesLen = isoTimes.length;
+          if (match) {
+            getParsingFlags(config).iso = true;
+            for (i = 0, l = isoDatesLen; i < l; i++) {
+              if (isoDates[i][1].exec(match[1])) {
+                dateFormat = isoDates[i][0];
+                allowTime = isoDates[i][2] !== false;
+                break;
+              }
+            }
+            if (dateFormat == null) {
+              config._isValid = false;
+              return;
+            }
+            if (match[3]) {
+              for (i = 0, l = isoTimesLen; i < l; i++) {
+                if (isoTimes[i][1].exec(match[3])) {
+                  timeFormat = (match[2] || " ") + isoTimes[i][0];
+                  break;
+                }
+              }
+              if (timeFormat == null) {
+                config._isValid = false;
+                return;
+              }
+            }
+            if (!allowTime && timeFormat != null) {
+              config._isValid = false;
+              return;
+            }
+            if (match[4]) {
+              if (tzRegex.exec(match[4])) {
+                tzFormat = "Z";
+              } else {
+                config._isValid = false;
+                return;
+              }
+            }
+            config._f = dateFormat + (timeFormat || "") + (tzFormat || "");
+            configFromStringAndFormat(config);
+          } else {
+            config._isValid = false;
+          }
+        }
+        function extractFromRFC2822Strings(yearStr, monthStr, dayStr, hourStr, minuteStr, secondStr) {
+          var result = [
+            untruncateYear(yearStr),
+            defaultLocaleMonthsShort.indexOf(monthStr),
+            parseInt(dayStr, 10),
+            parseInt(hourStr, 10),
+            parseInt(minuteStr, 10)
+          ];
+          if (secondStr) {
+            result.push(parseInt(secondStr, 10));
+          }
+          return result;
+        }
+        function untruncateYear(yearStr) {
+          var year = parseInt(yearStr, 10);
+          if (year <= 49) {
+            return 2e3 + year;
+          } else if (year <= 999) {
+            return 1900 + year;
+          }
+          return year;
+        }
+        function preprocessRFC2822(s) {
+          return s.replace(/\([^()]*\)|[\n\t]/g, " ").replace(/(\s\s+)/g, " ").replace(/^\s\s*/, "").replace(/\s\s*$/, "");
+        }
+        function checkWeekday(weekdayStr, parsedInput, config) {
+          if (weekdayStr) {
+            var weekdayProvided = defaultLocaleWeekdaysShort.indexOf(weekdayStr), weekdayActual = new Date(
+              parsedInput[0],
+              parsedInput[1],
+              parsedInput[2]
+            ).getDay();
+            if (weekdayProvided !== weekdayActual) {
+              getParsingFlags(config).weekdayMismatch = true;
+              config._isValid = false;
+              return false;
+            }
+          }
+          return true;
+        }
+        function calculateOffset(obsOffset, militaryOffset, numOffset) {
+          if (obsOffset) {
+            return obsOffsets[obsOffset];
+          } else if (militaryOffset) {
+            return 0;
+          } else {
+            var hm = parseInt(numOffset, 10), m = hm % 100, h = (hm - m) / 100;
+            return h * 60 + m;
+          }
+        }
+        function configFromRFC2822(config) {
+          var match = rfc2822.exec(preprocessRFC2822(config._i)), parsedArray;
+          if (match) {
+            parsedArray = extractFromRFC2822Strings(
+              match[4],
+              match[3],
+              match[2],
+              match[5],
+              match[6],
+              match[7]
+            );
+            if (!checkWeekday(match[1], parsedArray, config)) {
+              return;
+            }
+            config._a = parsedArray;
+            config._tzm = calculateOffset(match[8], match[9], match[10]);
+            config._d = createUTCDate.apply(null, config._a);
+            config._d.setUTCMinutes(config._d.getUTCMinutes() - config._tzm);
+            getParsingFlags(config).rfc2822 = true;
+          } else {
+            config._isValid = false;
+          }
+        }
+        function configFromString(config) {
+          var matched = aspNetJsonRegex.exec(config._i);
+          if (matched !== null) {
+            config._d = new Date(+matched[1]);
+            return;
+          }
+          configFromISO(config);
+          if (config._isValid === false) {
+            delete config._isValid;
+          } else {
+            return;
+          }
+          configFromRFC2822(config);
+          if (config._isValid === false) {
+            delete config._isValid;
+          } else {
+            return;
+          }
+          if (config._strict) {
+            config._isValid = false;
+          } else {
+            hooks.createFromInputFallback(config);
+          }
+        }
+        hooks.createFromInputFallback = deprecate(
+          "value provided is not in a recognized RFC2822 or ISO format. moment construction falls back to js Date(), which is not reliable across all browsers and versions. Non RFC2822/ISO date formats are discouraged. Please refer to http://momentjs.com/guides/#/warnings/js-date/ for more info.",
+          function(config) {
+            config._d = new Date(config._i + (config._useUTC ? " UTC" : ""));
+          }
+        );
+        function defaults(a, b, c) {
+          if (a != null) {
+            return a;
+          }
+          if (b != null) {
+            return b;
+          }
+          return c;
+        }
+        function currentDateArray(config) {
+          var nowValue = new Date(hooks.now());
+          if (config._useUTC) {
+            return [
+              nowValue.getUTCFullYear(),
+              nowValue.getUTCMonth(),
+              nowValue.getUTCDate()
+            ];
+          }
+          return [nowValue.getFullYear(), nowValue.getMonth(), nowValue.getDate()];
+        }
+        function configFromArray(config) {
+          var i, date, input = [], currentDate, expectedWeekday, yearToUse;
+          if (config._d) {
+            return;
+          }
+          currentDate = currentDateArray(config);
+          if (config._w && config._a[DATE] == null && config._a[MONTH] == null) {
+            dayOfYearFromWeekInfo(config);
+          }
+          if (config._dayOfYear != null) {
+            yearToUse = defaults(config._a[YEAR], currentDate[YEAR]);
+            if (config._dayOfYear > daysInYear(yearToUse) || config._dayOfYear === 0) {
+              getParsingFlags(config)._overflowDayOfYear = true;
+            }
+            date = createUTCDate(yearToUse, 0, config._dayOfYear);
+            config._a[MONTH] = date.getUTCMonth();
+            config._a[DATE] = date.getUTCDate();
+          }
+          for (i = 0; i < 3 && config._a[i] == null; ++i) {
+            config._a[i] = input[i] = currentDate[i];
+          }
+          for (; i < 7; i++) {
+            config._a[i] = input[i] = config._a[i] == null ? i === 2 ? 1 : 0 : config._a[i];
+          }
+          if (config._a[HOUR] === 24 && config._a[MINUTE] === 0 && config._a[SECOND] === 0 && config._a[MILLISECOND] === 0) {
+            config._nextDay = true;
+            config._a[HOUR] = 0;
+          }
+          config._d = (config._useUTC ? createUTCDate : createDate).apply(
+            null,
+            input
+          );
+          expectedWeekday = config._useUTC ? config._d.getUTCDay() : config._d.getDay();
+          if (config._tzm != null) {
+            config._d.setUTCMinutes(config._d.getUTCMinutes() - config._tzm);
+          }
+          if (config._nextDay) {
+            config._a[HOUR] = 24;
+          }
+          if (config._w && typeof config._w.d !== "undefined" && config._w.d !== expectedWeekday) {
+            getParsingFlags(config).weekdayMismatch = true;
+          }
+        }
+        function dayOfYearFromWeekInfo(config) {
+          var w, weekYear, week, weekday, dow, doy, temp, weekdayOverflow, curWeek;
+          w = config._w;
+          if (w.GG != null || w.W != null || w.E != null) {
+            dow = 1;
+            doy = 4;
+            weekYear = defaults(
+              w.GG,
+              config._a[YEAR],
+              weekOfYear(createLocal(), 1, 4).year
+            );
+            week = defaults(w.W, 1);
+            weekday = defaults(w.E, 1);
+            if (weekday < 1 || weekday > 7) {
+              weekdayOverflow = true;
+            }
+          } else {
+            dow = config._locale._week.dow;
+            doy = config._locale._week.doy;
+            curWeek = weekOfYear(createLocal(), dow, doy);
+            weekYear = defaults(w.gg, config._a[YEAR], curWeek.year);
+            week = defaults(w.w, curWeek.week);
+            if (w.d != null) {
+              weekday = w.d;
+              if (weekday < 0 || weekday > 6) {
+                weekdayOverflow = true;
+              }
+            } else if (w.e != null) {
+              weekday = w.e + dow;
+              if (w.e < 0 || w.e > 6) {
+                weekdayOverflow = true;
+              }
+            } else {
+              weekday = dow;
+            }
+          }
+          if (week < 1 || week > weeksInYear(weekYear, dow, doy)) {
+            getParsingFlags(config)._overflowWeeks = true;
+          } else if (weekdayOverflow != null) {
+            getParsingFlags(config)._overflowWeekday = true;
+          } else {
+            temp = dayOfYearFromWeeks(weekYear, week, weekday, dow, doy);
+            config._a[YEAR] = temp.year;
+            config._dayOfYear = temp.dayOfYear;
+          }
+        }
+        hooks.ISO_8601 = function() {
+        };
+        hooks.RFC_2822 = function() {
+        };
+        function configFromStringAndFormat(config) {
+          if (config._f === hooks.ISO_8601) {
+            configFromISO(config);
+            return;
+          }
+          if (config._f === hooks.RFC_2822) {
+            configFromRFC2822(config);
+            return;
+          }
+          config._a = [];
+          getParsingFlags(config).empty = true;
+          var string = "" + config._i, i, parsedInput, tokens2, token2, skipped, stringLength = string.length, totalParsedInputLength = 0, era, tokenLen;
+          tokens2 = expandFormat(config._f, config._locale).match(formattingTokens) || [];
+          tokenLen = tokens2.length;
+          for (i = 0; i < tokenLen; i++) {
+            token2 = tokens2[i];
+            parsedInput = (string.match(getParseRegexForToken(token2, config)) || [])[0];
+            if (parsedInput) {
+              skipped = string.substr(0, string.indexOf(parsedInput));
+              if (skipped.length > 0) {
+                getParsingFlags(config).unusedInput.push(skipped);
+              }
+              string = string.slice(
+                string.indexOf(parsedInput) + parsedInput.length
+              );
+              totalParsedInputLength += parsedInput.length;
+            }
+            if (formatTokenFunctions[token2]) {
+              if (parsedInput) {
+                getParsingFlags(config).empty = false;
+              } else {
+                getParsingFlags(config).unusedTokens.push(token2);
+              }
+              addTimeToArrayFromToken(token2, parsedInput, config);
+            } else if (config._strict && !parsedInput) {
+              getParsingFlags(config).unusedTokens.push(token2);
+            }
+          }
+          getParsingFlags(config).charsLeftOver = stringLength - totalParsedInputLength;
+          if (string.length > 0) {
+            getParsingFlags(config).unusedInput.push(string);
+          }
+          if (config._a[HOUR] <= 12 && getParsingFlags(config).bigHour === true && config._a[HOUR] > 0) {
+            getParsingFlags(config).bigHour = void 0;
+          }
+          getParsingFlags(config).parsedDateParts = config._a.slice(0);
+          getParsingFlags(config).meridiem = config._meridiem;
+          config._a[HOUR] = meridiemFixWrap(
+            config._locale,
+            config._a[HOUR],
+            config._meridiem
+          );
+          era = getParsingFlags(config).era;
+          if (era !== null) {
+            config._a[YEAR] = config._locale.erasConvertYear(era, config._a[YEAR]);
+          }
+          configFromArray(config);
+          checkOverflow(config);
+        }
+        function meridiemFixWrap(locale2, hour, meridiem2) {
+          var isPm;
+          if (meridiem2 == null) {
+            return hour;
+          }
+          if (locale2.meridiemHour != null) {
+            return locale2.meridiemHour(hour, meridiem2);
+          } else if (locale2.isPM != null) {
+            isPm = locale2.isPM(meridiem2);
+            if (isPm && hour < 12) {
+              hour += 12;
+            }
+            if (!isPm && hour === 12) {
+              hour = 0;
+            }
+            return hour;
+          } else {
+            return hour;
+          }
+        }
+        function configFromStringAndArray(config) {
+          var tempConfig, bestMoment, scoreToBeat, i, currentScore, validFormatFound, bestFormatIsValid = false, configfLen = config._f.length;
+          if (configfLen === 0) {
+            getParsingFlags(config).invalidFormat = true;
+            config._d = new Date(NaN);
+            return;
+          }
+          for (i = 0; i < configfLen; i++) {
+            currentScore = 0;
+            validFormatFound = false;
+            tempConfig = copyConfig({}, config);
+            if (config._useUTC != null) {
+              tempConfig._useUTC = config._useUTC;
+            }
+            tempConfig._f = config._f[i];
+            configFromStringAndFormat(tempConfig);
+            if (isValid(tempConfig)) {
+              validFormatFound = true;
+            }
+            currentScore += getParsingFlags(tempConfig).charsLeftOver;
+            currentScore += getParsingFlags(tempConfig).unusedTokens.length * 10;
+            getParsingFlags(tempConfig).score = currentScore;
+            if (!bestFormatIsValid) {
+              if (scoreToBeat == null || currentScore < scoreToBeat || validFormatFound) {
+                scoreToBeat = currentScore;
+                bestMoment = tempConfig;
+                if (validFormatFound) {
+                  bestFormatIsValid = true;
+                }
+              }
+            } else {
+              if (currentScore < scoreToBeat) {
+                scoreToBeat = currentScore;
+                bestMoment = tempConfig;
+              }
+            }
+          }
+          extend(config, bestMoment || tempConfig);
+        }
+        function configFromObject(config) {
+          if (config._d) {
+            return;
+          }
+          var i = normalizeObjectUnits(config._i), dayOrDate = i.day === void 0 ? i.date : i.day;
+          config._a = map(
+            [i.year, i.month, dayOrDate, i.hour, i.minute, i.second, i.millisecond],
+            function(obj) {
+              return obj && parseInt(obj, 10);
+            }
+          );
+          configFromArray(config);
+        }
+        function createFromConfig(config) {
+          var res = new Moment(checkOverflow(prepareConfig(config)));
+          if (res._nextDay) {
+            res.add(1, "d");
+            res._nextDay = void 0;
+          }
+          return res;
+        }
+        function prepareConfig(config) {
+          var input = config._i, format2 = config._f;
+          config._locale = config._locale || getLocale(config._l);
+          if (input === null || format2 === void 0 && input === "") {
+            return createInvalid({ nullInput: true });
+          }
+          if (typeof input === "string") {
+            config._i = input = config._locale.preparse(input);
+          }
+          if (isMoment(input)) {
+            return new Moment(checkOverflow(input));
+          } else if (isDate(input)) {
+            config._d = input;
+          } else if (isArray(format2)) {
+            configFromStringAndArray(config);
+          } else if (format2) {
+            configFromStringAndFormat(config);
+          } else {
+            configFromInput(config);
+          }
+          if (!isValid(config)) {
+            config._d = null;
+          }
+          return config;
+        }
+        function configFromInput(config) {
+          var input = config._i;
+          if (isUndefined(input)) {
+            config._d = new Date(hooks.now());
+          } else if (isDate(input)) {
+            config._d = new Date(input.valueOf());
+          } else if (typeof input === "string") {
+            configFromString(config);
+          } else if (isArray(input)) {
+            config._a = map(input.slice(0), function(obj) {
+              return parseInt(obj, 10);
+            });
+            configFromArray(config);
+          } else if (isObject(input)) {
+            configFromObject(config);
+          } else if (isNumber(input)) {
+            config._d = new Date(input);
+          } else {
+            hooks.createFromInputFallback(config);
+          }
+        }
+        function createLocalOrUTC(input, format2, locale2, strict, isUTC) {
+          var c = {};
+          if (format2 === true || format2 === false) {
+            strict = format2;
+            format2 = void 0;
+          }
+          if (locale2 === true || locale2 === false) {
+            strict = locale2;
+            locale2 = void 0;
+          }
+          if (isObject(input) && isObjectEmpty(input) || isArray(input) && input.length === 0) {
+            input = void 0;
+          }
+          c._isAMomentObject = true;
+          c._useUTC = c._isUTC = isUTC;
+          c._l = locale2;
+          c._i = input;
+          c._f = format2;
+          c._strict = strict;
+          return createFromConfig(c);
+        }
+        function createLocal(input, format2, locale2, strict) {
+          return createLocalOrUTC(input, format2, locale2, strict, false);
+        }
+        var prototypeMin = deprecate(
+          "moment().min is deprecated, use moment.max instead. http://momentjs.com/guides/#/warnings/min-max/",
+          function() {
+            var other = createLocal.apply(null, arguments);
+            if (this.isValid() && other.isValid()) {
+              return other < this ? this : other;
+            } else {
+              return createInvalid();
+            }
+          }
+        ), prototypeMax = deprecate(
+          "moment().max is deprecated, use moment.min instead. http://momentjs.com/guides/#/warnings/min-max/",
+          function() {
+            var other = createLocal.apply(null, arguments);
+            if (this.isValid() && other.isValid()) {
+              return other > this ? this : other;
+            } else {
+              return createInvalid();
+            }
+          }
+        );
+        function pickBy(fn, moments) {
+          var res, i;
+          if (moments.length === 1 && isArray(moments[0])) {
+            moments = moments[0];
+          }
+          if (!moments.length) {
+            return createLocal();
+          }
+          res = moments[0];
+          for (i = 1; i < moments.length; ++i) {
+            if (!moments[i].isValid() || moments[i][fn](res)) {
+              res = moments[i];
+            }
+          }
+          return res;
+        }
+        function min() {
+          var args = [].slice.call(arguments, 0);
+          return pickBy("isBefore", args);
+        }
+        function max() {
+          var args = [].slice.call(arguments, 0);
+          return pickBy("isAfter", args);
+        }
+        var now = function() {
+          return Date.now ? Date.now() : +new Date();
+        };
+        var ordering = [
+          "year",
+          "quarter",
+          "month",
+          "week",
+          "day",
+          "hour",
+          "minute",
+          "second",
+          "millisecond"
+        ];
+        function isDurationValid(m) {
+          var key, unitHasDecimal = false, i, orderLen = ordering.length;
+          for (key in m) {
+            if (hasOwnProp(m, key) && !(indexOf.call(ordering, key) !== -1 && (m[key] == null || !isNaN(m[key])))) {
+              return false;
+            }
+          }
+          for (i = 0; i < orderLen; ++i) {
+            if (m[ordering[i]]) {
+              if (unitHasDecimal) {
+                return false;
+              }
+              if (parseFloat(m[ordering[i]]) !== toInt(m[ordering[i]])) {
+                unitHasDecimal = true;
+              }
+            }
+          }
+          return true;
+        }
+        function isValid$1() {
+          return this._isValid;
+        }
+        function createInvalid$1() {
+          return createDuration(NaN);
+        }
+        function Duration(duration) {
+          var normalizedInput = normalizeObjectUnits(duration), years2 = normalizedInput.year || 0, quarters = normalizedInput.quarter || 0, months2 = normalizedInput.month || 0, weeks2 = normalizedInput.week || normalizedInput.isoWeek || 0, days2 = normalizedInput.day || 0, hours2 = normalizedInput.hour || 0, minutes2 = normalizedInput.minute || 0, seconds2 = normalizedInput.second || 0, milliseconds2 = normalizedInput.millisecond || 0;
+          this._isValid = isDurationValid(normalizedInput);
+          this._milliseconds = +milliseconds2 + seconds2 * 1e3 + minutes2 * 6e4 + hours2 * 1e3 * 60 * 60;
+          this._days = +days2 + weeks2 * 7;
+          this._months = +months2 + quarters * 3 + years2 * 12;
+          this._data = {};
+          this._locale = getLocale();
+          this._bubble();
+        }
+        function isDuration(obj) {
+          return obj instanceof Duration;
+        }
+        function absRound(number) {
+          if (number < 0) {
+            return Math.round(-1 * number) * -1;
+          } else {
+            return Math.round(number);
+          }
+        }
+        function compareArrays(array1, array2, dontConvert) {
+          var len = Math.min(array1.length, array2.length), lengthDiff = Math.abs(array1.length - array2.length), diffs = 0, i;
+          for (i = 0; i < len; i++) {
+            if (dontConvert && array1[i] !== array2[i] || !dontConvert && toInt(array1[i]) !== toInt(array2[i])) {
+              diffs++;
+            }
+          }
+          return diffs + lengthDiff;
+        }
+        function offset(token2, separator) {
+          addFormatToken(token2, 0, 0, function() {
+            var offset2 = this.utcOffset(), sign2 = "+";
+            if (offset2 < 0) {
+              offset2 = -offset2;
+              sign2 = "-";
+            }
+            return sign2 + zeroFill(~~(offset2 / 60), 2) + separator + zeroFill(~~offset2 % 60, 2);
+          });
+        }
+        offset("Z", ":");
+        offset("ZZ", "");
+        addRegexToken("Z", matchShortOffset);
+        addRegexToken("ZZ", matchShortOffset);
+        addParseToken(["Z", "ZZ"], function(input, array, config) {
+          config._useUTC = true;
+          config._tzm = offsetFromString(matchShortOffset, input);
+        });
+        var chunkOffset = /([\+\-]|\d\d)/gi;
+        function offsetFromString(matcher, string) {
+          var matches = (string || "").match(matcher), chunk, parts, minutes2;
+          if (matches === null) {
+            return null;
+          }
+          chunk = matches[matches.length - 1] || [];
+          parts = (chunk + "").match(chunkOffset) || ["-", 0, 0];
+          minutes2 = +(parts[1] * 60) + toInt(parts[2]);
+          return minutes2 === 0 ? 0 : parts[0] === "+" ? minutes2 : -minutes2;
+        }
+        function cloneWithOffset(input, model) {
+          var res, diff2;
+          if (model._isUTC) {
+            res = model.clone();
+            diff2 = (isMoment(input) || isDate(input) ? input.valueOf() : createLocal(input).valueOf()) - res.valueOf();
+            res._d.setTime(res._d.valueOf() + diff2);
+            hooks.updateOffset(res, false);
+            return res;
+          } else {
+            return createLocal(input).local();
+          }
+        }
+        function getDateOffset(m) {
+          return -Math.round(m._d.getTimezoneOffset());
+        }
+        hooks.updateOffset = function() {
+        };
+        function getSetOffset(input, keepLocalTime, keepMinutes) {
+          var offset2 = this._offset || 0, localAdjust;
+          if (!this.isValid()) {
+            return input != null ? this : NaN;
+          }
+          if (input != null) {
+            if (typeof input === "string") {
+              input = offsetFromString(matchShortOffset, input);
+              if (input === null) {
+                return this;
+              }
+            } else if (Math.abs(input) < 16 && !keepMinutes) {
+              input = input * 60;
+            }
+            if (!this._isUTC && keepLocalTime) {
+              localAdjust = getDateOffset(this);
+            }
+            this._offset = input;
+            this._isUTC = true;
+            if (localAdjust != null) {
+              this.add(localAdjust, "m");
+            }
+            if (offset2 !== input) {
+              if (!keepLocalTime || this._changeInProgress) {
+                addSubtract(
+                  this,
+                  createDuration(input - offset2, "m"),
+                  1,
+                  false
+                );
+              } else if (!this._changeInProgress) {
+                this._changeInProgress = true;
+                hooks.updateOffset(this, true);
+                this._changeInProgress = null;
+              }
+            }
+            return this;
+          } else {
+            return this._isUTC ? offset2 : getDateOffset(this);
+          }
+        }
+        function getSetZone(input, keepLocalTime) {
+          if (input != null) {
+            if (typeof input !== "string") {
+              input = -input;
+            }
+            this.utcOffset(input, keepLocalTime);
+            return this;
+          } else {
+            return -this.utcOffset();
+          }
+        }
+        function setOffsetToUTC(keepLocalTime) {
+          return this.utcOffset(0, keepLocalTime);
+        }
+        function setOffsetToLocal(keepLocalTime) {
+          if (this._isUTC) {
+            this.utcOffset(0, keepLocalTime);
+            this._isUTC = false;
+            if (keepLocalTime) {
+              this.subtract(getDateOffset(this), "m");
+            }
+          }
+          return this;
+        }
+        function setOffsetToParsedOffset() {
+          if (this._tzm != null) {
+            this.utcOffset(this._tzm, false, true);
+          } else if (typeof this._i === "string") {
+            var tZone = offsetFromString(matchOffset, this._i);
+            if (tZone != null) {
+              this.utcOffset(tZone);
+            } else {
+              this.utcOffset(0, true);
+            }
+          }
+          return this;
+        }
+        function hasAlignedHourOffset(input) {
+          if (!this.isValid()) {
+            return false;
+          }
+          input = input ? createLocal(input).utcOffset() : 0;
+          return (this.utcOffset() - input) % 60 === 0;
+        }
+        function isDaylightSavingTime() {
+          return this.utcOffset() > this.clone().month(0).utcOffset() || this.utcOffset() > this.clone().month(5).utcOffset();
+        }
+        function isDaylightSavingTimeShifted() {
+          if (!isUndefined(this._isDSTShifted)) {
+            return this._isDSTShifted;
+          }
+          var c = {}, other;
+          copyConfig(c, this);
+          c = prepareConfig(c);
+          if (c._a) {
+            other = c._isUTC ? createUTC(c._a) : createLocal(c._a);
+            this._isDSTShifted = this.isValid() && compareArrays(c._a, other.toArray()) > 0;
+          } else {
+            this._isDSTShifted = false;
+          }
+          return this._isDSTShifted;
+        }
+        function isLocal() {
+          return this.isValid() ? !this._isUTC : false;
+        }
+        function isUtcOffset() {
+          return this.isValid() ? this._isUTC : false;
+        }
+        function isUtc() {
+          return this.isValid() ? this._isUTC && this._offset === 0 : false;
+        }
+        var aspNetRegex = /^(-|\+)?(?:(\d*)[. ])?(\d+):(\d+)(?::(\d+)(\.\d*)?)?$/, isoRegex = /^(-|\+)?P(?:([-+]?[0-9,.]*)Y)?(?:([-+]?[0-9,.]*)M)?(?:([-+]?[0-9,.]*)W)?(?:([-+]?[0-9,.]*)D)?(?:T(?:([-+]?[0-9,.]*)H)?(?:([-+]?[0-9,.]*)M)?(?:([-+]?[0-9,.]*)S)?)?$/;
+        function createDuration(input, key) {
+          var duration = input, match = null, sign2, ret, diffRes;
+          if (isDuration(input)) {
+            duration = {
+              ms: input._milliseconds,
+              d: input._days,
+              M: input._months
+            };
+          } else if (isNumber(input) || !isNaN(+input)) {
+            duration = {};
+            if (key) {
+              duration[key] = +input;
+            } else {
+              duration.milliseconds = +input;
+            }
+          } else if (match = aspNetRegex.exec(input)) {
+            sign2 = match[1] === "-" ? -1 : 1;
+            duration = {
+              y: 0,
+              d: toInt(match[DATE]) * sign2,
+              h: toInt(match[HOUR]) * sign2,
+              m: toInt(match[MINUTE]) * sign2,
+              s: toInt(match[SECOND]) * sign2,
+              ms: toInt(absRound(match[MILLISECOND] * 1e3)) * sign2
+            };
+          } else if (match = isoRegex.exec(input)) {
+            sign2 = match[1] === "-" ? -1 : 1;
+            duration = {
+              y: parseIso(match[2], sign2),
+              M: parseIso(match[3], sign2),
+              w: parseIso(match[4], sign2),
+              d: parseIso(match[5], sign2),
+              h: parseIso(match[6], sign2),
+              m: parseIso(match[7], sign2),
+              s: parseIso(match[8], sign2)
+            };
+          } else if (duration == null) {
+            duration = {};
+          } else if (typeof duration === "object" && ("from" in duration || "to" in duration)) {
+            diffRes = momentsDifference(
+              createLocal(duration.from),
+              createLocal(duration.to)
+            );
+            duration = {};
+            duration.ms = diffRes.milliseconds;
+            duration.M = diffRes.months;
+          }
+          ret = new Duration(duration);
+          if (isDuration(input) && hasOwnProp(input, "_locale")) {
+            ret._locale = input._locale;
+          }
+          if (isDuration(input) && hasOwnProp(input, "_isValid")) {
+            ret._isValid = input._isValid;
+          }
+          return ret;
+        }
+        createDuration.fn = Duration.prototype;
+        createDuration.invalid = createInvalid$1;
+        function parseIso(inp, sign2) {
+          var res = inp && parseFloat(inp.replace(",", "."));
+          return (isNaN(res) ? 0 : res) * sign2;
+        }
+        function positiveMomentsDifference(base, other) {
+          var res = {};
+          res.months = other.month() - base.month() + (other.year() - base.year()) * 12;
+          if (base.clone().add(res.months, "M").isAfter(other)) {
+            --res.months;
+          }
+          res.milliseconds = +other - +base.clone().add(res.months, "M");
+          return res;
+        }
+        function momentsDifference(base, other) {
+          var res;
+          if (!(base.isValid() && other.isValid())) {
+            return { milliseconds: 0, months: 0 };
+          }
+          other = cloneWithOffset(other, base);
+          if (base.isBefore(other)) {
+            res = positiveMomentsDifference(base, other);
+          } else {
+            res = positiveMomentsDifference(other, base);
+            res.milliseconds = -res.milliseconds;
+            res.months = -res.months;
+          }
+          return res;
+        }
+        function createAdder(direction, name) {
+          return function(val, period) {
+            var dur, tmp;
+            if (period !== null && !isNaN(+period)) {
+              deprecateSimple(
+                name,
+                "moment()." + name + "(period, number) is deprecated. Please use moment()." + name + "(number, period). See http://momentjs.com/guides/#/warnings/add-inverted-param/ for more info."
+              );
+              tmp = val;
+              val = period;
+              period = tmp;
+            }
+            dur = createDuration(val, period);
+            addSubtract(this, dur, direction);
+            return this;
+          };
+        }
+        function addSubtract(mom, duration, isAdding, updateOffset) {
+          var milliseconds2 = duration._milliseconds, days2 = absRound(duration._days), months2 = absRound(duration._months);
+          if (!mom.isValid()) {
+            return;
+          }
+          updateOffset = updateOffset == null ? true : updateOffset;
+          if (months2) {
+            setMonth(mom, get(mom, "Month") + months2 * isAdding);
+          }
+          if (days2) {
+            set$1(mom, "Date", get(mom, "Date") + days2 * isAdding);
+          }
+          if (milliseconds2) {
+            mom._d.setTime(mom._d.valueOf() + milliseconds2 * isAdding);
+          }
+          if (updateOffset) {
+            hooks.updateOffset(mom, days2 || months2);
+          }
+        }
+        var add = createAdder(1, "add"), subtract = createAdder(-1, "subtract");
+        function isString(input) {
+          return typeof input === "string" || input instanceof String;
+        }
+        function isMomentInput(input) {
+          return isMoment(input) || isDate(input) || isString(input) || isNumber(input) || isNumberOrStringArray(input) || isMomentInputObject(input) || input === null || input === void 0;
+        }
+        function isMomentInputObject(input) {
+          var objectTest = isObject(input) && !isObjectEmpty(input), propertyTest = false, properties = [
+            "years",
+            "year",
+            "y",
+            "months",
+            "month",
+            "M",
+            "days",
+            "day",
+            "d",
+            "dates",
+            "date",
+            "D",
+            "hours",
+            "hour",
+            "h",
+            "minutes",
+            "minute",
+            "m",
+            "seconds",
+            "second",
+            "s",
+            "milliseconds",
+            "millisecond",
+            "ms"
+          ], i, property, propertyLen = properties.length;
+          for (i = 0; i < propertyLen; i += 1) {
+            property = properties[i];
+            propertyTest = propertyTest || hasOwnProp(input, property);
+          }
+          return objectTest && propertyTest;
+        }
+        function isNumberOrStringArray(input) {
+          var arrayTest = isArray(input), dataTypeTest = false;
+          if (arrayTest) {
+            dataTypeTest = input.filter(function(item) {
+              return !isNumber(item) && isString(input);
+            }).length === 0;
+          }
+          return arrayTest && dataTypeTest;
+        }
+        function isCalendarSpec(input) {
+          var objectTest = isObject(input) && !isObjectEmpty(input), propertyTest = false, properties = [
+            "sameDay",
+            "nextDay",
+            "lastDay",
+            "nextWeek",
+            "lastWeek",
+            "sameElse"
+          ], i, property;
+          for (i = 0; i < properties.length; i += 1) {
+            property = properties[i];
+            propertyTest = propertyTest || hasOwnProp(input, property);
+          }
+          return objectTest && propertyTest;
+        }
+        function getCalendarFormat(myMoment, now2) {
+          var diff2 = myMoment.diff(now2, "days", true);
+          return diff2 < -6 ? "sameElse" : diff2 < -1 ? "lastWeek" : diff2 < 0 ? "lastDay" : diff2 < 1 ? "sameDay" : diff2 < 2 ? "nextDay" : diff2 < 7 ? "nextWeek" : "sameElse";
+        }
+        function calendar$1(time, formats) {
+          if (arguments.length === 1) {
+            if (!arguments[0]) {
+              time = void 0;
+              formats = void 0;
+            } else if (isMomentInput(arguments[0])) {
+              time = arguments[0];
+              formats = void 0;
+            } else if (isCalendarSpec(arguments[0])) {
+              formats = arguments[0];
+              time = void 0;
+            }
+          }
+          var now2 = time || createLocal(), sod = cloneWithOffset(now2, this).startOf("day"), format2 = hooks.calendarFormat(this, sod) || "sameElse", output = formats && (isFunction(formats[format2]) ? formats[format2].call(this, now2) : formats[format2]);
+          return this.format(
+            output || this.localeData().calendar(format2, this, createLocal(now2))
+          );
+        }
+        function clone() {
+          return new Moment(this);
+        }
+        function isAfter(input, units) {
+          var localInput = isMoment(input) ? input : createLocal(input);
+          if (!(this.isValid() && localInput.isValid())) {
+            return false;
+          }
+          units = normalizeUnits(units) || "millisecond";
+          if (units === "millisecond") {
+            return this.valueOf() > localInput.valueOf();
+          } else {
+            return localInput.valueOf() < this.clone().startOf(units).valueOf();
+          }
+        }
+        function isBefore(input, units) {
+          var localInput = isMoment(input) ? input : createLocal(input);
+          if (!(this.isValid() && localInput.isValid())) {
+            return false;
+          }
+          units = normalizeUnits(units) || "millisecond";
+          if (units === "millisecond") {
+            return this.valueOf() < localInput.valueOf();
+          } else {
+            return this.clone().endOf(units).valueOf() < localInput.valueOf();
+          }
+        }
+        function isBetween(from2, to2, units, inclusivity) {
+          var localFrom = isMoment(from2) ? from2 : createLocal(from2), localTo = isMoment(to2) ? to2 : createLocal(to2);
+          if (!(this.isValid() && localFrom.isValid() && localTo.isValid())) {
+            return false;
+          }
+          inclusivity = inclusivity || "()";
+          return (inclusivity[0] === "(" ? this.isAfter(localFrom, units) : !this.isBefore(localFrom, units)) && (inclusivity[1] === ")" ? this.isBefore(localTo, units) : !this.isAfter(localTo, units));
+        }
+        function isSame(input, units) {
+          var localInput = isMoment(input) ? input : createLocal(input), inputMs;
+          if (!(this.isValid() && localInput.isValid())) {
+            return false;
+          }
+          units = normalizeUnits(units) || "millisecond";
+          if (units === "millisecond") {
+            return this.valueOf() === localInput.valueOf();
+          } else {
+            inputMs = localInput.valueOf();
+            return this.clone().startOf(units).valueOf() <= inputMs && inputMs <= this.clone().endOf(units).valueOf();
+          }
+        }
+        function isSameOrAfter(input, units) {
+          return this.isSame(input, units) || this.isAfter(input, units);
+        }
+        function isSameOrBefore(input, units) {
+          return this.isSame(input, units) || this.isBefore(input, units);
+        }
+        function diff(input, units, asFloat) {
+          var that, zoneDelta, output;
+          if (!this.isValid()) {
+            return NaN;
+          }
+          that = cloneWithOffset(input, this);
+          if (!that.isValid()) {
+            return NaN;
+          }
+          zoneDelta = (that.utcOffset() - this.utcOffset()) * 6e4;
+          units = normalizeUnits(units);
+          switch (units) {
+            case "year":
+              output = monthDiff(this, that) / 12;
+              break;
+            case "month":
+              output = monthDiff(this, that);
+              break;
+            case "quarter":
+              output = monthDiff(this, that) / 3;
+              break;
+            case "second":
+              output = (this - that) / 1e3;
+              break;
+            case "minute":
+              output = (this - that) / 6e4;
+              break;
+            case "hour":
+              output = (this - that) / 36e5;
+              break;
+            case "day":
+              output = (this - that - zoneDelta) / 864e5;
+              break;
+            case "week":
+              output = (this - that - zoneDelta) / 6048e5;
+              break;
+            default:
+              output = this - that;
+          }
+          return asFloat ? output : absFloor(output);
+        }
+        function monthDiff(a, b) {
+          if (a.date() < b.date()) {
+            return -monthDiff(b, a);
+          }
+          var wholeMonthDiff = (b.year() - a.year()) * 12 + (b.month() - a.month()), anchor = a.clone().add(wholeMonthDiff, "months"), anchor2, adjust;
+          if (b - anchor < 0) {
+            anchor2 = a.clone().add(wholeMonthDiff - 1, "months");
+            adjust = (b - anchor) / (anchor - anchor2);
+          } else {
+            anchor2 = a.clone().add(wholeMonthDiff + 1, "months");
+            adjust = (b - anchor) / (anchor2 - anchor);
+          }
+          return -(wholeMonthDiff + adjust) || 0;
+        }
+        hooks.defaultFormat = "YYYY-MM-DDTHH:mm:ssZ";
+        hooks.defaultFormatUtc = "YYYY-MM-DDTHH:mm:ss[Z]";
+        function toString() {
+          return this.clone().locale("en").format("ddd MMM DD YYYY HH:mm:ss [GMT]ZZ");
+        }
+        function toISOString(keepOffset) {
+          if (!this.isValid()) {
+            return null;
+          }
+          var utc = keepOffset !== true, m = utc ? this.clone().utc() : this;
+          if (m.year() < 0 || m.year() > 9999) {
+            return formatMoment(
+              m,
+              utc ? "YYYYYY-MM-DD[T]HH:mm:ss.SSS[Z]" : "YYYYYY-MM-DD[T]HH:mm:ss.SSSZ"
+            );
+          }
+          if (isFunction(Date.prototype.toISOString)) {
+            if (utc) {
+              return this.toDate().toISOString();
+            } else {
+              return new Date(this.valueOf() + this.utcOffset() * 60 * 1e3).toISOString().replace("Z", formatMoment(m, "Z"));
+            }
+          }
+          return formatMoment(
+            m,
+            utc ? "YYYY-MM-DD[T]HH:mm:ss.SSS[Z]" : "YYYY-MM-DD[T]HH:mm:ss.SSSZ"
+          );
+        }
+        function inspect() {
+          if (!this.isValid()) {
+            return "moment.invalid(/* " + this._i + " */)";
+          }
+          var func = "moment", zone = "", prefix, year, datetime, suffix;
+          if (!this.isLocal()) {
+            func = this.utcOffset() === 0 ? "moment.utc" : "moment.parseZone";
+            zone = "Z";
+          }
+          prefix = "[" + func + '("]';
+          year = 0 <= this.year() && this.year() <= 9999 ? "YYYY" : "YYYYYY";
+          datetime = "-MM-DD[T]HH:mm:ss.SSS";
+          suffix = zone + '[")]';
+          return this.format(prefix + year + datetime + suffix);
+        }
+        function format(inputString) {
+          if (!inputString) {
+            inputString = this.isUtc() ? hooks.defaultFormatUtc : hooks.defaultFormat;
+          }
+          var output = formatMoment(this, inputString);
+          return this.localeData().postformat(output);
+        }
+        function from(time, withoutSuffix) {
+          if (this.isValid() && (isMoment(time) && time.isValid() || createLocal(time).isValid())) {
+            return createDuration({ to: this, from: time }).locale(this.locale()).humanize(!withoutSuffix);
+          } else {
+            return this.localeData().invalidDate();
+          }
+        }
+        function fromNow(withoutSuffix) {
+          return this.from(createLocal(), withoutSuffix);
+        }
+        function to(time, withoutSuffix) {
+          if (this.isValid() && (isMoment(time) && time.isValid() || createLocal(time).isValid())) {
+            return createDuration({ from: this, to: time }).locale(this.locale()).humanize(!withoutSuffix);
+          } else {
+            return this.localeData().invalidDate();
+          }
+        }
+        function toNow(withoutSuffix) {
+          return this.to(createLocal(), withoutSuffix);
+        }
+        function locale(key) {
+          var newLocaleData;
+          if (key === void 0) {
+            return this._locale._abbr;
+          } else {
+            newLocaleData = getLocale(key);
+            if (newLocaleData != null) {
+              this._locale = newLocaleData;
+            }
+            return this;
+          }
+        }
+        var lang = deprecate(
+          "moment().lang() is deprecated. Instead, use moment().localeData() to get the language configuration. Use moment().locale() to change languages.",
+          function(key) {
+            if (key === void 0) {
+              return this.localeData();
+            } else {
+              return this.locale(key);
+            }
+          }
+        );
+        function localeData() {
+          return this._locale;
+        }
+        var MS_PER_SECOND = 1e3, MS_PER_MINUTE = 60 * MS_PER_SECOND, MS_PER_HOUR = 60 * MS_PER_MINUTE, MS_PER_400_YEARS = (365 * 400 + 97) * 24 * MS_PER_HOUR;
+        function mod$1(dividend, divisor) {
+          return (dividend % divisor + divisor) % divisor;
+        }
+        function localStartOfDate(y, m, d) {
+          if (y < 100 && y >= 0) {
+            return new Date(y + 400, m, d) - MS_PER_400_YEARS;
+          } else {
+            return new Date(y, m, d).valueOf();
+          }
+        }
+        function utcStartOfDate(y, m, d) {
+          if (y < 100 && y >= 0) {
+            return Date.UTC(y + 400, m, d) - MS_PER_400_YEARS;
+          } else {
+            return Date.UTC(y, m, d);
+          }
+        }
+        function startOf(units) {
+          var time, startOfDate;
+          units = normalizeUnits(units);
+          if (units === void 0 || units === "millisecond" || !this.isValid()) {
+            return this;
+          }
+          startOfDate = this._isUTC ? utcStartOfDate : localStartOfDate;
+          switch (units) {
+            case "year":
+              time = startOfDate(this.year(), 0, 1);
+              break;
+            case "quarter":
+              time = startOfDate(
+                this.year(),
+                this.month() - this.month() % 3,
+                1
+              );
+              break;
+            case "month":
+              time = startOfDate(this.year(), this.month(), 1);
+              break;
+            case "week":
+              time = startOfDate(
+                this.year(),
+                this.month(),
+                this.date() - this.weekday()
+              );
+              break;
+            case "isoWeek":
+              time = startOfDate(
+                this.year(),
+                this.month(),
+                this.date() - (this.isoWeekday() - 1)
+              );
+              break;
+            case "day":
+            case "date":
+              time = startOfDate(this.year(), this.month(), this.date());
+              break;
+            case "hour":
+              time = this._d.valueOf();
+              time -= mod$1(
+                time + (this._isUTC ? 0 : this.utcOffset() * MS_PER_MINUTE),
+                MS_PER_HOUR
+              );
+              break;
+            case "minute":
+              time = this._d.valueOf();
+              time -= mod$1(time, MS_PER_MINUTE);
+              break;
+            case "second":
+              time = this._d.valueOf();
+              time -= mod$1(time, MS_PER_SECOND);
+              break;
+          }
+          this._d.setTime(time);
+          hooks.updateOffset(this, true);
+          return this;
+        }
+        function endOf(units) {
+          var time, startOfDate;
+          units = normalizeUnits(units);
+          if (units === void 0 || units === "millisecond" || !this.isValid()) {
+            return this;
+          }
+          startOfDate = this._isUTC ? utcStartOfDate : localStartOfDate;
+          switch (units) {
+            case "year":
+              time = startOfDate(this.year() + 1, 0, 1) - 1;
+              break;
+            case "quarter":
+              time = startOfDate(
+                this.year(),
+                this.month() - this.month() % 3 + 3,
+                1
+              ) - 1;
+              break;
+            case "month":
+              time = startOfDate(this.year(), this.month() + 1, 1) - 1;
+              break;
+            case "week":
+              time = startOfDate(
+                this.year(),
+                this.month(),
+                this.date() - this.weekday() + 7
+              ) - 1;
+              break;
+            case "isoWeek":
+              time = startOfDate(
+                this.year(),
+                this.month(),
+                this.date() - (this.isoWeekday() - 1) + 7
+              ) - 1;
+              break;
+            case "day":
+            case "date":
+              time = startOfDate(this.year(), this.month(), this.date() + 1) - 1;
+              break;
+            case "hour":
+              time = this._d.valueOf();
+              time += MS_PER_HOUR - mod$1(
+                time + (this._isUTC ? 0 : this.utcOffset() * MS_PER_MINUTE),
+                MS_PER_HOUR
+              ) - 1;
+              break;
+            case "minute":
+              time = this._d.valueOf();
+              time += MS_PER_MINUTE - mod$1(time, MS_PER_MINUTE) - 1;
+              break;
+            case "second":
+              time = this._d.valueOf();
+              time += MS_PER_SECOND - mod$1(time, MS_PER_SECOND) - 1;
+              break;
+          }
+          this._d.setTime(time);
+          hooks.updateOffset(this, true);
+          return this;
+        }
+        function valueOf() {
+          return this._d.valueOf() - (this._offset || 0) * 6e4;
+        }
+        function unix() {
+          return Math.floor(this.valueOf() / 1e3);
+        }
+        function toDate() {
+          return new Date(this.valueOf());
+        }
+        function toArray() {
+          var m = this;
+          return [
+            m.year(),
+            m.month(),
+            m.date(),
+            m.hour(),
+            m.minute(),
+            m.second(),
+            m.millisecond()
+          ];
+        }
+        function toObject() {
+          var m = this;
+          return {
+            years: m.year(),
+            months: m.month(),
+            date: m.date(),
+            hours: m.hours(),
+            minutes: m.minutes(),
+            seconds: m.seconds(),
+            milliseconds: m.milliseconds()
+          };
+        }
+        function toJSON() {
+          return this.isValid() ? this.toISOString() : null;
+        }
+        function isValid$2() {
+          return isValid(this);
+        }
+        function parsingFlags() {
+          return extend({}, getParsingFlags(this));
+        }
+        function invalidAt() {
+          return getParsingFlags(this).overflow;
+        }
+        function creationData() {
+          return {
+            input: this._i,
+            format: this._f,
+            locale: this._locale,
+            isUTC: this._isUTC,
+            strict: this._strict
+          };
+        }
+        addFormatToken("N", 0, 0, "eraAbbr");
+        addFormatToken("NN", 0, 0, "eraAbbr");
+        addFormatToken("NNN", 0, 0, "eraAbbr");
+        addFormatToken("NNNN", 0, 0, "eraName");
+        addFormatToken("NNNNN", 0, 0, "eraNarrow");
+        addFormatToken("y", ["y", 1], "yo", "eraYear");
+        addFormatToken("y", ["yy", 2], 0, "eraYear");
+        addFormatToken("y", ["yyy", 3], 0, "eraYear");
+        addFormatToken("y", ["yyyy", 4], 0, "eraYear");
+        addRegexToken("N", matchEraAbbr);
+        addRegexToken("NN", matchEraAbbr);
+        addRegexToken("NNN", matchEraAbbr);
+        addRegexToken("NNNN", matchEraName);
+        addRegexToken("NNNNN", matchEraNarrow);
+        addParseToken(
+          ["N", "NN", "NNN", "NNNN", "NNNNN"],
+          function(input, array, config, token2) {
+            var era = config._locale.erasParse(input, token2, config._strict);
+            if (era) {
+              getParsingFlags(config).era = era;
+            } else {
+              getParsingFlags(config).invalidEra = input;
+            }
+          }
+        );
+        addRegexToken("y", matchUnsigned);
+        addRegexToken("yy", matchUnsigned);
+        addRegexToken("yyy", matchUnsigned);
+        addRegexToken("yyyy", matchUnsigned);
+        addRegexToken("yo", matchEraYearOrdinal);
+        addParseToken(["y", "yy", "yyy", "yyyy"], YEAR);
+        addParseToken(["yo"], function(input, array, config, token2) {
+          var match;
+          if (config._locale._eraYearOrdinalRegex) {
+            match = input.match(config._locale._eraYearOrdinalRegex);
+          }
+          if (config._locale.eraYearOrdinalParse) {
+            array[YEAR] = config._locale.eraYearOrdinalParse(input, match);
+          } else {
+            array[YEAR] = parseInt(input, 10);
+          }
+        });
+        function localeEras(m, format2) {
+          var i, l, date, eras = this._eras || getLocale("en")._eras;
+          for (i = 0, l = eras.length; i < l; ++i) {
+            switch (typeof eras[i].since) {
+              case "string":
+                date = hooks(eras[i].since).startOf("day");
+                eras[i].since = date.valueOf();
+                break;
+            }
+            switch (typeof eras[i].until) {
+              case "undefined":
+                eras[i].until = Infinity;
+                break;
+              case "string":
+                date = hooks(eras[i].until).startOf("day").valueOf();
+                eras[i].until = date.valueOf();
+                break;
+            }
+          }
+          return eras;
+        }
+        function localeErasParse(eraName, format2, strict) {
+          var i, l, eras = this.eras(), name, abbr, narrow;
+          eraName = eraName.toUpperCase();
+          for (i = 0, l = eras.length; i < l; ++i) {
+            name = eras[i].name.toUpperCase();
+            abbr = eras[i].abbr.toUpperCase();
+            narrow = eras[i].narrow.toUpperCase();
+            if (strict) {
+              switch (format2) {
+                case "N":
+                case "NN":
+                case "NNN":
+                  if (abbr === eraName) {
+                    return eras[i];
+                  }
+                  break;
+                case "NNNN":
+                  if (name === eraName) {
+                    return eras[i];
+                  }
+                  break;
+                case "NNNNN":
+                  if (narrow === eraName) {
+                    return eras[i];
+                  }
+                  break;
+              }
+            } else if ([name, abbr, narrow].indexOf(eraName) >= 0) {
+              return eras[i];
+            }
+          }
+        }
+        function localeErasConvertYear(era, year) {
+          var dir = era.since <= era.until ? 1 : -1;
+          if (year === void 0) {
+            return hooks(era.since).year();
+          } else {
+            return hooks(era.since).year() + (year - era.offset) * dir;
+          }
+        }
+        function getEraName() {
+          var i, l, val, eras = this.localeData().eras();
+          for (i = 0, l = eras.length; i < l; ++i) {
+            val = this.clone().startOf("day").valueOf();
+            if (eras[i].since <= val && val <= eras[i].until) {
+              return eras[i].name;
+            }
+            if (eras[i].until <= val && val <= eras[i].since) {
+              return eras[i].name;
+            }
+          }
+          return "";
+        }
+        function getEraNarrow() {
+          var i, l, val, eras = this.localeData().eras();
+          for (i = 0, l = eras.length; i < l; ++i) {
+            val = this.clone().startOf("day").valueOf();
+            if (eras[i].since <= val && val <= eras[i].until) {
+              return eras[i].narrow;
+            }
+            if (eras[i].until <= val && val <= eras[i].since) {
+              return eras[i].narrow;
+            }
+          }
+          return "";
+        }
+        function getEraAbbr() {
+          var i, l, val, eras = this.localeData().eras();
+          for (i = 0, l = eras.length; i < l; ++i) {
+            val = this.clone().startOf("day").valueOf();
+            if (eras[i].since <= val && val <= eras[i].until) {
+              return eras[i].abbr;
+            }
+            if (eras[i].until <= val && val <= eras[i].since) {
+              return eras[i].abbr;
+            }
+          }
+          return "";
+        }
+        function getEraYear() {
+          var i, l, dir, val, eras = this.localeData().eras();
+          for (i = 0, l = eras.length; i < l; ++i) {
+            dir = eras[i].since <= eras[i].until ? 1 : -1;
+            val = this.clone().startOf("day").valueOf();
+            if (eras[i].since <= val && val <= eras[i].until || eras[i].until <= val && val <= eras[i].since) {
+              return (this.year() - hooks(eras[i].since).year()) * dir + eras[i].offset;
+            }
+          }
+          return this.year();
+        }
+        function erasNameRegex(isStrict) {
+          if (!hasOwnProp(this, "_erasNameRegex")) {
+            computeErasParse.call(this);
+          }
+          return isStrict ? this._erasNameRegex : this._erasRegex;
+        }
+        function erasAbbrRegex(isStrict) {
+          if (!hasOwnProp(this, "_erasAbbrRegex")) {
+            computeErasParse.call(this);
+          }
+          return isStrict ? this._erasAbbrRegex : this._erasRegex;
+        }
+        function erasNarrowRegex(isStrict) {
+          if (!hasOwnProp(this, "_erasNarrowRegex")) {
+            computeErasParse.call(this);
+          }
+          return isStrict ? this._erasNarrowRegex : this._erasRegex;
+        }
+        function matchEraAbbr(isStrict, locale2) {
+          return locale2.erasAbbrRegex(isStrict);
+        }
+        function matchEraName(isStrict, locale2) {
+          return locale2.erasNameRegex(isStrict);
+        }
+        function matchEraNarrow(isStrict, locale2) {
+          return locale2.erasNarrowRegex(isStrict);
+        }
+        function matchEraYearOrdinal(isStrict, locale2) {
+          return locale2._eraYearOrdinalRegex || matchUnsigned;
+        }
+        function computeErasParse() {
+          var abbrPieces = [], namePieces = [], narrowPieces = [], mixedPieces = [], i, l, eras = this.eras();
+          for (i = 0, l = eras.length; i < l; ++i) {
+            namePieces.push(regexEscape(eras[i].name));
+            abbrPieces.push(regexEscape(eras[i].abbr));
+            narrowPieces.push(regexEscape(eras[i].narrow));
+            mixedPieces.push(regexEscape(eras[i].name));
+            mixedPieces.push(regexEscape(eras[i].abbr));
+            mixedPieces.push(regexEscape(eras[i].narrow));
+          }
+          this._erasRegex = new RegExp("^(" + mixedPieces.join("|") + ")", "i");
+          this._erasNameRegex = new RegExp("^(" + namePieces.join("|") + ")", "i");
+          this._erasAbbrRegex = new RegExp("^(" + abbrPieces.join("|") + ")", "i");
+          this._erasNarrowRegex = new RegExp(
+            "^(" + narrowPieces.join("|") + ")",
+            "i"
+          );
+        }
+        addFormatToken(0, ["gg", 2], 0, function() {
+          return this.weekYear() % 100;
+        });
+        addFormatToken(0, ["GG", 2], 0, function() {
+          return this.isoWeekYear() % 100;
+        });
+        function addWeekYearFormatToken(token2, getter) {
+          addFormatToken(0, [token2, token2.length], 0, getter);
+        }
+        addWeekYearFormatToken("gggg", "weekYear");
+        addWeekYearFormatToken("ggggg", "weekYear");
+        addWeekYearFormatToken("GGGG", "isoWeekYear");
+        addWeekYearFormatToken("GGGGG", "isoWeekYear");
+        addUnitAlias("weekYear", "gg");
+        addUnitAlias("isoWeekYear", "GG");
+        addUnitPriority("weekYear", 1);
+        addUnitPriority("isoWeekYear", 1);
+        addRegexToken("G", matchSigned);
+        addRegexToken("g", matchSigned);
+        addRegexToken("GG", match1to2, match2);
+        addRegexToken("gg", match1to2, match2);
+        addRegexToken("GGGG", match1to4, match4);
+        addRegexToken("gggg", match1to4, match4);
+        addRegexToken("GGGGG", match1to6, match6);
+        addRegexToken("ggggg", match1to6, match6);
+        addWeekParseToken(
+          ["gggg", "ggggg", "GGGG", "GGGGG"],
+          function(input, week, config, token2) {
+            week[token2.substr(0, 2)] = toInt(input);
+          }
+        );
+        addWeekParseToken(["gg", "GG"], function(input, week, config, token2) {
+          week[token2] = hooks.parseTwoDigitYear(input);
+        });
+        function getSetWeekYear(input) {
+          return getSetWeekYearHelper.call(
+            this,
+            input,
+            this.week(),
+            this.weekday(),
+            this.localeData()._week.dow,
+            this.localeData()._week.doy
+          );
+        }
+        function getSetISOWeekYear(input) {
+          return getSetWeekYearHelper.call(
+            this,
+            input,
+            this.isoWeek(),
+            this.isoWeekday(),
+            1,
+            4
+          );
+        }
+        function getISOWeeksInYear() {
+          return weeksInYear(this.year(), 1, 4);
+        }
+        function getISOWeeksInISOWeekYear() {
+          return weeksInYear(this.isoWeekYear(), 1, 4);
+        }
+        function getWeeksInYear() {
+          var weekInfo = this.localeData()._week;
+          return weeksInYear(this.year(), weekInfo.dow, weekInfo.doy);
+        }
+        function getWeeksInWeekYear() {
+          var weekInfo = this.localeData()._week;
+          return weeksInYear(this.weekYear(), weekInfo.dow, weekInfo.doy);
+        }
+        function getSetWeekYearHelper(input, week, weekday, dow, doy) {
+          var weeksTarget;
+          if (input == null) {
+            return weekOfYear(this, dow, doy).year;
+          } else {
+            weeksTarget = weeksInYear(input, dow, doy);
+            if (week > weeksTarget) {
+              week = weeksTarget;
+            }
+            return setWeekAll.call(this, input, week, weekday, dow, doy);
+          }
+        }
+        function setWeekAll(weekYear, week, weekday, dow, doy) {
+          var dayOfYearData = dayOfYearFromWeeks(weekYear, week, weekday, dow, doy), date = createUTCDate(dayOfYearData.year, 0, dayOfYearData.dayOfYear);
+          this.year(date.getUTCFullYear());
+          this.month(date.getUTCMonth());
+          this.date(date.getUTCDate());
+          return this;
+        }
+        addFormatToken("Q", 0, "Qo", "quarter");
+        addUnitAlias("quarter", "Q");
+        addUnitPriority("quarter", 7);
+        addRegexToken("Q", match1);
+        addParseToken("Q", function(input, array) {
+          array[MONTH] = (toInt(input) - 1) * 3;
+        });
+        function getSetQuarter(input) {
+          return input == null ? Math.ceil((this.month() + 1) / 3) : this.month((input - 1) * 3 + this.month() % 3);
+        }
+        addFormatToken("D", ["DD", 2], "Do", "date");
+        addUnitAlias("date", "D");
+        addUnitPriority("date", 9);
+        addRegexToken("D", match1to2);
+        addRegexToken("DD", match1to2, match2);
+        addRegexToken("Do", function(isStrict, locale2) {
+          return isStrict ? locale2._dayOfMonthOrdinalParse || locale2._ordinalParse : locale2._dayOfMonthOrdinalParseLenient;
+        });
+        addParseToken(["D", "DD"], DATE);
+        addParseToken("Do", function(input, array) {
+          array[DATE] = toInt(input.match(match1to2)[0]);
+        });
+        var getSetDayOfMonth = makeGetSet("Date", true);
+        addFormatToken("DDD", ["DDDD", 3], "DDDo", "dayOfYear");
+        addUnitAlias("dayOfYear", "DDD");
+        addUnitPriority("dayOfYear", 4);
+        addRegexToken("DDD", match1to3);
+        addRegexToken("DDDD", match3);
+        addParseToken(["DDD", "DDDD"], function(input, array, config) {
+          config._dayOfYear = toInt(input);
+        });
+        function getSetDayOfYear(input) {
+          var dayOfYear = Math.round(
+            (this.clone().startOf("day") - this.clone().startOf("year")) / 864e5
+          ) + 1;
+          return input == null ? dayOfYear : this.add(input - dayOfYear, "d");
+        }
+        addFormatToken("m", ["mm", 2], 0, "minute");
+        addUnitAlias("minute", "m");
+        addUnitPriority("minute", 14);
+        addRegexToken("m", match1to2);
+        addRegexToken("mm", match1to2, match2);
+        addParseToken(["m", "mm"], MINUTE);
+        var getSetMinute = makeGetSet("Minutes", false);
+        addFormatToken("s", ["ss", 2], 0, "second");
+        addUnitAlias("second", "s");
+        addUnitPriority("second", 15);
+        addRegexToken("s", match1to2);
+        addRegexToken("ss", match1to2, match2);
+        addParseToken(["s", "ss"], SECOND);
+        var getSetSecond = makeGetSet("Seconds", false);
+        addFormatToken("S", 0, 0, function() {
+          return ~~(this.millisecond() / 100);
+        });
+        addFormatToken(0, ["SS", 2], 0, function() {
+          return ~~(this.millisecond() / 10);
+        });
+        addFormatToken(0, ["SSS", 3], 0, "millisecond");
+        addFormatToken(0, ["SSSS", 4], 0, function() {
+          return this.millisecond() * 10;
+        });
+        addFormatToken(0, ["SSSSS", 5], 0, function() {
+          return this.millisecond() * 100;
+        });
+        addFormatToken(0, ["SSSSSS", 6], 0, function() {
+          return this.millisecond() * 1e3;
+        });
+        addFormatToken(0, ["SSSSSSS", 7], 0, function() {
+          return this.millisecond() * 1e4;
+        });
+        addFormatToken(0, ["SSSSSSSS", 8], 0, function() {
+          return this.millisecond() * 1e5;
+        });
+        addFormatToken(0, ["SSSSSSSSS", 9], 0, function() {
+          return this.millisecond() * 1e6;
+        });
+        addUnitAlias("millisecond", "ms");
+        addUnitPriority("millisecond", 16);
+        addRegexToken("S", match1to3, match1);
+        addRegexToken("SS", match1to3, match2);
+        addRegexToken("SSS", match1to3, match3);
+        var token, getSetMillisecond;
+        for (token = "SSSS"; token.length <= 9; token += "S") {
+          addRegexToken(token, matchUnsigned);
+        }
+        function parseMs(input, array) {
+          array[MILLISECOND] = toInt(("0." + input) * 1e3);
+        }
+        for (token = "S"; token.length <= 9; token += "S") {
+          addParseToken(token, parseMs);
+        }
+        getSetMillisecond = makeGetSet("Milliseconds", false);
+        addFormatToken("z", 0, 0, "zoneAbbr");
+        addFormatToken("zz", 0, 0, "zoneName");
+        function getZoneAbbr() {
+          return this._isUTC ? "UTC" : "";
+        }
+        function getZoneName() {
+          return this._isUTC ? "Coordinated Universal Time" : "";
+        }
+        var proto = Moment.prototype;
+        proto.add = add;
+        proto.calendar = calendar$1;
+        proto.clone = clone;
+        proto.diff = diff;
+        proto.endOf = endOf;
+        proto.format = format;
+        proto.from = from;
+        proto.fromNow = fromNow;
+        proto.to = to;
+        proto.toNow = toNow;
+        proto.get = stringGet;
+        proto.invalidAt = invalidAt;
+        proto.isAfter = isAfter;
+        proto.isBefore = isBefore;
+        proto.isBetween = isBetween;
+        proto.isSame = isSame;
+        proto.isSameOrAfter = isSameOrAfter;
+        proto.isSameOrBefore = isSameOrBefore;
+        proto.isValid = isValid$2;
+        proto.lang = lang;
+        proto.locale = locale;
+        proto.localeData = localeData;
+        proto.max = prototypeMax;
+        proto.min = prototypeMin;
+        proto.parsingFlags = parsingFlags;
+        proto.set = stringSet;
+        proto.startOf = startOf;
+        proto.subtract = subtract;
+        proto.toArray = toArray;
+        proto.toObject = toObject;
+        proto.toDate = toDate;
+        proto.toISOString = toISOString;
+        proto.inspect = inspect;
+        if (typeof Symbol !== "undefined" && Symbol.for != null) {
+          proto[Symbol.for("nodejs.util.inspect.custom")] = function() {
+            return "Moment<" + this.format() + ">";
+          };
+        }
+        proto.toJSON = toJSON;
+        proto.toString = toString;
+        proto.unix = unix;
+        proto.valueOf = valueOf;
+        proto.creationData = creationData;
+        proto.eraName = getEraName;
+        proto.eraNarrow = getEraNarrow;
+        proto.eraAbbr = getEraAbbr;
+        proto.eraYear = getEraYear;
+        proto.year = getSetYear;
+        proto.isLeapYear = getIsLeapYear;
+        proto.weekYear = getSetWeekYear;
+        proto.isoWeekYear = getSetISOWeekYear;
+        proto.quarter = proto.quarters = getSetQuarter;
+        proto.month = getSetMonth;
+        proto.daysInMonth = getDaysInMonth;
+        proto.week = proto.weeks = getSetWeek;
+        proto.isoWeek = proto.isoWeeks = getSetISOWeek;
+        proto.weeksInYear = getWeeksInYear;
+        proto.weeksInWeekYear = getWeeksInWeekYear;
+        proto.isoWeeksInYear = getISOWeeksInYear;
+        proto.isoWeeksInISOWeekYear = getISOWeeksInISOWeekYear;
+        proto.date = getSetDayOfMonth;
+        proto.day = proto.days = getSetDayOfWeek;
+        proto.weekday = getSetLocaleDayOfWeek;
+        proto.isoWeekday = getSetISODayOfWeek;
+        proto.dayOfYear = getSetDayOfYear;
+        proto.hour = proto.hours = getSetHour;
+        proto.minute = proto.minutes = getSetMinute;
+        proto.second = proto.seconds = getSetSecond;
+        proto.millisecond = proto.milliseconds = getSetMillisecond;
+        proto.utcOffset = getSetOffset;
+        proto.utc = setOffsetToUTC;
+        proto.local = setOffsetToLocal;
+        proto.parseZone = setOffsetToParsedOffset;
+        proto.hasAlignedHourOffset = hasAlignedHourOffset;
+        proto.isDST = isDaylightSavingTime;
+        proto.isLocal = isLocal;
+        proto.isUtcOffset = isUtcOffset;
+        proto.isUtc = isUtc;
+        proto.isUTC = isUtc;
+        proto.zoneAbbr = getZoneAbbr;
+        proto.zoneName = getZoneName;
+        proto.dates = deprecate(
+          "dates accessor is deprecated. Use date instead.",
+          getSetDayOfMonth
+        );
+        proto.months = deprecate(
+          "months accessor is deprecated. Use month instead",
+          getSetMonth
+        );
+        proto.years = deprecate(
+          "years accessor is deprecated. Use year instead",
+          getSetYear
+        );
+        proto.zone = deprecate(
+          "moment().zone is deprecated, use moment().utcOffset instead. http://momentjs.com/guides/#/warnings/zone/",
+          getSetZone
+        );
+        proto.isDSTShifted = deprecate(
+          "isDSTShifted is deprecated. See http://momentjs.com/guides/#/warnings/dst-shifted/ for more information",
+          isDaylightSavingTimeShifted
+        );
+        function createUnix(input) {
+          return createLocal(input * 1e3);
+        }
+        function createInZone() {
+          return createLocal.apply(null, arguments).parseZone();
+        }
+        function preParsePostFormat(string) {
+          return string;
+        }
+        var proto$1 = Locale.prototype;
+        proto$1.calendar = calendar;
+        proto$1.longDateFormat = longDateFormat;
+        proto$1.invalidDate = invalidDate;
+        proto$1.ordinal = ordinal;
+        proto$1.preparse = preParsePostFormat;
+        proto$1.postformat = preParsePostFormat;
+        proto$1.relativeTime = relativeTime;
+        proto$1.pastFuture = pastFuture;
+        proto$1.set = set;
+        proto$1.eras = localeEras;
+        proto$1.erasParse = localeErasParse;
+        proto$1.erasConvertYear = localeErasConvertYear;
+        proto$1.erasAbbrRegex = erasAbbrRegex;
+        proto$1.erasNameRegex = erasNameRegex;
+        proto$1.erasNarrowRegex = erasNarrowRegex;
+        proto$1.months = localeMonths;
+        proto$1.monthsShort = localeMonthsShort;
+        proto$1.monthsParse = localeMonthsParse;
+        proto$1.monthsRegex = monthsRegex;
+        proto$1.monthsShortRegex = monthsShortRegex;
+        proto$1.week = localeWeek;
+        proto$1.firstDayOfYear = localeFirstDayOfYear;
+        proto$1.firstDayOfWeek = localeFirstDayOfWeek;
+        proto$1.weekdays = localeWeekdays;
+        proto$1.weekdaysMin = localeWeekdaysMin;
+        proto$1.weekdaysShort = localeWeekdaysShort;
+        proto$1.weekdaysParse = localeWeekdaysParse;
+        proto$1.weekdaysRegex = weekdaysRegex;
+        proto$1.weekdaysShortRegex = weekdaysShortRegex;
+        proto$1.weekdaysMinRegex = weekdaysMinRegex;
+        proto$1.isPM = localeIsPM;
+        proto$1.meridiem = localeMeridiem;
+        function get$1(format2, index, field, setter) {
+          var locale2 = getLocale(), utc = createUTC().set(setter, index);
+          return locale2[field](utc, format2);
+        }
+        function listMonthsImpl(format2, index, field) {
+          if (isNumber(format2)) {
+            index = format2;
+            format2 = void 0;
+          }
+          format2 = format2 || "";
+          if (index != null) {
+            return get$1(format2, index, field, "month");
+          }
+          var i, out = [];
+          for (i = 0; i < 12; i++) {
+            out[i] = get$1(format2, i, field, "month");
+          }
+          return out;
+        }
+        function listWeekdaysImpl(localeSorted, format2, index, field) {
+          if (typeof localeSorted === "boolean") {
+            if (isNumber(format2)) {
+              index = format2;
+              format2 = void 0;
+            }
+            format2 = format2 || "";
+          } else {
+            format2 = localeSorted;
+            index = format2;
+            localeSorted = false;
+            if (isNumber(format2)) {
+              index = format2;
+              format2 = void 0;
+            }
+            format2 = format2 || "";
+          }
+          var locale2 = getLocale(), shift = localeSorted ? locale2._week.dow : 0, i, out = [];
+          if (index != null) {
+            return get$1(format2, (index + shift) % 7, field, "day");
+          }
+          for (i = 0; i < 7; i++) {
+            out[i] = get$1(format2, (i + shift) % 7, field, "day");
+          }
+          return out;
+        }
+        function listMonths(format2, index) {
+          return listMonthsImpl(format2, index, "months");
+        }
+        function listMonthsShort(format2, index) {
+          return listMonthsImpl(format2, index, "monthsShort");
+        }
+        function listWeekdays(localeSorted, format2, index) {
+          return listWeekdaysImpl(localeSorted, format2, index, "weekdays");
+        }
+        function listWeekdaysShort(localeSorted, format2, index) {
+          return listWeekdaysImpl(localeSorted, format2, index, "weekdaysShort");
+        }
+        function listWeekdaysMin(localeSorted, format2, index) {
+          return listWeekdaysImpl(localeSorted, format2, index, "weekdaysMin");
+        }
+        getSetGlobalLocale("en", {
+          eras: [
+            {
+              since: "0001-01-01",
+              until: Infinity,
+              offset: 1,
+              name: "Anno Domini",
+              narrow: "AD",
+              abbr: "AD"
+            },
+            {
+              since: "0000-12-31",
+              until: -Infinity,
+              offset: 1,
+              name: "Before Christ",
+              narrow: "BC",
+              abbr: "BC"
+            }
+          ],
+          dayOfMonthOrdinalParse: /\d{1,2}(th|st|nd|rd)/,
+          ordinal: function(number) {
+            var b = number % 10, output = toInt(number % 100 / 10) === 1 ? "th" : b === 1 ? "st" : b === 2 ? "nd" : b === 3 ? "rd" : "th";
+            return number + output;
+          }
+        });
+        hooks.lang = deprecate(
+          "moment.lang is deprecated. Use moment.locale instead.",
+          getSetGlobalLocale
+        );
+        hooks.langData = deprecate(
+          "moment.langData is deprecated. Use moment.localeData instead.",
+          getLocale
+        );
+        var mathAbs = Math.abs;
+        function abs() {
+          var data = this._data;
+          this._milliseconds = mathAbs(this._milliseconds);
+          this._days = mathAbs(this._days);
+          this._months = mathAbs(this._months);
+          data.milliseconds = mathAbs(data.milliseconds);
+          data.seconds = mathAbs(data.seconds);
+          data.minutes = mathAbs(data.minutes);
+          data.hours = mathAbs(data.hours);
+          data.months = mathAbs(data.months);
+          data.years = mathAbs(data.years);
+          return this;
+        }
+        function addSubtract$1(duration, input, value, direction) {
+          var other = createDuration(input, value);
+          duration._milliseconds += direction * other._milliseconds;
+          duration._days += direction * other._days;
+          duration._months += direction * other._months;
+          return duration._bubble();
+        }
+        function add$1(input, value) {
+          return addSubtract$1(this, input, value, 1);
+        }
+        function subtract$1(input, value) {
+          return addSubtract$1(this, input, value, -1);
+        }
+        function absCeil(number) {
+          if (number < 0) {
+            return Math.floor(number);
+          } else {
+            return Math.ceil(number);
+          }
+        }
+        function bubble() {
+          var milliseconds2 = this._milliseconds, days2 = this._days, months2 = this._months, data = this._data, seconds2, minutes2, hours2, years2, monthsFromDays;
+          if (!(milliseconds2 >= 0 && days2 >= 0 && months2 >= 0 || milliseconds2 <= 0 && days2 <= 0 && months2 <= 0)) {
+            milliseconds2 += absCeil(monthsToDays(months2) + days2) * 864e5;
+            days2 = 0;
+            months2 = 0;
+          }
+          data.milliseconds = milliseconds2 % 1e3;
+          seconds2 = absFloor(milliseconds2 / 1e3);
+          data.seconds = seconds2 % 60;
+          minutes2 = absFloor(seconds2 / 60);
+          data.minutes = minutes2 % 60;
+          hours2 = absFloor(minutes2 / 60);
+          data.hours = hours2 % 24;
+          days2 += absFloor(hours2 / 24);
+          monthsFromDays = absFloor(daysToMonths(days2));
+          months2 += monthsFromDays;
+          days2 -= absCeil(monthsToDays(monthsFromDays));
+          years2 = absFloor(months2 / 12);
+          months2 %= 12;
+          data.days = days2;
+          data.months = months2;
+          data.years = years2;
+          return this;
+        }
+        function daysToMonths(days2) {
+          return days2 * 4800 / 146097;
+        }
+        function monthsToDays(months2) {
+          return months2 * 146097 / 4800;
+        }
+        function as(units) {
+          if (!this.isValid()) {
+            return NaN;
+          }
+          var days2, months2, milliseconds2 = this._milliseconds;
+          units = normalizeUnits(units);
+          if (units === "month" || units === "quarter" || units === "year") {
+            days2 = this._days + milliseconds2 / 864e5;
+            months2 = this._months + daysToMonths(days2);
+            switch (units) {
+              case "month":
+                return months2;
+              case "quarter":
+                return months2 / 3;
+              case "year":
+                return months2 / 12;
+            }
+          } else {
+            days2 = this._days + Math.round(monthsToDays(this._months));
+            switch (units) {
+              case "week":
+                return days2 / 7 + milliseconds2 / 6048e5;
+              case "day":
+                return days2 + milliseconds2 / 864e5;
+              case "hour":
+                return days2 * 24 + milliseconds2 / 36e5;
+              case "minute":
+                return days2 * 1440 + milliseconds2 / 6e4;
+              case "second":
+                return days2 * 86400 + milliseconds2 / 1e3;
+              case "millisecond":
+                return Math.floor(days2 * 864e5) + milliseconds2;
+              default:
+                throw new Error("Unknown unit " + units);
+            }
+          }
+        }
+        function valueOf$1() {
+          if (!this.isValid()) {
+            return NaN;
+          }
+          return this._milliseconds + this._days * 864e5 + this._months % 12 * 2592e6 + toInt(this._months / 12) * 31536e6;
+        }
+        function makeAs(alias) {
+          return function() {
+            return this.as(alias);
+          };
+        }
+        var asMilliseconds = makeAs("ms"), asSeconds = makeAs("s"), asMinutes = makeAs("m"), asHours = makeAs("h"), asDays = makeAs("d"), asWeeks = makeAs("w"), asMonths = makeAs("M"), asQuarters = makeAs("Q"), asYears = makeAs("y");
+        function clone$1() {
+          return createDuration(this);
+        }
+        function get$2(units) {
+          units = normalizeUnits(units);
+          return this.isValid() ? this[units + "s"]() : NaN;
+        }
+        function makeGetter(name) {
+          return function() {
+            return this.isValid() ? this._data[name] : NaN;
+          };
+        }
+        var milliseconds = makeGetter("milliseconds"), seconds = makeGetter("seconds"), minutes = makeGetter("minutes"), hours = makeGetter("hours"), days = makeGetter("days"), months = makeGetter("months"), years = makeGetter("years");
+        function weeks() {
+          return absFloor(this.days() / 7);
+        }
+        var round = Math.round, thresholds = {
+          ss: 44,
+          s: 45,
+          m: 45,
+          h: 22,
+          d: 26,
+          w: null,
+          M: 11
+        };
+        function substituteTimeAgo(string, number, withoutSuffix, isFuture, locale2) {
+          return locale2.relativeTime(number || 1, !!withoutSuffix, string, isFuture);
+        }
+        function relativeTime$1(posNegDuration, withoutSuffix, thresholds2, locale2) {
+          var duration = createDuration(posNegDuration).abs(), seconds2 = round(duration.as("s")), minutes2 = round(duration.as("m")), hours2 = round(duration.as("h")), days2 = round(duration.as("d")), months2 = round(duration.as("M")), weeks2 = round(duration.as("w")), years2 = round(duration.as("y")), a = seconds2 <= thresholds2.ss && ["s", seconds2] || seconds2 < thresholds2.s && ["ss", seconds2] || minutes2 <= 1 && ["m"] || minutes2 < thresholds2.m && ["mm", minutes2] || hours2 <= 1 && ["h"] || hours2 < thresholds2.h && ["hh", hours2] || days2 <= 1 && ["d"] || days2 < thresholds2.d && ["dd", days2];
+          if (thresholds2.w != null) {
+            a = a || weeks2 <= 1 && ["w"] || weeks2 < thresholds2.w && ["ww", weeks2];
+          }
+          a = a || months2 <= 1 && ["M"] || months2 < thresholds2.M && ["MM", months2] || years2 <= 1 && ["y"] || ["yy", years2];
+          a[2] = withoutSuffix;
+          a[3] = +posNegDuration > 0;
+          a[4] = locale2;
+          return substituteTimeAgo.apply(null, a);
+        }
+        function getSetRelativeTimeRounding(roundingFunction) {
+          if (roundingFunction === void 0) {
+            return round;
+          }
+          if (typeof roundingFunction === "function") {
+            round = roundingFunction;
+            return true;
+          }
+          return false;
+        }
+        function getSetRelativeTimeThreshold(threshold, limit) {
+          if (thresholds[threshold] === void 0) {
+            return false;
+          }
+          if (limit === void 0) {
+            return thresholds[threshold];
+          }
+          thresholds[threshold] = limit;
+          if (threshold === "s") {
+            thresholds.ss = limit - 1;
+          }
+          return true;
+        }
+        function humanize(argWithSuffix, argThresholds) {
+          if (!this.isValid()) {
+            return this.localeData().invalidDate();
+          }
+          var withSuffix = false, th = thresholds, locale2, output;
+          if (typeof argWithSuffix === "object") {
+            argThresholds = argWithSuffix;
+            argWithSuffix = false;
+          }
+          if (typeof argWithSuffix === "boolean") {
+            withSuffix = argWithSuffix;
+          }
+          if (typeof argThresholds === "object") {
+            th = Object.assign({}, thresholds, argThresholds);
+            if (argThresholds.s != null && argThresholds.ss == null) {
+              th.ss = argThresholds.s - 1;
+            }
+          }
+          locale2 = this.localeData();
+          output = relativeTime$1(this, !withSuffix, th, locale2);
+          if (withSuffix) {
+            output = locale2.pastFuture(+this, output);
+          }
+          return locale2.postformat(output);
+        }
+        var abs$1 = Math.abs;
+        function sign(x) {
+          return (x > 0) - (x < 0) || +x;
+        }
+        function toISOString$1() {
+          if (!this.isValid()) {
+            return this.localeData().invalidDate();
+          }
+          var seconds2 = abs$1(this._milliseconds) / 1e3, days2 = abs$1(this._days), months2 = abs$1(this._months), minutes2, hours2, years2, s, total = this.asSeconds(), totalSign, ymSign, daysSign, hmsSign;
+          if (!total) {
+            return "P0D";
+          }
+          minutes2 = absFloor(seconds2 / 60);
+          hours2 = absFloor(minutes2 / 60);
+          seconds2 %= 60;
+          minutes2 %= 60;
+          years2 = absFloor(months2 / 12);
+          months2 %= 12;
+          s = seconds2 ? seconds2.toFixed(3).replace(/\.?0+$/, "") : "";
+          totalSign = total < 0 ? "-" : "";
+          ymSign = sign(this._months) !== sign(total) ? "-" : "";
+          daysSign = sign(this._days) !== sign(total) ? "-" : "";
+          hmsSign = sign(this._milliseconds) !== sign(total) ? "-" : "";
+          return totalSign + "P" + (years2 ? ymSign + years2 + "Y" : "") + (months2 ? ymSign + months2 + "M" : "") + (days2 ? daysSign + days2 + "D" : "") + (hours2 || minutes2 || seconds2 ? "T" : "") + (hours2 ? hmsSign + hours2 + "H" : "") + (minutes2 ? hmsSign + minutes2 + "M" : "") + (seconds2 ? hmsSign + s + "S" : "");
+        }
+        var proto$2 = Duration.prototype;
+        proto$2.isValid = isValid$1;
+        proto$2.abs = abs;
+        proto$2.add = add$1;
+        proto$2.subtract = subtract$1;
+        proto$2.as = as;
+        proto$2.asMilliseconds = asMilliseconds;
+        proto$2.asSeconds = asSeconds;
+        proto$2.asMinutes = asMinutes;
+        proto$2.asHours = asHours;
+        proto$2.asDays = asDays;
+        proto$2.asWeeks = asWeeks;
+        proto$2.asMonths = asMonths;
+        proto$2.asQuarters = asQuarters;
+        proto$2.asYears = asYears;
+        proto$2.valueOf = valueOf$1;
+        proto$2._bubble = bubble;
+        proto$2.clone = clone$1;
+        proto$2.get = get$2;
+        proto$2.milliseconds = milliseconds;
+        proto$2.seconds = seconds;
+        proto$2.minutes = minutes;
+        proto$2.hours = hours;
+        proto$2.days = days;
+        proto$2.weeks = weeks;
+        proto$2.months = months;
+        proto$2.years = years;
+        proto$2.humanize = humanize;
+        proto$2.toISOString = toISOString$1;
+        proto$2.toString = toISOString$1;
+        proto$2.toJSON = toISOString$1;
+        proto$2.locale = locale;
+        proto$2.localeData = localeData;
+        proto$2.toIsoString = deprecate(
+          "toIsoString() is deprecated. Please use toISOString() instead (notice the capitals)",
+          toISOString$1
+        );
+        proto$2.lang = lang;
+        addFormatToken("X", 0, 0, "unix");
+        addFormatToken("x", 0, 0, "valueOf");
+        addRegexToken("x", matchSigned);
+        addRegexToken("X", matchTimestamp);
+        addParseToken("X", function(input, array, config) {
+          config._d = new Date(parseFloat(input) * 1e3);
+        });
+        addParseToken("x", function(input, array, config) {
+          config._d = new Date(toInt(input));
+        });
+        hooks.version = "2.29.4";
+        setHookCallback(createLocal);
+        hooks.fn = proto;
+        hooks.min = min;
+        hooks.max = max;
+        hooks.now = now;
+        hooks.utc = createUTC;
+        hooks.unix = createUnix;
+        hooks.months = listMonths;
+        hooks.isDate = isDate;
+        hooks.locale = getSetGlobalLocale;
+        hooks.invalid = createInvalid;
+        hooks.duration = createDuration;
+        hooks.isMoment = isMoment;
+        hooks.weekdays = listWeekdays;
+        hooks.parseZone = createInZone;
+        hooks.localeData = getLocale;
+        hooks.isDuration = isDuration;
+        hooks.monthsShort = listMonthsShort;
+        hooks.weekdaysMin = listWeekdaysMin;
+        hooks.defineLocale = defineLocale;
+        hooks.updateLocale = updateLocale;
+        hooks.locales = listLocales;
+        hooks.weekdaysShort = listWeekdaysShort;
+        hooks.normalizeUnits = normalizeUnits;
+        hooks.relativeTimeRounding = getSetRelativeTimeRounding;
+        hooks.relativeTimeThreshold = getSetRelativeTimeThreshold;
+        hooks.calendarFormat = getCalendarFormat;
+        hooks.prototype = proto;
+        hooks.HTML5_FMT = {
+          DATETIME_LOCAL: "YYYY-MM-DDTHH:mm",
+          DATETIME_LOCAL_SECONDS: "YYYY-MM-DDTHH:mm:ss",
+          DATETIME_LOCAL_MS: "YYYY-MM-DDTHH:mm:ss.SSS",
+          DATE: "YYYY-MM-DD",
+          TIME: "HH:mm",
+          TIME_SECONDS: "HH:mm:ss",
+          TIME_MS: "HH:mm:ss.SSS",
+          WEEK: "GGGG-[W]WW",
+          MONTH: "YYYY-MM"
+        };
+        return hooks;
+      });
+    }
+  });
+
+  // assets/src/admin/js/RequestManager/EndPoints.js
+  var EndPoints_exports = {};
+  __export(EndPoints_exports, {
+    clearHistoryUrl: () => clearHistoryUrl,
+    competitorData: () => competitorData,
+    contentFeedback: () => contentFeedback,
+    continueWriting: () => continueWriting,
+    createHistoryUrl: () => createHistoryUrl,
+    expandOutline: () => expandOutline,
+    filterNlpKeywordsUrl: () => filterNlpKeywordsUrl,
+    genieChat: () => genieChat,
+    genieChatClear: () => genieChatClear,
+    genieChatList: () => genieChatList,
+    genieChatSave: () => genieChatSave,
+    genieImage: () => genieImage,
+    genieImageSave: () => genieImageSave,
+    genieMode: () => genieMode,
+    getLicenseToken: () => getLicenseToken,
+    historyData: () => historyData,
+    keywordsData: () => keywordsData,
+    limitUsage: () => limitUsage,
+    nlpKeywords: () => nlpKeywords,
+    nlpKeywordsUrl: () => nlpKeywordsUrl,
+    oneClickBlog: () => oneClickBlog,
+    outlines: () => outlines,
+    plagiarismData: () => plagiarismData,
+    relatedKeywords: () => relatedKeywords,
+    removeLicenseToken: () => removeLicenseToken,
+    semanticKeywords: () => semanticKeywords,
+    storeApiUrl: () => storeApiUrl,
+    subscriptionUpdateUrl: () => subscriptionUpdateUrl,
+    topicalMap: () => topicalMap,
+    updateUsageUrl: () => updateUsageUrl,
+    webviewDataCreate: () => webviewDataCreate,
+    webviewDataList: () => webviewDataList,
+    webviewDeletePost: () => webviewDeletePost,
+    webviewGetBlogWizardData: () => webviewGetBlogWizardData,
+    writeIntro: () => writeIntro,
+    writeTemplates: () => writeTemplates,
+    writeTitle: () => writeTitle
+  });
+  var allUrls = window.getGenie.config;
+  var parserApiUrl = allUrls.parserApi;
+  var licenseApiUrl = allUrls.licenseApi;
+  var historyData = allUrls.historyApi + "list";
+  var createHistoryUrl = allUrls.historyApi + "create";
+  var clearHistoryUrl = allUrls.historyApi + "clear";
+  var updateUsageUrl = allUrls.baseApi + "user_usage_log";
+  var writeTemplates = parserApiUrl + "writer-default/generate-templates-content";
+  var writeIntro = parserApiUrl + "writer-wizard/generate-intro";
+  var writeTitle = parserApiUrl + "writer-wizard/generate-title";
+  var outlines = parserApiUrl + "writer-wizard/generate-outline";
+  var nlpKeywordsUrl = parserApiUrl + "writer-wizard/keyword-cluster";
+  var filterNlpKeywordsUrl = parserApiUrl + "writer-wizard/filter-nlp-keyword";
+  var keywordsData = parserApiUrl + "writer-wizard/keyword-doctor";
+  var competitorData = parserApiUrl + "writer-wizard/serp-data";
+  var plagiarismData = parserApiUrl + "writer-wizard/plagiarism-checker";
+  var continueWriting = parserApiUrl + "advanced-writing/continue-writing";
+  var expandOutline = parserApiUrl + "advanced-writing/outline-expand";
+  var genieMode = parserApiUrl + "advanced-writing/genie-mode";
+  var oneClickBlog = parserApiUrl + "writer-wizard/generate-one-click-blog";
+  var contentFeedback = allUrls.feedbackApi;
+  var storeApiUrl = allUrls.storeApi + window.getGenie.blogWizardData?.post_id;
+  var getLicenseToken = licenseApiUrl + "get-token";
+  var removeLicenseToken = licenseApiUrl + "remove-token";
+  var limitUsage = allUrls.usageLimitStatsApi;
+  var subscriptionUpdateUrl = allUrls.subscriptionUpgradeUrlApi;
+  var genieImage = parserApiUrl + "genie-image/generate-image";
+  var genieImageSave = allUrls.baseApi + "genie-image/upload";
+  var genieChat = parserApiUrl + "chat/default";
+  var genieChatSave = allUrls.genieChatApi + "create";
+  var genieChatList = allUrls.genieChatApi + "list";
+  var genieChatClear = allUrls.genieChatApi + "clear";
+  var webviewDataCreate = allUrls.webviewBaseApi + "save";
+  var webviewDeletePost = allUrls.webviewBaseApi + "delete";
+  var webviewDataList = allUrls.webviewBaseApi + "list";
+  var webviewGetBlogWizardData = allUrls.webviewBaseApi + "doc_meta";
+  var relatedKeywords = parserApiUrl + "writer-wizard/related-keywords";
+  var nlpKeywords = parserApiUrl + "writer-wizard/nlp-keywords";
+  var semanticKeywords = parserApiUrl + "writer-wizard/semantic-keywords";
+  var topicalMap = parserApiUrl + "writer-wizard/topical-map";
+
+  // assets/src/admin/js/Common/Libs/Notification.js
+  var { notification } = window.antd;
+
+  // assets/src/admin/js/RequestManager/HandleResponse.js
+  var { Modal } = window.antd;
+
+  // assets/src/admin/js/Common/Utilities/index.js
+  var import_moment = __toESM(require_moment());
+  var Helpers = class {
+    storeTimeout = {};
+    callStoreApi(name, data) {
+      if (!window.getGenie.blogWizardData?.post_id) {
+        return;
+      }
+      if (window.getGenie.config.saveData) {
+        window.getGenie.config.saveData(name, data);
+      } else {
+        const url = EndPoints_exports.storeApiUrl + "/" + name + "/";
+        fetch(url, {
+          method: "POST",
+          body: JSON.stringify(data),
+          headers: {
+            "Content-type": "application/json; charset=UTF-8",
+            "X-WP-Nonce": window.getGenie.config?.restNonce || ""
+          }
+        });
+      }
+    }
+    storeData = (name) => {
+      if (this.storeTimeout[name]) {
+        clearTimeout(this.storeTimeout[name]);
+      }
+      this.storeTimeout[name] = setTimeout(() => {
+        const inputs = wp.data.select("getgenie").getInputs();
+        this.callStoreApi(name, inputs[name] || "");
+      }, 3e3);
+    };
+    copyToClipboard(copyAbleText) {
+      if (navigator?.clipboard && window?.isSecureContext) {
+        return navigator.clipboard.writeText(copyAbleText);
+      } else {
+        let textArea = document.createElement("textarea");
+        textArea.value = copyAbleText;
+        textArea.style.position = "fixed";
+        textArea.style.left = "-999999px";
+        textArea.style.top = "-999999px";
+        document.body.appendChild(textArea);
+        textArea.focus();
+        textArea.select();
+        return new Promise((resolve, reject) => {
+          document.execCommand("copy") ? resolve() : reject();
+          textArea.remove();
+        });
+      }
+    }
+    formatLargeNumber(n) {
+      if (n < 1e3)
+        return n;
+      if (n >= 1e3 && n < 1e6)
+        return +(n / 1e3).toFixed(1) + "K";
+      if (n >= 1e6 && n < 1e9)
+        return +(n / 1e6).toFixed(1) + "M";
+      if (n >= 1e9 && n < 1e12)
+        return +(n / 1e9).toFixed(1) + "B";
+      if (n >= 1e12)
+        return +(n / 1e12).toFixed(1) + "T";
+    }
+    getDomainName(url) {
+      try {
+        const parsedUrl = new URL(url);
+        return parsedUrl.hostname.split(".").slice(-2).join(".");
+      } catch (e) {
+        return "";
+      }
+    }
+    saveSidebarControllerOption(key, value) {
+      if (!key || !value) {
+        return;
+      }
+      localStorage.setItem(key, JSON.stringify(value));
+      if (key == "getgenie-language") {
+        wp.data.dispatch("getgenie").setSidebar({
+          currentLanguage: value
+        });
+      }
+    }
+    snakeToTitleCase = (str) => {
+      let initial = str.replace(/^[_]*(.)/, (_, char) => char.toUpperCase());
+      let result = initial.replace(/[_]+(.)/g, (_, char) => " " + char.toUpperCase());
+      return result;
+    };
+    camelCaseToTitleCase(text) {
+      const result = text.replace(/([A-Z])/g, " $1").trim();
+      const finalResult = result.charAt(0).toUpperCase() + result.slice(1).toLowerCase();
+      return finalResult;
+    }
+    hyphenatedToCamelCase(text) {
+      return text.replace(/-([a-z])/g, (g) => {
+        return g[1].toUpperCase();
+      });
+    }
+    joinArray(values, separator = "-") {
+      if (values && values.length > 1) {
+        return values.join(separator);
+      }
+      return "";
+    }
+    sortObjArray(a, b) {
+      if (a.last_nom < b.last_nom) {
+        return -1;
+      }
+      if (a.last_nom > b.last_nom) {
+        return 1;
+      }
+      return 0;
+    }
+    convertToSlug(text) {
+      return text?.toLowerCase().replace(/[^\w ]+/g, "").replace(/ +/g, "-");
+    }
+    getCurrentDateTime = (date) => {
+      const isPlayground = window.getGenie?.isPlayground;
+      if (!isPlayground) {
+        return date;
+      }
+      const format = "YYYY-MM-DD HH:mm:ssZ";
+      const adjustedTime = (0, import_moment.default)(date, format).format("YYYY-MM-DD, h:mm:ss A");
+      return adjustedTime;
+    };
+    isExistDomain = (siteURL) => {
+      const domainList = ["shopify", "wikipedia", "youtube", "amazon", "aliexpress", "walmart", "alibaba", "bookshop", "etsy", "flipkart", "netflix", "reddit", "quora"];
+      return domainList.some((domain) => siteURL?.includes(domain));
+    };
+  };
+  var GenieHelpers = new Helpers();
+
+  // assets/src/admin/js/Common/Libs/Button.js
+  var { Form, Button } = window.antd;
+
+  // assets/src/admin/js/Common/Libs/GenieAiModal.js
+  var { Modal: Modal2 } = window.antd;
+
+  // assets/src/admin/js/Common/Libs/InfoTooltip.js
+  var { Tooltip } = window.antd;
+  var InfoTooltip = ({ title, placement, className = "", color, ...props }) => {
+    return /* @__PURE__ */ React.createElement(Tooltip, {
+      className: "getgenie-tooltip-icon getgenie-icon-alert-circle",
+      color,
+      overlayStyle: { paddingLeft: "8px" },
+      placement,
+      ...props,
+      title,
+      overlayClassName: className,
+      zIndex: 9999
+    });
+  };
+  var InfoTooltip_default = InfoTooltip;
+
+  // assets/src/admin/js/Common/Libs/Loading.js
+  var Loading = ({ size = 25 }) => {
+    return /* @__PURE__ */ React.createElement("div", {
+      style: { width: `${size}px`, height: `${size}px` },
+      className: "loading-icon"
+    });
+  };
+  var Loading_default = Loading;
+
+  // assets/src/admin/js/Common/Libs/Select.js
+  var { ComposeComponents } = window.getGenie.Components.Common.ReduxManager;
+  var { Select, Form: Form2 } = window.antd;
+  var { Option } = Select;
+  var { useEffect } = window.React;
+  var GenieSelect = ComposeComponents(({ options, setInput, sidebar: sidebar6, getInputs, except = [], disableList = [], name = "", defaultValue = "", label = "", placeholder = "", className = "", handleOnChange = () => "", onSearch = () => {
+  }, ...props }) => {
+    let list = options;
+    const handleChange = (value) => {
+      handleOnChange(value);
+      setInput(name, value);
+    };
+    let updatedValue = getInputs[name] || defaultValue || null;
+    useEffect(() => {
+      setInput(name, updatedValue);
+    }, [sidebar6.currentTemplate]);
+    if (except && except.length > 0) {
+      list = options.filter((option) => !except.includes(option.value));
+      if (except.includes(updatedValue)) {
+        updatedValue = list?.[0]?.value;
+      }
+    }
+    return /* @__PURE__ */ React.createElement(Form2.Item, {
+      label,
+      className
+    }, /* @__PURE__ */ React.createElement(Select, {
+      showSearch: true,
+      value: updatedValue,
+      placeholder,
+      name,
+      notFoundContent: props?.loading ? /* @__PURE__ */ React.createElement(Loading_default, {
+        width: 25
+      }) : null,
+      suffixIcon: /* @__PURE__ */ React.createElement("span", {
+        className: "getgenie-icon-arrow_down"
+      }),
+      onChange: handleChange,
+      onSearch,
+      onKeyDown: (e) => e.stopPropagation(),
+      filterOption: (input, option) => {
+        return option.children.toLowerCase().indexOf(input.toLowerCase()) >= 0;
+      },
+      getPopupContainer: (node) => node.parentNode,
+      ...props
+    }, list.map((option, key) => /* @__PURE__ */ React.createElement(Option, {
+      key,
+      disabled: disableList.includes(option.value),
+      value: option.value
+    }, option.label))));
+  }, ["setInput", "getInputs", "sidebar"]);
+
+  // assets/src/admin/js/Common/Libs/Textarea.js
+  var { ComposeComponents: ComposeComponents2 } = window.getGenie.Components.Common.ReduxManager;
+  var { Input, Form: Form3 } = window.antd;
+  var { useEffect: useEffect2 } = window.React;
+  var GenieTextarea = ComposeComponents2(({ name = "", setInput, sidebar: sidebar6, getInputs, className = "", label = "", defaultValue = "", errorMessage = "", ...props }) => {
+    const handleChange = (e) => {
+      setInput(name, e.target.value);
+    };
+    useEffect2(() => {
+      setInput(name, getInputs[name] || defaultValue);
+    }, []);
+    let updatedValue = getInputs[name] || defaultValue;
+    const direction = sidebar6.languages.find((item) => item.value === sidebar6.currentLanguage)?.writingDirection;
+    return /* @__PURE__ */ React.createElement(Form3.Item, {
+      label,
+      key: name,
+      className: `genie-input ${className}`
+    }, /* @__PURE__ */ React.createElement(Input.TextArea, {
+      className: direction,
+      value: updatedValue,
+      onChange: handleChange,
+      onKeyDown: (e) => e.stopPropagation(),
+      ...props
+    }));
+  }, ["setInput", "getInputs", "sidebar"]);
+
+  // assets/src/admin/js/Common/Libs/Card.js
+  var { Row, Col, Card } = window.antd;
+  var { ComposeComponents: ComposeComponents3 } = window.getGenie.Components.Common.ReduxManager;
+  var { useState, useEffect: useEffect3 } = window.React;
+  var GenieCard = ComposeComponents3(({ list, children, column = 1, handleClick, sidebar: sidebar6, setSidebar, skeleton: Skeleton3 = null, showActiveItem = false, loading = false, value = "", ...props }) => {
+    const [card, setCard] = useState(null);
+    let cols = 24 / column;
+    if (column > 2) {
+      cols = 24 / (column - 2);
+    } else if (column > 1) {
+      cols = 24 / (column - 1);
+    }
+    useEffect3(() => {
+      if (showActiveItem && value) {
+        const content = list.findIndex((item) => item.title === value);
+        if (content !== -1) {
+          setCard(content + "-selected");
+        }
+      }
+    }, [value]);
+    const handleCard = (e, item, index) => {
+      setCard(index + "-selected");
+      if (handleClick) {
+        handleClick(e, item);
+      }
+    };
+    useEffect3(() => {
+      if (list.length === 0) {
+        setCard(null);
+      }
+    }, [list]);
+    const direction = sidebar6.languages.find((item) => item.value === sidebar6.currentLanguage)?.writingDirection;
+    if (Skeleton3) {
+      return /* @__PURE__ */ React.createElement(Skeleton3, null);
+    }
+    return /* @__PURE__ */ React.createElement("div", {
+      className: "getgenie-card"
+    }, /* @__PURE__ */ React.createElement(Row, {
+      gutter: 16
+    }, list.map(
+      (item, index) => /* @__PURE__ */ React.createElement(Col, {
+        xs: 24,
+        sm: cols,
+        xl: 24 / column,
+        key: index,
+        className: direction
+      }, /* @__PURE__ */ React.createElement(Card, {
+        className: card && card === index + "-selected" ? "active" : "",
+        key: index,
+        onClick: (e) => handleCard(e, item, index),
+        ...props
+      }, children(item, index)))
+    )));
+  }, ["sidebar", "setSidebar"]);
+
+  // assets/src/admin/js/Common/Libs/DrawerFooter.js
+  var { Button: Button2, Tooltip: Tooltip2 } = window.antd;
+  var { ComposeComponents: ComposeComponents4 } = window.getGenie.Components.Common.ReduxManager;
+  var DrawerFooter = ComposeComponents4(({ prevScreen = true, nextScreen = true, enableNextBtn = false, handleNext = () => "", handlePrev = () => "", insertBtn = "", sidebar: sidebar6 }) => {
+    return /* @__PURE__ */ React.createElement("div", {
+      className: `getgenie-sidebar-footer ${prevScreen && "getgenie-sidebar-footer-grid"}`
+    }, prevScreen && /* @__PURE__ */ React.createElement(Button2, {
+      type: "primary",
+      onClick: handlePrev,
+      className: "prevBtn"
+    }, /* @__PURE__ */ React.createElement("span", {
+      className: "getgenie-icon-arrow"
+    })), /* @__PURE__ */ React.createElement("div", {
+      className: "btnGrp"
+    }, insertBtn, nextScreen && /* @__PURE__ */ React.createElement(Button2, {
+      type: "primary",
+      onClick: handleNext,
+      disabled: !enableNextBtn,
+      className: "nextBtn"
+    }, sidebar6.__("Next", "getgenie"))));
+  }, ["sidebar"]);
+
+  // assets/src/admin/js/Common/Libs/GenieAiPopover.js
+  var { Popover } = window.antd;
+  var { useState: useState2 } = window.React;
+
+  // assets/src/admin/js/Common/Libs/Input.js
+  var { ComposeComponents: ComposeComponents5 } = window.getGenie.Components.Common.ReduxManager;
+  var { Input: Input2, Form: Form4 } = window.antd;
+  var { useEffect: useEffect4, useState: useState3 } = window.React;
+  var GenieInput = ComposeComponents5(({ name, sidebar: sidebar6, setInput, getInputs, autoComplete = "off", className = "", defaultValue = "", label = "", required = false, errorMessage = "", ...props }) => {
+    const [error, setError] = useState3(false);
+    const handleChange = (e) => {
+      const value = e.target.value;
+      setInput(name, value);
+      if (!value.length) {
+        setError(true);
+      } else {
+        setError(false);
+      }
+    };
+    useEffect4(() => {
+      setInput(name, getInputs[name] || defaultValue);
+    }, []);
+    let updatedValue = getInputs[name] || defaultValue;
+    const direction = sidebar6.languages.find((item) => item.value === sidebar6.currentLanguage)?.writingDirection;
+    return /* @__PURE__ */ React.createElement(Form4.Item, {
+      className: `genie-input ${className} ${required && error && !updatedValue && "ant-form-item-has-error"}`,
+      label
+    }, /* @__PURE__ */ React.createElement(Input2, {
+      className: direction,
+      value: updatedValue,
+      name,
+      ...props,
+      onChange: handleChange,
+      onKeyDown: (e) => e.stopPropagation()
+    }), required && error && !updatedValue ? /* @__PURE__ */ React.createElement("p", {
+      className: "ant-form-item-explain-error"
+    }, errorMessage) : "");
+  }, ["setInput", "getInputs", "sidebar"]);
+
+  // assets/src/admin/js/Common/Libs/TitleMsg.js
+  var { Typography, Tooltip: Tooltip3 } = window.antd;
+  var sidebar = wp.data.select("getgenie").sidebar();
+
+  // assets/src/admin/js/Common/Libs/Collapse.js
+  var { Collapse, Form: Form5 } = window.antd;
+  var { Panel } = Collapse;
+  var GenieCollapse = ({ children, ...props }) => {
+    return /* @__PURE__ */ React.createElement(Form5.Item, null, /* @__PURE__ */ React.createElement(Collapse, {
+      ...props,
+      expandIconPosition: "right",
+      expandIcon: (panelProps) => /* @__PURE__ */ React.createElement("span", {
+        className: "getgenie-icon-arrow_down"
+      })
+    }, children));
+  };
+  GenieCollapse.Panel = ({ children, ...props }) => {
+    return /* @__PURE__ */ React.createElement(Panel, {
+      ...props
+    }, children);
+  };
+
+  // assets/src/admin/js/Common/Libs/DrawerHeader.js
+  var { Button: Button3, Col: Col2, Row: Row2 } = window.antd;
+  var { ComposeComponents: ComposeComponents6 } = window.getGenie.Components.Common.ReduxManager;
+  var sidebarConfig = window.getGenie.config?.sidebar;
+  var DrawerHeader = ComposeComponents6(({ sidebar: sidebar6, setSidebar, getInputs, setInput, screenName = "" }) => {
+    const { imageUrl } = sidebar6;
+    const seoData = getInputs["searchVolume"];
+    const seoEnabled = getInputs["seoEnabled"];
+    const handleClickSeoBtn = () => {
+      setInput("seoEnabled", !seoEnabled);
+    };
+    const closeSidebar = () => {
+      setSidebar({
+        open: false
+      });
+    };
+    return /* @__PURE__ */ React.createElement("div", {
+      className: "getgenie-sidebar-header"
+    }, /* @__PURE__ */ React.createElement(Row2, null, /* @__PURE__ */ React.createElement(Col2, {
+      span: 20
+    }, /* @__PURE__ */ React.createElement("img", {
+      className: "main-logo",
+      src: `${imageUrl}/logo_black.svg`,
+      alt: "logo"
+    }), ["introScreen", "outlineScreen", "paragraphScreen"].includes(screenName) && seoData ? /* @__PURE__ */ React.createElement(Button3, {
+      onClick: handleClickSeoBtn,
+      shape: "round",
+      className: "getgenie-sidebar-header-seoBtn"
+    }, /* @__PURE__ */ React.createElement("img", {
+      src: `${imageUrl}/badge.png`,
+      alt: "logo"
+    }), "SEO ", seoEnabled ? sidebar6.__("Enabled", "getgenie") : sidebar6.__("Disabled", "getgenie")) : /* @__PURE__ */ React.createElement("div", {
+      className: "empty-btn-space"
+    })), /* @__PURE__ */ React.createElement(Col2, {
+      span: 4,
+      className: "getgenie-close-btn"
+    }, /* @__PURE__ */ React.createElement("span", {
+      onClick: closeSidebar
+    }, /* @__PURE__ */ React.createElement("svg", {
+      width: "10",
+      height: "10",
+      viewBox: "0 0 10 10",
+      fill: "none",
+      xmlns: "http://www.w3.org/2000/svg"
+    }, /* @__PURE__ */ React.createElement("path", {
+      d: "M10 1.00714L8.99286 0L5 3.99286L1.00714 0L0 1.00714L3.99286 5L0 8.99286L1.00714 10L5 6.00714L8.99286 10L10 8.99286L6.00714 5L10 1.00714Z",
+      fill: "#323232"
+    }))))));
+  }, ["setSidebar", "sidebar", "getInputs", "setInput"]);
+
+  // assets/src/admin/js/Common/Libs/GenieAiSwitch.js
+  var { Col: Col3, Row: Row3, Switch } = window.antd;
+  var { ComposeComponents: ComposeComponents7 } = window.getGenie.Components.Common.ReduxManager;
+  var { useEffect: useEffect5 } = window.React;
+  var GenieAiSwitch = ComposeComponents7(({ getInputs, setInput, defaultChecked = false, className = "", name = "", label = "", ...props }) => {
+    const handleChange = (value) => {
+      setInput(name, value);
+    };
+    let updatedValue = getInputs[name] || defaultChecked;
+    useEffect5(() => {
+      setInput(name, updatedValue);
+    }, []);
+    return /* @__PURE__ */ React.createElement(Row3, {
+      justify: "space-between",
+      className: `getgenie-switch ${className}`
+    }, /* @__PURE__ */ React.createElement(Col3, {
+      span: 18,
+      className: "label"
+    }, label), /* @__PURE__ */ React.createElement(Col3, {
+      span: 6,
+      className: "switch"
+    }, /* @__PURE__ */ React.createElement(Switch, {
+      name,
+      checked: updatedValue,
+      ...props,
+      onChange: handleChange
+    })));
+  }, ["setInput", "getInputs"]);
+
+  // assets/src/admin/js/Common/Libs/SkeletonSingle.js
+  var { Skeleton } = window.antd;
+
+  // assets/src/admin/js/Common/Libs/SkeletonCard.js
+  var { Card: Card2, Skeleton: Skeleton2 } = window.antd;
+  var SkeletonCard = ({ count = 3 }) => {
+    return /* @__PURE__ */ React.createElement("div", {
+      className: "getgenie-card-skeleton"
+    }, [...Array(count)].map(
+      (item, key) => /* @__PURE__ */ React.createElement(Card2, {
+        key,
+        className: "getgenie-generated-outlines-card"
+      }, /* @__PURE__ */ React.createElement(Skeleton2, {
+        active: true
+      }))
+    ));
+  };
+  var SkeletonCard_default = SkeletonCard;
+
+  // assets/src/admin/js/Common/Libs/ConfirmModal.js
+  var { Modal: Modal3 } = window.antd;
+
+  // assets/src/admin/js/Common/Libs/ErrorModal.js
+  var { Modal: Modal4 } = window.antd;
+
+  // assets/src/admin/js/Common/Libs/DrawerWrapper.js
+  var { useState: useState4, useEffect: useEffect6, useCallback } = window.React;
+  var { Drawer } = window.antd;
+  var { ComposeComponents: ComposeComponents8 } = window.getGenie.Components.Common.ReduxManager;
+  var isResizing = null;
+  var sidebarConfig2 = window.getGenie.config?.sidebar || {};
+  var mainWidth = sidebarConfig2?.width || 380;
+  var width = {
+    main: mainWidth,
+    generatedOutlines: 280,
+    analyzeKeywordScreen: 350,
+    keywordHeatMap: 860,
+    paragraphEditorScreen: 350
+  };
+  delete sidebarConfig2?.width;
+  var DrawerWrapper = ComposeComponents8(({ children, sidebar: sidebar6, setSidebar, getInputs }) => {
+    const [drawerWidth, setDrawerWidth] = useState4(width.main);
+    const { open, generatedOutlines, analyzeKeyword } = sidebar6;
+    const headToHead = getInputs["headTohead"] || false;
+    let mask = true;
+    if (window.getGenie.config.wizardScreen === "post" && sidebar6.component === "ScoreAnalysis") {
+      mask = false;
+    }
+    if (sidebar6.component === "GenieChat") {
+      width.main = 430;
+    } else {
+      width.main = mainWidth;
+    }
+    const cbHandleMouseMove = useCallback(handleMousemove, []);
+    const cbHandleMouseUp = useCallback(handleMouseup, []);
+    useEffect6(() => {
+      setSidebar({ width: drawerWidth });
+    }, [drawerWidth]);
+    function handleMouseup(e) {
+      if (!isResizing) {
+        return;
+      }
+      isResizing = false;
+      document.removeEventListener("mousemove", cbHandleMouseMove);
+      document.removeEventListener("mouseup", cbHandleMouseUp);
+    }
+    function handleMousedown(e) {
+      e.stopPropagation();
+      e.preventDefault();
+      document.addEventListener("mousemove", cbHandleMouseMove);
+      document.addEventListener("mouseup", cbHandleMouseUp);
+      isResizing = true;
+    }
+    function handleMousemove(e) {
+      let offsetRight = document.body.offsetWidth - (e.clientX - document.body.offsetLeft);
+      let minWidth = 380;
+      let maxWidth = window.innerWidth * 0.8;
+      if (offsetRight > minWidth && offsetRight < maxWidth) {
+        setDrawerWidth(offsetRight);
+      }
+    }
+    useEffect6(() => {
+      if (analyzeKeyword.open && !generatedOutlines.open) {
+        setDrawerWidth(width.main + width.analyzeKeywordScreen);
+      }
+      if (generatedOutlines.open && !analyzeKeyword.open) {
+        setDrawerWidth(width.main + width.generatedOutlines);
+      }
+      if (generatedOutlines.open && analyzeKeyword.open) {
+        setDrawerWidth(width.main + width.generatedOutlines + width.analyzeKeywordScreen);
+      }
+      if (!generatedOutlines.open && !analyzeKeyword.open) {
+        setDrawerWidth(width.main);
+      }
+      if (sidebar6.paragraphEditorScreen.open && analyzeKeyword.open) {
+        setDrawerWidth(width.main + width.analyzeKeywordScreen + width.paragraphEditorScreen);
+      }
+      if (sidebar6.paragraphEditorScreen.open && !analyzeKeyword.open) {
+        setDrawerWidth(width.main + width.paragraphEditorScreen);
+      }
+      if (headToHead) {
+        setSidebar({
+          analyzeKeyword: {
+            ...setSidebar.analyzeKeyword,
+            open: false
+          },
+          generatedOutlines: {
+            ...sidebar6.generatedOutlines,
+            open: false
+          }
+        });
+        setDrawerWidth(width.main + width.keywordHeatMap);
+      }
+    }, [sidebar6.analyzeKeyword.open, sidebar6.generatedOutlines.open, sidebar6.paragraphEditorScreen.open, headToHead]);
+    useEffect6(() => {
+      const getDocumentBody = document.querySelector("body");
+      const rootContainer = sidebar6.rootContainer;
+      const { userAgent } = window.navigator;
+      const browserSupport = userAgent.indexOf("Firefox") != -1 || userAgent.indexOf("Safari") != -1;
+      const hasClass = (query) => {
+        return getDocumentBody.classList.contains(query);
+      };
+      if (browserSupport) {
+        if (hasClass("is-fullscreen-mode") || hasClass("elementor-device-desktop")) {
+          rootContainer.classList.add("getgenie-browser-support");
+        } else if (hasClass("wc-sass-manager")) {
+          rootContainer.classList.add("getgenie-browser-support-playground");
+        } else {
+          rootContainer.classList.remove("getgenie-browser-support");
+        }
+      }
+    }, [sidebar6.open]);
+    return /* @__PURE__ */ React.createElement(Drawer, {
+      rootClassName: "getgenie-drawer",
+      width: "auto",
+      onClose: () => setSidebar({ open: false }),
+      open,
+      closable: false,
+      mask,
+      ...sidebarConfig2,
+      zIndex: 1200,
+      autoFocus: false
+    }, children(drawerWidth, width), /* @__PURE__ */ React.createElement("div", {
+      className: "getgenie-sidebar-draggable",
+      onMouseDown: handleMousedown
+    }));
+  }, ["sidebar", "setSidebar", "getInputs"]);
+
+  // assets/src/admin/js/Common/Libs/GenieAiTable.js
+  var { Table } = window.antd;
+
+  // assets/src/admin/js/Common/Libs/NumberInput.js
+  var { ComposeComponents: ComposeComponents9 } = window.getGenie.Components.Common.ReduxManager;
+  var { Input: Input3, Form: Form6 } = window.antd;
+  var { useEffect: useEffect7 } = window.React;
+  var GenieNumberInput = ComposeComponents9(({ name, setInput, getInputs, sidebar: sidebar6, handleOnChange = () => "", defaultValue = 1, max = null, label = "", placeholder = "", type = "text", required = false, errorMessage = "", className = "", ...props }) => {
+    let updatedValue = getInputs[name] || defaultValue;
+    const handleChange = (value) => {
+      if (isNaN(value)) {
+        return;
+      }
+      if (max && value > max) {
+        return;
+      }
+      handleOnChange(value);
+      setInput(name, value);
+    };
+    useEffect7(() => {
+      handleChange(getInputs[name] || updatedValue);
+    }, [sidebar6.currentTemplate]);
+    const updateValue = (num) => {
+      if (props?.disabled) {
+        return;
+      }
+      if (updatedValue === 1 && num === -1) {
+        return;
+      }
+      let value = parseInt(updatedValue) + parseInt(num);
+      if (max && value > max) {
+        return;
+      }
+      handleOnChange(value);
+      setInput(name, value);
+    };
+    return /* @__PURE__ */ React.createElement(Form6.Item, {
+      initialValue: updatedValue,
+      className: `NumberInput ${className}`,
+      label,
+      name,
+      rules: [{ required, message: errorMessage }]
+    }, /* @__PURE__ */ React.createElement("span", {
+      className: "getgenie-icon-minus icon",
+      onClick: () => updateValue(-1)
+    }), /* @__PURE__ */ React.createElement(Input3, {
+      ...props,
+      type,
+      placeholder,
+      value: updatedValue,
+      defaultValue: updatedValue,
+      onChange: (e) => handleChange(e.target.value)
+    }), /* @__PURE__ */ React.createElement("span", {
+      className: "getgenie-icon-plus icon",
+      onClick: () => updateValue(1)
+    }));
+  }, ["setInput", "getInputs", "sidebar"]);
+
+  // assets/src/admin/js/Common/Libs/Slider.js
+  var { Slider, Form: Form7 } = window.antd;
+  var { ComposeComponents: ComposeComponents10 } = window.getGenie.Components.Common.ReduxManager;
+  var { useEffect: useEffect8 } = window.React;
+  var GenieSlider = ComposeComponents10(({ label, name, setInput, getInputs, sidebar: sidebar6, defaultValue, message, handleOnChange = () => "", className = "", ...props }) => {
+    let max = props.max || 5, min = props.min || 1;
+    const handleChange = (value) => {
+      handleOnChange(value);
+      setInput(name, value);
+    };
+    useEffect8(() => {
+      setInput(name, getInputs[name] || defaultValue);
+    }, [sidebar6.currentTemplate]);
+    let updatedValue = getInputs[name] || defaultValue;
+    const formatter = (value) => `${value}/${max}`;
+    return /* @__PURE__ */ React.createElement(Form7.Item, {
+      label,
+      className: "getgenie-slider " + className,
+      name
+    }, /* @__PURE__ */ React.createElement(Slider, {
+      style: { margin: 0 },
+      min,
+      max,
+      ...props,
+      defaultValue: updatedValue,
+      onChange: handleChange,
+      tooltip: { formatter }
+    }));
+  }, ["getInputs", "setInput", "sidebar"]);
+
+  // assets/src/admin/js/Common/Libs/Navbar.js
+  var { Tabs } = window.antd;
+  var { TabPane } = Tabs;
+
+  // assets/src/admin/js/Common/Libs/BlurElement.js
+  var { ComposeComponents: ComposeComponents11 } = window.getGenie.Components.Common.ReduxManager;
+  var { Button: Button4, Typography: Typography2 } = window.antd;
+  var { useRef, useState: useState5 } = window.React;
+  var BlurElement = ComposeComponents11(({ children, show = false, top = 0, left = 0, text = "", btnText = "", href = "#", textMargin = 13 }) => {
+    const [isVisible, setIsVisible] = useState5(false);
+    const [position, setPosition] = useState5({ top: 0 });
+    const containerRef = useRef(null);
+    const handleMouseMove = (event) => {
+      if (containerRef.current && event.target.classList.contains("blur-element-content")) {
+        const rect = containerRef.current.getBoundingClientRect();
+        setPosition({
+          top: event.clientY - rect.top - 50
+        });
+      }
+    };
+    const handleMouseOver = () => {
+      setIsVisible(true);
+    };
+    const handleMouseOut = () => {
+      setIsVisible(false);
+    };
+    return show ? /* @__PURE__ */ React.createElement("div", {
+      className: "blur-element"
+    }, children, /* @__PURE__ */ React.createElement("div", {
+      className: "blur-element-content",
+      ref: containerRef,
+      onMouseMove: handleMouseMove,
+      onMouseOver: handleMouseOver,
+      onMouseOut: handleMouseOut,
+      style: { top, left, width: `calc(100% - ${left}px)`, height: `calc(100% - ${top}px)` }
+    }, isVisible && /* @__PURE__ */ React.createElement("div", {
+      className: "blur-element-text",
+      style: { margin: textMargin, ...position }
+    }, /* @__PURE__ */ React.createElement(Typography2.Title, {
+      level: 4
+    }, text), /* @__PURE__ */ React.createElement(Button4, {
+      type: "primary",
+      href,
+      target: "_blank"
+    }, btnText)))) : children;
+  });
+
+  // assets/src/admin/js/Common/Static/index.js
+  var StaticData = {
+    countries: [
+      { label: "Global", value: "global" },
+      { label: "Australia", value: 2036 },
+      { label: "Canada", value: 2124 },
+      { label: "India", value: 2356 },
+      { label: "New Zealand", value: 2554 },
+      { label: "South Africa", value: 2710 },
+      { label: "United States (USA)", value: 2840 },
+      { label: "United Kingdom", value: 2826 },
+      { label: "Germany", value: 2276 },
+      { label: "Portugal", value: 2620 },
+      { label: "Spain", value: 2724 },
+      { label: "Vietnam", value: 2704 },
+      { label: "Indonesia", value: 2360 },
+      { label: "Malaysia", value: 2458 },
+      { label: "South Korea", value: 2410 },
+      { label: "Japan", value: 2392 },
+      { label: "China", value: 2156 },
+      { label: "Turkey", value: 2792 },
+      { label: "Ukraine", value: 2804 },
+      { label: "Italy", value: 2380 },
+      { label: "France", value: 2250 },
+      { label: "Poland", value: 2616 },
+      { label: "Netherland", value: 2528 },
+      { label: "Lithuania", value: 2440 },
+      { label: "Hungary", value: 2348 },
+      { label: "Denmark", value: 2208 },
+      { label: "Czechia", value: 2203 },
+      { label: "Thailand", value: 2764 },
+      { label: "Latvia", value: 2428 },
+      { label: "Slovakia", value: 2703 },
+      { label: "Greece", value: 2300 },
+      { label: "Sweden", value: 2752 },
+      { label: "Saudi Arabia", value: 2682 },
+      { label: "Russia", value: 2643 },
+      { label: "Bulgaria", value: 2100 },
+      { label: "Mexico", value: 2484 },
+      { label: "Norway", value: 2578 },
+      { label: "Pakistan", value: 2586 },
+      { label: "Israel", value: 2376 }
+    ],
+    languages: [
+      {
+        "value": "en",
+        "label": "English"
+      },
+      {
+        "value": "es",
+        "label": "Spanish"
+      },
+      {
+        "value": "de",
+        "label": "German"
+      }
+    ],
+    outputSizes: [
+      { label: "Small", value: "sm" },
+      { label: "Medium", value: "md" },
+      { label: "Large", value: "lg" }
+    ],
+    maxToken: [
+      { label: "Small", value: 200 },
+      { label: "Medium", value: 400 },
+      { label: "Large", value: 1200 }
+    ],
+    chatCharacters: [
+      { label: "Professional Writer", value: "professional-writer" },
+      { label: "General Purpose", value: "general-purpose" },
+      { label: "Standup Comedian", value: "standup-comedian" },
+      { label: "Life Coach", value: "life-coach" },
+      { label: "Career Counselor", value: "career-counselor" },
+      { label: "Nutritionist", value: "nutritionist" },
+      { label: "Product Manager", value: "product-manager" },
+      { label: "Personal Trainer", value: "personal-trainer" },
+      { label: "Life Hacker", value: "life-hacker" },
+      { label: "Travel Advisor", value: "travel-advisor" },
+      { label: "Mindfulness Coach", value: "mindfulness-coach" },
+      { label: "Financial Advisor", value: "financial-advisor" },
+      { label: "Language Tutor", value: "language-tutor" },
+      { label: "Travel Guide", value: "travel-guide" },
+      { label: "Marketing Expert", value: "marketing-expert" },
+      { label: "Software Developer", value: "software-developer" },
+      { label: "Dating Coach", value: "dating-coach" },
+      { label: "DIY Expert", value: "diy-expert" },
+      { label: "Journalist", value: "journalist" },
+      { label: "Tech Writer", value: "tech-writer" },
+      { label: "Pro Chef", value: "professional-chef" },
+      { label: "Pro Salesperson", value: "professional-salesperson" },
+      { label: "Startup Tech Lawyer", value: "startup-tech-lawyer" },
+      { label: "Email Copywriter", value: "email-copywriter" }
+    ]
+  };
+  var Static_default = StaticData;
+
+  // assets/src/admin/js/Common/ContentFeedback/index.js
+  var { HandleFetch } = window.getGenie.Components.Common.RequestManager;
+  var { ComposeComponents: ComposeComponents12 } = window.getGenie.Components.Common.ReduxManager;
+  var { Tooltip: Tooltip4 } = window.antd;
+  var ContentFeedback = ComposeComponents12(({ content, listName, getInputs, setInput, creativityLevel, input, sidebar: sidebar6, contentType = "" }) => {
+    const handleFeedback = (type, text) => {
+      let newList, currentList = getInputs[listName];
+      if (type === "like") {
+        if (currentList.find((item) => item.title === text && item.like)) {
+          return;
+        }
+        newList = currentList.map((item) => {
+          return item.title === text ? { ...item, like: true, dislike: false } : item;
+        });
+      } else {
+        if (currentList.find((item) => item.title === text && item.dislike)) {
+          return;
+        }
+        newList = currentList.map((item) => {
+          return item.title === text ? { ...item, dislike: true, like: false } : item;
+        });
+      }
+      setInput(listName, newList);
+      let data = {
+        input,
+        output: text,
+        creativity_level: creativityLevel,
+        feedback_type: type,
+        template_name: contentType || sidebar6.currentTemplate || "unknown",
+        request_hash: sidebar6.requestId
+      };
+      HandleFetch((res) => {
+      }, "contentFeedback", data);
+    };
+    return /* @__PURE__ */ React.createElement(Tooltip4, {
+      placement: "bottomRight",
+      title: "Is the output good?"
+    }, /* @__PURE__ */ React.createElement("div", {
+      className: "getgenie-giving-feedback",
+      onClick: (e) => e.stopPropagation()
+    }, /* @__PURE__ */ React.createElement("span", {
+      onClick: () => handleFeedback("like", content.title)
+    }, /* @__PURE__ */ React.createElement("svg", {
+      width: "10",
+      height: "10",
+      viewBox: "0 0 10 10",
+      fill: "none",
+      xmlns: "http://www.w3.org/2000/svg"
+    }, /* @__PURE__ */ React.createElement("path", {
+      fill: `${content.like ? "#0FA958" : "none"}`,
+      d: "M7.81833 4.16667H5.83333V2.08333C5.83333 1.86232 5.74554 1.65036 5.58926 1.49408C5.43298 1.3378 5.22101 1.25 5 1.25H4.96042C4.75208 1.25 4.58333 1.41875 4.58333 1.62708C4.58333 1.92458 4.49542 2.21542 4.33 2.46292L2.91667 4.58333V8.33333L4.48375 8.725C4.55 8.74167 4.61792 8.75 4.68583 8.75H6.35958C6.51444 8.75007 6.66626 8.70699 6.798 8.62559C6.92974 8.54419 7.03619 8.42769 7.10542 8.28917L8.56375 5.3725C8.62724 5.24545 8.6572 5.10428 8.65079 4.9624C8.64438 4.82052 8.60182 4.68263 8.52714 4.56182C8.45246 4.44101 8.34814 4.34129 8.22408 4.27213C8.10003 4.20298 7.96036 4.16667 7.81833 4.16667Z"
+    }), /* @__PURE__ */ React.createElement("path", {
+      d: "M5.83333 4.16667H7.81833C7.96036 4.16667 8.10003 4.20298 8.22408 4.27213C8.34814 4.34129 8.45246 4.44101 8.52714 4.56182C8.60182 4.68263 8.64438 4.82052 8.65079 4.9624C8.6572 5.10428 8.62724 5.24545 8.56375 5.3725L7.10542 8.28917C7.03619 8.42769 6.92974 8.54419 6.798 8.62559C6.66626 8.70699 6.51444 8.75007 6.35958 8.75H4.68583C4.61792 8.75 4.55 8.74167 4.48375 8.725L2.91667 8.33333M5.83333 4.16667V2.08333C5.83333 1.86232 5.74554 1.65036 5.58926 1.49408C5.43298 1.3378 5.22101 1.25 5 1.25H4.96042C4.75208 1.25 4.58333 1.41875 4.58333 1.62708C4.58333 1.92458 4.49542 2.21542 4.33 2.46292L2.91667 4.58333V8.33333M5.83333 4.16667H5M2.91667 8.33333H2.08333C1.86232 8.33333 1.65036 8.24554 1.49408 8.08926C1.3378 7.93298 1.25 7.72101 1.25 7.5V5C1.25 4.77899 1.3378 4.56702 1.49408 4.41074C1.65036 4.25446 1.86232 4.16667 2.08333 4.16667H3.125",
+      stroke: "#0FA958",
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    }))), /* @__PURE__ */ React.createElement("span", {
+      onClick: () => handleFeedback("dislike", content.title)
+    }, /* @__PURE__ */ React.createElement("svg", {
+      width: "10",
+      height: "10",
+      viewBox: "0 0 10 10",
+      fill: "none",
+      xmlns: "http://www.w3.org/2000/svg"
+    }, /* @__PURE__ */ React.createElement("path", {
+      fill: `${content.dislike ? "#EA4646" : "none"}`,
+      d: "M2.18166 5.83333H4.16625V7.91667C4.16625 8.13768 4.25404 8.34964 4.41032 8.50592C4.5666 8.6622 4.77857 8.75 4.99958 8.75H5.03958C5.24791 8.75 5.41666 8.58125 5.41666 8.37333C5.41666 8.07542 5.50458 7.78458 5.67 7.53667L7.08333 5.41667L7.08291 1.66667L5.51625 1.275C5.45016 1.25844 5.38229 1.25004 5.31416 1.25H3.64C3.48521 1.25001 3.33348 1.29312 3.20182 1.37452C3.07016 1.45591 2.96377 1.57237 2.89458 1.71083L1.43625 4.6275C1.37276 4.75455 1.3428 4.89572 1.34921 5.0376C1.35562 5.17948 1.39818 5.31737 1.47286 5.43818C1.54754 5.55899 1.65186 5.65871 1.77591 5.72787C1.89997 5.79702 2.03964 5.83333 2.18166 5.83333Z"
+    }), /* @__PURE__ */ React.createElement("path", {
+      d: "M7.08291 1.66667L5.51625 1.275C5.45016 1.25844 5.38229 1.25004 5.31416 1.25H3.64C3.48521 1.25001 3.33348 1.29312 3.20182 1.37452C3.07016 1.45591 2.96377 1.57237 2.89458 1.71083L1.43625 4.6275C1.37276 4.75455 1.3428 4.89572 1.34921 5.0376C1.35562 5.17948 1.39818 5.31737 1.47286 5.43818C1.54754 5.55899 1.65186 5.65871 1.77591 5.72787C1.89997 5.79702 2.03964 5.83333 2.18166 5.83333H4.16666H5M7.08291 1.66667L7.08333 5.41667L5.67 7.53667C5.50458 7.78458 5.41666 8.07542 5.41666 8.37333C5.41666 8.58125 5.24791 8.75 5.03958 8.75H4.99958C4.77857 8.75 4.5666 8.6622 4.41032 8.50592C4.25404 8.34964 4.16625 8.13768 4.16625 7.91667V5.83333M7.08291 1.66667H7.91666C8.13768 1.66667 8.34964 1.75446 8.50592 1.91074C8.6622 2.06702 8.75 2.27899 8.75 2.5V5C8.75 5.22101 8.6622 5.43298 8.50592 5.58926C8.34964 5.74554 8.13768 5.83333 7.91666 5.83333H6.875",
+      stroke: "#EA4646",
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    })))));
+  }, ["setInput", "getInputs", "sidebar"]);
+
+  // assets/src/admin/js/BlogWizard/Utilities/KeywordFinder.js
+  var KeywordFinder = class {
+    content = "";
+    constructor(content = "") {
+      this.content = content;
+    }
+    escapeRegExp(string) {
+      return string.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    }
+    findAllMatch(content = this.content, keywords = []) {
+      const matchedKeywords = [];
+      for (let i = 0; i < keywords.length; i++) {
+        const keyword = keywords[i];
+        let count = this.findSingleMatch(content, keyword);
+        matchedKeywords.push({ keyword, count });
+      }
+      return matchedKeywords;
+    }
+    findSingleMatch(content = this.content, keyword = "") {
+      const escapedChars = this.escapeRegExp(keyword);
+      const arr = escapedChars.split(" ");
+      const pattern = arr.join(String.raw`(\s+\w+\s+|\s+)`);
+      const matched = content?.match(new RegExp(pattern, "gmi"));
+      if (matched && matched.length > 0) {
+        return matched.length;
+      }
+      return 0;
+    }
+  };
+
+  // assets/src/admin/js/BlogWizard/SeoData/SerpAnalysis/CompetitorAnalyzer.js
+  var CompetitorAnalyzer = class {
+    constructor(ContentAnalysis, KeywordFinder2, GenieHelpers3) {
+      this.ContentAnalysis = ContentAnalysis;
+      this.KeywordFinder = KeywordFinder2;
+      this.GenieHelpers = GenieHelpers3;
+    }
+    getDomainName(url) {
+      try {
+        const parsedUrl = new URL(url);
+        return parsedUrl.hostname.split(".").slice(-2).join(".");
+      } catch (e) {
+        return "";
+      }
+    }
+    saveCompetitor = (competitorData2) => {
+      this.GenieHelpers.callStoreApi("serpData", {
+        competitorData: competitorData2
+      });
+    };
+    getNlpKeywords = async (focusKeyword, competitorData2, competitorKeywords, url) => {
+      return new Promise((resolve, reject) => {
+        const config = window.getGenie.config;
+        const options = {
+          method: "POST",
+          headers: {
+            "Content-type": "application/json; charset=UTF-8",
+            "Site-Token": config?.siteToken || "",
+            "Auth-Token": config?.authToken || "",
+            "X-WP-Nonce": config?.restNonce || "",
+            "Plugin-Version": config?.version
+          }
+        };
+        (async () => {
+          let keywords = competitorKeywords || [];
+          let nlpKeywords2 = [];
+          for (const webItem of competitorData2) {
+            options.body = JSON.stringify({
+              textContent: webItem?.textContent,
+              requestId: webItem?.requestId
+            });
+            const keywordCluster = await fetch(url, options);
+            let result = await keywordCluster.json();
+            for (let item of result?.data || []) {
+              nlpKeywords2.push(item[0].toLowerCase());
+            }
+          }
+          nlpKeywords2 = [...new Set(nlpKeywords2)];
+          options.body = JSON.stringify({
+            mainKeywords: competitorKeywords.length === 0 ? [focusKeyword] : competitorKeywords.map((item) => item?.keyword || "").slice(0, 10),
+            nlpKeywords: nlpKeywords2
+          });
+          const filterNlpKeywords = await fetch(EndPoints_exports.filterNlpKeywordsUrl, options).catch((err) => resolve(keywords));
+          if (!filterNlpKeywords.ok) {
+            resolve(keywords);
+            return;
+          }
+          const filteredKeywords = await filterNlpKeywords.json();
+          try {
+            const keywordDetail = (filteredKeywords?.data || nlpKeywords2)?.map((item) => {
+              let keyword = Array.isArray(item) ? item[0] : item;
+              return { keyword, type: "nlp" };
+            });
+            keywords = [...keywords, ...keywordDetail || []];
+            keywords = keywords.filter(
+              (obj1, index, arr) => index === arr.findIndex((obj2) => obj2?.keyword === obj1?.keyword)
+            );
+            resolve(keywords);
+          } catch (error) {
+            resolve(keywords);
+            console.log(error);
+          }
+        })();
+      });
+    };
+    analyze = async (competitorData2, statisticsData) => {
+      return new Promise((resolve, reject) => {
+        let analyzedCompetitors = [];
+        let statistics = {}, serpDomains = {};
+        const finder = new this.KeywordFinder();
+        let avgScore = 0, maxScore = 0, totalScore = 0, index = 0;
+        for (const site of competitorData2) {
+          let url = this.getDomainName(site?.url);
+          const analyzedContent = new this.ContentAnalysis({
+            content: site?.source,
+            url,
+            title: site?.title,
+            description: site?.description
+          }, statisticsData);
+          const analysis = analyzedContent.getStat();
+          const keywordList = finder.findAllMatch(site?.source, Object.keys(statisticsData.keywords));
+          serpDomains[site.keySlug] = {
+            url: site.url,
+            title: site.title,
+            rank: index,
+            favicon: site.favicon
+          };
+          for (const item of keywordList) {
+            if (!statisticsData.keywords?.[item.keyword]?.total) {
+              continue;
+            }
+            if (!statistics[item.keyword]) {
+              statistics[item.keyword] = {
+                keyPhrase: item.keyword,
+                recommendation: statisticsData.keywords?.[item.keyword]?.total,
+                heatMap: {
+                  [site.keySlug]: {
+                    matchedKeyPhrase: item.count
+                  }
+                }
+              };
+            } else {
+              statistics[item.keyword].heatMap[site.keySlug] = {
+                matchedKeyPhrase: item.count
+              };
+            }
+          }
+          index++;
+          if (site.title === "myContent") {
+            continue;
+          }
+          let competitorScore = parseFloat(analysis.contentStats.totalScore);
+          analyzedCompetitors.push({
+            url: site.url,
+            statistics: analysis.statistics,
+            score: parseInt(Math.ceil(competitorScore)) || 0
+          });
+          if (maxScore < competitorScore) {
+            maxScore = parseInt(Math.ceil(competitorScore)) || 0;
+          }
+          totalScore += competitorScore;
+        }
+        avgScore = Math.ceil(totalScore / analyzedCompetitors.length - 1);
+        avgScore = parseInt(avgScore) || 0;
+        const competitorStats = {
+          headToHeadData: {
+            serpDomains,
+            statistics
+          },
+          analyzedCompetitors,
+          avgScore,
+          maxScore,
+          firstCompetitorScore: analyzedCompetitors?.[1]?.score || 0
+        };
+        resolve(competitorStats);
+      });
+    };
+  };
+
+  // assets/src/admin/js/Common/MainContentSidebar/index.js
+  var { Libs, Utilities } = window.getGenie.Components.Common;
+  var { ComposeComponents: ComposeComponents13 } = window.getGenie.Components.Common.ReduxManager;
+  var { Sidebar, BlogWizardUtils } = window.getGenie.Components;
+  var { OutlineScreen, ParagraphGenerator, AnalyzeKeywordScreen, KeywordHeatMap } = Sidebar || {};
+  var { Col: Col4 } = window.antd;
+  var { useEffect: useEffect9 } = window.React;
+  var MainContentSidebar = ComposeComponents13(({ sidebar: sidebar6, setSidebar, setInput, getInputs }) => {
+    let storage = window.getGenie.blogWizardData;
+    const isPostEditor = window.getGenie.config.isBlockEditor || window.getGenie.config.wizardScreen === "post";
+    const { open, generatedOutlines, analyzeKeyword, paragraphEditorScreen } = sidebar6;
+    useEffect9(() => {
+      if (sidebar6.open) {
+        document.body.classList.add("genie-sidebar-open");
+      } else {
+        if (document.body.classList.contains("genie-sidebar-open")) {
+          document.body.classList.remove("genie-sidebar-open");
+        }
+      }
+      if (navigator?.platform === "Win32") {
+        document.body.classList.add("genie-scrollbar-windows");
+      }
+    }, [sidebar6.open]);
+    useEffect9(() => {
+      if (!isPostEditor) {
+        return;
+      }
+      let value = getInputs["seoEnabled"];
+      if (value) {
+        if (getInputs["searchVolume"] && "BlogScreen" == sidebar6.component) {
+          setSidebar({
+            analyzeKeyword: {
+              ...sidebar6.analyzeKeyword,
+              open: true
+            }
+          });
+        }
+      } else {
+        setSidebar({
+          analyzeKeyword: {
+            ...sidebar6.analyzeKeyword,
+            open: false,
+            loading: false
+          }
+        });
+      }
+    }, [getInputs["searchVolume"], getInputs["seoEnabled"], sidebar6.component]);
+    useEffect9(() => {
+      if (!isPostEditor) {
+        return;
+      }
+      let currentPost = wp.data.select("core/editor")?.getEditedPostContent();
+      if (currentPost) {
+        const title = wp.data.select("core/editor")?.getEditedPostAttribute("title");
+        if (title && !currentPost.includes(title)) {
+          currentPost = `<h1>${title}</h1>` + currentPost;
+        }
+        setSidebar({
+          currentPostContent: currentPost
+        });
+      }
+      if (!storage || Object.values(storage).filter(Boolean).length < 2) {
+        return;
+      }
+      setSidebar({
+        component: "BlogScreen",
+        currentTemplate: "blogWizard"
+      });
+      for (const [key, value] of Object.entries(storage)) {
+        if (!value || key == "post_id") {
+          continue;
+        }
+        if (key === "keywordData") {
+          if (value && Object.values(value).length > 0) {
+            for (const [childKey, childValue] of Object.entries(value)) {
+              setInput(childKey, childValue);
+            }
+          }
+        } else if (key === "serpData") {
+          if (value && Object.values(value).length > 0) {
+            for (const [childKey, childValue] of Object.entries(value)) {
+              if (childKey === "statisticsData") {
+                setSidebar({
+                  statisticsData: childValue
+                });
+              } else {
+                setInput(childKey, childValue);
+              }
+            }
+          }
+        } else {
+          if (!JSON.parse(localStorage.getItem("getgenie-" + key))) {
+            setInput(key, value);
+          }
+        }
+      }
+      ;
+    }, []);
+    useEffect9(() => {
+      if (!isPostEditor) {
+        return;
+      }
+      const statisticsData = sidebar6.statisticsData, content = sidebar6.currentPostContent;
+      if (Array.isArray(statisticsData?.keywords)) {
+        return;
+      }
+      if (BlogWizardUtils && statisticsData) {
+        let title = "", description = "";
+        if (document.getElementsByClassName("block-editor__container")?.length > 0) {
+          title = wp.data.select("core/editor")?.getEditedPostAttribute("title");
+          description = wp.data.select("core/editor")?.getEditedPostAttribute("excerpt");
+        } else if (document.getElementById("wp-content-editor-container")) {
+          title = document.getElementById("title")?.value;
+          description = document.getElementById("excerpt")?.value;
+        }
+        if (sidebar6.currentPostTitle) {
+          title = sidebar6.currentPostTitle;
+        }
+        if (sidebar6.currentPostDescription) {
+          description = sidebar6.currentPostDescription;
+        }
+        let contentObj = {
+          content,
+          url: location.origin,
+          title,
+          description
+        };
+        const analyzedContent = new BlogWizardUtils.ContentAnalysis(contentObj, statisticsData);
+        let competitorStats = sidebar6.competitorStats;
+        if (competitorStats?.headToHeadData?.statistics) {
+          let finder = new KeywordFinder();
+          for (const keyword of Object.keys(competitorStats?.headToHeadData?.statistics)) {
+            let count = finder.findSingleMatch(content, keyword);
+            if (!competitorStats.headToHeadData.statistics[keyword]?.heatMap?.["myContent_0"]) {
+              competitorStats.headToHeadData.statistics[keyword].heatMap["myContent_0"] = {
+                matchedKeyPhrase: 0
+              };
+            }
+            competitorStats.headToHeadData.statistics[keyword].heatMap["myContent_0"].matchedKeyPhrase = count;
+          }
+        }
+        setSidebar({
+          analyzedContent: analyzedContent.getStat(),
+          competitorStats
+        });
+      }
+    }, [sidebar6.statisticsData, sidebar6.currentPostContent]);
+    useEffect9(() => {
+      let open2 = sidebar6.component === "BlogScreen" && sidebar6.currentScreen === "paragraphScreen";
+      setSidebar({
+        paragraphEditorScreen: {
+          ...sidebar6.paragraphEditorScreen,
+          open: open2
+        }
+      });
+    }, [sidebar6.component, sidebar6.currentScreen]);
+    useEffect9(() => {
+      (async () => {
+        let competitorData2 = getInputs["competitorData"];
+        if (!competitorData2 || !sidebar6.statisticsData || Object.values(sidebar6.statisticsData).length === 0) {
+          return;
+        }
+        let mySite = {
+          source: sidebar6.currentPostContent,
+          url: location.hostname || "myContent.com",
+          title: "myContent",
+          keySlug: "myContent_0",
+          rank: 0,
+          favicon: "default"
+        };
+        let competitorAnalyzer = new CompetitorAnalyzer(BlogWizardUtils.ContentAnalysis, KeywordFinder);
+        const filterCompetitorData = (competitorData2 || []).filter((data) => !GenieHelpers.isExistDomain(data?.url)).slice(0, 10);
+        let competitorStats = await competitorAnalyzer.analyze([mySite, ...filterCompetitorData], sidebar6.statisticsData);
+        setSidebar({
+          competitorStats
+        });
+      })();
+    }, [sidebar6.statisticsData, getInputs["competitorData"]]);
+    let SidebarContent = Sidebar[sidebar6.component] || (() => "");
+    const headToHead = getInputs["headTohead"] || false;
+    const getWidth = (drawerWidth, width2) => {
+      const mainScreenWidth = drawerWidth - (analyzeKeyword.open ? width2.analyzeKeywordScreen : 0) - (generatedOutlines.open ? width2.generatedOutlines : 0) - (headToHead ? width2.keywordHeatMap : 0) - (paragraphEditorScreen.open ? width2.paragraphEditorScreen : 0);
+      return mainScreenWidth >= width2.main ? mainScreenWidth : width2.main;
+    };
+    return /* @__PURE__ */ React.createElement(Libs.DrawerWrapper, null, (drawerWidth, width2) => /* @__PURE__ */ React.createElement("div", {
+      className: "getgenie-sidebar-content"
+    }, /* @__PURE__ */ React.createElement(Col4, {
+      className: "extended-panel"
+    }, AnalyzeKeywordScreen && /* @__PURE__ */ React.createElement(AnalyzeKeywordScreen, {
+      visible: sidebar6.open && analyzeKeyword.open,
+      width: width2.analyzeKeywordScreen
+    }), OutlineScreen && /* @__PURE__ */ React.createElement(OutlineScreen.GeneratedOutlines, {
+      visible: sidebar6.open && generatedOutlines.open,
+      width: width2.generatedOutlines
+    }), ParagraphGenerator && /* @__PURE__ */ React.createElement(ParagraphGenerator, {
+      visible: sidebar6.open && paragraphEditorScreen.open,
+      width: width2.paragraphEditorScreen
+    }), KeywordHeatMap && /* @__PURE__ */ React.createElement(KeywordHeatMap, {
+      visible: sidebar6.open && headToHead,
+      width: width2.keywordHeatMap
+    })), /* @__PURE__ */ React.createElement(Col4, {
+      className: "wizard-screen",
+      style: { width: `${getWidth(drawerWidth, width2)}px` }
+    }, /* @__PURE__ */ React.createElement(SidebarContent, null))));
+  }, ["sidebar", "setSidebar", "setInput", "getInputs"]);
+
+  // assets/src/admin/js/Common/LicenseNotice/index.js
+  var { Alert } = window.antd;
+  var sidebar2 = wp.data.select("getgenie").sidebar();
+
+  // assets/src/admin/js/Common/UserHistory/index.js
+  var { Libs: Libs2, Utilities: Utilities2 } = window.getGenie.Components.Common;
+  var { HandleFetch: HandleFetch2 } = window.getGenie.Components.Common.RequestManager;
+  var { ComposeComponents: ComposeComponents14 } = window.getGenie.Components.Common.ReduxManager;
+  var { useEffect: useEffect10, useState: useState6 } = window.React;
+  var { Button: Button5, Typography: Typography3 } = window.antd;
+  var UserHistory = ComposeComponents14(({ setSidebar, setUserHistoryData, userHistoryData }) => {
+    const [currentPage, setCurrentPage] = useState6(1);
+    const [loading, setLoading] = useState6(false);
+    const getHistoryData = (page = 1) => {
+      setLoading(true);
+      HandleFetch2((res) => {
+        setLoading(false);
+        const fetchedData = (res.data?.history || []).filter((item) => item?.templateTitle);
+        const allHistory = page === 1 ? fetchedData : [...userHistoryData.allHistory, ...fetchedData];
+        setUserHistoryData({
+          allHistory,
+          isCallable: false,
+          hasMoreData: res?.data?.total_pages != page
+        });
+      }, "historyData", { page });
+    };
+    useEffect10(() => {
+      if (userHistoryData.isCallable) {
+        getHistoryData();
+      }
+    }, []);
+    const loadMoreData = (page) => {
+      setCurrentPage(currentPage + 1);
+      getHistoryData(page);
+    };
+    const updateScreen = (e, item) => {
+      setSidebar({
+        component: "UserHistoryDetails"
+      });
+      setUserHistoryData({
+        currentHistoryData: item
+      });
+    };
+    const clearHistory = () => {
+      Libs2.ConfirmModal(
+        "You're clearing/removing all historical data of your GetGenie usage.",
+        "Are you sure you want to remove them?",
+        () => {
+          HandleFetch2((res) => {
+            setUserHistoryData({
+              allHistory: []
+            });
+          }, "clearHistoryUrl");
+        }
+      );
+    };
+    return /* @__PURE__ */ React.createElement("div", {
+      className: "getgenie-history getgenie-history-sidebar-content"
+    }, /* @__PURE__ */ React.createElement(Libs2.DrawerHeader, null), /* @__PURE__ */ React.createElement("div", {
+      className: "getgenie-history-card-container"
+    }, userHistoryData.allHistory?.length > 0 ? /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement(Button5, {
+      onClick: clearHistory,
+      type: "primary",
+      className: "history-action-btn clear"
+    }, "Clear History"), /* @__PURE__ */ React.createElement(Libs2.Card, {
+      list: userHistoryData?.allHistory,
+      handleClick: updateScreen
+    }, (item) => {
+      return /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement("div", {
+        className: "card-container"
+      }, /* @__PURE__ */ React.createElement("div", {
+        className: "card-heading"
+      }, /* @__PURE__ */ React.createElement("div", {
+        className: "date"
+      }, /* @__PURE__ */ React.createElement("svg", {
+        width: "14",
+        height: "16",
+        viewBox: "0 0 14 16",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg"
+      }, /* @__PURE__ */ React.createElement("path", {
+        d: "M11.6667 2.33334H2.33333C1.59695 2.33334 1 2.9303 1 3.66668V13C1 13.7364 1.59695 14.3333 2.33333 14.3333H11.6667C12.403 14.3333 13 13.7364 13 13V3.66668C13 2.9303 12.403 2.33334 11.6667 2.33334Z",
+        stroke: "#57595F",
+        strokeWidth: "1.5",
+        strokeLinecap: "round",
+        strokeLinejoin: "round"
+      }), /* @__PURE__ */ React.createElement("path", {
+        d: "M9.66675 1V3.66667",
+        stroke: "#57595F",
+        strokeWidth: "1.5",
+        strokeLinecap: "round",
+        strokeLinejoin: "round"
+      }), /* @__PURE__ */ React.createElement("path", {
+        d: "M4.33325 1V3.66667",
+        stroke: "#57595F",
+        strokeWidth: "1.5",
+        strokeLinecap: "round",
+        strokeLinejoin: "round"
+      }), /* @__PURE__ */ React.createElement("path", {
+        d: "M1 6.33334H13",
+        stroke: "#57595F",
+        strokeWidth: "1.5",
+        strokeLinecap: "round",
+        strokeLinejoin: "round"
+      })), /* @__PURE__ */ React.createElement("span", {
+        className: "date-info"
+      }, Utilities2.GenieHelpers.getCurrentDateTime(item?.date))), /* @__PURE__ */ React.createElement("h3", {
+        "data-slug": item?.templateSlug
+      }, Utilities2.GenieHelpers.camelCaseToTitleCase(item?.templateTitle))), /* @__PURE__ */ React.createElement("div", {
+        className: "card-body"
+      }, Object.keys(item.input).map(
+        (key, index) => item.input[key] && /* @__PURE__ */ React.createElement("p", {
+          key: index
+        }, " ", /* @__PURE__ */ React.createElement("strong", null, Utilities2.GenieHelpers.camelCaseToTitleCase(key), ": "), item.input[key])
+      ))));
+    })) : !loading ? /* @__PURE__ */ React.createElement(Typography3.Title, {
+      level: 5,
+      className: "getgenie-not-found-title"
+    }, "No record found!") : "", loading ? /* @__PURE__ */ React.createElement(Libs2.SkeletonCard, {
+      count: 5
+    }) : "", userHistoryData.hasMoreData && userHistoryData.allHistory?.length ? /* @__PURE__ */ React.createElement(Libs2.Button, {
+      onClick: () => loadMoreData(currentPage + 1)
+    }, "Load More") : ""));
+  }, ["setSidebar", "setUserHistoryData", "userHistoryData"]);
+  var UserHistory_default = UserHistory;
+
+  // assets/src/admin/js/Common/UserHistoryDetails/index.js
+  var { Libs: Libs3, Utilities: Utilities3 } = window.getGenie.Components.Common;
+  var { Card: Card3, Tooltip: Tooltip5, Button: Button6 } = window.antd;
+  var { ComposeComponents: ComposeComponents15 } = window.getGenie.Components.Common.ReduxManager;
+  var { useState: useState7 } = window.React;
+  var UserHistoryDetails = ComposeComponents15(({ setSidebar, userHistoryData }) => {
+    const [historyData2, setHistoryData] = useState7(userHistoryData.currentHistoryData);
+    const [tooltipIndex, setTooltipIndex] = useState7(null);
+    const copyHistoryContent = (val, index) => {
+      let copyAbleText = "";
+      if (typeof val === "string") {
+        copyAbleText = val.replace(/<br\s*[\/]?>/g, "\n");
+      } else if (Array.isArray(val)) {
+        let newVal = val.join(",");
+        copyAbleText = newVal.replace(/<br\s*[\/]?>/g, "\n");
+      }
+      Utilities3.GenieHelpers.copyToClipboard(copyAbleText).then(() => {
+        setTooltipIndex(index);
+        setTimeout(() => {
+          setTooltipIndex(null);
+        }, 3e3);
+      }).catch(() => console.log("error"));
+    };
+    return /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement(Libs3.DrawerHeader, null), /* @__PURE__ */ React.createElement("div", {
+      className: "getgenie-history getgenie-history-sidebar-content details"
+    }, /* @__PURE__ */ React.createElement("div", {
+      className: "getgenie-history-card-container"
+    }, /* @__PURE__ */ React.createElement("div", {
+      className: "getgenie-card"
+    }, /* @__PURE__ */ React.createElement(Button6, {
+      onClick: () => setSidebar({ component: "UserHistory" }),
+      type: "primary",
+      className: "history-action-btn back"
+    }, /* @__PURE__ */ React.createElement("span", {
+      className: "getgenie-icon-arrow-left"
+    })), /* @__PURE__ */ React.createElement(Card3, {
+      className: "getgenie-history-card-detail"
+    }, /* @__PURE__ */ React.createElement("div", {
+      className: "date"
+    }, /* @__PURE__ */ React.createElement("svg", {
+      width: "14",
+      height: "16",
+      viewBox: "0 0 14 16",
+      fill: "none",
+      xmlns: "http://www.w3.org/2000/svg"
+    }, /* @__PURE__ */ React.createElement("path", {
+      d: "M11.6667 2.33334H2.33333C1.59695 2.33334 1 2.9303 1 3.66668V13C1 13.7364 1.59695 14.3333 2.33333 14.3333H11.6667C12.403 14.3333 13 13.7364 13 13V3.66668C13 2.9303 12.403 2.33334 11.6667 2.33334Z",
+      stroke: "#57595F",
+      strokeWidth: "1.5",
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    }), /* @__PURE__ */ React.createElement("path", {
+      d: "M9.66675 1V3.66667",
+      stroke: "#57595F",
+      strokeWidth: "1.5",
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    }), /* @__PURE__ */ React.createElement("path", {
+      d: "M4.33325 1V3.66667",
+      stroke: "#57595F",
+      strokeWidth: "1.5",
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    }), /* @__PURE__ */ React.createElement("path", {
+      d: "M1 6.33334H13",
+      stroke: "#57595F",
+      strokeWidth: "1.5",
+      strokeLinecap: "round",
+      strokeLinejoin: "round"
+    })), /* @__PURE__ */ React.createElement("span", {
+      className: "date-info"
+    }, Utilities3.GenieHelpers.getCurrentDateTime(historyData2?.date))), /* @__PURE__ */ React.createElement("h3", {
+      className: "getgenie-history-title"
+    }, Utilities3.GenieHelpers.camelCaseToTitleCase(historyData2?.templateTitle)), /* @__PURE__ */ React.createElement("div", {
+      className: "getgenie-history-inputs"
+    }, Object.keys(historyData2?.input || {}).map(
+      (key, index) => historyData2.input[key] ? Array.isArray(historyData2.input[key]) ? /* @__PURE__ */ React.createElement("div", {
+        key: index
+      }, /* @__PURE__ */ React.createElement("h4", null, Utilities3.GenieHelpers.camelCaseToTitleCase(key), ":"), /* @__PURE__ */ React.createElement("div", {
+        className: "getgenie-history-inputs-keywords"
+      }, historyData2.input[key].map(
+        (item, index2) => /* @__PURE__ */ React.createElement("p", {
+          key: index2
+        }, " ", item)
+      ))) : /* @__PURE__ */ React.createElement("div", {
+        key: index,
+        className: "getgenie-history-inputs-details"
+      }, /* @__PURE__ */ React.createElement("h4", null, Utilities3.GenieHelpers.camelCaseToTitleCase(key), ":"), /* @__PURE__ */ React.createElement("p", null, historyData2.input[key])) : ""
+    )), /* @__PURE__ */ React.createElement("div", {
+      className: "output-heading"
+    }, /* @__PURE__ */ React.createElement("h4", null, "Outputs:"), Object.entries(historyData2?.usage || {}).map((item, index) => /* @__PURE__ */ React.createElement("h5", {
+      key: index
+    }, Utilities3.GenieHelpers.snakeToTitleCase(item?.[0]), ": ", item?.[1]))), /* @__PURE__ */ React.createElement("div", {
+      className: "getgenie-history-card-container-details"
+    }, (Array.isArray(historyData2.output) ? historyData2.output : []).map((item, index) => /* @__PURE__ */ React.createElement("div", {
+      key: index
+    }, historyData2.templateSlug === "keyword-analysis" ? /* @__PURE__ */ React.createElement(Tooltip5, {
+      key: index,
+      title: tooltipIndex === index ? "Copied" : "Click to copy",
+      trigger: "hover",
+      placement: "left"
+    }, /* @__PURE__ */ React.createElement("div", {
+      className: "getgenie-history-keyword-output",
+      onClick: (e) => copyHistoryContent(e.target.closest("div.getgenie-history-keyword-output")?.innerText, index)
+    }, /* @__PURE__ */ React.createElement("span", {
+      style: { display: "block" }
+    }, /* @__PURE__ */ React.createElement("strong", null, "keyword: "), item.keyword), /* @__PURE__ */ React.createElement("div", {
+      className: "getgenie-history-search-volume"
+    }, /* @__PURE__ */ React.createElement("strong", null, "Search volume: "), /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("span", null, "Average in 12 month:"), /* @__PURE__ */ React.createElement("span", null, item?.searchVolume?.avg12Month)), /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("span", null, "Competition:", " "), /* @__PURE__ */ React.createElement("span", null, item?.searchVolume?.competition)), /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("span", null, "CPC:", " "), /* @__PURE__ */ React.createElement("span", null, item?.searchVolume?.cpc?.currency + item?.searchVolume?.cpc?.value)), /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("span", null, "Highest:", " "), /* @__PURE__ */ React.createElement("span", null, item?.searchVolume?.highest)), /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("span", null, "Last month:", " "), /* @__PURE__ */ React.createElement("span", null, item?.searchVolume?.lastMonth)), /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("span", null, "Lowest:", " "), /* @__PURE__ */ React.createElement("span", null, item?.searchVolume?.lowest)), /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("span", null, "Total:", " "), /* @__PURE__ */ React.createElement("span", null, item?.searchVolume?.total, " "))))) : item ? /* @__PURE__ */ React.createElement(Tooltip5, {
+      key: index,
+      title: tooltipIndex === index ? "Copied" : "Click to copy",
+      trigger: "hover",
+      placement: "left"
+    }, /* @__PURE__ */ React.createElement("div", {
+      className: "getgenie-history-keyword-output",
+      onClick: () => copyHistoryContent(item, index)
+    }, /* @__PURE__ */ React.createElement("div", {
+      dangerouslySetInnerHTML: { __html: item }
+    }))) : "No output found!"))))))));
+  }, ["setSidebar", "userHistoryData"]);
+  var UserHistoryDetails_default = UserHistoryDetails;
+
+  // assets/src/admin/js/Common/PromotionalNotice/index.js
+  var { Alert: Alert2 } = window.antd;
+  var { HandleFetch: HandleFetch3 } = window.getGenie.Components.Common.RequestManager;
+  var { ComposeComponents: ComposeComponents16 } = window.getGenie.Components.Common.ReduxManager;
+  var { useEffect: useEffect11, useState: useState8 } = window.React;
+  var PromotionalNotice = ComposeComponents16(({ getInputs, type = "", names = [], showIcon = true, color = "#263e87", backgroundColor = "#bffdff", sidebar: sidebar6 }) => {
+    const [message, setMessage] = useState8(null);
+    useEffect11(() => {
+      if (type == "promotionalNotice") {
+        const wordUses = sidebar6.subscriptionStatistics.usagePercentage?.word_generate;
+        const cookie = document.cookie.split(";").filter((item) => item.includes(`getgenie_${type}`));
+        if (wordUses && wordUses >= 80 && cookie.length === 0) {
+          HandleFetch3((res) => {
+            if (res?.status != "success") {
+              return;
+            }
+            setMessage(/* @__PURE__ */ React.createElement("div", {
+              dangerouslySetInnerHTML: { __html: res?.data.message }
+            }));
+          }, "subscriptionUpdateUrl");
+        }
+      }
+    }, [sidebar6.subscriptionStatistics.usagePercentage]);
+    const handleClose = () => {
+      const date = new Date();
+      date.setTime(date.getTime() + 30 * 24 * 60 * 60 * 1e3);
+      const expires = "expires=" + date.toUTCString();
+      document.cookie = `getgenie_${type}=1;${expires};path=/`;
+    };
+    if (!message) {
+      return "";
+    }
+    return /* @__PURE__ */ React.createElement("div", {
+      style: { marginBottom: "20px" }
+    }, /* @__PURE__ */ React.createElement(Alert2, {
+      closable: true,
+      closeIcon: /* @__PURE__ */ React.createElement(InfoTooltip_default, {
+        title: "Close notice for 30 days"
+      }, /* @__PURE__ */ React.createElement("span", {
+        className: "getgenie-icon-close1"
+      })),
+      afterClose: handleClose,
+      style: { backgroundColor, color },
+      className: "getgenie_promotional_message",
+      message,
+      type: "info",
+      showIcon: false
+    }));
+  }, ["sidebar", "getInputs"]);
+
+  // assets/src/admin/js/Common/GenieChat/Buttons.js
+  var { Libs: Libs4 } = window.getGenie.Components.Common;
+  var sidebar3 = wp.data.select("getgenie").sidebar();
+  var Buttons = ({ newChatHandler = void 0, setShowChatList = void 0, resetChatHistory = void 0 }) => {
+    return /* @__PURE__ */ React.createElement(React.Fragment, null, newChatHandler && /* @__PURE__ */ React.createElement(Libs4.Button, {
+      type: "primary",
+      onClick: newChatHandler
+    }, /* @__PURE__ */ React.createElement("span", {
+      className: "getgenie-icon-plus"
+    }), sidebar3.__("New Chat", "getgenie")), setShowChatList && /* @__PURE__ */ React.createElement(Libs4.Button, {
+      type: "primary",
+      onClick: () => {
+        setShowChatList(true);
+      }
+    }, sidebar3.__("Chat History", "getgenie")), resetChatHistory && /* @__PURE__ */ React.createElement(Libs4.Button, {
+      type: "primary",
+      onClick: resetChatHistory
+    }, /* @__PURE__ */ React.createElement("span", {
+      className: "getgenie-icon-reload"
+    }), sidebar3.__("Clear All", "getgenie")));
+  };
+  var Buttons_default = Buttons;
+
+  // assets/src/admin/js/Common/GenieChat/ChatList.js
+  var { Libs: Libs5, Utilities: Utilities4 } = window.getGenie.Components.Common;
+  var { Alert: Alert3 } = window.antd;
+  var { HandleFetch: HandleFetch4 } = window.getGenie.Components.Common.RequestManager;
+  var GenieChatList = ({ oldChatList, loading, setAllChatData, setShowChatList, newChatHandler, resetChatHistory, setOldChatList }) => {
+    const handleActiveList = (e, item) => {
+      window.getGenie.genieChat = {
+        id: item.id
+      };
+      setAllChatData(item?.messages);
+      setShowChatList(false);
+    };
+    const handleDelete = (e, id) => {
+      e.stopPropagation();
+      const remainingList = oldChatList.filter((item) => item.id !== id);
+      Libs5.ConfirmModal(
+        "You're removing the selected conversation.",
+        "Are you sure you want to remove it?",
+        () => {
+          setOldChatList(remainingList);
+          HandleFetch4((res) => {
+          }, "genieChatClear", { id });
+        }
+      );
+    };
+    return /* @__PURE__ */ React.createElement("div", {
+      className: "chat-list"
+    }, /* @__PURE__ */ React.createElement("div", {
+      className: "chat-list-buttons"
+    }, /* @__PURE__ */ React.createElement(Buttons_default, {
+      newChatHandler,
+      resetChatHistory: oldChatList.length > 0 ? resetChatHistory : null
+    })), loading ? /* @__PURE__ */ React.createElement(Libs5.SkeletonCard, {
+      count: 5
+    }) : /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement(Libs5.Card, {
+      list: oldChatList,
+      handleClick: handleActiveList
+    }, (item) => {
+      return /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement("div", {
+        className: "card-container"
+      }, /* @__PURE__ */ React.createElement("div", {
+        className: "card-heading"
+      }, /* @__PURE__ */ React.createElement("h5", null, item?.messages?.[0]?.content), /* @__PURE__ */ React.createElement("p", null, Utilities4.GenieHelpers.getCurrentDateTime(item?.date))), /* @__PURE__ */ React.createElement("div", {
+        className: "trash-icon"
+      }, /* @__PURE__ */ React.createElement("span", {
+        className: "getgenie-icon-trash trash",
+        onClick: (e) => handleDelete(e, item?.id)
+      }))));
+    }), oldChatList?.length === 0 && /* @__PURE__ */ React.createElement(Alert3, {
+      className: "no-chat-found",
+      message: "Woops! No chat found.",
+      description: "Create a new chat to start a conversation.",
+      type: "warning"
+    })));
+  };
+  var ChatList_default = GenieChatList;
+
+  // assets/src/admin/js/Common/GenieChat/index.js
+  var { useEffect: useEffect12, useState: useState9, useRef: useRef2 } = window.React;
+  var { HandleFetch: HandleFetch5, HandleResponse } = window.getGenie.Components.Common.RequestManager;
+  var { ComposeComponents: ComposeComponents17 } = window.getGenie.Components.Common.ReduxManager;
+  var { Libs: Libs6 } = window.getGenie.Components.Common;
+  var { Row: Row4, Col: Col5, Button: Button7, Tooltip: Tooltip6 } = window.antd;
+  var genieHead = `${window.getGenie.config.assetsUrl}dist/admin/images/genie-head.svg`;
+  var genieChat2 = `${window.getGenie.config.assetsUrl}dist/admin/images/genie-chat.svg`;
+  var ringtone = `${window.getGenie.config.assetsUrl}dist/admin/audio/click.mp3`;
+  var editedMessageContent;
+  var GenieChat = ComposeComponents17(({ sidebar: sidebar6, getInputs, setInput }) => {
+    const messageContainerRef = useRef2(null);
+    const focusRef = useRef2(null);
+    const inputMessage = getInputs["inputMessage"] || "";
+    const [editableFieldValue, setEditableFieldValue] = useState9("");
+    const [allChatData, setAllChatData] = useState9([]);
+    const [isFetching, setIsFetching] = useState9(false);
+    const [showPrompt, setShowPrompt] = useState9(true);
+    const [tooltipText, setTooltipText] = useState9(null);
+    const [contentId, setContentId] = useState9(null);
+    const [showChatList, setShowChatList] = useState9(false);
+    const [oldChatList, setOldChatList] = useState9([]);
+    const prompts = {
+      "Write a poem about...": "Write a poem about...",
+      "Write a blog post for...": "Write a blog post for...",
+      "Help me to create a short story about...": "Help me to create a short story about..."
+    };
+    const fluentCrmPrompts = {
+      "Email Subject Line": "Write an engaging email subject line about [your product/service].",
+      "Email Preheader": "Write an email preheader about [your product/service], that increases open rate.",
+      "Email Body Content": "Write the email copy for the email body about [your product/service] that convinces the potential customers."
+    };
+    const checkMessage = allChatData.length === 0;
+    const [loading, setLoading] = useState9(false);
+    const currentPrompt = window.getGenie.config.wizardScreen === "fluentcrm" ? fluentCrmPrompts : prompts;
+    const updateOldChats = () => {
+      setLoading(true);
+      HandleFetch5((res) => {
+        setLoading(false);
+        let oldChats = res.data?.getgenie_chats || [];
+        setOldChatList(oldChats);
+      }, "genieChatList");
+    };
+    useEffect12(() => {
+      updateOldChats();
+    }, []);
+    const handleSendMessage = () => {
+      setInput("inputMessage", null);
+      if (inputMessage !== "") {
+        const message = inputMessage.replace(/\n$/, "");
+        const chatData = [...allChatData, { id: allChatData.length, role: "user", content: message }];
+        setAllChatData(chatData);
+        handleResponse(chatData);
+      }
+    };
+    const handleOnKeyUp = (e) => {
+      if (isFetching && e.key === "Enter") {
+        e.stopPropagation();
+        return;
+      }
+      if (e.key === "Enter" && e.shiftKey) {
+        return;
+      }
+      if (e.key == "Enter" || e?.which == 13) {
+        handleSendMessage();
+      }
+    };
+    const handleEdit = (id) => {
+      if (focusRef.current) {
+        focusRef.current.innerText = editableFieldValue;
+        setInput("inputMessage", editableFieldValue);
+      }
+      setContentId(id);
+    };
+    const handleSave = (id) => {
+      allChatData.splice(id);
+      const chatData = [...allChatData, { id: allChatData.length, role: "user", content: editedMessageContent }];
+      setAllChatData(chatData);
+      handleCancel();
+      handleResponse(chatData);
+    };
+    const handleCancel = () => {
+      focusRef.current.contentEditable = false;
+      focusRef.current.innerText = editableFieldValue;
+      setContentId(null);
+    };
+    const handleRegenerate = (id) => {
+      const previousChatData = allChatData.slice(0, id);
+      setAllChatData(previousChatData);
+      handleResponse(previousChatData);
+    };
+    const handleResponse = (chatData) => {
+      const messages = chatData.map(({ id, likeStatus, ...rest }) => rest);
+      const payLoad = {
+        chatPersonality: getInputs["chatPersonality"] || sidebar6.chatPersonality,
+        maxToken: getInputs["maxToken"] || sidebar6.maxToken,
+        messages
+      };
+      setIsFetching(true);
+      HandleFetch5((res) => {
+        setIsFetching(false);
+        HandleResponse(res, () => {
+          if (!res.data?.content) {
+            return;
+          }
+          res.data.id = chatData.length;
+          res.data.likeStatus = null;
+          setAllChatData([...chatData, res.data]);
+          const audio = new Audio(ringtone);
+          audio.play();
+          HandleFetch5((res2) => {
+            window.getGenie.genieChat = {
+              id: res2.data?.conversation_id
+            };
+            updateOldChats();
+          }, "genieChatSave", { id: window.getGenie.genieChat?.id || null, messages: [...chatData, res.data], templateSlug: "getgenieChat" });
+        });
+      }, "genieChat", payLoad);
+    };
+    useEffect12(() => {
+      if (focusRef.current) {
+        setEditableFieldValue(focusRef.current.innerText);
+        focusRef.current.contentEditable = true;
+        focusRef.current.focus();
+        editedMessageContent = focusRef.current.innerText;
+        const range = document.createRange();
+        const sel = window.getSelection();
+        range.setStart(focusRef.current.childNodes[0], focusRef.current.innerText.length);
+        range.collapse(true);
+        sel.removeAllRanges();
+        sel.addRange(range);
+        focusRef.current.addEventListener(
+          "input",
+          (e) => {
+            editedMessageContent = e.target.innerText;
+          }
+        );
+      }
+    }, [contentId]);
+    useEffect12(() => {
+      const messageContainer = messageContainerRef.current;
+      if (messageContainer) {
+        if (messageContainer.scrollHeight > messageContainer.clientHeight) {
+          messageContainer.scrollTop = messageContainer.scrollHeight - messageContainer.clientHeight;
+        }
+      }
+    }, [allChatData]);
+    const copyContent = (e, content) => {
+      e.stopPropagation();
+      let copyAbleText = content.replace(/<br\s*\/?>\s*/gi, "\n");
+      GenieHelpers.copyToClipboard(copyAbleText).then(() => {
+        setTooltipText(content);
+        setTimeout(() => {
+          setTooltipText(null);
+        }, 2e3);
+      });
+    };
+    const newChatHandler = () => {
+      setAllChatData([]);
+      setShowPrompt(true);
+      setShowChatList(false);
+      window.getGenie.genieChat = {};
+    };
+    const resetChatHistory = () => {
+      Libs6.ConfirmModal(
+        "You're clearing/removing your whole conversation.",
+        "Are you sure you want to remove it?",
+        () => {
+          setAllChatData([]);
+          setShowPrompt(true);
+          setOldChatList([]);
+          setShowChatList(false);
+          HandleFetch5((res) => {
+          }, "genieChatClear");
+        }
+      );
+    };
+    const saveFeedback = (feedback_type, input, output, id) => {
+      let data = {
+        input,
+        output,
+        creativity_level: getInputs["creativity"],
+        feedback_type,
+        template_name: "getgenie-chat"
+      };
+      const updateData = allChatData.map((item) => {
+        if (item.id === id) {
+          item.likeStatus = feedback_type;
+        }
+        return item;
+      });
+      setAllChatData(updateData);
+      HandleFetch5((res) => {
+      }, "contentFeedback", data);
+      HandleFetch5((res) => {
+        window.getGenie.genieChat = {
+          id: res.data?.conversation_id
+        };
+        updateOldChats();
+      }, "genieChatSave", { id: window.getGenie.genieChat?.id || null, messages: [...allChatData], templateSlug: "getgenieChat" });
+    };
+    useEffect12(() => {
+      GenieHelpers.saveSidebarControllerOption("getgenie-maxToken", getInputs["maxToken"]);
+    }, [getInputs["maxToken"]]);
+    useEffect12(() => {
+      GenieHelpers.saveSidebarControllerOption("getgenie-chatPersonality", getInputs["chatPersonality"]);
+    }, [getInputs["chatPersonality"]]);
+    useEffect12(() => {
+      GenieHelpers.saveSidebarControllerOption("getgenie-creativity", getInputs["creativity"]);
+    }, [getInputs["creativity"]]);
+    return /* @__PURE__ */ React.createElement("div", {
+      className: "getgenie-chat"
+    }, showChatList ? /* @__PURE__ */ React.createElement(ChatList_default, {
+      loading,
+      oldChatList,
+      setAllChatData,
+      setShowChatList,
+      newChatHandler,
+      resetChatHistory,
+      setOldChatList
+    }) : /* @__PURE__ */ React.createElement(React.Fragment, null, checkMessage && /* @__PURE__ */ React.createElement("div", {
+      className: "genie-chat-welcome"
+    }, /* @__PURE__ */ React.createElement("img", {
+      src: genieChat2,
+      alt: "genie-chat"
+    }), /* @__PURE__ */ React.createElement("h5", null, sidebar6.__("Welcome to ", "getgenie"), " Genie ", sidebar6.__("Chat", "getgenie")), /* @__PURE__ */ React.createElement("p", null, sidebar6.__("All you have to do is ask or instruct your Genie to kick off the ", "getgenie"), " AI ", sidebar6.__("magic!", "getgenie"), " ")), /* @__PURE__ */ React.createElement("div", {
+      className: "message-container",
+      ref: messageContainerRef
+    }, !isFetching && !checkMessage && /* @__PURE__ */ React.createElement(Button7, {
+      onClick: () => setShowChatList(true),
+      type: "primary",
+      className: "genie-chat-history-back"
+    }, /* @__PURE__ */ React.createElement("span", {
+      className: "getgenie-icon-arrow-left"
+    })), allChatData.map((message, index) => /* @__PURE__ */ React.createElement("div", {
+      key: index
+    }, /* @__PURE__ */ React.createElement("div", {
+      className: `message ${message.role === "user" ? "user-message" : "assistant-message"}`
+    }, message.role === "user" ? /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement("div", {
+      className: "message-content-user"
+    }, /* @__PURE__ */ React.createElement("div", {
+      className: "message-content",
+      ref: contentId === message.id ? focusRef : void 0
+    }, message.content), !isFetching && /* @__PURE__ */ React.createElement("span", {
+      className: "getgenie-icon-edit1 edit-content",
+      onClick: () => handleEdit(message.id)
+    })), /* @__PURE__ */ React.createElement("div", {
+      className: "user-avatar"
+    }, /* @__PURE__ */ React.createElement("img", {
+      src: window.getGenie.config?.avatarUrl
+    }))) : /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement("div", {
+      className: "assistant-avatar"
+    }, /* @__PURE__ */ React.createElement("img", {
+      src: genieHead
+    })), /* @__PURE__ */ React.createElement("div", {
+      className: "message-content-assistant"
+    }, /* @__PURE__ */ React.createElement("div", {
+      className: "message-content",
+      dangerouslySetInnerHTML: { __html: message.content }
+    }), /* @__PURE__ */ React.createElement("div", {
+      className: "feedback-area"
+    }, /* @__PURE__ */ React.createElement(Tooltip6, {
+      placement: "bottom",
+      zIndex: 9999,
+      title: message?.likeStatus === "like" ? "Liked." : "Click to like this result"
+    }, /* @__PURE__ */ React.createElement("span", {
+      onClick: () => saveFeedback("like", allChatData[index - 1]?.content, message.content, message.id),
+      className: `getgenie-icon-like ${message?.likeStatus === "like" ? "liked" : ""}`
+    })), /* @__PURE__ */ React.createElement(Tooltip6, {
+      placement: "bottom",
+      zIndex: 9999,
+      title: message?.likeStatus === "dislike" ? "Disliked." : "Click to dislike this result"
+    }, /* @__PURE__ */ React.createElement("span", {
+      onClick: () => saveFeedback("dislike", allChatData[index - 1]?.content, message.content, message.id),
+      className: `getgenie-icon-dislike ${message?.likeStatus === "dislike" ? "disliked" : ""}`
+    })), /* @__PURE__ */ React.createElement(Tooltip6, {
+      placement: "bottom",
+      zIndex: 9999,
+      title: "Click to regenerate this response"
+    }, /* @__PURE__ */ React.createElement("span", {
+      onClick: () => handleRegenerate(message.id),
+      className: "getgenie-icon-refresh"
+    })), /* @__PURE__ */ React.createElement(Tooltip6, {
+      placement: "bottom",
+      zIndex: 9999,
+      title: tooltipText === message.content ? "Copied" : "Copy this content"
+    }, /* @__PURE__ */ React.createElement("span", {
+      onClick: (e) => copyContent(e, message.content),
+      className: "copy-icon getgenie-icon-copy"
+    })))))), contentId === message.id && /* @__PURE__ */ React.createElement("div", {
+      className: "edit-button-container"
+    }, /* @__PURE__ */ React.createElement(Libs6.Button, {
+      className: "save-button",
+      onClick: () => handleSave(message.id)
+    }, "Save & Submit"), /* @__PURE__ */ React.createElement(Libs6.Button, {
+      className: "cancel-button",
+      onClick: handleCancel
+    }, "Cancel")))), isFetching ? /* @__PURE__ */ React.createElement("div", {
+      className: "message assistant-message"
+    }, /* @__PURE__ */ React.createElement("div", {
+      className: "assistant-avatar"
+    }, /* @__PURE__ */ React.createElement("img", {
+      src: genieHead
+    })), /* @__PURE__ */ React.createElement("div", {
+      className: "message-content-blinking"
+    })) : ""), allChatData.length > 0 && /* @__PURE__ */ React.createElement("div", {
+      className: "genie-chat-buttons"
+    }, /* @__PURE__ */ React.createElement(Buttons_default, {
+      newChatHandler,
+      setShowChatList
+    })), checkMessage ? /* @__PURE__ */ React.createElement("div", {
+      className: "prompt-chat-container"
+    }, /* @__PURE__ */ React.createElement("div", {
+      className: "prompt-chat-header"
+    }, /* @__PURE__ */ React.createElement("h5", {
+      onClick: () => setShowPrompt(!showPrompt),
+      className: "prompt-auto-command"
+    }, showPrompt ? "Hide" : "Show", " prompts", /* @__PURE__ */ React.createElement("span", {
+      className: `getgenie-icon-arrow_up1 ${showPrompt ? "" : "hide-prompt"}`
+    })), /* @__PURE__ */ React.createElement(Buttons_default, {
+      setShowChatList
+    })), showPrompt && /* @__PURE__ */ React.createElement("div", {
+      className: "prompt-contents"
+    }, Object.entries(currentPrompt).map(([key, value], index) => /* @__PURE__ */ React.createElement(Button7, {
+      onClick: () => setInput("inputMessage", value),
+      key: index,
+      className: "prompt-chat",
+      style: { maxWidth: "100%" }
+    }, /* @__PURE__ */ React.createElement("span", {
+      style: { maxWidth: "100%", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }
+    }, key))))) : "", /* @__PURE__ */ React.createElement("div", {
+      style: { backgroundColor: "#f1f3f8" },
+      className: "chat-controller-container"
+    }, /* @__PURE__ */ React.createElement(Row4, {
+      style: { marginTop: "10px" },
+      gutter: 16
+    }, /* @__PURE__ */ React.createElement(Col5, {
+      span: 12
+    }, /* @__PURE__ */ React.createElement(Libs6.Select, {
+      name: "chatPersonality",
+      className: "maxToken-field",
+      label: /* @__PURE__ */ React.createElement(React.Fragment, null, sidebar6.__("Chat Personality", "getgenie"), /* @__PURE__ */ React.createElement(Libs6.Tooltip, {
+        title: sidebar6.__("Choose who you want to chat with", "getgenie"),
+        placement: "top"
+      })),
+      options: Static_default.chatCharacters,
+      defaultValue: sidebar6.chatPersonality
+    })), /* @__PURE__ */ React.createElement(Col5, {
+      span: 12
+    }, /* @__PURE__ */ React.createElement(Libs6.Select, {
+      name: "maxToken",
+      className: "maxToken-field",
+      label: /* @__PURE__ */ React.createElement(React.Fragment, null, sidebar6.__("Size", "getgenie"), /* @__PURE__ */ React.createElement(Libs6.Tooltip, {
+        title: sidebar6.__("Define the size of the content", "getgenie"),
+        placement: "top"
+      })),
+      options: Static_default.maxToken,
+      defaultValue: sidebar6.maxToken
+    }))), /* @__PURE__ */ React.createElement("div", {
+      className: "input-box-container"
+    }, /* @__PURE__ */ React.createElement(Libs6.Textarea, {
+      type: "text",
+      className: "chat-input",
+      placeholder: "Enter your question/command here...",
+      onKeyUp: handleOnKeyUp,
+      name: "inputMessage"
+    }), /* @__PURE__ */ React.createElement(Button7, {
+      disabled: isFetching || !getInputs["inputMessage"],
+      className: "genie-chat-btn",
+      onClick: handleSendMessage
+    }, /* @__PURE__ */ React.createElement("span", {
+      className: "getgenie-icon-send chat-btn-icon"
+    }))))));
+  }, ["sidebar", "setSidebar", "setInput", "getInputs"]);
+  var GenieChat_default = GenieChat;
+
+  // assets/src/admin/js/Common/Loading/index.js
+  var Loading2 = () => {
+    return /* @__PURE__ */ React.createElement(SkeletonCard_default, {
+      count: 4
+    });
+  };
+  var Loading_default2 = Loading2;
+
+  // assets/src/admin/js/Common/SidebarControllerOption/index.js
+  var { Row: Row5, Col: Col6 } = window.antd;
+  var { Libs: Libs7, Utilities: Utilities5, PromotionalNotice: PromotionalNotice2 } = window.getGenie.Components.Common;
+  var { ComposeComponents: ComposeComponents18 } = window.getGenie.Components.Common.ReduxManager;
+  var { useEffect: useEffect13 } = window.React;
+  var SidebarControllerOption = ComposeComponents18(({ unsupportedLanguages, setSidebar, sidebar: sidebar6, getInputs, className = "", language = true, tone = true, creativity = true, result = true, outputSize = false }) => {
+    if (!Utilities5) {
+      return;
+    }
+    ;
+    const { GenieHelpers: GenieHelpers3 } = Utilities5;
+    useEffect13(() => {
+      GenieHelpers3.storeData("creativity");
+    }, [getInputs["creativity"]]);
+    useEffect13(() => {
+      GenieHelpers3.storeData("numberOfResult");
+    }, [getInputs["numberOfResult"]]);
+    let toneOfVoice = Object.values(window.getGenie.config?.templateAssets?.toneOfVoice || {});
+    toneOfVoice = toneOfVoice.map((item) => ({ label: item, value: item }));
+    toneOfVoice = toneOfVoice.sort();
+    toneOfVoice = toneOfVoice.reverse();
+    return /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement(Row5, {
+      gutter: 16,
+      className
+    }, language && /* @__PURE__ */ React.createElement(Col6, {
+      span: 24
+    }, /* @__PURE__ */ React.createElement(Libs7.Select, {
+      handleOnChange: (val) => GenieHelpers3.saveSidebarControllerOption("getgenie-language", val),
+      name: "selectedLanguage",
+      except: unsupportedLanguages,
+      label: /* @__PURE__ */ React.createElement(React.Fragment, null, sidebar6.__("Language", "getgenie"), /* @__PURE__ */ React.createElement(Libs7.Tooltip, {
+        title: sidebar6.__("Choose the desired language of your input and the outputs", "getgenie"),
+        placement: "top"
+      })),
+      options: sidebar6.languages,
+      defaultValue: sidebar6.currentLanguage
+    })), outputSize && /* @__PURE__ */ React.createElement(Col6, {
+      span: 12
+    }, /* @__PURE__ */ React.createElement(Libs7.Select, {
+      handleOnChange: (val) => GenieHelpers3.saveSidebarControllerOption("getgenie-outputSize", val),
+      name: "outputSize",
+      label: /* @__PURE__ */ React.createElement(React.Fragment, null, sidebar6.__("Output Size", "getgenie"), /* @__PURE__ */ React.createElement(Libs7.Tooltip, {
+        title: sidebar6.__("Define what type of size you want the outputs to have", "getgenie"),
+        placement: "top"
+      })),
+      options: Static_default.outputSizes,
+      defaultValue: sidebar6.outputSize
+    }))), /* @__PURE__ */ React.createElement(Row5, {
+      style: { marginTop: "10px" },
+      gutter: 16,
+      className
+    }, creativity && /* @__PURE__ */ React.createElement(Col6, {
+      span: 12
+    }, /* @__PURE__ */ React.createElement(Libs7.Slider, {
+      name: "creativity",
+      handleOnChange: (val) => GenieHelpers3.saveSidebarControllerOption("getgenie-creativity", val),
+      label: /* @__PURE__ */ React.createElement(React.Fragment, null, sidebar6.__("Creativity", "getgenie"), " ", /* @__PURE__ */ React.createElement(Libs7.Tooltip, {
+        title: sidebar6.__("How much creative you want genie to be", "getgenie"),
+        placement: "top"
+      })),
+      message: false,
+      defaultValue: sidebar6?.creativityLevel
+    })), result && /* @__PURE__ */ React.createElement(Col6, {
+      span: 12
+    }, /* @__PURE__ */ React.createElement(Libs7.NumberInput, {
+      name: "numberOfResult",
+      handleOnChange: (val) => GenieHelpers3.saveSidebarControllerOption("getgenie-numberOfResult", val),
+      className: "ResultLimitNumberInput",
+      max: 6,
+      type: "text",
+      defaultValue: sidebar6?.numberOfResult,
+      label: /* @__PURE__ */ React.createElement(React.Fragment, null, sidebar6.__("Max Results", "getgenie"), " ", /* @__PURE__ */ React.createElement(Libs7.Tooltip, {
+        title: sidebar6.__("Maximum content you want to generate", "getgenie"),
+        placement: "top"
+      })),
+      required: true,
+      errorMessage: sidebar6.__("Please choose valid limit", "getgenie")
+    }))), /* @__PURE__ */ React.createElement(PromotionalNotice2, {
+      type: "promotionalNotice",
+      names: ["word_generate"]
+    }));
+  }, ["sidebar", "getInputs", "setSidebar"]);
+  var SidebarControllerOption_default = SidebarControllerOption;
+
+  // assets/src/admin/js/TemplateWizard/WriteTemplatesScreen.js
+  var { Libs: Libs8, ContentFeedback: ContentFeedback2, Utilities: Utilities6 } = window.getGenie.Components.Common;
+  var { Alert: Alert4, Form: Form8, Tooltip: Tooltip7, Divider } = window.antd;
+  var { HandleFetch: HandleFetch6, HandleResponse: HandleResponse2 } = window.getGenie.Components.Common.RequestManager;
+  var { ComposeComponents: ComposeComponents19 } = window.getGenie.Components.Common.ReduxManager;
+  var { GenieHelpers: GenieHelpers2 } = Utilities6;
+  var { useState: useState10, useEffect: useEffect14 } = window.React;
+  var defaultField = [{
+    "name": "textContent",
+    "label": "Your content",
+    "type": "textarea",
+    "placeholder": "Enter your text here",
+    "required": true
+  }];
+  var WriteTemplatesScreen = ComposeComponents19(({ setSidebar, templates: templates2, sidebar: sidebar6, getInputs, setInput, contextMenu }) => {
+    let list = getInputs["generatedTemplateContents"] || [];
+    list = [...new Set(list)];
+    const [templateList2, setTemplateList] = useState10([]);
+    const [showTooltip, setShowTooltip] = useState10("");
+    const [visibleAlert, setVisibleAlert] = useState10(false);
+    const [inputFields, setInputFields] = useState10(defaultField);
+    const [writeLoading, setWriteLoading] = useState10(false);
+    const [unsupportedLanguages, setUnsupportedLanguages] = useState10([]);
+    const mode = sidebar6.currentWritingMode;
+    const { currentTemplate, existingInputValue } = sidebar6;
+    const { isBlockEditor, wizardScreen } = window.getGenie.config;
+    const isAdvanceWriting = ["continueWriting", "expandOutline", "genieMode", "content-rewriter"].includes(currentTemplate);
+    const isAdvanceMode = isAdvanceWriting && mode === "advance" || currentTemplate == "default";
+    const { selectedText, beforeCaret } = contextMenu.inputContent;
+    const [isInsertContent, setIsInsertContent] = useState10("");
+    useEffect14(() => {
+      let data = templates2.list.map((item) => ({
+        value: item.templateSlug,
+        label: item.title,
+        inputFields: item?.inputFields || []
+      }));
+      data.push({
+        value: "genieMode",
+        label: "Genie Mode"
+      });
+      setTemplateList(data);
+      setSidebar({
+        analyzeKeyword: {
+          ...sidebar6.analyzeKeyword,
+          open: false
+        },
+        generatedOutlines: {
+          ...sidebar6.generatedOutlines,
+          open: false
+        }
+      });
+    }, []);
+    useEffect14(() => {
+      if (wizardScreen === "post" && isBlockEditor && !isAdvanceWriting && !sidebar6.isWpModalOpen) {
+        setSidebar({
+          toolbarWriting: false,
+          insertTextCallback: Callbacks_default.insertTemplateInPostEditor
+        });
+      }
+    }, [currentTemplate]);
+    useEffect14(() => {
+      setInput("generatedTemplateContents", "");
+    }, [selectedText, beforeCaret, sidebar6.existingInputValue, sidebar6.currentTemplate]);
+    useEffect14(() => {
+      if (!sidebar6.open) {
+        return;
+      }
+      let selectedTemplate = templates2.list.find((item) => item.templateSlug === currentTemplate);
+      let fields = selectedTemplate?.inputFields;
+      if (!fields || fields.length === 0) {
+        fields = defaultField;
+      }
+      const inputName = fields[0]?.name;
+      setInputFields(fields);
+      setUnsupportedLanguages(selectedTemplate?.unsupportedLanguages);
+      if (sidebar6.existingInputValue) {
+        setInput(inputName, existingInputValue);
+      }
+      if (currentTemplate === "expandOutline" || currentTemplate === "genieMode") {
+        setInput(inputName, selectedText?.replace(/<br\s*[\/]?>/g, ""));
+      } else if (currentTemplate === "continueWriting") {
+        setInput(inputName, beforeCaret.replace(/<br\s*[\/]?>/g, ""));
+      }
+    }, [currentTemplate, sidebar6.open, selectedText]);
+    const handleWrite = () => {
+      let data = {};
+      let urlKey = "writeTemplates";
+      if (["continueWriting", "expandOutline", "genieMode"].includes(currentTemplate)) {
+        let templateInputs = wp.data.select("getgenie").getTemplateInputs();
+        data = {
+          outputSize: getInputs["outputSize"],
+          input: {
+            title: wp.data.select("core/editor")?.getCurrentPost()?.title || templateInputs?.blogWizard?.selectedTitle || "",
+            keyword: templateInputs?.blogWizard?.keyword || "",
+            context: templateInputs?.[currentTemplate]?.inputContext || "",
+            textContent: getInputs["textContent"]
+          }
+        };
+        urlKey = currentTemplate;
+      } else {
+        const input = {};
+        for (const item of inputFields) {
+          input[item.name] = getInputs[item.name] || "";
+        }
+        data = {
+          input
+        };
+      }
+      data.templateSlug = currentTemplate;
+      setInput("generatedTemplateContents", "");
+      setWriteLoading(true);
+      HandleFetch6((res) => {
+        setWriteLoading(false);
+        HandleResponse2(res, () => {
+          let result = res.data.map((item) => {
+            return { title: item, like: false, dislike: false };
+          });
+          setInput("generatedTemplateContents", result);
+          setVisibleAlert(true);
+          setTimeout(() => setVisibleAlert(false), 4e3);
+        });
+      }, urlKey, data);
+    };
+    useEffect14(() => {
+      if (!sidebar6.open) {
+        sidebar6.rootContainer.querySelectorAll(".ant-tooltip.generated-content-copied-text").forEach((item) => item.style.visibility = "hidden");
+      }
+    }, [sidebar6.open]);
+    const handleActiveList = (e, value) => {
+      sidebar6.rootContainer.querySelectorAll(".ant-tooltip.generated-content-copied-text").forEach((item) => item.style.visibility = "visible");
+      let copyAbleText = value.title.replace(/<br\s*\/?>/gi, "\n");
+      GenieHelpers2.copyToClipboard(copyAbleText).then(() => {
+        setShowTooltip(value.title);
+        setTimeout(() => {
+          setShowTooltip(null);
+        }, 2e3);
+      });
+    };
+    const insertContent = (e, value) => {
+      if (isInsertContent === value)
+        return;
+      e.stopPropagation();
+      try {
+        if (isAdvanceWriting) {
+          if (["content-rewriter", "genieMode"].includes(currentTemplate)) {
+            contextMenu.contextMenuCallback.rewrite(value, contextMenu.insertionField, contextMenu.inputContent);
+          } else {
+            contextMenu.contextMenuCallback[currentTemplate](value, contextMenu.insertionField, contextMenu.inputContent);
+          }
+        } else {
+          sidebar6.insertTextCallback(value, sidebar6.insertTextField);
+        }
+        setIsInsertContent(value);
+      } catch (e2) {
+        Libs8.ErrorModal({
+          title: sidebar6.__(`Oops! I'm not sure where to insert the content.`, "getgenie"),
+          content: sidebar6.__("Please click on the field to select where you want the content to be inserted.", "getgenie")
+        });
+      }
+    };
+    const handleTemplateChange = (value) => {
+      setSidebar({
+        currentTemplate: value
+      });
+    };
+    const handlePrev = () => {
+      setSidebar({
+        component: "TemplateListScreen"
+      });
+    };
+    const isInputDisabled = ["continueWriting", "expandOutline"].includes(currentTemplate);
+    const contextTooltipText = sidebar6.__(`You can give context or specific instruction on how GetGenie should ${currentTemplate == "expandOutline" ? "write the content under this heading" : "continue writing after the selected content"}.`, "getgenie");
+    const contextPlaceholder = sidebar6.__(`e.g. ${currentTemplate == "expandOutline" ? "make it a list, explain how to reach out and start communicating" : "describe how to close an email, continue the idea in detail"}, etc.`, "getgenie");
+    let isOutputSizeExist = sidebar6.languages.find((item) => item.value === sidebar6.currentLanguage)?.sml;
+    return /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement(Libs8.DrawerHeader, null), /* @__PURE__ */ React.createElement(Form8, {
+      layout: "vertical",
+      className: "getgenie-sidebar-writing-form",
+      onFinish: handleWrite
+    }, /* @__PURE__ */ React.createElement("div", {
+      className: "getgenie-sidebar-writing"
+    }, !isAdvanceMode ? /* @__PURE__ */ React.createElement(Libs8.Select, {
+      handleOnChange: handleTemplateChange,
+      name: "selectedTemplate",
+      defaultValue: currentTemplate,
+      size: "large",
+      label: sidebar6.__("Select Template", "getgenie"),
+      options: templateList2
+    }) : "", inputFields.map(
+      (item, key) => /* @__PURE__ */ React.createElement(Libs8.Textarea, {
+        disabled: currentTemplate === "expandOutline",
+        key,
+        label: /* @__PURE__ */ React.createElement("span", null, item?.label || "", " ", item?.required ? /* @__PURE__ */ React.createElement("span", {
+          style: { display: "inline-block", color: "red" }
+        }, "*") : `(${sidebar6.__("Optional", "getgenie")})`),
+        name: item?.name,
+        rows: 4,
+        placeholder: item?.placeholder,
+        required: item?.required
+      })
+    ), isInputDisabled ? /* @__PURE__ */ React.createElement(Libs8.Textarea, {
+      label: /* @__PURE__ */ React.createElement(React.Fragment, null, sidebar6.__("Additional Instructions (Optional)", "getgenie"), /* @__PURE__ */ React.createElement(Libs8.Tooltip, {
+        title: contextTooltipText,
+        placement: "top"
+      })),
+      name: "inputContext",
+      rows: 4,
+      placeholder: contextPlaceholder
+    }) : "", /* @__PURE__ */ React.createElement(Divider, null), /* @__PURE__ */ React.createElement(SidebarControllerOption_default, {
+      className: "getgenie-sidebar-controller-options",
+      language: currentTemplate !== "genieMode",
+      outputSize: isInputDisabled && isOutputSizeExist,
+      unsupportedLanguages,
+      tone: currentTemplate !== "genieMode" && !(isInputDisabled && isOutputSizeExist)
+    }), /* @__PURE__ */ React.createElement(Libs8.Button, {
+      htmlType: "submit",
+      type: "primary",
+      loading: writeLoading
+    }, sidebar6.__("Write", "getgenie"))), /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement("div", {
+      className: "getgenie-card-container editor",
+      style: { backgroundColor: list.length === 0 && "transparent" }
+    }, /* @__PURE__ */ React.createElement(Libs8.Card, {
+      list,
+      handleClick: handleActiveList,
+      column: 1,
+      skeleton: writeLoading ? () => /* @__PURE__ */ React.createElement(Libs8.SkeletonSingle, {
+        count: 5
+      }) : ""
+    }, (item) => /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement(Tooltip7, {
+      overlayClassName: "generated-content-copied-text",
+      placement: "right",
+      title: showTooltip === item.title && "Copied",
+      visible: showTooltip === item.title && sidebar6.open,
+      zIndex: 999999
+    }, /* @__PURE__ */ React.createElement("h5", {
+      className: "generated-content"
+    }, /* @__PURE__ */ React.createElement("div", {
+      dangerouslySetInnerHTML: { __html: item.title }
+    }))), /* @__PURE__ */ React.createElement(ContentFeedback2, {
+      content: item,
+      input: getInputs[inputFields[0]?.name] || "",
+      creativityLevel: getInputs["creativity"],
+      listName: "generatedTemplateContents"
+    }), (isBlockEditor || ["post", "elementor", "bricks", "ct_builder", "fluentcrm"].includes(wizardScreen)) && !contextMenu?.isDisable?.[currentTemplate] ? /* @__PURE__ */ React.createElement(Tooltip7, {
+      zIndex: 999999,
+      title: isInsertContent !== item?.title ? "Insert this content" : "Inserted",
+      placement: "topLeft"
+    }, /* @__PURE__ */ React.createElement("span", {
+      className: `getgenie-insert-content ${isInsertContent === item?.title ? "getgenie-icon-check" : "getgenie-icon-plus"}`,
+      onClick: (e) => insertContent(e, item.title)
+    })) : "")), visibleAlert && /* @__PURE__ */ React.createElement(Alert4, {
+      className: "template-screen-alert",
+      message: sidebar6.__("Click on the text to copy", "getgenie"),
+      closeText: sidebar6.__("Okay", "getgenie"),
+      closable: true
+    })))), sidebar6.toolbarWriting || window.location.hash === "#write-for-me" ? "" : /* @__PURE__ */ React.createElement(Libs8.DrawerFooter, {
+      prevScreen: true,
+      nextScreen: false,
+      handlePrev
+    }));
+  }, ["setSidebar", "templates", "sidebar", "getInputs", "setInput", "contextMenu"]);
+  var WriteTemplatesScreen_default = WriteTemplatesScreen;
+
+  // assets/src/admin/js/Common/Utilities/templates.js
+  var sidebar4 = {
+    __: window?.wp?.i18n?.__ || ((text, domain) => text)
+  };
+  var templateList = {
+    "meta-description": {
+      "title": sidebar4.__("Meta-Description", "getgenie"),
+      "templateSlug": "meta-description",
+      "description": sidebar4.__("Leverage SERP rankings with outstanding meta description of your blog post/page", "getgenie"),
+      "inputFields": [
+        {
+          "label": sidebar4.__("Blog Post Title", "getgenie"),
+          "name": "blogPostTitle",
+          "sample": "What Is Off-Page SEO? A Comprehensive Guide",
+          "placeholder": sidebar4.__("Enter the blog post title here", "getgenie"),
+          "required": true
+        },
+        {
+          "label": sidebar4.__("Focus Keyword", "getgenie"),
+          "name": "focusKeyword",
+          "sample": "Off-Page SEO guide",
+          "placeholder": sidebar4.__("Enter the focus keyword/keyphrase for this meta description", "getgenie"),
+          "required": true
+        }
+      ],
+      "categories": {}
+    },
+    "listicle-ideas": {
+      "title": sidebar4.__("Listicle Ideas", "getgenie"),
+      "templateSlug": "listicle-ideas",
+      "description": sidebar4.__("Generate title ideas for listicles for your given topic and get ahead of your competition", "getgenie"),
+      "inputFields": [
+        {
+          "label": sidebar4.__("Topic", "getgenie"),
+          "name": "topic",
+          "sample": "Enter the topic for listicle ideas",
+          "placeholder": sidebar4.__("Enter the topic and additional instructions (if any) for the listicle ideas", "getgenie"),
+          "required": true
+        }
+      ],
+      "categories": {}
+    },
+    "definition": {
+      "title": sidebar4.__("Definition", "getgenie"),
+      "templateSlug": "definition",
+      "description": sidebar4.__("Need a brief explanation? Want to utilize featured snippets? Try our definition template", "getgenie"),
+      "inputFields": [
+        {
+          "label": sidebar4.__("Topic", "getgenie"),
+          "name": "topic",
+          "sample": "venture capital",
+          "placeholder": sidebar4.__("Enter the topic for the definition", "getgenie"),
+          "required": true
+        }
+      ],
+      "categories": {}
+    },
+    "sentence-rewriter": {
+      "title": sidebar4.__("Sentence Rewriter", "getgenie"),
+      "templateSlug": "sentence-rewriter",
+      "description": sidebar4.__("Get different variations of your given sentence with rewritten versions from Genie", "getgenie"),
+      "inputFields": [
+        {
+          "label": sidebar4.__("Sentence to Rewrite", "getgenie"),
+          "name": "sentenceToRewrite",
+          "sample": "When we talk about a particular topic, clarity is very important.",
+          "placeholder": sidebar4.__("Enter your sentence to get a rewritten version", "getgenie"),
+          "required": true
+        }
+      ],
+      "categories": {}
+    },
+    "featured-snippet-numbered-list": {
+      "title": sidebar4.__("Featured Snippet (Numbered List)", "getgenie"),
+      "templateSlug": "featured-snippet-numbered-list",
+      "description": sidebar4.__("Get a detailed numbered list of how to do something with a simple one-liner input", "getgenie"),
+      "inputFields": [
+        {
+          "label": sidebar4.__("Topic", "getgenie"),
+          "name": "topic",
+          "sample": "how to take care of a cat",
+          "placeholder": sidebar4.__("Enter the topic for the list of steps", "getgenie"),
+          "required": true
+        }
+      ],
+      "categories": {}
+    },
+    "title-ideas": {
+      "title": sidebar4.__("Title Ideas", "getgenie"),
+      "templateSlug": "title-ideas",
+      "description": sidebar4.__("Get multiple title ideas off an initial title to get a variation or deploying in headers", "getgenie"),
+      "inputFields": [
+        {
+          "label": sidebar4.__("Topic", "getgenie"),
+          "name": "topic",
+          "sample": "Fast fashion trend",
+          "placeholder": sidebar4.__("Enter your desired topic for title generation", "getgenie"),
+          "required": true
+        }
+      ],
+      "categories": {}
+    },
+    "short-answer": {
+      "title": sidebar4.__("Short Answer", "getgenie"),
+      "templateSlug": "short-answer",
+      "description": sidebar4.__("Generate brief, one-sentence answer to any given question to utilize in your content", "getgenie"),
+      "inputFields": [
+        {
+          "label": sidebar4.__("Question", "getgenie"),
+          "name": "question",
+          "sample": "What is depreciation in accounting?",
+          "placeholder": sidebar4.__("Enter your question", "getgenie"),
+          "required": true
+        }
+      ],
+      "categories": {}
+    },
+    "related-topics": {
+      "title": sidebar4.__("Related Topics", "getgenie"),
+      "templateSlug": "related-topics",
+      "description": sidebar4.__("Stuck with your content? Input a paragraph and get a list of related topics to cover", "getgenie"),
+      "inputFields": [
+        {
+          "label": sidebar4.__("Content", "getgenie"),
+          "name": "content",
+          "sample": "Bollywood, an Indian Hollywood, refers to the Hindi-language movie industry in India. The term Bollywood combines Bombay (where most Hindi movies are made) and Hollywood (where most American movies are made). Bollywood makes many movies each year. Many Bollywood movies are called Masala movies.",
+          "placeholder": sidebar4.__("Enter a paragraph/snippet of content", "getgenie"),
+          "required": true
+        }
+      ],
+      "categories": {}
+    },
+    "paragraph-compression": {
+      "title": sidebar4.__("Paragraph Compression", "getgenie"),
+      "templateSlug": "paragraph-compression",
+      "description": sidebar4.__("Generate a short summary of a paragraph keeping the gist, tone, and context intact", "getgenie"),
+      "inputFields": [
+        {
+          "label": sidebar4.__("Paragraph", "getgenie"),
+          "name": "paragraph",
+          "sample": "With the introduction of a \u2018professional portfolio\u2019 by LinkedIn, you can now easily share visual content on your LinkedIn profile to demonstrate your capabilities more than what CVs ever could. From portfolio pieces to presentations to videos, you can now display your work on your profile by importing the content from a webpage or uploading your favorite work pieces straight from your computer. Instead of telling potential employers what you can do, display your work and let it speak for itself.",
+          "placeholder": sidebar4.__("Enter the paragraph to be summarized", "getgenie"),
+          "required": true
+        }
+      ],
+      "categories": {}
+    },
+    "next-sentence": {
+      "title": sidebar4.__("Next Sentence", "getgenie"),
+      "templateSlug": "next-sentence",
+      "description": sidebar4.__("Provide a sentence/line of content and get a follow-up sentence in return maintaining coherence", "getgenie"),
+      "inputFields": [
+        {
+          "label": sidebar4.__("Sentence", "getgenie"),
+          "name": "sentence",
+          "sample": "It was a cold winter night, perfect for Vlad the vampire to go out hunting for his next prey.",
+          "placeholder": sidebar4.__("Enter the sentence to be followed-up", "getgenie"),
+          "required": true
+        }
+      ],
+      "categories": {}
+    },
+    "paragraph-rewriter": {
+      "title": sidebar4.__("Paragraph Rewriter", "getgenie"),
+      "templateSlug": "paragraph-rewriter",
+      "description": sidebar4.__("Put a new and unique spin to your given content with rewritten versions of it", "getgenie"),
+      "inputFields": [
+        {
+          "label": sidebar4.__("Paragraph", "getgenie"),
+          "name": "paragraph",
+          "sample": "Most of the people of our country are farmers, workers, and day laborers who live below the poverty line. But the price of essential commodities is soaring higher and higher. It has now become impossible for them to make both ends meet. It has severely hit the day laborers, the lower and middle-class families, and the salaried class too. The prices of rice, vegetables, clothes, mustard oil, medicine, and other essential commodities are also increasing by leaps and bounds.",
+          "placeholder": sidebar4.__("Enter the paragraph to be rewritten", "getgenie"),
+          "required": true
+        }
+      ],
+      "categories": {}
+    },
+    "next-paragraph": {
+      "title": sidebar4.__("Next Paragraph", "getgenie"),
+      "templateSlug": "next-paragraph",
+      "description": sidebar4.__("Input your paragraph/lines of content and get a contextual follow-up content in return", "getgenie"),
+      "inputFields": [
+        {
+          "label": sidebar4.__("Paragraph", "getgenie"),
+          "name": "paragraph",
+          "sample": "In less than a generation, social media has evolved from direct electronic information exchange, to virtual gathering place, to retail platform, to vital 21st-century marketing tool.",
+          "placeholder": sidebar4.__("Enter the paragraph to be followed-up", "getgenie"),
+          "required": true
+        }
+      ],
+      "categories": {}
+    },
+    "list-of-questions": {
+      "title": sidebar4.__("List of Questions", "getgenie"),
+      "templateSlug": "list-of-questions",
+      "description": sidebar4.__("Generate lists of questions for your given topic and utilize them in your title/content", "getgenie"),
+      "inputFields": [
+        {
+          "label": sidebar4.__("Topic", "getgenie"),
+          "name": "topic",
+          "sample": "Breakfast at home",
+          "placeholder": sidebar4.__("Enter the topic for the list of related questions", "getgenie"),
+          "required": true
+        }
+      ],
+      "categories": {}
+    },
+    "paragraph-answer": {
+      "title": sidebar4.__("Paragraph Answer", "getgenie"),
+      "templateSlug": "paragraph-answer",
+      "description": sidebar4.__("Get paragraph-long answers of informative content for every question you ask", "getgenie"),
+      "inputFields": [
+        {
+          "label": sidebar4.__("Question", "getgenie"),
+          "name": "question",
+          "sample": "Which country is going to be the next super power of the world?",
+          "placeholder": sidebar4.__("Enter the question for a detailed answer", "getgenie"),
+          "required": true
+        }
+      ],
+      "categories": {}
+    },
+    "summary-bullets": {
+      "title": sidebar4.__("Summary Bullets", "getgenie"),
+      "templateSlug": "summary-bullets",
+      "description": sidebar4.__("Get a bulleted list of summary for a given topic with the same tone and context", "getgenie"),
+      "inputFields": [
+        {
+          "label": sidebar4.__("Paragraph", "getgenie"),
+          "name": "paragraph",
+          "sample": "The Greek gods were all born from the union between a god and a mortal woman. Zeus was born from the union between his father, Kronos, and his mother, Rhea. Athena was born from the union of Zeus with Metis, or wisdom. Apollo was born from the union with Leto or Artemis. Poseidon was born from the union his father, Uranus, and Gaia, or Earth. Demeter was born from the union her husband, Persephone, and Kore, or Spring.",
+          "placeholder": sidebar4.__("Enter the paragraph for summarized list", "getgenie"),
+          "required": true
+        }
+      ],
+      "categories": {}
+    },
+    "paragraph-for-heading": {
+      "title": sidebar4.__("Paragraph for Heading", "getgenie"),
+      "templateSlug": "paragraph-for-heading",
+      "description": sidebar4.__("Input the heading/title of your long-form content and receive an introductory paragraph", "getgenie"),
+      "inputFields": [
+        {
+          "label": sidebar4.__("Title/Heading", "getgenie"),
+          "name": "title/heading",
+          "sample": "French new wave as a film movement",
+          "placeholder": sidebar4.__("Enter the title/heading", "getgenie"),
+          "required": true
+        }
+      ],
+      "categories": {}
+    },
+    "outline": {
+      "title": sidebar4.__("Outline", "getgenie"),
+      "templateSlug": "outline",
+      "description": sidebar4.__("Create an outline of your long-form content based on a title and a brief description", "getgenie"),
+      "inputFields": [
+        {
+          "label": sidebar4.__("Blog context", "getgenie"),
+          "name": "blogContext",
+          "sample": "Nulled or cracked software might contain malware and viruses that infect your computer. These viruses steal your data and sometimes make your device invalid. So, it is highly recommended not to use a cracked version of the software. Besides security reasons, it's completely unethical and like theft. ",
+          "placeholder": sidebar4.__("Enter a few lines of the intro to get an outline", "getgenie"),
+          "required": true
+        }
+      ],
+      "categories": {}
+    },
+    "product-description": {
+      "title": sidebar4.__("Product Description", "getgenie"),
+      "templateSlug": "product-description",
+      "description": sidebar4.__("Name any product (or service) and get Genie to write a convincing description for it", "getgenie"),
+      "inputFields": [
+        {
+          "label": sidebar4.__("Product Name", "getgenie"),
+          "name": "productName",
+          "sample": "Jhakanaka",
+          "placeholder": sidebar4.__("Enter the product name", "getgenie"),
+          "required": true
+        },
+        {
+          "label": sidebar4.__("Product Brief", "getgenie"),
+          "name": "productBrief",
+          "sample": "Jhakanaka is a music player. A product of XpeedStudio. Plays all types of music and podcast. Speech-to-text technology for lyrics for music and subtitles for podcasts. Target audience: teens and young adults. Audiobook feature upcoming.",
+          "placeholder": sidebar4.__("Explain briefly about the product, or which features to focus on", "getgenie"),
+          "required": false
+        }
+      ],
+      "categories": {}
+    },
+    "woocommerce-product-long-description": {
+      "title": sidebar4.__("WooCommerce Product Long Description", "getgenie"),
+      "templateSlug": "woocommerce-product-long-description",
+      "description": sidebar4.__("Generate keyword-optimized & conversion-friendly long descriptions for your WooCommerce products", "getgenie"),
+      "inputFields": [
+        {
+          "label": sidebar4.__("Product Name", "getgenie"),
+          "name": "productName",
+          "sample": "JBL C100SI",
+          "placeholder": sidebar4.__("Enter the product name", "getgenie"),
+          "required": true
+        },
+        {
+          "label": sidebar4.__("Keywords", "getgenie"),
+          "name": "keywords",
+          "sample": "in-ear headphones, JBL pure bass, one-button remote, angled buds, black, comfort fit, suitable for punchy bass and rock music, 30-day replacement warranty, worldwide free shipping",
+          "placeholder": sidebar4.__("Specify the keywords/key phrases for the product long description", "getgenie"),
+          "required": true
+        }
+      ],
+      "categories": {}
+    },
+    "taglines": {
+      "title": sidebar4.__("Taglines", "getgenie"),
+      "templateSlug": "taglines",
+      "description": sidebar4.__("Get genie to write taglines for your brands, products, services, or any content", "getgenie"),
+      "inputFields": [
+        {
+          "label": sidebar4.__("Product Name", "getgenie"),
+          "name": "productName",
+          "sample": "Dunkin' Donuts",
+          "placeholder": sidebar4.__("Enter the product name", "getgenie"),
+          "required": true
+        },
+        {
+          "label": sidebar4.__("Product Brief", "getgenie"),
+          "name": "productBrief",
+          "sample": "Dunkin\u2019 Donuts is the world\u2019s leading baked goods and coffee chain, serving more than 3 million customers per day. Dunkin\u2019 Donuts sells 52 varieties of donuts and more than a dozen coffee beverages as well as an array of bagels, sandwiches & more!",
+          "placeholder": sidebar4.__("Explain briefly about the product, or which features to focus on", "getgenie"),
+          "required": false
+        }
+      ],
+      "categories": {}
+    },
+    "social-media-postcopy": {
+      "title": sidebar4.__("Social Media Post/Copy", "getgenie"),
+      "templateSlug": "social-media-postcopy",
+      "description": sidebar4.__("Write copies for all your social media handles using a brief description of your product", "getgenie"),
+      "inputFields": [
+        {
+          "label": sidebar4.__("Product/Brand Name", "getgenie"),
+          "name": "product/brandName",
+          "sample": "Semrush",
+          "placeholder": sidebar4.__("Enter the name of the product/brand", "getgenie"),
+          "required": true
+        },
+        {
+          "label": sidebar4.__("Product Brief", "getgenie"),
+          "name": "productBrief",
+          "sample": "Semrush is like a keyword research tool, Google Trends, Moz, Hootsuite, and SimilarWeb in one. Get measurable results from online marketing with Semrush \u2014 do SEO, content marketing, competitor research, PPC, and social media marketing from just one platform.",
+          "placeholder": sidebar4.__("Explain briefly about the product, or which features to focus on", "getgenie"),
+          "required": false
+        }
+      ],
+      "categories": {}
+    },
+    "content-rewriter": {
+      "title": sidebar4.__("Content Rewriter", "getgenie"),
+      "templateSlug": "content-rewriter",
+      "description": sidebar4.__("Get AI-paraphrased variations of your given sentence/paragraph/content from Genie", "getgenie"),
+      "inputFields": [
+        {
+          "label": sidebar4.__("Your Content", "getgenie"),
+          "name": "yourContent",
+          "sample": "Dengue fever, also known as breakbone fever, is a mosquito-borne infection that can lead to a severe flu-like illness. It is caused by four different viruses and spread by Aedes mosquitoes.",
+          "placeholder": sidebar4.__("Provide the sentence/paragraph/content you want to be rewritten/paraphrased", "getgenie"),
+          "required": true
+        }
+      ],
+      "categories": {}
+    },
+    "call-to-action": {
+      "title": sidebar4.__("Call to Action", "getgenie"),
+      "templateSlug": "call-to-action",
+      "description": sidebar4.__("Increase your CTA button/anchor's CTR using the magical persuasive words of Genie", "getgenie"),
+      "inputFields": [
+        {
+          "label": sidebar4.__("Context/Description", "getgenie"),
+          "name": "context/description",
+          "sample": "a lead magnet downloader button that gives users a content calendar for free",
+          "placeholder": sidebar4.__("Provide the context or the details of the call-to-action (CTA) button/link", "getgenie"),
+          "required": true
+        },
+        {
+          "label": sidebar4.__("Product/Brand Name ", "getgenie"),
+          "name": "product/brandName",
+          "sample": "Ollyo",
+          "placeholder": sidebar4.__("You can provide the name of the product/brand to be included in the CTA content", "getgenie"),
+          "required": false
+        }
+      ],
+      "categories": {}
+    },
+    "conclusion": {
+      "title": sidebar4.__("Conclusion", "getgenie"),
+      "templateSlug": "conclusion",
+      "description": sidebar4.__("Draw a relevant conclusion for your blog post or any content using Genie's AI magic", "getgenie"),
+      "inputFields": [
+        {
+          "label": sidebar4.__("Title", "getgenie"),
+          "name": "title",
+          "sample": "How to Write a Blog Post: A Step-by-Step Guide",
+          "placeholder": sidebar4.__("Enter the title of the blog post/content that needs a conclusion from GetGenie", "getgenie"),
+          "required": true
+        },
+        {
+          "label": sidebar4.__("Intro", "getgenie"),
+          "name": "intro",
+          "sample": "Writing a blog can be an extremely rewarding and fun activity. But the task of creating a successful blog post can seem daunting, especially if you\u2019re just starting out. From coming up with ideas to crafting compelling content, there\u2019s a lot to consider when writing a blog post. The good news is that with the proper guidance and strategy in place, anyone can craft a blog post that will capture their readers\u2019 attention. In this guide, we\u2019ll provide step-by-step instructions to help you write a blog post that will attract readers and keep them engaged.",
+          "placeholder": sidebar4.__("Provide the introduction of the blog post/content for a better context", "getgenie"),
+          "required": true
+        }
+      ],
+      "categories": {}
+    },
+    "linkedin-post": {
+      "title": sidebar4.__("LinkedIn Post", "getgenie"),
+      "templateSlug": "linkedin-post",
+      "description": sidebar4.__("For yourself or your company/brand, professional posts made easy with AI for LinkedIn", "getgenie"),
+      "inputFields": [
+        {
+          "label": sidebar4.__("Topic", "getgenie"),
+          "name": "topic",
+          "sample": "WordPress plugins",
+          "placeholder": sidebar4.__("Enter the topic", "getgenie"),
+          "required": true
+        },
+        {
+          "label": sidebar4.__("Context", "getgenie"),
+          "name": "context",
+          "sample": "make the post about the future of WordPress plugins with the advent of AI and how AI can be incorporated into plugins",
+          "placeholder": sidebar4.__("Explain what the post is about and which topics should be touched upon", "getgenie"),
+          "required": true
+        },
+        {
+          "label": sidebar4.__("Brand name", "getgenie"),
+          "name": "brandName",
+          "sample": "Wpmet",
+          "placeholder": sidebar4.__("Enter the brand name", "getgenie"),
+          "required": false
+        }
+      ],
+      "categories": {}
+    },
+    "instagram-bio": {
+      "title": sidebar4.__("Instagram Bio", "getgenie"),
+      "templateSlug": "instagram-bio",
+      "description": sidebar4.__("Make lasting impressions with the perfect instagram bio for your handle from AI", "getgenie"),
+      "inputFields": [
+        {
+          "label": sidebar4.__("Brand name", "getgenie"),
+          "name": "brandName",
+          "sample": "Asadullah Galib",
+          "placeholder": sidebar4.__("Enter the brand name", "getgenie"),
+          "required": true
+        },
+        {
+          "label": sidebar4.__("Keywords", "getgenie"),
+          "name": "keywords",
+          "sample": "angel investor, digital marketer of Arraytics, YouTuber",
+          "placeholder": sidebar4.__("Specify the keywords/key phrases for the instagram bio", "getgenie"),
+          "required": true
+        }
+      ],
+      "categories": {}
+    },
+    "instagram-caption": {
+      "title": sidebar4.__("Instagram Caption", "getgenie"),
+      "templateSlug": "instagram-caption",
+      "description": sidebar4.__("Generate AI-powered captions for your instagram images in the blink of an eye", "getgenie"),
+      "inputFields": [
+        {
+          "label": sidebar4.__("Brand name", "getgenie"),
+          "name": "brandName",
+          "sample": "Pizzak",
+          "placeholder": sidebar4.__("Enter the brand name", "getgenie"),
+          "required": true
+        },
+        {
+          "label": sidebar4.__("Context", "getgenie"),
+          "name": "context",
+          "sample": "pizzak is a cloud kitchen that serves pizza, wings, fries, etc. The post will feature it's 18-hour delivery system even at midnight, from 12 pm to 6 am.",
+          "placeholder": sidebar4.__("Provide the topic, context or any additional instruction for the instagram caption", "getgenie"),
+          "required": true
+        }
+      ],
+      "categories": {}
+    },
+    "pros-and-cons": {
+      "title": sidebar4.__("Pros and Cons", "getgenie"),
+      "templateSlug": "pros-and-cons",
+      "description": sidebar4.__("Generate a list of pros and cons about any given topic to utilize in your content", "getgenie"),
+      "inputFields": [
+        {
+          "label": sidebar4.__("Topic", "getgenie"),
+          "name": "topic",
+          "sample": "Divulgaci\xF3n por correo electr\xF3nico en fr\xEDo",
+          "placeholder": sidebar4.__("Enter a topic to get the pros and cons of it", "getgenie"),
+          "required": true
+        },
+        {
+          "label": sidebar4.__("Context/Additional Instruction", "getgenie"),
+          "name": "context/additionalInstruction",
+          "sample": "Dame las ventajas y desventajas de la divulgaci\xF3n en fr\xEDo a trav\xE9s de correos electr\xF3nicos",
+          "placeholder": sidebar4.__("You can give additional instruction/context for a more accurate output (optional)", "getgenie"),
+          "required": false
+        }
+      ],
+      "categories": {}
+    },
+    "woocommerce-product-short-description": {
+      "title": sidebar4.__("WooCommerce Product Short Description", "getgenie"),
+      "templateSlug": "woocommerce-product-short-description",
+      "description": sidebar4.__("Get short descriptions/excerpts for your WooCommerce products optimized for your desired keywords", "getgenie"),
+      "inputFields": [
+        {
+          "label": sidebar4.__("Product Name", "getgenie"),
+          "name": "productName",
+          "sample": "F\u0103in\u0103 de porumb Kellogg's cu piure de c\u0103p\u0219uni adev\u0103rat",
+          "placeholder": sidebar4.__("Enter the brand name", "getgenie"),
+          "required": true
+        },
+        {
+          "label": sidebar4.__("Keywords", "getgenie"),
+          "name": "keywords",
+          "sample": "cereale pentru micul dejun, vitamina C, cu con\u021Binut sc\u0103zut de gr\u0103simi, f\u0103r\u0103 colesterol, 300 grame",
+          "placeholder": sidebar4.__("Specify the keywords/key phrases for the product long description", "getgenie"),
+          "required": true
+        }
+      ],
+      "categories": {}
+    },
+    "tweet-twitter-post": {
+      "title": sidebar4.__("Tweet (Twitter Post)", "getgenie"),
+      "templateSlug": "tweet-twitter-post",
+      "description": sidebar4.__("Short but impactful \u2014 that's what your tweets will be when you generate them with GetGenie", "getgenie"),
+      "inputFields": [
+        {
+          "label": sidebar4.__("Context/Instruction", "getgenie"),
+          "name": "context/instruction",
+          "sample": "steps of how to optimize old youtube videos",
+          "placeholder": sidebar4.__("Enter context/Instruction ", "getgenie"),
+          "required": true
+        }
+      ],
+      "categories": {}
+    },
+    "twitter-thread": {
+      "title": sidebar4.__("Twitter Thread", "getgenie"),
+      "templateSlug": "twitter-thread",
+      "description": sidebar4.__("Create engaging Twitter threads on any topic and up your Twitter game using AI magic", "getgenie"),
+      "inputFields": [
+        {
+          "label": sidebar4.__("Context/Instruction", "getgenie"),
+          "name": "context/instruction",
+          "sample": "establishing yourself as a personal brand",
+          "placeholder": sidebar4.__("Enter the context/instruction", "getgenie"),
+          "required": true
+        }
+      ],
+      "categories": {}
+    },
+    "explain-why": {
+      "title": sidebar4.__("Explain Why", "getgenie"),
+      "templateSlug": "explain-why",
+      "description": sidebar4.__("Questions need answering and concepts need explaining \u2014 let\u2019s explain why", "getgenie"),
+      "inputFields": [
+        {
+          "label": sidebar4.__("Question", "getgenie"),
+          "name": "question",
+          "sample": "Why can't we live on mars?",
+          "placeholder": sidebar4.__("Enter a WH-question question that you need explained", "getgenie"),
+          "required": true
+        },
+        {
+          "label": sidebar4.__("Context", "getgenie"),
+          "name": "context",
+          "sample": "tell me the scientific as well as anthropological reasons",
+          "placeholder": sidebar4.__("You can give additional instruction/context for a more accurate output", "getgenie"),
+          "required": false
+        }
+      ],
+      "categories": {}
+    },
+    "feature-benefit": {
+      "title": sidebar4.__("Feature - Benefit", "getgenie"),
+      "templateSlug": "feature-benefit",
+      "description": sidebar4.__("Describe what your product/service does and get the detailed benefits in return", "getgenie"),
+      "inputFields": [
+        {
+          "label": sidebar4.__("Product Name", "getgenie"),
+          "name": "productName",
+          "sample": "Dove Original Beauty Bar",
+          "placeholder": sidebar4.__("Enter the product name", "getgenie"),
+          "required": true
+        },
+        {
+          "label": sidebar4.__("Product Description", "getgenie"),
+          "name": "productDescription",
+          "sample": "Dove Original Beauty Bar and gentle skin cleanser combine a gentle cleansing formula with our signature 1/4 moisturizing cream to hydrate and nourish skin, instead of leaving skin feeling dry and tight like an ordinary bar soap might. Dove mild cleansers help skin retain its natural moisture, which helps replenish skin-natural nutrients that can be lost during the cleansing process.",
+          "placeholder": sidebar4.__("Enter the product's features here to generate the benefits", "getgenie"),
+          "required": true
+        }
+      ],
+      "categories": {}
+    },
+    "before-after-bridge-bab": {
+      "title": sidebar4.__("Before After Bridge (BAB)", "getgenie"),
+      "templateSlug": "before-after-bridge-bab",
+      "description": sidebar4.__("BAB formula shows the before and after of your product/solution in your content", "getgenie"),
+      "inputFields": [
+        {
+          "label": sidebar4.__("Product Name", "getgenie"),
+          "name": "productName",
+          "sample": "Realme Narzo 50A",
+          "placeholder": sidebar4.__("Enter the product name", "getgenie"),
+          "required": true
+        },
+        {
+          "label": sidebar4.__("Product Description", "getgenie"),
+          "name": "productDescription",
+          "sample": "Equipped with a Helio G85 Gaming Processor, the Realme Narzo 50A is a high-speed smartphone that lets you play intense games and binge-watch favorite shows. This smartphone features a 6000 mAh Battery and 18W Quick Charge for uninterrupted performance, and a 50 MP AI Triple Camera to click beautiful photos.",
+          "placeholder": sidebar4.__("Enter the product description", "getgenie"),
+          "required": true
+        }
+      ],
+      "categories": {}
+    },
+    "bullet-point-to-answers": {
+      "title": sidebar4.__("Bullet Point to Answers", "getgenie"),
+      "templateSlug": "bullet-point-to-answers",
+      "description": sidebar4.__("Get bulleted lists of answers to related questions while writing long-form content", "getgenie"),
+      "inputFields": [
+        {
+          "label": sidebar4.__("Question", "getgenie"),
+          "name": "question",
+          "sample": "How to make a cup of tea?",
+          "placeholder": sidebar4.__("Enter the question to get an answer in bullet points", "getgenie"),
+          "required": true
+        },
+        {
+          "label": sidebar4.__("Additional Instruction", "getgenie"),
+          "name": "additionalInstruction",
+          "sample": "describe how to prepare a cup of tea step by step",
+          "placeholder": sidebar4.__("You can give instruction/context for a more accurate output (optional)", "getgenie"),
+          "required": false
+        }
+      ],
+      "categories": {}
+    },
+    "woocommerce-product-title": {
+      "title": sidebar4.__("WooCommerce Product Title", "getgenie"),
+      "templateSlug": "woocommerce-product-title",
+      "description": sidebar4.__("Generate keyword-optimized product titles to rank & convert with your WooCommerce website", "getgenie"),
+      "inputFields": [
+        {
+          "label": sidebar4.__("Product Name", "getgenie"),
+          "name": "productName",
+          "sample": "JBL C100SI",
+          "placeholder": sidebar4.__("Enter the product name", "getgenie"),
+          "required": true
+        },
+        {
+          "label": sidebar4.__("Keywords", "getgenie"),
+          "name": "keywords",
+          "sample": "in-ear headphone, JBL pure bass, one button remote, angled buds, black",
+          "placeholder": sidebar4.__("Specify which keywords should the product title be based on", "getgenie"),
+          "required": true
+        }
+      ],
+      "categories": {}
+    },
+    "product-ad-copy": {
+      "title": sidebar4.__("Product Ad Copy", "getgenie"),
+      "templateSlug": "product-ad-copy",
+      "description": sidebar4.__("Generate a basic ad copy for your product inputting only a brief introduction/description", "getgenie"),
+      "inputFields": [
+        {
+          "label": sidebar4.__("Product Name", "getgenie"),
+          "name": "productName",
+          "sample": "YOSUDA Exercise Bike L-007A",
+          "placeholder": sidebar4.__("Enter the product name", "getgenie"),
+          "required": true
+        },
+        {
+          "label": sidebar4.__("Product Description", "getgenie"),
+          "name": "productDescription",
+          "sample": "Well-built exercise bike from the inside out. With its rock-solid foundation and athletic + aesthetic design, it's at the top of the game. With thickened frame tubes, precision manufacturing overcomes the wobbly defect of most of the cycle bikes on the market. Give you safer riding. Excellent bearing capacity for riders up to 330LBS. This is an energetic exercising bike, bringing you a cycling experience which is compared with riding classes!",
+          "placeholder": sidebar4.__("Enter the product description", "getgenie"),
+          "required": true
+        }
+      ],
+      "categories": {}
+    },
+    "problem-agitate-solution-pas": {
+      "title": sidebar4.__("Problem, Agitate, Solution (PAS)", "getgenie"),
+      "templateSlug": "problem-agitate-solution-pas",
+      "description": sidebar4.__("Make use of the proven copywriting formula \u2014 Problem, Agitate, Solution (PAS)", "getgenie"),
+      "inputFields": [
+        {
+          "label": sidebar4.__("Product Name", "getgenie"),
+          "name": "productName",
+          "sample": "Canva",
+          "placeholder": sidebar4.__("Enter the product name", "getgenie"),
+          "required": true
+        },
+        {
+          "label": sidebar4.__("Product Description", "getgenie"),
+          "name": "productDescription",
+          "sample": "Canva is a graphic design platform, used to create social media graphics, presentations, posters, documents and other visual content. The app includes templates for users to use. The platform is free to use and offers paid subscriptions such as Canva Pro and Canva for Enterprise for additional functionality.",
+          "placeholder": sidebar4.__("Enter the product description", "getgenie"),
+          "required": true
+        }
+      ],
+      "categories": {}
+    },
+    "attention-interest-desire-action-aida": {
+      "title": sidebar4.__("Attention Interest Desire Action (AIDA)", "getgenie"),
+      "templateSlug": "attention-interest-desire-action-aida",
+      "description": sidebar4.__("Generate sales/marketing copies by applying the renowned AIDA formula", "getgenie"),
+      "inputFields": [
+        {
+          "label": sidebar4.__("Product Name", "getgenie"),
+          "name": "productName",
+          "sample": "Typeform",
+          "placeholder": sidebar4.__("Enter the product name", "getgenie"),
+          "required": true
+        },
+        {
+          "label": sidebar4.__("Product Description", "getgenie"),
+          "name": "productDescription",
+          "sample": "Typeform is a popular online form builder and survey tool. It specializes in a conversational one question at a time experience that feels more like a conversation when compared to the regular form flow.",
+          "placeholder": sidebar4.__("Enter the product description", "getgenie"),
+          "required": true
+        }
+      ],
+      "categories": {}
+    }
+  };
+  var templates = Object.values(templateList || {}).filter((item) => !["sentence-rewriter", "paragraph-rewriter"].includes(item?.templateSlug));
+
+  // assets/src/admin/js/TemplateWizard/AdditionalWizards.js
+  var AdditionalWizards = [
+    {
+      title: sidebar4.__("Blog Wizard", "getgenie"),
+      templateSlug: "blogWizard",
+      description: sidebar4.__("Get your blog article SERP-ready \u2014 from analyzing the keywords to generating content that ranks", "getgenie"),
+      categories: {
+        general: {
+          title: "General",
+          slug: "general"
+        }
+      }
+    },
+    {
+      title: sidebar4.__("WooCommerce Wizard", "getgenie"),
+      templateSlug: "wooWizard",
+      description: sidebar4.__("Get conversion-friendly & SEO-optimized content for WooCommerce Product pages", "getgenie"),
+      categories: {
+        general: {
+          title: "General",
+          slug: "general"
+        }
+      }
+    },
+    {
+      title: sidebar4.__("Genie Mode", "getgenie"),
+      templateSlug: "genieMode",
+      description: sidebar4.__("Write anything you want with the help of Genie Mode", "getgenie")
+    }
+  ];
+  var AdditionalWizards_default = AdditionalWizards;
+
+  // assets/src/admin/js/TemplateWizard/TemplateListScreen/index.js
+  var { Libs: Libs9, LicenseNotice } = window.getGenie.Components.Common;
+  var { Divider: Divider2, Typography: Typography4, Input: Input4 } = window.antd;
+  var { ComposeComponents: ComposeComponents20 } = window.getGenie.Components.Common.ReduxManager;
+  var { useEffect: useEffect15, useState: useState11 } = window.React;
+  var TemplateListScreen = ComposeComponents20(({ templates: templates2, setSidebar, sidebar: sidebar6, setInput, getTemplateInputs, resetTemplateInputs }) => {
+    let templateArray = [...AdditionalWizards_default, ...templates2.list];
+    if (window.getGenie?.isPlayground) {
+      templateArray = templateArray.filter((item) => item.templateSlug !== "wooWizard");
+    }
+    if (window.getGenie.config.wizardScreen == "elementor") {
+      templateArray = templateArray.filter((item) => !["blogWizard", "wooWizard"].includes(item.templateSlug));
+    }
+    const [list, setList] = useState11(templateArray);
+    useEffect15(() => {
+      setSidebar({
+        analyzeKeyword: {
+          ...sidebar6.analyzeKeyword,
+          open: false
+        },
+        generatedOutlines: {
+          ...sidebar6.generatedOutlines,
+          open: false
+        },
+        toolbarWriting: false,
+        currentWritingMode: "template"
+      });
+      setInput("updateContent", "");
+    }, []);
+    const handleSearchTemplate = (e) => {
+      let searchInput = e.target.value.toLowerCase();
+      let updatedTemplates = templateArray.filter((item) => item.title.toLowerCase().includes(searchInput));
+      setList(updatedTemplates);
+    };
+    const handleActiveList = (e, item) => {
+      const config = window.getGenie.config;
+      let component = "WriteTemplatesScreen";
+      if (item.templateSlug == "blogWizard") {
+        component = "BlogScreen";
+        if (config?.wizardScreen !== "post") {
+          if (config?.wizardScreen == "elementor") {
+            Libs9.ErrorModal({
+              title: sidebar6.__("Blog Wizard is not available in Elemetor!", "getgenie"),
+              content: sidebar6.__("To use our blog writing workflow, use the Gutenberg post editor or classic editor.", "getgenie")
+            });
+          } else {
+            window.open(config?.wizardScreenUrl?.post, "_blank");
+          }
+          return;
+        }
+      } else if (item.templateSlug == "wooWizard") {
+        if (!config?.wcActivated) {
+          Libs9.ErrorModal({
+            title: sidebar6.__("Plugin not found!", "getgenie"),
+            content: sidebar6.__("WooCommerce is not installed or activated yet.", "getgenie")
+          });
+          return;
+        }
+        component = "WooCommerceScreen";
+        if (config?.wizardScreen !== "woo_product") {
+          if (config?.wizardScreen == "elementor") {
+            Libs9.ErrorModal({
+              title: sidebar6.__("WooCommerce product wizard is not available in Elemetor!", "getgenie"),
+              content: sidebar6.__("To use our WooCommerce product description writing workflow, use WooCommerce and its product page editor.", "getgenie")
+            });
+          } else {
+            window.open(config?.wizardScreenUrl?.woo_product, "_blank");
+          }
+          return;
+        }
+      }
+      const updateScreen = () => {
+        setSidebar({
+          component,
+          currentTemplate: item.templateSlug,
+          currentWritingMode: "template"
+        });
+      };
+      if (getTemplateInputs[item.templateSlug]?.keyword) {
+        Libs9.ConfirmModal(
+          sidebar6.__("This wizard has generated data", "getgenie"),
+          sidebar6.__("Do you want to erase that data?", "getgenie"),
+          () => {
+            resetTemplateInputs(item.templateSlug);
+            updateScreen();
+          },
+          updateScreen
+        );
+      } else {
+        updateScreen();
+      }
+    };
+    return /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement(Libs9.DrawerHeader, null), /* @__PURE__ */ React.createElement("div", {
+      className: "getgenie-sidebar-template"
+    }, /* @__PURE__ */ React.createElement(LicenseNotice, null), /* @__PURE__ */ React.createElement(Typography4.Title, {
+      level: 3
+    }, sidebar6.__("What are we writing", "getgenie")), /* @__PURE__ */ React.createElement(Divider2, null), /* @__PURE__ */ React.createElement("div", {
+      className: "getgenie-template-list"
+    }, /* @__PURE__ */ React.createElement(Input4, {
+      onChange: handleSearchTemplate,
+      bordered: false,
+      className: "search-container",
+      placeholder: `${sidebar6.__("Search", "getgenie")}...`,
+      suffix: /* @__PURE__ */ React.createElement("span", {
+        className: "getgenie-icon-search"
+      })
+    }), /* @__PURE__ */ React.createElement(Libs9.Card, {
+      list,
+      handleClick: handleActiveList
+    }, (item) => {
+      return /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement("div", {
+        className: "card-container"
+      }, /* @__PURE__ */ React.createElement("div", {
+        className: "card-icon"
+      }, /* @__PURE__ */ React.createElement("span", {
+        className: "getgenie-icon-edit"
+      })), /* @__PURE__ */ React.createElement("div", {
+        className: "card-heading"
+      }, /* @__PURE__ */ React.createElement("h5", {
+        "data-slug": item?.templateSlug
+      }, item?.title), /* @__PURE__ */ React.createElement("p", null, item?.description))));
+    }))));
+  }, ["setSidebar", "sidebar", "templates", "setInput", "resetTemplateInputs", "getTemplateInputs"]);
+  var TemplateListScreen_default = TemplateListScreen;
+
+  // assets/src/admin/js/TemplateWizard/Callbacks.js
+  var { Libs: Libs10 } = window.getGenie.Components.Common;
+  var sidebar5 = wp.data.select("getgenie").sidebar();
+  var Callbacks = {
+    insertTemplateInPostEditor: (value) => {
+      const sidebar6 = wp.data.select("getgenie").sidebar();
+      let selectedBlock = wp.data.select("core/block-editor").getSelectedBlock();
+      let clientId = selectedBlock?.clientId;
+      let content = selectedBlock?.attributes?.content;
+      let allBlocks = wp.data.select("core/block-editor").getBlocks();
+      let index = allBlocks.findIndex((item) => item.clientId === clientId);
+      let text = value.replace(/<br\s*[\/]?>/g, "\n");
+      if (["content-rewriter", "paragraph-answer"].includes(sidebar6.currentTemplate)) {
+        let replace = wp.data.select("getgenie").getInputs()?.updateContent;
+        if (replace) {
+          replace(text);
+        }
+      } else if (sidebar6.currentTemplate === "next-paragraph") {
+        wp.data.dispatch("core/block-editor").insertBlocks(
+          wp.blocks.createBlock("core/paragraph", {
+            content: text
+          }),
+          index + 1
+        );
+      } else {
+        if (!clientId) {
+          wp.data.dispatch("getgenie").setSidebar({
+            open: false
+          });
+          Libs10.ErrorModal({
+            title: sidebar6.__("Insertion Failed!", "getgenie"),
+            content: sidebar6.__("No insertion field found!", "getgenie")
+          });
+          return;
+        }
+        text = value;
+        if (content) {
+          text = " " + text;
+        }
+        wp.data.dispatch("core/block-editor").updateBlock(clientId, {
+          attributes: {
+            content: content + text
+          }
+        });
+        wp.data.dispatch("getgenie").setSidebar({
+          open: false
+        });
+      }
+    }
+  };
+  var Callbacks_default = Callbacks;
+
+  // assets/src/admin/js/templates-scripts.js
+  window.getGenie.Components = {
+    ...window.getGenie.Components,
+    Sidebar: {
+      ...window.getGenie.Components.Sidebar || {},
+      TemplateListScreen: TemplateListScreen_default,
+      WriteTemplatesScreen: WriteTemplatesScreen_default,
+      UserHistory: UserHistory_default,
+      UserHistoryDetails: UserHistoryDetails_default,
+      GenieChat: GenieChat_default,
+      Loading: Loading_default2
+    }
+  };
+})();
 //! authors : Tim Wood, Iskren Chernev, Moment.js contributors
 //! license : MIT
 //! moment.js
