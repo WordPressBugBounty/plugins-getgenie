@@ -53,7 +53,7 @@ class SideMenuProvider
             add_submenu_page(
                 GETGENIE_TEXTDOMAIN,
                 __('SEO Insights', 'getgenie'),
-                __('SEO Insights', 'getgenie'),
+               __('SEO Insights ', 'getgenie').'<span class="seo-insights-badge">New</span>',
                 'publish_posts',
                 $this->menu_slug.'#genie-ska'
             );

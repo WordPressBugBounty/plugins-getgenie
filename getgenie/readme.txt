@@ -1,9 +1,9 @@
-===GetGenie – AI Content Writer with Keyword Research and Competitor Analysis===
+===GetGenie – AI Content Writer with Keyword Research & SEO Tracking Tools===
 
 Contributors: XpeedStudio, Ataurr, emranio
 Tags: ai, ai content writer, keyword research, gpt4o, seo plugin
-Tested up to: 6.7
-Stable tag: 4.1.0
+Tested up to: 6.8.1
+Stable tag: 4.1.1
 Requires PHP: 7.4
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -12,11 +12,11 @@ GPT-4o powered AI content writer with 37+ templates, chatbot, AI image, NLP keyw
 
 == Description ==
 
-Looking for an all-in-one AI SEO content assistant, AI image generator, and live AI chatbot like ChatGPT in a WordPress plugin? Meet **[GetGenie Ai](https://getgenie.ai/)**  - your ultimate solution for Ai content writing, keyword research, AI image generation, and SEO analysis.
+Looking for an **all-in-one AI SEO content assistant**, AI image generator, and live AI chatbot like ChatGPT in a WordPress plugin? Meet **[GetGenie Ai](https://getgenie.ai/)**  - your ultimate solution for Ai content writing, keyword research, AI image generation, and SEO analysis.
 
 GetGenie AI content writer is developed by GPT-3.5, GPT-4, DaVinci, NLP, and advanced Ai algorithms. Now, GetGenie AI has become more powerful and faster with the integration of **GPT-4o**. This enables GetGenie AI to understand and generate text based on visual information, providing a more comprehensive and versatile tool for content creation.
 
-With GetGenie AI plugin, you can perform NLP keyword research, H2H competitor analysis, and generates SEO-optimized blog posts, WooCommerce product descriptions, social media copies, and more in just a few clicks. Also, Ai Content Writer and SEO plugin comes with 37+ content writing templates along with 100% original Ai image generator.
+With GetGenie AI plugin, you can perform **NLP keyword research, H2H competitor analysis**, and generates SEO-optimized blog posts, **WooCommerce product descriptions**, social media copies, and more in just a few clicks. Also, Ai Content Writer and SEO plugin comes with **37+ content writing templates** along with 100% original Ai image generator.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/j4lElegQNQg?si=xREFtuDvDv-8_ac8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -58,33 +58,33 @@ Overall, GetGenie AI is the ultimate AI content writing assistant, AI image and 
 
 ✅  GPT-4o powered advanced AI technology
 
-## Exclusive SEO Features of GetGenie AI Writer
+## GetGenie AI Writer's Exclusive SEO & Content Features 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/yDC6kC3NDUQ" title="Keyword and SEO Analysis" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+GetGenie AI SEO content writer simplifies keyword research, content writing, optimization, and SEO performance tracking with its comprehensive SEO & content features. 
 
-GetGenie AI SEO content assistant simplifies content generation and optimization with its comprehensive SEO features such as “**SEO Mode**” in the Blog Wizard template.
-
-It offers on-demand SEO capabilities including keyword analysis, search volume insights, Google Trends data, and more!
+It allows for creating a diverse range of content, including content, copies, and more, making content marketing a breeze. Also, it shows useful AI keyword suggestions & valuable competitor data, adding value to content & elevating ranking chances.
 
 **[Keyword Research & Analysis](https://getgenie.ai/keyword-research/)**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/bPYnWtDShrE" title="New! Master SEO with Advanced Keyword Research &amp; Topical Mapping" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-GetGenie's AI-powered keyword research feature will strengthen your WordPress keyword discovery efforts! It will enable you to find Related, NLP, and Semantic keywords so you can optimize your content & enhance your SERP ranking chances. 
+GetGenie's AI-powered keyword research feature will strengthen your WordPress keyword discovery efforts! It will enable you to find **Related, NLP, and Semantic keywords** so you can optimize your content & enhance your SERP ranking chances. 
 
-Find out the search volume, competition level, CPC, Google Trends, and more of your target & secondary keywords with GetGenie's intuitive interface. Also, the keyword research feature allows for creating a thorough Topical Map for your target keywords outlining subtopics, second-level topics, and related keywords for them. This will make your content planning & creation tasks easy & effective.
+Find out the **search volume, competition level, CPC, Google Trends, and more** of your target & secondary keywords with GetGenie's intuitive interface. Also, the keyword research feature allows for creating a thorough **Topical Map** for your target keywords outlining subtopics, second-level topics, and related keywords for them. This will make your content planning & creation tasks easy & effective.
 
 To view all the topical map data in table format and copy them to your work area, you can export the Topical Map as a PNG or CSV file.
  
-Not just that, once the keyword research part is done, you can head straight to GetGenie's "Blog Wizard" to write engaging & keyword-optimized blog posts in both one click and step-by-step process. 
+Not just that, once the keyword research part is done, you can head straight to GetGenie's "**Blog Wizard**" to write engaging & keyword-optimized blog posts in both one click and step-by-step process. 
 
-**[SEO Insights:](https://getgenie.ai/seo-features/)**
+**[SEO Insights:](https://getgenie.ai/seo-insights/)**
 
-GetGenie provides historical organic data from Google so you can track and optimize your website’s SEO performance. With its SEO Insights feature, you can analyze existing content's SEO metrics, including impressions, clicks, CTR, and positions over time to optimize your site. 
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=CECK6Ie_M6A" title="SEO Insights: A Game-Changing SEO Tracking Feature for Your WordPress Site!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-Also, find out the lost and new keywords in Google for a specified period. Explore opportunities to optimize with “low-hanging fruit keywords". 
+GetGenie provides historical organic data from Google so you can track and optimize your website’s SEO performance. With its **SEO Insights** feature, you can **analyze existing content's SEO metrics, including impressions, clicks, CTR, and positions** over time to optimize your site. 
 
-In addition, you can use the feature to identify high-performing pages, along with low-performing pages that need SEO improvements. Also, it shows you the competing pages that you can analyze and avoid keyword cannibalization. 
+Also, find out the lost and new keywords in Google for a specified period. Explore opportunities to optimize with “**low-hanging fruit keywords**". 
+
+In addition, you can use the feature to identify **high-performing pages**, along with **low-performing pages** that need SEO improvements**. Also, it shows you the competing pages that you can analyze and avoid **keyword cannibalization**. 
 
 The SEO Insights feature lets you track the regions and devices your content generates the most traffic for. Plus, find out which keywords and pages rank highest in those regions. 
 
@@ -93,30 +93,30 @@ The SEO Insights feature lets you track the regions and devices your content gen
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/3U9xk4gwP7A" title="How to Research your SERP Competitors with AI || Blog Competitor SERP Analysis with GetGenie AI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-With the competitor H2H analysis feature of this SEO plugin, you can easily access competitor analysis data and discover ranked competitor blogs on specific keywords! Such a time-saving feature for content writers, keyword researchers, and SEO users
+With the competitor **H2H analysis** feature of this SEO plugin, you can easily access competitor analysis data and discover ranked competitor blogs on specific keywords! Such a time-saving feature for content writers, keyword researchers, and SEO users
 
 **[NLP Keyword Suggestions](https://getgenie.ai/docs/seo-assistant/nlp-keyword-suggestions/)**
-GetGenie AI SEO plugin utilizes NLP algorithms to analyze your text and recommend relevant keywords. It enables optimization for search engines and ensures clarity and conciseness in your content.
+GetGenie AI SEO plugin utilizes **NLP algorithms** to analyze your text and recommend relevant keywords. It enables optimization for search engines and ensures clarity and conciseness in your content.
 
 **[Head to Head Analysis:](https://getgenie.ai/head-to-head-analysis/)**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/pUdfHm81Yy4" title="How to Rank Higher on SERPs with GetGenie AI’s Head-to-Head (H2H) Comparison Tool" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-With the AI SEO assistant, you can conduct head-to-head competitor analysis using Natural Language Processing technology, identifying LSIs and weaknesses to optimize your blog post and surpass specific competitors on the SERP.
+With the **AI SEO assistant**, you can conduct head-to-head competitor analysis using **Natural Language Processing technology**, identifying **LSIs** and weaknesses to optimize your blog post and surpass specific competitors on the SERP.
 
 **[Content Score:](https://getgenie.ai/docs/seo-assistant/content-score-2/)**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/rLrRSa3CXdM" title="AI SEO Content Score | Measure &amp; Optimize Your Blog Posts using GetGenie AI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-You can also analyze content and get a score based on various factors like keywords, word count, and more using GetGenie AI . Also, this SEO plugin also offers suggestions to improve on-page SEO and NLP for better search engine ranking.
+You can also analyze content and get a score based on various factors like keywords, word count, and more using GetGenie AI . Also, this SEO plugin also offers suggestions to improve **on-page SEO** and NLP for better search engine ranking.
 
 ### [WordPress Blog Wizard:](https://getgenie.ai/docs/blog-wizard/getgenie-ai-blog-wizard/)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5lIwXUS8QHE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Its Blog Wizard template simplifies SEO-optimized blog post creation on WordPress with features like personalized language selection, creativity levels, and output quantity.
+Its **Blog Wizard template** simplifies SEO-optimized blog post creation on WordPress with features like personalized language selection, creativity levels, and output quantity.
 
-You can generate six outputs at once, customize outlines, rewrite content, and assess content quality with the in-built SEO Mode.
+You can generate six outputs at once, **customize outlines, rewrite content, and assess content quality** with the in-built **SEO Mode**.
 
 ### [One Click Blog Generation:](https://getgenie.ai/one-click-blog/)
 
@@ -124,13 +124,13 @@ You can generate six outputs at once, customize outlines, rewrite content, and a
 
 GetGenie’s Blog Wizard template introduces a one-click blog generation feature! This feature helps to generate an entire SEO-optimized blog post in just one click.
 
-This 1-click blog generator of GetGenie AI SEO content writer is compatible with WordPress Gutenberg as well as the classic editor. You can find this AI feature in GetGenie’s web editor too.
+This **1-click blog generator** of GetGenie AI SEO content writer is compatible with WordPress Gutenberg as well as the classic editor. You can find this AI feature in GetGenie’s web editor too.
 
 ### **[GenieChat - Real-time AI Chatbot:](https://getgenie.ai/geniechat/)**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/WZ5s_Kj78iA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-GenieChat AI chatbot (Open AI ChatGPT alternative) is another outstanding addition to GetGenie AI content writer and SEO tool. This advanced AI copilot chatbot comes with 22+ AI chat personalities to give you a seamless live chatting experience such as Professional AI Writer, AI Product Manager, AI Tech Writer, etc.
+**GenieChat AI chatbot** (Open AI ChatGPT alternative) is another outstanding addition to GetGenie AI content writer and SEO tool. This advanced AI copilot chatbot comes with **22+ AI chat personalities** to give you a seamless live chatting experience such as Professional AI Writer, AI Product Manager, AI Tech Writer, etc.
 
 ### [Genie Mode:](https://getgenie.ai/template/genie-mode/)
 
@@ -207,7 +207,7 @@ Genie  AI  image is also compatible with any WordPress theme or builder, it save
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UAS7BkgWi34" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-Explore the Webview Playground of GetGenie  AI  content writer,  AI  image generator and SEO plugin - the ultimate assistant for non-WordPress users. With 37+ templates and SEO features, including keyword research, SEO, and competitor analysis, you can effortlessly craft blogs, product reviews, and creative copies.
+Explore the **Webview Playground of GetGenie  AI**  content writer,  AI  image generator and SEO plugin - the ultimate assistant for non-WordPress users. **With 37+ templates and SEO features**, including keyword research, SEO, and competitor analysis, you can effortlessly craft blogs, product reviews, and creative copies.
 
 The intuitive interface of GetGenie  AI  ensures a seamless content writing experience, allowing you to generate SEO-optimized posts with ease. Simply copy the output and paste it into your preferred editor or feed.
 
@@ -243,6 +243,10 @@ The best part is you can [claim 2500 words free credits](https://getgenie.ai/doc
 ✨ [GutenKit](https://wordpress.org/plugins/gutenkit-blocks-addon//)
 
 == Changelog ==
+Version 4.1.1 – 25/05/2025
+Added: Added comprehensive Genie SEO feature highlights.
+Improved: Enhanced redirect mechanism and copy URL functionality for SEO pages data.
+
 Version 4.1.0 – 18/05/2025
 Added: SEO Insights feature with Google Search Console (GSC) integration.
 

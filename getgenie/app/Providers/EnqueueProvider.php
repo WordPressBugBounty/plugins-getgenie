@@ -105,9 +105,9 @@ class EnqueueProvider
 			if ($current_screen->id == 'toplevel_page_getgenie') {
 				wp_enqueue_script('getgenie-admin-pages-scripts', GETGENIE_URL . 'assets/dist/admin/js/wp-admin-pages.js', ['wp-plugins', 'wp-i18n', 'wp-element', 'wp-dom', 'wp-data'], GETGENIE_VERSION, true);
 				
-				wp_enqueue_script('getgenie-ska-admin-scripts-app', GETGENIE_URL . 'assets/dist/admin/seo-overview/admin/js/app-handler.js', ['wp-plugins', 'wp-edit-post', 'wp-i18n', 'wp-element', 'wp-dom', 'wp-data'], GETGENIE_VERSION, true);
-				wp_enqueue_script('getgenie-ska-admin-scripts-handle', GETGENIE_URL . 'assets/dist/admin/seo-overview/admin/js/wp-admin-pages.js', ['getgenie-antd-scripts', 'getgenie-handler-scripts', 'getgenie-common-scripts', 'getgenie-admin-pages-scripts'], GETGENIE_VERSION, true);
-				wp_enqueue_script('getgenie-ska-admin-scripts-integrations', GETGENIE_URL . 'assets/dist/admin/seo-overview/admin/js/wp-integrations.js', ['wp-plugins', 'wp-edit-post', 'wp-i18n', 'wp-element', 'wp-dom', 'wp-data'], GETGENIE_VERSION, true);
+				wp_enqueue_script('getgenie-ska-admin-scripts-app', GETGENIE_URL . 'assets/dist/seo-overview/admin/js/app-handler.js', ['wp-plugins', 'wp-edit-post', 'wp-i18n', 'wp-element', 'wp-dom', 'wp-data'], GETGENIE_VERSION, true);
+				wp_enqueue_script('getgenie-ska-admin-scripts-handle', GETGENIE_URL . 'assets/dist/seo-overview/admin/js/wp-admin-pages.js', ['getgenie-antd-scripts', 'getgenie-handler-scripts', 'getgenie-common-scripts', 'getgenie-admin-pages-scripts'], GETGENIE_VERSION, true);
+				wp_enqueue_script('getgenie-ska-admin-scripts-integrations', GETGENIE_URL . 'assets/dist/seo-overview/admin/js/wp-integrations.js', ['wp-plugins', 'wp-edit-post', 'wp-i18n', 'wp-element', 'wp-dom', 'wp-data'], GETGENIE_VERSION, true);
 
 				$token = new \GenieAi\App\Auth\TokenManager();
 				$_nonce = wp_create_nonce('wp_rest');
@@ -176,7 +176,7 @@ class EnqueueProvider
 
 		wp_enqueue_style('getgenie-icon-style', GETGENIE_URL . 'assets/dist/admin/styles/icon-pack.css', [], GETGENIE_VERSION);
 		wp_enqueue_style('getgenie-admin-global-style', GETGENIE_URL . 'assets/dist/admin/styles/global.css', [], GETGENIE_VERSION);
-		wp_enqueue_style('getgenie-ska-seo-fonts-style', GETGENIE_URL . 'assets/dist/admin/seo-overview/admin/styles/wp-font-family.css', [], GETGENIE_VERSION);
+		wp_enqueue_style('getgenie-ska-seo-fonts-style', GETGENIE_URL . 'assets/dist/seo-overview/admin/styles/wp-font-family.css', [], GETGENIE_VERSION);
 	}
 
 	public function elementorEditorStyle()
