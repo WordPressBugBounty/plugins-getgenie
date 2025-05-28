@@ -5,7 +5,7 @@
  * Description:  GetGenie AI is the most intuitive A.I Content Wordpress Plugin that can help you save time and write smarter.
  * Plugin URI: https://getgenie.ai/
  * Author: getgenieai
- * Version: 4.1.1
+ * Version: 4.1.2
  * Author URI: https://getgenie.ai/
  *
  * Text Domain: getgenie
@@ -20,7 +20,7 @@
 
 defined('ABSPATH') || exit;
 
-define('GETGENIE_VERSION', '4.1.1');
+define('GETGENIE_VERSION', '4.1.2');
 define('GETGENIE_TEXTDOMAIN', 'getgenie');
 define('GETGENIE_BASENAME', plugin_basename(__FILE__));
 define('GETGENIE_URL', trailingslashit(plugin_dir_url(__FILE__)));
@@ -317,12 +317,10 @@ function plugins_loaded()
 {
     load_plugin_textdomain('getgenie', false, dirname(plugin_basename(__FILE__)) . '/languages/');
 
-    add_action( 'upgrader_process_complete', 'getgenie_save_data_when_update', 10, 2 );
-
     //show seo feature notification for version after 4.1.0
     if( is_admin() && current_user_can('manage_options') ){
         
-        $seo_feature_date = new DateTime( '2025-05-25' );
+        $seo_feature_date = new DateTime( '2025-05-18' );
         $install_date_str = get_option( 'getgenie_install_date' );
         $genie_install_date = false;
         
@@ -334,50 +332,17 @@ function plugins_loaded()
             }
         }
 
+        $user_id = get_current_user_id();
+
         if(
             $genie_install_date &&
             $genie_install_date < $seo_feature_date && 
-            get_option('getgenie_need_seo_feature_notification', '') !== '' && 
-            get_option('getgenie_showed_notification', '') === '' && 
-            version_compare( GETGENIE_VERSION, '4.1.0', '>=' ) 
+            get_option( $user_id.'_getgenie_showed_notification', '') === ''
         ){
-            delete_option('getgenie_need_seo_feature_notification');
-            update_option('getgenie_showed_notification', '4.1.0');
             wp_safe_redirect(admin_url('admin.php?page=getgenie&open_modal=1') . "#genie-ska");
         }
     }
 }
-
-/**
- * Save data when update getgenie
- * 
- * @param object $upgrader_object
- * @param array $options
- * 
- * @return void
- */
-function getgenie_save_data_when_update( $upgrader_object, $options ) {
-
-    if( get_option( 'getgenie_showed_notification', '' ) !== '' ) return;
-
-    if ( 
-        ! empty($options['action']) && 
-        ! empty($options['type']) && 
-        ! empty( $options['plugins'] ) && 
-        is_array( $options['plugins'] ) && 
-        $options['action'] === 'update' && 
-        $options['type'] === 'plugin' 
-    ) {
-        foreach ( $options['plugins'] as $plugin ) {
-            
-            if ( $plugin === 'getgenie/getgenie.php' ) {
-                update_option('getgenie_need_seo_feature_notification', '4.1.0');
-            }
-        }
-    }
-}
-
-
 
 include GETGENIE_DIR . 'vendor/autoload.php';
 

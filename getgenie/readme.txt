@@ -3,7 +3,7 @@
 Contributors: XpeedStudio, Ataurr, emranio
 Tags: ai, ai content writer, keyword research, gpt4o, seo plugin
 Tested up to: 6.8.1
-Stable tag: 4.1.1
+Stable tag: 4.1.2
 Requires PHP: 7.4
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -78,13 +78,13 @@ Not just that, once the keyword research part is done, you can head straight to 
 
 **[SEO Insights:](https://getgenie.ai/seo-insights/)**
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=CECK6Ie_M6A" title="SEO Insights: A Game-Changing SEO Tracking Feature for Your WordPress Site!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CECK6Ie_M6A" title="SEO Insights: A Game-changing SEO Tracking Feature for Your WordPress Site" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 GetGenie provides historical organic data from Google so you can track and optimize your website’s SEO performance. With its **SEO Insights** feature, you can **analyze existing content's SEO metrics, including impressions, clicks, CTR, and positions** over time to optimize your site. 
 
 Also, find out the lost and new keywords in Google for a specified period. Explore opportunities to optimize with “**low-hanging fruit keywords**". 
 
-In addition, you can use the feature to identify **high-performing pages**, along with **low-performing pages** that need SEO improvements**. Also, it shows you the competing pages that you can analyze and avoid **keyword cannibalization**. 
+In addition, you can use the feature to identify **high-performing pages**, along with **low-performing pages** that need SEO improvements. Also, it shows you the competing pages that you can analyze and avoid **keyword cannibalization**. 
 
 The SEO Insights feature lets you track the regions and devices your content generates the most traffic for. Plus, find out which keywords and pages rank highest in those regions. 
 
@@ -194,7 +194,7 @@ The Genie Mode, a special feature in the plugin, helps in content creation, gene
 ✅ [Elementor Compatibility](https://getgenie.ai/docs/compatibility-and-integration/getgenie-elementor-compatibility/): Seamlessly integrate SEO writing templates with Elementor for optimized content creation.
 ✅ [Bricks Builder Compatibility](https://getgenie.ai/docs/compatibility-and-integration/bricks-builder-compatibility/): Smoothly generate outlines, rewrite content, and craft landing page copies in Bricks Builder.
 ✅ [Oxygen Builder Compatibility](https://getgenie.ai/docs/compatibility-and-integration/oxygen-builder-compatibility/): Utilize one-click blog solutions and copywriting tools within Oxygen Builder.
-✅ [FluentCRM Integration](https://getgenie.ai/docs/compatibility-and-integration/fluentcrm/)\*\*: Enhance em AI l marketing with ready-to-use em AI ls directly in FluentCRM
+✅ [FluentCRM Integration](https://getgenie.ai/docs/compatibility-and-integration/fluentcrm/): Enhance em AI l marketing with ready-to-use em AI ls directly in FluentCRM
 
 ### 🧞 [Genie Image - AI Image Generator](https://getgenie.ai/genie-image/)
 <iframe width="853" height="480" src="https://www.youtube.com/embed/ALMNHK2INEA" title="Genie Image: Your AI-Powered Image Generator" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -243,6 +243,10 @@ The best part is you can [claim 2500 words free credits](https://getgenie.ai/doc
 ✨ [GutenKit](https://wordpress.org/plugins/gutenkit-blocks-addon//)
 
 == Changelog ==
+Version 4.1.2 – 28/05/2025
+Added: A feature to manage the number of GSC page results available for free subscriptions.
+Improved: Enhanced the upgrade tooltip in GSC pages for a better user experience.
+
 Version 4.1.1 – 25/05/2025
 Added: Added comprehensive Genie SEO feature highlights.
 Improved: Enhanced redirect mechanism and copy URL functionality for SEO pages data.

@@ -140,6 +140,15 @@ class SideMenuProvider
      */
     public function writeForMePageData()
     {
+
+        if ( isset( $_GET['open_modal'] ) && $_GET['open_modal'] == '1' ) {
+
+            $user_id = get_current_user_id();
+
+            //update option after redirection
+            update_option( $user_id.'_getgenie_showed_notification', '4.1.0' );
+        }
+
         return genie_view('admin/default');
     }
 
