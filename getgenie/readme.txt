@@ -3,7 +3,7 @@
 Contributors: XpeedStudio, Ataurr, emranio
 Tags: ai, ai content writer, keyword research, gpt4o, seo plugin
 Tested up to: 6.8.1
-Stable tag: 4.1.2
+Stable tag: 4.1.3
 Requires PHP: 7.4
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -243,6 +243,9 @@ The best part is you can [claim 2500 words free credits](https://getgenie.ai/doc
 ✨ [GutenKit](https://wordpress.org/plugins/gutenkit-blocks-addon//)
 
 == Changelog ==
+Version 4.1.3 – 01/06/2025
+Fixed: Search volume chart display when analyzing keywords.
+
 Version 4.1.2 – 28/05/2025
 Added: A feature to manage the number of GSC page results available for free subscriptions.
 Improved: Enhanced the upgrade tooltip in GSC pages for a better user experience.
