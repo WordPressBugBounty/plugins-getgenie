@@ -3,7 +3,7 @@
 Contributors: XpeedStudio, Ataurr, emranio
 Tags: ai, ai content writer, keyword research, gpt4o, seo plugin
 Tested up to: 6.8.1
-Stable tag: 4.1.5
+Stable tag: 4.1.6
 Requires PHP: 7.4
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -243,6 +243,12 @@ The best part is you can [claim 2500 words free credits](https://getgenie.ai/doc
 ✨ [GutenKit](https://wordpress.org/plugins/gutenkit-blocks-addon//)
 
 == Changelog ==
+Version 4.1.6 – 24/06/2025
+Improved: Enhanced display of keyword performance metrics — including position, impressions, and clicks — for both new and lost keywords.  
+Improved: Renamed columns on the New/Lost Keywords page for better clarity.
+Improved: Column order on Country/Device page for a better user experience.
+Improved: Removed Pages Clicks and Impressions columns from Top Pages and Pages Requiring Attention.
+
 Version 4.1.5 – 18/06/2025
 Improved: Enhanced keyword analysis logic for more accurate results.
 
