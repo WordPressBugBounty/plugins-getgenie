@@ -150,6 +150,14 @@ class GetGenieChat
             endwhile;
 
         } else {
+            // Verify the post exists, belongs to current user, and is the correct post type
+            $post = get_post($conversation_id);
+            if (!$post || $post->post_type !== 'getgenie_chat' || (int) $post->post_author !== get_current_user_id()) {
+                return [
+                    'status'  => 'fail',
+                    'message' => ['Access denied. You can only delete your own chat conversations.'],
+                ];
+            }
             wp_delete_post($conversation_id, true);
             $deleted++;
         }

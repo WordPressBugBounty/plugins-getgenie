@@ -80,19 +80,32 @@ class ProLabelInit
         // show notice if getgenie license is not activated.
         if (!get_option('getgenie_site_token')) {
 
+            $banner_msg = "Just one step left! Click below and activate your license to start unlocking GetGenie's full potential instantly.";
+            
+            //if after 24 hours of plugin activation the message will be changed.
+            $activation_time = get_option('getgenie_install_date', false);
+            if($activation_time) {
+                $activation_timestamp = strtotime($activation_time);
+                if($activation_timestamp !== false && (time() - $activation_timestamp) > (3600 * 24)){
+                    $banner_msg = "Struggling with writer's block or spending hours on drafts?&nbsp;<a href='https://getgenie.ai/' target='_blank'>GetGenie</a>&nbsp;helps you plan, write, and optimize content in minutes, all inside WordPress.";
+                }
+            }
+
             GenieNotice::instance('getgenie', 'go-pro-noti2ce')                                       # @plugin_slug @notice_name
                 ->set_dismiss('global', (3600 * 24 * 300))                                          # @global/user @time_period
                 ->set_type('warning')                                                                 # @notice_type
+                ->set_plugin_screens(array('toplevel_page_getgenie', 'dashboard'))                   # @restrict_to_getgenie_and_dashboard_pages
+                ->set_force_show_on_screens(true)                                                    # @always_show_on_getgenie_page_regardless_of_dismissal
                 ->set_html(
                     "
                         <div class='getgenie-notice'>
                             <p class='notice-message'>
                                 <img src='" . GETGENIE_URL . "/assets/dist/admin/images/genie-head.svg" . "' class='notice-icon' />
-                                I've noticed that you haven't activated the Pro/Free license yet. Click the button below to unleash my magic. Sincerely — GetGenie AI
+                                ".$banner_msg."
                             </p>
                             <div class='notice-link'>
-                                <a href='https://app.getgenie.ai/license/?product=free-trial' target='_blank'>Claim your license</a>
-                                <a href='" . admin_url('admin.php?page=' .  GETGENIE_TEXTDOMAIN) . "#license'>Finish setup with your license.</a>
+                                <a href='https://app.getgenie.ai/license/?product=free-trial' target='_blank'>Claim Your Free License</a>
+                                <a href='" . admin_url('admin.php?page=' .  GETGENIE_TEXTDOMAIN) . "#license'>Finish License Activation</a>
                             </div>
                         </div>
                         "

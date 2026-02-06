@@ -113,6 +113,21 @@ if ( ! class_exists( '\GenieAi\App\ProLabel\GenieNotice' ) ) :
 
 		protected $expired_time;
 
+		/**
+		 * Allowed plugin screens where notice should be displayed
+		 *
+		 * @var string|array
+		 */
+		protected $plugin_screens;
+
+		/**
+		 * Special flag for notices that should always show on specific screens
+		 * regardless of dismissal status
+		 *
+		 * @var boolean
+		 */
+		protected $force_show_on_screens;
+
 
 	
 		/**
@@ -196,6 +211,10 @@ if ( ! class_exists( '\GenieAi\App\ProLabel\GenieNotice' ) ) :
 
 			$this->buttons = array();
 
+			$this->force_show_on_screens = false;
+
+			$this->plugin_screens = '';
+
 			return $this;
 		}
 
@@ -270,6 +289,18 @@ if ( ! class_exists( '\GenieAi\App\ProLabel\GenieNotice' ) ) :
 			return $this;
 		}
 
+		public function set_force_show_on_screens( $force = true ) {
+			$this->force_show_on_screens = $force;
+
+			return $this;
+		}
+
+		public function set_plugin_screens( $screens = '' ) {
+			$this->plugin_screens = $screens;
+
+			return $this;
+		}
+
 		// setters ends
 
 
@@ -292,11 +323,39 @@ if ( ! class_exists( '\GenieAi\App\ProLabel\GenieNotice' ) ) :
 				return false;
 			}
 
-			add_action( 'admin_notices', array( $this, 'get_notice' ) );
+			// Check if plugin screens are set and if current screen matches
+			if ( ! empty( $this->plugin_screens ) ) {
+				add_action( 'current_screen', array( $this, 'check_screen_and_add_notice' ) );
+			} else {
+				add_action( 'admin_notices', array( $this, 'get_notice' ) );
+			}
+		}
+
+		public function check_screen_and_add_notice() {
+			$current_screen = get_current_screen();
+			if ( $current_screen ) {
+				$allowed_screens = is_array( $this->plugin_screens ) ? $this->plugin_screens : array( $this->plugin_screens );
+				if ( in_array( $current_screen->id, $allowed_screens ) ) {
+					add_action( 'admin_notices', array( $this, 'get_notice' ) );
+				}
+			}
 		}
 	
 		public function get_notice() {
-			// dismissible conditions
+			$current_screen = get_current_screen();
+			
+			// Special behavior: Always show on GetGenie page if force_show_on_screens is enabled
+			if ( $this->force_show_on_screens && $current_screen && $current_screen->id === 'toplevel_page_getgenie' ) {
+				global $oxaim_lib_notice_list;
+
+				if ( ! isset( $oxaim_lib_notice_list[ $this->notice_id ] ) ) {
+					$oxaim_lib_notice_list[ $this->notice_id ] = __FILE__;
+					$this->generate_html();
+				}
+				return;
+			}
+			
+			// Normal dismissible conditions for all other cases
 			if ( 'user' === $this->dismissible ) {
 				$expired = get_user_meta( get_current_user_id(), $this->notice_id, true );
 			} elseif ( 'global' === $this->dismissible ) {
@@ -324,15 +383,41 @@ if ( ! class_exists( '\GenieAi\App\ProLabel\GenieNotice' ) ) :
 			return $this;
 		}
 
+		/**
+		 * Check if notice should show dismiss button based on current screen and force_show_on_screens flag
+		 */
+		public function is_notice_dismissible() {
+			// If force_show_on_screens is not enabled, use default dismissible behavior
+			if ( ! $this->force_show_on_screens ) {
+				return $this->dismissible;
+			}
+			
+			$current_screen = get_current_screen();
+			
+			// If no screen context or dismissible is false, return current dismissible state
+			if ( ! $current_screen || false === $this->dismissible ) {
+				return $this->dismissible;
+			}
+			
+			// Hide dismiss button on GetGenie admin page when force_show_on_screens is enabled
+			if ( $current_screen->id === 'toplevel_page_getgenie' ) {
+				return false;
+			}
+			
+			// Show dismiss button on other allowed screens (like dashboard)
+			return $this->dismissible;
+		}
+
 		public function generate_html() {
+			$is_dismissible = $this->is_notice_dismissible();
 
 			?>
 		<div 
 			id="<?php echo esc_attr( $this->notice_id ); ?>" 
-			class="notice wpmet-notice notice-<?php echo esc_attr( $this->notice_id . ' ' . $this->class ); ?> <?php echo ( false === $this->dismissible ? '' : 'is-dismissible' ); ?>"
+			class="notice wpmet-notice notice-<?php echo esc_attr( $this->notice_id . ' ' . $this->class ); ?> <?php echo ( false === $is_dismissible ? '' : 'is-dismissible' ); ?>"
 
 			expired_time="<?php echo esc_attr( $this->expired_time ); ?>"
-			dismissible="<?php echo esc_attr( $this->dismissible ); ?>"
+			dismissible="<?php echo esc_attr( $is_dismissible ); ?>"
 		>
 			<?php if ( ! empty( $this->logo ) ) : ?>
 				<img class="notice-logo" style="<?php echo esc_attr( $this->logo_style ); ?>" src="<?php echo esc_url( $this->logo ); ?>" />
@@ -371,7 +456,7 @@ if ( ! class_exists( '\GenieAi\App\ProLabel\GenieNotice' ) ) :
 
 			</div>
 
-			<?php if ( false !== $this->dismissible ) : ?>
+			<?php if ( false !== $this->is_notice_dismissible() ) : ?>
 				<button type="button" class="notice-dismiss">
 					<span class="screen-reader-text">x</span>
 				</button>

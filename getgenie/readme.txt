@@ -1,9 +1,9 @@
 ===GetGenie – AI Content Writer with Keyword Research & SEO Tracking Tools===
 
-Contributors: XpeedStudio, Ataurr, emranio
+Contributors: Roxnor, Ataurr
 Tags: ai, ai content writer, keyword research, gpt4o, seo plugin
-Tested up to: 6.8.1
-Stable tag: 4.2.2
+Tested up to: 6.9
+Stable tag: 4.3.2
 Requires PHP: 7.4
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -12,77 +12,77 @@ GPT-4o powered AI content writer with 37+ templates, chatbot, AI image, NLP keyw
 
 == Description ==
 
-Looking for an **all-in-one AI SEO content assistant**, AI image generator, and live AI chatbot like ChatGPT in a WordPress plugin? Meet **[GetGenie Ai](https://getgenie.ai/)**  - your ultimate solution for Ai content writing, keyword research, AI image generation, and SEO analysis.
+**[GetGenie](https://getgenie.ai/)** is an **All-in-one WordPress AI SEO & Content Assistant** that lets you write content faster and optimize content smarter. It helps your content rank higher in SERPs, so you can drive qualified traffic & convert them.  You can also use the AI tool's  ChatGPT-like AI Chat Assistant, **Genie Chat** for ideation, research, and getting instant responses.  
 
-GetGenie AI content writer is developed by GPT-3.5, GPT-4, DaVinci, NLP, and advanced Ai algorithms. Now, GetGenie AI has become more powerful and faster with the integration of **GPT-4o**. This enables GetGenie AI to understand and generate text based on visual information, providing a more comprehensive and versatile tool for content creation.
+The AI content writer is developed by Open AI's  advanced language models like GPT-3.5, GPT-4, GPT-4o, DaVinci, and more. This enables GetGenie to understand user prompts optimally and generate context-aware & human-like content. 
 
-With GetGenie AI plugin, you can perform **NLP keyword research, H2H competitor analysis**, and generates SEO-optimized blog posts, **WooCommerce product descriptions**, social media copies, and more in just a few clicks. Also, Ai Content Writer and SEO plugin comes with **37+ content writing templates** along with 100% original Ai image generator.
+With GetGenie, you can perform **NLP & semantic keyword research, SERP analysis, & H2H competitor analysis**, and create SEO-optimized blog posts in minutes. 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/j4lElegQNQg?si=xREFtuDvDv-8_ac8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+https://www.youtube.com/watch?v=j4lElegQNQg
 
-Overall, GetGenie AI is the ultimate AI content writing assistant, AI image and WordPress SEO plugin for seamless content creation, SEO, and marketing activities.
+The AI Content Writer and SEO plugin comes with **37+ AI writing templates** that you can utilize to generate diverse content and copy types.  **WooCommerce product descriptions**, **social media copies**, and **product ad copies**, to name a few. 
 
 | [GetGenie Home Page](https://getgenie.ai/) | [Template Page](https://getgenie.ai/template/) | [Blog](https://getgenie.ai/blog/) | [Documentation](https://getgenie.ai/docs/) | [Need Support?](https://getgenie.ai/support-ticket/) | [How to get License Key](https://getgenie.ai/docs/getting-started/license-settings/) | [Claim Free Credits](https://getgenie.ai/docs/getting-started/how-to-claim-getgenie-free-credits/) |
 
-## Key Features of GetGenie Ai
+## Key Features of GetGenie AI
 
-✅  SEO Keyword Research and Analysis
+✅  NLP & Semantic Keyword Suggestions
 
-✅  SERP analysis and insights
+✅  SERP & Competitor Analysis 
 
-✅  NLP & semantic keyword suggestions
+✅  Visual Topical Map Builder
 
-✅  One-click blog generation
+✅  One-click Blog Generation
 
-✅  37+ AI content writing templates
+✅  SEO Performance Insights
 
-✅  100% unique, plagiarism-free content
+✅  37+ AI content & Copywriting Templates
 
-✅  Multi-language support (33+ languages)
+✅  100% Unique & Plagiarism-free Content
 
-✅  AI image generation with Genie Image
+✅  Multi-language Support (33+ languages)
 
-✅  Free 2,500 AI content writing words credit/month
+✅  AI Image generation with Genie Image
 
-✅  Genie Mode for personalized output
+✅  Free 2,500 AI Content Writing Words Credit/Month
 
-✅  AI Chatbot with 22+ personalities
+✅  Genie Mode for Prompt-based Output
 
-✅  WooCommerce product description generator
+✅  Genie Chat (AI Chatbot) for Chatting with 22+ Personalities
 
-✅  Elementor, Oxygen, Bricks builders compatibility
+✅  WooCommerce Product Description Generator
 
-✅  Plagiarism detector integration
+✅  Plagiarism Detector Integration
 
-✅  Webview editor (Playground) for exploration
-
-✅  GPT-4o powered advanced AI technology
+✅  Webview Editor (Playground) for Non-WordPress Users
 
 ## GetGenie AI Writer's Exclusive SEO & Content Features 
 
-GetGenie AI SEO content writer simplifies keyword research, content writing, optimization, and SEO performance tracking with its comprehensive SEO & content features. 
+GetGenie **AI SEO content writer** displays high-intent **NLP, semantic & related keywords** on your input given keyword. This allows you to add depth to your content, satisfy search intent, and create high-quality content.  
 
-It allows for creating a diverse range of content, including content, copies, and more, making content marketing a breeze. Also, it shows useful AI keyword suggestions & valuable competitor data, adding value to content & elevating ranking chances.
+Besides generating long-form content, you can create a diverse range of short-form content, including product titles, headlines, descriptions, taglines, summary bullets, meta descriptions, content outlines, Call to actions, etc. 
+
+Also, the AI SEO tool shows useful AI keyword suggestions & valuable competitor data that will add value to your content. 
 
 **[Keyword Research & Analysis](https://getgenie.ai/keyword-research/)**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/bPYnWtDShrE" title="New! Master SEO with Advanced Keyword Research &amp; Topical Mapping" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+https://www.youtube.com/watch?v=bPYnWtDShrE
 
-GetGenie's AI-powered keyword research feature will strengthen your WordPress keyword discovery efforts! It will enable you to find **Related, NLP, and Semantic keywords** so you can optimize your content & enhance your SERP ranking chances. 
+GetGenie's AI-powered keyword research feature will strengthen your keyword discovery efforts! You can find **Related, NLP, and Semantic keywords,** to optimize your content & enhance your SERP ranking chances. 
 
-Find out the **search volume, competition level, CPC, Google Trends, and more** of your target & secondary keywords with GetGenie's intuitive interface. Also, the keyword research feature allows for creating a thorough **Topical Map** for your target keywords outlining subtopics, second-level topics, and related keywords for them. This will make your content planning & creation tasks easy & effective.
+Also, find out the **search volume, competition level, CPC, Google Trends, and more** of your target & secondary keywords with GetGenie's intuitive interface. The keyword research feature allows for creating a thorough **Topical Map** for your target keyword, outlining subtopics, second-level topics, and related keywords for them. This will make your content ideation & creation tasks easy & effective.
 
-To view all the topical map data in table format and copy them to your work area, you can export the Topical Map as a PNG or CSV file.
+To view all the topical map data in table format and copy them to your work area, export the Topical Map as a PNG or CSV file.
  
 Not just that, once the keyword research part is done, you can head straight to GetGenie's "**Blog Wizard**" to write engaging & keyword-optimized blog posts in both one click and step-by-step process. 
 
 **[SEO Insights:](https://getgenie.ai/seo-insights/)**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/CECK6Ie_M6A" title="SEO Insights: A Game-changing SEO Tracking Feature for Your WordPress Site" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+https://www.youtube.com/watch?v=CECK6Ie_M6A
 
-GetGenie provides historical organic data from Google so you can track and optimize your website’s SEO performance. With its **SEO Insights** feature, you can **analyze existing content's SEO metrics, including impressions, clicks, CTR, and positions** over time to optimize your site. 
+GetGenie provides historical organic data from Google so you can track and optimize your website’s SEO performance. With its **SEO Insights** feature, **analyze existing content's SEO metrics, including impressions, clicks, CTR, and positions** over time to optimize your site. 
 
-Also, find out the lost and new keywords in Google for a specified period. Explore opportunities to optimize with “**low-hanging fruit keywords**". 
+Also, find out the lost and new keywords in Google for a specified period. Explore opportunities to optimize with "low-hanging fruit keywords". 
 
 In addition, you can use the feature to identify **high-performing pages**, along with **low-performing pages** that need SEO improvements. Also, it shows you the competing pages that you can analyze and avoid **keyword cannibalization**. 
 
@@ -91,7 +91,7 @@ The SEO Insights feature lets you track the regions and devices your content gen
 
 **[Competitor Analysis:](https://getgenie.ai/competitor-analysis/)**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/3U9xk4gwP7A" title="How to Research your SERP Competitors with AI || Blog Competitor SERP Analysis with GetGenie AI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+https://www.youtube.com/watch?v=3U9xk4gwP7A
 
 With the competitor **H2H analysis** feature of this SEO plugin, you can easily access competitor analysis data and discover ranked competitor blogs on specific keywords! Such a time-saving feature for content writers, keyword researchers, and SEO users
 
@@ -100,19 +100,19 @@ GetGenie AI SEO plugin utilizes **NLP algorithms** to analyze your text and reco
 
 **[Head to Head Analysis:](https://getgenie.ai/head-to-head-analysis/)**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/pUdfHm81Yy4" title="How to Rank Higher on SERPs with GetGenie AI’s Head-to-Head (H2H) Comparison Tool" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+https://www.youtube.com/watch?v=pUdfHm81Yy4
 
 With the **AI SEO assistant**, you can conduct head-to-head competitor analysis using **Natural Language Processing technology**, identifying **LSIs** and weaknesses to optimize your blog post and surpass specific competitors on the SERP.
 
 **[Content Score:](https://getgenie.ai/docs/seo-assistant/content-score-2/)**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/rLrRSa3CXdM" title="AI SEO Content Score | Measure &amp; Optimize Your Blog Posts using GetGenie AI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+https://www.youtube.com/watch?v=rLrRSa3CXdM
 
-You can also analyze content and get a score based on various factors like keywords, word count, and more using GetGenie AI . Also, this SEO plugin also offers suggestions to improve **on-page SEO** and NLP for better search engine ranking.
+You will also get a score for your blog post (GetGenie-generated or otherwise) based on various factors like keywords, word count, and more using GetGenie AI . Also, this SEO plugin also offers suggestions to improve **on-page SEO** and NLP for better search engine ranking.
 
 ### [WordPress Blog Wizard:](https://getgenie.ai/docs/blog-wizard/getgenie-ai-blog-wizard/)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/5lIwXUS8QHE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+https://www.youtube.com/watch?v=5lIwXUS8QHE
 
 Its **Blog Wizard template** simplifies SEO-optimized blog post creation on WordPress with features like personalized language selection, creativity levels, and output quantity.
 
@@ -120,7 +120,7 @@ You can generate six outputs at once, **customize outlines, rewrite content, and
 
 ### [One Click Blog Generation:](https://getgenie.ai/one-click-blog/)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/_nbEmYHAbGA?si=wEOXaBwv4UE_gA3r" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+https://www.youtube.com/watch?v=_nbEmYHAbGA
 
 GetGenie’s Blog Wizard template introduces a one-click blog generation feature! This feature helps to generate an entire SEO-optimized blog post in just one click.
 
@@ -128,23 +128,23 @@ This **1-click blog generator** of GetGenie AI SEO content writer is compatible 
 
 ### **[GenieChat - Real-time AI Chatbot:](https://getgenie.ai/geniechat/)**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/WZ5s_Kj78iA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+https://www.youtube.com/watch?v=WZ5s_Kj78iA
 
-**GenieChat AI chatbot** (Open AI ChatGPT alternative) is another outstanding addition to GetGenie AI content writer and SEO tool. This advanced AI copilot chatbot comes with **22+ AI chat personalities** to give you a seamless live chatting experience such as Professional AI Writer, AI Product Manager, AI Tech Writer, etc.
+**GenieChat, AI chatbot** (Open AI ChatGPT alternative) is another outstanding addition to GetGenie AI content writer and SEO tool. This advanced AI copilot chatbot comes with **22+ AI chat personalities** to give you a seamless live chatting experience such as Professional AI Writer, AI Product Manager, AI Tech Writer, etc.
 
 ### [Genie Mode:](https://getgenie.ai/template/genie-mode/)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Xz3AI5dskXo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+https://www.youtube.com/watch?v=Xz3AI5dskXo
 
 The Genie Mode, a special feature in the plugin, helps in content creation, generating SEO-optimized content quickly upon providing prompts.
 
-## 🛒 GetGenie Ai WooCommerce Templates:
+## 🛒 GetGenie AI WooCommerce Templates:
 
 - [WooCommerce Product Title:](https://getgenie.ai/template/woocommerce-product-title/) Create catchy titles for your WooCommerce products.
 - [WooCommerce Product Short Description:](https://getgenie.ai/template/woocommerce-product-short-description/) Generate concise product descriptions.
 - [WooCommerce Product Long Description:](https://getgenie.ai/template/woocommerce-product-long-description/) Craft detailed descriptions for your products.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/I_zYdUXlfR0" title="Keyword and SEO Analysis" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+https://www.youtube.com/watch?v=I_zYdUXlfR0
 
 ## 📝 GetGenie AI Copywriting Templates:
 
@@ -154,7 +154,7 @@ The Genie Mode, a special feature in the plugin, helps in content creation, gene
 - [Product Ad Copy:](https://getgenie.ai/template/product-ad-copy/) Generate compelling ad copy for your products.
 - [Taglines:](https://getgenie.ai/template/taglines/) Craft memorable taglines to captivate your audience and promote your brand.
 
-## 🌐 GetGenie AI Social Media Templates:
+## 🌐 GetGenie AI Social Media Templates:
 
 - [Social Media Post/Copy Generator:](https://getgenie.ai/template/social-media-post-copy/) Effortlessly create engaging AI-powered social media content.
 - [Instagram Bio Generator:](https://getgenie.ai/docs/templates/instagram-bio/) Craft captivating bios for your Instagram profile.
@@ -163,7 +163,7 @@ The Genie Mode, a special feature in the plugin, helps in content creation, gene
 - [Twitter Post Generator:](https://getgenie.ai/docs/templates/twitter-post/) Craft concise and impactful tweets for your Twitter feed.
 - [Twitter Thread Generator:](https://getgenie.ai/docs/templates/twitter-thread/) Easily create threaded tweets for longer conversations on Twitter.
 
-## 🎖️Access More Templates of GetGenie AI Assistant:
+## 🎖️ Access More Templates of GetGenie AI Assistant:
 
 - [Title Ideas:](https://getgenie.ai/template/title-ideas/) Generate captivating titles for your content.
 - [Related Topics:](https://getgenie.ai/template/related-topics/) Explore related topics to enrich your content.
@@ -188,50 +188,51 @@ The Genie Mode, a special feature in the plugin, helps in content creation, gene
 - [Definition:](https://getgenie.ai/template/definition/) Generate definitions for terms.
 - [Conclusion:](https://getgenie.ai/template/conclusion/) Create compelling conclusions to your content pieces.
 
-## 🧩GetGenie AI Integration & Compatibility:
+## 🧩 GetGenie AI Integration & Compatibility:
 
-✅ [Plagiarism Checker](https://getgenie.ai/docs/compatibility-and-integration/how-to-check-plagiarism-using-getgenie-ai/): Ensure  AI  content originality with GetGenie  AI’s integrated Copyscape plagiarism checker
+✅ [Plagiarism Checker](https://getgenie.ai/docs/compatibility-and-integration/how-to-check-plagiarism-using-getgenie-ai/): Ensure  AI  content originality with GetGenie  AIâ€™s integrated Copyscape plagiarism checker
 ✅ [Elementor Compatibility](https://getgenie.ai/docs/compatibility-and-integration/getgenie-elementor-compatibility/): Seamlessly integrate SEO writing templates with Elementor for optimized content creation.
 ✅ [Bricks Builder Compatibility](https://getgenie.ai/docs/compatibility-and-integration/bricks-builder-compatibility/): Smoothly generate outlines, rewrite content, and craft landing page copies in Bricks Builder.
 ✅ [Oxygen Builder Compatibility](https://getgenie.ai/docs/compatibility-and-integration/oxygen-builder-compatibility/): Utilize one-click blog solutions and copywriting tools within Oxygen Builder.
 ✅ [FluentCRM Integration](https://getgenie.ai/docs/compatibility-and-integration/fluentcrm/): Enhance em AI l marketing with ready-to-use em AI ls directly in FluentCRM
 
 ### 🧞 [Genie Image - AI Image Generator](https://getgenie.ai/genie-image/)
-<iframe width="853" height="480" src="https://www.youtube.com/embed/ALMNHK2INEA" title="Genie Image: Your AI-Powered Image Generator" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-Presenting the latest addition to the GetGenie  AI – family  the Genie Image WordPress plugin. Powered by Open AI  DALL-E 2, it revolutionizes  AI  image creation with high-resolution, context-aware images directly to your WordPress media library.
+https://www.youtube.com/watch?v=ALMNHK2INEA
+
+Another killer addition to the GetGenie AI's family is the Genie Image WordPress plugin. Powered by Open AI's  DALL-E 2, it revolutionizes  AI  image creation with high-resolution, context-aware images directly to your WordPress media library.
 
 Genie  AI  image is also compatible with any WordPress theme or builder, it saves time and design expenses by eliminating the need for stock photo services and design collaborations.
 
 ## 📢 Webview Playground - GetGenie Ai
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/UAS7BkgWi34" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+https://www.youtube.com/watch?v=UAS7BkgWi34
 
-Explore the **Webview Playground of GetGenie  AI**  content writer,  AI  image generator and SEO plugin - the ultimate assistant for non-WordPress users. **With 37+ templates and SEO features**, including keyword research, SEO, and competitor analysis, you can effortlessly craft blogs, product reviews, and creative copies.
+If you want to use GetGenie without accessing WordPress, explore its **Webview Playground** SaaS interface.  You will get access to all the core features of the AI tool through the interface, including content generation, keyword research, SEO, and competitor analysis.
 
-The intuitive interface of GetGenie  AI  ensures a seamless content writing experience, allowing you to generate SEO-optimized posts with ease. Simply copy the output and paste it into your preferred editor or feed.
+This intuitive interface of ensures a seamless content writing experience and you can generate SEO-optimized posts with ease. Simply copy the output and paste it into your preferred editor or feed.
 
 ### 🎯 TIME TO GET STARTED WITH GETGENIE AI
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/bVoiXJOKBIQ?si=airwjFr4Gtztophf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+https://www.youtube.com/watch?v=bVoiXJOKBIQ
 
 GetGenie  AI  SEO Plugin and content writing tool utilizes the API from [OpenAI](https://beta.openai.com/) along with advanced artificial intelligence algorithms. As a result, GetGenie  AI  not only creates SEO content automatically but also optimizes it to rank well on search engines.
 
 The best part is you can [claim 2500 words free credits](https://getgenie.ai/docs/getting-started/license-settings/) for using GetGenie  AI  content writer and SEO tool to generate free SEO-optimized content.
 
-### 👨‍💻SOCIAL CHANNELS, DOCUMENTATION AND SUPPORT
+### 👨‍💻 »SOCIAL CHANNELS, DOCUMENTATION AND SUPPORT
 
 - ✅ [Contact Out Support Team](https://getgenie.ai/support-ticket/)
 - 🟢 [Check Documentation](https://getgenie.ai/docs/)
 - 🌐 [Like us on Facebook](https://www.facebook.com/getgenieai)
-- 🌐 [Join Our Facebook Community](https://www.facebook.com/getgenieai)
-- 🌐 [Follow us on Instagram](https://www.instagram.com/getgenieai/)
+- 🌐 [Join Our Facebook Community](https://www.facebook.com/getgenieai)
+- 🌐 [Follow us on Instagram](https://www.instagram.com/getgenieai/)
 - 🌐 [Follow us on Twitter](https://twitter.com/getgenieai)
 - 🌐 [Connect on LinkedIn](https://www.linkedin.com/company/getgenieai/posts/)
 - 🌎 [Subscribe Our YouTube Channel](https://www.youtube.com/channel/UCzPzYrqhFgvyvmm0uoLG6Jw)
-- ⭐️ Rate GetGenie on [WordPress](https://wordpress.org/support/plugin/getgenie/reviews/)
+- ⭐️ Rate GetGenie on [WordPress](https://wordpress.org/support/plugin/getgenie/reviews/)
 
-### ☂️ OUR OTHER PLUGINS
+### ☂️ OUR OTHER PLUGINS
 
 ✨ [ElementsKit](https://wpmet.com/plugin/elementskit/)
 ✨ [ShopEngine](https://wpmet.com/plugin/shopengine/)
@@ -243,6 +244,34 @@ The best part is you can [claim 2500 words free credits](https://getgenie.ai/doc
 ✨ [GutenKit](https://wordpress.org/plugins/gutenkit-blocks-addon//)
 
 == Changelog ==
+Version 4.3.2 – 19/01/2026
+Improved: Renamed "GBP Post Generator" to "Google Business Profile Post Generator" for clearer feature discovery.
+Improved: Refined output formatting for the AI Overview Answer Builder and AI FAQ Generator.
+Improved: Added a prominent banner to highlight new features and updates.
+
+Version 4.3.1 – 11/01/2026
+Fixed: Security issue in clear endpoint (IDOR) — users can now only delete their own GetGenie Chat posts.
+
+Version 4.3.0 – 04/01/2026
+Added: 4 New AI Writing Templates (2 for AI Search Visibility & 2 for Local SEO):
+  - AI Overview Answer Builder – Craft answers optimized for Google's AI Overview.
+  - AI FAQ Generator – Generate relevant FAQs for your content.
+  - GBP Post Generator – Create engaging Google Business Profile posts.
+  - Local Service Page Copy Generator – Build high-converting local service pages.
+  Note: All new templates available in both WordPress plugin & Genie Playground.
+Improved: Improved clarity and guidance in the "Insert text in editor" instruction message.
+Improved: User can insert text on editor again on failure attempt.
+
+Version 4.2.5 – 18/12/2025
+Fixed: Write using templates sidebar issue solved.
+
+Version 4.2.4 – 15/12/2025
+Added: Highlight for new coming templates with badge.
+
+Version 4.2.3 – 19/10/2025
+Improved: Added disabled state and loading spinner for smoother limit data retrieval.
+Improved: Improved license activation notice.
+
 Version 4.2.2 – 03/08/2025
 Added: Multiple Google Search Console (GSC) site add option with data fetching support
 Added: Site-specific tracked keywords management.
@@ -687,6 +716,7 @@ Improved: changed chart library to minimize js file size.
 Fixed: blog statistics UI design issue.  
 Fixed: WP admin menu overriding with posts.
 
+
 Version 1.0.6  
 Improved: Ai data visualization.  
 Added: caching system for limit usage stats.  
@@ -717,13 +747,13 @@ WordPress 5.5+
 
 == Installation ==
 
-**Installation Process->1:** Go to the WordPress Dashboard ➔ Plugins ➔Add New ➔ Search for “GetGenie Ai” ➔Install and Activate it.
+**Installation Process->1:** Go to the WordPress Dashboard ➔ Plugins ➔ Add New ➔ Search for ➔ “GetGenie Ai” ➔ Install and Activate it.
 
 **OR**
 
-**Step->1:** Unzip the Getgenie Folder if it is Zipped➔Upload it to the /wp-content/plugins/plugin-name directory.
+**Step->1:** Unzip the Getgenie Folder if it is Zipped ➔ Upload it to the /wp-content/plugins/plugin-name directory.
 
-**Step->2:** After successful installation, just go to Installed Plugins➔click on the “activate” button to activate GetGenie Ai.
+**Step->2:** After successful installation, just go to Installed Plugins ➔ click on the “activate” button to activate GetGenie Ai.
 
 **Step->3:** All Settings will be found in the GetGenie Ai menu.
 
@@ -757,7 +787,7 @@ GetGenie Ai offers a 100% Hassle-free Money-back Guarantee if you feel any issue
 No, all the monthly and yearly packages of GetGenie Ai are accessible by UNLIMITED account user logins. You just need to invite your team members to collaborate and use GetGenie Ai together.
 
 = Do you offer a free trial? =
-YES, GetGenie Ai SEO content writer offers a free trial of 2500 words credit. You can install the GetGenie WordPress plugin to your WordPress website and claim a free license. Then, you can generate content using 37+ templates of GetGenie Ai and it won’t require credit cards.
+YES, GetGenie Ai SEO content writer offers a free trial of 2500 words credit. You can install the GetGenie WordPress plugin to your WordPress website and claim a free license. Then, you can generate content using 37+ templates of GetGenie Ai and it won't require credit cards.
 
 = Are there hidden charges/contractual bindings? =
 NO! There are no hidden charges or contractual bindings. GetGenie Ai team keeps everything transparent with the users.
@@ -766,7 +796,7 @@ NO! There are no hidden charges or contractual bindings. GetGenie Ai team keeps 
 You can upgrade your plan or buy monthly or bonus packs if you hit your plan's word limits.
 
 = Do you have a support system for GetGenie Ai? =
-YES! GetGenie Ai has a 24/4 dedicated support system to solve any issues by the users. You can reach out to [support@getgenie.ai](mailto:support@getgenie.ai) anytime for any issues/questions or to upgrade your plans. GetGenie Ai’s expert support team will help you via live chat, email, doc, or video tutorial.
+YES! GetGenie Ai has a 24/4 dedicated support system to solve any issues by the users. You can reach out to [support@getgenie.ai](mailto:support@getgenie.ai) anytime for any issues/questions or to upgrade your plans. GetGenie Ai's expert support team will help you via live chat, email, doc, or video tutorial.
 
 = What are the available payment methods? =
 We accept all major credit cards and debit cards, wire transfers, and PayPal.

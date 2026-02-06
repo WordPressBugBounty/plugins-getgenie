@@ -53,7 +53,7 @@ class SideMenuProvider
             add_submenu_page(
                 GETGENIE_TEXTDOMAIN,
                 __('SEO Insights', 'getgenie'),
-               __('SEO Insights ', 'getgenie').'<span class="seo-insights-badge">New</span>',
+               __('SEO Insights ', 'getgenie'),
                 'publish_posts',
                 $this->menu_slug.'#genie-ska'
             );
@@ -61,7 +61,7 @@ class SideMenuProvider
             add_submenu_page(
                 GETGENIE_TEXTDOMAIN,
                 esc_html__("Get Genie | AI Writing", 'getgenie'),
-                esc_html__("AI Writing", 'getgenie'),
+                esc_html__("AI Writing", 'getgenie').'<span class="ai-writing-badge">New</span>',
                 'publish_posts',
                 $this->menu_slug.'#write-for-me'
             );
