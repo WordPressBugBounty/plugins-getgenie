@@ -2,8 +2,8 @@
 
 Contributors: Roxnor, Ataurr
 Tags: ai, ai content writer, keyword research, gpt4o, seo plugin
-Tested up to: 6.9
-Stable tag: 4.3.2
+Tested up to: 6.8.1
+Stable tag: 4.3.3
 Requires PHP: 7.4
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -244,6 +244,10 @@ The best part is you can [claim 2500 words free credits](https://getgenie.ai/doc
 ✨ [GutenKit](https://wordpress.org/plugins/gutenkit-blocks-addon//)
 
 == Changelog ==
+Version 4.3.3 – 11/03/2026
+Fixed: Stored Cross-Site Scripting (XSS) in Genie Chat / Competitor UI.
+Fixed: Missing authorization (IDOR) vulnerability.
+
 Version 4.3.2 – 19/01/2026
 Improved: Renamed "GBP Post Generator" to "Google Business Profile Post Generator" for clearer feature discovery.
 Improved: Refined output formatting for the AI Overview Answer Builder and AI FAQ Generator.

@@ -75,6 +75,15 @@ class GetGenieChat
             $conversation_id = wp_insert_post($record);
             $message = 'Chat created successfully.';
         } else {
+            // Verify the post exists, belongs to current user, and is the correct post type
+            $post = get_post($conversation_id);
+            if (!$post || $post->post_type !== 'getgenie_chat' || (int) $post->post_author !== get_current_user_id()) {
+                return [
+                    'status'  => 'fail',
+                    'message' => ['Access denied. You can only update your own chat conversations.'],
+                ];
+            }
+
             $record = array(
                 'ID'          => $conversation_id,
                 'post_title'  => $req->templateSlug . '-' . date('Y-m-d H:i:s'),

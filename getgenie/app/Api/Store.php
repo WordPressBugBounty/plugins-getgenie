@@ -29,7 +29,9 @@ class Store
             ];
         }
 
-        if (!is_user_logged_in() || !current_user_can('publish_posts')) {
+        $post_id = $request['post_id'];
+
+        if (!is_user_logged_in() || !current_user_can('edit_post', $post_id)) {
             return [
                 'status'  => 'fail',
                 'message' => ['Access denied.'],
@@ -37,8 +39,6 @@ class Store
         }
 
         $data = $request->get_body();
-
-        $post_id = $request['post_id'];
         $key     = $request['key'];
         $prefix  = GETGENIE_BLOGWIZARD_PREFIX;
 
@@ -70,6 +70,9 @@ class Store
             $data = json_encode($serpData);
 
         }
+
+        // Sanitize the data to prevent XSS attacks
+        $data = wp_kses_post($data);
 
         update_post_meta($post_id, $prefix . $key, wp_slash($data));
 
