@@ -1,13 +1,18 @@
 <?php
 
 namespace GenieAi\App\Providers;
+
+use GenieAi\App\Services\RoleManager\RoleManager;
+
 class SideMenuProvider
 {
 
     public $menu_slug;
+    private $role_manager;
 
     public function __construct()
     {
+        $this->role_manager = new RoleManager();
         $this->initLeftSideMenu();
         add_action('admin_bar_menu', [$this, 'initTopBarMenu'], 100);
     }
@@ -16,15 +21,18 @@ class SideMenuProvider
         if(!is_user_logged_in() || !current_user_can('publish_posts')){
             return;
         }
-        
-        $admin_bar->add_menu( array(
-            'id'    => 'getgenie-template-list',
-            'title' => 'GetGenie AI Writing',
-            'href'  => admin_url('admin.php?page=getgenie#write-for-me'),
-            'meta'  => array(   
-                'title' => __('GetGenie AI Writing', 'getgenie'),
-            ),
-        ));
+
+        // Check AI Writing permission
+        if($this->role_manager->is_allow_ai_writing()){
+            $admin_bar->add_menu( array(
+                'id'    => 'getgenie-template-list',
+                'title' => 'GetGenie AI Writing',
+                'href'  => admin_url('admin.php?page=getgenie#write-for-me'),
+                'meta'  => array(   
+                    'title' => __('GetGenie AI Writing', 'getgenie'),
+                ),
+            ));
+        }
 
         $admin_bar->add_menu( array(
             'id'    => 'getgenie-chat',
@@ -40,24 +48,25 @@ class SideMenuProvider
         $this->menu_slug = admin_url('admin.php?page=' .  GETGENIE_TEXTDOMAIN);
 
         add_action('admin_menu', function () {
-            add_menu_page(
-                esc_html__("Get Genie", 'getgenie'),
-                esc_html__("Get Genie", 'getgenie'),
-                'publish_posts',
-                GETGENIE_TEXTDOMAIN,
-                [$this, 'writeForMePageData'],
-                 GETGENIE_URL.'/assets/dist/admin/images/genie-head.svg',
-                5
-            );
-
             add_submenu_page(
                 GETGENIE_TEXTDOMAIN,
-                __('SEO Insights', 'getgenie'),
-               __('SEO Insights ', 'getgenie'),
+                esc_html__("Get Genie | Getting Started", 'getgenie'),
+                esc_html__("Getting Started", 'getgenie'),
                 'publish_posts',
-                $this->menu_slug.'#genie-ska'
+                $this->menu_slug.'#getting-started'
             );
-            
+
+            // Keyword Research - Check permission
+            if($this->role_manager->is_allow_keyword_research()){
+                add_submenu_page(
+                    GETGENIE_TEXTDOMAIN,
+                    esc_html__("Keyword Research | Get Genie", 'getgenie'),
+                    esc_html__("Keyword Research", 'getgenie'),
+                    'publish_posts',
+                    $this->menu_slug.'#keyword-research'
+                );
+            }
+
             add_submenu_page(
                 GETGENIE_TEXTDOMAIN,
                 esc_html__("Get Genie | AI Writing", 'getgenie'),
@@ -68,18 +77,28 @@ class SideMenuProvider
 
             add_submenu_page(
                 GETGENIE_TEXTDOMAIN,
-                esc_html__("Get Genie | Getting Started", 'getgenie'),
-                esc_html__("Getting Started", 'getgenie'),
+                __('SEO Insights', 'getgenie'),
+               __('SEO Insights ', 'getgenie'),
                 'publish_posts',
-                $this->menu_slug.'#getting-started'
+                $this->menu_slug.'#genie-ska'
             );
 
             add_submenu_page(
                 GETGENIE_TEXTDOMAIN,
-                esc_html__("Keyword Research | Get Genie", 'getgenie'),
-                esc_html__("Keyword Research", 'getgenie'),
+                esc_html__("Role Management | Get Genie", 'getgenie'),
+                esc_html__("Role Management", 'getgenie'),
+                'manage_options',
+                $this->menu_slug.'#role-manager'
+            );
+
+            add_menu_page(
+                esc_html__("Get Genie", 'getgenie'),
+                esc_html__("Get Genie", 'getgenie'),
                 'publish_posts',
-                $this->menu_slug.'#keyword-research'
+                GETGENIE_TEXTDOMAIN,
+                [$this, 'writeForMePageData'],
+                 GETGENIE_URL.'/assets/dist/admin/images/genie-head.svg',
+                5
             );
 
             // add_submenu_page(

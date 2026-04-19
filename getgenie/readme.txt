@@ -3,7 +3,7 @@
 Contributors: Roxnor, Ataurr
 Tags: ai, ai content writer, keyword research, gpt4o, seo plugin
 Tested up to: 6.8.1
-Stable tag: 4.3.3
+Stable tag: 4.4.0
 Requires PHP: 7.4
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -244,6 +244,12 @@ The best part is you can [claim 2500 words free credits](https://getgenie.ai/doc
 ✨ [GutenKit](https://wordpress.org/plugins/gutenkit-blocks-addon//)
 
 == Changelog ==
+Version 4.4.0 – 19/04/2026
+Added: "Boss Mode" — Enables giving voice command in Genie Mode &  Genie Chat for enhanced prompting.
+Added: Role management for giving specific access to specific role.
+Added: Keyword research made available on playground.
+Improved: Sidebar menu items reshuffled for a streamlined user experience.
+
 Version 4.3.3 – 11/03/2026
 Fixed: Stored Cross-Site Scripting (XSS) in Genie Chat / Competitor UI.
 Fixed: Missing authorization (IDOR) vulnerability.

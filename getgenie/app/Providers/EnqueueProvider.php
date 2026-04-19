@@ -87,6 +87,25 @@ class EnqueueProvider
 			wp_enqueue_script('getgenie-handler-scripts', GETGENIE_URL . 'assets/dist/admin/js/app-handler.js', ['wp-plugins', 'wp-i18n', 'wp-element', 'wp-dom', 'wp-data'], GETGENIE_VERSION, true);
 			wp_enqueue_script('getgenie-common-scripts', GETGENIE_URL . 'assets/dist/admin/js/common-scripts.js', ['wp-plugins', 'wp-i18n', 'wp-element', 'wp-dom', 'wp-data'], GETGENIE_VERSION, true);
 			wp_enqueue_script('getgenie-templates-scripts', GETGENIE_URL . 'assets/dist/admin/js/templates-scripts.js', ['wp-plugins', 'wp-i18n', 'wp-element', 'wp-dom', 'wp-data'], GETGENIE_VERSION, true);
+			
+			$token = new \GenieAi\App\Auth\TokenManager();
+			$_nonce = wp_create_nonce('wp_rest');
+
+			$config = [
+				'config' => [
+					'version' => GETGENIE_VERSION,
+					'restNonce' => $_nonce,
+					'siteUrl' => get_site_url(),
+					'assetsUrl' => GETGENIE_URL . 'assets/',
+					'parserApi' => 'https://bridge.getgenie.ai/',
+					'siteToken' => get_option('getgenie_site_token', ''),
+					'authToken' => $token->generate(), // access_denied or 4gb3rv3dyvy3h59gvwscdt3rerf23
+					'currentUserRole' => $this->current_user_role(),
+					'roleManagementConfig' => $this->role_management_config(),
+				]
+			];
+
+			wp_localize_script('getgenie-common-scripts', 'genieSKA', $config);
 
 			if (isset($_GET['page']) && $_GET['page'] == 'fluentcrm-admin') {
 				wp_enqueue_script('getgenie-fluent-scripts', GETGENIE_URL . 'assets/dist/admin/js/fluent-crm.js', ['wp-plugins', 'wp-i18n', 'wp-element', 'wp-dom', 'wp-data'], GETGENIE_VERSION, true);
@@ -109,22 +128,6 @@ class EnqueueProvider
 				wp_enqueue_script('getgenie-ska-admin-scripts-handle', GETGENIE_URL . 'assets/dist/seo-overview/admin/js/wp-admin-pages.js', ['getgenie-antd-scripts', 'getgenie-handler-scripts', 'getgenie-common-scripts', 'getgenie-admin-pages-scripts'], GETGENIE_VERSION, true);
 				wp_enqueue_script('getgenie-ska-admin-scripts-integrations', GETGENIE_URL . 'assets/dist/seo-overview/admin/js/wp-integrations.js', ['wp-plugins', 'wp-edit-post', 'wp-i18n', 'wp-element', 'wp-dom', 'wp-data'], GETGENIE_VERSION, true);
 
-				$token = new \GenieAi\App\Auth\TokenManager();
-				$_nonce = wp_create_nonce('wp_rest');
-
-				$config = [
-					'config' => [
-						'version' => GETGENIE_VERSION,
-						'restNonce' => $_nonce,
-						'siteUrl' => get_site_url(),
-						'assetsUrl' => GETGENIE_URL . 'assets/',
-						'parserApi' => 'https://bridge.getgenie.ai/',
-						'siteToken' => get_option('getgenie_site_token', ''),
-						'authToken' => $token->generate(), // access_denied or 4gb3rv3dyvy3h59gvwscdt3rerf23
-					]
-				];
-
-				wp_localize_script('getgenie-ska-admin-scripts-app', 'genieSKA', $config);
 			}
 			if (
 				($current_screen->is_block_editor() || ($current_screen->id == 'post'
@@ -146,6 +149,29 @@ class EnqueueProvider
 			wp_set_script_translations('getgenie-handler-scripts', 'getgenie', GETGENIE_DIR . 'languages');
 			wp_set_script_translations('getgenie-templates-scripts', 'getgenie', GETGENIE_DIR . 'languages');
 		}
+	}
+
+	/**
+	 * Get role management configuration
+	 * 
+	 * @access public
+	 * @return array The role management configuration.
+	 */
+	public function role_management_config()
+	{
+		return get_option('genie_role_management_config', []);
+	}
+
+	/**
+	 * Get current user role
+	 * 
+	 * @access public
+	 * @return string The current user role.
+	 */
+	public function current_user_role()
+	{
+		$user = wp_get_current_user();
+		return $user->roles[0] ?? '';
 	}
 
 	public function globalScripts()
