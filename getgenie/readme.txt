@@ -1,30 +1,30 @@
-===GetGenie – AI Content Writer with Keyword Research & SEO Tracking Tools===
+===GetGenie – AI Content Writer with Keyword Research & SEO Tracking===
 
 Contributors: Roxnor, Ataurr
 Tags: ai, ai content writer, keyword research, gpt4o, seo plugin
-Tested up to: 6.8.1
-Stable tag: 4.4.0
+Tested up to: 7.0
+Stable tag: 4.4.1
 Requires PHP: 7.4
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
-GPT-4o powered AI content writer with 37+ templates, chatbot, AI image, NLP keyword research, SEO analysis for WordPress, Gutenberg & Elementor.
+GPT-4o powered AI content writer with 40+ templates, chatbot, AI image, NLP keyword research, SEO analysis for WordPress, Gutenberg & Elementor.
 
 == Description ==
 
-**[GetGenie](https://getgenie.ai/)** is an **All-in-one WordPress AI SEO & Content Assistant** that lets you write content faster and optimize content smarter. It helps your content rank higher in SERPs, so you can drive qualified traffic & convert them.  You can also use the AI tool's  ChatGPT-like AI Chat Assistant, **Genie Chat** for ideation, research, and getting instant responses.  
+**[GetGenie](https://getgenie.ai/)** is an **All-in-one WordPress AI SEO & Content Assistant** that lets you write content faster and optimize content smarter. The **AI Writing Tool** now also works as a Web App through its **[Playground](https://getgenie.ai/saas-playground/)** access for both content creation & optimization. It helps your content rank higher in SERPs and drive qualified traffic to enhance conversion chances. You can also use the AI tool's ChatGPT-like AI Chat Assistant, **[GenieChat](https://getgenie.ai/geniechat/)** for conversations with 22+ AI personalities for getting instant expert responses.  
 
-The AI content writer is developed by Open AI's  advanced language models like GPT-3.5, GPT-4, GPT-4o, DaVinci, and more. This enables GetGenie to understand user prompts optimally and generate context-aware & human-like content. 
-
-With GetGenie, you can perform **NLP & semantic keyword research, SERP analysis, & H2H competitor analysis**, and create SEO-optimized blog posts in minutes. 
+With GetGenie, you can do **NLP & semantic keyword research, SERP analysis, & H2H competitor analysis**, and create **SEO-optimized blog posts** in minutes. 
 
 https://www.youtube.com/watch?v=j4lElegQNQg
 
-The AI Content Writer and SEO plugin comes with **37+ AI writing templates** that you can utilize to generate diverse content and copy types.  **WooCommerce product descriptions**, **social media copies**, and **product ad copies**, to name a few. 
+The AI SEO Content Writer comes with **[40+ AI writing templates](https://getgenie.ai/template/)** that you can utilize to generate diverse content and copy types.  **WooCommerce product descriptions**, **social media copies**, and **product ad copies**, to name a few. However, if you want to create multiple content types flexibly like ChatGPT, use **[Genie Mode](https://getgenie.ai/template/genie-mode/)** for prompt-based content outputs.
+
+GetGenie now features Boss Mode (Voice Command) that will let you speak your prompts in both GenieChat & Genie Mode. This will allow you to skip continuous typing and get faster outputs with full accuracy. Also, now your admins can control access to GetGenie's AI Writing, Keyword Research, and SEO Insights through its role management feature.    
 
 | [GetGenie Home Page](https://getgenie.ai/) | [Template Page](https://getgenie.ai/template/) | [Blog](https://getgenie.ai/blog/) | [Documentation](https://getgenie.ai/docs/) | [Need Support?](https://getgenie.ai/support-ticket/) | [How to get License Key](https://getgenie.ai/docs/getting-started/license-settings/) | [Claim Free Credits](https://getgenie.ai/docs/getting-started/how-to-claim-getgenie-free-credits/) |
 
-## Key Features of GetGenie AI
+## Key Features of GetGenie 
 
 ✅  NLP & Semantic Keyword Suggestions
 
@@ -36,7 +36,7 @@ The AI Content Writer and SEO plugin comes with **37+ AI writing templates** tha
 
 ✅  SEO Performance Insights
 
-✅  37+ AI content & Copywriting Templates
+✅  40+ AI content & Copywriting Templates
 
 ✅  100% Unique & Plagiarism-free Content
 
@@ -52,17 +52,17 @@ The AI Content Writer and SEO plugin comes with **37+ AI writing templates** tha
 
 ✅  WooCommerce Product Description Generator
 
-✅  Plagiarism Detector Integration
+✅  Boss Mode (Voice Command)
 
-✅  Webview Editor (Playground) for Non-WordPress Users
+✅  Web App (Playground) for Non-WordPress Users
 
-## GetGenie AI Writer's Exclusive SEO & Content Features 
+## GetGenie AI Writer's Exclusive Content & SEO Features 
 
-GetGenie **AI SEO content writer** displays high-intent **NLP, semantic & related keywords** on your input given keyword. This allows you to add depth to your content, satisfy search intent, and create high-quality content.  
+GetGenie **AI SEO content writer** displays high-intent **NLP, semantic & related keywords** on your input keywords. This allows you to add depth to your content, satisfy search intent, and create high-quality content.  
 
 Besides generating long-form content, you can create a diverse range of short-form content, including product titles, headlines, descriptions, taglines, summary bullets, meta descriptions, content outlines, Call to actions, etc. 
 
-Also, the AI SEO tool shows useful AI keyword suggestions & valuable competitor data that will add value to your content. 
+Also, the AI SEO Content tool shows useful AI keyword suggestions & valuable competitor data that will help you make your content valuable. 
 
 **[Keyword Research & Analysis](https://getgenie.ai/keyword-research/)**
 
@@ -244,6 +244,10 @@ The best part is you can [claim 2500 words free credits](https://getgenie.ai/doc
 ✨ [GutenKit](https://wordpress.org/plugins/gutenkit-blocks-addon//)
 
 == Changelog ==
+Version 4.4.1 – 23/05/2026
+Added: Confirmed compatibility with WordPress 7.0 (latest stable release).
+Improved: Refined the readme for greater clarity and understanding.
+
 Version 4.4.0 – 19/04/2026
 Added: "Boss Mode" — Enables giving voice command in Genie Mode &  Genie Chat for enhanced prompting.
 Added: Role management for giving specific access to specific role.
