@@ -5,7 +5,7 @@
  * Description:  GetGenie AI is the most intuitive A.I Content Wordpress Plugin that can help you save time and write smarter.
  * Plugin URI: https://getgenie.ai/
  * Author: getgenieai
- * Version: 4.4.1
+ * Version: 4.4.2
  * Author URI: https://getgenie.ai/
  *
  * Text Domain: getgenie
@@ -20,7 +20,7 @@
 
 defined('ABSPATH') || exit;
 
-define('GETGENIE_VERSION', '4.4.1');
+define('GETGENIE_VERSION', '4.4.2');
 define('GETGENIE_TEXTDOMAIN', 'getgenie');
 define('GETGENIE_BASENAME', plugin_basename(__FILE__));
 define('GETGENIE_URL', trailingslashit(plugin_dir_url(__FILE__)));
@@ -142,12 +142,26 @@ function getgenie_templates()
 add_action('elementor/editor/after_enqueue_scripts', 'genei_editor_script');
 add_action('elementor/editor/after_enqueue_scripts', 'genie_header_script_data');
 add_action('admin_head', 'genie_header_script_data');
-if (isset($_GET['bricks'])) {
-    add_action('wp_enqueue_scripts', 'genie_header_script_data');
-}
+add_action('wp', 'genie_register_frontend_builder_scripts');
 
-if (isset($_GET['ct_builder'])) {
-    add_action('wp_enqueue_scripts', 'genie_header_script_data');
+/**
+ * Register scripts for frontend builders like Bricks Builder and Oxygen Builder
+ * 
+ * @return void
+ */
+function genie_register_frontend_builder_scripts()
+{
+    if (!is_user_logged_in() || !current_user_can('edit_posts')) {
+        return;
+    }
+
+    if (isset($_GET['bricks'])) {
+        add_action('wp_enqueue_scripts', 'genie_header_script_data');
+    }
+
+    if (isset($_GET['ct_builder'])) {
+        add_action('wp_enqueue_scripts', 'genie_header_script_data');
+    }
 }
 
 function genei_editor_script()
