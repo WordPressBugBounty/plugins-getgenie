@@ -5,7 +5,7 @@
  * Description:  GetGenie AI is the most intuitive A.I Content Wordpress Plugin that can help you save time and write smarter.
  * Plugin URI: https://getgenie.ai/
  * Author: getgenieai
- * Version: 4.4.2
+ * Version: 4.4.3
  * Author URI: https://getgenie.ai/
  *
  * Text Domain: getgenie
@@ -20,7 +20,7 @@
 
 defined('ABSPATH') || exit;
 
-define('GETGENIE_VERSION', '4.4.2');
+define('GETGENIE_VERSION', '4.4.3');
 define('GETGENIE_TEXTDOMAIN', 'getgenie');
 define('GETGENIE_BASENAME', plugin_basename(__FILE__));
 define('GETGENIE_URL', trailingslashit(plugin_dir_url(__FILE__)));
@@ -171,6 +171,10 @@ function genei_editor_script()
 
 function genie_header_script_data()
 {
+
+    if (!is_user_logged_in() || !current_user_can('publish_posts')) {
+      return;
+    }
 
     $wizard_screen = null;
     $is_block_editor = null;

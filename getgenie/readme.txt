@@ -3,7 +3,7 @@
 Contributors: Roxnor, Ataurr
 Tags: ai, ai content writer, keyword research, gpt4o, seo plugin
 Tested up to: 7.0
-Stable tag: 4.4.2
+Stable tag: 4.4.3
 Requires PHP: 7.4
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -244,6 +244,9 @@ The best part is you can [claim 2500 words free credits](https://getgenie.ai/doc
 ✨ [GutenKit](https://wordpress.org/plugins/gutenkit-blocks-addon//)
 
 == Changelog ==
+Version 4.4.3 – 16/06/2026
+Fixed: Security issue related to auth and site token exposure by restricting users with `publish_posts` capability.
+
 Version 4.4.2 – 07/06/2026
 Fixed: Security issue related to auth and site token exposure.
 
