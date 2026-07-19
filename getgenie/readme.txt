@@ -1,18 +1,25 @@
-===GetGenie – AI Content Writer with Keyword Research & SEO Tracking===
-
+=== GetGenie – AI SEO Assistant & Content Writer with Keyword Research, AEO & GEO ===
 Contributors: Roxnor, Ataurr
-Tags: ai, ai content writer, keyword research, gpt4o, seo plugin
+Tags: ai SEO, ai Content, Content Writer, keyword research, SEO plugin
 Tested up to: 7.0
-Stable tag: 4.4.3
+Stable tag: 4.5.0
 Requires PHP: 7.4
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
-GPT-4o powered AI content writer with 40+ templates, chatbot, AI image, NLP keyword research, SEO analysis for WordPress, Gutenberg & Elementor.
+AI powered SEO assistant & content writer with 40+ templates, chatbot, NLP keyword research, AEO, GEO, SEO analysis for WordPress,  
 
 == Description ==
 
-**[GetGenie](https://getgenie.ai/)** is an **All-in-one WordPress AI SEO & Content Assistant** that lets you write content faster and optimize content smarter. The **AI Writing Tool** now also works as a Web App through its **[Playground](https://getgenie.ai/saas-playground/)** access for both content creation & optimization. It helps your content rank higher in SERPs and drive qualified traffic to enhance conversion chances. You can also use the AI tool's ChatGPT-like AI Chat Assistant, **[GenieChat](https://getgenie.ai/geniechat/)** for conversations with 22+ AI personalities for getting instant expert responses.  
+**[GetGenie](https://getgenie.ai/)** is the #1 AI SEO assistant for WordPress — the only AI plugin that combines AI keyword research, competitor analysis, content writing, AEO, GEO, and SEO performance tracking in a single dashboard inside WordPress.
+
+Unlike standalone AI content writers or generic SEO plugins, GetGenie is a true AI SEO content writer: it researches your topic with NLP keyword data, analyzes SERP competitors, writes SEO-optimized content, scores it for AI Overviews readiness, and tracks your ranking progress — all without leaving your WordPress editor.
+
+Trusted by 80,000+ active WordPress users, GetGenie is the ai SEO plugin SEOs, bloggers, content marketers, and agencies rely on to rank in Google AND get cited by AI search engines like ChatGPT, Perplexity, and Google AI Overviews. Use GetGenie as your AI writer, SEO assistant, ai chatbot, keyword researcher, competitor analysis tool, and ai marketing plugin, all in one.
+
+## AI Content Writer with Keyword Research & SEO Tracking
+
+This WordPress AI SEO & Content assistant lets you write content faster and optimize content smarter. The **AI Writing Tool** now also works as a Web App through its **[Playground](https://getgenie.ai/saas-playground/)** access for both content creation & optimization. It helps your content rank higher in SERPs and drive qualified traffic to enhance conversion chances. You can also use the AI tool's ChatGPT-like AI Chat Assistant, **[GenieChat](https://getgenie.ai/geniechat/)** for conversations with 22+ AI personalities for getting instant expert responses.  
 
 With GetGenie, you can do **NLP & semantic keyword research, SERP analysis, & H2H competitor analysis**, and create **SEO-optimized blog posts** in minutes. 
 
@@ -55,6 +62,23 @@ GetGenie now features Boss Mode (Voice Command) that will let you speak your pro
 ✅  Boss Mode (Voice Command)
 
 ✅  Web App (Playground) for Non-WordPress Users
+
+### 🤖 AEO (Answer Engine Optimization) — Rank in AI Overviews & Get Cited by AI
+
+Search is changing. Google AI Overviews, ChatGPT, and Perplexity now 
+answer questions directly — and the content they cite gets massive 
+zero-click visibility. GetGenie is the only WordPress AI SEO plugin 
+built to help you get cited by AI search engines.
+
+**AI Readiness Score:** Get a live score as you write measuring how ready your content is to be cited in Google AI Overviews and LLMs. GetGenie checks NLP keyword coverage, topical authority, and answer-first structure in real time.
+
+**[AI Overview Answer Builder:](https://getgenie.ai/template/ai-overview-answer-builder/)** 
+Create structured, answer-first content designed to appear in Google AI Overviews. GetGenie formats your content the way AI search engines prefer to surface and cite responses.
+
+**[AI FAQ Generator:](https://getgenie.ai/template/ai-faq-generator/)** 
+Generate FAQs specifically structured for AI search visibility. Make your blog posts and landing pages citable in AI Overviews, ChatGPT, Perplexity, and other LLM platforms.
+
+GetGenie is the first and only WordPress SEO plugin with native AEO (Answer Engine Optimization) support built directly into the writing workflow.
 
 ## GetGenie AI Writer's Exclusive Content & SEO Features 
 
@@ -137,6 +161,18 @@ https://www.youtube.com/watch?v=WZ5s_Kj78iA
 https://www.youtube.com/watch?v=Xz3AI5dskXo
 
 The Genie Mode, a special feature in the plugin, helps in content creation, generating SEO-optimized content quickly upon providing prompts.
+
+## 📍 Local SEO Templates (New)
+
+**[GBP Post Generator:](https://getgenie.ai/template/gbp-post-generator/)** 
+Create diverse, catchy Google Business Profile posts in seconds. Improve 
+your local SEO visibility with consistent, AI-generated GBP content 
+without the manual effort.
+
+**[Local Service Page Copy Generator:](https://getgenie.ai/template/local-service-page-copy-generator/)** 
+Craft conversion-friendly local service page copies in a flash. Perfect 
+for agencies, local businesses, and freelancers managing multiple 
+location-based clients.
 
 ## 🛒 GetGenie AI WooCommerce Templates:
 
@@ -244,6 +280,10 @@ The best part is you can [claim 2500 words free credits](https://getgenie.ai/doc
 ✨ [GutenKit](https://wordpress.org/plugins/gutenkit-blocks-addon//)
 
 == Changelog ==
+Version 4.5.0 – 19/07/2026
+Added: Google Analytics 4 (GA4) integration for AI traffic analytics by source, page, and date.
+Fixed: Unauthenticated Reflected XSS vulnerability.
+
 Version 4.4.3 – 16/06/2026
 Fixed: Security issue related to auth and site token exposure by restricting users with `publish_posts` capability.
 
