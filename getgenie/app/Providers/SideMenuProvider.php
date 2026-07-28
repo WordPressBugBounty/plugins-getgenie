@@ -26,7 +26,7 @@ class SideMenuProvider
         if($this->role_manager->is_allow_ai_writing()){
             $admin_bar->add_menu( array(
                 'id'    => 'getgenie-template-list',
-                'title' => 'GetGenie AI Writing',
+                'title' => __('GetGenie AI Writing', 'getgenie'),
                 'href'  => admin_url('admin.php?page=getgenie#write-for-me'),
                 'meta'  => array(   
                     'title' => __('GetGenie AI Writing', 'getgenie'),

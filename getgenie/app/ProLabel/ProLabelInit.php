@@ -80,7 +80,7 @@ class ProLabelInit
         // show notice if getgenie license is not activated.
         if (!get_option('getgenie_site_token')) {
 
-            $banner_msg = "Just one step left! Click below and activate your license to start unlocking GetGenie's full potential instantly.";
+            $banner_msg = __("Just one step left! Click below and activate your license to start unlocking GetGenie's full potential instantly.", 'getgenie');
             
             //if after 24 hours of plugin activation the message will be changed.
             $activation_time = get_option('getgenie_install_date', false);

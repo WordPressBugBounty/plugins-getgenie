@@ -148,6 +148,7 @@ class EnqueueProvider
 			wp_set_script_translations('getgenie-common-scripts', 'getgenie', GETGENIE_DIR . 'languages');
 			wp_set_script_translations('getgenie-handler-scripts', 'getgenie', GETGENIE_DIR . 'languages');
 			wp_set_script_translations('getgenie-templates-scripts', 'getgenie', GETGENIE_DIR . 'languages');
+			wp_set_script_translations('getgenie-ska-admin-scripts-integrations', 'getgenie', GETGENIE_DIR . 'languages');
 		}
 	}
 

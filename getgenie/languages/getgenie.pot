@@ -1,38 +1,46 @@
-# Copyright (C) 2023 getgenieai
+# Copyright (C) 2026 getgenieai
 # This file is distributed under the GPL3 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: GetGenie AI 3.8.8\n"
+"Project-Id-Version: GetGenie AI 4.5.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/getgenie\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2023-12-07T09:21:07+00:00\n"
+"POT-Creation-Date: 2026-07-27T11:11:31+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.8.1\n"
+"X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: getgenie\n"
 
 #. Plugin Name of the plugin
+#: getgenie.php
 msgid "GetGenie AI"
 msgstr ""
 
 #. Plugin URI of the plugin
 #. Author URI of the plugin
+#: getgenie.php
 msgid "https://getgenie.ai/"
 msgstr ""
 
 #. Description of the plugin
+#: getgenie.php
 msgid "GetGenie AI is the most intuitive A.I Content Wordpress Plugin that can help you save time and write smarter."
 msgstr ""
 
 #. Author of the plugin
+#: getgenie.php
 msgid "getgenieai"
 msgstr ""
 
 #: app/ProLabel/GenieStories.php:252
 msgid "Genie's Stories"
+msgstr ""
+
+#: app/ProLabel/ProLabelInit.php:83
+msgid "Just one step left! Click below and activate your license to start unlocking GetGenie's full potential instantly."
 msgstr ""
 
 #: app/ProLabel/views/template.php:137
@@ -47,48 +55,76 @@ msgstr ""
 msgid "Facebook Community"
 msgstr ""
 
-#: app/Providers/SideMenuProvider.php:26
+#: app/Providers/SideMenuProvider.php:29
+#: app/Providers/SideMenuProvider.php:32
 msgid "GetGenie AI Writing"
 msgstr ""
 
-#: app/Providers/SideMenuProvider.php:35
+#: app/Providers/SideMenuProvider.php:42
 msgid "GetGenie Chat"
 msgstr ""
 
-#: app/Providers/SideMenuProvider.php:45
-#: app/Providers/SideMenuProvider.php:46
-msgid "Get Genie"
-msgstr ""
-
-#: app/Providers/SideMenuProvider.php:56
-msgid "Get Genie | AI Writing"
-msgstr ""
-
-#: app/Providers/SideMenuProvider.php:57
-msgid "AI Writing"
-msgstr ""
-
-#: app/Providers/SideMenuProvider.php:64
+#: app/Providers/SideMenuProvider.php:53
 msgid "Get Genie | Getting Started"
 msgstr ""
 
-#: app/Providers/SideMenuProvider.php:65
+#: app/Providers/SideMenuProvider.php:54
 msgid "Getting Started"
 msgstr ""
 
+#: app/Providers/SideMenuProvider.php:63
+msgid "Keyword Research | Get Genie"
+msgstr ""
+
+#: app/Providers/SideMenuProvider.php:64
+#: assets/dist/admin/js/templates-scripts.js:76551
+#: assets/dist/admin/js/wp-admin-pages.js:70574
+#: assets/src/admin/js/AdminPages/KeywordResearchAdminPage/index.js:219
+msgid "Keyword Research"
+msgstr ""
+
+#: app/Providers/SideMenuProvider.php:72
+msgid "Get Genie | AI Writing"
+msgstr ""
+
+#: app/Providers/SideMenuProvider.php:73
+msgid "AI Writing"
+msgstr ""
+
+#: app/Providers/SideMenuProvider.php:80
+msgid "SEO Insights"
+msgstr ""
+
+#: app/Providers/SideMenuProvider.php:81
+msgid "SEO Insights "
+msgstr ""
+
 #: app/Providers/SideMenuProvider.php:88
-msgid "License | Get Genie"
+msgid "Role Management | Get Genie"
 msgstr ""
 
 #: app/Providers/SideMenuProvider.php:89
+msgid "Role Management"
+msgstr ""
+
+#: app/Providers/SideMenuProvider.php:95
+#: app/Providers/SideMenuProvider.php:96
+msgid "Get Genie"
+msgstr ""
+
+#: app/Providers/SideMenuProvider.php:122
+msgid "License | Get Genie"
+msgstr ""
+
+#: app/Providers/SideMenuProvider.php:123
 msgid "License"
 msgstr ""
 
-#: app/Providers/SideMenuProvider.php:104
+#: app/Providers/SideMenuProvider.php:138
 msgid "Help | Get Genie"
 msgstr ""
 
-#: app/Providers/SideMenuProvider.php:105
+#: app/Providers/SideMenuProvider.php:139
 msgid "Help"
 msgstr ""
 
@@ -109,6 +145,11 @@ msgstr ""
 
 #: app/Services/GetGenieChat/Cpt.php:23
 #: app/Services/History/Cpt.php:23
+#: assets/dist/admin/js/app-handler.js:932
+#: assets/dist/admin/js/blog-wizard.js:33394
+#: assets/dist/admin/js/templates-scripts.js:48610
+#: assets/dist/admin/js/wp-admin-pages.js:42452
+#: assets/src/admin/js/Common/Utilities/newTemplates.js:48
 msgid "Post Type"
 msgstr ""
 
@@ -253,83 +294,98 @@ msgstr ""
 msgid "getgenie histories"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:140
-#: assets/dist/admin/js/templates-scripts.js:6417
-#: assets/dist/admin/js/wp-admin-pages.js:543
+#: assets/dist/admin/js/app-handler.js:152
+#: assets/dist/admin/js/blog-wizard.js:32615
+#: assets/dist/admin/js/templates-scripts.js:47799
+#: assets/dist/admin/js/wp-admin-pages.js:41641
 #: assets/src/admin/js/Common/Utilities/templates.js:8
 msgid "Meta-Description"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:142
-#: assets/dist/admin/js/templates-scripts.js:6419
-#: assets/dist/admin/js/wp-admin-pages.js:545
+#: assets/dist/admin/js/app-handler.js:154
+#: assets/dist/admin/js/blog-wizard.js:32617
+#: assets/dist/admin/js/templates-scripts.js:47801
+#: assets/dist/admin/js/wp-admin-pages.js:41643
 #: assets/src/admin/js/Common/Utilities/templates.js:10
 msgid "Leverage SERP rankings with outstanding meta description of your blog post/page"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:145
-#: assets/dist/admin/js/templates-scripts.js:6422
-#: assets/dist/admin/js/wp-admin-pages.js:548
+#: assets/dist/admin/js/app-handler.js:157
+#: assets/dist/admin/js/blog-wizard.js:32620
+#: assets/dist/admin/js/templates-scripts.js:47804
+#: assets/dist/admin/js/wp-admin-pages.js:41646
 #: assets/src/admin/js/Common/Utilities/templates.js:13
 msgid "Blog Post Title"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:148
-#: assets/dist/admin/js/templates-scripts.js:6425
-#: assets/dist/admin/js/wp-admin-pages.js:551
+#: assets/dist/admin/js/app-handler.js:160
+#: assets/dist/admin/js/blog-wizard.js:32623
+#: assets/dist/admin/js/templates-scripts.js:47807
+#: assets/dist/admin/js/wp-admin-pages.js:41649
 #: assets/src/admin/js/Common/Utilities/templates.js:16
 msgid "Enter the blog post title here"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:152
-#: assets/dist/admin/js/templates-scripts.js:6429
-#: assets/dist/admin/js/wp-admin-pages.js:555
+#: assets/dist/admin/js/app-handler.js:164
+#: assets/dist/admin/js/blog-wizard.js:32627
+#: assets/dist/admin/js/templates-scripts.js:47811
+#: assets/dist/admin/js/wp-admin-pages.js:41653
 #: assets/src/admin/js/Common/Utilities/templates.js:20
 msgid "Focus Keyword"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:155
-#: assets/dist/admin/js/templates-scripts.js:6432
-#: assets/dist/admin/js/wp-admin-pages.js:558
+#: assets/dist/admin/js/app-handler.js:167
+#: assets/dist/admin/js/blog-wizard.js:32630
+#: assets/dist/admin/js/templates-scripts.js:47814
+#: assets/dist/admin/js/wp-admin-pages.js:41656
 #: assets/src/admin/js/Common/Utilities/templates.js:23
 msgid "Enter the focus keyword/keyphrase for this meta description"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:162
-#: assets/dist/admin/js/templates-scripts.js:6439
-#: assets/dist/admin/js/wp-admin-pages.js:565
+#: assets/dist/admin/js/app-handler.js:174
+#: assets/dist/admin/js/blog-wizard.js:32637
+#: assets/dist/admin/js/templates-scripts.js:47821
+#: assets/dist/admin/js/wp-admin-pages.js:41663
 #: assets/src/admin/js/Common/Utilities/templates.js:30
 msgid "Listicle Ideas"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:164
-#: assets/dist/admin/js/templates-scripts.js:6441
-#: assets/dist/admin/js/wp-admin-pages.js:567
+#: assets/dist/admin/js/app-handler.js:176
+#: assets/dist/admin/js/blog-wizard.js:32639
+#: assets/dist/admin/js/templates-scripts.js:47823
+#: assets/dist/admin/js/wp-admin-pages.js:41665
 #: assets/src/admin/js/Common/Utilities/templates.js:32
 msgid "Generate title ideas for listicles for your given topic and get ahead of your competition"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:167
-#: assets/dist/admin/js/app-handler.js:182
-#: assets/dist/admin/js/app-handler.js:212
-#: assets/dist/admin/js/app-handler.js:227
-#: assets/dist/admin/js/app-handler.js:332
-#: assets/dist/admin/js/app-handler.js:554
-#: assets/dist/admin/js/app-handler.js:627
-#: assets/dist/admin/js/templates-scripts.js:6444
-#: assets/dist/admin/js/templates-scripts.js:6459
-#: assets/dist/admin/js/templates-scripts.js:6489
-#: assets/dist/admin/js/templates-scripts.js:6504
-#: assets/dist/admin/js/templates-scripts.js:6609
-#: assets/dist/admin/js/templates-scripts.js:6831
-#: assets/dist/admin/js/templates-scripts.js:6904
-#: assets/dist/admin/js/wp-admin-pages.js:570
-#: assets/dist/admin/js/wp-admin-pages.js:585
-#: assets/dist/admin/js/wp-admin-pages.js:615
-#: assets/dist/admin/js/wp-admin-pages.js:630
-#: assets/dist/admin/js/wp-admin-pages.js:735
-#: assets/dist/admin/js/wp-admin-pages.js:957
-#: assets/dist/admin/js/wp-admin-pages.js:1030
+#: assets/dist/admin/js/app-handler.js:179
+#: assets/dist/admin/js/app-handler.js:194
+#: assets/dist/admin/js/app-handler.js:224
+#: assets/dist/admin/js/app-handler.js:239
+#: assets/dist/admin/js/app-handler.js:344
+#: assets/dist/admin/js/app-handler.js:566
+#: assets/dist/admin/js/app-handler.js:639
+#: assets/dist/admin/js/blog-wizard.js:32642
+#: assets/dist/admin/js/blog-wizard.js:32657
+#: assets/dist/admin/js/blog-wizard.js:32687
+#: assets/dist/admin/js/blog-wizard.js:32702
+#: assets/dist/admin/js/blog-wizard.js:32807
+#: assets/dist/admin/js/blog-wizard.js:33029
+#: assets/dist/admin/js/blog-wizard.js:33102
+#: assets/dist/admin/js/templates-scripts.js:47826
+#: assets/dist/admin/js/templates-scripts.js:47841
+#: assets/dist/admin/js/templates-scripts.js:47871
+#: assets/dist/admin/js/templates-scripts.js:47886
+#: assets/dist/admin/js/templates-scripts.js:47991
+#: assets/dist/admin/js/templates-scripts.js:48213
+#: assets/dist/admin/js/templates-scripts.js:48286
+#: assets/dist/admin/js/wp-admin-pages.js:41668
+#: assets/dist/admin/js/wp-admin-pages.js:41683
+#: assets/dist/admin/js/wp-admin-pages.js:41713
+#: assets/dist/admin/js/wp-admin-pages.js:41728
+#: assets/dist/admin/js/wp-admin-pages.js:41833
+#: assets/dist/admin/js/wp-admin-pages.js:42055
+#: assets/dist/admin/js/wp-admin-pages.js:42128
 #: assets/src/admin/js/Common/Utilities/templates.js:35
 #: assets/src/admin/js/Common/Utilities/templates.js:50
 #: assets/src/admin/js/Common/Utilities/templates.js:80
@@ -340,130 +396,150 @@ msgstr ""
 msgid "Topic"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:170
-#: assets/dist/admin/js/templates-scripts.js:6447
-#: assets/dist/admin/js/wp-admin-pages.js:573
+#: assets/dist/admin/js/app-handler.js:182
+#: assets/dist/admin/js/blog-wizard.js:32645
+#: assets/dist/admin/js/templates-scripts.js:47829
+#: assets/dist/admin/js/wp-admin-pages.js:41671
 #: assets/src/admin/js/Common/Utilities/templates.js:38
 msgid "Enter the topic and additional instructions (if any) for the listicle ideas"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:177
-#: assets/dist/admin/js/templates-scripts.js:6454
-#: assets/dist/admin/js/wp-admin-pages.js:580
+#: assets/dist/admin/js/app-handler.js:189
+#: assets/dist/admin/js/blog-wizard.js:32652
+#: assets/dist/admin/js/templates-scripts.js:47836
+#: assets/dist/admin/js/wp-admin-pages.js:41678
 #: assets/src/admin/js/Common/Utilities/templates.js:45
 msgid "Definition"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:179
-#: assets/dist/admin/js/templates-scripts.js:6456
-#: assets/dist/admin/js/wp-admin-pages.js:582
+#: assets/dist/admin/js/app-handler.js:191
+#: assets/dist/admin/js/blog-wizard.js:32654
+#: assets/dist/admin/js/templates-scripts.js:47838
+#: assets/dist/admin/js/wp-admin-pages.js:41680
 #: assets/src/admin/js/Common/Utilities/templates.js:47
 msgid "Need a brief explanation? Want to utilize featured snippets? Try our definition template"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:185
-#: assets/dist/admin/js/templates-scripts.js:6462
-#: assets/dist/admin/js/wp-admin-pages.js:588
+#: assets/dist/admin/js/app-handler.js:197
+#: assets/dist/admin/js/blog-wizard.js:32660
+#: assets/dist/admin/js/templates-scripts.js:47844
+#: assets/dist/admin/js/wp-admin-pages.js:41686
 #: assets/src/admin/js/Common/Utilities/templates.js:53
 msgid "Enter the topic for the definition"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:192
-#: assets/dist/admin/js/templates-scripts.js:6469
-#: assets/dist/admin/js/wp-admin-pages.js:595
+#: assets/dist/admin/js/app-handler.js:204
+#: assets/dist/admin/js/blog-wizard.js:32667
+#: assets/dist/admin/js/templates-scripts.js:47851
+#: assets/dist/admin/js/wp-admin-pages.js:41693
 #: assets/src/admin/js/Common/Utilities/templates.js:60
 msgid "Sentence Rewriter"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:194
-#: assets/dist/admin/js/templates-scripts.js:6471
-#: assets/dist/admin/js/wp-admin-pages.js:597
+#: assets/dist/admin/js/app-handler.js:206
+#: assets/dist/admin/js/blog-wizard.js:32669
+#: assets/dist/admin/js/templates-scripts.js:47853
+#: assets/dist/admin/js/wp-admin-pages.js:41695
 #: assets/src/admin/js/Common/Utilities/templates.js:62
 msgid "Get different variations of your given sentence with rewritten versions from Genie"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:197
-#: assets/dist/admin/js/templates-scripts.js:6474
-#: assets/dist/admin/js/wp-admin-pages.js:600
+#: assets/dist/admin/js/app-handler.js:209
+#: assets/dist/admin/js/blog-wizard.js:32672
+#: assets/dist/admin/js/templates-scripts.js:47856
+#: assets/dist/admin/js/wp-admin-pages.js:41698
 #: assets/src/admin/js/Common/Utilities/templates.js:65
 msgid "Sentence to Rewrite"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:200
-#: assets/dist/admin/js/templates-scripts.js:6477
-#: assets/dist/admin/js/wp-admin-pages.js:603
+#: assets/dist/admin/js/app-handler.js:212
+#: assets/dist/admin/js/blog-wizard.js:32675
+#: assets/dist/admin/js/templates-scripts.js:47859
+#: assets/dist/admin/js/wp-admin-pages.js:41701
 #: assets/src/admin/js/Common/Utilities/templates.js:68
 msgid "Enter your sentence to get a rewritten version"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:207
-#: assets/dist/admin/js/templates-scripts.js:6484
-#: assets/dist/admin/js/wp-admin-pages.js:610
+#: assets/dist/admin/js/app-handler.js:219
+#: assets/dist/admin/js/blog-wizard.js:32682
+#: assets/dist/admin/js/templates-scripts.js:47866
+#: assets/dist/admin/js/wp-admin-pages.js:41708
 #: assets/src/admin/js/Common/Utilities/templates.js:75
 msgid "Featured Snippet (Numbered List)"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:209
-#: assets/dist/admin/js/templates-scripts.js:6486
-#: assets/dist/admin/js/wp-admin-pages.js:612
+#: assets/dist/admin/js/app-handler.js:221
+#: assets/dist/admin/js/blog-wizard.js:32684
+#: assets/dist/admin/js/templates-scripts.js:47868
+#: assets/dist/admin/js/wp-admin-pages.js:41710
 #: assets/src/admin/js/Common/Utilities/templates.js:77
 msgid "Get a detailed numbered list of how to do something with a simple one-liner input"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:215
-#: assets/dist/admin/js/templates-scripts.js:6492
-#: assets/dist/admin/js/wp-admin-pages.js:618
+#: assets/dist/admin/js/app-handler.js:227
+#: assets/dist/admin/js/blog-wizard.js:32690
+#: assets/dist/admin/js/templates-scripts.js:47874
+#: assets/dist/admin/js/wp-admin-pages.js:41716
 #: assets/src/admin/js/Common/Utilities/templates.js:83
 msgid "Enter the topic for the list of steps"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:222
-#: assets/dist/admin/js/templates-scripts.js:6499
-#: assets/dist/admin/js/wp-admin-pages.js:625
+#: assets/dist/admin/js/app-handler.js:234
+#: assets/dist/admin/js/blog-wizard.js:32697
+#: assets/dist/admin/js/templates-scripts.js:47881
+#: assets/dist/admin/js/wp-admin-pages.js:41723
 #: assets/src/admin/js/Common/Utilities/templates.js:90
 msgid "Title Ideas"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:224
-#: assets/dist/admin/js/templates-scripts.js:6501
-#: assets/dist/admin/js/wp-admin-pages.js:627
+#: assets/dist/admin/js/app-handler.js:236
+#: assets/dist/admin/js/blog-wizard.js:32699
+#: assets/dist/admin/js/templates-scripts.js:47883
+#: assets/dist/admin/js/wp-admin-pages.js:41725
 #: assets/src/admin/js/Common/Utilities/templates.js:92
 msgid "Get multiple title ideas off an initial title to get a variation or deploying in headers"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:230
-#: assets/dist/admin/js/templates-scripts.js:6507
-#: assets/dist/admin/js/wp-admin-pages.js:633
+#: assets/dist/admin/js/app-handler.js:242
+#: assets/dist/admin/js/blog-wizard.js:32705
+#: assets/dist/admin/js/templates-scripts.js:47889
+#: assets/dist/admin/js/wp-admin-pages.js:41731
 #: assets/src/admin/js/Common/Utilities/templates.js:98
 msgid "Enter your desired topic for title generation"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:237
-#: assets/dist/admin/js/templates-scripts.js:6514
-#: assets/dist/admin/js/wp-admin-pages.js:640
+#: assets/dist/admin/js/app-handler.js:249
+#: assets/dist/admin/js/blog-wizard.js:32712
+#: assets/dist/admin/js/templates-scripts.js:47896
+#: assets/dist/admin/js/wp-admin-pages.js:41738
 #: assets/src/admin/js/Common/Utilities/templates.js:105
 msgid "Short Answer"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:239
-#: assets/dist/admin/js/templates-scripts.js:6516
-#: assets/dist/admin/js/wp-admin-pages.js:642
+#: assets/dist/admin/js/app-handler.js:251
+#: assets/dist/admin/js/blog-wizard.js:32714
+#: assets/dist/admin/js/templates-scripts.js:47898
+#: assets/dist/admin/js/wp-admin-pages.js:41740
 #: assets/src/admin/js/Common/Utilities/templates.js:107
 msgid "Generate brief, one-sentence answer to any given question to utilize in your content"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:242
-#: assets/dist/admin/js/app-handler.js:347
-#: assets/dist/admin/js/app-handler.js:701
-#: assets/dist/admin/js/app-handler.js:767
-#: assets/dist/admin/js/templates-scripts.js:6519
-#: assets/dist/admin/js/templates-scripts.js:6624
-#: assets/dist/admin/js/templates-scripts.js:6978
-#: assets/dist/admin/js/templates-scripts.js:7044
-#: assets/dist/admin/js/wp-admin-pages.js:645
-#: assets/dist/admin/js/wp-admin-pages.js:750
-#: assets/dist/admin/js/wp-admin-pages.js:1104
-#: assets/dist/admin/js/wp-admin-pages.js:1170
+#: assets/dist/admin/js/app-handler.js:254
+#: assets/dist/admin/js/app-handler.js:359
+#: assets/dist/admin/js/app-handler.js:713
+#: assets/dist/admin/js/app-handler.js:779
+#: assets/dist/admin/js/blog-wizard.js:32717
+#: assets/dist/admin/js/blog-wizard.js:32822
+#: assets/dist/admin/js/blog-wizard.js:33176
+#: assets/dist/admin/js/blog-wizard.js:33242
+#: assets/dist/admin/js/templates-scripts.js:47901
+#: assets/dist/admin/js/templates-scripts.js:48006
+#: assets/dist/admin/js/templates-scripts.js:48360
+#: assets/dist/admin/js/templates-scripts.js:48426
+#: assets/dist/admin/js/wp-admin-pages.js:41743
+#: assets/dist/admin/js/wp-admin-pages.js:41848
+#: assets/dist/admin/js/wp-admin-pages.js:42202
+#: assets/dist/admin/js/wp-admin-pages.js:42268
 #: assets/src/admin/js/Common/Utilities/templates.js:110
 #: assets/src/admin/js/Common/Utilities/templates.js:215
 #: assets/src/admin/js/Common/Utilities/templates.js:569
@@ -471,73 +547,84 @@ msgstr ""
 msgid "Question"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:245
-#: assets/dist/admin/js/templates-scripts.js:6522
-#: assets/dist/admin/js/wp-admin-pages.js:648
+#: assets/dist/admin/js/app-handler.js:257
+#: assets/dist/admin/js/blog-wizard.js:32720
+#: assets/dist/admin/js/templates-scripts.js:47904
+#: assets/dist/admin/js/wp-admin-pages.js:41746
 #: assets/src/admin/js/Common/Utilities/templates.js:113
 msgid "Enter your question"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:252
-#: assets/dist/admin/js/templates-scripts.js:6529
-#: assets/dist/admin/js/wp-admin-pages.js:655
+#: assets/dist/admin/js/app-handler.js:264
+#: assets/dist/admin/js/blog-wizard.js:32727
+#: assets/dist/admin/js/templates-scripts.js:47911
+#: assets/dist/admin/js/wp-admin-pages.js:41753
 #: assets/src/admin/js/Common/Utilities/templates.js:120
 msgid "Related Topics"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:254
-#: assets/dist/admin/js/templates-scripts.js:6531
-#: assets/dist/admin/js/wp-admin-pages.js:657
+#: assets/dist/admin/js/app-handler.js:266
+#: assets/dist/admin/js/blog-wizard.js:32729
+#: assets/dist/admin/js/templates-scripts.js:47913
+#: assets/dist/admin/js/wp-admin-pages.js:41755
 #: assets/src/admin/js/Common/Utilities/templates.js:122
 msgid "Stuck with your content? Input a paragraph and get a list of related topics to cover"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:257
-#: assets/dist/admin/js/blog-wizard.js:30613
-#: assets/dist/admin/js/blog-wizard.js:33613
-#: assets/dist/admin/js/templates-scripts.js:6534
-#: assets/dist/admin/js/wp-admin-pages.js:660
-#: assets/dist/admin/js/wp-integrations.js:31257
-#: assets/dist/admin/js/wp-integrations.js:34337
+#: assets/dist/admin/js/app-handler.js:269
+#: assets/dist/admin/js/blog-wizard.js:29219
+#: assets/dist/admin/js/blog-wizard.js:32221
+#: assets/dist/admin/js/blog-wizard.js:32732
+#: assets/dist/admin/js/templates-scripts.js:47916
+#: assets/dist/admin/js/wp-admin-pages.js:41758
+#: assets/dist/admin/js/wp-integrations.js:29854
+#: assets/dist/admin/js/wp-integrations.js:32936
 #: assets/src/admin/js/BlogWizard/ScoreAnalysis/SerpVisualizer/index.js:194
-#: assets/src/admin/js/BlogWizard/WritingScreens/Wrapper/index.js:75
+#: assets/src/admin/js/BlogWizard/WritingScreens/Wrapper/index.js:91
 #: assets/src/admin/js/Common/Utilities/templates.js:125
 msgid "Content"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:260
-#: assets/dist/admin/js/templates-scripts.js:6537
-#: assets/dist/admin/js/wp-admin-pages.js:663
+#: assets/dist/admin/js/app-handler.js:272
+#: assets/dist/admin/js/blog-wizard.js:32735
+#: assets/dist/admin/js/templates-scripts.js:47919
+#: assets/dist/admin/js/wp-admin-pages.js:41761
 #: assets/src/admin/js/Common/Utilities/templates.js:128
 msgid "Enter a paragraph/snippet of content"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:267
-#: assets/dist/admin/js/templates-scripts.js:6544
-#: assets/dist/admin/js/wp-admin-pages.js:670
+#: assets/dist/admin/js/app-handler.js:279
+#: assets/dist/admin/js/blog-wizard.js:32742
+#: assets/dist/admin/js/templates-scripts.js:47926
+#: assets/dist/admin/js/wp-admin-pages.js:41768
 #: assets/src/admin/js/Common/Utilities/templates.js:135
 msgid "Paragraph Compression"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:269
-#: assets/dist/admin/js/templates-scripts.js:6546
-#: assets/dist/admin/js/wp-admin-pages.js:672
+#: assets/dist/admin/js/app-handler.js:281
+#: assets/dist/admin/js/blog-wizard.js:32744
+#: assets/dist/admin/js/templates-scripts.js:47928
+#: assets/dist/admin/js/wp-admin-pages.js:41770
 #: assets/src/admin/js/Common/Utilities/templates.js:137
 msgid "Generate a short summary of a paragraph keeping the gist, tone, and context intact"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:272
-#: assets/dist/admin/js/app-handler.js:302
-#: assets/dist/admin/js/app-handler.js:317
-#: assets/dist/admin/js/app-handler.js:362
-#: assets/dist/admin/js/templates-scripts.js:6549
-#: assets/dist/admin/js/templates-scripts.js:6579
-#: assets/dist/admin/js/templates-scripts.js:6594
-#: assets/dist/admin/js/templates-scripts.js:6639
-#: assets/dist/admin/js/wp-admin-pages.js:675
-#: assets/dist/admin/js/wp-admin-pages.js:705
-#: assets/dist/admin/js/wp-admin-pages.js:720
-#: assets/dist/admin/js/wp-admin-pages.js:765
+#: assets/dist/admin/js/app-handler.js:284
+#: assets/dist/admin/js/app-handler.js:314
+#: assets/dist/admin/js/app-handler.js:329
+#: assets/dist/admin/js/app-handler.js:374
+#: assets/dist/admin/js/blog-wizard.js:32747
+#: assets/dist/admin/js/blog-wizard.js:32777
+#: assets/dist/admin/js/blog-wizard.js:32792
+#: assets/dist/admin/js/blog-wizard.js:32837
+#: assets/dist/admin/js/templates-scripts.js:47931
+#: assets/dist/admin/js/templates-scripts.js:47961
+#: assets/dist/admin/js/templates-scripts.js:47976
+#: assets/dist/admin/js/templates-scripts.js:48021
+#: assets/dist/admin/js/wp-admin-pages.js:41773
+#: assets/dist/admin/js/wp-admin-pages.js:41803
+#: assets/dist/admin/js/wp-admin-pages.js:41818
+#: assets/dist/admin/js/wp-admin-pages.js:41863
 #: assets/src/admin/js/Common/Utilities/templates.js:140
 #: assets/src/admin/js/Common/Utilities/templates.js:170
 #: assets/src/admin/js/Common/Utilities/templates.js:185
@@ -545,223 +632,257 @@ msgstr ""
 msgid "Paragraph"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:275
-#: assets/dist/admin/js/templates-scripts.js:6552
-#: assets/dist/admin/js/wp-admin-pages.js:678
+#: assets/dist/admin/js/app-handler.js:287
+#: assets/dist/admin/js/blog-wizard.js:32750
+#: assets/dist/admin/js/templates-scripts.js:47934
+#: assets/dist/admin/js/wp-admin-pages.js:41776
 #: assets/src/admin/js/Common/Utilities/templates.js:143
 msgid "Enter the paragraph to be summarized"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:282
-#: assets/dist/admin/js/templates-scripts.js:6559
-#: assets/dist/admin/js/wp-admin-pages.js:685
+#: assets/dist/admin/js/app-handler.js:294
+#: assets/dist/admin/js/blog-wizard.js:32757
+#: assets/dist/admin/js/templates-scripts.js:47941
+#: assets/dist/admin/js/wp-admin-pages.js:41783
 #: assets/src/admin/js/Common/Utilities/templates.js:150
 msgid "Next Sentence"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:284
-#: assets/dist/admin/js/templates-scripts.js:6561
-#: assets/dist/admin/js/wp-admin-pages.js:687
+#: assets/dist/admin/js/app-handler.js:296
+#: assets/dist/admin/js/blog-wizard.js:32759
+#: assets/dist/admin/js/templates-scripts.js:47943
+#: assets/dist/admin/js/wp-admin-pages.js:41785
 #: assets/src/admin/js/Common/Utilities/templates.js:152
 msgid "Provide a sentence/line of content and get a follow-up sentence in return maintaining coherence"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:287
-#: assets/dist/admin/js/templates-scripts.js:6564
-#: assets/dist/admin/js/wp-admin-pages.js:690
+#: assets/dist/admin/js/app-handler.js:299
+#: assets/dist/admin/js/blog-wizard.js:32762
+#: assets/dist/admin/js/templates-scripts.js:47946
+#: assets/dist/admin/js/wp-admin-pages.js:41788
 #: assets/src/admin/js/Common/Utilities/templates.js:155
 msgid "Sentence"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:290
-#: assets/dist/admin/js/templates-scripts.js:6567
-#: assets/dist/admin/js/wp-admin-pages.js:693
+#: assets/dist/admin/js/app-handler.js:302
+#: assets/dist/admin/js/blog-wizard.js:32765
+#: assets/dist/admin/js/templates-scripts.js:47949
+#: assets/dist/admin/js/wp-admin-pages.js:41791
 #: assets/src/admin/js/Common/Utilities/templates.js:158
 msgid "Enter the sentence to be followed-up"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:297
-#: assets/dist/admin/js/templates-scripts.js:6574
-#: assets/dist/admin/js/wp-admin-pages.js:700
+#: assets/dist/admin/js/app-handler.js:309
+#: assets/dist/admin/js/blog-wizard.js:32772
+#: assets/dist/admin/js/templates-scripts.js:47956
+#: assets/dist/admin/js/wp-admin-pages.js:41798
 #: assets/src/admin/js/Common/Utilities/templates.js:165
 msgid "Paragraph Rewriter"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:299
-#: assets/dist/admin/js/templates-scripts.js:6576
-#: assets/dist/admin/js/wp-admin-pages.js:702
+#: assets/dist/admin/js/app-handler.js:311
+#: assets/dist/admin/js/blog-wizard.js:32774
+#: assets/dist/admin/js/templates-scripts.js:47958
+#: assets/dist/admin/js/wp-admin-pages.js:41800
 #: assets/src/admin/js/Common/Utilities/templates.js:167
 msgid "Put a new and unique spin to your given content with rewritten versions of it"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:305
-#: assets/dist/admin/js/templates-scripts.js:6582
-#: assets/dist/admin/js/wp-admin-pages.js:708
+#: assets/dist/admin/js/app-handler.js:317
+#: assets/dist/admin/js/blog-wizard.js:32780
+#: assets/dist/admin/js/templates-scripts.js:47964
+#: assets/dist/admin/js/wp-admin-pages.js:41806
 #: assets/src/admin/js/Common/Utilities/templates.js:173
 msgid "Enter the paragraph to be rewritten"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:312
-#: assets/dist/admin/js/templates-scripts.js:6589
-#: assets/dist/admin/js/wp-admin-pages.js:715
+#: assets/dist/admin/js/app-handler.js:324
+#: assets/dist/admin/js/blog-wizard.js:32787
+#: assets/dist/admin/js/templates-scripts.js:47971
+#: assets/dist/admin/js/wp-admin-pages.js:41813
 #: assets/src/admin/js/Common/Utilities/templates.js:180
 msgid "Next Paragraph"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:314
-#: assets/dist/admin/js/templates-scripts.js:6591
-#: assets/dist/admin/js/wp-admin-pages.js:717
+#: assets/dist/admin/js/app-handler.js:326
+#: assets/dist/admin/js/blog-wizard.js:32789
+#: assets/dist/admin/js/templates-scripts.js:47973
+#: assets/dist/admin/js/wp-admin-pages.js:41815
 #: assets/src/admin/js/Common/Utilities/templates.js:182
 msgid "Input your paragraph/lines of content and get a contextual follow-up content in return"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:320
-#: assets/dist/admin/js/templates-scripts.js:6597
-#: assets/dist/admin/js/wp-admin-pages.js:723
+#: assets/dist/admin/js/app-handler.js:332
+#: assets/dist/admin/js/blog-wizard.js:32795
+#: assets/dist/admin/js/templates-scripts.js:47979
+#: assets/dist/admin/js/wp-admin-pages.js:41821
 #: assets/src/admin/js/Common/Utilities/templates.js:188
 msgid "Enter the paragraph to be followed-up"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:327
-#: assets/dist/admin/js/templates-scripts.js:6604
-#: assets/dist/admin/js/wp-admin-pages.js:730
+#: assets/dist/admin/js/app-handler.js:339
+#: assets/dist/admin/js/blog-wizard.js:32802
+#: assets/dist/admin/js/templates-scripts.js:47986
+#: assets/dist/admin/js/wp-admin-pages.js:41828
 #: assets/src/admin/js/Common/Utilities/templates.js:195
 msgid "List of Questions"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:329
-#: assets/dist/admin/js/templates-scripts.js:6606
-#: assets/dist/admin/js/wp-admin-pages.js:732
+#: assets/dist/admin/js/app-handler.js:341
+#: assets/dist/admin/js/blog-wizard.js:32804
+#: assets/dist/admin/js/templates-scripts.js:47988
+#: assets/dist/admin/js/wp-admin-pages.js:41830
 #: assets/src/admin/js/Common/Utilities/templates.js:197
 msgid "Generate lists of questions for your given topic and utilize them in your title/content"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:335
-#: assets/dist/admin/js/templates-scripts.js:6612
-#: assets/dist/admin/js/wp-admin-pages.js:738
+#: assets/dist/admin/js/app-handler.js:347
+#: assets/dist/admin/js/blog-wizard.js:32810
+#: assets/dist/admin/js/templates-scripts.js:47994
+#: assets/dist/admin/js/wp-admin-pages.js:41836
 #: assets/src/admin/js/Common/Utilities/templates.js:203
 msgid "Enter the topic for the list of related questions"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:342
-#: assets/dist/admin/js/templates-scripts.js:6619
-#: assets/dist/admin/js/wp-admin-pages.js:745
+#: assets/dist/admin/js/app-handler.js:354
+#: assets/dist/admin/js/blog-wizard.js:32817
+#: assets/dist/admin/js/templates-scripts.js:48001
+#: assets/dist/admin/js/wp-admin-pages.js:41843
 #: assets/src/admin/js/Common/Utilities/templates.js:210
 msgid "Paragraph Answer"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:344
-#: assets/dist/admin/js/templates-scripts.js:6621
-#: assets/dist/admin/js/wp-admin-pages.js:747
+#: assets/dist/admin/js/app-handler.js:356
+#: assets/dist/admin/js/blog-wizard.js:32819
+#: assets/dist/admin/js/templates-scripts.js:48003
+#: assets/dist/admin/js/wp-admin-pages.js:41845
 #: assets/src/admin/js/Common/Utilities/templates.js:212
 msgid "Get paragraph-long answers of informative content for every question you ask"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:350
-#: assets/dist/admin/js/templates-scripts.js:6627
-#: assets/dist/admin/js/wp-admin-pages.js:753
+#: assets/dist/admin/js/app-handler.js:362
+#: assets/dist/admin/js/blog-wizard.js:32825
+#: assets/dist/admin/js/templates-scripts.js:48009
+#: assets/dist/admin/js/wp-admin-pages.js:41851
 #: assets/src/admin/js/Common/Utilities/templates.js:218
 msgid "Enter the question for a detailed answer"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:357
-#: assets/dist/admin/js/templates-scripts.js:6634
-#: assets/dist/admin/js/wp-admin-pages.js:760
+#: assets/dist/admin/js/app-handler.js:369
+#: assets/dist/admin/js/blog-wizard.js:32832
+#: assets/dist/admin/js/templates-scripts.js:48016
+#: assets/dist/admin/js/wp-admin-pages.js:41858
 #: assets/src/admin/js/Common/Utilities/templates.js:225
 msgid "Summary Bullets"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:359
-#: assets/dist/admin/js/templates-scripts.js:6636
-#: assets/dist/admin/js/wp-admin-pages.js:762
+#: assets/dist/admin/js/app-handler.js:371
+#: assets/dist/admin/js/blog-wizard.js:32834
+#: assets/dist/admin/js/templates-scripts.js:48018
+#: assets/dist/admin/js/wp-admin-pages.js:41860
 #: assets/src/admin/js/Common/Utilities/templates.js:227
 msgid "Get a bulleted list of summary for a given topic with the same tone and context"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:365
-#: assets/dist/admin/js/templates-scripts.js:6642
-#: assets/dist/admin/js/wp-admin-pages.js:768
+#: assets/dist/admin/js/app-handler.js:377
+#: assets/dist/admin/js/blog-wizard.js:32840
+#: assets/dist/admin/js/templates-scripts.js:48024
+#: assets/dist/admin/js/wp-admin-pages.js:41866
 #: assets/src/admin/js/Common/Utilities/templates.js:233
 msgid "Enter the paragraph for summarized list"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:372
-#: assets/dist/admin/js/templates-scripts.js:6649
-#: assets/dist/admin/js/wp-admin-pages.js:775
+#: assets/dist/admin/js/app-handler.js:384
+#: assets/dist/admin/js/blog-wizard.js:32847
+#: assets/dist/admin/js/templates-scripts.js:48031
+#: assets/dist/admin/js/wp-admin-pages.js:41873
 #: assets/src/admin/js/Common/Utilities/templates.js:240
 msgid "Paragraph for Heading"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:374
-#: assets/dist/admin/js/templates-scripts.js:6651
-#: assets/dist/admin/js/wp-admin-pages.js:777
+#: assets/dist/admin/js/app-handler.js:386
+#: assets/dist/admin/js/blog-wizard.js:32849
+#: assets/dist/admin/js/templates-scripts.js:48033
+#: assets/dist/admin/js/wp-admin-pages.js:41875
 #: assets/src/admin/js/Common/Utilities/templates.js:242
 msgid "Input the heading/title of your long-form content and receive an introductory paragraph"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:377
-#: assets/dist/admin/js/templates-scripts.js:6654
-#: assets/dist/admin/js/wp-admin-pages.js:780
+#: assets/dist/admin/js/app-handler.js:389
+#: assets/dist/admin/js/blog-wizard.js:32852
+#: assets/dist/admin/js/templates-scripts.js:48036
+#: assets/dist/admin/js/wp-admin-pages.js:41878
 #: assets/src/admin/js/Common/Utilities/templates.js:245
 msgid "Title/Heading"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:380
-#: assets/dist/admin/js/templates-scripts.js:6657
-#: assets/dist/admin/js/wp-admin-pages.js:783
+#: assets/dist/admin/js/app-handler.js:392
+#: assets/dist/admin/js/blog-wizard.js:32855
+#: assets/dist/admin/js/templates-scripts.js:48039
+#: assets/dist/admin/js/wp-admin-pages.js:41881
 #: assets/src/admin/js/Common/Utilities/templates.js:248
 msgid "Enter the title/heading"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:387
-#: assets/dist/admin/js/blog-wizard.js:30607
-#: assets/dist/admin/js/templates-scripts.js:6664
-#: assets/dist/admin/js/wp-admin-pages.js:790
-#: assets/dist/admin/js/wp-integrations.js:31251
-#: assets/src/admin/js/BlogWizard/WritingScreens/Wrapper/index.js:69
+#: assets/dist/admin/js/app-handler.js:399
+#: assets/dist/admin/js/blog-wizard.js:29213
+#: assets/dist/admin/js/blog-wizard.js:32862
+#: assets/dist/admin/js/templates-scripts.js:48046
+#: assets/dist/admin/js/wp-admin-pages.js:41888
+#: assets/dist/admin/js/wp-integrations.js:29848
+#: assets/src/admin/js/BlogWizard/WritingScreens/Wrapper/index.js:85
 #: assets/src/admin/js/Common/Utilities/templates.js:255
 msgid "Outline"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:389
-#: assets/dist/admin/js/templates-scripts.js:6666
-#: assets/dist/admin/js/wp-admin-pages.js:792
+#: assets/dist/admin/js/app-handler.js:401
+#: assets/dist/admin/js/blog-wizard.js:32864
+#: assets/dist/admin/js/templates-scripts.js:48048
+#: assets/dist/admin/js/wp-admin-pages.js:41890
 #: assets/src/admin/js/Common/Utilities/templates.js:257
 msgid "Create an outline of your long-form content based on a title and a brief description"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:392
-#: assets/dist/admin/js/templates-scripts.js:6669
-#: assets/dist/admin/js/wp-admin-pages.js:795
+#: assets/dist/admin/js/app-handler.js:404
+#: assets/dist/admin/js/blog-wizard.js:32867
+#: assets/dist/admin/js/templates-scripts.js:48051
+#: assets/dist/admin/js/wp-admin-pages.js:41893
 #: assets/src/admin/js/Common/Utilities/templates.js:260
 msgid "Blog context"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:395
-#: assets/dist/admin/js/templates-scripts.js:6672
-#: assets/dist/admin/js/wp-admin-pages.js:798
+#: assets/dist/admin/js/app-handler.js:407
+#: assets/dist/admin/js/blog-wizard.js:32870
+#: assets/dist/admin/js/templates-scripts.js:48054
+#: assets/dist/admin/js/wp-admin-pages.js:41896
 #: assets/src/admin/js/Common/Utilities/templates.js:263
 msgid "Enter a few lines of the intro to get an outline"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:402
-#: assets/dist/admin/js/app-handler.js:730
-#: assets/dist/admin/js/app-handler.js:752
-#: assets/dist/admin/js/app-handler.js:818
-#: assets/dist/admin/js/app-handler.js:840
-#: assets/dist/admin/js/app-handler.js:862
-#: assets/dist/admin/js/templates-scripts.js:6679
-#: assets/dist/admin/js/templates-scripts.js:7007
-#: assets/dist/admin/js/templates-scripts.js:7029
-#: assets/dist/admin/js/templates-scripts.js:7095
-#: assets/dist/admin/js/templates-scripts.js:7117
-#: assets/dist/admin/js/templates-scripts.js:7139
-#: assets/dist/admin/js/wp-admin-pages.js:805
-#: assets/dist/admin/js/wp-admin-pages.js:1133
-#: assets/dist/admin/js/wp-admin-pages.js:1155
-#: assets/dist/admin/js/wp-admin-pages.js:1221
-#: assets/dist/admin/js/wp-admin-pages.js:1243
-#: assets/dist/admin/js/wp-admin-pages.js:1265
+#: assets/dist/admin/js/app-handler.js:414
+#: assets/dist/admin/js/app-handler.js:742
+#: assets/dist/admin/js/app-handler.js:764
+#: assets/dist/admin/js/app-handler.js:830
+#: assets/dist/admin/js/app-handler.js:852
+#: assets/dist/admin/js/app-handler.js:874
+#: assets/dist/admin/js/blog-wizard.js:32877
+#: assets/dist/admin/js/blog-wizard.js:33205
+#: assets/dist/admin/js/blog-wizard.js:33227
+#: assets/dist/admin/js/blog-wizard.js:33293
+#: assets/dist/admin/js/blog-wizard.js:33315
+#: assets/dist/admin/js/blog-wizard.js:33337
+#: assets/dist/admin/js/templates-scripts.js:48061
+#: assets/dist/admin/js/templates-scripts.js:48389
+#: assets/dist/admin/js/templates-scripts.js:48411
+#: assets/dist/admin/js/templates-scripts.js:48477
+#: assets/dist/admin/js/templates-scripts.js:48499
+#: assets/dist/admin/js/templates-scripts.js:48521
+#: assets/dist/admin/js/wp-admin-pages.js:41903
+#: assets/dist/admin/js/wp-admin-pages.js:42231
+#: assets/dist/admin/js/wp-admin-pages.js:42253
+#: assets/dist/admin/js/wp-admin-pages.js:42319
+#: assets/dist/admin/js/wp-admin-pages.js:42341
+#: assets/dist/admin/js/wp-admin-pages.js:42363
 #: assets/src/admin/js/Common/Utilities/templates.js:270
 #: assets/src/admin/js/Common/Utilities/templates.js:598
 #: assets/src/admin/js/Common/Utilities/templates.js:620
@@ -771,46 +892,57 @@ msgstr ""
 msgid "Product Description"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:404
-#: assets/dist/admin/js/templates-scripts.js:6681
-#: assets/dist/admin/js/wp-admin-pages.js:807
+#: assets/dist/admin/js/app-handler.js:416
+#: assets/dist/admin/js/blog-wizard.js:32879
+#: assets/dist/admin/js/templates-scripts.js:48063
+#: assets/dist/admin/js/wp-admin-pages.js:41905
 #: assets/src/admin/js/Common/Utilities/templates.js:272
 msgid "Name any product (or service) and get Genie to write a convincing description for it"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:407
-#: assets/dist/admin/js/app-handler.js:429
-#: assets/dist/admin/js/app-handler.js:451
-#: assets/dist/admin/js/app-handler.js:649
-#: assets/dist/admin/js/app-handler.js:723
-#: assets/dist/admin/js/app-handler.js:745
-#: assets/dist/admin/js/app-handler.js:789
-#: assets/dist/admin/js/app-handler.js:811
-#: assets/dist/admin/js/app-handler.js:833
-#: assets/dist/admin/js/app-handler.js:855
-#: assets/dist/admin/js/templates-scripts.js:6684
-#: assets/dist/admin/js/templates-scripts.js:6706
-#: assets/dist/admin/js/templates-scripts.js:6728
-#: assets/dist/admin/js/templates-scripts.js:6926
-#: assets/dist/admin/js/templates-scripts.js:7000
-#: assets/dist/admin/js/templates-scripts.js:7022
-#: assets/dist/admin/js/templates-scripts.js:7066
-#: assets/dist/admin/js/templates-scripts.js:7088
-#: assets/dist/admin/js/templates-scripts.js:7110
-#: assets/dist/admin/js/templates-scripts.js:7132
-#: assets/dist/admin/js/woo-wizard.js:363
-#: assets/dist/admin/js/woo-wizard.js:501
-#: assets/dist/admin/js/woo-wizard.js:639
-#: assets/dist/admin/js/wp-admin-pages.js:810
-#: assets/dist/admin/js/wp-admin-pages.js:832
-#: assets/dist/admin/js/wp-admin-pages.js:854
-#: assets/dist/admin/js/wp-admin-pages.js:1052
-#: assets/dist/admin/js/wp-admin-pages.js:1126
-#: assets/dist/admin/js/wp-admin-pages.js:1148
-#: assets/dist/admin/js/wp-admin-pages.js:1192
-#: assets/dist/admin/js/wp-admin-pages.js:1214
-#: assets/dist/admin/js/wp-admin-pages.js:1236
-#: assets/dist/admin/js/wp-admin-pages.js:1258
+#: assets/dist/admin/js/app-handler.js:419
+#: assets/dist/admin/js/app-handler.js:441
+#: assets/dist/admin/js/app-handler.js:463
+#: assets/dist/admin/js/app-handler.js:661
+#: assets/dist/admin/js/app-handler.js:735
+#: assets/dist/admin/js/app-handler.js:757
+#: assets/dist/admin/js/app-handler.js:801
+#: assets/dist/admin/js/app-handler.js:823
+#: assets/dist/admin/js/app-handler.js:845
+#: assets/dist/admin/js/app-handler.js:867
+#: assets/dist/admin/js/blog-wizard.js:32882
+#: assets/dist/admin/js/blog-wizard.js:32904
+#: assets/dist/admin/js/blog-wizard.js:32926
+#: assets/dist/admin/js/blog-wizard.js:33124
+#: assets/dist/admin/js/blog-wizard.js:33198
+#: assets/dist/admin/js/blog-wizard.js:33220
+#: assets/dist/admin/js/blog-wizard.js:33264
+#: assets/dist/admin/js/blog-wizard.js:33286
+#: assets/dist/admin/js/blog-wizard.js:33308
+#: assets/dist/admin/js/blog-wizard.js:33330
+#: assets/dist/admin/js/templates-scripts.js:48066
+#: assets/dist/admin/js/templates-scripts.js:48088
+#: assets/dist/admin/js/templates-scripts.js:48110
+#: assets/dist/admin/js/templates-scripts.js:48308
+#: assets/dist/admin/js/templates-scripts.js:48382
+#: assets/dist/admin/js/templates-scripts.js:48404
+#: assets/dist/admin/js/templates-scripts.js:48448
+#: assets/dist/admin/js/templates-scripts.js:48470
+#: assets/dist/admin/js/templates-scripts.js:48492
+#: assets/dist/admin/js/templates-scripts.js:48514
+#: assets/dist/admin/js/woo-wizard.js:359
+#: assets/dist/admin/js/woo-wizard.js:497
+#: assets/dist/admin/js/woo-wizard.js:635
+#: assets/dist/admin/js/wp-admin-pages.js:41908
+#: assets/dist/admin/js/wp-admin-pages.js:41930
+#: assets/dist/admin/js/wp-admin-pages.js:41952
+#: assets/dist/admin/js/wp-admin-pages.js:42150
+#: assets/dist/admin/js/wp-admin-pages.js:42224
+#: assets/dist/admin/js/wp-admin-pages.js:42246
+#: assets/dist/admin/js/wp-admin-pages.js:42290
+#: assets/dist/admin/js/wp-admin-pages.js:42312
+#: assets/dist/admin/js/wp-admin-pages.js:42334
+#: assets/dist/admin/js/wp-admin-pages.js:42356
 #: assets/src/admin/js/Common/Utilities/templates.js:275
 #: assets/src/admin/js/Common/Utilities/templates.js:297
 #: assets/src/admin/js/Common/Utilities/templates.js:319
@@ -827,33 +959,42 @@ msgstr ""
 msgid "Product Name"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:410
-#: assets/dist/admin/js/app-handler.js:432
-#: assets/dist/admin/js/app-handler.js:454
-#: assets/dist/admin/js/app-handler.js:726
-#: assets/dist/admin/js/app-handler.js:748
-#: assets/dist/admin/js/app-handler.js:792
-#: assets/dist/admin/js/app-handler.js:814
-#: assets/dist/admin/js/app-handler.js:836
-#: assets/dist/admin/js/app-handler.js:858
-#: assets/dist/admin/js/templates-scripts.js:6687
-#: assets/dist/admin/js/templates-scripts.js:6709
-#: assets/dist/admin/js/templates-scripts.js:6731
-#: assets/dist/admin/js/templates-scripts.js:7003
-#: assets/dist/admin/js/templates-scripts.js:7025
-#: assets/dist/admin/js/templates-scripts.js:7069
-#: assets/dist/admin/js/templates-scripts.js:7091
-#: assets/dist/admin/js/templates-scripts.js:7113
-#: assets/dist/admin/js/templates-scripts.js:7135
-#: assets/dist/admin/js/wp-admin-pages.js:813
-#: assets/dist/admin/js/wp-admin-pages.js:835
-#: assets/dist/admin/js/wp-admin-pages.js:857
-#: assets/dist/admin/js/wp-admin-pages.js:1129
-#: assets/dist/admin/js/wp-admin-pages.js:1151
-#: assets/dist/admin/js/wp-admin-pages.js:1195
-#: assets/dist/admin/js/wp-admin-pages.js:1217
-#: assets/dist/admin/js/wp-admin-pages.js:1239
-#: assets/dist/admin/js/wp-admin-pages.js:1261
+#: assets/dist/admin/js/app-handler.js:422
+#: assets/dist/admin/js/app-handler.js:444
+#: assets/dist/admin/js/app-handler.js:466
+#: assets/dist/admin/js/app-handler.js:738
+#: assets/dist/admin/js/app-handler.js:760
+#: assets/dist/admin/js/app-handler.js:804
+#: assets/dist/admin/js/app-handler.js:826
+#: assets/dist/admin/js/app-handler.js:848
+#: assets/dist/admin/js/app-handler.js:870
+#: assets/dist/admin/js/blog-wizard.js:32885
+#: assets/dist/admin/js/blog-wizard.js:32907
+#: assets/dist/admin/js/blog-wizard.js:32929
+#: assets/dist/admin/js/blog-wizard.js:33201
+#: assets/dist/admin/js/blog-wizard.js:33223
+#: assets/dist/admin/js/blog-wizard.js:33267
+#: assets/dist/admin/js/blog-wizard.js:33289
+#: assets/dist/admin/js/blog-wizard.js:33311
+#: assets/dist/admin/js/blog-wizard.js:33333
+#: assets/dist/admin/js/templates-scripts.js:48069
+#: assets/dist/admin/js/templates-scripts.js:48091
+#: assets/dist/admin/js/templates-scripts.js:48113
+#: assets/dist/admin/js/templates-scripts.js:48385
+#: assets/dist/admin/js/templates-scripts.js:48407
+#: assets/dist/admin/js/templates-scripts.js:48451
+#: assets/dist/admin/js/templates-scripts.js:48473
+#: assets/dist/admin/js/templates-scripts.js:48495
+#: assets/dist/admin/js/templates-scripts.js:48517
+#: assets/dist/admin/js/wp-admin-pages.js:41911
+#: assets/dist/admin/js/wp-admin-pages.js:41933
+#: assets/dist/admin/js/wp-admin-pages.js:41955
+#: assets/dist/admin/js/wp-admin-pages.js:42227
+#: assets/dist/admin/js/wp-admin-pages.js:42249
+#: assets/dist/admin/js/wp-admin-pages.js:42293
+#: assets/dist/admin/js/wp-admin-pages.js:42315
+#: assets/dist/admin/js/wp-admin-pages.js:42337
+#: assets/dist/admin/js/wp-admin-pages.js:42359
 #: assets/src/admin/js/Common/Utilities/templates.js:278
 #: assets/src/admin/js/Common/Utilities/templates.js:300
 #: assets/src/admin/js/Common/Utilities/templates.js:322
@@ -866,65 +1007,77 @@ msgstr ""
 msgid "Enter the product name"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:414
-#: assets/dist/admin/js/app-handler.js:458
-#: assets/dist/admin/js/app-handler.js:480
-#: assets/dist/admin/js/templates-scripts.js:6691
-#: assets/dist/admin/js/templates-scripts.js:6735
-#: assets/dist/admin/js/templates-scripts.js:6757
-#: assets/dist/admin/js/wp-admin-pages.js:817
-#: assets/dist/admin/js/wp-admin-pages.js:861
-#: assets/dist/admin/js/wp-admin-pages.js:883
+#: assets/dist/admin/js/app-handler.js:426
+#: assets/dist/admin/js/app-handler.js:470
+#: assets/dist/admin/js/app-handler.js:492
+#: assets/dist/admin/js/blog-wizard.js:32889
+#: assets/dist/admin/js/blog-wizard.js:32933
+#: assets/dist/admin/js/blog-wizard.js:32955
+#: assets/dist/admin/js/templates-scripts.js:48073
+#: assets/dist/admin/js/templates-scripts.js:48117
+#: assets/dist/admin/js/templates-scripts.js:48139
+#: assets/dist/admin/js/wp-admin-pages.js:41915
+#: assets/dist/admin/js/wp-admin-pages.js:41959
+#: assets/dist/admin/js/wp-admin-pages.js:41981
 #: assets/src/admin/js/Common/Utilities/templates.js:282
 #: assets/src/admin/js/Common/Utilities/templates.js:326
 #: assets/src/admin/js/Common/Utilities/templates.js:348
 msgid "Product Brief"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:417
-#: assets/dist/admin/js/app-handler.js:461
-#: assets/dist/admin/js/app-handler.js:483
-#: assets/dist/admin/js/templates-scripts.js:6694
-#: assets/dist/admin/js/templates-scripts.js:6738
-#: assets/dist/admin/js/templates-scripts.js:6760
-#: assets/dist/admin/js/wp-admin-pages.js:820
-#: assets/dist/admin/js/wp-admin-pages.js:864
-#: assets/dist/admin/js/wp-admin-pages.js:886
+#: assets/dist/admin/js/app-handler.js:429
+#: assets/dist/admin/js/app-handler.js:473
+#: assets/dist/admin/js/app-handler.js:495
+#: assets/dist/admin/js/blog-wizard.js:32892
+#: assets/dist/admin/js/blog-wizard.js:32936
+#: assets/dist/admin/js/blog-wizard.js:32958
+#: assets/dist/admin/js/templates-scripts.js:48076
+#: assets/dist/admin/js/templates-scripts.js:48120
+#: assets/dist/admin/js/templates-scripts.js:48142
+#: assets/dist/admin/js/wp-admin-pages.js:41918
+#: assets/dist/admin/js/wp-admin-pages.js:41962
+#: assets/dist/admin/js/wp-admin-pages.js:41984
 #: assets/src/admin/js/Common/Utilities/templates.js:285
 #: assets/src/admin/js/Common/Utilities/templates.js:329
 #: assets/src/admin/js/Common/Utilities/templates.js:351
 msgid "Explain briefly about the product, or which features to focus on"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:424
-#: assets/dist/admin/js/templates-scripts.js:6701
-#: assets/dist/admin/js/wp-admin-pages.js:827
+#: assets/dist/admin/js/app-handler.js:436
+#: assets/dist/admin/js/blog-wizard.js:32899
+#: assets/dist/admin/js/templates-scripts.js:48083
+#: assets/dist/admin/js/wp-admin-pages.js:41925
 #: assets/src/admin/js/Common/Utilities/templates.js:292
 msgid "WooCommerce Product Long Description"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:426
-#: assets/dist/admin/js/templates-scripts.js:6703
-#: assets/dist/admin/js/wp-admin-pages.js:829
+#: assets/dist/admin/js/app-handler.js:438
+#: assets/dist/admin/js/blog-wizard.js:32901
+#: assets/dist/admin/js/templates-scripts.js:48085
+#: assets/dist/admin/js/wp-admin-pages.js:41927
 #: assets/src/admin/js/Common/Utilities/templates.js:294
 msgid "Generate keyword-optimized & conversion-friendly long descriptions for your WooCommerce products"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:436
-#: assets/dist/admin/js/app-handler.js:590
-#: assets/dist/admin/js/app-handler.js:656
-#: assets/dist/admin/js/app-handler.js:796
-#: assets/dist/admin/js/blog-wizard.js:26033
-#: assets/dist/admin/js/templates-scripts.js:6713
-#: assets/dist/admin/js/templates-scripts.js:6867
-#: assets/dist/admin/js/templates-scripts.js:6933
-#: assets/dist/admin/js/templates-scripts.js:7073
-#: assets/dist/admin/js/wp-admin-pages.js:839
-#: assets/dist/admin/js/wp-admin-pages.js:993
-#: assets/dist/admin/js/wp-admin-pages.js:1059
-#: assets/dist/admin/js/wp-admin-pages.js:1199
-#: assets/dist/admin/js/wp-integrations.js:24748
-#: assets/src/admin/js/BlogWizard/SeoData/SerpAnalysis/index.js:340
+#: assets/dist/admin/js/app-handler.js:448
+#: assets/dist/admin/js/app-handler.js:602
+#: assets/dist/admin/js/app-handler.js:668
+#: assets/dist/admin/js/app-handler.js:808
+#: assets/dist/admin/js/blog-wizard.js:24581
+#: assets/dist/admin/js/blog-wizard.js:32911
+#: assets/dist/admin/js/blog-wizard.js:33065
+#: assets/dist/admin/js/blog-wizard.js:33131
+#: assets/dist/admin/js/blog-wizard.js:33271
+#: assets/dist/admin/js/templates-scripts.js:48095
+#: assets/dist/admin/js/templates-scripts.js:48249
+#: assets/dist/admin/js/templates-scripts.js:48315
+#: assets/dist/admin/js/templates-scripts.js:48455
+#: assets/dist/admin/js/wp-admin-pages.js:41937
+#: assets/dist/admin/js/wp-admin-pages.js:42091
+#: assets/dist/admin/js/wp-admin-pages.js:42157
+#: assets/dist/admin/js/wp-admin-pages.js:42297
+#: assets/dist/admin/js/wp-integrations.js:23258
+#: assets/src/admin/js/BlogWizard/SeoData/SerpAnalysis/index.js:337
 #: assets/src/admin/js/Common/Utilities/templates.js:304
 #: assets/src/admin/js/Common/Utilities/templates.js:458
 #: assets/src/admin/js/Common/Utilities/templates.js:524
@@ -932,247 +1085,300 @@ msgstr ""
 msgid "Keywords"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:439
-#: assets/dist/admin/js/app-handler.js:659
-#: assets/dist/admin/js/templates-scripts.js:6716
-#: assets/dist/admin/js/templates-scripts.js:6936
-#: assets/dist/admin/js/wp-admin-pages.js:842
-#: assets/dist/admin/js/wp-admin-pages.js:1062
+#: assets/dist/admin/js/app-handler.js:451
+#: assets/dist/admin/js/app-handler.js:671
+#: assets/dist/admin/js/blog-wizard.js:32914
+#: assets/dist/admin/js/blog-wizard.js:33134
+#: assets/dist/admin/js/templates-scripts.js:48098
+#: assets/dist/admin/js/templates-scripts.js:48318
+#: assets/dist/admin/js/wp-admin-pages.js:41940
+#: assets/dist/admin/js/wp-admin-pages.js:42160
 #: assets/src/admin/js/Common/Utilities/templates.js:307
 #: assets/src/admin/js/Common/Utilities/templates.js:527
 msgid "Specify the keywords/key phrases for the product long description"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:446
-#: assets/dist/admin/js/templates-scripts.js:6723
-#: assets/dist/admin/js/wp-admin-pages.js:849
+#: assets/dist/admin/js/app-handler.js:458
+#: assets/dist/admin/js/blog-wizard.js:32921
+#: assets/dist/admin/js/templates-scripts.js:48105
+#: assets/dist/admin/js/wp-admin-pages.js:41947
 #: assets/src/admin/js/Common/Utilities/templates.js:314
 msgid "Taglines"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:448
-#: assets/dist/admin/js/templates-scripts.js:6725
-#: assets/dist/admin/js/wp-admin-pages.js:851
+#: assets/dist/admin/js/app-handler.js:460
+#: assets/dist/admin/js/blog-wizard.js:32923
+#: assets/dist/admin/js/templates-scripts.js:48107
+#: assets/dist/admin/js/wp-admin-pages.js:41949
 #: assets/src/admin/js/Common/Utilities/templates.js:316
 msgid "Get genie to write taglines for your brands, products, services, or any content"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:468
-#: assets/dist/admin/js/templates-scripts.js:6745
-#: assets/dist/admin/js/wp-admin-pages.js:871
+#: assets/dist/admin/js/app-handler.js:480
+#: assets/dist/admin/js/blog-wizard.js:32943
+#: assets/dist/admin/js/templates-scripts.js:48127
+#: assets/dist/admin/js/wp-admin-pages.js:41969
 #: assets/src/admin/js/Common/Utilities/templates.js:336
 msgid "Social Media Post/Copy"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:470
-#: assets/dist/admin/js/templates-scripts.js:6747
-#: assets/dist/admin/js/wp-admin-pages.js:873
+#: assets/dist/admin/js/app-handler.js:482
+#: assets/dist/admin/js/blog-wizard.js:32945
+#: assets/dist/admin/js/templates-scripts.js:48129
+#: assets/dist/admin/js/wp-admin-pages.js:41971
 #: assets/src/admin/js/Common/Utilities/templates.js:338
 msgid "Write copies for all your social media handles using a brief description of your product"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:473
-#: assets/dist/admin/js/templates-scripts.js:6750
-#: assets/dist/admin/js/wp-admin-pages.js:876
+#: assets/dist/admin/js/app-handler.js:485
+#: assets/dist/admin/js/blog-wizard.js:32948
+#: assets/dist/admin/js/templates-scripts.js:48132
+#: assets/dist/admin/js/wp-admin-pages.js:41974
 #: assets/src/admin/js/Common/Utilities/templates.js:341
 msgid "Product/Brand Name"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:476
-#: assets/dist/admin/js/templates-scripts.js:6753
-#: assets/dist/admin/js/wp-admin-pages.js:879
+#: assets/dist/admin/js/app-handler.js:488
+#: assets/dist/admin/js/blog-wizard.js:32951
+#: assets/dist/admin/js/templates-scripts.js:48135
+#: assets/dist/admin/js/wp-admin-pages.js:41977
 #: assets/src/admin/js/Common/Utilities/templates.js:344
 msgid "Enter the name of the product/brand"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:490
-#: assets/dist/admin/js/templates-scripts.js:6767
-#: assets/dist/admin/js/wp-admin-pages.js:893
+#: assets/dist/admin/js/app-handler.js:502
+#: assets/dist/admin/js/blog-wizard.js:32965
+#: assets/dist/admin/js/templates-scripts.js:48149
+#: assets/dist/admin/js/wp-admin-pages.js:41991
 #: assets/src/admin/js/Common/Utilities/templates.js:358
 msgid "Content Rewriter"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:492
-#: assets/dist/admin/js/templates-scripts.js:6769
-#: assets/dist/admin/js/wp-admin-pages.js:895
+#: assets/dist/admin/js/app-handler.js:504
+#: assets/dist/admin/js/blog-wizard.js:32967
+#: assets/dist/admin/js/templates-scripts.js:48151
+#: assets/dist/admin/js/wp-admin-pages.js:41993
 #: assets/src/admin/js/Common/Utilities/templates.js:360
 msgid "Get AI-paraphrased variations of your given sentence/paragraph/content from Genie"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:495
-#: assets/dist/admin/js/templates-scripts.js:6772
-#: assets/dist/admin/js/wp-admin-pages.js:898
+#: assets/dist/admin/js/app-handler.js:507
+#: assets/dist/admin/js/blog-wizard.js:32970
+#: assets/dist/admin/js/templates-scripts.js:48154
+#: assets/dist/admin/js/wp-admin-pages.js:41996
 #: assets/src/admin/js/Common/Utilities/templates.js:363
 msgid "Your Content"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:498
-#: assets/dist/admin/js/templates-scripts.js:6775
-#: assets/dist/admin/js/wp-admin-pages.js:901
+#: assets/dist/admin/js/app-handler.js:510
+#: assets/dist/admin/js/blog-wizard.js:32973
+#: assets/dist/admin/js/templates-scripts.js:48157
+#: assets/dist/admin/js/wp-admin-pages.js:41999
 #: assets/src/admin/js/Common/Utilities/templates.js:366
 msgid "Provide the sentence/paragraph/content you want to be rewritten/paraphrased"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:505
-#: assets/dist/admin/js/templates-scripts.js:6782
-#: assets/dist/admin/js/wp-admin-pages.js:908
+#: assets/dist/admin/js/app-handler.js:517
+#: assets/dist/admin/js/blog-wizard.js:32980
+#: assets/dist/admin/js/templates-scripts.js:48164
+#: assets/dist/admin/js/wp-admin-pages.js:42006
 #: assets/src/admin/js/Common/Utilities/templates.js:373
 msgid "Call to Action"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:507
-#: assets/dist/admin/js/templates-scripts.js:6784
-#: assets/dist/admin/js/wp-admin-pages.js:910
+#: assets/dist/admin/js/app-handler.js:519
+#: assets/dist/admin/js/blog-wizard.js:32982
+#: assets/dist/admin/js/templates-scripts.js:48166
+#: assets/dist/admin/js/wp-admin-pages.js:42008
 #: assets/src/admin/js/Common/Utilities/templates.js:375
 msgid "Increase your CTA button/anchor's CTR using the magical persuasive words of Genie"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:510
-#: assets/dist/admin/js/templates-scripts.js:6787
-#: assets/dist/admin/js/wp-admin-pages.js:913
+#: assets/dist/admin/js/app-handler.js:522
+#: assets/dist/admin/js/blog-wizard.js:32985
+#: assets/dist/admin/js/templates-scripts.js:48169
+#: assets/dist/admin/js/wp-admin-pages.js:42011
 #: assets/src/admin/js/Common/Utilities/templates.js:378
 msgid "Context/Description"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:513
-#: assets/dist/admin/js/templates-scripts.js:6790
-#: assets/dist/admin/js/wp-admin-pages.js:916
+#: assets/dist/admin/js/app-handler.js:525
+#: assets/dist/admin/js/blog-wizard.js:32988
+#: assets/dist/admin/js/templates-scripts.js:48172
+#: assets/dist/admin/js/wp-admin-pages.js:42014
 #: assets/src/admin/js/Common/Utilities/templates.js:381
 msgid "Provide the context or the details of the call-to-action (CTA) button/link"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:517
-#: assets/dist/admin/js/templates-scripts.js:6794
-#: assets/dist/admin/js/wp-admin-pages.js:920
+#: assets/dist/admin/js/app-handler.js:529
+#: assets/dist/admin/js/blog-wizard.js:32992
+#: assets/dist/admin/js/templates-scripts.js:48176
+#: assets/dist/admin/js/wp-admin-pages.js:42018
 #: assets/src/admin/js/Common/Utilities/templates.js:385
 msgid "Product/Brand Name "
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:520
-#: assets/dist/admin/js/templates-scripts.js:6797
-#: assets/dist/admin/js/wp-admin-pages.js:923
+#: assets/dist/admin/js/app-handler.js:532
+#: assets/dist/admin/js/blog-wizard.js:32995
+#: assets/dist/admin/js/templates-scripts.js:48179
+#: assets/dist/admin/js/wp-admin-pages.js:42021
 #: assets/src/admin/js/Common/Utilities/templates.js:388
 msgid "You can provide the name of the product/brand to be included in the CTA content"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:527
-#: assets/dist/admin/js/templates-scripts.js:6804
-#: assets/dist/admin/js/wp-admin-pages.js:930
+#: assets/dist/admin/js/app-handler.js:539
+#: assets/dist/admin/js/blog-wizard.js:33002
+#: assets/dist/admin/js/templates-scripts.js:48186
+#: assets/dist/admin/js/wp-admin-pages.js:42028
 #: assets/src/admin/js/Common/Utilities/templates.js:395
 msgid "Conclusion"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:529
-#: assets/dist/admin/js/templates-scripts.js:6806
-#: assets/dist/admin/js/wp-admin-pages.js:932
+#: assets/dist/admin/js/app-handler.js:541
+#: assets/dist/admin/js/blog-wizard.js:33004
+#: assets/dist/admin/js/templates-scripts.js:48188
+#: assets/dist/admin/js/wp-admin-pages.js:42030
 #: assets/src/admin/js/Common/Utilities/templates.js:397
 msgid "Draw a relevant conclusion for your blog post or any content using Genie's AI magic"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:532
-#: assets/dist/admin/js/blog-wizard.js:30596
-#: assets/dist/admin/js/templates-scripts.js:6809
-#: assets/dist/admin/js/wp-admin-pages.js:935
-#: assets/dist/admin/js/wp-integrations.js:31240
-#: assets/src/admin/js/BlogWizard/WritingScreens/Wrapper/index.js:58
+#: assets/dist/admin/js/app-handler.js:544
+#: assets/dist/admin/js/blog-wizard.js:29202
+#: assets/dist/admin/js/blog-wizard.js:33007
+#: assets/dist/admin/js/templates-scripts.js:48191
+#: assets/dist/admin/js/wp-admin-pages.js:42033
+#: assets/dist/admin/js/wp-integrations.js:29837
+#: assets/src/admin/js/BlogWizard/WritingScreens/Wrapper/index.js:74
 #: assets/src/admin/js/Common/Utilities/templates.js:400
 msgid "Title"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:535
-#: assets/dist/admin/js/templates-scripts.js:6812
-#: assets/dist/admin/js/wp-admin-pages.js:938
+#: assets/dist/admin/js/app-handler.js:547
+#: assets/dist/admin/js/blog-wizard.js:33010
+#: assets/dist/admin/js/templates-scripts.js:48194
+#: assets/dist/admin/js/wp-admin-pages.js:42036
 #: assets/src/admin/js/Common/Utilities/templates.js:403
 msgid "Enter the title of the blog post/content that needs a conclusion from GetGenie"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:539
-#: assets/dist/admin/js/blog-wizard.js:30601
-#: assets/dist/admin/js/templates-scripts.js:6816
-#: assets/dist/admin/js/wp-admin-pages.js:942
-#: assets/dist/admin/js/wp-integrations.js:31245
-#: assets/src/admin/js/BlogWizard/WritingScreens/Wrapper/index.js:63
+#: assets/dist/admin/js/app-handler.js:551
+#: assets/dist/admin/js/blog-wizard.js:29207
+#: assets/dist/admin/js/blog-wizard.js:33014
+#: assets/dist/admin/js/templates-scripts.js:48198
+#: assets/dist/admin/js/wp-admin-pages.js:42040
+#: assets/dist/admin/js/wp-integrations.js:29842
+#: assets/src/admin/js/BlogWizard/WritingScreens/Wrapper/index.js:79
 #: assets/src/admin/js/Common/Utilities/templates.js:407
 msgid "Intro"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:542
-#: assets/dist/admin/js/templates-scripts.js:6819
-#: assets/dist/admin/js/wp-admin-pages.js:945
+#: assets/dist/admin/js/app-handler.js:554
+#: assets/dist/admin/js/blog-wizard.js:33017
+#: assets/dist/admin/js/templates-scripts.js:48201
+#: assets/dist/admin/js/wp-admin-pages.js:42043
 #: assets/src/admin/js/Common/Utilities/templates.js:410
 msgid "Provide the introduction of the blog post/content for a better context"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:549
-#: assets/dist/admin/js/templates-scripts.js:6826
-#: assets/dist/admin/js/wp-admin-pages.js:952
+#: assets/dist/admin/js/app-handler.js:561
+#: assets/dist/admin/js/blog-wizard.js:33024
+#: assets/dist/admin/js/templates-scripts.js:48208
+#: assets/dist/admin/js/wp-admin-pages.js:42050
 #: assets/src/admin/js/Common/Utilities/templates.js:417
 msgid "LinkedIn Post"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:551
-#: assets/dist/admin/js/templates-scripts.js:6828
-#: assets/dist/admin/js/wp-admin-pages.js:954
+#: assets/dist/admin/js/app-handler.js:563
+#: assets/dist/admin/js/blog-wizard.js:33026
+#: assets/dist/admin/js/templates-scripts.js:48210
+#: assets/dist/admin/js/wp-admin-pages.js:42052
 #: assets/src/admin/js/Common/Utilities/templates.js:419
 msgid "For yourself or your company/brand, professional posts made easy with AI for LinkedIn"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:557
-#: assets/dist/admin/js/templates-scripts.js:6834
-#: assets/dist/admin/js/wp-admin-pages.js:960
+#: assets/dist/admin/js/app-handler.js:569
+#: assets/dist/admin/js/blog-wizard.js:33032
+#: assets/dist/admin/js/templates-scripts.js:48216
+#: assets/dist/admin/js/wp-admin-pages.js:42058
 #: assets/src/admin/js/Common/Utilities/templates.js:425
 msgid "Enter the topic"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:561
-#: assets/dist/admin/js/app-handler.js:612
-#: assets/dist/admin/js/app-handler.js:708
-#: assets/dist/admin/js/templates-scripts.js:6838
-#: assets/dist/admin/js/templates-scripts.js:6889
-#: assets/dist/admin/js/templates-scripts.js:6985
-#: assets/dist/admin/js/wp-admin-pages.js:964
-#: assets/dist/admin/js/wp-admin-pages.js:1015
-#: assets/dist/admin/js/wp-admin-pages.js:1111
+#: assets/dist/admin/js/app-handler.js:573
+#: assets/dist/admin/js/app-handler.js:624
+#: assets/dist/admin/js/app-handler.js:720
+#: assets/dist/admin/js/app-handler.js:902
+#: assets/dist/admin/js/app-handler.js:969
+#: assets/dist/admin/js/app-handler.js:1006
+#: assets/dist/admin/js/blog-wizard.js:33036
+#: assets/dist/admin/js/blog-wizard.js:33087
+#: assets/dist/admin/js/blog-wizard.js:33183
+#: assets/dist/admin/js/blog-wizard.js:33364
+#: assets/dist/admin/js/blog-wizard.js:33431
+#: assets/dist/admin/js/blog-wizard.js:33468
+#: assets/dist/admin/js/templates-scripts.js:48220
+#: assets/dist/admin/js/templates-scripts.js:48271
+#: assets/dist/admin/js/templates-scripts.js:48367
+#: assets/dist/admin/js/templates-scripts.js:48580
+#: assets/dist/admin/js/templates-scripts.js:48647
+#: assets/dist/admin/js/templates-scripts.js:48684
+#: assets/dist/admin/js/wp-admin-pages.js:42062
+#: assets/dist/admin/js/wp-admin-pages.js:42113
+#: assets/dist/admin/js/wp-admin-pages.js:42209
+#: assets/dist/admin/js/wp-admin-pages.js:42422
+#: assets/dist/admin/js/wp-admin-pages.js:42489
+#: assets/dist/admin/js/wp-admin-pages.js:42526
+#: assets/src/admin/js/Common/Utilities/newTemplates.js:18
+#: assets/src/admin/js/Common/Utilities/newTemplates.js:85
+#: assets/src/admin/js/Common/Utilities/newTemplates.js:122
 #: assets/src/admin/js/Common/Utilities/templates.js:429
 #: assets/src/admin/js/Common/Utilities/templates.js:480
 #: assets/src/admin/js/Common/Utilities/templates.js:576
 msgid "Context"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:564
-#: assets/dist/admin/js/templates-scripts.js:6841
-#: assets/dist/admin/js/wp-admin-pages.js:967
+#: assets/dist/admin/js/app-handler.js:576
+#: assets/dist/admin/js/blog-wizard.js:33039
+#: assets/dist/admin/js/templates-scripts.js:48223
+#: assets/dist/admin/js/wp-admin-pages.js:42065
 #: assets/src/admin/js/Common/Utilities/templates.js:432
 msgid "Explain what the post is about and which topics should be touched upon"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:568
-#: assets/dist/admin/js/app-handler.js:583
-#: assets/dist/admin/js/app-handler.js:605
-#: assets/dist/admin/js/templates-scripts.js:6845
-#: assets/dist/admin/js/templates-scripts.js:6860
-#: assets/dist/admin/js/templates-scripts.js:6882
-#: assets/dist/admin/js/wp-admin-pages.js:971
-#: assets/dist/admin/js/wp-admin-pages.js:986
-#: assets/dist/admin/js/wp-admin-pages.js:1008
+#: assets/dist/admin/js/app-handler.js:580
+#: assets/dist/admin/js/app-handler.js:595
+#: assets/dist/admin/js/app-handler.js:617
+#: assets/dist/admin/js/blog-wizard.js:33043
+#: assets/dist/admin/js/blog-wizard.js:33058
+#: assets/dist/admin/js/blog-wizard.js:33080
+#: assets/dist/admin/js/templates-scripts.js:48227
+#: assets/dist/admin/js/templates-scripts.js:48242
+#: assets/dist/admin/js/templates-scripts.js:48264
+#: assets/dist/admin/js/wp-admin-pages.js:42069
+#: assets/dist/admin/js/wp-admin-pages.js:42084
+#: assets/dist/admin/js/wp-admin-pages.js:42106
 #: assets/src/admin/js/Common/Utilities/templates.js:436
 #: assets/src/admin/js/Common/Utilities/templates.js:451
 #: assets/src/admin/js/Common/Utilities/templates.js:473
 msgid "Brand name"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:571
-#: assets/dist/admin/js/app-handler.js:586
-#: assets/dist/admin/js/app-handler.js:608
-#: assets/dist/admin/js/app-handler.js:652
-#: assets/dist/admin/js/templates-scripts.js:6848
-#: assets/dist/admin/js/templates-scripts.js:6863
-#: assets/dist/admin/js/templates-scripts.js:6885
-#: assets/dist/admin/js/templates-scripts.js:6929
-#: assets/dist/admin/js/wp-admin-pages.js:974
-#: assets/dist/admin/js/wp-admin-pages.js:989
-#: assets/dist/admin/js/wp-admin-pages.js:1011
-#: assets/dist/admin/js/wp-admin-pages.js:1055
+#: assets/dist/admin/js/app-handler.js:583
+#: assets/dist/admin/js/app-handler.js:598
+#: assets/dist/admin/js/app-handler.js:620
+#: assets/dist/admin/js/app-handler.js:664
+#: assets/dist/admin/js/blog-wizard.js:33046
+#: assets/dist/admin/js/blog-wizard.js:33061
+#: assets/dist/admin/js/blog-wizard.js:33083
+#: assets/dist/admin/js/blog-wizard.js:33127
+#: assets/dist/admin/js/templates-scripts.js:48230
+#: assets/dist/admin/js/templates-scripts.js:48245
+#: assets/dist/admin/js/templates-scripts.js:48267
+#: assets/dist/admin/js/templates-scripts.js:48311
+#: assets/dist/admin/js/wp-admin-pages.js:42072
+#: assets/dist/admin/js/wp-admin-pages.js:42087
+#: assets/dist/admin/js/wp-admin-pages.js:42109
+#: assets/dist/admin/js/wp-admin-pages.js:42153
 #: assets/src/admin/js/Common/Utilities/templates.js:439
 #: assets/src/admin/js/Common/Utilities/templates.js:454
 #: assets/src/admin/js/Common/Utilities/templates.js:476
@@ -1180,225 +1386,264 @@ msgstr ""
 msgid "Enter the brand name"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:578
-#: assets/dist/admin/js/templates-scripts.js:6855
-#: assets/dist/admin/js/wp-admin-pages.js:981
+#: assets/dist/admin/js/app-handler.js:590
+#: assets/dist/admin/js/blog-wizard.js:33053
+#: assets/dist/admin/js/templates-scripts.js:48237
+#: assets/dist/admin/js/wp-admin-pages.js:42079
 #: assets/src/admin/js/Common/Utilities/templates.js:446
 msgid "Instagram Bio"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:580
-#: assets/dist/admin/js/templates-scripts.js:6857
-#: assets/dist/admin/js/wp-admin-pages.js:983
+#: assets/dist/admin/js/app-handler.js:592
+#: assets/dist/admin/js/blog-wizard.js:33055
+#: assets/dist/admin/js/templates-scripts.js:48239
+#: assets/dist/admin/js/wp-admin-pages.js:42081
 #: assets/src/admin/js/Common/Utilities/templates.js:448
 msgid "Make lasting impressions with the perfect instagram bio for your handle from AI"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:593
-#: assets/dist/admin/js/templates-scripts.js:6870
-#: assets/dist/admin/js/wp-admin-pages.js:996
+#: assets/dist/admin/js/app-handler.js:605
+#: assets/dist/admin/js/blog-wizard.js:33068
+#: assets/dist/admin/js/templates-scripts.js:48252
+#: assets/dist/admin/js/wp-admin-pages.js:42094
 #: assets/src/admin/js/Common/Utilities/templates.js:461
 msgid "Specify the keywords/key phrases for the instagram bio"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:600
-#: assets/dist/admin/js/templates-scripts.js:6877
-#: assets/dist/admin/js/wp-admin-pages.js:1003
+#: assets/dist/admin/js/app-handler.js:612
+#: assets/dist/admin/js/blog-wizard.js:33075
+#: assets/dist/admin/js/templates-scripts.js:48259
+#: assets/dist/admin/js/wp-admin-pages.js:42101
 #: assets/src/admin/js/Common/Utilities/templates.js:468
 msgid "Instagram Caption"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:602
-#: assets/dist/admin/js/templates-scripts.js:6879
-#: assets/dist/admin/js/wp-admin-pages.js:1005
+#: assets/dist/admin/js/app-handler.js:614
+#: assets/dist/admin/js/blog-wizard.js:33077
+#: assets/dist/admin/js/templates-scripts.js:48261
+#: assets/dist/admin/js/wp-admin-pages.js:42103
 #: assets/src/admin/js/Common/Utilities/templates.js:470
 msgid "Generate AI-powered captions for your instagram images in the blink of an eye"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:615
-#: assets/dist/admin/js/templates-scripts.js:6892
-#: assets/dist/admin/js/wp-admin-pages.js:1018
+#: assets/dist/admin/js/app-handler.js:627
+#: assets/dist/admin/js/blog-wizard.js:33090
+#: assets/dist/admin/js/templates-scripts.js:48274
+#: assets/dist/admin/js/wp-admin-pages.js:42116
 #: assets/src/admin/js/Common/Utilities/templates.js:483
 msgid "Provide the topic, context or any additional instruction for the instagram caption"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:622
-#: assets/dist/admin/js/templates-scripts.js:6899
-#: assets/dist/admin/js/wp-admin-pages.js:1025
+#: assets/dist/admin/js/app-handler.js:634
+#: assets/dist/admin/js/blog-wizard.js:33097
+#: assets/dist/admin/js/templates-scripts.js:48281
+#: assets/dist/admin/js/wp-admin-pages.js:42123
 #: assets/src/admin/js/Common/Utilities/templates.js:490
 msgid "Pros and Cons"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:624
-#: assets/dist/admin/js/templates-scripts.js:6901
-#: assets/dist/admin/js/wp-admin-pages.js:1027
+#: assets/dist/admin/js/app-handler.js:636
+#: assets/dist/admin/js/blog-wizard.js:33099
+#: assets/dist/admin/js/templates-scripts.js:48283
+#: assets/dist/admin/js/wp-admin-pages.js:42125
 #: assets/src/admin/js/Common/Utilities/templates.js:492
 msgid "Generate a list of pros and cons about any given topic to utilize in your content"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:630
-#: assets/dist/admin/js/templates-scripts.js:6907
-#: assets/dist/admin/js/wp-admin-pages.js:1033
+#: assets/dist/admin/js/app-handler.js:642
+#: assets/dist/admin/js/blog-wizard.js:33105
+#: assets/dist/admin/js/templates-scripts.js:48289
+#: assets/dist/admin/js/wp-admin-pages.js:42131
 #: assets/src/admin/js/Common/Utilities/templates.js:498
 msgid "Enter a topic to get the pros and cons of it"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:634
-#: assets/dist/admin/js/templates-scripts.js:6911
-#: assets/dist/admin/js/wp-admin-pages.js:1037
+#: assets/dist/admin/js/app-handler.js:646
+#: assets/dist/admin/js/blog-wizard.js:33109
+#: assets/dist/admin/js/templates-scripts.js:48293
+#: assets/dist/admin/js/wp-admin-pages.js:42135
 #: assets/src/admin/js/Common/Utilities/templates.js:502
 msgid "Context/Additional Instruction"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:637
-#: assets/dist/admin/js/templates-scripts.js:6914
-#: assets/dist/admin/js/wp-admin-pages.js:1040
+#: assets/dist/admin/js/app-handler.js:649
+#: assets/dist/admin/js/app-handler.js:905
+#: assets/dist/admin/js/blog-wizard.js:33112
+#: assets/dist/admin/js/blog-wizard.js:33367
+#: assets/dist/admin/js/templates-scripts.js:48296
+#: assets/dist/admin/js/templates-scripts.js:48583
+#: assets/dist/admin/js/wp-admin-pages.js:42138
+#: assets/dist/admin/js/wp-admin-pages.js:42425
+#: assets/src/admin/js/Common/Utilities/newTemplates.js:21
 #: assets/src/admin/js/Common/Utilities/templates.js:505
 msgid "You can give additional instruction/context for a more accurate output (optional)"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:644
-#: assets/dist/admin/js/templates-scripts.js:6921
-#: assets/dist/admin/js/wp-admin-pages.js:1047
+#: assets/dist/admin/js/app-handler.js:656
+#: assets/dist/admin/js/blog-wizard.js:33119
+#: assets/dist/admin/js/templates-scripts.js:48303
+#: assets/dist/admin/js/wp-admin-pages.js:42145
 #: assets/src/admin/js/Common/Utilities/templates.js:512
 msgid "WooCommerce Product Short Description"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:646
-#: assets/dist/admin/js/templates-scripts.js:6923
-#: assets/dist/admin/js/wp-admin-pages.js:1049
+#: assets/dist/admin/js/app-handler.js:658
+#: assets/dist/admin/js/blog-wizard.js:33121
+#: assets/dist/admin/js/templates-scripts.js:48305
+#: assets/dist/admin/js/wp-admin-pages.js:42147
 #: assets/src/admin/js/Common/Utilities/templates.js:514
 msgid "Get short descriptions/excerpts for your WooCommerce products optimized for your desired keywords"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:666
-#: assets/dist/admin/js/templates-scripts.js:6943
-#: assets/dist/admin/js/wp-admin-pages.js:1069
+#: assets/dist/admin/js/app-handler.js:678
+#: assets/dist/admin/js/blog-wizard.js:33141
+#: assets/dist/admin/js/templates-scripts.js:48325
+#: assets/dist/admin/js/wp-admin-pages.js:42167
 #: assets/src/admin/js/Common/Utilities/templates.js:534
 msgid "Tweet (Twitter Post)"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:668
-#: assets/dist/admin/js/templates-scripts.js:6945
-#: assets/dist/admin/js/wp-admin-pages.js:1071
+#: assets/dist/admin/js/app-handler.js:680
+#: assets/dist/admin/js/blog-wizard.js:33143
+#: assets/dist/admin/js/templates-scripts.js:48327
+#: assets/dist/admin/js/wp-admin-pages.js:42169
 #: assets/src/admin/js/Common/Utilities/templates.js:536
 msgid "Short but impactful — that's what your tweets will be when you generate them with GetGenie"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:671
-#: assets/dist/admin/js/app-handler.js:686
-#: assets/dist/admin/js/templates-scripts.js:6948
-#: assets/dist/admin/js/templates-scripts.js:6963
-#: assets/dist/admin/js/wp-admin-pages.js:1074
-#: assets/dist/admin/js/wp-admin-pages.js:1089
+#: assets/dist/admin/js/app-handler.js:683
+#: assets/dist/admin/js/app-handler.js:698
+#: assets/dist/admin/js/blog-wizard.js:33146
+#: assets/dist/admin/js/blog-wizard.js:33161
+#: assets/dist/admin/js/templates-scripts.js:48330
+#: assets/dist/admin/js/templates-scripts.js:48345
+#: assets/dist/admin/js/wp-admin-pages.js:42172
+#: assets/dist/admin/js/wp-admin-pages.js:42187
 #: assets/src/admin/js/Common/Utilities/templates.js:539
 #: assets/src/admin/js/Common/Utilities/templates.js:554
 msgid "Context/Instruction"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:674
-#: assets/dist/admin/js/templates-scripts.js:6951
-#: assets/dist/admin/js/wp-admin-pages.js:1077
+#: assets/dist/admin/js/app-handler.js:686
+#: assets/dist/admin/js/blog-wizard.js:33149
+#: assets/dist/admin/js/templates-scripts.js:48333
+#: assets/dist/admin/js/wp-admin-pages.js:42175
 #: assets/src/admin/js/Common/Utilities/templates.js:542
 msgid "Enter context/Instruction "
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:681
-#: assets/dist/admin/js/templates-scripts.js:6958
-#: assets/dist/admin/js/wp-admin-pages.js:1084
+#: assets/dist/admin/js/app-handler.js:693
+#: assets/dist/admin/js/blog-wizard.js:33156
+#: assets/dist/admin/js/templates-scripts.js:48340
+#: assets/dist/admin/js/wp-admin-pages.js:42182
 #: assets/src/admin/js/Common/Utilities/templates.js:549
 msgid "Twitter Thread"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:683
-#: assets/dist/admin/js/templates-scripts.js:6960
-#: assets/dist/admin/js/wp-admin-pages.js:1086
+#: assets/dist/admin/js/app-handler.js:695
+#: assets/dist/admin/js/blog-wizard.js:33158
+#: assets/dist/admin/js/templates-scripts.js:48342
+#: assets/dist/admin/js/wp-admin-pages.js:42184
 #: assets/src/admin/js/Common/Utilities/templates.js:551
 msgid "Create engaging Twitter threads on any topic and up your Twitter game using AI magic"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:689
-#: assets/dist/admin/js/templates-scripts.js:6966
-#: assets/dist/admin/js/wp-admin-pages.js:1092
+#: assets/dist/admin/js/app-handler.js:701
+#: assets/dist/admin/js/blog-wizard.js:33164
+#: assets/dist/admin/js/templates-scripts.js:48348
+#: assets/dist/admin/js/wp-admin-pages.js:42190
 #: assets/src/admin/js/Common/Utilities/templates.js:557
 msgid "Enter the context/instruction"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:696
-#: assets/dist/admin/js/templates-scripts.js:6973
-#: assets/dist/admin/js/wp-admin-pages.js:1099
+#: assets/dist/admin/js/app-handler.js:708
+#: assets/dist/admin/js/blog-wizard.js:33171
+#: assets/dist/admin/js/templates-scripts.js:48355
+#: assets/dist/admin/js/wp-admin-pages.js:42197
 #: assets/src/admin/js/Common/Utilities/templates.js:564
 msgid "Explain Why"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:698
-#: assets/dist/admin/js/templates-scripts.js:6975
-#: assets/dist/admin/js/wp-admin-pages.js:1101
+#: assets/dist/admin/js/app-handler.js:710
+#: assets/dist/admin/js/blog-wizard.js:33173
+#: assets/dist/admin/js/templates-scripts.js:48357
+#: assets/dist/admin/js/wp-admin-pages.js:42199
 #: assets/src/admin/js/Common/Utilities/templates.js:566
 msgid "Questions need answering and concepts need explaining — let’s explain why"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:704
-#: assets/dist/admin/js/templates-scripts.js:6981
-#: assets/dist/admin/js/wp-admin-pages.js:1107
+#: assets/dist/admin/js/app-handler.js:716
+#: assets/dist/admin/js/blog-wizard.js:33179
+#: assets/dist/admin/js/templates-scripts.js:48363
+#: assets/dist/admin/js/wp-admin-pages.js:42205
 #: assets/src/admin/js/Common/Utilities/templates.js:572
 msgid "Enter a WH-question question that you need explained"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:711
-#: assets/dist/admin/js/templates-scripts.js:6988
-#: assets/dist/admin/js/wp-admin-pages.js:1114
+#: assets/dist/admin/js/app-handler.js:723
+#: assets/dist/admin/js/blog-wizard.js:33186
+#: assets/dist/admin/js/templates-scripts.js:48370
+#: assets/dist/admin/js/wp-admin-pages.js:42212
 #: assets/src/admin/js/Common/Utilities/templates.js:579
 msgid "You can give additional instruction/context for a more accurate output"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:718
-#: assets/dist/admin/js/templates-scripts.js:6995
-#: assets/dist/admin/js/wp-admin-pages.js:1121
+#: assets/dist/admin/js/app-handler.js:730
+#: assets/dist/admin/js/blog-wizard.js:33193
+#: assets/dist/admin/js/templates-scripts.js:48377
+#: assets/dist/admin/js/wp-admin-pages.js:42219
 #: assets/src/admin/js/Common/Utilities/templates.js:586
 msgid "Feature - Benefit"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:720
-#: assets/dist/admin/js/templates-scripts.js:6997
-#: assets/dist/admin/js/wp-admin-pages.js:1123
+#: assets/dist/admin/js/app-handler.js:732
+#: assets/dist/admin/js/blog-wizard.js:33195
+#: assets/dist/admin/js/templates-scripts.js:48379
+#: assets/dist/admin/js/wp-admin-pages.js:42221
 #: assets/src/admin/js/Common/Utilities/templates.js:588
 msgid "Describe what your product/service does and get the detailed benefits in return"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:733
-#: assets/dist/admin/js/templates-scripts.js:7010
-#: assets/dist/admin/js/wp-admin-pages.js:1136
+#: assets/dist/admin/js/app-handler.js:745
+#: assets/dist/admin/js/blog-wizard.js:33208
+#: assets/dist/admin/js/templates-scripts.js:48392
+#: assets/dist/admin/js/wp-admin-pages.js:42234
 #: assets/src/admin/js/Common/Utilities/templates.js:601
 msgid "Enter the product's features here to generate the benefits"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:740
-#: assets/dist/admin/js/templates-scripts.js:7017
-#: assets/dist/admin/js/wp-admin-pages.js:1143
+#: assets/dist/admin/js/app-handler.js:752
+#: assets/dist/admin/js/blog-wizard.js:33215
+#: assets/dist/admin/js/templates-scripts.js:48399
+#: assets/dist/admin/js/wp-admin-pages.js:42241
 #: assets/src/admin/js/Common/Utilities/templates.js:608
 msgid "Before After Bridge (BAB)"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:742
-#: assets/dist/admin/js/templates-scripts.js:7019
-#: assets/dist/admin/js/wp-admin-pages.js:1145
+#: assets/dist/admin/js/app-handler.js:754
+#: assets/dist/admin/js/blog-wizard.js:33217
+#: assets/dist/admin/js/templates-scripts.js:48401
+#: assets/dist/admin/js/wp-admin-pages.js:42243
 #: assets/src/admin/js/Common/Utilities/templates.js:610
 msgid "BAB formula shows the before and after of your product/solution in your content"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:755
-#: assets/dist/admin/js/app-handler.js:821
-#: assets/dist/admin/js/app-handler.js:843
-#: assets/dist/admin/js/app-handler.js:865
-#: assets/dist/admin/js/templates-scripts.js:7032
-#: assets/dist/admin/js/templates-scripts.js:7098
-#: assets/dist/admin/js/templates-scripts.js:7120
-#: assets/dist/admin/js/templates-scripts.js:7142
-#: assets/dist/admin/js/wp-admin-pages.js:1158
-#: assets/dist/admin/js/wp-admin-pages.js:1224
-#: assets/dist/admin/js/wp-admin-pages.js:1246
-#: assets/dist/admin/js/wp-admin-pages.js:1268
+#: assets/dist/admin/js/app-handler.js:767
+#: assets/dist/admin/js/app-handler.js:833
+#: assets/dist/admin/js/app-handler.js:855
+#: assets/dist/admin/js/app-handler.js:877
+#: assets/dist/admin/js/blog-wizard.js:33230
+#: assets/dist/admin/js/blog-wizard.js:33296
+#: assets/dist/admin/js/blog-wizard.js:33318
+#: assets/dist/admin/js/blog-wizard.js:33340
+#: assets/dist/admin/js/templates-scripts.js:48414
+#: assets/dist/admin/js/templates-scripts.js:48480
+#: assets/dist/admin/js/templates-scripts.js:48502
+#: assets/dist/admin/js/templates-scripts.js:48524
+#: assets/dist/admin/js/wp-admin-pages.js:42256
+#: assets/dist/admin/js/wp-admin-pages.js:42322
+#: assets/dist/admin/js/wp-admin-pages.js:42344
+#: assets/dist/admin/js/wp-admin-pages.js:42366
 #: assets/src/admin/js/Common/Utilities/templates.js:623
 #: assets/src/admin/js/Common/Utilities/templates.js:689
 #: assets/src/admin/js/Common/Utilities/templates.js:711
@@ -1406,934 +1651,1254 @@ msgstr ""
 msgid "Enter the product description"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:762
-#: assets/dist/admin/js/templates-scripts.js:7039
-#: assets/dist/admin/js/wp-admin-pages.js:1165
+#: assets/dist/admin/js/app-handler.js:774
+#: assets/dist/admin/js/blog-wizard.js:33237
+#: assets/dist/admin/js/templates-scripts.js:48421
+#: assets/dist/admin/js/wp-admin-pages.js:42263
 #: assets/src/admin/js/Common/Utilities/templates.js:630
 msgid "Bullet Point to Answers"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:764
-#: assets/dist/admin/js/templates-scripts.js:7041
-#: assets/dist/admin/js/wp-admin-pages.js:1167
+#: assets/dist/admin/js/app-handler.js:776
+#: assets/dist/admin/js/blog-wizard.js:33239
+#: assets/dist/admin/js/templates-scripts.js:48423
+#: assets/dist/admin/js/wp-admin-pages.js:42265
 #: assets/src/admin/js/Common/Utilities/templates.js:632
 msgid "Get bulleted lists of answers to related questions while writing long-form content"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:770
-#: assets/dist/admin/js/templates-scripts.js:7047
-#: assets/dist/admin/js/wp-admin-pages.js:1173
+#: assets/dist/admin/js/app-handler.js:782
+#: assets/dist/admin/js/blog-wizard.js:33245
+#: assets/dist/admin/js/templates-scripts.js:48429
+#: assets/dist/admin/js/wp-admin-pages.js:42271
 #: assets/src/admin/js/Common/Utilities/templates.js:638
 msgid "Enter the question to get an answer in bullet points"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:774
-#: assets/dist/admin/js/templates-scripts.js:7051
-#: assets/dist/admin/js/wp-admin-pages.js:1177
+#: assets/dist/admin/js/app-handler.js:786
+#: assets/dist/admin/js/blog-wizard.js:33249
+#: assets/dist/admin/js/templates-scripts.js:48433
+#: assets/dist/admin/js/wp-admin-pages.js:42275
 #: assets/src/admin/js/Common/Utilities/templates.js:642
 msgid "Additional Instruction"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:777
-#: assets/dist/admin/js/templates-scripts.js:7054
-#: assets/dist/admin/js/wp-admin-pages.js:1180
+#: assets/dist/admin/js/app-handler.js:789
+#: assets/dist/admin/js/blog-wizard.js:33252
+#: assets/dist/admin/js/templates-scripts.js:48436
+#: assets/dist/admin/js/wp-admin-pages.js:42278
 #: assets/src/admin/js/Common/Utilities/templates.js:645
 msgid "You can give instruction/context for a more accurate output (optional)"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:784
-#: assets/dist/admin/js/templates-scripts.js:7061
-#: assets/dist/admin/js/wp-admin-pages.js:1187
+#: assets/dist/admin/js/app-handler.js:796
+#: assets/dist/admin/js/blog-wizard.js:33259
+#: assets/dist/admin/js/templates-scripts.js:48443
+#: assets/dist/admin/js/wp-admin-pages.js:42285
 #: assets/src/admin/js/Common/Utilities/templates.js:652
 msgid "WooCommerce Product Title"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:786
-#: assets/dist/admin/js/templates-scripts.js:7063
-#: assets/dist/admin/js/wp-admin-pages.js:1189
+#: assets/dist/admin/js/app-handler.js:798
+#: assets/dist/admin/js/blog-wizard.js:33261
+#: assets/dist/admin/js/templates-scripts.js:48445
+#: assets/dist/admin/js/wp-admin-pages.js:42287
 #: assets/src/admin/js/Common/Utilities/templates.js:654
 msgid "Generate keyword-optimized product titles to rank & convert with your WooCommerce website"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:799
-#: assets/dist/admin/js/templates-scripts.js:7076
-#: assets/dist/admin/js/wp-admin-pages.js:1202
+#: assets/dist/admin/js/app-handler.js:811
+#: assets/dist/admin/js/blog-wizard.js:33274
+#: assets/dist/admin/js/templates-scripts.js:48458
+#: assets/dist/admin/js/wp-admin-pages.js:42300
 #: assets/src/admin/js/Common/Utilities/templates.js:667
 msgid "Specify which keywords should the product title be based on"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:806
-#: assets/dist/admin/js/templates-scripts.js:7083
-#: assets/dist/admin/js/wp-admin-pages.js:1209
+#: assets/dist/admin/js/app-handler.js:818
+#: assets/dist/admin/js/blog-wizard.js:33281
+#: assets/dist/admin/js/templates-scripts.js:48465
+#: assets/dist/admin/js/wp-admin-pages.js:42307
 #: assets/src/admin/js/Common/Utilities/templates.js:674
 msgid "Product Ad Copy"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:808
-#: assets/dist/admin/js/templates-scripts.js:7085
-#: assets/dist/admin/js/wp-admin-pages.js:1211
+#: assets/dist/admin/js/app-handler.js:820
+#: assets/dist/admin/js/blog-wizard.js:33283
+#: assets/dist/admin/js/templates-scripts.js:48467
+#: assets/dist/admin/js/wp-admin-pages.js:42309
 #: assets/src/admin/js/Common/Utilities/templates.js:676
 msgid "Generate a basic ad copy for your product inputting only a brief introduction/description"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:828
-#: assets/dist/admin/js/templates-scripts.js:7105
-#: assets/dist/admin/js/wp-admin-pages.js:1231
+#: assets/dist/admin/js/app-handler.js:840
+#: assets/dist/admin/js/blog-wizard.js:33303
+#: assets/dist/admin/js/templates-scripts.js:48487
+#: assets/dist/admin/js/wp-admin-pages.js:42329
 #: assets/src/admin/js/Common/Utilities/templates.js:696
 msgid "Problem, Agitate, Solution (PAS)"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:830
-#: assets/dist/admin/js/templates-scripts.js:7107
-#: assets/dist/admin/js/wp-admin-pages.js:1233
+#: assets/dist/admin/js/app-handler.js:842
+#: assets/dist/admin/js/blog-wizard.js:33305
+#: assets/dist/admin/js/templates-scripts.js:48489
+#: assets/dist/admin/js/wp-admin-pages.js:42331
 #: assets/src/admin/js/Common/Utilities/templates.js:698
 msgid "Make use of the proven copywriting formula — Problem, Agitate, Solution (PAS)"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:850
-#: assets/dist/admin/js/templates-scripts.js:7127
-#: assets/dist/admin/js/wp-admin-pages.js:1253
+#: assets/dist/admin/js/app-handler.js:862
+#: assets/dist/admin/js/blog-wizard.js:33325
+#: assets/dist/admin/js/templates-scripts.js:48509
+#: assets/dist/admin/js/wp-admin-pages.js:42351
 #: assets/src/admin/js/Common/Utilities/templates.js:718
 msgid "Attention Interest Desire Action (AIDA)"
 msgstr ""
 
-#: assets/dist/admin/js/app-handler.js:852
-#: assets/dist/admin/js/templates-scripts.js:7129
-#: assets/dist/admin/js/wp-admin-pages.js:1255
+#: assets/dist/admin/js/app-handler.js:864
+#: assets/dist/admin/js/blog-wizard.js:33327
+#: assets/dist/admin/js/templates-scripts.js:48511
+#: assets/dist/admin/js/wp-admin-pages.js:42353
 #: assets/src/admin/js/Common/Utilities/templates.js:720
 msgid "Generate sales/marketing copies by applying the renowned AIDA formula"
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:7132
+#: assets/dist/admin/js/app-handler.js:890
+#: assets/dist/admin/js/blog-wizard.js:33352
+#: assets/dist/admin/js/templates-scripts.js:48568
+#: assets/dist/admin/js/wp-admin-pages.js:42410
+#: assets/src/admin/js/Common/Utilities/newTemplates.js:6
+msgid "AI Overview Answer Builder"
+msgstr ""
+
+#: assets/dist/admin/js/app-handler.js:892
+#: assets/dist/admin/js/blog-wizard.js:33354
+#: assets/dist/admin/js/templates-scripts.js:48570
+#: assets/dist/admin/js/wp-admin-pages.js:42412
+#: assets/src/admin/js/Common/Utilities/newTemplates.js:8
+msgid "Instantly generate AI Overview-friendly, clear, and structured answers for any query or topic"
+msgstr ""
+
+#: assets/dist/admin/js/app-handler.js:895
+#: assets/dist/admin/js/blog-wizard.js:33357
+#: assets/dist/admin/js/templates-scripts.js:48573
+#: assets/dist/admin/js/wp-admin-pages.js:42415
+#: assets/src/admin/js/Common/Utilities/newTemplates.js:11
+msgid "Keyword / Question"
+msgstr ""
+
+#: assets/dist/admin/js/app-handler.js:898
+#: assets/dist/admin/js/blog-wizard.js:33360
+#: assets/dist/admin/js/templates-scripts.js:48576
+#: assets/dist/admin/js/wp-admin-pages.js:42418
+#: assets/src/admin/js/Common/Utilities/newTemplates.js:14
+msgid "Enter the topic for the AI overview answer"
+msgstr ""
+
+#: assets/dist/admin/js/app-handler.js:913
+#: assets/dist/admin/js/blog-wizard.js:33375
+#: assets/dist/admin/js/templates-scripts.js:48591
+#: assets/dist/admin/js/wp-admin-pages.js:42433
+#: assets/src/admin/js/Common/Utilities/newTemplates.js:29
+msgid "Google Business Profile Post Generator"
+msgstr ""
+
+#: assets/dist/admin/js/app-handler.js:915
+#: assets/dist/admin/js/blog-wizard.js:33377
+#: assets/dist/admin/js/templates-scripts.js:48593
+#: assets/dist/admin/js/wp-admin-pages.js:42435
+#: assets/src/admin/js/Common/Utilities/newTemplates.js:31
+msgid "Quickly craft catchy & local SEO-focused Google Business Profile posts to attract nearby customers"
+msgstr ""
+
+#: assets/dist/admin/js/app-handler.js:918
+#: assets/dist/admin/js/app-handler.js:985
+#: assets/dist/admin/js/blog-wizard.js:33380
+#: assets/dist/admin/js/blog-wizard.js:33447
+#: assets/dist/admin/js/templates-scripts.js:48596
+#: assets/dist/admin/js/templates-scripts.js:48663
+#: assets/dist/admin/js/wp-admin-pages.js:42438
+#: assets/dist/admin/js/wp-admin-pages.js:42505
+#: assets/src/admin/js/Common/Utilities/newTemplates.js:34
+#: assets/src/admin/js/Common/Utilities/newTemplates.js:101
+msgid "Business Name"
+msgstr ""
+
+#: assets/dist/admin/js/app-handler.js:921
+#: assets/dist/admin/js/app-handler.js:988
+#: assets/dist/admin/js/blog-wizard.js:33383
+#: assets/dist/admin/js/blog-wizard.js:33450
+#: assets/dist/admin/js/templates-scripts.js:48599
+#: assets/dist/admin/js/templates-scripts.js:48666
+#: assets/dist/admin/js/wp-admin-pages.js:42441
+#: assets/dist/admin/js/wp-admin-pages.js:42508
+#: assets/src/admin/js/Common/Utilities/newTemplates.js:37
+#: assets/src/admin/js/Common/Utilities/newTemplates.js:104
+msgid "Enter the business name"
+msgstr ""
+
+#: assets/dist/admin/js/app-handler.js:925
+#: assets/dist/admin/js/app-handler.js:999
+#: assets/dist/admin/js/blog-wizard.js:33387
+#: assets/dist/admin/js/blog-wizard.js:33461
+#: assets/dist/admin/js/templates-scripts.js:48603
+#: assets/dist/admin/js/templates-scripts.js:48677
+#: assets/dist/admin/js/wp-admin-pages.js:42445
+#: assets/dist/admin/js/wp-admin-pages.js:42519
+#: assets/src/admin/js/Common/Utilities/newTemplates.js:41
+#: assets/src/admin/js/Common/Utilities/newTemplates.js:115
+msgid "Location"
+msgstr ""
+
+#: assets/dist/admin/js/app-handler.js:928
+#: assets/dist/admin/js/app-handler.js:1002
+#: assets/dist/admin/js/blog-wizard.js:33390
+#: assets/dist/admin/js/blog-wizard.js:33464
+#: assets/dist/admin/js/templates-scripts.js:48606
+#: assets/dist/admin/js/templates-scripts.js:48680
+#: assets/dist/admin/js/wp-admin-pages.js:42448
+#: assets/dist/admin/js/wp-admin-pages.js:42522
+#: assets/src/admin/js/Common/Utilities/newTemplates.js:44
+#: assets/src/admin/js/Common/Utilities/newTemplates.js:118
+msgid "Enter the location"
+msgstr ""
+
+#: assets/dist/admin/js/app-handler.js:935
+#: assets/dist/admin/js/blog-wizard.js:33397
+#: assets/dist/admin/js/templates-scripts.js:48613
+#: assets/dist/admin/js/wp-admin-pages.js:42455
+#: assets/src/admin/js/Common/Utilities/newTemplates.js:51
+msgid "Enter the post type"
+msgstr ""
+
+#: assets/dist/admin/js/app-handler.js:939
+#: assets/dist/admin/js/app-handler.js:992
+#: assets/dist/admin/js/blog-wizard.js:33401
+#: assets/dist/admin/js/blog-wizard.js:33454
+#: assets/dist/admin/js/templates-scripts.js:48617
+#: assets/dist/admin/js/templates-scripts.js:48670
+#: assets/dist/admin/js/wp-admin-pages.js:42459
+#: assets/dist/admin/js/wp-admin-pages.js:42512
+#: assets/src/admin/js/Common/Utilities/newTemplates.js:55
+#: assets/src/admin/js/Common/Utilities/newTemplates.js:108
+msgid "Service Name"
+msgstr ""
+
+#: assets/dist/admin/js/app-handler.js:942
+#: assets/dist/admin/js/app-handler.js:995
+#: assets/dist/admin/js/blog-wizard.js:33404
+#: assets/dist/admin/js/blog-wizard.js:33457
+#: assets/dist/admin/js/templates-scripts.js:48620
+#: assets/dist/admin/js/templates-scripts.js:48673
+#: assets/dist/admin/js/wp-admin-pages.js:42462
+#: assets/dist/admin/js/wp-admin-pages.js:42515
+#: assets/src/admin/js/Common/Utilities/newTemplates.js:58
+#: assets/src/admin/js/Common/Utilities/newTemplates.js:111
+msgid "Enter the service name"
+msgstr ""
+
+#: assets/dist/admin/js/app-handler.js:946
+#: assets/dist/admin/js/blog-wizard.js:33408
+#: assets/dist/admin/js/templates-scripts.js:48624
+#: assets/dist/admin/js/wp-admin-pages.js:42466
+#: assets/src/admin/js/Common/Utilities/newTemplates.js:62
+msgid "Additional Info"
+msgstr ""
+
+#: assets/dist/admin/js/app-handler.js:949
+#: assets/dist/admin/js/blog-wizard.js:33411
+#: assets/dist/admin/js/templates-scripts.js:48627
+#: assets/dist/admin/js/wp-admin-pages.js:42469
+#: assets/src/admin/js/Common/Utilities/newTemplates.js:65
+msgid "Enter additional information"
+msgstr ""
+
+#: assets/dist/admin/js/app-handler.js:957
+#: assets/dist/admin/js/blog-wizard.js:33419
+#: assets/dist/admin/js/templates-scripts.js:48635
+#: assets/dist/admin/js/wp-admin-pages.js:42477
+#: assets/src/admin/js/Common/Utilities/newTemplates.js:73
+msgid "AI FAQ Generator"
+msgstr ""
+
+#: assets/dist/admin/js/app-handler.js:959
+#: assets/dist/admin/js/blog-wizard.js:33421
+#: assets/dist/admin/js/templates-scripts.js:48637
+#: assets/dist/admin/js/wp-admin-pages.js:42479
+#: assets/src/admin/js/Common/Utilities/newTemplates.js:75
+msgid "Create accurate & ready-to-publish FAQ sections instantly to enhance AI visibility chances & improve UX"
+msgstr ""
+
+#: assets/dist/admin/js/app-handler.js:962
+#: assets/dist/admin/js/blog-wizard.js:33424
+#: assets/dist/admin/js/templates-scripts.js:48640
+#: assets/dist/admin/js/wp-admin-pages.js:42482
+#: assets/src/admin/js/Common/Utilities/newTemplates.js:78
+msgid "Primary Keyword"
+msgstr ""
+
+#: assets/dist/admin/js/app-handler.js:964
+#: assets/dist/admin/js/blog-wizard.js:33426
+#: assets/dist/admin/js/templates-scripts.js:48642
+#: assets/dist/admin/js/wp-admin-pages.js:42484
+#: assets/src/admin/js/Common/Utilities/newTemplates.js:80
+msgid "Enter the primary keyword"
+msgstr ""
+
+#: assets/dist/admin/js/app-handler.js:971
+#: assets/dist/admin/js/blog-wizard.js:33433
+#: assets/dist/admin/js/templates-scripts.js:48649
+#: assets/dist/admin/js/wp-admin-pages.js:42491
+#: assets/src/admin/js/Common/Utilities/newTemplates.js:87
+msgid "Enter the context"
+msgstr ""
+
+#: assets/dist/admin/js/app-handler.js:980
+#: assets/dist/admin/js/blog-wizard.js:33442
+#: assets/dist/admin/js/templates-scripts.js:48658
+#: assets/dist/admin/js/wp-admin-pages.js:42500
+#: assets/src/admin/js/Common/Utilities/newTemplates.js:96
+msgid "Local Service Page Copy Generator"
+msgstr ""
+
+#: assets/dist/admin/js/app-handler.js:1009
+#: assets/dist/admin/js/blog-wizard.js:33471
+#: assets/dist/admin/js/templates-scripts.js:48687
+#: assets/dist/admin/js/wp-admin-pages.js:42529
+#: assets/src/admin/js/Common/Utilities/newTemplates.js:125
+msgid "Enter the context for the service page copy"
+msgstr ""
+
+#: assets/dist/admin/js/blog-wizard.js:5642
 #: assets/src/admin/js/AdvanceWriting/wp-script.js:40
 msgid "Context Menu"
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:8749
-#: assets/dist/admin/js/woo-wizard.js:777
-#: assets/dist/admin/js/wp-integrations.js:34933
-#: assets/src/admin/js/BlogWizard/Utilities/WPEditorTopButtons.js:201
+#: assets/dist/admin/js/blog-wizard.js:7314
+#: assets/dist/admin/js/woo-wizard.js:773
+#: assets/dist/admin/js/wp-integrations.js:33571
+#: assets/src/admin/js/BlogWizard/Utilities/WPEditorTopButtons.js:252
 #: assets/src/admin/js/WooWizard/Utilities/WooCommerceTopButtons.js:36
 msgid "Write for me"
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:8756
-#: assets/dist/admin/js/common-scripts.js:6142
-#: assets/dist/admin/js/templates-scripts.js:5907
-#: assets/dist/admin/js/wp-integrations.js:34940
-#: assets/src/admin/js/BlogWizard/Utilities/WPEditorTopButtons.js:206
-#: assets/src/admin/js/Common/GenieChat/index.js:267
+#: assets/dist/admin/js/blog-wizard.js:7321
+#: assets/dist/admin/js/common-scripts.js:6433
+#: assets/dist/admin/js/templates-scripts.js:47204
+#: assets/dist/admin/js/wp-integrations.js:33578
+#: assets/src/admin/js/BlogWizard/Utilities/WPEditorTopButtons.js:258
+#: assets/src/admin/js/Common/GenieChat/index.js:279
 msgid "Chat"
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:9117
-#: assets/dist/admin/js/blog-wizard.js:23370
-#: assets/dist/admin/js/wp-integrations.js:7519
-#: assets/dist/admin/js/wp-integrations.js:21876
-#: assets/src/admin/js/BlogWizard/SeoData/Competitor/index.js:132
+#: assets/dist/admin/js/blog-wizard.js:7683
+#: assets/dist/admin/js/blog-wizard.js:21918
+#: assets/dist/admin/js/wp-integrations.js:6047
+#: assets/dist/admin/js/wp-integrations.js:20386
+#: assets/src/admin/js/BlogWizard/SeoData/Competitor/index.js:130
 #: assets/src/admin/js/BlogWizard/SeoData/QuestionsAsked/index.js:92
 msgid "Fetch Data"
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:9122
-#: assets/dist/admin/js/wp-integrations.js:7524
-#: assets/src/admin/js/BlogWizard/SeoData/Competitor/index.js:150
+#: assets/dist/admin/js/blog-wizard.js:7688
+#: assets/dist/admin/js/wp-integrations.js:6052
+#: assets/src/admin/js/BlogWizard/SeoData/Competitor/index.js:148
 msgid "No related data was found."
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:9139
-#: assets/dist/admin/js/wp-integrations.js:7541
-#: assets/src/admin/js/BlogWizard/SeoData/Competitor/index.js:161
+#: assets/dist/admin/js/blog-wizard.js:7705
+#: assets/dist/admin/js/wp-integrations.js:6069
+#: assets/src/admin/js/BlogWizard/SeoData/Competitor/index.js:159
 msgid "Rank:"
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:9143
-#: assets/dist/admin/js/wp-integrations.js:7545
-#: assets/src/admin/js/BlogWizard/SeoData/Competitor/index.js:164
+#: assets/dist/admin/js/blog-wizard.js:7709
+#: assets/dist/admin/js/wp-integrations.js:6073
+#: assets/src/admin/js/BlogWizard/SeoData/Competitor/index.js:162
 msgid "Words:"
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:9147
-#: assets/dist/admin/js/wp-integrations.js:7549
-#: assets/src/admin/js/BlogWizard/SeoData/Competitor/index.js:167
+#: assets/dist/admin/js/blog-wizard.js:7713
+#: assets/dist/admin/js/wp-integrations.js:6077
+#: assets/src/admin/js/BlogWizard/SeoData/Competitor/index.js:165
 msgid "Heading:"
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:9151
-#: assets/dist/admin/js/wp-integrations.js:7553
-#: assets/src/admin/js/BlogWizard/SeoData/Competitor/index.js:170
+#: assets/dist/admin/js/blog-wizard.js:7717
+#: assets/dist/admin/js/wp-integrations.js:6081
+#: assets/src/admin/js/BlogWizard/SeoData/Competitor/index.js:168
 msgid "Images:"
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:9246
-#: assets/dist/admin/js/wp-integrations.js:7648
-#: assets/src/admin/js/BlogWizard/SeoData/Competitor/index.js:260
+#: assets/dist/admin/js/blog-wizard.js:7814
+#: assets/dist/admin/js/wp-integrations.js:6178
+#: assets/src/admin/js/BlogWizard/SeoData/Competitor/index.js:257
 msgid "more contents"
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:9271
-#: assets/dist/admin/js/wp-integrations.js:7678
+#: assets/dist/admin/js/blog-wizard.js:7839
+#: assets/dist/admin/js/templates-scripts.js:49013
+#: assets/dist/admin/js/wp-admin-pages.js:43036
+#: assets/dist/admin/js/wp-integrations.js:6208
 #: assets/src/admin/js/BlogWizard/SeoData/Keywords/KeywordAnalysis.js:24
 msgid "Keyword Analysis"
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:9281
-#: assets/dist/admin/js/wp-integrations.js:7688
+#: assets/dist/admin/js/blog-wizard.js:7849
+#: assets/dist/admin/js/templates-scripts.js:49023
+#: assets/dist/admin/js/wp-admin-pages.js:43046
+#: assets/dist/admin/js/wp-integrations.js:6218
 #: assets/src/admin/js/BlogWizard/SeoData/Keywords/KeywordAnalysis.js:30
 msgid "Search Volume"
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:9295
-#: assets/dist/admin/js/wp-integrations.js:7702
+#: assets/dist/admin/js/blog-wizard.js:7863
+#: assets/dist/admin/js/templates-scripts.js:49037
+#: assets/dist/admin/js/wp-admin-pages.js:43060
+#: assets/dist/admin/js/wp-integrations.js:6232
 #: assets/src/admin/js/BlogWizard/SeoData/Keywords/KeywordAnalysis.js:39
 msgid "Competition"
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:9332
-#: assets/dist/admin/js/wp-integrations.js:7739
+#: assets/dist/admin/js/blog-wizard.js:7900
+#: assets/dist/admin/js/templates-scripts.js:49074
+#: assets/dist/admin/js/wp-admin-pages.js:43097
+#: assets/dist/admin/js/wp-integrations.js:6269
 #: assets/src/admin/js/BlogWizard/SeoData/Keywords/KeywordAnalysis.js:72
 msgid "No magic found for this keyword. Maybe try a different one?"
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:23019
-#: assets/dist/admin/js/wp-integrations.js:21484
+#: assets/dist/admin/js/blog-wizard.js:21587
+#: assets/dist/admin/js/templates-scripts.js:62760
+#: assets/dist/admin/js/wp-admin-pages.js:56783
+#: assets/dist/admin/js/wp-integrations.js:20014
 #: assets/src/admin/js/BlogWizard/SeoData/Keywords/SearchVolumeChart.js:108
 msgid "Volume"
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:23026
-#: assets/dist/admin/js/wp-integrations.js:21491
+#: assets/dist/admin/js/blog-wizard.js:21594
+#: assets/dist/admin/js/templates-scripts.js:62767
+#: assets/dist/admin/js/wp-admin-pages.js:56790
+#: assets/dist/admin/js/wp-integrations.js:20021
 #: assets/src/admin/js/BlogWizard/SeoData/Keywords/SearchVolumeChart.js:117
 msgid "No Search Volume Trend data found"
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:23051
-#: assets/dist/admin/js/wp-integrations.js:21523
-#: assets/src/admin/js/BlogWizard/SeoData/Keywords/OverviewChart.js:27
+#: assets/dist/admin/js/blog-wizard.js:21614
+#: assets/dist/admin/js/templates-scripts.js:62787
+#: assets/dist/admin/js/wp-admin-pages.js:56810
+#: assets/dist/admin/js/wp-integrations.js:20048
+#: assets/src/admin/js/BlogWizard/SeoData/Keywords/OverviewChart.js:26
 msgid "Search Vol. Trend"
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:23058
-#: assets/dist/admin/js/wp-integrations.js:21530
-#: assets/src/admin/js/BlogWizard/SeoData/Keywords/OverviewChart.js:32
+#: assets/dist/admin/js/blog-wizard.js:21621
+#: assets/dist/admin/js/templates-scripts.js:62794
+#: assets/dist/admin/js/wp-admin-pages.js:56817
+#: assets/dist/admin/js/wp-integrations.js:20055
+#: assets/src/admin/js/BlogWizard/SeoData/Keywords/OverviewChart.js:31
 msgid "Google Trends"
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:23085
-#: assets/dist/admin/js/wp-integrations.js:21557
+#: assets/dist/admin/js/blog-wizard.js:21633
+#: assets/dist/admin/js/templates-scripts.js:62806
+#: assets/dist/admin/js/wp-admin-pages.js:56829
+#: assets/dist/admin/js/wp-integrations.js:20067
 #: assets/src/admin/js/BlogWizard/SeoData/Keywords/OverviewChart.js:60
 msgid "Overview Chart"
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:23180
-#: assets/dist/admin/js/wp-integrations.js:21664
+#: assets/dist/admin/js/blog-wizard.js:21728
+#: assets/dist/admin/js/wp-integrations.js:20174
 #: assets/src/admin/js/BlogWizard/SeoData/Keywords/RelatedKeyword.js:124
 msgid "Related Keyword"
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:23189
-#: assets/dist/admin/js/wp-integrations.js:21673
+#: assets/dist/admin/js/blog-wizard.js:21737
+#: assets/dist/admin/js/wp-integrations.js:20183
 #: assets/src/admin/js/BlogWizard/SeoData/Keywords/RelatedKeyword.js:134
 msgid "No related keyword found"
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:23205
-#: assets/dist/admin/js/blog-wizard.js:23269
-#: assets/dist/admin/js/wp-integrations.js:21689
-#: assets/dist/admin/js/wp-integrations.js:21759
+#: assets/dist/admin/js/blog-wizard.js:21753
+#: assets/dist/admin/js/blog-wizard.js:21817
+#: assets/dist/admin/js/wp-integrations.js:20199
+#: assets/dist/admin/js/wp-integrations.js:20269
 #: assets/src/admin/js/BlogWizard/SeoData/Keywords/PeopleAlsoSearched.js:67
 #: assets/src/admin/js/BlogWizard/SeoData/Keywords/RelatedKeyword.js:146
 msgid "Add/remove this keyword for SEO analysis"
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:23257
-#: assets/dist/admin/js/wp-integrations.js:21747
+#: assets/dist/admin/js/blog-wizard.js:21805
+#: assets/dist/admin/js/wp-integrations.js:20257
 #: assets/src/admin/js/BlogWizard/SeoData/Keywords/PeopleAlsoSearched.js:58
 msgid "People also searched for"
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:23377
-#: assets/dist/admin/js/wp-integrations.js:21883
+#: assets/dist/admin/js/blog-wizard.js:21925
+#: assets/dist/admin/js/wp-integrations.js:20393
 #: assets/src/admin/js/BlogWizard/SeoData/QuestionsAsked/index.js:100
 msgid "No questions are found."
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:25837
-#: assets/dist/admin/js/wp-integrations.js:24552
-#: assets/src/admin/js/BlogWizard/SeoData/SerpAnalysis/index.js:77
+#: assets/dist/admin/js/blog-wizard.js:24386
+#: assets/dist/admin/js/wp-integrations.js:23063
+#: assets/src/admin/js/BlogWizard/SeoData/SerpAnalysis/index.js:78
 msgid "Getting competitor list "
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:25840
-#: assets/dist/admin/js/wp-integrations.js:24555
-#: assets/src/admin/js/BlogWizard/SeoData/SerpAnalysis/index.js:80
+#: assets/dist/admin/js/blog-wizard.js:24389
+#: assets/dist/admin/js/wp-integrations.js:23066
+#: assets/src/admin/js/BlogWizard/SeoData/SerpAnalysis/index.js:81
 msgid "Fetching competitor websites "
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:25919
-#: assets/dist/admin/js/blog-wizard.js:25925
-#: assets/dist/admin/js/wp-integrations.js:24634
-#: assets/dist/admin/js/wp-integrations.js:24640
-#: assets/src/admin/js/BlogWizard/SeoData/SerpAnalysis/index.js:180
-#: assets/src/admin/js/BlogWizard/SeoData/SerpAnalysis/index.js:189
+#: assets/dist/admin/js/blog-wizard.js:24468
+#: assets/dist/admin/js/blog-wizard.js:24474
+#: assets/dist/admin/js/wp-integrations.js:23145
+#: assets/dist/admin/js/wp-integrations.js:23151
+#: assets/src/admin/js/BlogWizard/SeoData/SerpAnalysis/index.js:181
+#: assets/src/admin/js/BlogWizard/SeoData/SerpAnalysis/index.js:190
 msgid "Analyzing and fetching data "
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:26038
-#: assets/dist/admin/js/wp-integrations.js:24753
-#: assets/src/admin/js/BlogWizard/SeoData/SerpAnalysis/index.js:345
+#: assets/dist/admin/js/blog-wizard.js:24586
+#: assets/dist/admin/js/wp-integrations.js:23263
+#: assets/src/admin/js/BlogWizard/SeoData/SerpAnalysis/index.js:342
 msgid "Competitor"
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:26049
-#: assets/dist/admin/js/wp-integrations.js:24764
-#: assets/src/admin/js/BlogWizard/SeoData/SerpAnalysis/index.js:350
+#: assets/dist/admin/js/blog-wizard.js:24598
+#: assets/dist/admin/js/wp-integrations.js:23275
+#: assets/src/admin/js/BlogWizard/SeoData/SerpAnalysis/index.js:348
 msgid "Questions Asked"
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:26256
-#: assets/dist/admin/js/blog-wizard.js:26418
-#: assets/dist/admin/js/templates-scripts.js:6096
-#: assets/dist/admin/js/woo-wizard.js:199
-#: assets/dist/admin/js/wp-integrations.js:24981
-#: assets/dist/admin/js/wp-integrations.js:25149
-#: assets/src/admin/js/BlogWizard/WritingScreens/TitleScreen/index.js:141
-#: assets/src/admin/js/Common/SidebarControllerOption/index.js:29
+#: assets/dist/admin/js/blog-wizard.js:24803
+#: assets/dist/admin/js/blog-wizard.js:24971
+#: assets/dist/admin/js/common-scripts.js:6571
+#: assets/dist/admin/js/templates-scripts.js:47342
+#: assets/dist/admin/js/templates-scripts.js:47406
+#: assets/dist/admin/js/woo-wizard.js:195
+#: assets/dist/admin/js/wp-integrations.js:23490
+#: assets/dist/admin/js/wp-integrations.js:23664
+#: assets/src/admin/js/BlogWizard/WritingScreens/TitleScreen/index.js:154
+#: assets/src/admin/js/Common/GenieChat/index.js:398
+#: assets/src/admin/js/Common/SidebarControllerOption/index.js:28
 msgid "Language"
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:26257
-#: assets/dist/admin/js/blog-wizard.js:26419
-#: assets/dist/admin/js/templates-scripts.js:6097
-#: assets/dist/admin/js/woo-wizard.js:200
-#: assets/dist/admin/js/wp-integrations.js:24982
-#: assets/dist/admin/js/wp-integrations.js:25150
-#: assets/src/admin/js/BlogWizard/WritingScreens/TitleScreen/index.js:142
-#: assets/src/admin/js/Common/SidebarControllerOption/index.js:30
+#: assets/dist/admin/js/blog-wizard.js:24804
+#: assets/dist/admin/js/blog-wizard.js:24972
+#: assets/dist/admin/js/common-scripts.js:6572
+#: assets/dist/admin/js/templates-scripts.js:47343
+#: assets/dist/admin/js/templates-scripts.js:47407
+#: assets/dist/admin/js/woo-wizard.js:196
+#: assets/dist/admin/js/wp-integrations.js:23491
+#: assets/dist/admin/js/wp-integrations.js:23665
+#: assets/src/admin/js/BlogWizard/WritingScreens/TitleScreen/index.js:155
+#: assets/src/admin/js/Common/GenieChat/index.js:399
+#: assets/src/admin/js/Common/SidebarControllerOption/index.js:29
 msgid "Choose the desired language of your input and the outputs"
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:26267
-#: assets/dist/admin/js/templates-scripts.js:6107
-#: assets/dist/admin/js/woo-wizard.js:210
-#: assets/dist/admin/js/wp-integrations.js:24992
+#: assets/dist/admin/js/blog-wizard.js:24814
+#: assets/dist/admin/js/templates-scripts.js:47417
+#: assets/dist/admin/js/woo-wizard.js:206
+#: assets/dist/admin/js/wp-integrations.js:23501
 #: assets/src/admin/js/Common/SidebarControllerOption/index.js:45
 msgid "Output Size"
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:26268
-#: assets/dist/admin/js/templates-scripts.js:6108
-#: assets/dist/admin/js/woo-wizard.js:211
-#: assets/dist/admin/js/wp-integrations.js:24993
+#: assets/dist/admin/js/blog-wizard.js:24815
+#: assets/dist/admin/js/templates-scripts.js:47418
+#: assets/dist/admin/js/woo-wizard.js:207
+#: assets/dist/admin/js/wp-integrations.js:23502
 #: assets/src/admin/js/Common/SidebarControllerOption/index.js:46
 msgid "Define what type of size you want the outputs to have"
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:26282
-#: assets/dist/admin/js/templates-scripts.js:6122
-#: assets/dist/admin/js/woo-wizard.js:225
-#: assets/dist/admin/js/wp-integrations.js:25007
+#: assets/dist/admin/js/blog-wizard.js:24829
+#: assets/dist/admin/js/templates-scripts.js:47432
+#: assets/dist/admin/js/woo-wizard.js:221
+#: assets/dist/admin/js/wp-integrations.js:23516
 #: assets/src/admin/js/Common/SidebarControllerOption/index.js:54
 msgid "Creativity"
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:26283
-#: assets/dist/admin/js/templates-scripts.js:6123
-#: assets/dist/admin/js/woo-wizard.js:226
-#: assets/dist/admin/js/wp-integrations.js:25008
+#: assets/dist/admin/js/blog-wizard.js:24830
+#: assets/dist/admin/js/templates-scripts.js:47433
+#: assets/dist/admin/js/woo-wizard.js:222
+#: assets/dist/admin/js/wp-integrations.js:23517
 #: assets/src/admin/js/Common/SidebarControllerOption/index.js:54
 msgid "How much creative you want genie to be"
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:26297
-#: assets/dist/admin/js/templates-scripts.js:6137
-#: assets/dist/admin/js/woo-wizard.js:240
-#: assets/dist/admin/js/wp-integrations.js:25022
+#: assets/dist/admin/js/blog-wizard.js:24844
+#: assets/dist/admin/js/templates-scripts.js:47447
+#: assets/dist/admin/js/woo-wizard.js:236
+#: assets/dist/admin/js/wp-integrations.js:23531
 #: assets/src/admin/js/Common/SidebarControllerOption/index.js:57
 msgid "Max Results"
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:26298
-#: assets/dist/admin/js/templates-scripts.js:6138
-#: assets/dist/admin/js/woo-wizard.js:241
-#: assets/dist/admin/js/wp-integrations.js:25023
+#: assets/dist/admin/js/blog-wizard.js:24845
+#: assets/dist/admin/js/templates-scripts.js:47448
+#: assets/dist/admin/js/woo-wizard.js:237
+#: assets/dist/admin/js/wp-integrations.js:23532
 #: assets/src/admin/js/Common/SidebarControllerOption/index.js:57
 msgid "Maximum content you want to generate"
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:26302
-#: assets/dist/admin/js/templates-scripts.js:6142
-#: assets/dist/admin/js/woo-wizard.js:245
-#: assets/dist/admin/js/wp-integrations.js:25027
+#: assets/dist/admin/js/blog-wizard.js:24849
+#: assets/dist/admin/js/templates-scripts.js:47452
+#: assets/dist/admin/js/woo-wizard.js:241
+#: assets/dist/admin/js/wp-integrations.js:23536
 #: assets/src/admin/js/Common/SidebarControllerOption/index.js:57
 msgid "Please choose valid limit"
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:26408
-#: assets/dist/admin/js/wp-integrations.js:25139
-#: assets/src/admin/js/BlogWizard/WritingScreens/TitleScreen/index.js:134
+#: assets/dist/admin/js/blog-wizard.js:24961
+#: assets/dist/admin/js/wp-integrations.js:23654
+#: assets/src/admin/js/BlogWizard/WritingScreens/TitleScreen/index.js:147
 msgid "Keyword"
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:26409
-#: assets/dist/admin/js/wp-integrations.js:25140
-#: assets/src/admin/js/BlogWizard/WritingScreens/TitleScreen/index.js:135
+#: assets/dist/admin/js/blog-wizard.js:24962
+#: assets/dist/admin/js/wp-integrations.js:23655
+#: assets/src/admin/js/BlogWizard/WritingScreens/TitleScreen/index.js:148
 msgid "Enter the focus keyword or topic of your blog post."
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:26412
-#: assets/dist/admin/js/wp-integrations.js:25143
-#: assets/src/admin/js/BlogWizard/WritingScreens/TitleScreen/index.js:136
+#: assets/dist/admin/js/blog-wizard.js:24965
+#: assets/dist/admin/js/wp-integrations.js:23658
+#: assets/src/admin/js/BlogWizard/WritingScreens/TitleScreen/index.js:149
 msgid "e.g. bean coffee, best coffee maker, how to make coffee, etc."
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:26414
-#: assets/dist/admin/js/wp-integrations.js:25145
-#: assets/src/admin/js/BlogWizard/WritingScreens/TitleScreen/index.js:137
+#: assets/dist/admin/js/blog-wizard.js:24967
+#: assets/dist/admin/js/wp-integrations.js:23660
+#: assets/src/admin/js/BlogWizard/WritingScreens/TitleScreen/index.js:150
 msgid "Keyword is missing. Please enter keyword."
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:26425
-#: assets/dist/admin/js/wp-integrations.js:25156
-#: assets/src/admin/js/BlogWizard/WritingScreens/TitleScreen/index.js:147
+#: assets/dist/admin/js/blog-wizard.js:24978
+#: assets/dist/admin/js/wp-integrations.js:23671
+#: assets/src/admin/js/BlogWizard/WritingScreens/TitleScreen/index.js:160
 msgid "SEO Mode"
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:26426
-#: assets/dist/admin/js/wp-integrations.js:25157
-#: assets/src/admin/js/BlogWizard/WritingScreens/TitleScreen/index.js:148
+#: assets/dist/admin/js/blog-wizard.js:24979
+#: assets/dist/admin/js/wp-integrations.js:23672
+#: assets/src/admin/js/BlogWizard/WritingScreens/TitleScreen/index.js:161
 msgid "Turn on the SEO mode for better search engine optimization."
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:26444
-#: assets/dist/admin/js/wp-integrations.js:25175
-#: assets/src/admin/js/BlogWizard/WritingScreens/TitleScreen/index.js:160
+#: assets/dist/admin/js/blog-wizard.js:24997
+#: assets/dist/admin/js/wp-integrations.js:23690
+#: assets/src/admin/js/BlogWizard/WritingScreens/TitleScreen/index.js:173
 msgid "Analyze keyword"
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:26445
-#: assets/dist/admin/js/blog-wizard.js:30662
-#: assets/dist/admin/js/wp-integrations.js:25176
-#: assets/dist/admin/js/wp-integrations.js:31310
+#: assets/dist/admin/js/blog-wizard.js:24998
+#: assets/dist/admin/js/blog-wizard.js:29268
+#: assets/dist/admin/js/wp-integrations.js:23691
+#: assets/dist/admin/js/wp-integrations.js:29907
 #: assets/src/admin/js/BlogWizard/WritingScreens/ParagraphScreen/InstructionTab.js:45
-#: assets/src/admin/js/BlogWizard/WritingScreens/TitleScreen/index.js:166
+#: assets/src/admin/js/BlogWizard/WritingScreens/TitleScreen/index.js:179
 msgid "Context (Optional)"
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:26446
-#: assets/dist/admin/js/wp-integrations.js:25177
-#: assets/src/admin/js/BlogWizard/WritingScreens/TitleScreen/index.js:167
+#: assets/dist/admin/js/blog-wizard.js:24999
+#: assets/dist/admin/js/wp-integrations.js:23692
+#: assets/src/admin/js/BlogWizard/WritingScreens/TitleScreen/index.js:180
 msgid "Let the genie know the context of your blog post."
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:26451
-#: assets/dist/admin/js/wp-integrations.js:25182
-#: assets/src/admin/js/BlogWizard/WritingScreens/TitleScreen/index.js:170
+#: assets/dist/admin/js/blog-wizard.js:25004
+#: assets/dist/admin/js/wp-integrations.js:23697
+#: assets/src/admin/js/BlogWizard/WritingScreens/TitleScreen/index.js:183
 msgid "Enter a context for this keyword. e.g. a list of best selling coffee maker on amazon, step-by-step process to make coffee at home. etc."
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:26452
-#: assets/dist/admin/js/wp-integrations.js:25183
-#: assets/src/admin/js/BlogWizard/WritingScreens/TitleScreen/index.js:171
+#: assets/dist/admin/js/blog-wizard.js:25005
+#: assets/dist/admin/js/wp-integrations.js:23698
+#: assets/src/admin/js/BlogWizard/WritingScreens/TitleScreen/index.js:184
 msgid "Please enter the context here"
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:26464
-#: assets/dist/admin/js/wp-integrations.js:25195
-#: assets/src/admin/js/BlogWizard/WritingScreens/TitleScreen/index.js:178
+#: assets/dist/admin/js/blog-wizard.js:25017
+#: assets/dist/admin/js/wp-integrations.js:23710
+#: assets/src/admin/js/BlogWizard/WritingScreens/TitleScreen/index.js:191
 msgid "Generate title"
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:26558
-#: assets/dist/admin/js/wp-integrations.js:25295
+#: assets/dist/admin/js/blog-wizard.js:25111
+#: assets/dist/admin/js/wp-integrations.js:23810
 #: assets/src/admin/js/BlogWizard/WritingScreens/IntroScreen/index.js:99
 msgid "Edit or change the blog post title"
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:26565
-#: assets/dist/admin/js/wp-integrations.js:25302
+#: assets/dist/admin/js/blog-wizard.js:25118
+#: assets/dist/admin/js/wp-integrations.js:23817
 #: assets/src/admin/js/BlogWizard/WritingScreens/IntroScreen/index.js:104
 msgid "Enter the blog post title here."
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:26567
-#: assets/dist/admin/js/woo-wizard.js:506
-#: assets/dist/admin/js/woo-wizard.js:644
-#: assets/dist/admin/js/wp-integrations.js:25304
+#: assets/dist/admin/js/blog-wizard.js:25120
+#: assets/dist/admin/js/woo-wizard.js:502
+#: assets/dist/admin/js/woo-wizard.js:640
+#: assets/dist/admin/js/wp-integrations.js:23819
 #: assets/src/admin/js/BlogWizard/WritingScreens/IntroScreen/index.js:105
 #: assets/src/admin/js/WooWizard/LongDesc/index.js:112
 #: assets/src/admin/js/WooWizard/ShortDesc/index.js:119
 msgid "Please enter the title here"
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:26577
-#: assets/dist/admin/js/wp-integrations.js:25314
+#: assets/dist/admin/js/blog-wizard.js:25130
+#: assets/dist/admin/js/wp-integrations.js:23829
 #: assets/src/admin/js/BlogWizard/WritingScreens/IntroScreen/index.js:113
 msgid "Generate Intro"
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:29926
-#: assets/dist/admin/js/wp-integrations.js:30281
+#: assets/dist/admin/js/blog-wizard.js:28479
+#: assets/dist/admin/js/wp-integrations.js:28818
 #: assets/src/admin/js/BlogWizard/WritingScreens/OutlineScreen/GeneratedOutlines.js:76
 msgid "Select subheadings to create your content outline."
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:29928
-#: assets/dist/admin/js/wp-integrations.js:30283
+#: assets/dist/admin/js/blog-wizard.js:28481
+#: assets/dist/admin/js/wp-integrations.js:28820
 #: assets/src/admin/js/BlogWizard/WritingScreens/OutlineScreen/GeneratedOutlines.js:77
 msgid "Generated Outlines"
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:29937
-#: assets/dist/admin/js/wp-integrations.js:30292
+#: assets/dist/admin/js/blog-wizard.js:28490
+#: assets/dist/admin/js/wp-integrations.js:28829
 #: assets/src/admin/js/BlogWizard/WritingScreens/OutlineScreen/GeneratedOutlines.js:88
 msgid "Something Went Wrong! Please Try Again."
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:29946
-#: assets/dist/admin/js/wp-integrations.js:30301
+#: assets/dist/admin/js/blog-wizard.js:28499
+#: assets/dist/admin/js/wp-integrations.js:28838
 #: assets/src/admin/js/BlogWizard/WritingScreens/OutlineScreen/GeneratedOutlines.js:94
 msgid "Unselect All"
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:29946
-#: assets/dist/admin/js/wp-integrations.js:30301
+#: assets/dist/admin/js/blog-wizard.js:28499
+#: assets/dist/admin/js/wp-integrations.js:28838
 #: assets/src/admin/js/BlogWizard/WritingScreens/OutlineScreen/GeneratedOutlines.js:94
 msgid "Select All"
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:29950
-#: assets/dist/admin/js/wp-integrations.js:30305
+#: assets/dist/admin/js/blog-wizard.js:28503
+#: assets/dist/admin/js/wp-integrations.js:28842
 #: assets/src/admin/js/BlogWizard/WritingScreens/OutlineScreen/GeneratedOutlines.js:99
 msgid " active"
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:30045
-#: assets/dist/admin/js/wp-integrations.js:30406
+#: assets/dist/admin/js/blog-wizard.js:28598
+#: assets/dist/admin/js/wp-integrations.js:28943
 #: assets/src/admin/js/BlogWizard/WritingScreens/OutlineScreen/Outline.js:120
 msgid "Edit"
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:30052
-#: assets/dist/admin/js/wp-integrations.js:30413
+#: assets/dist/admin/js/blog-wizard.js:28605
+#: assets/dist/admin/js/wp-integrations.js:28950
 #: assets/src/admin/js/BlogWizard/WritingScreens/OutlineScreen/Outline.js:125
 msgid "Delete"
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:30131
-#: assets/dist/admin/js/wp-integrations.js:30749
+#: assets/dist/admin/js/blog-wizard.js:28684
+#: assets/dist/admin/js/wp-integrations.js:29286
 #: assets/src/admin/js/BlogWizard/WritingScreens/OutlineScreen/SelectedOutlines.js:69
 msgid "Add Outline"
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:30400
-#: assets/dist/admin/js/wp-integrations.js:31029
+#: assets/dist/admin/js/blog-wizard.js:28953
+#: assets/dist/admin/js/wp-integrations.js:29566
 #: assets/src/admin/js/BlogWizard/WritingScreens/OutlineScreen/index.js:349
 msgid "Edit or change the blog title & intro"
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:30408
-#: assets/dist/admin/js/wp-integrations.js:31037
+#: assets/dist/admin/js/blog-wizard.js:28961
+#: assets/dist/admin/js/wp-integrations.js:29574
 #: assets/src/admin/js/BlogWizard/WritingScreens/OutlineScreen/index.js:352
 msgid "Enter blog post title here."
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:30412
-#: assets/dist/admin/js/wp-integrations.js:31041
+#: assets/dist/admin/js/blog-wizard.js:28965
+#: assets/dist/admin/js/wp-integrations.js:29578
 #: assets/src/admin/js/BlogWizard/WritingScreens/OutlineScreen/index.js:353
 msgid "Enter blog intro here."
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:30422
-#: assets/dist/admin/js/wp-integrations.js:31051
+#: assets/dist/admin/js/blog-wizard.js:28975
+#: assets/dist/admin/js/wp-integrations.js:29588
 #: assets/src/admin/js/BlogWizard/WritingScreens/OutlineScreen/index.js:361
 msgid "Generate Outline"
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:30430
-#: assets/dist/admin/js/wp-integrations.js:31059
+#: assets/dist/admin/js/blog-wizard.js:28983
+#: assets/dist/admin/js/wp-integrations.js:29596
 #: assets/src/admin/js/BlogWizard/WritingScreens/OutlineScreen/index.js:367
 msgid "Selected Outlines will Appear here"
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:30435
-#: assets/dist/admin/js/wp-integrations.js:31064
+#: assets/dist/admin/js/blog-wizard.js:28988
+#: assets/dist/admin/js/wp-integrations.js:29601
 #: assets/src/admin/js/BlogWizard/WritingScreens/OutlineScreen/index.js:377
 msgid "You can also Edit, Delete & Rearrange these Selected Outlines"
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:30436
-#: assets/dist/admin/js/templates-scripts.js:6401
-#: assets/dist/admin/js/woo-wizard.js:424
-#: assets/dist/admin/js/woo-wizard.js:562
-#: assets/dist/admin/js/woo-wizard.js:700
-#: assets/dist/admin/js/wp-integrations.js:31065
+#: assets/dist/admin/js/blog-wizard.js:28989
+#: assets/dist/admin/js/templates-scripts.js:47733
+#: assets/dist/admin/js/woo-wizard.js:420
+#: assets/dist/admin/js/woo-wizard.js:558
+#: assets/dist/admin/js/woo-wizard.js:696
+#: assets/dist/admin/js/wp-integrations.js:29602
 #: assets/src/admin/js/BlogWizard/WritingScreens/OutlineScreen/index.js:378
-#: assets/src/admin/js/TemplateWizard/WriteTemplatesScreen.js:313
+#: assets/src/admin/js/TemplateWizard/WriteTemplatesScreen.js:349
 #: assets/src/admin/js/WooWizard/LongDesc/index.js:148
 #: assets/src/admin/js/WooWizard/ProductTitle/index.js:153
 #: assets/src/admin/js/WooWizard/ShortDesc/index.js:156
 msgid "Okay"
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:30524
-#: assets/dist/admin/js/wp-integrations.js:31159
+#: assets/dist/admin/js/blog-wizard.js:29077
+#: assets/dist/admin/js/wp-integrations.js:29696
 #: assets/src/admin/js/BlogWizard/WritingScreens/ParagraphScreen/index.js:62
 msgid "Insert all paragraphs"
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:30532
-#: assets/dist/admin/js/wp-integrations.js:31167
+#: assets/dist/admin/js/blog-wizard.js:29085
+#: assets/dist/admin/js/wp-integrations.js:29704
 #: assets/src/admin/js/BlogWizard/WritingScreens/ParagraphScreen/index.js:65
 msgid "Insert"
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:30663
-#: assets/dist/admin/js/wp-integrations.js:31311
+#: assets/dist/admin/js/blog-wizard.js:29269
+#: assets/dist/admin/js/wp-integrations.js:29908
 #: assets/src/admin/js/BlogWizard/WritingScreens/ParagraphScreen/InstructionTab.js:47
 msgid "Let the genie know the context of this outline"
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:30673
-#: assets/dist/admin/js/wp-integrations.js:31321
+#: assets/dist/admin/js/blog-wizard.js:29279
+#: assets/dist/admin/js/wp-integrations.js:29918
 #: assets/src/admin/js/BlogWizard/WritingScreens/ParagraphScreen/InstructionTab.js:59
 msgid "Keywords (Optional)"
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:30674
-#: assets/dist/admin/js/wp-integrations.js:31322
+#: assets/dist/admin/js/blog-wizard.js:29280
+#: assets/dist/admin/js/wp-integrations.js:29919
 #: assets/src/admin/js/BlogWizard/WritingScreens/ParagraphScreen/InstructionTab.js:61
 msgid "Select/Add keywords for better result."
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:30867
-#: assets/dist/admin/js/wp-integrations.js:31521
-#: assets/src/admin/js/BlogWizard/WritingScreens/ParagraphScreen/ParagraphGenerator.js:212
+#: assets/dist/admin/js/blog-wizard.js:29473
+#: assets/dist/admin/js/wp-integrations.js:30118
+#: assets/src/admin/js/BlogWizard/WritingScreens/ParagraphScreen/ParagraphGenerator.js:228
 msgid "Looking for something different?"
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:30868
-#: assets/dist/admin/js/wp-integrations.js:31522
-#: assets/src/admin/js/BlogWizard/WritingScreens/ParagraphScreen/ParagraphGenerator.js:213
+#: assets/dist/admin/js/blog-wizard.js:29474
+#: assets/dist/admin/js/wp-integrations.js:30119
+#: assets/src/admin/js/BlogWizard/WritingScreens/ParagraphScreen/ParagraphGenerator.js:229
 msgid "You can regenerate the content by clicking the button below."
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:30957
-#: assets/dist/admin/js/wp-integrations.js:31619
+#: assets/dist/admin/js/blog-wizard.js:29563
+#: assets/dist/admin/js/wp-integrations.js:30216
 #: assets/src/admin/js/BlogWizard/ScoreAnalysis/BlogAnalysis/ScoreDetails.js:79
 msgid "Recommended"
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:30977
-#: assets/dist/admin/js/wp-integrations.js:31644
+#: assets/dist/admin/js/blog-wizard.js:29583
+#: assets/dist/admin/js/wp-integrations.js:30241
 #: assets/src/admin/js/BlogWizard/ScoreAnalysis/BlogAnalysis/Feedback.js:24
 msgid "Score Analysis"
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:31217
-#: assets/dist/admin/js/wp-integrations.js:31891
+#: assets/dist/admin/js/blog-wizard.js:29823
+#: assets/dist/admin/js/wp-integrations.js:30488
 #: assets/src/admin/js/BlogWizard/ScoreAnalysis/BlogAnalysis/ScoreMeter.js:187
 msgid "100"
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:31222
-#: assets/dist/admin/js/wp-integrations.js:31896
+#: assets/dist/admin/js/blog-wizard.js:29828
+#: assets/dist/admin/js/wp-integrations.js:30493
 #: assets/src/admin/js/BlogWizard/ScoreAnalysis/BlogAnalysis/ScoreMeter.js:190
 msgid "Hide Analysis"
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:31222
-#: assets/dist/admin/js/wp-integrations.js:31896
+#: assets/dist/admin/js/blog-wizard.js:29828
+#: assets/dist/admin/js/wp-integrations.js:30493
 #: assets/src/admin/js/BlogWizard/ScoreAnalysis/BlogAnalysis/ScoreMeter.js:190
 msgid "Details Analysis"
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:31538
-#: assets/dist/admin/js/wp-integrations.js:32235
+#: assets/dist/admin/js/blog-wizard.js:30144
+#: assets/dist/admin/js/wp-integrations.js:30832
 #: assets/src/admin/js/BlogWizard/ScoreAnalysis/BlogAnalysis/SearchBar.js:55
 msgid "Add Custom Keyword"
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:31541
-#: assets/dist/admin/js/wp-admin-pages.js:1367
-#: assets/dist/admin/js/wp-integrations.js:32238
-#: assets/src/admin/js/AdminPages/WriteForMeAdminPage/index.js:83
+#: assets/dist/admin/js/blog-wizard.js:30147
+#: assets/dist/admin/js/wp-admin-pages.js:42606
+#: assets/dist/admin/js/wp-integrations.js:30835
+#: assets/src/admin/js/AdminPages/WriteForMeAdminPage/index.js:96
 #: assets/src/admin/js/BlogWizard/ScoreAnalysis/BlogAnalysis/SearchBar.js:64
 msgid "Search..."
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:31564
-#: assets/dist/admin/js/wp-integrations.js:32261
+#: assets/dist/admin/js/blog-wizard.js:30170
+#: assets/dist/admin/js/wp-integrations.js:30858
 #: assets/src/admin/js/BlogWizard/ScoreAnalysis/BlogAnalysis/SearchBar.js:91
 msgid "Please enter your custom keyword"
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:33637
-#: assets/dist/admin/js/wp-integrations.js:34361
+#: assets/dist/admin/js/blog-wizard.js:32245
+#: assets/dist/admin/js/wp-integrations.js:32960
 #: assets/src/admin/js/BlogWizard/ScoreAnalysis/SerpVisualizer/index.js:217
 msgid "No data found."
 msgstr ""
 
-#: assets/dist/admin/js/blog-wizard.js:33930
-#: assets/dist/admin/js/wp-integrations.js:34671
+#: assets/dist/admin/js/blog-wizard.js:32538
+#: assets/dist/admin/js/wp-integrations.js:33270
 #: assets/src/admin/js/BlogWizard/ScoreAnalysis/Plagiarism/index.js:64
 msgid "Check Plagiarism"
 msgstr ""
 
-#: assets/dist/admin/js/common-scripts.js:4417
-#: assets/dist/admin/js/templates-scripts.js:4330
+#: assets/dist/admin/js/common-scripts.js:4449
+#: assets/dist/admin/js/templates-scripts.js:45370
+#: assets/src/admin/js/Common/Libs/VoiceInput.js:160
+msgid "Voice input is not supported in your browser. Please use Chrome, Edge, or Safari."
+msgstr ""
+
+#: assets/dist/admin/js/common-scripts.js:4496
+#: assets/dist/admin/js/templates-scripts.js:45417
+#: assets/dist/admin/js/templates-scripts.js:63004
+#: assets/dist/admin/js/wp-admin-pages.js:41622
+#: assets/dist/admin/js/wp-admin-pages.js:57027
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:130250
+#: assets/src/admin/js/AdminPages/KeywordResearchAdminPage/KeywordCard.js:161
+#: assets/src/admin/js/Common/BlurElement/index.js:11
+#: assets/src/admin/js/Common/Libs/VoiceInput.js:193
+#: assets/src/seo-overview/admin/js/Common/BlurElement/index.js:8
+msgid "Switch to Premium Plan"
+msgstr ""
+
+#: assets/dist/admin/js/common-scripts.js:4499
+#: assets/dist/admin/js/templates-scripts.js:45420
+#: assets/src/admin/js/Common/Libs/VoiceInput.js:196
+msgid "Available in select plans only! Upgrade your plan to get voice mode access."
+msgstr ""
+
+#: assets/dist/admin/js/common-scripts.js:4505
+#: assets/dist/admin/js/templates-scripts.js:45426
+#: assets/src/admin/js/Common/Libs/VoiceInput.js:199
+msgid "Click to stop recording"
+msgstr ""
+
+#: assets/dist/admin/js/common-scripts.js:4505
+#: assets/dist/admin/js/templates-scripts.js:45426
+#: assets/src/admin/js/Common/Libs/VoiceInput.js:199
+msgid "Click to start voice input"
+msgstr ""
+
+#: assets/dist/admin/js/common-scripts.js:4684
+#: assets/dist/admin/js/templates-scripts.js:45603
 #: assets/src/admin/js/Common/Libs/DrawerFooter.js:24
 msgid "Next"
 msgstr ""
 
-#: assets/dist/admin/js/common-scripts.js:4485
+#: assets/dist/admin/js/common-scripts.js:4752
 #: assets/src/admin/js/Common/Libs/TitleMsg.js:11
 msgid "Generating"
 msgstr ""
 
-#: assets/dist/admin/js/common-scripts.js:4490
+#: assets/dist/admin/js/common-scripts.js:4757
 #: assets/src/admin/js/Common/Libs/TitleMsg.js:18
 msgid "Select a title and click next"
 msgstr ""
 
-#: assets/dist/admin/js/common-scripts.js:4492
-#: assets/dist/admin/js/common-scripts.js:4499
-#: assets/dist/admin/js/common-scripts.js:4510
+#: assets/dist/admin/js/common-scripts.js:4759
+#: assets/dist/admin/js/common-scripts.js:4766
+#: assets/dist/admin/js/common-scripts.js:4777
 #: assets/src/admin/js/Common/Libs/TitleMsg.js:19
 #: assets/src/admin/js/Common/Libs/TitleMsg.js:27
 #: assets/src/admin/js/Common/Libs/TitleMsg.js:41
 msgid "Generated"
 msgstr ""
 
-#: assets/dist/admin/js/common-scripts.js:4497
+#: assets/dist/admin/js/common-scripts.js:4764
 #: assets/src/admin/js/Common/Libs/TitleMsg.js:26
 msgid "Select an intro and click next"
 msgstr ""
 
-#: assets/dist/admin/js/common-scripts.js:4504
+#: assets/dist/admin/js/common-scripts.js:4771
 #: assets/src/admin/js/Common/Libs/TitleMsg.js:34
 msgid "Edit or delete the existing headings. Also you can add more headings to the outline. Finally, click Insert."
 msgstr ""
 
-#: assets/dist/admin/js/common-scripts.js:4506
+#: assets/dist/admin/js/common-scripts.js:4773
 #: assets/src/admin/js/Common/Libs/TitleMsg.js:35
 msgid "Selected"
 msgstr ""
 
-#: assets/dist/admin/js/common-scripts.js:4566
-#: assets/dist/admin/js/templates-scripts.js:4425
+#: assets/dist/admin/js/common-scripts.js:4833
+#: assets/dist/admin/js/templates-scripts.js:45698
 #: assets/src/admin/js/Common/Libs/DrawerHeader.js:36
 msgid "Enabled"
 msgstr ""
 
-#: assets/dist/admin/js/common-scripts.js:4566
-#: assets/dist/admin/js/templates-scripts.js:4425
+#: assets/dist/admin/js/common-scripts.js:4833
+#: assets/dist/admin/js/templates-scripts.js:45698
 #: assets/src/admin/js/Common/Libs/DrawerHeader.js:36
 msgid "Disabled"
 msgstr ""
 
-#: assets/dist/admin/js/common-scripts.js:5537
+#: assets/dist/admin/js/common-scripts.js:5821
 #: assets/src/admin/js/Common/LicenseNotice/index.js:13
 msgid "Please activate your license"
 msgstr ""
 
-#: assets/dist/admin/js/common-scripts.js:5846
-#: assets/dist/admin/js/templates-scripts.js:5611
+#: assets/dist/admin/js/common-scripts.js:6130
+#: assets/dist/admin/js/templates-scripts.js:46901
 #: assets/src/admin/js/Common/GenieChat/Buttons.js:9
 msgid "New Chat"
 msgstr ""
 
-#: assets/dist/admin/js/common-scripts.js:5851
-#: assets/dist/admin/js/templates-scripts.js:5616
+#: assets/dist/admin/js/common-scripts.js:6135
+#: assets/dist/admin/js/templates-scripts.js:46906
 #: assets/src/admin/js/Common/GenieChat/Buttons.js:14
 msgid "Chat History"
 msgstr ""
 
-#: assets/dist/admin/js/common-scripts.js:5856
-#: assets/dist/admin/js/templates-scripts.js:5621
+#: assets/dist/admin/js/common-scripts.js:6140
+#: assets/dist/admin/js/templates-scripts.js:46911
 #: assets/src/admin/js/Common/GenieChat/Buttons.js:20
 msgid "Clear All"
 msgstr ""
 
-#: assets/dist/admin/js/common-scripts.js:6142
-#: assets/dist/admin/js/templates-scripts.js:5907
-#: assets/src/admin/js/Common/GenieChat/index.js:267
+#: assets/dist/admin/js/common-scripts.js:6433
+#: assets/dist/admin/js/templates-scripts.js:47204
+#: assets/src/admin/js/Common/GenieChat/index.js:279
 msgid "Welcome to "
 msgstr ""
 
-#: assets/dist/admin/js/common-scripts.js:6142
-#: assets/dist/admin/js/templates-scripts.js:5907
-#: assets/src/admin/js/Common/GenieChat/index.js:268
+#: assets/dist/admin/js/common-scripts.js:6433
+#: assets/dist/admin/js/templates-scripts.js:47204
+#: assets/src/admin/js/Common/GenieChat/index.js:280
 msgid "All you have to do is ask or instruct your Genie to kick off the "
 msgstr ""
 
-#: assets/dist/admin/js/common-scripts.js:6142
-#: assets/dist/admin/js/templates-scripts.js:5907
-#: assets/src/admin/js/Common/GenieChat/index.js:268
+#: assets/dist/admin/js/common-scripts.js:6433
+#: assets/dist/admin/js/templates-scripts.js:47204
+#: assets/src/admin/js/Common/GenieChat/index.js:280
 msgid "magic!"
 msgstr ""
 
-#: assets/dist/admin/js/common-scripts.js:6258
-#: assets/dist/admin/js/templates-scripts.js:6023
-#: assets/src/admin/js/Common/GenieChat/index.js:369
+#: assets/dist/admin/js/common-scripts.js:6549
+#: assets/dist/admin/js/templates-scripts.js:47320
+#: assets/src/admin/js/Common/GenieChat/index.js:381
 msgid "Chat Personality"
 msgstr ""
 
-#: assets/dist/admin/js/common-scripts.js:6259
-#: assets/dist/admin/js/templates-scripts.js:6024
-#: assets/src/admin/js/Common/GenieChat/index.js:370
+#: assets/dist/admin/js/common-scripts.js:6550
+#: assets/dist/admin/js/templates-scripts.js:47321
+#: assets/src/admin/js/Common/GenieChat/index.js:382
 msgid "Choose who you want to chat with"
 msgstr ""
 
-#: assets/dist/admin/js/common-scripts.js:6269
-#: assets/dist/admin/js/templates-scripts.js:6034
-#: assets/src/admin/js/Common/GenieChat/index.js:378
+#: assets/dist/admin/js/common-scripts.js:6560
+#: assets/dist/admin/js/templates-scripts.js:47331
+#: assets/src/admin/js/Common/GenieChat/index.js:390
 msgid "Size"
 msgstr ""
 
-#: assets/dist/admin/js/common-scripts.js:6270
-#: assets/dist/admin/js/templates-scripts.js:6035
-#: assets/src/admin/js/Common/GenieChat/index.js:379
+#: assets/dist/admin/js/common-scripts.js:6561
+#: assets/dist/admin/js/templates-scripts.js:47332
+#: assets/src/admin/js/Common/GenieChat/index.js:391
 msgid "Define the size of the content"
 msgstr ""
 
-#: assets/dist/admin/js/templates-scripts.js:6304
-#: assets/src/admin/js/TemplateWizard/WriteTemplatesScreen.js:210
-msgid "Oops! I'm not sure where to insert the content."
+#: assets/dist/admin/js/templates-scripts.js:47622
+#: assets/src/admin/js/TemplateWizard/WriteTemplatesScreen.js:224
+msgid "Action required to insert!"
 msgstr ""
 
-#: assets/dist/admin/js/templates-scripts.js:6305
-#: assets/src/admin/js/TemplateWizard/WriteTemplatesScreen.js:211
-msgid "Please click on the field to select where you want the content to be inserted."
+#: assets/dist/admin/js/templates-scripts.js:47623
+#: assets/src/admin/js/TemplateWizard/WriteTemplatesScreen.js:225
+msgid "Click on the page & activate the cursor to insert the content."
 msgstr ""
 
-#: assets/dist/admin/js/templates-scripts.js:6334
-#: assets/src/admin/js/TemplateWizard/WriteTemplatesScreen.js:245
+#: assets/dist/admin/js/templates-scripts.js:47657
+#: assets/src/admin/js/TemplateWizard/WriteTemplatesScreen.js:266
 msgid "Select Template"
 msgstr ""
 
-#: assets/dist/admin/js/templates-scripts.js:6342
-#: assets/src/admin/js/TemplateWizard/WriteTemplatesScreen.js:251
+#: assets/dist/admin/js/templates-scripts.js:47664
+#: assets/src/admin/js/TemplateWizard/WriteTemplatesScreen.js:272
 msgid "Optional"
 msgstr ""
 
-#: assets/dist/admin/js/templates-scripts.js:6349
-#: assets/src/admin/js/TemplateWizard/WriteTemplatesScreen.js:260
+#: assets/dist/admin/js/templates-scripts.js:47673
+#: assets/src/admin/js/TemplateWizard/WriteTemplatesScreen.js:281
+msgid "Number Of Questions"
+msgstr ""
+
+#: assets/dist/admin/js/templates-scripts.js:47674
+#: assets/src/admin/js/TemplateWizard/WriteTemplatesScreen.js:282
+msgid "Select a number or let AI choose the best count."
+msgstr ""
+
+#: assets/dist/admin/js/templates-scripts.js:47681
+#: assets/src/admin/js/TemplateWizard/WriteTemplatesScreen.js:290
 msgid "Additional Instructions (Optional)"
 msgstr ""
 
-#: assets/dist/admin/js/templates-scripts.js:6366
-#: assets/src/admin/js/TemplateWizard/WriteTemplatesScreen.js:274
+#: assets/dist/admin/js/templates-scripts.js:47698
+#: assets/src/admin/js/TemplateWizard/WriteTemplatesScreen.js:309
 msgid "Write"
 msgstr ""
 
-#: assets/dist/admin/js/templates-scripts.js:6400
-#: assets/dist/admin/js/woo-wizard.js:423
-#: assets/dist/admin/js/woo-wizard.js:561
-#: assets/dist/admin/js/woo-wizard.js:699
-#: assets/src/admin/js/TemplateWizard/WriteTemplatesScreen.js:312
+#: assets/dist/admin/js/templates-scripts.js:47732
+#: assets/dist/admin/js/woo-wizard.js:419
+#: assets/dist/admin/js/woo-wizard.js:557
+#: assets/dist/admin/js/woo-wizard.js:695
+#: assets/src/admin/js/TemplateWizard/WriteTemplatesScreen.js:348
 #: assets/src/admin/js/WooWizard/LongDesc/index.js:147
 #: assets/src/admin/js/WooWizard/ProductTitle/index.js:152
 #: assets/src/admin/js/WooWizard/ShortDesc/index.js:155
 msgid "Click on the text to copy"
 msgstr ""
 
-#: assets/dist/admin/js/templates-scripts.js:7154
-#: assets/dist/admin/js/wp-admin-pages.js:1280
+#: assets/dist/admin/js/templates-scripts.js:48536
+#: assets/dist/admin/js/wp-admin-pages.js:42378
 #: assets/src/admin/js/TemplateWizard/AdditionalWizards.js:8
 msgid "Blog Wizard"
 msgstr ""
 
-#: assets/dist/admin/js/templates-scripts.js:7156
-#: assets/dist/admin/js/wp-admin-pages.js:1282
+#: assets/dist/admin/js/templates-scripts.js:48538
+#: assets/dist/admin/js/wp-admin-pages.js:42380
 #: assets/src/admin/js/TemplateWizard/AdditionalWizards.js:10
 msgid "Get your blog article SERP-ready — from analyzing the keywords to generating content that ranks"
 msgstr ""
 
-#: assets/dist/admin/js/templates-scripts.js:7165
-#: assets/dist/admin/js/wp-admin-pages.js:1291
+#: assets/dist/admin/js/templates-scripts.js:48547
+#: assets/dist/admin/js/wp-admin-pages.js:42389
 #: assets/src/admin/js/TemplateWizard/AdditionalWizards.js:19
 msgid "WooCommerce Wizard"
 msgstr ""
 
-#: assets/dist/admin/js/templates-scripts.js:7167
-#: assets/dist/admin/js/wp-admin-pages.js:1293
+#: assets/dist/admin/js/templates-scripts.js:48549
+#: assets/dist/admin/js/wp-admin-pages.js:42391
 #: assets/src/admin/js/TemplateWizard/AdditionalWizards.js:21
 msgid "Get conversion-friendly & SEO-optimized content for WooCommerce Product pages"
 msgstr ""
 
-#: assets/dist/admin/js/templates-scripts.js:7176
-#: assets/dist/admin/js/wp-admin-pages.js:1302
+#: assets/dist/admin/js/templates-scripts.js:48558
+#: assets/dist/admin/js/wp-admin-pages.js:42400
 #: assets/src/admin/js/TemplateWizard/AdditionalWizards.js:30
 msgid "Genie Mode"
 msgstr ""
 
-#: assets/dist/admin/js/templates-scripts.js:7178
-#: assets/dist/admin/js/wp-admin-pages.js:1304
+#: assets/dist/admin/js/templates-scripts.js:48560
+#: assets/dist/admin/js/wp-admin-pages.js:42402
 #: assets/src/admin/js/TemplateWizard/AdditionalWizards.js:32
 msgid "Write anything you want with the help of Genie Mode"
 msgstr ""
 
-#: assets/dist/admin/js/templates-scripts.js:7224
-#: assets/src/admin/js/TemplateWizard/TemplateListScreen/index.js:67
+#: assets/dist/admin/js/templates-scripts.js:48746
+#: assets/src/admin/js/TemplateWizard/TemplateListScreen/index.js:80
 msgid "Blog Wizard is not available in Elemetor!"
 msgstr ""
 
-#: assets/dist/admin/js/templates-scripts.js:7225
-#: assets/src/admin/js/TemplateWizard/TemplateListScreen/index.js:68
+#: assets/dist/admin/js/templates-scripts.js:48747
+#: assets/src/admin/js/TemplateWizard/TemplateListScreen/index.js:81
 msgid "To use our blog writing workflow, use the Gutenberg post editor or classic editor."
 msgstr ""
 
-#: assets/dist/admin/js/templates-scripts.js:7235
-#: assets/src/admin/js/TemplateWizard/TemplateListScreen/index.js:82
+#: assets/dist/admin/js/templates-scripts.js:48757
+#: assets/src/admin/js/TemplateWizard/TemplateListScreen/index.js:95
 msgid "Plugin not found!"
 msgstr ""
 
-#: assets/dist/admin/js/templates-scripts.js:7236
-#: assets/src/admin/js/TemplateWizard/TemplateListScreen/index.js:83
+#: assets/dist/admin/js/templates-scripts.js:48758
+#: assets/src/admin/js/TemplateWizard/TemplateListScreen/index.js:96
 msgid "WooCommerce is not installed or activated yet."
 msgstr ""
 
-#: assets/dist/admin/js/templates-scripts.js:7244
-#: assets/src/admin/js/TemplateWizard/TemplateListScreen/index.js:93
+#: assets/dist/admin/js/templates-scripts.js:48766
+#: assets/src/admin/js/TemplateWizard/TemplateListScreen/index.js:106
 msgid "WooCommerce product wizard is not available in Elemetor!"
 msgstr ""
 
-#: assets/dist/admin/js/templates-scripts.js:7245
-#: assets/src/admin/js/TemplateWizard/TemplateListScreen/index.js:94
+#: assets/dist/admin/js/templates-scripts.js:48767
+#: assets/src/admin/js/TemplateWizard/TemplateListScreen/index.js:107
 msgid "To use our WooCommerce product description writing workflow, use WooCommerce and its product page editor."
 msgstr ""
 
-#: assets/dist/admin/js/templates-scripts.js:7262
-#: assets/src/admin/js/TemplateWizard/TemplateListScreen/index.js:115
+#: assets/dist/admin/js/templates-scripts.js:48784
+#: assets/src/admin/js/TemplateWizard/TemplateListScreen/index.js:128
 msgid "This wizard has generated data"
 msgstr ""
 
-#: assets/dist/admin/js/templates-scripts.js:7263
-#: assets/src/admin/js/TemplateWizard/TemplateListScreen/index.js:116
+#: assets/dist/admin/js/templates-scripts.js:48785
+#: assets/src/admin/js/TemplateWizard/TemplateListScreen/index.js:129
 msgid "Do you want to erase that data?"
 msgstr ""
 
-#: assets/dist/admin/js/templates-scripts.js:7278
-#: assets/src/admin/js/TemplateWizard/TemplateListScreen/index.js:129
+#: assets/dist/admin/js/templates-scripts.js:48800
+#: assets/src/admin/js/TemplateWizard/TemplateListScreen/index.js:142
 msgid "What are we writing"
 msgstr ""
 
-#: assets/dist/admin/js/templates-scripts.js:7284
-#: assets/src/admin/js/TemplateWizard/TemplateListScreen/index.js:136
+#: assets/dist/admin/js/templates-scripts.js:48806
+#: assets/src/admin/js/TemplateWizard/TemplateListScreen/index.js:149
 msgid "Search"
 msgstr ""
 
-#: assets/dist/admin/js/templates-scripts.js:7337
-#: assets/dist/admin/js/woo-wizard.js:13
-#: assets/src/admin/js/TemplateWizard/Callbacks.js:44
-#: assets/src/admin/js/WooWizard/Utilities/Callbacks.js:6
-msgid "Insertion Failed!"
+#: assets/dist/admin/js/templates-scripts.js:48919
+#: assets/dist/admin/js/wp-admin-pages.js:41034
+#: assets/src/admin/js/AdminPages/Partials/index.js:14
+msgid " Documentation"
 msgstr ""
 
-#: assets/dist/admin/js/templates-scripts.js:7338
-#: assets/src/admin/js/TemplateWizard/Callbacks.js:45
-msgid "No insertion field found!"
+#: assets/dist/admin/js/templates-scripts.js:48924
+#: assets/dist/admin/js/wp-admin-pages.js:41039
+#: assets/src/admin/js/AdminPages/Partials/index.js:18
+msgid " Help & Support"
+msgstr ""
+
+#: assets/dist/admin/js/templates-scripts.js:48958
+#: assets/dist/admin/js/wp-admin-pages.js:41073
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:130941
+#: assets/src/admin/js/AdminPages/Partials/index.js:42
+#: assets/src/seo-overview/admin/js/Common/HeaderAdminPage/index.js:37
+msgid "Writing History"
+msgstr ""
+
+#: assets/dist/admin/js/templates-scripts.js:48967
+#: assets/dist/admin/js/wp-admin-pages.js:41082
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:130956
+#: assets/src/admin/js/AdminPages/Partials/index.js:46
+#: assets/src/seo-overview/admin/js/Common/HeaderAdminPage/index.js:52
+msgid "Help/Resources"
+msgstr ""
+
+#: assets/dist/admin/js/templates-scripts.js:63006
+#: assets/dist/admin/js/wp-admin-pages.js:57029
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:130252
+#: assets/src/admin/js/AdminPages/KeywordResearchAdminPage/KeywordCard.js:162
+#: assets/src/seo-overview/admin/js/Common/BlurElement/index.js:9
+msgid "Available in select plans only! Upgrade your plan to view detailed insights."
+msgstr ""
+
+#: assets/dist/admin/js/woo-wizard.js:13
+#: assets/src/admin/js/WooWizard/Utilities/Callbacks.js:6
+msgid "Insertion Failed!"
 msgstr ""
 
 #: assets/dist/admin/js/woo-wizard.js:14
@@ -2341,376 +2906,444 @@ msgstr ""
 msgid "No insertion place found!"
 msgstr ""
 
-#: assets/dist/admin/js/woo-wizard.js:370
-#: assets/dist/admin/js/woo-wizard.js:508
-#: assets/dist/admin/js/woo-wizard.js:646
+#: assets/dist/admin/js/woo-wizard.js:366
+#: assets/dist/admin/js/woo-wizard.js:504
+#: assets/dist/admin/js/woo-wizard.js:642
 #: assets/src/admin/js/WooWizard/LongDesc/index.js:114
 #: assets/src/admin/js/WooWizard/ProductTitle/index.js:118
 #: assets/src/admin/js/WooWizard/ShortDesc/index.js:121
 msgid "Product Brief/ Comma separated keywords"
 msgstr ""
 
-#: assets/dist/admin/js/woo-wizard.js:375
-#: assets/dist/admin/js/woo-wizard.js:513
-#: assets/dist/admin/js/woo-wizard.js:651
+#: assets/dist/admin/js/woo-wizard.js:371
+#: assets/dist/admin/js/woo-wizard.js:509
+#: assets/dist/admin/js/woo-wizard.js:647
 #: assets/src/admin/js/WooWizard/LongDesc/index.js:115
 #: assets/src/admin/js/WooWizard/ProductTitle/index.js:119
 #: assets/src/admin/js/WooWizard/ShortDesc/index.js:122
 msgid "Enter a brief description or the keywords for this product, seperated by commas"
 msgstr ""
 
-#: assets/dist/admin/js/woo-wizard.js:386
+#: assets/dist/admin/js/woo-wizard.js:382
 #: assets/src/admin/js/WooWizard/ProductTitle/index.js:126
 msgid "Generate product title"
 msgstr ""
 
-#: assets/dist/admin/js/woo-wizard.js:389
+#: assets/dist/admin/js/woo-wizard.js:385
 #: assets/src/admin/js/WooWizard/ProductTitle/index.js:128
 msgid "product name"
 msgstr ""
 
-#: assets/dist/admin/js/woo-wizard.js:504
-#: assets/dist/admin/js/woo-wizard.js:642
+#: assets/dist/admin/js/woo-wizard.js:500
+#: assets/dist/admin/js/woo-wizard.js:638
 #: assets/src/admin/js/WooWizard/LongDesc/index.js:111
 #: assets/src/admin/js/WooWizard/ShortDesc/index.js:118
 msgid "Enter the name of the product here"
 msgstr ""
 
-#: assets/dist/admin/js/woo-wizard.js:524
+#: assets/dist/admin/js/woo-wizard.js:520
 #: assets/src/admin/js/WooWizard/LongDesc/index.js:121
 msgid "Generate long desc"
 msgstr ""
 
-#: assets/dist/admin/js/woo-wizard.js:527
+#: assets/dist/admin/js/woo-wizard.js:523
 #: assets/src/admin/js/WooWizard/LongDesc/index.js:123
 msgid "long description"
 msgstr ""
 
-#: assets/dist/admin/js/woo-wizard.js:662
+#: assets/dist/admin/js/woo-wizard.js:658
 #: assets/src/admin/js/WooWizard/ShortDesc/index.js:129
 msgid "Generate short desc"
 msgstr ""
 
-#: assets/dist/admin/js/woo-wizard.js:665
+#: assets/dist/admin/js/woo-wizard.js:661
 #: assets/src/admin/js/WooWizard/ShortDesc/index.js:131
 msgid "short description"
 msgstr ""
 
-#: assets/dist/admin/js/woo-wizard.js:668
+#: assets/dist/admin/js/woo-wizard.js:664
 #: assets/src/admin/js/WooWizard/ShortDesc/index.js:132
 msgid "transparent"
 msgstr ""
 
-#: assets/dist/admin/js/woo-wizard.js:678
-#: assets/dist/admin/js/wp-admin-pages.js:406
+#: assets/dist/admin/js/woo-wizard.js:674
+#: assets/dist/admin/js/wp-admin-pages.js:41479
 #: assets/src/admin/js/AdminPages/HistoryAdminPage/index.js:243
 #: assets/src/admin/js/WooWizard/ShortDesc/index.js:136
 msgid "Copied"
 msgstr ""
 
-#: assets/dist/admin/js/wp-admin-pages.js:14
-#: assets/src/admin/js/AdminPages/Partials/index.js:14
-msgid " Documentation"
-msgstr ""
-
-#: assets/dist/admin/js/wp-admin-pages.js:19
-#: assets/src/admin/js/AdminPages/Partials/index.js:18
-msgid " Help & Support"
-msgstr ""
-
-#: assets/dist/admin/js/wp-admin-pages.js:62
-#: assets/src/admin/js/AdminPages/Partials/index.js:46
-msgid "Help/Resources"
-msgstr ""
-
-#: assets/dist/admin/js/wp-admin-pages.js:73
-#: assets/src/admin/js/AdminPages/HelpAdminPage/index.js:16
+#: assets/dist/admin/js/wp-admin-pages.js:41113
+#: assets/src/admin/js/AdminPages/HelpAdminPage/index.js:19
 msgid "Support Center"
 msgstr ""
 
-#: assets/dist/admin/js/wp-admin-pages.js:74
-#: assets/src/admin/js/AdminPages/HelpAdminPage/index.js:17
+#: assets/dist/admin/js/wp-admin-pages.js:41114
+#: assets/src/admin/js/AdminPages/HelpAdminPage/index.js:20
 msgid "Our experienced support team is ready to resolve your issues any time."
 msgstr ""
 
-#: assets/dist/admin/js/wp-admin-pages.js:79
-#: assets/src/admin/js/AdminPages/HelpAdminPage/index.js:22
+#: assets/dist/admin/js/wp-admin-pages.js:41119
+#: assets/src/admin/js/AdminPages/HelpAdminPage/index.js:25
 msgid "Join The Community"
 msgstr ""
 
-#: assets/dist/admin/js/wp-admin-pages.js:80
-#: assets/src/admin/js/AdminPages/HelpAdminPage/index.js:23
+#: assets/dist/admin/js/wp-admin-pages.js:41120
+#: assets/src/admin/js/AdminPages/HelpAdminPage/index.js:26
 msgid "Follow us and stay connected for all the latest news and updates of GetGenie AI."
 msgstr ""
 
-#: assets/dist/admin/js/wp-admin-pages.js:85
-#: assets/src/admin/js/AdminPages/HelpAdminPage/index.js:28
+#: assets/dist/admin/js/wp-admin-pages.js:41125
+#: assets/src/admin/js/AdminPages/HelpAdminPage/index.js:31
 msgid "Video Tutorials"
 msgstr ""
 
-#: assets/dist/admin/js/wp-admin-pages.js:86
-#: assets/src/admin/js/AdminPages/HelpAdminPage/index.js:29
+#: assets/dist/admin/js/wp-admin-pages.js:41126
+#: assets/src/admin/js/AdminPages/HelpAdminPage/index.js:32
 msgid "Learn the step by step process for developing your site easily from video tutorials."
 msgstr ""
 
-#: assets/dist/admin/js/wp-admin-pages.js:91
-#: assets/src/admin/js/AdminPages/HelpAdminPage/index.js:34
+#: assets/dist/admin/js/wp-admin-pages.js:41131
+#: assets/src/admin/js/AdminPages/HelpAdminPage/index.js:37
 msgid "Request A Feature"
 msgstr ""
 
-#: assets/dist/admin/js/wp-admin-pages.js:92
-#: assets/src/admin/js/AdminPages/HelpAdminPage/index.js:35
+#: assets/dist/admin/js/wp-admin-pages.js:41132
+#: assets/src/admin/js/AdminPages/HelpAdminPage/index.js:38
 msgid "Have any special feature in mind? Let us know through the feature request."
 msgstr ""
 
-#: assets/dist/admin/js/wp-admin-pages.js:97
-#: assets/src/admin/js/AdminPages/HelpAdminPage/index.js:40
+#: assets/dist/admin/js/wp-admin-pages.js:41137
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:130901
+#: assets/src/admin/js/AdminPages/HelpAdminPage/index.js:43
+#: assets/src/seo-overview/admin/js/Common/HeaderAdminPage/index.js:8
 msgid "Documentation"
 msgstr ""
 
-#: assets/dist/admin/js/wp-admin-pages.js:98
-#: assets/src/admin/js/AdminPages/HelpAdminPage/index.js:41
+#: assets/dist/admin/js/wp-admin-pages.js:41138
+#: assets/src/admin/js/AdminPages/HelpAdminPage/index.js:44
 msgid "Detailed documentation to help you understand the functionality of each feature."
 msgstr ""
 
-#: assets/dist/admin/js/wp-admin-pages.js:103
-#: assets/src/admin/js/AdminPages/HelpAdminPage/index.js:46
+#: assets/dist/admin/js/wp-admin-pages.js:41143
+#: assets/src/admin/js/AdminPages/HelpAdminPage/index.js:49
 msgid "Public Roadmap"
 msgstr ""
 
-#: assets/dist/admin/js/wp-admin-pages.js:104
-#: assets/src/admin/js/AdminPages/HelpAdminPage/index.js:47
+#: assets/dist/admin/js/wp-admin-pages.js:41144
+#: assets/src/admin/js/AdminPages/HelpAdminPage/index.js:50
 msgid "Check our upcoming new features, detailed development stories and tasks"
 msgstr ""
 
-#: assets/dist/admin/js/wp-admin-pages.js:112
-#: assets/src/admin/js/AdminPages/HelpAdminPage/index.js:57
+#: assets/dist/admin/js/wp-admin-pages.js:41152
+#: assets/src/admin/js/AdminPages/HelpAdminPage/index.js:60
 msgid "All-in-One drag and drop Addons for Elementor"
 msgstr ""
 
-#: assets/dist/admin/js/wp-admin-pages.js:118
-#: assets/src/admin/js/AdminPages/HelpAdminPage/index.js:63
+#: assets/dist/admin/js/wp-admin-pages.js:41158
+#: assets/src/admin/js/AdminPages/HelpAdminPage/index.js:66
 msgid "Most flexible drag-and-drop form builder"
 msgstr ""
 
-#: assets/dist/admin/js/wp-admin-pages.js:124
-#: assets/src/admin/js/AdminPages/HelpAdminPage/index.js:69
+#: assets/dist/admin/js/wp-admin-pages.js:41164
+#: assets/src/admin/js/AdminPages/HelpAdminPage/index.js:72
 msgid "All-in-one WooCommerce builder addon for Elementor"
 msgstr ""
 
-#: assets/dist/admin/js/wp-admin-pages.js:130
-#: assets/src/admin/js/AdminPages/HelpAdminPage/index.js:75
+#: assets/dist/admin/js/wp-admin-pages.js:41170
+#: assets/src/admin/js/AdminPages/HelpAdminPage/index.js:78
 msgid "Integrate all your social media to your website"
 msgstr ""
 
-#: assets/dist/admin/js/wp-admin-pages.js:136
-#: assets/src/admin/js/AdminPages/HelpAdminPage/index.js:81
+#: assets/dist/admin/js/wp-admin-pages.js:41176
+#: assets/src/admin/js/AdminPages/HelpAdminPage/index.js:84
 msgid "Integrate various styled review system in your website"
 msgstr ""
 
-#: assets/dist/admin/js/wp-admin-pages.js:142
-#: assets/src/admin/js/AdminPages/HelpAdminPage/index.js:87
+#: assets/dist/admin/js/wp-admin-pages.js:41182
+#: assets/src/admin/js/AdminPages/HelpAdminPage/index.js:90
 msgid "Enable donation system in your website"
 msgstr ""
 
-#: assets/dist/admin/js/wp-admin-pages.js:167
-#: assets/src/admin/js/AdminPages/HelpAdminPage/index.js:111
+#: assets/dist/admin/js/wp-admin-pages.js:41240
+#: assets/src/admin/js/AdminPages/HelpAdminPage/index.js:145
 msgid "Take your website to the next level"
 msgstr ""
 
-#: assets/dist/admin/js/wp-admin-pages.js:167
-#: assets/src/admin/js/AdminPages/HelpAdminPage/index.js:112
+#: assets/dist/admin/js/wp-admin-pages.js:41240
+#: assets/src/admin/js/AdminPages/HelpAdminPage/index.js:146
 msgid "We have some plugins you can install to get most from Wordpress."
 msgstr ""
 
-#: assets/dist/admin/js/wp-admin-pages.js:167
-#: assets/src/admin/js/AdminPages/HelpAdminPage/index.js:112
+#: assets/dist/admin/js/wp-admin-pages.js:41240
+#: assets/src/admin/js/AdminPages/HelpAdminPage/index.js:146
 msgid "These are absolute FREE to use."
 msgstr ""
 
-#: assets/dist/admin/js/wp-admin-pages.js:339
+#: assets/dist/admin/js/wp-admin-pages.js:41412
 #: assets/src/admin/js/AdminPages/HistoryAdminPage/index.js:200
 msgid "History"
 msgstr ""
 
-#: assets/dist/admin/js/wp-admin-pages.js:360
+#: assets/dist/admin/js/wp-admin-pages.js:41433
 #: assets/src/admin/js/AdminPages/HistoryAdminPage/index.js:215
 msgid "Template Name"
 msgstr ""
 
-#: assets/dist/admin/js/wp-admin-pages.js:364
+#: assets/dist/admin/js/wp-admin-pages.js:41437
 #: assets/src/admin/js/AdminPages/HistoryAdminPage/index.js:216
 msgid "Creativity Level"
 msgstr ""
 
-#: assets/dist/admin/js/wp-admin-pages.js:368
+#: assets/dist/admin/js/wp-admin-pages.js:41441
 #: assets/src/admin/js/AdminPages/HistoryAdminPage/index.js:217
 msgid "Created at"
 msgstr ""
 
-#: assets/dist/admin/js/wp-admin-pages.js:375
+#: assets/dist/admin/js/wp-admin-pages.js:41448
 #: assets/src/admin/js/AdminPages/HistoryAdminPage/index.js:220
 msgid "Keyword Input"
 msgstr ""
 
-#: assets/dist/admin/js/wp-admin-pages.js:398
+#: assets/dist/admin/js/wp-admin-pages.js:41471
 #: assets/src/admin/js/AdminPages/HistoryAdminPage/index.js:235
 msgid "Generated Content"
 msgstr ""
 
-#: assets/dist/admin/js/wp-admin-pages.js:471
+#: assets/dist/admin/js/wp-admin-pages.js:41544
 #: assets/src/admin/js/AdminPages/LicenseAdminPage/index.js:67
 msgid "GetGenie License Settings"
 msgstr ""
 
-#: assets/dist/admin/js/wp-admin-pages.js:473
+#: assets/dist/admin/js/wp-admin-pages.js:41546
 #: assets/src/admin/js/AdminPages/LicenseAdminPage/index.js:70
 msgid "License Settings"
 msgstr ""
 
-#: assets/dist/admin/js/wp-admin-pages.js:476
+#: assets/dist/admin/js/wp-admin-pages.js:41549
 #: assets/src/admin/js/AdminPages/LicenseAdminPage/index.js:72
 msgid "You'll need a license to use both the free and pro version of GetGenie AI."
 msgstr ""
 
-#: assets/dist/admin/js/wp-admin-pages.js:482
+#: assets/dist/admin/js/wp-admin-pages.js:41555
 #: assets/src/admin/js/AdminPages/LicenseAdminPage/index.js:73
 msgid "Claim your license here"
 msgstr ""
 
-#: assets/dist/admin/js/wp-admin-pages.js:482
+#: assets/dist/admin/js/wp-admin-pages.js:41555
 #: assets/src/admin/js/AdminPages/LicenseAdminPage/index.js:76
 msgid "If you have the license key, paste the code below and activate your subscription."
 msgstr ""
 
-#: assets/dist/admin/js/wp-admin-pages.js:482
+#: assets/dist/admin/js/wp-admin-pages.js:41555
 #: assets/src/admin/js/AdminPages/LicenseAdminPage/index.js:77
 msgid "Or, follow the steps below to activate the Genie AI plugin"
 msgstr ""
 
-#: assets/dist/admin/js/wp-admin-pages.js:484
+#: assets/dist/admin/js/wp-admin-pages.js:41557
 #: assets/src/admin/js/AdminPages/LicenseAdminPage/index.js:80
 msgid "Log in to your GetGenie account."
 msgstr ""
 
-#: assets/dist/admin/js/wp-admin-pages.js:484
+#: assets/dist/admin/js/wp-admin-pages.js:41557
 #: assets/src/admin/js/AdminPages/LicenseAdminPage/index.js:82
 msgid "Generate a license key from Product Licenses then Manage Licenses."
 msgstr ""
 
-#: assets/dist/admin/js/wp-admin-pages.js:484
+#: assets/dist/admin/js/wp-admin-pages.js:41557
 #: assets/src/admin/js/AdminPages/LicenseAdminPage/index.js:83
 msgid "Copy the license key text and paste it inside the input box below."
 msgstr ""
 
-#: assets/dist/admin/js/wp-admin-pages.js:507
+#: assets/dist/admin/js/wp-admin-pages.js:41565
+#: assets/src/admin/js/AdminPages/LicenseAdminPage/index.js:95
+msgid "Your key is empty!"
+msgstr ""
+
+#: assets/dist/admin/js/wp-admin-pages.js:41566
+#: assets/src/admin/js/AdminPages/LicenseAdminPage/index.js:95
+msgid "Your License Key"
+msgstr ""
+
+#: assets/dist/admin/js/wp-admin-pages.js:41567
+#: assets/src/admin/js/AdminPages/LicenseAdminPage/index.js:95
+msgid "Please insert your license key here"
+msgstr ""
+
+#: assets/dist/admin/js/wp-admin-pages.js:41580
 #: assets/src/admin/js/AdminPages/LicenseAdminPage/index.js:105
 msgid "ACTIVATE NOW"
 msgstr ""
 
-#: assets/dist/admin/js/wp-admin-pages.js:515
+#: assets/dist/admin/js/wp-admin-pages.js:41588
 #: assets/src/admin/js/AdminPages/LicenseAdminPage/index.js:113
 msgid "Usage details"
 msgstr ""
 
-#: assets/dist/admin/js/wp-admin-pages.js:522
+#: assets/dist/admin/js/wp-admin-pages.js:41595
 #: assets/src/admin/js/AdminPages/LicenseAdminPage/index.js:114
 msgid "Remove license from this domain"
 msgstr ""
 
-#: assets/dist/admin/js/wp-admin-pages.js:522
+#: assets/dist/admin/js/wp-admin-pages.js:41595
 #: assets/src/admin/js/AdminPages/LicenseAdminPage/index.js:116
 msgid "See documentation"
 msgstr ""
 
-#: assets/dist/admin/js/wp-admin-pages.js:1359
-#: assets/src/admin/js/AdminPages/WriteForMeAdminPage/index.js:76
+#: assets/dist/admin/js/wp-admin-pages.js:41613
+#: assets/src/admin/js/Common/BlurElement/index.js:4
+msgid "Available in select plans only! Upgrade your plan to access this template."
+msgstr ""
+
+#: assets/dist/admin/js/wp-admin-pages.js:42598
+#: assets/src/admin/js/AdminPages/WriteForMeAdminPage/index.js:89
 msgid "Write Using Templates"
 msgstr ""
 
-#: assets/dist/admin/js/wp-admin-pages.js:1373
-#: assets/src/admin/js/AdminPages/WriteForMeAdminPage/index.js:94
+#: assets/dist/admin/js/wp-admin-pages.js:42612
+#: assets/src/admin/js/AdminPages/WriteForMeAdminPage/index.js:107
 msgid "No template found"
 msgstr ""
 
-#: assets/dist/admin/js/wp-admin-pages.js:1558
+#: assets/dist/admin/js/wp-admin-pages.js:42820
 #: assets/src/admin/js/AdminPages/GettingStarted/index.js:170
 msgid "Get Started with GetGenie"
 msgstr ""
 
-#: assets/dist/admin/js/wp-admin-pages.js:1560
+#: assets/dist/admin/js/wp-admin-pages.js:42822
 #: assets/src/admin/js/AdminPages/GettingStarted/index.js:172
 msgid "Setting up GetGenie AI takes only a few minutes! Simply go through the “Getting Started” video, click"
 msgstr ""
 
-#: assets/dist/admin/js/wp-admin-pages.js:1560
+#: assets/dist/admin/js/wp-admin-pages.js:42822
 #: assets/src/admin/js/AdminPages/GettingStarted/index.js:174
 msgid "the buttons below, and voila — the AI magic is ready for you!"
 msgstr ""
 
-#: assets/dist/admin/js/wp-admin-pages.js:1575
+#: assets/dist/admin/js/wp-admin-pages.js:42837
 #: assets/src/admin/js/AdminPages/GettingStarted/index.js:181
 msgid "Manage Your License"
 msgstr ""
 
-#: assets/dist/admin/js/wp-admin-pages.js:1579
-#: assets/dist/admin/js/wp-admin-pages.js:1600
+#: assets/dist/admin/js/wp-admin-pages.js:42841
+#: assets/dist/admin/js/wp-admin-pages.js:42862
 #: assets/src/admin/js/AdminPages/GettingStarted/index.js:182
 #: assets/src/admin/js/AdminPages/GettingStarted/index.js:197
 msgid "Read the Documentation"
 msgstr ""
 
-#: assets/dist/admin/js/wp-admin-pages.js:1583
+#: assets/dist/admin/js/wp-admin-pages.js:42845
 #: assets/src/admin/js/AdminPages/GettingStarted/index.js:183
 msgid "Join the community"
 msgstr ""
 
-#: assets/dist/admin/js/wp-admin-pages.js:1622
+#: assets/dist/admin/js/wp-admin-pages.js:42866
+#: assets/src/admin/js/AdminPages/GettingStarted/index.js:207
+msgid "Read Our Growth-Focused Blog"
+msgstr ""
+
+#: assets/dist/admin/js/wp-admin-pages.js:42884
 #: assets/src/admin/js/AdminPages/GettingStarted/index.js:223
 msgid "More Resources to Check Out"
 msgstr ""
 
-#: assets/dist/admin/js/wp-admin-pages.js:1687
+#: assets/dist/admin/js/wp-admin-pages.js:42949
 #: assets/src/admin/js/AdminPages/RoadmapAdminPage/index.js:52
 msgid "Changelog/Upcoming Features"
 msgstr ""
 
-#: assets/dist/admin/js/wp-integrations.js:35509
+#: assets/dist/admin/js/wp-admin-pages.js:70706
+#: assets/src/admin/js/AdminPages/RoleManagerAdminPage/index.js:65
+msgid "Role Management Setting"
+msgstr ""
+
+#: assets/dist/admin/js/wp-admin-pages.js:70724
+#: assets/dist/admin/js/wp-admin-pages.js:70728
+#: assets/src/admin/js/AdminPages/RoleManagerAdminPage/index.js:86
+#: assets/src/admin/js/AdminPages/RoleManagerAdminPage/index.js:91
+msgid "Who can access SEO Insights"
+msgstr ""
+
+#: assets/dist/admin/js/wp-admin-pages.js:70726
+#: assets/src/admin/js/AdminPages/RoleManagerAdminPage/index.js:88
+msgid "Please select who can access SEO Insights"
+msgstr ""
+
+#: assets/dist/admin/js/wp-admin-pages.js:70737
+#: assets/dist/admin/js/wp-admin-pages.js:70741
+#: assets/src/admin/js/AdminPages/RoleManagerAdminPage/index.js:100
+#: assets/src/admin/js/AdminPages/RoleManagerAdminPage/index.js:105
+msgid "Who can access AI Writing"
+msgstr ""
+
+#: assets/dist/admin/js/wp-admin-pages.js:70739
+#: assets/src/admin/js/AdminPages/RoleManagerAdminPage/index.js:102
+msgid "Please select who can access AI Writing"
+msgstr ""
+
+#: assets/dist/admin/js/wp-admin-pages.js:70750
+#: assets/dist/admin/js/wp-admin-pages.js:70754
+#: assets/src/admin/js/AdminPages/RoleManagerAdminPage/index.js:114
+#: assets/src/admin/js/AdminPages/RoleManagerAdminPage/index.js:119
+msgid "Who can access Keyword Research"
+msgstr ""
+
+#: assets/dist/admin/js/wp-admin-pages.js:70752
+#: assets/src/admin/js/AdminPages/RoleManagerAdminPage/index.js:116
+msgid "Please select who can access Keyword Research"
+msgstr ""
+
+#: assets/dist/admin/js/wp-admin-pages.js:70768
+#: assets/src/admin/js/AdminPages/RoleManagerAdminPage/index.js:128
+msgid "Save"
+msgstr ""
+
+#: assets/dist/admin/js/wp-integrations.js:34266
 #: assets/src/admin/js/Common/LimitUsage/StatsTable.js:23
 msgid "Feature Type"
 msgstr ""
 
-#: assets/dist/admin/js/wp-integrations.js:35509
+#: assets/dist/admin/js/wp-integrations.js:34266
 #: assets/src/admin/js/Common/LimitUsage/StatsTable.js:24
 msgid "Limit"
 msgstr ""
 
-#: assets/dist/admin/js/wp-integrations.js:35509
+#: assets/dist/admin/js/wp-integrations.js:34266
 #: assets/src/admin/js/Common/LimitUsage/StatsTable.js:25
 msgid "Usage"
 msgstr ""
 
-#: assets/dist/admin/js/wp-integrations.js:35509
+#: assets/dist/admin/js/wp-integrations.js:34266
 #: assets/src/admin/js/Common/LimitUsage/StatsTable.js:26
 msgid "Remaining Usage"
 msgstr ""
 
-#: assets/dist/admin/js/wp-integrations.js:35509
+#: assets/dist/admin/js/wp-integrations.js:34266
 #: assets/src/admin/js/Common/LimitUsage/StatsTable.js:34
 msgid "Word Generate"
 msgstr ""
 
-#: assets/dist/admin/js/wp-integrations.js:35509
+#: assets/dist/admin/js/wp-integrations.js:34266
 #: assets/src/admin/js/Common/LimitUsage/StatsTable.js:40
 msgid "Serp Analysis"
 msgstr ""
 
-#: assets/dist/admin/js/wp-integrations.js:35509
+#: assets/dist/admin/js/wp-integrations.js:34266
 #: assets/src/admin/js/Common/LimitUsage/StatsTable.js:46
 msgid "Keyword Lookup"
 msgstr ""
 
-#: assets/dist/admin/js/wp-integrations.js:35511
+#: assets/dist/admin/js/wp-integrations.js:34268
 #: assets/src/admin/js/Common/LimitUsage/StatsTable.js:52
 msgid "Domain Limit"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:130133
+#: assets/src/seo-overview/admin/js/Common/Menu/index.js:10
+msgid "Overview"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:130906
+#: assets/src/seo-overview/admin/js/Common/HeaderAdminPage/index.js:11
+msgid "Help & Support"
 msgstr ""
