@@ -2,14 +2,14 @@
 # This file is distributed under the GPL3 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: GetGenie AI 4.5.0\n"
+"Project-Id-Version: GetGenie AI 4.5.2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/getgenie\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-07-27T11:11:31+00:00\n"
+"POT-Creation-Date: 2026-07-30T04:32:11+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: getgenie\n"
@@ -41,6 +41,14 @@ msgstr ""
 
 #: app/ProLabel/ProLabelInit.php:83
 msgid "Just one step left! Click below and activate your license to start unlocking GetGenie's full potential instantly."
+msgstr ""
+
+#: app/ProLabel/ProLabelInit.php:107
+msgid "Claim Your Free License"
+msgstr ""
+
+#: app/ProLabel/ProLabelInit.php:108
+msgid "Finish License Activation"
 msgstr ""
 
 #: app/ProLabel/views/template.php:137
@@ -89,6 +97,14 @@ msgstr ""
 
 #: app/Providers/SideMenuProvider.php:73
 msgid "AI Writing"
+msgstr ""
+
+#: app/Providers/SideMenuProvider.php:73
+#: assets/dist/admin/js/templates-scripts.js:48845
+#: assets/dist/admin/js/wp-admin-pages.js:42643
+#: assets/src/admin/js/AdminPages/WriteForMeAdminPage/index.js:142
+#: assets/src/admin/js/TemplateWizard/TemplateListScreen/index.js:191
+msgid "New"
 msgstr ""
 
 #: app/Providers/SideMenuProvider.php:80
@@ -1961,6 +1977,14 @@ msgstr ""
 msgid "Local Service Page Copy Generator"
 msgstr ""
 
+#: assets/dist/admin/js/app-handler.js:982
+#: assets/dist/admin/js/blog-wizard.js:33444
+#: assets/dist/admin/js/templates-scripts.js:48660
+#: assets/dist/admin/js/wp-admin-pages.js:42502
+#: assets/src/admin/js/Common/Utilities/newTemplates.js:98
+msgid "Produce high-converting & location-specific service page copy in a flash"
+msgstr ""
+
 #: assets/dist/admin/js/app-handler.js:1009
 #: assets/dist/admin/js/blog-wizard.js:33471
 #: assets/dist/admin/js/templates-scripts.js:48687
@@ -2259,7 +2283,10 @@ msgid "Please choose valid limit"
 msgstr ""
 
 #: assets/dist/admin/js/blog-wizard.js:24961
+#: assets/dist/admin/js/templates-scripts.js:76581
+#: assets/dist/admin/js/wp-admin-pages.js:70604
 #: assets/dist/admin/js/wp-integrations.js:23654
+#: assets/src/admin/js/AdminPages/KeywordResearchAdminPage/index.js:246
 #: assets/src/admin/js/BlogWizard/WritingScreens/TitleScreen/index.js:147
 msgid "Keyword"
 msgstr ""
@@ -2295,7 +2322,10 @@ msgid "Turn on the SEO mode for better search engine optimization."
 msgstr ""
 
 #: assets/dist/admin/js/blog-wizard.js:24997
+#: assets/dist/admin/js/templates-scripts.js:76596
+#: assets/dist/admin/js/wp-admin-pages.js:70619
 #: assets/dist/admin/js/wp-integrations.js:23690
+#: assets/src/admin/js/AdminPages/KeywordResearchAdminPage/index.js:254
 #: assets/src/admin/js/BlogWizard/WritingScreens/TitleScreen/index.js:173
 msgid "Analyze keyword"
 msgstr ""
@@ -2580,7 +2610,7 @@ msgstr ""
 #: assets/dist/admin/js/templates-scripts.js:63004
 #: assets/dist/admin/js/wp-admin-pages.js:41622
 #: assets/dist/admin/js/wp-admin-pages.js:57027
-#: assets/dist/seo-overview/admin/js/wp-integrations.js:130250
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:130254
 #: assets/src/admin/js/AdminPages/KeywordResearchAdminPage/KeywordCard.js:161
 #: assets/src/admin/js/Common/BlurElement/index.js:11
 #: assets/src/admin/js/Common/Libs/VoiceInput.js:193
@@ -2592,6 +2622,14 @@ msgstr ""
 #: assets/dist/admin/js/templates-scripts.js:45420
 #: assets/src/admin/js/Common/Libs/VoiceInput.js:196
 msgid "Available in select plans only! Upgrade your plan to get voice mode access."
+msgstr ""
+
+#: assets/dist/admin/js/common-scripts.js:4505
+#: assets/dist/admin/js/templates-scripts.js:45426
+#: assets/dist/admin/js/wp-admin-pages.js:41631
+#: assets/src/admin/js/Common/BlurElement/index.js:15
+#: assets/src/admin/js/Common/Libs/VoiceInput.js:197
+msgid "Upgrade Now"
 msgstr ""
 
 #: assets/dist/admin/js/common-scripts.js:4505
@@ -2860,6 +2898,11 @@ msgstr ""
 msgid "Search"
 msgstr ""
 
+#: assets/dist/admin/js/templates-scripts.js:48847
+#: assets/src/admin/js/TemplateWizard/TemplateListScreen/index.js:196
+msgid "Upgrade your plan to access this template."
+msgstr ""
+
 #: assets/dist/admin/js/templates-scripts.js:48919
 #: assets/dist/admin/js/wp-admin-pages.js:41034
 #: assets/src/admin/js/AdminPages/Partials/index.js:14
@@ -2874,7 +2917,7 @@ msgstr ""
 
 #: assets/dist/admin/js/templates-scripts.js:48958
 #: assets/dist/admin/js/wp-admin-pages.js:41073
-#: assets/dist/seo-overview/admin/js/wp-integrations.js:130941
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:130945
 #: assets/src/admin/js/AdminPages/Partials/index.js:42
 #: assets/src/seo-overview/admin/js/Common/HeaderAdminPage/index.js:37
 msgid "Writing History"
@@ -2882,7 +2925,7 @@ msgstr ""
 
 #: assets/dist/admin/js/templates-scripts.js:48967
 #: assets/dist/admin/js/wp-admin-pages.js:41082
-#: assets/dist/seo-overview/admin/js/wp-integrations.js:130956
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:130960
 #: assets/src/admin/js/AdminPages/Partials/index.js:46
 #: assets/src/seo-overview/admin/js/Common/HeaderAdminPage/index.js:52
 msgid "Help/Resources"
@@ -2890,10 +2933,30 @@ msgstr ""
 
 #: assets/dist/admin/js/templates-scripts.js:63006
 #: assets/dist/admin/js/wp-admin-pages.js:57029
-#: assets/dist/seo-overview/admin/js/wp-integrations.js:130252
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:130256
 #: assets/src/admin/js/AdminPages/KeywordResearchAdminPage/KeywordCard.js:162
 #: assets/src/seo-overview/admin/js/Common/BlurElement/index.js:9
 msgid "Available in select plans only! Upgrade your plan to view detailed insights."
+msgstr ""
+
+#: assets/dist/admin/js/templates-scripts.js:63011
+#: assets/dist/admin/js/wp-admin-pages.js:57034
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:130261
+#: assets/src/admin/js/AdminPages/KeywordResearchAdminPage/KeywordCard.js:163
+#: assets/src/seo-overview/admin/js/Common/BlurElement/index.js:10
+msgid "Upgrade Plan Now"
+msgstr ""
+
+#: assets/dist/admin/js/templates-scripts.js:76553
+#: assets/dist/admin/js/wp-admin-pages.js:70576
+#: assets/src/admin/js/AdminPages/KeywordResearchAdminPage/index.js:220
+msgid "Find advanced and untapped keywords"
+msgstr ""
+
+#: assets/dist/admin/js/templates-scripts.js:76585
+#: assets/dist/admin/js/wp-admin-pages.js:70608
+#: assets/src/admin/js/AdminPages/KeywordResearchAdminPage/index.js:247
+msgid "Enter a keyword"
 msgstr ""
 
 #: assets/dist/admin/js/woo-wizard.js:13
@@ -3014,7 +3077,7 @@ msgid "Have any special feature in mind? Let us know through the feature request
 msgstr ""
 
 #: assets/dist/admin/js/wp-admin-pages.js:41137
-#: assets/dist/seo-overview/admin/js/wp-integrations.js:130901
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:130905
 #: assets/src/admin/js/AdminPages/HelpAdminPage/index.js:43
 #: assets/src/seo-overview/admin/js/Common/HeaderAdminPage/index.js:8
 msgid "Documentation"
@@ -3108,6 +3171,16 @@ msgstr ""
 #: assets/dist/admin/js/wp-admin-pages.js:41471
 #: assets/src/admin/js/AdminPages/HistoryAdminPage/index.js:235
 msgid "Generated Content"
+msgstr ""
+
+#: assets/dist/admin/js/wp-admin-pages.js:41500
+#: assets/src/admin/js/AdminPages/LicenseAdminPage/index.js:20
+msgid "Still can't find your license key?"
+msgstr ""
+
+#: assets/dist/admin/js/wp-admin-pages.js:41503
+#: assets/src/admin/js/AdminPages/LicenseAdminPage/index.js:20
+msgid "Knock us here!"
 msgstr ""
 
 #: assets/dist/admin/js/wp-admin-pages.js:41544
@@ -3338,12 +3411,22 @@ msgstr ""
 msgid "Domain Limit"
 msgstr ""
 
-#: assets/dist/seo-overview/admin/js/wp-integrations.js:130133
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:130137
 #: assets/src/seo-overview/admin/js/Common/Menu/index.js:10
 msgid "Overview"
 msgstr ""
 
-#: assets/dist/seo-overview/admin/js/wp-integrations.js:130906
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:130910
 #: assets/src/seo-overview/admin/js/Common/HeaderAdminPage/index.js:11
 msgid "Help & Support"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:132568
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/OverviewPage/index.js:117
+msgid "SEO Reports for"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:132569
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/OverviewPage/index.js:118
+msgid "Analyze your SEO performance with Google's historical organic data"
 msgstr ""

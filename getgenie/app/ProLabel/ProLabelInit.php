@@ -104,8 +104,8 @@ class ProLabelInit
                                 ".$banner_msg."
                             </p>
                             <div class='notice-link'>
-                                <a href='https://app.getgenie.ai/license/?product=free-trial' target='_blank'>Claim Your Free License</a>
-                                <a href='" . admin_url('admin.php?page=' .  GETGENIE_TEXTDOMAIN) . "#license'>Finish License Activation</a>
+                                <a href='https://app.getgenie.ai/license/?product=free-trial' target='_blank'>" . esc_html__('Claim Your Free License', 'getgenie') . "</a>
+                                <a href='" . admin_url('admin.php?page=' .  GETGENIE_TEXTDOMAIN) . "#license'>" . esc_html__('Finish License Activation', 'getgenie') . "</a>
                             </div>
                         </div>
                         "

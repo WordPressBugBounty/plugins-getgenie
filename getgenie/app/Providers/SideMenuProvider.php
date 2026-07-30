@@ -70,7 +70,7 @@ class SideMenuProvider
             add_submenu_page(
                 GETGENIE_TEXTDOMAIN,
                 esc_html__("Get Genie | AI Writing", 'getgenie'),
-                esc_html__("AI Writing", 'getgenie').'<span class="ai-writing-badge">New</span>',
+                esc_html__("AI Writing", 'getgenie').'<span class="ai-writing-badge">' . esc_html__('New', 'getgenie') . '</span>',
                 'publish_posts',
                 $this->menu_slug.'#write-for-me'
             );
