@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-07-30T04:32:11+00:00\n"
+"POT-Creation-Date: 2026-08-13T06:33:29+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: getgenie\n"
@@ -86,7 +86,9 @@ msgstr ""
 
 #: app/Providers/SideMenuProvider.php:64
 #: assets/dist/admin/js/templates-scripts.js:76551
+#: assets/dist/admin/js/wp-admin-pages.js:42741
 #: assets/dist/admin/js/wp-admin-pages.js:70574
+#: assets/src/admin/js/AdminPages/GettingStarted/index.js:97
 #: assets/src/admin/js/AdminPages/KeywordResearchAdminPage/index.js:219
 msgid "Keyword Research"
 msgstr ""
@@ -1093,11 +1095,13 @@ msgstr ""
 #: assets/dist/admin/js/wp-admin-pages.js:42157
 #: assets/dist/admin/js/wp-admin-pages.js:42297
 #: assets/dist/admin/js/wp-integrations.js:23258
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:130144
 #: assets/src/admin/js/BlogWizard/SeoData/SerpAnalysis/index.js:337
 #: assets/src/admin/js/Common/Utilities/templates.js:304
 #: assets/src/admin/js/Common/Utilities/templates.js:458
 #: assets/src/admin/js/Common/Utilities/templates.js:524
 #: assets/src/admin/js/Common/Utilities/templates.js:664
+#: assets/src/seo-overview/admin/js/Common/Menu/index.js:15
 msgid "Keywords"
 msgstr ""
 
@@ -1751,6 +1755,8 @@ msgstr ""
 #: assets/dist/admin/js/blog-wizard.js:33303
 #: assets/dist/admin/js/templates-scripts.js:48487
 #: assets/dist/admin/js/wp-admin-pages.js:42329
+#: assets/dist/admin/js/wp-admin-pages.js:42775
+#: assets/src/admin/js/AdminPages/GettingStarted/index.js:131
 #: assets/src/admin/js/Common/Utilities/templates.js:696
 msgid "Problem, Agitate, Solution (PAS)"
 msgstr ""
@@ -2701,6 +2707,12 @@ msgstr ""
 msgid "Please activate your license"
 msgstr ""
 
+#: assets/dist/admin/js/common-scripts.js:5942
+#: assets/dist/admin/js/templates-scripts.js:46712
+#: assets/src/admin/js/Common/UserHistory/index.js:115
+msgid "No record found!"
+msgstr ""
+
 #: assets/dist/admin/js/common-scripts.js:6130
 #: assets/dist/admin/js/templates-scripts.js:46901
 #: assets/src/admin/js/Common/GenieChat/Buttons.js:9
@@ -2814,6 +2826,8 @@ msgstr ""
 
 #: assets/dist/admin/js/templates-scripts.js:48536
 #: assets/dist/admin/js/wp-admin-pages.js:42378
+#: assets/dist/admin/js/wp-admin-pages.js:42737
+#: assets/src/admin/js/AdminPages/GettingStarted/index.js:93
 #: assets/src/admin/js/TemplateWizard/AdditionalWizards.js:8
 msgid "Blog Wizard"
 msgstr ""
@@ -3278,6 +3292,126 @@ msgstr ""
 msgid "No template found"
 msgstr ""
 
+#: assets/dist/admin/js/wp-admin-pages.js:42659
+#: assets/src/admin/js/AdminPages/GettingStarted/index.js:13
+msgid "Write Blog Posts with AI"
+msgstr ""
+
+#: assets/dist/admin/js/wp-admin-pages.js:42660
+#: assets/src/admin/js/AdminPages/GettingStarted/index.js:14
+msgid "Learn how you can generate an entire blog post customized to your needs using the “Blog Writing Assistant” of GetGenie"
+msgstr ""
+
+#: assets/dist/admin/js/wp-admin-pages.js:42666
+#: assets/src/admin/js/AdminPages/GettingStarted/index.js:20
+msgid "SEO Optimize Your Content"
+msgstr ""
+
+#: assets/dist/admin/js/wp-admin-pages.js:42667
+#: assets/src/admin/js/AdminPages/GettingStarted/index.js:21
+msgid "Watch how you can optimize the generated content for SEO on the go using the SEO mode & On-Page Content Score of GetGenie"
+msgstr ""
+
+#: assets/dist/admin/js/wp-admin-pages.js:42673
+#: assets/src/admin/js/AdminPages/GettingStarted/index.js:27
+msgid "Utilize 30+ AI Templates"
+msgstr ""
+
+#: assets/dist/admin/js/wp-admin-pages.js:42674
+#: assets/src/admin/js/AdminPages/GettingStarted/index.js:28
+msgid "Learn how to use 30+ GetGenie templates to generate content & copies (AIDA template has been shown as an example)"
+msgstr ""
+
+#: assets/dist/admin/js/wp-admin-pages.js:42683
+#: assets/src/admin/js/AdminPages/GettingStarted/index.js:38
+msgid "How to Write an Article Using AI Blog Post Writer"
+msgstr ""
+
+#: assets/dist/admin/js/wp-admin-pages.js:42688
+#: assets/src/admin/js/AdminPages/GettingStarted/index.js:43
+msgid "How to Create SEO-friendly Content with AI Content Tools that Ranks Higher"
+msgstr ""
+
+#: assets/dist/admin/js/wp-admin-pages.js:42693
+#: assets/src/admin/js/AdminPages/GettingStarted/index.js:48
+msgid "Can You Monetize AI Written Content with Ad Networks?"
+msgstr ""
+
+#: assets/dist/admin/js/wp-admin-pages.js:42698
+#: assets/src/admin/js/AdminPages/GettingStarted/index.js:53
+msgid "What is SERP Analysis and How Does It Keep You Ahead of Competitors"
+msgstr ""
+
+#: assets/dist/admin/js/wp-admin-pages.js:42703
+#: assets/src/admin/js/AdminPages/GettingStarted/index.js:58
+msgid "Does AI Generated Content Rank on Search Engine: an In-Depth Discussion"
+msgstr ""
+
+#: assets/dist/admin/js/wp-admin-pages.js:42708
+#: assets/src/admin/js/AdminPages/GettingStarted/index.js:63
+msgid "How To Update Old Blog Posts For SEO With AI Content Assistant"
+msgstr ""
+
+#: assets/dist/admin/js/wp-admin-pages.js:42715
+#: assets/src/admin/js/AdminPages/GettingStarted/index.js:71
+msgid "Getting started with Getgenie AI"
+msgstr ""
+
+#: assets/dist/admin/js/wp-admin-pages.js:42719
+#: assets/src/admin/js/AdminPages/GettingStarted/index.js:75
+msgid "How to claim Getgenie free credits"
+msgstr ""
+
+#: assets/dist/admin/js/wp-admin-pages.js:42723
+#: assets/src/admin/js/AdminPages/GettingStarted/index.js:79
+msgid "How to upgrade current subscription"
+msgstr ""
+
+#: assets/dist/admin/js/wp-admin-pages.js:42727
+#: assets/src/admin/js/AdminPages/GettingStarted/index.js:83
+msgid "Getgenie elementor compatibility"
+msgstr ""
+
+#: assets/dist/admin/js/wp-admin-pages.js:42731
+#: assets/src/admin/js/AdminPages/GettingStarted/index.js:87
+msgid "Attention interest desire action(AIDA)"
+msgstr ""
+
+#: assets/dist/admin/js/wp-admin-pages.js:42745
+#: assets/src/admin/js/AdminPages/GettingStarted/index.js:101
+msgid "Competitor analysis"
+msgstr ""
+
+#: assets/dist/admin/js/wp-admin-pages.js:42749
+#: assets/src/admin/js/AdminPages/GettingStarted/index.js:105
+msgid "Woocommerce Wizard"
+msgstr ""
+
+#: assets/dist/admin/js/wp-admin-pages.js:42753
+#: assets/src/admin/js/AdminPages/GettingStarted/index.js:109
+msgid "Social media copywriting"
+msgstr ""
+
+#: assets/dist/admin/js/wp-admin-pages.js:42759
+#: assets/src/admin/js/AdminPages/GettingStarted/index.js:115
+msgid "Paragraph rewrite"
+msgstr ""
+
+#: assets/dist/admin/js/wp-admin-pages.js:42763
+#: assets/src/admin/js/AdminPages/GettingStarted/index.js:119
+msgid "Paragraph answer"
+msgstr ""
+
+#: assets/dist/admin/js/wp-admin-pages.js:42767
+#: assets/src/admin/js/AdminPages/GettingStarted/index.js:123
+msgid "Getgenie SEO features"
+msgstr ""
+
+#: assets/dist/admin/js/wp-admin-pages.js:42771
+#: assets/src/admin/js/AdminPages/GettingStarted/index.js:127
+msgid "Questions asked feature"
+msgstr ""
+
 #: assets/dist/admin/js/wp-admin-pages.js:42820
 #: assets/src/admin/js/AdminPages/GettingStarted/index.js:170
 msgid "Get Started with GetGenie"
@@ -3416,6 +3550,63 @@ msgstr ""
 msgid "Overview"
 msgstr ""
 
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:130152
+#: assets/src/seo-overview/admin/js/Common/Menu/index.js:21
+msgid "Keyword Latest Overview"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:130158
+#: assets/src/seo-overview/admin/js/Common/Menu/index.js:25
+msgid "Tracked Keyword Data"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:130164
+#: assets/src/seo-overview/admin/js/Common/Menu/index.js:29
+msgid "Lost Keyword Data"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:130170
+#: assets/src/seo-overview/admin/js/Common/Menu/index.js:33
+msgid "New Keyword Data"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:130180
+#: assets/src/seo-overview/admin/js/Common/Menu/index.js:41
+msgid "Pages"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:130188
+#: assets/src/seo-overview/admin/js/Common/Menu/index.js:47
+msgid "Top pages"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:130194
+#: assets/src/seo-overview/admin/js/Common/Menu/index.js:51
+msgid "Competing Pages"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:130200
+#: assets/src/seo-overview/admin/js/Common/Menu/index.js:55
+msgid "Pages Requiring Attention"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:130206
+#: assets/src/seo-overview/admin/js/Common/Menu/index.js:59
+msgid "Low Hanging Fruits"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:130213
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:130215
+#: assets/src/seo-overview/admin/js/Common/Menu/index.js:66
+msgid "Country/Device"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:130220
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:130222
+#: assets/src/seo-overview/admin/js/Common/Menu/index.js:71
+msgid "AI Traffic"
+msgstr ""
+
 #: assets/dist/seo-overview/admin/js/wp-integrations.js:130910
 #: assets/src/seo-overview/admin/js/Common/HeaderAdminPage/index.js:11
 msgid "Help & Support"
@@ -3429,4 +3620,14 @@ msgstr ""
 #: assets/dist/seo-overview/admin/js/wp-integrations.js:132569
 #: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/OverviewPage/index.js:118
 msgid "Analyze your SEO performance with Google's historical organic data"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:132596
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/OverviewPage/index.js:142
+msgid "Connect your Google Search Console account to access data across all tabs."
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:132596
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/OverviewPage/index.js:142
+msgid "Please click the \"Add/Remove Sites\" button to select or deselect multiple sites"
 msgstr ""
