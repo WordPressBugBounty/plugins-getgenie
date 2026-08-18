@@ -2,14 +2,14 @@
 # This file is distributed under the GPL3 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: GetGenie AI 4.5.2\n"
+"Project-Id-Version: GetGenie AI 4.5.3\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/getgenie\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-08-13T06:33:29+00:00\n"
+"POT-Creation-Date: 2026-08-17T09:58:54+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: getgenie\n"
@@ -1095,12 +1095,64 @@ msgstr ""
 #: assets/dist/admin/js/wp-admin-pages.js:42157
 #: assets/dist/admin/js/wp-admin-pages.js:42297
 #: assets/dist/admin/js/wp-integrations.js:23258
-#: assets/dist/seo-overview/admin/js/wp-integrations.js:130144
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:130146
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:131281
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:131459
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:133004
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:133159
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:133316
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:133324
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:133331
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:133338
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:133345
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:133352
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:133462
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:133620
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:133771
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:133779
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:133786
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:133793
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:133800
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:133807
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:133923
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:134078
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:134336
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:134491
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:135112
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:135263
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:135786
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:135922
 #: assets/src/admin/js/BlogWizard/SeoData/SerpAnalysis/index.js:337
 #: assets/src/admin/js/Common/Utilities/templates.js:304
 #: assets/src/admin/js/Common/Utilities/templates.js:458
 #: assets/src/admin/js/Common/Utilities/templates.js:524
 #: assets/src/admin/js/Common/Utilities/templates.js:664
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/CompetingPages.js:12
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/CompetingPages.js:144
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/KeywordLatestOverview.js:25
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/KeywordLatestOverview.js:157
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/KeywordLatestOverview.js:326
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/KeywordLatestOverview.js:334
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/KeywordLatestOverview.js:341
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/KeywordLatestOverview.js:348
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/KeywordLatestOverview.js:355
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/KeywordLatestOverview.js:362
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/LostKeyword.js:22
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/LostKeyword.js:153
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/LowHangingFruits.js:12
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/LowHangingFruits.js:131
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/NewKeyword.js:24
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/NewKeyword.js:156
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/OverviewPage/KeywordOverview.js:22
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/OverviewPage/TrackedKeywordOverview.js:22
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/TrackedKeyword.js:27
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/TrackedKeyword.js:162
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/TrackedKeyword.js:323
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/TrackedKeyword.js:331
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/TrackedKeyword.js:338
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/TrackedKeyword.js:345
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/TrackedKeyword.js:352
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/TrackedKeyword.js:359
 #: assets/src/seo-overview/admin/js/Common/Menu/index.js:15
 msgid "Keywords"
 msgstr ""
@@ -2582,8 +2634,10 @@ msgstr ""
 #: assets/dist/admin/js/blog-wizard.js:30147
 #: assets/dist/admin/js/wp-admin-pages.js:42606
 #: assets/dist/admin/js/wp-integrations.js:30835
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:130575
 #: assets/src/admin/js/AdminPages/WriteForMeAdminPage/index.js:96
 #: assets/src/admin/js/BlogWizard/ScoreAnalysis/BlogAnalysis/SearchBar.js:64
+#: assets/src/seo-overview/admin/js/Common/AdvancedTable/index.js:123
 msgid "Search..."
 msgstr ""
 
@@ -2616,7 +2670,7 @@ msgstr ""
 #: assets/dist/admin/js/templates-scripts.js:63004
 #: assets/dist/admin/js/wp-admin-pages.js:41622
 #: assets/dist/admin/js/wp-admin-pages.js:57027
-#: assets/dist/seo-overview/admin/js/wp-integrations.js:130254
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:130256
 #: assets/src/admin/js/AdminPages/KeywordResearchAdminPage/KeywordCard.js:161
 #: assets/src/admin/js/Common/BlurElement/index.js:11
 #: assets/src/admin/js/Common/Libs/VoiceInput.js:193
@@ -2931,7 +2985,7 @@ msgstr ""
 
 #: assets/dist/admin/js/templates-scripts.js:48958
 #: assets/dist/admin/js/wp-admin-pages.js:41073
-#: assets/dist/seo-overview/admin/js/wp-integrations.js:130945
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:130947
 #: assets/src/admin/js/AdminPages/Partials/index.js:42
 #: assets/src/seo-overview/admin/js/Common/HeaderAdminPage/index.js:37
 msgid "Writing History"
@@ -2939,7 +2993,7 @@ msgstr ""
 
 #: assets/dist/admin/js/templates-scripts.js:48967
 #: assets/dist/admin/js/wp-admin-pages.js:41082
-#: assets/dist/seo-overview/admin/js/wp-integrations.js:130960
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:130962
 #: assets/src/admin/js/AdminPages/Partials/index.js:46
 #: assets/src/seo-overview/admin/js/Common/HeaderAdminPage/index.js:52
 msgid "Help/Resources"
@@ -2947,7 +3001,7 @@ msgstr ""
 
 #: assets/dist/admin/js/templates-scripts.js:63006
 #: assets/dist/admin/js/wp-admin-pages.js:57029
-#: assets/dist/seo-overview/admin/js/wp-integrations.js:130256
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:130258
 #: assets/src/admin/js/AdminPages/KeywordResearchAdminPage/KeywordCard.js:162
 #: assets/src/seo-overview/admin/js/Common/BlurElement/index.js:9
 msgid "Available in select plans only! Upgrade your plan to view detailed insights."
@@ -2955,7 +3009,7 @@ msgstr ""
 
 #: assets/dist/admin/js/templates-scripts.js:63011
 #: assets/dist/admin/js/wp-admin-pages.js:57034
-#: assets/dist/seo-overview/admin/js/wp-integrations.js:130261
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:130263
 #: assets/src/admin/js/AdminPages/KeywordResearchAdminPage/KeywordCard.js:163
 #: assets/src/seo-overview/admin/js/Common/BlurElement/index.js:10
 msgid "Upgrade Plan Now"
@@ -3091,7 +3145,7 @@ msgid "Have any special feature in mind? Let us know through the feature request
 msgstr ""
 
 #: assets/dist/admin/js/wp-admin-pages.js:41137
-#: assets/dist/seo-overview/admin/js/wp-integrations.js:130905
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:130907
 #: assets/src/admin/js/AdminPages/HelpAdminPage/index.js:43
 #: assets/src/seo-overview/admin/js/Common/HeaderAdminPage/index.js:8
 msgid "Documentation"
@@ -3501,7 +3555,9 @@ msgid "Please select who can access Keyword Research"
 msgstr ""
 
 #: assets/dist/admin/js/wp-admin-pages.js:70768
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:132433
 #: assets/src/admin/js/AdminPages/RoleManagerAdminPage/index.js:128
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/OverviewPage/MetaCard.js:237
 msgid "Save"
 msgstr ""
 
@@ -3545,89 +3601,1223 @@ msgstr ""
 msgid "Domain Limit"
 msgstr ""
 
-#: assets/dist/seo-overview/admin/js/wp-integrations.js:130137
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:129350
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:132236
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:132257
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/OverviewPage/MetaCard.js:60
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/OverviewPage/MetaCard.js:85
+#: assets/src/seo-overview/admin/js/Common/Utilities/index.js:56
+msgid "Something went wrong!"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:129819
+#: assets/src/seo-overview/admin/js/Common/AdvancedDatePicker/index.js:250
+msgid "vs"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:129929
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:129985
+#: assets/src/seo-overview/admin/js/Common/ChartCard/index.js:9
+#: assets/src/seo-overview/admin/js/Common/TooltipItem/index.js:7
+msgid "Upgrade Your Plan to"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:129933
+#: assets/src/seo-overview/admin/js/Common/ChartCard/index.js:9
+msgid "Get Full Access"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:129959
+#: assets/src/seo-overview/admin/js/Common/ChartCard/index.js:34
+msgid "View More with Your Plan Upgrade"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:129989
+#: assets/src/seo-overview/admin/js/Common/TooltipItem/index.js:7
+msgid "Get Access"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:130139
 #: assets/src/seo-overview/admin/js/Common/Menu/index.js:10
 msgid "Overview"
 msgstr ""
 
-#: assets/dist/seo-overview/admin/js/wp-integrations.js:130152
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:130154
 #: assets/src/seo-overview/admin/js/Common/Menu/index.js:21
 msgid "Keyword Latest Overview"
 msgstr ""
 
-#: assets/dist/seo-overview/admin/js/wp-integrations.js:130158
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:130160
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:133855
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/TrackedKeyword.js:422
 #: assets/src/seo-overview/admin/js/Common/Menu/index.js:25
 msgid "Tracked Keyword Data"
 msgstr ""
 
-#: assets/dist/seo-overview/admin/js/wp-integrations.js:130164
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:130166
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:134271
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/LostKeyword.js:389
 #: assets/src/seo-overview/admin/js/Common/Menu/index.js:29
 msgid "Lost Keyword Data"
 msgstr ""
 
-#: assets/dist/seo-overview/admin/js/wp-integrations.js:130170
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:130172
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:134693
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/NewKeyword.js:399
 #: assets/src/seo-overview/admin/js/Common/Menu/index.js:33
 msgid "New Keyword Data"
 msgstr ""
 
-#: assets/dist/seo-overview/admin/js/wp-integrations.js:130180
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:130182
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:131625
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:135371
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:135739
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:136040
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/CompetingPages.js:263
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/LowHangingFruits.js:257
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/OverviewPage/TopPageOverview.js:23
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/PagesRequiringAttention.js:401
 #: assets/src/seo-overview/admin/js/Common/Menu/index.js:41
 msgid "Pages"
 msgstr ""
 
-#: assets/dist/seo-overview/admin/js/wp-integrations.js:130188
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:130190
 #: assets/src/seo-overview/admin/js/Common/Menu/index.js:47
 msgid "Top pages"
 msgstr ""
 
-#: assets/dist/seo-overview/admin/js/wp-integrations.js:130194
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:130196
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:135366
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/CompetingPages.js:258
 #: assets/src/seo-overview/admin/js/Common/Menu/index.js:51
 msgid "Competing Pages"
 msgstr ""
 
-#: assets/dist/seo-overview/admin/js/wp-integrations.js:130200
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:130202
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:135734
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/PagesRequiringAttention.js:396
 #: assets/src/seo-overview/admin/js/Common/Menu/index.js:55
 msgid "Pages Requiring Attention"
 msgstr ""
 
-#: assets/dist/seo-overview/admin/js/wp-integrations.js:130206
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:130208
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:136035
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/LowHangingFruits.js:252
 #: assets/src/seo-overview/admin/js/Common/Menu/index.js:59
 msgid "Low Hanging Fruits"
 msgstr ""
 
-#: assets/dist/seo-overview/admin/js/wp-integrations.js:130213
 #: assets/dist/seo-overview/admin/js/wp-integrations.js:130215
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:130217
 #: assets/src/seo-overview/admin/js/Common/Menu/index.js:66
 msgid "Country/Device"
 msgstr ""
 
-#: assets/dist/seo-overview/admin/js/wp-integrations.js:130220
 #: assets/dist/seo-overview/admin/js/wp-integrations.js:130222
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:130224
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:136798
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/AITrafficPage.js:305
 #: assets/src/seo-overview/admin/js/Common/Menu/index.js:71
 msgid "AI Traffic"
 msgstr ""
 
-#: assets/dist/seo-overview/admin/js/wp-integrations.js:130910
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:130371
+#: assets/src/seo-overview/admin/js/RequestManager/HandleResponse.js:12
+msgid "Network Error"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:130375
+#: assets/src/seo-overview/admin/js/RequestManager/HandleResponse.js:17
+msgid "Success"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:130383
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:130392
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:132235
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:132256
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/OverviewPage/MetaCard.js:59
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/OverviewPage/MetaCard.js:84
+#: assets/src/seo-overview/admin/js/RequestManager/HandleResponse.js:26
+#: assets/src/seo-overview/admin/js/RequestManager/HandleResponse.js:37
+msgid "Failed"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:130386
+#: assets/src/seo-overview/admin/js/RequestManager/HandleResponse.js:29
+msgid "Failed!"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:130569
+#: assets/src/seo-overview/admin/js/Common/AdvancedTable/index.js:118
+msgid "Filters"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:130595
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:130744
+#: assets/src/seo-overview/admin/js/Common/AdvancedTable/index.js:129
+#: assets/src/seo-overview/admin/js/Common/AdvancedTable/index.js:284
+msgid "Add Keywords"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:130722
+#: assets/src/seo-overview/admin/js/Common/AdvancedTable/index.js:275
+msgid "Track more keywords"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:130723
+#: assets/src/seo-overview/admin/js/Common/AdvancedTable/index.js:276
+msgid "Enter one or more keywords (every keyword on a new line, max"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:130723
+#: assets/src/seo-overview/admin/js/Common/AdvancedTable/index.js:276
+msgid "keywords)"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:130737
+#: assets/src/seo-overview/admin/js/Common/AdvancedTable/index.js:283
+msgid "Cancel"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:130757
+#: assets/src/seo-overview/admin/js/Common/AdvancedTable/index.js:298
+msgid "Add/Replace Your Keywords"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:130760
+#: assets/src/seo-overview/admin/js/Common/AdvancedTable/index.js:301
+msgid "Enter one keyword, multiple on a new line"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:130838
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:132842
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:135436
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:136780
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/AITrafficPage.js:288
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/PagesRequiringAttention.js:33
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/PageWrapper.js:227
+#: assets/src/seo-overview/admin/js/Common/AdvancedTable/Helper.js:60
+msgid "Copied to clipboard!"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:130840
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:132844
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:135438
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/PagesRequiringAttention.js:35
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/PageWrapper.js:229
+#: assets/src/seo-overview/admin/js/Common/AdvancedTable/Helper.js:62
+msgid "Failed to copy to clipboard!"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:130852
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:134765
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:135457
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/PagesRequiringAttention.js:48
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/TopPages.js:29
+#: assets/src/seo-overview/admin/js/Common/AdvancedTable/Helper.js:70
+msgid "Copy this URL"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:130857
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:134770
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:135462
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/PagesRequiringAttention.js:53
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/TopPages.js:34
+#: assets/src/seo-overview/admin/js/Common/AdvancedTable/Helper.js:75
+msgid "Go to the link"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:130912
 #: assets/src/seo-overview/admin/js/Common/HeaderAdminPage/index.js:11
 msgid "Help & Support"
 msgstr ""
 
-#: assets/dist/seo-overview/admin/js/wp-integrations.js:132568
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:131071
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:133115
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:133226
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:133575
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:133687
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:134034
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:134145
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:134447
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:134558
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:134853
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:135181
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:135314
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:135543
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:135855
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:135984
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:136239
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:136421
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/CompetingPages.js:62
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/CompetingPages.js:195
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/CountryDevicePage.js:160
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/CountryDevicePage.js:350
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/KeywordLatestOverview.js:118
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/KeywordLatestOverview.js:224
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/LostKeyword.js:114
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/LostKeyword.js:220
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/LowHangingFruits.js:62
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/LowHangingFruits.js:194
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/NewKeyword.js:117
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/NewKeyword.js:223
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/OverviewPage/KeywordLineChart.js:97
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/PagesRequiringAttention.js:153
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/TopPages.js:136
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/TrackedKeyword.js:122
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/TrackedKeyword.js:229
+msgid "Impressions"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:131076
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:131488
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:131635
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:133075
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:133202
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:133534
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:133663
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:133994
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:134121
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:134407
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:134534
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:134829
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:135157
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:135298
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:135519
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:135831
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:135962
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:136195
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:136397
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/CompetingPages.js:45
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/CompetingPages.js:179
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/CountryDevicePage.js:117
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/CountryDevicePage.js:326
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/KeywordLatestOverview.js:84
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/KeywordLatestOverview.js:200
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/LostKeyword.js:81
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/LostKeyword.js:196
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/LowHangingFruits.js:45
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/LowHangingFruits.js:172
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/NewKeyword.js:83
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/NewKeyword.js:199
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/OverviewPage/KeywordLineChart.js:102
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/OverviewPage/KeywordOverview.js:46
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/OverviewPage/TopPageOverview.js:31
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/PagesRequiringAttention.js:136
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/TopPages.js:119
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/TrackedKeyword.js:87
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/TrackedKeyword.js:205
+msgid "Clicks"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:131081
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/OverviewPage/KeywordLineChart.js:107
+msgid "CTR"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:131287
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:131465
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:133036
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:133178
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:133494
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:133639
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:133955
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:134097
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:134368
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:134510
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:134806
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:135134
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:135282
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:135496
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:135808
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:135940
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:136152
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:136373
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/CompetingPages.js:28
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/CompetingPages.js:163
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/CountryDevicePage.js:73
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/CountryDevicePage.js:302
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/KeywordLatestOverview.js:51
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/KeywordLatestOverview.js:176
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/LostKeyword.js:48
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/LostKeyword.js:172
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/LowHangingFruits.js:28
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/LowHangingFruits.js:150
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/NewKeyword.js:50
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/NewKeyword.js:175
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/OverviewPage/KeywordOverview.js:29
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/OverviewPage/TrackedKeywordOverview.js:29
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/PagesRequiringAttention.js:119
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/TopPages.js:102
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/TrackedKeyword.js:53
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/TrackedKeyword.js:181
+msgid "Position"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:131299
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:131477
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:131500
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:131647
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:131810
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:131854
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:133056
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:133095
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:133135
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:133514
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:133554
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:133595
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:133975
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:134014
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:134054
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:134388
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:134427
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:134467
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:134818
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:134841
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:134865
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:135146
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:135169
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:135193
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:135508
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:135531
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:135555
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:135820
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:135843
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:135867
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:136174
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:136217
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:136261
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/CompetingPages.js:37
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/CompetingPages.js:54
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/CompetingPages.js:71
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/CountryDevicePage.js:95
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/CountryDevicePage.js:139
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/CountryDevicePage.js:182
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/KeywordLatestOverview.js:68
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/KeywordLatestOverview.js:102
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/KeywordLatestOverview.js:136
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/LostKeyword.js:65
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/LostKeyword.js:98
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/LostKeyword.js:132
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/LowHangingFruits.js:37
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/LowHangingFruits.js:54
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/LowHangingFruits.js:71
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/NewKeyword.js:67
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/NewKeyword.js:101
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/NewKeyword.js:135
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/OverviewPage/CountryDeviceOverview.js:61
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/OverviewPage/CountryDeviceOverview.js:104
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/OverviewPage/KeywordOverview.js:38
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/OverviewPage/KeywordOverview.js:55
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/OverviewPage/TopPageOverview.js:40
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/OverviewPage/TrackedKeywordOverview.js:38
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/PagesRequiringAttention.js:128
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/PagesRequiringAttention.js:145
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/PagesRequiringAttention.js:162
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/TopPages.js:111
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/TopPages.js:128
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/TopPages.js:145
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/TrackedKeyword.js:70
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/TrackedKeyword.js:105
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/TrackedKeyword.js:140
+msgid "Diff"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:131310
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/OverviewPage/TrackedKeywordOverview.js:46
+msgid "Progress"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:131411
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/OverviewPage/TrackedKeywordOverview.js:156
+msgid "Tracked Keywords"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:131416
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/OverviewPage/TrackedKeywordOverview.js:161
+msgid "Add/Remove Keywords"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:131431
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:131597
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/OverviewPage/KeywordOverview.js:156
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/OverviewPage/TrackedKeywordOverview.js:173
+msgid "See more keywords"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:131586
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/OverviewPage/KeywordOverview.js:147
+msgid "Latest Keywords"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:131730
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:133018
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:133166
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:133476
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:133627
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:134751
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:134945
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:135054
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:135059
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:135123
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:135270
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:135797
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:135929
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:136114
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:136349
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/CompetingPages.js:20
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/CompetingPages.js:151
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/CountryDevicePage.js:38
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/CountryDevicePage.js:278
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/KeywordLatestOverview.js:36
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/KeywordLatestOverview.js:164
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/LowHangingFruits.js:20
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/LowHangingFruits.js:139
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/OverviewPage/TopPageOverview.js:129
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/TopPages.js:22
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/TopPages.js:235
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/TopPages.js:375
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/TopPages.js:380
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/TrackedKeyword.js:38
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/TrackedKeyword.js:169
+msgid "Top Pages"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:131741
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/OverviewPage/TopPageOverview.js:138
+msgid "See more pages"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:131773
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/OverviewPage/CountryDeviceOverview.js:27
+msgid "Top Countries"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:131773
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:131980
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:136099
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:136286
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:136342
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:136487
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/CountryDevicePage.js:26
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/CountryDevicePage.js:207
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/CountryDevicePage.js:271
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/CountryDevicePage.js:432
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/OverviewPage/CountryDeviceOverview.js:27
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/OverviewPage/CountryDeviceOverview.js:242
+msgid "Device"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:131788
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/OverviewPage/CountryDeviceOverview.js:39
+msgid "Total Clicks"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:131832
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/OverviewPage/CountryDeviceOverview.js:82
+msgid "Total Impressions"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:131970
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/OverviewPage/CountryDeviceOverview.js:232
+msgid "Country/Device-wise Performance"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:131980
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:136091
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:136099
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:136286
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:136342
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:136487
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/CountryDevicePage.js:16
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/CountryDevicePage.js:26
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/CountryDevicePage.js:207
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/CountryDevicePage.js:271
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/CountryDevicePage.js:432
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/OverviewPage/CountryDeviceOverview.js:242
+msgid "Country"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:131997
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:132145
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:132179
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/OverviewPage/AITrafficOverview.js:153
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/OverviewPage/AITrafficOverview.js:185
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/OverviewPage/CountryDeviceOverview.js:256
+msgid "See more results"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:132017
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:136570
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:136625
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/AITrafficPage.js:40
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/AITrafficPage.js:94
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/OverviewPage/AITrafficOverview.js:20
+msgid "Views"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:132018
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:136571
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:136626
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/AITrafficPage.js:41
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/AITrafficPage.js:95
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/OverviewPage/AITrafficOverview.js:21
+msgid "Active Users"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:132019
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:136584
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/AITrafficPage.js:54
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/OverviewPage/AITrafficOverview.js:22
+msgid "Engagement Rate"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:132023
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:136588
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:136635
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/AITrafficPage.js:60
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/AITrafficPage.js:105
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/OverviewPage/AITrafficOverview.js:27
+msgid "AI Source"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:132028
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:136598
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/AITrafficPage.js:69
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/OverviewPage/AITrafficOverview.js:32
+msgid "Page"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:132037
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:136608
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/AITrafficPage.js:74
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/OverviewPage/AITrafficOverview.js:38
+msgid "(no title)"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:132044
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:136616
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:136637
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/AITrafficPage.js:84
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/AITrafficPage.js:107
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/OverviewPage/AITrafficOverview.js:46
+msgid "Date"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:132049
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:136640
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/AITrafficPage.js:112
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/OverviewPage/AITrafficOverview.js:52
+msgid "By AI Source"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:132050
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:136641
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/AITrafficPage.js:113
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/OverviewPage/AITrafficOverview.js:53
+msgid "By Page"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:132051
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:136642
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/AITrafficPage.js:114
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/OverviewPage/AITrafficOverview.js:54
+msgid "By Date"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:132121
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:132156
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:136848
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/AITrafficPage.js:367
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/OverviewPage/AITrafficOverview.js:132
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/OverviewPage/AITrafficOverview.js:164
+msgid "AI Referral Traffic"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:132138
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/OverviewPage/AITrafficOverview.js:150
+msgid "No GA4 property connected. Connect GA4 to view AI traffic data."
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:132309
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/OverviewPage/MetaCard.js:151
+msgid "Select website"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:132322
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/OverviewPage/MetaCard.js:158
+msgid "Google Search Console Connected"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:132329
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/OverviewPage/MetaCard.js:163
+msgid "Google Analytics (GA4) Connected"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:132352
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/OverviewPage/MetaCard.js:171
+msgid "Connect your GA4 property to view AI traffic in your dashboard."
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:132355
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/OverviewPage/MetaCard.js:172
+msgid "Google Analytics (GA4) Not Connected"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:132357
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/OverviewPage/MetaCard.js:178
+msgid "Google Search Console Not Connected"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:132361
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/OverviewPage/MetaCard.js:182
+msgid "Add More with Your Plan Upgrade"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:132370
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/OverviewPage/MetaCard.js:184
+msgid "Add/Remove Sites"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:132371
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/OverviewPage/MetaCard.js:191
+msgid "Remove Google Search Console Account"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:132372
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/OverviewPage/MetaCard.js:192
+msgid "Are you sure you want to remove your Google Search Console account? This action cannot be undone."
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:132374
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/OverviewPage/MetaCard.js:194
+msgid "Yes"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:132375
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/OverviewPage/MetaCard.js:195
+msgid "No"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:132398
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/OverviewPage/MetaCard.js:205
+msgid "Remove Account"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:132404
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/OverviewPage/MetaCard.js:209
+msgid "Add Account"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:132428
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/OverviewPage/MetaCard.js:231
+msgid "Note: Click \"Save\" after checking/unchecking to apply changes"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:132442
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/OverviewPage/MetaCard.js:241
+msgid "Select Your Website"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:132575
 #: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/OverviewPage/index.js:117
 msgid "SEO Reports for"
 msgstr ""
 
-#: assets/dist/seo-overview/admin/js/wp-integrations.js:132569
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:132576
 #: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/OverviewPage/index.js:118
 msgid "Analyze your SEO performance with Google's historical organic data"
 msgstr ""
 
-#: assets/dist/seo-overview/admin/js/wp-integrations.js:132596
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:132603
 #: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/OverviewPage/index.js:142
 msgid "Connect your Google Search Console account to access data across all tabs."
 msgstr ""
 
-#: assets/dist/seo-overview/admin/js/wp-integrations.js:132596
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:132603
 #: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/OverviewPage/index.js:142
 msgid "Please click the \"Add/Remove Sites\" button to select or deselect multiple sites"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:132656
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:136539
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/AITrafficPage.js:16
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/PageWrapper.js:16
+msgid "Download XLSX"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:132665
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:136548
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/AITrafficPage.js:20
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/PageWrapper.js:23
+msgid "Download CSV"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:132674
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:136557
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/AITrafficPage.js:24
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/PageWrapper.js:30
+msgid "Copy to clipboard"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:132680
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:132750
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:136656
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:136708
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/AITrafficPage.js:136
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/AITrafficPage.js:200
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/PageWrapper.js:39
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/PageWrapper.js:124
+msgid "Fetching the Data"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:132752
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:136710
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/AITrafficPage.js:202
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/PageWrapper.js:126
+msgid "Analyzing the Data"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:132754
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:136712
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/AITrafficPage.js:204
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/PageWrapper.js:128
+msgid "Generating the Output"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:132821
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:132833
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:136765
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:136774
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/AITrafficPage.js:274
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/AITrafficPage.js:282
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/PageWrapper.js:205
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/PageWrapper.js:217
+msgid "Failed to download file!"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:132887
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:136818
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/AITrafficPage.js:325
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/PageWrapper.js:266
+msgid "Go"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:132889
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:132905
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:136820
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:136833
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/AITrafficPage.js:328
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/AITrafficPage.js:342
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/PageWrapper.js:268
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/PageWrapper.js:282
+msgid "Download"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:133190
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:133651
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:134109
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:134522
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:135290
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:135951
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:136385
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/CompetingPages.js:171
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/CountryDevicePage.js:314
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/KeywordLatestOverview.js:188
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/LostKeyword.js:184
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/LowHangingFruits.js:161
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/NewKeyword.js:187
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/TrackedKeyword.js:193
+msgid "Position Diff"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:133214
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:133675
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:134133
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:134546
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:135306
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:135973
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:136409
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/CompetingPages.js:187
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/CountryDevicePage.js:338
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/KeywordLatestOverview.js:212
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/LostKeyword.js:208
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/LowHangingFruits.js:183
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/NewKeyword.js:211
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/TrackedKeyword.js:217
+msgid "Clicks Diff"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:133238
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:133699
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:134157
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:134570
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:135322
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:135995
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:136433
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/CompetingPages.js:203
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/CountryDevicePage.js:362
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/KeywordLatestOverview.js:236
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/LostKeyword.js:232
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/LowHangingFruits.js:205
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/NewKeyword.js:235
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/TrackedKeyword.js:241
+msgid "Impressions Diff"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:133314
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:133769
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:134226
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:134639
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/KeywordLatestOverview.js:324
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/LostKeyword.js:331
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/NewKeyword.js:334
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/TrackedKeyword.js:321
+msgid "Total Keywords"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:133322
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:133777
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/KeywordLatestOverview.js:332
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/TrackedKeyword.js:329
+msgid "Improved"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:133329
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:133784
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/KeywordLatestOverview.js:339
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/TrackedKeyword.js:336
+msgid "Declined"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:133336
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:133791
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/KeywordLatestOverview.js:346
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/TrackedKeyword.js:343
+msgid "Top 3"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:133343
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:133798
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/KeywordLatestOverview.js:353
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/TrackedKeyword.js:350
+msgid "Top 10"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:133350
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:133805
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/KeywordLatestOverview.js:360
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/TrackedKeyword.js:357
+msgid "Outside Top 10"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:133388
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/KeywordLatestOverview.js:419
+msgid "Keywords Latest Overview"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:133389
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:133856
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:134272
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:134694
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/KeywordLatestOverview.js:420
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/LostKeyword.js:390
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/NewKeyword.js:400
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/TrackedKeyword.js:423
+msgid "Track and manage keyword reports"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:133391
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:133858
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:134274
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:134696
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/KeywordLatestOverview.js:422
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/LostKeyword.js:392
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/NewKeyword.js:402
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/TrackedKeyword.js:425
+msgid "Highlights"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:133395
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:133862
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:134278
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:134700
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/KeywordLatestOverview.js:426
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/LostKeyword.js:396
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/NewKeyword.js:406
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/TrackedKeyword.js:429
+msgid "All Keywords"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:133876
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/TrackedKeyword.js:443
+msgid "Please click the \"Add Keywords\" button below to input your keywords & track their performance"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:133937
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:134085
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/LostKeyword.js:33
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/LostKeyword.js:160
+msgid "Page Lost From"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:134231
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:134644
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/LostKeyword.js:336
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/NewKeyword.js:339
+msgid "Previous Impressions"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:134235
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:134648
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/LostKeyword.js:340
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/NewKeyword.js:343
+msgid "Current Impressions"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:134240
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:134653
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/LostKeyword.js:345
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/NewKeyword.js:348
+msgid "Previous Clicks"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:134244
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:134657
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/LostKeyword.js:349
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/NewKeyword.js:352
+msgid "Current Clicks"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:134285
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/LostKeyword.js:403
+msgid "Great Job 🎉 ! You have no lost keywords"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:134285
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/LostKeyword.js:403
+msgid "Displays keywords having zero impressions or ranking outside 100 positions in the SERP"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:134350
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:134498
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/NewKeyword.js:35
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/NewKeyword.js:163
+msgid "Page Ranked On"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:134713
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/NewKeyword.js:419
+msgid "Displays keywords having impressions or ranking within 100 positions in the SERP"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:134794
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:134952
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:136132
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:136361
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/CountryDevicePage.js:53
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/CountryDevicePage.js:290
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/TopPages.js:93
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/TopPages.js:258
+msgid "Top Keywords"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:134960
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:135640
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/PagesRequiringAttention.js:286
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/TopPages.js:266
+msgid "Keyword Position"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:134968
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:135648
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/PagesRequiringAttention.js:294
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/TopPages.js:274
+msgid "Keyword Position Diff"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:134976
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:135656
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/PagesRequiringAttention.js:302
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/TopPages.js:282
+msgid "Keyword Click"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:134984
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:135664
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/PagesRequiringAttention.js:310
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/TopPages.js:290
+msgid "Keyword Click Diff"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:134992
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:135672
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/PagesRequiringAttention.js:318
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/TopPages.js:298
+msgid "Keyword Impressions"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:135000
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:135680
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/PagesRequiringAttention.js:326
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/TopPages.js:306
+msgid "Keyword Impressions Diff"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:135055
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:135367
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:135735
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:136036
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/CompetingPages.js:259
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/LowHangingFruits.js:253
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/PagesRequiringAttention.js:397
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/TopPages.js:376
+msgid "Track and manage pages"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:135070
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/TopPages.js:391
+msgid "Displays pages ranking for keywords in positions 1-20 in the SERP"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:135378
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/CompetingPages.js:270
+msgid "Great Job 🎉 ! No competing pages detected. All your pages are uniquely optimized for their target keywords"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:135443
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:135625
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/PagesRequiringAttention.js:41
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/PagesRequiringAttention.js:240
+msgid "Low-performing Pages"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:135486
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:135632
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/PagesRequiringAttention.js:112
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/PagesRequiringAttention.js:278
+msgid "Low-value Keywords"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:135750
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/PagesRequiringAttention.js:412
+msgid "Displays pages ranking for keywords in positions beyond 20 in the SERP"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:136051
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/LowHangingFruits.js:268
+msgid "Displays keywords ranking in positions 5–20 in the SERP"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:136091
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:136287
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/CountryDevicePage.js:16
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/CountryDevicePage.js:208
+msgid "Track country-wise organic traffic"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:136287
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/CountryDevicePage.js:208
+msgid "Track device-wise organic traffic"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:136481
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/CountryDevicePage.js:426
+msgid "Total Listed Pages"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:136572
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:136627
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/AITrafficPage.js:42
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/AITrafficPage.js:96
+msgid "Total Users"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:136573
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:136628
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/AITrafficPage.js:43
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/AITrafficPage.js:97
+msgid "New Users"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:136574
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:136629
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/AITrafficPage.js:44
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/AITrafficPage.js:98
+msgid "Returning Users"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:136575
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/AITrafficPage.js:45
+msgid "Bounce Rate"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:136577
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/AITrafficPage.js:47
+msgid "Avg Engagement Time"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:136630
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/AITrafficPage.js:99
+msgid "Bounce Rate (%)"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:136631
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/AITrafficPage.js:100
+msgid "Avg Engagement Time (s)"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:136632
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/AITrafficPage.js:101
+msgid "Engagement Rate (%)"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:136636
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/AITrafficPage.js:106
+msgid "Page Title"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:136636
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/AITrafficPage.js:106
+msgid "Page Path"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:136780
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/AITrafficPage.js:288
+msgid "Failed to copy!"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:136799
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/AITrafficPage.js:306
+msgid "Track visits and engagement from AI assistants — ChatGPT, Claude, Perplexity and more"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:136843
+#: assets/src/seo-overview/admin/js/AdminPages/SeoAdminPage/AITrafficPage.js:359
+msgid "No GA4 is connected with this email. Please take access with GA4 and reconnect it here again."
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:137044
+#: assets/src/seo-overview/admin/js/App.js:149
+msgid "New Feature Alert"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:137050
+#: assets/src/seo-overview/admin/js/App.js:151
+msgid "SEO Insights is Now Available"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:137052
+#: assets/src/seo-overview/admin/js/App.js:152
+msgid "Analyze your site's keywords, clicks, and more to gain actionable insights"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:137061
+#: assets/src/seo-overview/admin/js/App.js:156
+msgid "Try it Now"
+msgstr ""
+
+#: assets/dist/seo-overview/admin/js/wp-integrations.js:137079
+#: assets/src/seo-overview/admin/js/App.js:166
+msgid "Learn More"
 msgstr ""

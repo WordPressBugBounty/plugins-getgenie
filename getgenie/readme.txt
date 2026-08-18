@@ -2,7 +2,7 @@
 Contributors: Roxnor, Ataurr
 Tags: ai SEO, ai Content, Content Writer, keyword research, SEO plugin
 Tested up to: 7.0
-Stable tag: 4.5.3
+Stable tag: 4.5.4
 Requires PHP: 7.4
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -280,6 +280,9 @@ The best part is you can [claim 2500 words free credits](https://getgenie.ai/doc
 ✨ [GutenKit](https://wordpress.org/plugins/gutenkit-blocks-addon//)
 
 == Changelog ==
+Version 4.5.4 – 18/08/2026
+Fixed: Untranslatable hardcoded strings across the SEO Insights (SEO Overview) dashboard.
+
 Version 4.5.3 – 13/08/2026
 Fixed: Additional untranslatable hardcoded strings in the Getting Started page, SEO Insights menu, and writing history screen.
 
