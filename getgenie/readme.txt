@@ -1,8 +1,8 @@
 === GetGenie – AI SEO Assistant & Content Writer with Keyword Research, AEO & GEO ===
 Contributors: Roxnor, Ataurr
 Tags: ai SEO, ai Content, Content Writer, keyword research, SEO plugin
-Tested up to: 7.0
-Stable tag: 4.5.5
+Tested up to: 7.1
+Stable tag: 4.5.6
 Requires PHP: 7.4
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -280,6 +280,9 @@ The best part is you can [claim 2500 words free credits](https://getgenie.ai/doc
 ✨ [GutenKit](https://wordpress.org/plugins/gutenkit-blocks-addon//)
 
 == Changelog ==
+Version 4.5.6 – 07/09/2026
+Added: Confirmed compatibility with WordPress 7.1 (latest stable release).
+
 Version 4.5.5 – 31/08/2026
 Fixed: Local service page copy generator’s input fields to ensure more accurate, context-aware responses.
 
