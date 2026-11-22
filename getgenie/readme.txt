@@ -2,7 +2,7 @@
 Contributors: Roxnor, Ataurr
 Tags: ai SEO, ai Content, Content Writer, keyword research, SEO plugin
 Tested up to: 7.1
-Stable tag: 4.5.6
+Stable tag: 4.6.0
 Requires PHP: 7.4
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -280,6 +280,17 @@ The best part is you can [claim 2500 words free credits](https://getgenie.ai/doc
 ✨ [GutenKit](https://wordpress.org/plugins/gutenkit-blocks-addon//)
 
 == Changelog ==
+Version 4.6.0 – 22/11/2026
+Added: AI Citability Score — check how likely your content is to be cited by AI platforms, with a score out of 100 and detailed ratings.
+Added: AI Citability page to analyze pasted content or a published page URL.
+Added: "Fix & Improve Content" to rewrite your content for a higher score and update the post in the editor.
+Added: AI Citability Score button in the post editor toolbar.
+Added: AI Citability page in the GetGenie Playground, opening full screen like Keyword Research.
+Improved: Upgraded AI models across the Blog Wizard, templates, Genie Mode, Genie Chat, and keyword research.
+Improved: Sidebar now keeps the editor toolbar clear and switches smoothly between screens.
+Fixed: Asterisks and missing line spacing in Genie Mode and several templates.
+Fixed: Keyword Research not opening full width in the GetGenie Playground on Firefox and Safari.
+
 Version 4.5.6 – 07/09/2026
 Added: Confirmed compatibility with WordPress 7.1 (latest stable release).
 

@@ -56,6 +56,17 @@ class SideMenuProvider
                 $this->menu_slug.'#getting-started'
             );
 
+            // AI Citability Score page
+            if($this->role_manager->is_allow_ai_writing()){
+                add_submenu_page(
+                    GETGENIE_TEXTDOMAIN,
+                    esc_html__("AI Citability Score | Get Genie", 'getgenie'),
+                    esc_html__("AI Citability Score", 'getgenie').'<span class="ai-writing-badge">' . esc_html__('New', 'getgenie') . '</span>',
+                    'publish_posts',
+                    $this->menu_slug.'#ai-citability'
+                );
+            }
+
             // Keyword Research - Check permission
             if($this->role_manager->is_allow_keyword_research()){
                 add_submenu_page(
@@ -70,7 +81,7 @@ class SideMenuProvider
             add_submenu_page(
                 GETGENIE_TEXTDOMAIN,
                 esc_html__("Get Genie | AI Writing", 'getgenie'),
-                esc_html__("AI Writing", 'getgenie').'<span class="ai-writing-badge">' . esc_html__('New', 'getgenie') . '</span>',
+                esc_html__("AI Writing", 'getgenie'),
                 'publish_posts',
                 $this->menu_slug.'#write-for-me'
             );
